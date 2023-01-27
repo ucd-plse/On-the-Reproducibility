@@ -1,0 +1,43 @@
+Checking out cc4ab51e to /tmp/test_d4j_9352_1657606631/test_trigger/Math... FAIL
+Executed command: git clone /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/project_repos/commons-math.git /tmp/test_d4j_9352_1657606631/test_trigger/Math 2>&1 && cd /tmp/test_d4j_9352_1657606631/test_trigger/Math && git checkout cc4ab51ee9e001a0a999a2a43ad5bd323494b800 2>&1
+Cloning into '/tmp/test_d4j_9352_1657606631/test_trigger/Math'...
+done.
+fatal: reference is not a tree: cc4ab51ee9e001a0a999a2a43ad5bd323494b800
+Cannot checkout program version! at /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-checkout line 102.
+Compilation failed in require at /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: checkout: Math-17b
+Cannot open config file (/tmp/test_d4j_9352_1657606631/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_9352_1657606631/test_trigger/Math is not a valid working directory!
+Error: compile: Math-17b
+Cannot open config file (/tmp/test_d4j_9352_1657606631/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_9352_1657606631/test_trigger/Math is not a valid working directory!
+Error: run relevant tests: Math-17b
+cat: /tmp/test_d4j_9352_1657606631/test_trigger/Math/failing_tests: No such file or directory
+grep: /tmp/test_d4j_9352_1657606631/test_trigger/Math/failing_tests: No such file or directory
+Error: verify number of triggering tests: Math-17b (expected: 1, actual: 0)
+grep: /tmp/test_d4j_9352_1657606631/test_trigger/Math/failing_tests: No such file or directory
+Error: expected triggering test org.apache.commons.math3.distribution.BinomialDistributionTest::testDegenerate2 did not fail
+Cannot open config file (/tmp/test_d4j_9352_1657606631/test_trigger/Math/.defects4j.config): No such file or directory
+Directory exists but is not a previously used working directory: /tmp/test_d4j_9352_1657606631/test_trigger/Math at /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/core/Vcs.pm line 285.
+Compilation failed in require at /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: checkout: Math-17f
+Cannot open config file (/tmp/test_d4j_9352_1657606631/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_9352_1657606631/test_trigger/Math is not a valid working directory!
+Error: compile: Math-17f
+Cannot open config file (/tmp/test_d4j_9352_1657606631/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_9352_1657606631/test_trigger/Math is not a valid working directory!
+Error: run relevant tests: Math-17f
+cat: /tmp/test_d4j_9352_1657606631/test_trigger/Math/failing_tests: No such file or directory
+grep: /tmp/test_d4j_9352_1657606631/test_trigger/Math/failing_tests: No such file or directory
+================================================================================
+The following errors occurred:
+Error: checkout: Math-17b
+Error: compile: Math-17b
+Error: run relevant tests: Math-17b
+Error: verify number of triggering tests: Math-17b (expected: 1, actual: 0)
+Error: expected triggering test org.apache.commons.math3.distribution.BinomialDistributionTest::testDegenerate2 did not fail
+Error: checkout: Math-17f
+Error: compile: Math-17f
+Error: run relevant tests: Math-17f
+================================================================================
+FAILED

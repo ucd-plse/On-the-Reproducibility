@@ -1,0 +1,256 @@
+travis_time:start:0f0eea09[0Ktravis_time:end:0f0eea09:start=1660903154640315564,finish=1660903154789615107,duration=149299543,event=no_world_writable_dirs[0Ktravis_time:start:18b5659c[0Ktravis_time:end:18b5659c:start=1660903154795950379,finish=1660903154800539930,duration=4589551,event=check_unsupported[0Ktravis_time:start:0b1e876a[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: java
+Build group: stable
+Build dist: precise
+Build id: ''
+Job id: ''
+Runtime kernel version: 4.15.0-109-generic
+[34m[1mBuild image provisioning date and time[0m
+Thu Feb  5 15:09:33 UTC 2015
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 12.04.5 LTS
+Release:	12.04
+Codename:	precise
+[34m[1mLinux Version[0m
+3.13.0-29-generic
+[34m[1mCookbooks Version[0m
+a68419e https://github.com/travis-ci/travis-cookbooks/tree/a68419e
+[34m[1mGCC version[0m
+gcc (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
+Copyright (C) 2011 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mLLVM version[0m
+clang version 3.4 (tags/RELEASE_34/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+[34m[1mPre-installed Ruby versions[0m
+ruby-1.9.3-p551
+[34m[1mPre-installed Node.js versions[0m
+v0.10.36
+[34m[1mPre-installed Go versions[0m
+1.4.1
+[34m[1mRedis version[0m
+redis-server 2.8.19
+[34m[1mriak version[0m
+2.0.2
+[34m[1mMongoDB version[0m
+MongoDB 2.4.12
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mNeo4j version[0m
+1.9.4
+[34m[1mRabbitMQ Version[0m
+3.4.3
+[34m[1mElasticSearch version[0m
+1.4.0
+[34m[1mInstalled Sphinx versions[0m
+2.0.10
+2.1.9
+2.2.6
+[34m[1mDefault Sphinx version[0m
+2.2.6
+[34m[1mInstalled Firefox version[0m
+firefox 31.0esr
+[34m[1mPhantomJS version[0m
+1.9.8
+[34m[1mant -version[0m
+Apache Ant(TM) version 1.8.2 compiled on December 3 2011
+[34m[1mmvn -version[0m
+Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T17:29:23+00:00)
+Maven home: /usr/local/maven
+Java version: 1.7.0_76, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-7-oracle/jre
+Default locale: en_US, platform encoding: ANSI_X3.4-1968
+OS name: "linux", version: "3.13.0-29-generic", arch: "amd64", family: "unix"
+travis_fold:end:system_info[0K
+travis_time:end:0b1e876a:start=1660903154806258848,finish=1660903154814715685,duration=8456837,event=show_system_info[0Ktravis_time:start:1a75bb53[0Ktravis_time:end:1a75bb53:start=1660903154820249762,finish=1660903154837028968,duration=16779206,event=rm_riak_source[0Ktravis_time:start:1b26def1[0Ktravis_time:end:1b26def1:start=1660903154842774149,finish=1660903154852214175,duration=9440026,event=fix_rwky_redis[0Ktravis_time:start:11080104[0K[31;1mTimeout waiting for network availability.[0m
+travis_time:end:11080104:start=1660903154857816104,finish=1660903175561255779,duration=20703439675,event=wait_for_network[0Ktravis_time:start:07956de0[0Ktravis_time:end:07956de0:start=1660903175567547179,finish=1660903355168364375,duration=179600817196,event=update_apt_keys[0Ktravis_time:start:0253b2ce[0Ktravis_time:end:0253b2ce:start=1660903355171905051,finish=1660903355212670951,duration=40765900,event=fix_hhvm_source[0Ktravis_time:start:1aed3d60[0Ktravis_time:end:1aed3d60:start=1660903355216181553,finish=1660903355219042312,duration=2860759,event=update_mongo_arch[0Ktravis_time:start:1ad7b668[0Ktravis_time:end:1ad7b668:start=1660903355222447595,finish=1660903355251323511,duration=28875916,event=fix_sudo_enabled_trusty[0Ktravis_time:start:2406ec46[0Ktravis_time:end:2406ec46:start=1660903355255269518,finish=1660903355268610007,duration=13340489,event=clean_up_path[0Ktravis_time:start:1569e8cb[0Ktravis_time:end:1569e8cb:start=1660903355272034078,finish=1660903355279887733,duration=7853655,event=fix_resolv_conf[0Ktravis_time:start:1fae974c[0Ktravis_time:end:1fae974c:start=1660903355283507172,finish=1660903355293863316,duration=10356144,event=fix_etc_hosts[0Ktravis_time:start:1220ddec[0Ktravis_time:end:1220ddec:start=1660903355297584454,finish=1660903355823667806,duration=526083352,event=fix_mvn_settings_xml[0Ktravis_time:start:04c8c960[0Ktravis_time:end:04c8c960:start=1660903355827627474,finish=1660903355841185583,duration=13558109,event=no_ipv6_localhost[0Ktravis_time:start:026fad0e[0Ktravis_time:end:026fad0e:start=1660903355845929610,finish=1660903355893171238,duration=47241628,event=fix_etc_mavenrc[0Ktravis_time:start:1dd3ede1[0Ktravis_time:end:1dd3ede1:start=1660903355900162038,finish=1660903355906812956,duration=6650918,event=fix_wwdr_certificate[0Ktravis_time:start:13ca2222[0Ktravis_time:end:13ca2222:start=1660903355912747077,finish=1660903355952071119,duration=39324042,event=put_localhost_first[0Ktravis_time:start:07a96f70[0Ktravis_time:end:07a96f70:start=1660903355957157868,finish=1660903355961227692,duration=4069824,event=home_paths[0Ktravis_time:start:03df9250[0Ktravis_time:end:03df9250:start=1660903355966366726,finish=1660903355995292802,duration=28926076,event=disable_initramfs[0Ktravis_time:start:02087990[0Ktravis_time:end:02087990:start=1660903356001527993,finish=1660903356021948948,duration=20420955,event=disable_ssh_roaming[0Ktravis_time:start:1dec6ea0[0Ktravis_time:end:1dec6ea0:start=1660903356028361386,finish=1660903356032906203,duration=4544817,event=debug_tools[0Ktravis_time:start:28c1b3bc[0Ktravis_time:end:28c1b3bc:start=1660903356039184353,finish=1660903356044533720,duration=5349367,event=uninstall_oclint[0Ktravis_time:start:06dbab5a[0Ktravis_time:end:06dbab5a:start=1660903356050793511,finish=1660903356056289215,duration=5495704,event=rvm_use[0Ktravis_time:start:02039cdf[0Ktravis_time:end:02039cdf:start=1660903356061943365,finish=1660903356075153920,duration=13210555,event=rm_etc_boto_cfg[0Ktravis_time:start:0221c1f8[0Ktravis_time:end:0221c1f8:start=1660903356080971738,finish=1660903356084887342,duration=3915604,event=rm_oraclejdk8_symlink[0Ktravis_time:start:0c489560[0Ktravis_time:end:0c489560:start=1660903356090259890,finish=1660903356137653468,duration=47393578,event=enable_i386[0Ktravis_time:start:10d32cd8[0Ktravis_time:end:10d32cd8:start=1660903356143613551,finish=1660903356150109588,duration=6496037,event=update_rubygems[0Ktravis_time:start:015d34c2[0Ktravis_time:end:015d34c2:start=1660903356156058941,finish=1660903356165459890,duration=9400949,event=ensure_path_components[0Ktravis_time:start:1da119ee[0Ktravis_time:end:1da119ee:start=1660903356171663035,finish=1660903356175280977,duration=3617942,event=redefine_curl[0Ktravis_time:start:1e7a77f8[0Ktravis_time:end:1e7a77f8:start=1660903356180069133,finish=1660903356184329912,duration=4260779,event=nonblock_pipe[0Ktravis_time:start:346f705d[0Ktravis_time:end:346f705d:start=1660903356189863639,finish=1660903359278005339,duration=3088141700,event=apt_get_update[0Ktravis_time:start:0328ae05[0Ktravis_time:end:0328ae05:start=1660903359284863914,finish=1660903359289474551,duration=4610637,event=deprecate_xcode_64[0Ktravis_time:start:0df03da6[0Ktravis_time:end:0df03da6:start=1660903359295445653,finish=1660903359301803423,duration=6357770,event=update_heroku[0Ktravis_time:start:03684400[0Ktravis_time:end:03684400:start=1660903359308188905,finish=1660903359312360508,duration=4171603,event=shell_session_update[0Ktravis_time:start:02053ea8[0Ktravis_fold:start:docker_mtu[0Ktee: /etc/docker/daemon.json: No such file or directory
+docker: unrecognized service
+travis_fold:end:docker_mtu[0Ktravis_time:end:02053ea8:start=1660903359317919970,finish=1660903359349464874,duration=31544904,event=set_docker_mtu[0Ktravis_time:start:21bdbc1c[0Ktravis_time:end:21bdbc1c:start=1660903359355339589,finish=1660903359372295745,duration=16956156,event=resolvconf[0K
+travis_fold:start:install_jdk[0K[33;1mInstalling oraclejdk8[0m
+$ jdk_switcher use "oraclejdk8"
+Switching to Oracle JDK8 (java-8-oracle), JAVA_HOME will be set to /usr/lib/jvm/java-8-oracle
+travis_fold:end:install_jdk[0Ktravis_time:start:11538d8c[0Ktravis_time:end:11538d8c:start=1660903359391411260,finish=1660903359395800837,duration=4389577,event=fix_ps4[0Ktravis_time:start:03db9d80[0K
+$ cd failed/spring-projects/spring-data-commons
+
+travis_time:end:03db9d80:start=1660903359400828307,finish=1660903359404687866,duration=3859559,event=checkout[0Ktravis_time:start:21a4f6a6[0K
+[33;1mSetting environment variables from .travis.yml[0m
+$ export PROFILE=spring42
+
+travis_time:end:21a4f6a6:start=1660903359409459655,finish=1660903359565912499,duration=156452844,event=env[0Ktravis_fold:start:cache.1[0KSetting up build cache
+$ export CASHER_DIR=${TRAVIS_HOME}/.casher
+travis_time:start:07def740[0K$ Installing caching utilities
+
+[31;1mThe command "eval curl -sf  -o $CASHER_DIR/bin/casher https:///files/casher " failed. Retrying, 2 of 3.[0m
+
+
+[31;1mThe command "eval curl -sf  -o $CASHER_DIR/bin/casher https:///files/casher " failed. Retrying, 3 of 3.[0m
+
+
+[31;1mThe command "eval curl -sf  -o $CASHER_DIR/bin/casher https:///files/casher " failed 3 times.[0m
+
+travis_time:end:07def740:start=1660903368487983168,finish=1660903371574467272,duration=3086484104,event=setup_casher[0Ktravis_time:start:07547903[0K$ Installing caching utilities from the Travis CI server (https:///files/casher) failed, failing over to using GitHub (https://raw.githubusercontent.com/travis-ci/casher/bash/bin/casher)
+travis_time:end:07547903:start=1660903371583027300,finish=1660903371794183495,duration=211156195,event=setup_casher[0Ktravis_time:start:003b428e[0Ktravis_time:end:003b428e:start=1660903371803804916,finish=1660903371809200716,duration=5395800,event=setup_casher[0Ktravis_time:start:19bfaf7c[0KYAML safe loading is not available. Please upgrade psych to a version that supports safe loading (>= 2.0).
+attempting to download cache archive[0m
+[31;1mcould not download cache[0m
+travis_time:end:19bfaf7c:start=1660903371816762967,finish=1660903373210492672,duration=1393729705,event=setup_casher[0Ktravis_time:start:22fd2616[0Ktravis_time:end:22fd2616:start=1660903373217887574,finish=1660903373223530824,duration=5643250,event=setup_casher[0Ktravis_time:start:29dc6d8c[0KYAML safe loading is not available. Please upgrade psych to a version that supports safe loading (>= 2.0).
+adding /home/travis/.m2 to cache[0m
+travis_time:end:29dc6d8c:start=1660903373230963079,finish=1660903374736209065,duration=1505245986,event=setup_casher[0Ktravis_fold:end:cache.1[0K
+$ java -Xmx32m -version
+java version "1.8.0_31"
+Java(TM) SE Runtime Environment (build 1.8.0_31-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 25.31-b07, mixed mode)
+$ javac -J-Xmx32m -version
+javac 1.8.0_31
+travis_fold:start:install[0Ktravis_time:start:2fed489a[0K$ true
+travis_time:end:2fed489a:start=1660903375030232631,finish=1660903375034562543,duration=4329912,event=install[0Ktravis_fold:end:install[0Ktravis_time:start:02f52964[0K$ mvn clean dependency:list test -P${PROFILE} -Dsort
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=192m; support was removed in 8.0
+[INFO] Scanning for projects...
+Downloading: https://repository.apache.org/snapshots/org/springframework/data/build/spring-data-parent/1.8.0.BUILD-SNAPSHOT/maven-metadata.xml
+Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/springframework/data/build/spring-data-parent/1.8.0.BUILD-SNAPSHOT/maven-metadata.xml
+Downloading: https://oss.sonatype.org/content/repositories/codehaus-snapshots/org/springframework/data/build/spring-data-parent/1.8.0.BUILD-SNAPSHOT/maven-metadata.xml
+Downloading: https://repo.spring.io/libs-snapshot/org/springframework/data/build/spring-data-parent/1.8.0.BUILD-SNAPSHOT/maven-metadata.xml
+637/637 B   511/802 B   637/637 B   511/802 B   637/637 B   802/802 B                                                   Downloaded: https://oss.sonatype.org/content/repositories/snapshots/org/springframework/data/build/spring-data-parent/1.8.0.BUILD-SNAPSHOT/maven-metadata.xml (637 B at 0.8 KB/sec)
+                        Downloaded: https://repo.spring.io/libs-snapshot/org/springframework/data/build/spring-data-parent/1.8.0.BUILD-SNAPSHOT/maven-metadata.xml (802 B at 0.9 KB/sec)
+                        Downloading: https://repo.spring.io/libs-snapshot/org/springframework/data/build/spring-data-parent/1.8.0.BUILD-SNAPSHOT/spring-data-parent-1.8.0.BUILD-20160406.060358-53.pom
+1/23 KB                 2/23 KB   4/23 KB   5/23 KB   6/23 KB   8/23 KB   9/23 KB   10/23 KB   12/23 KB   13/23 KB   15/23 KB   16/23 KB   17/23 KB   19/23 KB   20/23 KB   21/23 KB   23/23 KB   23/23 KB              Downloaded: https://repo.spring.io/libs-snapshot/org/springframework/data/build/spring-data-parent/1.8.0.BUILD-SNAPSHOT/spring-data-parent-1.8.0.BUILD-20160406.060358-53.pom (23 KB at 79.1 KB/sec)
+Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/springframework/data/build/spring-data-build/1.8.0.BUILD-SNAPSHOT/maven-metadata.xml
+Downloading: https://repo.spring.io/libs-snapshot/org/springframework/data/build/spring-data-build/1.8.0.BUILD-SNAPSHOT/maven-metadata.xml
+Downloading: https://oss.sonatype.org/content/repositories/codehaus-snapshots/org/springframework/data/build/spring-data-build/1.8.0.BUILD-SNAPSHOT/maven-metadata.xml
+Downloading: https://repository.apache.org/snapshots/org/springframework/data/build/spring-data-build/1.8.0.BUILD-SNAPSHOT/maven-metadata.xml
+511/801 B   801/801 B   636/636 B   801/801 B                           Downloaded: https://repo.spring.io/libs-snapshot/org/springframework/data/build/spring-data-build/1.8.0.BUILD-SNAPSHOT/maven-metadata.xml (801 B at 4.5 KB/sec)
+                        Downloaded: https://oss.sonatype.org/content/repositories/snapshots/org/springframework/data/build/spring-data-build/1.8.0.BUILD-SNAPSHOT/maven-metadata.xml (636 B at 3.4 KB/sec)
+                                                Downloading: https://repo.spring.io/libs-snapshot/org/springframework/data/build/spring-data-build/1.8.0.BUILD-SNAPSHOT/spring-data-build-1.8.0.BUILD-20160406.060358-53.pom
+1/6 KB                  2/6 KB   4/6 KB   5/6 KB   6/6 KB            Downloaded: https://repo.spring.io/libs-snapshot/org/springframework/data/build/spring-data-build/1.8.0.BUILD-SNAPSHOT/spring-data-build-1.8.0.BUILD-20160406.060358-53.pom (6 KB at 29.0 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/apache/maven/wagon/wagon-ssh/2.5/wagon-ssh-2.5.pom
+         Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-ssh/2.5/wagon-ssh-2.5.pom
+2/6 KB   3/6 KB   5/6 KB   6/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-ssh/2.5/wagon-ssh-2.5.pom (6 KB at 58.8 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/apache/maven/wagon/wagon-providers/2.5/wagon-providers-2.5.pom
+         Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-providers/2.5/wagon-providers-2.5.pom
+2/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-providers/2.5/wagon-providers-2.5.pom (3 KB at 133.2 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/apache/maven/wagon/wagon/2.5/wagon-2.5.pom
+         Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon/2.5/wagon-2.5.pom
+2/20 KB   3/20 KB   5/20 KB   6/20 KB   7/20 KB   9/20 KB   10/20 KB   11/20 KB   13/20 KB   14/20 KB   15/20 KB   16/20 KB   17/20 KB   19/20 KB   20/20 KB   20/20 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon/2.5/wagon-2.5.pom (20 KB at 889.8 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/apache/maven/maven-parent/23/maven-parent-23.pom
+           Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/23/maven-parent-23.pom
+2/32 KB    3/32 KB   5/32 KB   6/32 KB   7/32 KB   9/32 KB   10/32 KB   11/32 KB   13/32 KB   14/32 KB   15/32 KB   16/32 KB   17/32 KB   19/32 KB   20/32 KB   21/32 KB   23/32 KB   24/32 KB   25/32 KB   27/32 KB   28/32 KB   29/32 KB   31/32 KB   32/32 KB   32/32 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/23/maven-parent-23.pom (32 KB at 884.0 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/apache/apache/13/apache-13.pom
+           Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/13/apache-13.pom
+4/14 KB    8/14 KB   12/14 KB   14/14 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/13/apache-13.pom (14 KB at 487.4 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/com/jcraft/jsch/0.1.44-1/jsch-0.1.44-1.pom
+           Downloading: https://repo.maven.apache.org/maven2/com/jcraft/jsch/0.1.44-1/jsch-0.1.44-1.pom
+4/4 KB              Downloaded: https://repo.maven.apache.org/maven2/com/jcraft/jsch/0.1.44-1/jsch-0.1.44-1.pom (4 KB at 165.9 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/sonatype/oss/oss-parent/6/oss-parent-6.pom
+         Downloading: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/6/oss-parent-6.pom
+4/5 KB   5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/6/oss-parent-6.pom (5 KB at 248.3 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.pom
+         Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.pom
+4/4 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.pom (4 KB at 191.8 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/codehaus/plexus/plexus/3.2/plexus-3.2.pom
+         Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.2/plexus-3.2.pom
+4/19 KB   8/19 KB   12/19 KB   16/19 KB   19/19 KB              Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.2/plexus-3.2.pom (19 KB at 732.3 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/sonatype/spice/spice-parent/17/spice-parent-17.pom
+           Downloading: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom
+4/7 KB     7/7 KB            Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom (7 KB at 264.0 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/sonatype/forge/forge-parent/10/forge-parent-10.pom
+         Downloading: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/10/forge-parent-10.pom
+4/14 KB   8/14 KB   12/14 KB   14/14 KB              Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/10/forge-parent-10.pom (14 KB at 456.6 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/apache/maven/wagon/wagon-ssh-common/2.5/wagon-ssh-common-2.5.pom
+           Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-ssh-common/2.5/wagon-ssh-common-2.5.pom
+2/2 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-ssh-common/2.5/wagon-ssh-common-2.5.pom (2 KB at 94.4 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-6/plexus-interactivity-api-1.0-alpha-6.pom
+         Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-6/plexus-interactivity-api-1.0-alpha-6.pom
+726/726 B               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-6/plexus-interactivity-api-1.0-alpha-6.pom (726 B at 44.3 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/codehaus/plexus/plexus-interactivity/1.0-alpha-6/plexus-interactivity-1.0-alpha-6.pom
+            Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity/1.0-alpha-6/plexus-interactivity-1.0-alpha-6.pom
+2/2 KB               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity/1.0-alpha-6/plexus-interactivity-1.0-alpha-6.pom (2 KB at 58.2 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/codehaus/plexus/plexus-components/1.1.9/plexus-components-1.1.9.pom
+         Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.9/plexus-components-1.1.9.pom
+3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.9/plexus-components-1.1.9.pom (3 KB at 124.8 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/codehaus/plexus/plexus/1.0.10/plexus-1.0.10.pom
+         Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.10/plexus-1.0.10.pom
+4/9 KB   8/9 KB   9/9 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.10/plexus-1.0.10.pom (9 KB at 268.6 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/apache/maven/wagon/wagon-provider-api/2.5/wagon-provider-api-2.5.pom
+         Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/2.5/wagon-provider-api-2.5.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/2.5/wagon-provider-api-2.5.pom (2 KB at 105.3 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/apache/maven/wagon/wagon-ssh/2.5/wagon-ssh-2.5.jar
+Downloading: https://repo.spring.io/plugins-release/com/jcraft/jsch/0.1.44-1/jsch-0.1.44-1.jar
+Downloading: https://repo.spring.io/plugins-release/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.jar
+Downloading: https://repo.spring.io/plugins-release/org/apache/maven/wagon/wagon-ssh-common/2.5/wagon-ssh-common-2.5.jar
+Downloading: https://repo.spring.io/plugins-release/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-6/plexus-interactivity-api-1.0-alpha-6.jar
+                                             Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-ssh/2.5/wagon-ssh-2.5.jar
+Downloading: https://repo.maven.apache.org/maven2/com/jcraft/jsch/0.1.44-1/jsch-0.1.44-1.jar
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-ssh-common/2.5/wagon-ssh-common-2.5.jar
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-6/plexus-interactivity-api-1.0-alpha-6.jar
+4/29 KB   8/29 KB   12/29 KB   16/29 KB   20/29 KB   24/29 KB   28/29 KB   29/29 KB   29/29 KB   2/25 KB   29/29 KB   3/25 KB   2/227 KB   29/29 KB   3/25 KB   2/227 KB   2/12 KB   29/29 KB   3/25 KB   2/227 KB   2/12 KB   29/29 KB   5/25 KB   3/227 KB   2/12 KB   29/29 KB   5/25 KB   3/227 KB   2/12 KB   29/29 KB   6/25 KB   3/227 KB   3/12 KB   29/29 KB   6/25 KB   3/227 KB   3/12 KB   29/29 KB   7/25 KB   5/227 KB   3/12 KB   29/29 KB   7/25 KB   5/227 KB   3/12 KB   29/29 KB   2/209 KB   7/25 KB   5/227 KB   3/12 KB   29/29 KB   2/209 KB   9/25 KB   5/227 KB   5/12 KB   29/29 KB   2/209 KB   9/25 KB   5/227 KB   5/12 KB   29/29 KB   2/209 KB   10/25 KB   6/227 KB   5/12 KB   29/29 KB   2/209 KB   10/25 KB   6/227 KB   5/12 KB   29/29 KB   2/209 KB   11/25 KB   6/227 KB   5/12 KB   29/29 KB   3/209 KB   11/25 KB   6/227 KB   6/12 KB   29/29 KB   3/209 KB   11/25 KB   6/227 KB   6/12 KB   29/29 KB   3/209 KB   13/25 KB   6/227 KB   6/12 KB   29/29 KB   3/209 KB   14/25 KB   7/227 KB   6/12 KB   29/29 KB   3/209 KB   14/25 KB   7/227 KB   6/12 KB   29/29 KB   5/209 KB   14/25 KB   7/227 KB   7/12 KB   29/29 KB   5/209 KB   14/25 KB   7/227 KB   7/12 KB   29/29 KB   5/209 KB   15/25 KB   7/227 KB   7/12 KB   29/29 KB   5/209 KB   16/25 KB   7/227 KB   7/12 KB   29/29 KB   6/209 KB   16/25 KB   9/227 KB   7/12 KB   29/29 KB   6/209 KB   16/25 KB   9/227 KB   7/12 KB   29/29 KB   6/209 KB   17/25 KB   9/227 KB   9/12 KB   29/29 KB   6/209 KB   17/25 KB   9/227 KB   9/12 KB   29/29 KB   7/209 KB   17/25 KB   9/227 KB   9/12 KB   29/29 KB   7/209 KB   19/25 KB   10/227 KB   9/12 KB   29/29 KB   7/209 KB   19/25 KB   10/227 KB   9/12 KB   29/29 KB   9/209 KB   19/25 KB   10/227 KB   9/12 KB   29/29 KB   9/209 KB   20/25 KB   10/227 KB   10/12 KB   29/29 KB   9/209 KB   20/25 KB   10/227 KB   10/12 KB   29/29 KB   9/209 KB   21/25 KB   10/227 KB   10/12 KB   29/29 KB   10/209 KB   21/25 KB   11/227 KB   10/12 KB   29/29 KB   10/209 KB   23/25 KB   11/227 KB   10/12 KB   29/29 KB   10/209 KB   23/25 KB   11/227 KB   11/12 KB   29/29 KB   10/209 KB   23/25 KB   11/227 KB   11/12 KB   29/29 KB   11/209 KB   23/25 KB   11/227 KB   11/12 KB   29/29 KB   11/209 KB   24/25 KB   11/227 KB   12/12 KB   29/29 KB   11/209 KB   24/25 KB   13/227 KB   12/12 KB   29/29 KB   11/209 KB   24/25 KB   13/227 KB   12/12 KB   29/29 KB   11/209 KB   25/25 KB   13/227 KB   12/12 KB   29/29 KB   13/209 KB   25/25 KB   14/227 KB   12/12 KB   29/29 KB   13/209 KB   25/25 KB   14/227 KB   12/12 KB   29/29 KB   14/209 KB   25/25 KB   15/227 KB   12/12 KB   29/29 KB   14/209 KB   25/25 KB                                                            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-ssh/2.5/wagon-ssh-2.5.jar (29 KB at 643.3 KB/sec)
+16/227 KB   12/12 KB   14/209 KB   25/25 KB              16/227 KB   12/12 KB   15/209 KB   25/25 KB   16/227 KB   12/12 KB   16/209 KB   25/25 KB                                                 Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-6/plexus-interactivity-api-1.0-alpha-6.jar (12 KB at 225.8 KB/sec)
+20/227 KB   16/209 KB   25/25 KB              24/227 KB   16/209 KB   25/25 KB   28/227 KB   16/209 KB   25/25 KB   32/227 KB   16/209 KB   25/25 KB   32/227 KB   20/209 KB   25/25 KB   32/227 KB   24/209 KB   25/25 KB   32/227 KB   28/209 KB   25/25 KB   32/227 KB   32/209 KB   25/25 KB                                      Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-ssh-common/2.5/wagon-ssh-common-2.5.jar (25 KB at 406.7 KB/sec)
+36/227 KB   32/209 KB              40/227 KB   32/209 KB   44/227 KB   32/209 KB   48/227 KB   32/209 KB   48/227 KB   36/209 KB   48/227 KB   40/209 KB   48/227 KB   44/209 KB   48/227 KB   48/209 KB   52/227 KB   48/209 KB   56/227 KB   48/209 KB   60/227 KB   48/209 KB   64/227 KB   48/209 KB   64/227 KB   52/209 KB   64/227 KB   56/209 KB   64/227 KB   60/209 KB   64/227 KB   64/209 KB   68/227 KB   64/209 KB   72/227 KB   64/209 KB   76/227 KB   64/209 KB   80/227 KB   64/209 KB   80/227 KB   68/209 KB   80/227 KB   72/209 KB   80/227 KB   76/209 KB   80/227 KB   80/209 KB   84/227 KB   80/209 KB   88/227 KB   80/209 KB   92/227 KB   80/209 KB   96/227 KB   80/209 KB   96/227 KB   84/209 KB   96/227 KB   88/209 KB   96/227 KB   92/209 KB   96/227 KB   96/209 KB   100/227 KB   96/209 KB   104/227 KB   96/209 KB   108/227 KB   96/209 KB   112/227 KB   96/209 KB   112/227 KB   100/209 KB   112/227 KB   104/209 KB   112/227 KB   108/209 KB   112/227 KB   112/209 KB   116/227 KB   112/209 KB   120/227 KB   112/209 KB   124/227 KB   112/209 KB   128/227 KB   112/209 KB   128/227 KB   116/209 KB   128/227 KB   120/209 KB   128/227 KB   124/209 KB   128/227 KB   128/209 KB   132/227 KB   128/209 KB   136/227 KB   128/209 KB   140/227 KB   128/209 KB   144/227 KB   128/209 KB   144/227 KB   132/209 KB   144/227 KB   136/209 KB   144/227 KB   140/209 KB   144/227 KB   144/209 KB   148/227 KB   144/209 KB   152/227 KB   144/209 KB   156/227 KB   144/209 KB   160/227 KB   144/209 KB   160/227 KB   148/209 KB   160/227 KB   152/209 KB   160/227 KB   156/209 KB   160/227 KB   160/209 KB   164/227 KB   160/209 KB   168/227 KB   160/209 KB   172/227 KB   160/209 KB   176/227 KB   160/209 KB   176/227 KB   164/209 KB   176/227 KB   168/209 KB   176/227 KB   172/209 KB   176/227 KB   176/209 KB   180/227 KB   176/209 KB   184/227 KB   176/209 KB   188/227 KB   176/209 KB   192/227 KB   176/209 KB   192/227 KB   180/209 KB   192/227 KB   184/209 KB   192/227 KB   188/209 KB   192/227 KB   192/209 KB   196/227 KB   192/209 KB   200/227 KB   192/209 KB   204/227 KB   192/209 KB   208/227 KB   192/209 KB   208/227 KB   196/209 KB   208/227 KB   200/209 KB   208/227 KB   204/209 KB   208/227 KB   208/209 KB   208/227 KB   209/209 KB   212/227 KB   209/209 KB   216/227 KB   209/209 KB   220/227 KB   209/209 KB   224/227 KB   209/209 KB   227/227 KB   209/209 KB                             Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.jar (227 KB at 1617.1 KB/sec)
+                          Downloaded: https://repo.maven.apache.org/maven2/com/jcraft/jsch/0.1.44-1/jsch-0.1.44-1.jar (209 KB at 1459.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/4.2.5.RELEASE/spring-framework-bom-4.2.5.RELEASE.pom
+                          Downloading: https://oss.sonatype.org/content/repositories/releases/org/springframework/spring-framework-bom/4.2.5.RELEASE/spring-framework-bom-4.2.5.RELEASE.pom
+2/5 KB                    3/5 KB   5/5 KB   5/5 KB            Downloaded: https://oss.sonatype.org/content/repositories/releases/org/springframework/spring-framework-bom/4.2.5.RELEASE/spring-framework-bom-4.2.5.RELEASE.pom (5 KB at 17.8 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/apache/maven/plugins/maven-dependency-plugin/2.10/maven-dependency-plugin-2.10.pom
+         Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.10/maven-dependency-plugin-2.10.pom
+4/12 KB   8/12 KB   12/12 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.10/maven-dependency-plugin-2.10.pom (12 KB at 468.4 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/apache/maven/plugins/maven-plugins/27/maven-plugins-27.pom
+           Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/27/maven-plugins-27.pom
+4/12 KB    8/12 KB   12/12 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/27/maven-plugins-27.pom (12 KB at 462.4 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/apache/maven/maven-parent/26/maven-parent-26.pom
+           Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/26/maven-parent-26.pom
+4/39 KB    8/39 KB   12/39 KB   16/39 KB   20/39 KB   24/39 KB   28/39 KB   32/39 KB   36/39 KB   39/39 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/26/maven-parent-26.pom (39 KB at 971.3 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/apache/apache/16/apache-16.pom
+           Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/16/apache-16.pom
+4/16 KB    8/16 KB   12/16 KB   16/16 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/16/apache-16.pom (16 KB at 751.8 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/apache/maven/plugins/maven-dependency-plugin/2.10/maven-dependency-plugin-2.10.jar
+           Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.10/maven-dependency-plugin-2.10.jar
+4/157 KB   8/157 KB   12/157 KB   16/157 KB   20/157 KB   24/157 KB   28/157 KB   32/157 KB   36/157 KB   40/157 KB   44/157 KB   48/157 KB   52/157 KB   56/157 KB   60/157 KB   64/157 KB   68/157 KB   72/157 KB   76/157 KB   80/157 KB   84/157 KB   88/157 KB   92/157 KB   96/157 KB   100/157 KB   104/157 KB   108/157 KB   112/157 KB   116/157 KB   120/157 KB   124/157 KB   128/157 KB   132/157 KB   136/157 KB   140/157 KB   144/157 KB   148/157 KB   152/157 KB   156/157 KB   157/157 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.10/maven-dependency-plugin-2.10.jar (157 KB at 1774.9 KB/sec)
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring Data Core 1.12.0.DATACMNS-820-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: https://repo.spring.io/plugins-release/org/apache/maven/plugins/maven-source-plugin/3.0.0/maven-source-plugin-3.0.0.pom
+             Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-source-plugin/3.0.0/maven-source-plugin-3.0.0.pom
+4/6 KB       6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-source-plugin/3.0.0/maven-source-plugin-3.0.0.pom (6 KB at 277.7 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/apache/maven/plugins/maven-plugins/28/maven-plugins-28.pom
+         Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/28/maven-plugins-28.pom
+4/12 KB   8/12 KB   12/12 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/28/maven-plugins-28.pom (12 KB at 618.4 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/apache/maven/maven-parent/27/maven-parent-27.pom
+           Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/27/maven-parent-27.pom
+4/40 KB    8/40 KB   12/40 KB   16/40 KB   20/40 KB   24/40 KB   28/40 KB   32/40 KB   36/40 KB   40/40 KB   40/40 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/27/maven-parent-27.pom (40 KB at 1104.3 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/apache/apache/17/apache-17.pom
+           Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/17/apache-17.pom
+4/16 KB    8/16 KB   12/16 KB   16/16 KB   16/16 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/17/apache-17.pom (16 KB at 580.7 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/org/apache/maven/plugins/maven-source-plugin/3.0.0/maven-source-plugin-3.0.0.jar
+           Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-source-plugin/3.0.0/maven-source-plugin-3.0.0.jar
+4/31 KB    8/31 KB   12/31 KB   16/31 KB   20/31 KB   24/31 KB   28/31 KB   31/31 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-source-plugin/3.0.0/maven-source-plugin-3.0.0.jar (31 KB at 1060.0 KB/sec)
+Downloading: https://repo.spring.io/plugins-release/com/springsource/bundlor/com.springsource.bundlor.maven/1.0.0.RELEASE/com.springsource.bundlor.maven-1.0.0.RELEASE.pom
+           Downloading: https://repo.maven.apache.org/maven2/com/springsource/bundlor/com.springsource.bundlor.maven/1.0.0.RELEASE/com.springsource.bundlor.maven-1.0.0.RELEASE.pom
+           [INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 20.816 s
+[INFO] Finished at: 2022-08-19T10:03:17+00:00
+[INFO] Final Memory: 11M/288M
+[INFO] ------------------------------------------------------------------------
+[WARNING] The requested profile "spring42" could not be activated because it does not exist.
+[ERROR] Plugin com.springsource.bundlor:com.springsource.bundlor.maven:1.0.0.RELEASE or one of its dependencies could not be resolved: Failed to read artifact descriptor for com.springsource.bundlor:com.springsource.bundlor.maven:jar:1.0.0.RELEASE: Could not transfer artifact com.springsource.bundlor:com.springsource.bundlor.maven:pom:1.0.0.RELEASE from/to spring-plugins-release (https://repo.spring.io/plugins-release): Not authorized , ReasonPhrase:Unauthorized. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginResolutionException
+travis_time:end:02f52964:start=1660903375041501430,finish=1660903397232699050,duration=22191197620,event=script[0K[31;1mThe command "mvn clean dependency:list test -P${PROFILE} -Dsort" exited with 1.[0m
+travis_fold:start:cache.2[0Kstore build cache
+travis_time:start:084cd030[0Ktravis_time:end:084cd030:start=1660903397241385868,finish=1660903397246261910,duration=4876042,event=cache[0Ktravis_time:start:25d7ba00[0KYAML safe loading is not available. Please upgrade psych to a version that supports safe loading (>= 2.0).
+[32;1mchanges detected, packing new archive[0m
+[32;1muploading /[0m
+[31;1mfailed to upload cache[0m
+travis_time:end:25d7ba00:start=1660903397252663561,finish=1660903398972274426,duration=1719610865,event=cache[0Ktravis_fold:end:cache.2[0K
+
+Done. Your build exited with 1.

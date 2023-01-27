@@ -1,0 +1,42 @@
+Checking out c6b8a383 to /tmp/test_d4j_2350007_1660788823/test_trigger/IO.. OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Copy generated Ant build file.............................................. OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff c6b8a383:4597f38c..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: IO-29b.......................................... OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+Failing tests: 5
+  - org.apache.commons.io.FileUtilsCleanDirectoryTestCase::testThrowsOnNullList
+  - org.apache.commons.io.FileUtilsCleanDirectoryTestCase::testThrowsOnCannotDeleteFile
+  - org.apache.commons.io.FileUtilsCopyToFileTestCase::testCopyToFile
+  - org.apache.commons.io.filefilter.FileFilterTestCase::testCanRead
+  - org.apache.commons.io.filefilter.FileFilterTestCase::testCanWrite
+Error: verify number of triggering tests: IO-29b (expected: 1, actual: 5)
+Check out program version: IO-29f.......................................... OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+Failing tests: 4
+  - org.apache.commons.io.FileUtilsCleanDirectoryTestCase::testThrowsOnNullList
+  - org.apache.commons.io.FileUtilsCleanDirectoryTestCase::testThrowsOnCannotDeleteFile
+  - org.apache.commons.io.filefilter.FileFilterTestCase::testCanRead
+  - org.apache.commons.io.filefilter.FileFilterTestCase::testCanWrite
+Error: verify number of triggering tests: IO-29f (expected: 0, actual: 4)
+================================================================================
+The following errors occurred:
+Error: verify number of triggering tests: IO-29b (expected: 1, actual: 5)
+Error: verify number of triggering tests: IO-29f (expected: 0, actual: 4)
+================================================================================
+FAILED

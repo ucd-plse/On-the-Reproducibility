@@ -1,0 +1,159 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Log4j API 2.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-api ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-763_97203de834fc64412572e17a7513a22c85aa7aed/log4j-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 64 source files to /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-763_97203de834fc64412572e17a7513a22c85aa7aed/log4j-api/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:manifest (default) @ log4j-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log4j-api ---
+[INFO] Surefire report directory: /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-763_97203de834fc64412572e17a7513a22c85aa7aed/log4j-api/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.log4j.util.StringsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec - in org.apache.log4j.util.StringsTest
+Running org.apache.logging.log4j.message.ObjectMessageTest
+Running org.apache.logging.log4j.message.StringFormattedMessageTest
+Running org.apache.logging.log4j.message.MessageFormatMessageTest
+Running org.apache.logging.log4j.message.StructuredDataMessageTest
+Running org.apache.logging.log4j.message.ParameterizedMessageTest
+Running org.apache.logging.log4j.message.MessageFormatsPerfTest
+Running org.apache.logging.log4j.message.FormattedMessageTest
+Running org.apache.logging.log4j.message.MapMessageTest
+Running org.apache.logging.log4j.EventLoggerTest
+Running org.apache.logging.log4j.message.ThreadDumpMessageTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec <<< FAILURE! - in org.apache.logging.log4j.message.ObjectMessageTest
+testSafeWithMutableParams(org.apache.logging.log4j.message.ObjectMessageTest)  Time elapsed: 0.011 sec  <<< FAILURE!
+org.junit.ComparisonFailure: Should use initial param value expected:<[abc]> but was:<[XYZ]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.apache.logging.log4j.message.ObjectMessageTest.testSafeWithMutableParams(ObjectMessageTest.java:51)
+
+Running org.apache.logging.log4j.osgi.equinox.EquinoxLoadApiBundleTest
+Running org.apache.logging.log4j.osgi.felix.FelixLoadApiBundleTest
+Running org.apache.logging.log4j.message.LocalizedMessageTest
+Running org.apache.logging.log4j.LevelTest
+Running org.apache.logging.log4j.ThreadContextTest
+Running org.apache.logging.log4j.LoggerTest
+Running org.apache.logging.log4j.ThreadContextInheritanceTest
+Running org.apache.logging.log4j.LogManagerTest
+Running org.apache.logging.log4j.spi.MutableThreadContextStackTest
+Running org.apache.logging.log4j.AbstractLoggerTest
+Running org.apache.logging.log4j.spi.DefaultThreadContextStackTest
+Running org.apache.logging.log4j.MarkerTest
+Running org.apache.logging.log4j.spi.DefaultThreadContextMapTest
+Running org.apache.logging.log4j.NoopThreadContextTest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec <<< FAILURE! - in org.apache.logging.log4j.message.StringFormattedMessageTest
+testSafeWithMutableParams(org.apache.logging.log4j.message.StringFormattedMessageTest)  Time elapsed: 0.014 sec  <<< FAILURE!
+org.junit.ComparisonFailure: Should use initial param value expected:<Test message [abc]> but was:<Test message [XYZ]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.apache.logging.log4j.message.StringFormattedMessageTest.testSafeWithMutableParams(StringFormattedMessageTest.java:73)
+
+Timer Parameterized stopped. Elapsed time: 0.007233043 seconds Average per iteration: 0.000014466 seconds
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.128 sec <<< FAILURE! - in org.apache.logging.log4j.message.MessageFormatMessageTest
+testSafeWithMutableParams(org.apache.logging.log4j.message.MessageFormatMessageTest)  Time elapsed: 0.009 sec  <<< FAILURE!
+org.junit.ComparisonFailure: Should use initial param value expected:<Test message [abc]> but was:<Test message [XYZ]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.apache.logging.log4j.message.MessageFormatMessageTest.testSafeWithMutableParams(MessageFormatMessageTest.java:74)
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec - in org.apache.logging.log4j.message.ParameterizedMessageTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.125 sec - in org.apache.logging.log4j.message.StructuredDataMessageTest
+Timer FormattedParameterized stopped. Elapsed time: 0.097919715 seconds Average per iteration: 0.000195839 seconds
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 sec - in org.apache.logging.log4j.LevelTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 sec - in org.apache.logging.log4j.message.MapMessageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 sec - in org.apache.logging.log4j.LogManagerTest
+Timer MessageFormat stopped. Elapsed time: 0.071054007 seconds Average per iteration: 0.000142108 seconds
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.184 sec - in org.apache.logging.log4j.NoopThreadContextTest
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.253 sec <<< FAILURE! - in org.apache.logging.log4j.message.FormattedMessageTest
+testSafeWithMutableParams(org.apache.logging.log4j.message.FormattedMessageTest)  Time elapsed: 0.084 sec  <<< FAILURE!
+org.junit.ComparisonFailure: Should use initial param value expected:<Test message [abc]> but was:<Test message [XYZ]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.apache.logging.log4j.message.FormattedMessageTest.testSafeWithMutableParams(FormattedMessageTest.java:96)
+
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.205 sec - in org.apache.logging.log4j.AbstractLoggerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.257 sec - in org.apache.logging.log4j.EventLoggerTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.208 sec - in org.apache.logging.log4j.spi.DefaultThreadContextMapTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.213 sec - in org.apache.logging.log4j.MarkerTest
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.216 sec - in org.apache.logging.log4j.spi.MutableThreadContextStackTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.218 sec - in org.apache.logging.log4j.spi.DefaultThreadContextStackTest
+Timer ThreadContextCopy stopped. Elapsed time: 0.029493694 seconds Average per iteration: 0.000000029 seconds
+Timer ThreadContextTest stopped. Elapsed time: 0.029712508 seconds
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.245 sec - in org.apache.logging.log4j.ThreadContextInheritanceTest
+Timer StringFormat stopped. Elapsed time: 0.052319433 seconds Average per iteration: 0.000104638 seconds
+Parameterized is 7.23 times faster than StringFormat.
+Parameterized is 9.82 times faster than MessageFormat.
+Parameterized is 13.54 times faster than Formatted.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.297 sec - in org.apache.logging.log4j.message.MessageFormatsPerfTest
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.274 sec <<< FAILURE! - in org.apache.logging.log4j.message.LocalizedMessageTest
+testSafeWithMutableParams(org.apache.logging.log4j.message.LocalizedMessageTest)  Time elapsed: 0.052 sec  <<< FAILURE!
+org.junit.ComparisonFailure: Should use initial param value expected:<Test message [abc]> but was:<Test message [XYZ]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.apache.logging.log4j.message.LocalizedMessageTest.testSafeWithMutableParams(LocalizedMessageTest.java:76)
+
+Timer ThreadContextCopy stopped. Elapsed time: 0.022348023 seconds Average per iteration: 0.000000022 seconds
+Timer ThreadContextTest stopped. Elapsed time: 0.022628506 seconds
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.291 sec - in org.apache.logging.log4j.ThreadContextTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.354 sec - in org.apache.logging.log4j.message.ThreadDumpMessageTest
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.319 sec - in org.apache.logging.log4j.LoggerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.416 sec - in org.apache.logging.log4j.osgi.felix.FelixLoadApiBundleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.652 sec - in org.apache.logging.log4j.osgi.equinox.EquinoxLoadApiBundleTest
+
+Results :
+
+Failed tests: 
+  ObjectMessageTest.testSafeWithMutableParams:51 Should use initial param value expected:<[abc]> but was:<[XYZ]>
+  StringFormattedMessageTest.testSafeWithMutableParams:73 Should use initial param value expected:<Test message [abc]> but was:<Test message [XYZ]>
+  MessageFormatMessageTest.testSafeWithMutableParams:74 Should use initial param value expected:<Test message [abc]> but was:<Test message [XYZ]>
+  FormattedMessageTest.testSafeWithMutableParams:96 Should use initial param value expected:<Test message [abc]> but was:<Test message [XYZ]>
+  LocalizedMessageTest.testSafeWithMutableParams:76 Should use initial param value expected:<Test message [abc]> but was:<Test message [XYZ]>
+
+Tests run: 197, Failures: 5, Errors: 0, Skipped: 2
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.627 s
+[INFO] Finished at: 2016-07-16T11:52:24-07:00
+[INFO] Final Memory: 22M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project log4j-api: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-763_97203de834fc64412572e17a7513a22c85aa7aed/log4j-api/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

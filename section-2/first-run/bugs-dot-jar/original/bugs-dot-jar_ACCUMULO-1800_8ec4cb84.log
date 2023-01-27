@@ -1,0 +1,87 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Proxy 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-proxy ---
+[INFO] Verifying file /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-1800_8ec4cb840aff77bba3f3dc2e1b98a1c4de7c89ab/proxy/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-proxy ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-proxy ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-proxy ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-1800_8ec4cb840aff77bba3f3dc2e1b98a1c4de7c89ab/proxy/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-proxy ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-proxy ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-proxy ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-proxy ---
+[INFO] Surefire report directory: /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-1800_8ec4cb840aff77bba3f3dc2e1b98a1c4de7c89ab/proxy/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.proxy.TestProxyTableOperations
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.021 sec
+Running org.apache.accumulo.proxy.TestProxySecurityOperations
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.628 sec
+Running org.apache.accumulo.proxy.SimpleTest
+Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 32.95 sec <<< FAILURE!
+testDelete(org.apache.accumulo.proxy.SimpleTest)  Time elapsed: 1.641 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<0> but was:<1>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at org.apache.accumulo.proxy.SimpleTest.testDelete(SimpleTest.java:724)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
+Running org.apache.accumulo.proxy.TestProxyReadWrite
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.558 sec
+Running org.apache.accumulo.proxy.TestProxyInstanceOperations
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+
+Results :
+
+Failed tests:   testDelete(org.apache.accumulo.proxy.SimpleTest): expected:<0> but was:<1>
+
+Tests run: 34, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 51.176 s
+[INFO] Finished at: 2016-07-26T16:05:07-07:00
+[INFO] Final Memory: 23M/858M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project accumulo-proxy: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-1800_8ec4cb840aff77bba3f3dc2e1b98a1c4de7c89ab/proxy/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

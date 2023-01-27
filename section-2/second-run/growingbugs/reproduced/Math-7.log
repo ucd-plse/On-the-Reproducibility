@@ -1,0 +1,43 @@
+Checking out 26e878ab to /tmp/test_d4j_3429179_1658747110/test_trigger/Math FAIL
+Executed command: git clone /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/project_repos/commons-math.git /tmp/test_d4j_3429179_1658747110/test_trigger/Math 2>&1 && cd /tmp/test_d4j_3429179_1658747110/test_trigger/Math && git checkout 26e878ab3a5b0844e09ce305fa07eb2d0ad93d41 2>&1
+Cloning into '/tmp/test_d4j_3429179_1658747110/test_trigger/Math'...
+done.
+fatal: reference is not a tree: 26e878ab3a5b0844e09ce305fa07eb2d0ad93d41
+Cannot checkout program version! at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-checkout line 102.
+Compilation failed in require at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: checkout: Math-7b
+Cannot open config file (/tmp/test_d4j_3429179_1658747110/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_3429179_1658747110/test_trigger/Math is not a valid working directory!
+Error: compile: Math-7b
+Cannot open config file (/tmp/test_d4j_3429179_1658747110/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_3429179_1658747110/test_trigger/Math is not a valid working directory!
+Error: run relevant tests: Math-7b
+cat: /tmp/test_d4j_3429179_1658747110/test_trigger/Math/failing_tests: No such file or directory
+grep: /tmp/test_d4j_3429179_1658747110/test_trigger/Math/failing_tests: No such file or directory
+Error: verify number of triggering tests: Math-7b (expected: 1, actual: 0)
+grep: /tmp/test_d4j_3429179_1658747110/test_trigger/Math/failing_tests: No such file or directory
+Error: expected triggering test org.apache.commons.math4.util.FastMathTest::testIntPowLongMinValue did not fail
+Cannot open config file (/tmp/test_d4j_3429179_1658747110/test_trigger/Math/.defects4j.config): No such file or directory
+Directory exists but is not a previously used working directory: /tmp/test_d4j_3429179_1658747110/test_trigger/Math at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/core/Vcs.pm line 285.
+Compilation failed in require at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: checkout: Math-7f
+Cannot open config file (/tmp/test_d4j_3429179_1658747110/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_3429179_1658747110/test_trigger/Math is not a valid working directory!
+Error: compile: Math-7f
+Cannot open config file (/tmp/test_d4j_3429179_1658747110/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_3429179_1658747110/test_trigger/Math is not a valid working directory!
+Error: run relevant tests: Math-7f
+cat: /tmp/test_d4j_3429179_1658747110/test_trigger/Math/failing_tests: No such file or directory
+grep: /tmp/test_d4j_3429179_1658747110/test_trigger/Math/failing_tests: No such file or directory
+================================================================================
+The following errors occurred:
+Error: checkout: Math-7b
+Error: compile: Math-7b
+Error: run relevant tests: Math-7b
+Error: verify number of triggering tests: Math-7b (expected: 1, actual: 0)
+Error: expected triggering test org.apache.commons.math4.util.FastMathTest::testIntPowLongMinValue did not fail
+Error: checkout: Math-7f
+Error: compile: Math-7f
+Error: run relevant tests: Math-7f
+================================================================================
+FAILED

@@ -1,0 +1,121 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cloudtrace 1.4.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ cloudtrace ---
+[INFO] 
+[INFO] --- mavanagaiata:0.6.1:commit (git-commit) @ cloudtrace ---
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2:exec (generate-thrift) @ cloudtrace ---
+****************************************************
+*** thrift is not available
+***   expecting 'thrift -version' to return 0.6
+*** generated code will not be updated
+****************************************************
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ cloudtrace ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ cloudtrace ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-2390_2829426618b6e7d1487a4c88dd7b09186b9898d5/src/trace/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (copy-dependencies) @ cloudtrace ---
+[INFO] log4j-1.2.16.jar already exists in destination.
+[INFO] libthrift-0.6.1.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ cloudtrace ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ cloudtrace ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-2390_2829426618b6e7d1487a4c88dd7b09186b9898d5/src/trace/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ cloudtrace ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ cloudtrace ---
+[INFO] Surefire report directory: /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-2390_2829426618b6e7d1487a4c88dd7b09186b9898d5/src/trace/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.cloudtrace.instrument.PerformanceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+Running org.apache.accumulo.cloudtrace.instrument.CountSamplerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.cloudtrace.instrument.TracerTest
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.accumulo.cloudtrace.instrument.TraceProxy$2.invoke(TraceProxy.java:47)
+	at com.sun.proxy.$Proxy3.call(Unknown Source)
+	at org.apache.accumulo.cloudtrace.instrument.TracerTest.testTracedException(TracerTest.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+Caused by: java.io.IOException
+	at org.apache.accumulo.cloudtrace.instrument.TracerTest$3.call(TracerTest.java:190)
+	... 38 more
+Tests run: 4, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.296 sec <<< FAILURE!
+
+Results :
+
+Tests in error: 
+  testTracedException(org.apache.accumulo.cloudtrace.instrument.TracerTest): Unexpected exception, expected<java.io.IOException> but was<java.lang.reflect.InvocationTargetException>
+  testUntracedException(org.apache.accumulo.cloudtrace.instrument.TracerTest): Unexpected exception, expected<java.io.IOException> but was<java.lang.reflect.InvocationTargetException>
+
+Tests run: 6, Failures: 0, Errors: 2, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.317 s
+[INFO] Finished at: 2016-08-09T19:59:58-07:00
+[INFO] Final Memory: 18M/246M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.9:test (default-test) on project cloudtrace: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-2390_2829426618b6e7d1487a4c88dd7b09186b9898d5/src/trace/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,2506 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.wicket:wicket:jar:1.4-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-clover-plugin is missing. @ org.apache.wicket:wicket:[unknown-version], /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-1677_01a3dd663aef5f0a2c0ad6cf1bd04543f414bc42/wicket/pom.xml, line 52, column 12
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:surefire-report-maven-plugin is missing. @ org.apache.wicket:wicket-parent:1.4-SNAPSHOT, /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-1677_01a3dd663aef5f0a2c0ad6cf1bd04543f414bc42/pom.xml, line 531, column 12
+[WARNING] The expression ${pom.artifactId} is deprecated. Please use ${project.artifactId} instead.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Wicket 1.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wicket ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 136 resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ wicket ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:1.4.3:manifest (bundle-manifest) @ wicket ---
+[WARNING] Warning in manifest for org.apache.wicket:wicket:jar:1.4-SNAPSHOT : Superfluous export-package instructions: [org, org.apache, org.apache.wicket.ajax.markup, org.apache.wicket.ajax.markup.html.navigation, org.apache.wicket.markup.html.navigation, org.apache.wicket.protocol, org.apache.wicket.util, org.apache.wicket.util.parse]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ wicket ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 712 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ wicket ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.4:test (default-test) @ wicket ---
+[INFO] Surefire report directory: /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-1677_01a3dd663aef5f0a2c0ad6cf1bd04543f414bc42/wicket/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.wicket.markup.html.link.BookmarkablePageLinkTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.568 sec
+Running org.apache.wicket.protocol.http.WebExternalResourceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec
+Running org.apache.wicket.util.tester.apps_5.AjaxSubmitLinkClickTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 sec
+Running org.apache.wicket.request.target.coding.QueryStringUrlCodingStrategyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.wicket.markup.html.form.upload.FileUploadTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.apache.wicket.markup.html.border.ComponentBorderTest
+=== org.apache.wicket.markup.html.border.MarkupComponentBorderTestPage ===
+=== org.apache.wicket.markup.html.border.HideableBorderPage ===
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 sec
+Running org.apache.wicket.markup.html.basic.SimpleResponsePageClassTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running org.apache.wicket.markup.html.form.feedback.FormFeedbackTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec
+Running org.apache.wicket.markup.html.form.persistence.CookieValuePersisterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.apache.wicket.markup.html.form.RadioGroupTest
+=== org.apache.wicket.markup.html.form.RadioGroupTestPage1 ===
+ERROR - DiffUtil                   - File name: RadioGroupTestPage1_expected.html
+ERROR - DiffUtil                   - ===================
+ERROR - DiffUtil                   - <html>
+<head><title>RadioGroupTestPage1</title></head>
+<body>
+	<form wicket:id="form" id="form4" method="post" action="?wicket:interface=:0:form::IFormSubmitListener::"><div style="display:none"><input type="hidden" name="form4_hf_0" id="form4_hf_0" /></div>
+		
+			<input type="radio" wicket:id="radio1" id="group1-radio12" name="group" value="radio1">radio1</input>
+			<span wicket:id="container">
+				<input type="radio" wicket:id="radio2" id="group1-radio23" name="group" value="radio2" checked="checked">radio2</input>
+			</span>
+		
+	</form>
+</body>
+</html>
+
+ERROR - DiffUtil                   - ===================
+ERROR - DiffUtil                   - <html>
+<head><title>RadioGroupTestPage1</title></head>
+<body>
+	<form wicket:id="form" id="form1" method="post" action="?wicket:interface=:0:form::IFormSubmitListener::"><div style="display:none"><input type="hidden" name="form1_hf_0" id="form1_hf_0" /></div>
+		
+			<input type="radio" wicket:id="radio1" name="group" value="radio1">radio1</input>
+			<span wicket:id="container">
+				<input type="radio" wicket:id="radio2" name="group" value="radio2" checked="checked">radio2</input>
+			</span>
+		
+	</form>
+</body>
+</html>
+
+ERROR - DiffUtil                   - ===================
+4c4
+< 	<form wicket:id="form" id="form4" method="post" action="?wicket:interface=:0:form::IFormSubmitListener::"><div style="display:none"><input type="hidden" name="form4_hf_0" id="form4_hf_0" /></div>
+---
+> 	<form wicket:id="form" id="form1" method="post" action="?wicket:interface=:0:form::IFormSubmitListener::"><div style="display:none"><input type="hidden" name="form1_hf_0" id="form1_hf_0" /></div>
+6c6
+< 			<input type="radio" wicket:id="radio1" id="group1-radio12" name="group" value="radio1">radio1</input>
+---
+> 			<input type="radio" wicket:id="radio1" name="group" value="radio1">radio1</input>
+8c8
+< 				<input type="radio" wicket:id="radio2" id="group1-radio23" name="group" value="radio2" checked="checked">radio2</input>
+---
+> 				<input type="radio" wicket:id="radio2" name="group" value="radio2" checked="checked">radio2</input>
+
+=== org.apache.wicket.markup.html.form.RadioGroupTestPage3 ===
+ERROR - DiffUtil                   - File name: RadioGroupTestPage3_expected.html
+ERROR - DiffUtil                   - ===================
+ERROR - DiffUtil                   - <html>
+<body>
+<form wicket:id="form" id="form4" method="post" action="?wicket:interface=:0:form::IFormSubmitListener::"><div style="display:none"><input type="hidden" name="form4_hf_0" id="form4_hf_0" /></div>
+	
+		<input wicket:id="check1" type="radio" id="radio1-check12" name="radio" value="radio1" checked="checked">Yes
+		<input wicket:id="check2" type="radio" id="radio1-check23" name="radio" value="radio2" checked="checked">No
+	
+</form>
+</body>
+</html>
+ERROR - DiffUtil                   - ===================
+ERROR - DiffUtil                   - <html>
+<body>
+<form wicket:id="form" id="form1" method="post" action="?wicket:interface=:0:form::IFormSubmitListener::"><div style="display:none"><input type="hidden" name="form1_hf_0" id="form1_hf_0" /></div>
+	
+		<input wicket:id="check1" type="radio" name="radio" value="radio1" checked="checked">Yes
+		<input wicket:id="check2" type="radio" name="radio" value="radio2" checked="checked">No
+	
+</form>
+</body>
+</html>
+ERROR - DiffUtil                   - ===================
+3c3
+< <form wicket:id="form" id="form4" method="post" action="?wicket:interface=:0:form::IFormSubmitListener::"><div style="display:none"><input type="hidden" name="form4_hf_0" id="form4_hf_0" /></div>
+---
+> <form wicket:id="form" id="form1" method="post" action="?wicket:interface=:0:form::IFormSubmitListener::"><div style="display:none"><input type="hidden" name="form1_hf_0" id="form1_hf_0" /></div>
+5,6c5,6
+< 		<input wicket:id="check1" type="radio" id="radio1-check12" name="radio" value="radio1" checked="checked">Yes
+< 		<input wicket:id="check2" type="radio" id="radio1-check23" name="radio" value="radio2" checked="checked">No
+---
+> 		<input wicket:id="check1" type="radio" name="radio" value="radio1" checked="checked">Yes
+> 		<input wicket:id="check2" type="radio" name="radio" value="radio2" checked="checked">No
+
+=== org.apache.wicket.markup.html.form.RadioGroupDisabledTestPage ===
+ERROR - DiffUtil                   - File name: RadioGroupDisabledTestPage_expected.html
+ERROR - DiffUtil                   - ===================
+ERROR - DiffUtil                   - <html>
+<head><title>RadioGroupTestPage1</title></head>
+<body>
+	<form wicket:id="form" id="form4" method="post" action="?wicket:interface=:0:form::IFormSubmitListener::"><div style="display:none"><input type="hidden" name="form4_hf_0" id="form4_hf_0" /></div>
+		<span wicket:id="group">
+			<input type="radio" wicket:id="radio1" id="group1-radio12" name="group" value="radio1" disabled="disabled">radio1</input>
+			<span wicket:id="container">
+				<input type="radio" wicket:id="radio2" id="group1-radio23" name="group" value="radio2" checked="checked" disabled="disabled">radio2</input>
+			</span>
+		</span>
+	</form>
+</body>
+</html>
+
+ERROR - DiffUtil                   - ===================
+ERROR - DiffUtil                   - <html>
+<head><title>RadioGroupTestPage1</title></head>
+<body>
+	<form wicket:id="form" id="form1" method="post" action="?wicket:interface=:0:form::IFormSubmitListener::"><div style="display:none"><input type="hidden" name="form1_hf_0" id="form1_hf_0" /></div>
+		<span wicket:id="group">
+			<input type="radio" wicket:id="radio1" name="group" value="radio1" disabled="disabled">radio1</input>
+			<span wicket:id="container">
+				<input type="radio" wicket:id="radio2" name="group" value="radio2" checked="checked" disabled="disabled">radio2</input>
+			</span>
+		</span>
+	</form>
+</body>
+</html>
+
+ERROR - DiffUtil                   - ===================
+4c4
+< 	<form wicket:id="form" id="form4" method="post" action="?wicket:interface=:0:form::IFormSubmitListener::"><div style="display:none"><input type="hidden" name="form4_hf_0" id="form4_hf_0" /></div>
+---
+> 	<form wicket:id="form" id="form1" method="post" action="?wicket:interface=:0:form::IFormSubmitListener::"><div style="display:none"><input type="hidden" name="form1_hf_0" id="form1_hf_0" /></div>
+6c6
+< 			<input type="radio" wicket:id="radio1" id="group1-radio12" name="group" value="radio1" disabled="disabled">radio1</input>
+---
+> 			<input type="radio" wicket:id="radio1" name="group" value="radio1" disabled="disabled">radio1</input>
+8c8
+< 				<input type="radio" wicket:id="radio2" id="group1-radio23" name="group" value="radio2" checked="checked" disabled="disabled">radio2</input>
+---
+> 				<input type="radio" wicket:id="radio2" name="group" value="radio2" checked="checked" disabled="disabled">radio2</input>
+
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.152 sec <<< FAILURE!
+Running org.apache.wicket.model.InheritedModelTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.apache.wicket.markup.html.debug.WicketComponentTreeTest
+=== org.apache.wicket.markup.html.debug.WicketComponentTreeTestPage ===
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 sec
+Running org.apache.wicket.request.target.coding.IndexedHybridUrlCodingStrategyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.wicket.protocol.http.WicketFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+Running org.apache.wicket.markup.html.PackageResourceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+Running org.apache.wicket.AuthorizationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec
+Running org.apache.wicket.protocol.http.RequestUtilsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.markup.html.list.SimpleTableTest
+=== org.apache.wicket.markup.html.list.SimpleTablePage_1 ===
+=== org.apache.wicket.markup.html.list.SimpleTablePage_2 ===
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec
+Running org.apache.wicket.ajax.AjaxHeaderContributionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec
+Running org.apache.wicket.markup.MarkupCacheTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Running org.apache.wicket.MarkupFragmentFinderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.apache.wicket.util.resource.ResourceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec
+Running org.apache.wicket.markup.html.header.HeaderScopingTest
+=== org.apache.wicket.markup.html.header.MyPage ===
+=== org.apache.wicket.markup.html.header.MyPage2 ===
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec
+Running org.apache.wicket.util.lang.ObjectsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec
+Running org.apache.wicket.util.time.TimeMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.wicket.model.ModelDetachTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.markup.html.border.BoxBorderTest
+=== org.apache.wicket.markup.html.border.BoxBorderTestPage_1 ===
+=== org.apache.wicket.markup.html.border.BoxBorderTestPage_2 ===
+=== org.apache.wicket.markup.html.border.BoxBorderTestPage_3 ===
+=== org.apache.wicket.markup.html.border.BorderTestHierarchyPage_4 ===
+ERROR - RequestCycle               - Unable to find component with id 'label1' in [MarkupContainer [Component id = _body]]. This means that you declared wicket:id=label1 in your markup, but that you either did not add the component to your page at all, or that the hierarchy does not match.
+[markup = file:/home/ylyu/dataset/wicket3/dataset/wicket/WICKET-1677_01a3dd663aef5f0a2c0ad6cf1bd04543f414bc42/wicket/target/test-classes/org/apache/wicket/markup/html/border/BorderTestHierarchyPage_4.html
+<html>
+<head></head><body>
+<span wicket:id="border1">
+  <span wicket:id="label1">this label is inside the border, but added to the page</span>
+</span>
+</body>
+</html>
+, index = 6, current = '<span wicket:id="label1">' (line 4, column 3)]
+org.apache.wicket.markup.MarkupException: Unable to find component with id 'label1' in [MarkupContainer [Component id = _body]]. This means that you declared wicket:id=label1 in your markup, but that you either did not add the component to your page at all, or that the hierarchy does not match.
+[markup = file:/home/ylyu/dataset/wicket3/dataset/wicket/WICKET-1677_01a3dd663aef5f0a2c0ad6cf1bd04543f414bc42/wicket/target/test-classes/org/apache/wicket/markup/html/border/BorderTestHierarchyPage_4.html
+<html>
+<head></head><body>
+<span wicket:id="border1">
+  <span wicket:id="label1">this label is inside the border, but added to the page</span>
+</span>
+</body>
+</html>
+, index = 6, current = '<span wicket:id="label1">' (line 4, column 3)]
+	at org.apache.wicket.markup.MarkupStream.throwMarkupException(MarkupStream.java:465)
+	at org.apache.wicket.MarkupContainer.renderNext(MarkupContainer.java:1451)
+	at org.apache.wicket.MarkupContainer.renderComponentTagBody(MarkupContainer.java:1586)
+	at org.apache.wicket.MarkupContainer.onComponentTagBody(MarkupContainer.java:1510)
+	at org.apache.wicket.markup.html.border.Border$BorderBodyContainer.onComponentTagBody(Border.java:380)
+	at org.apache.wicket.Component.renderComponent(Component.java:2596)
+	at org.apache.wicket.MarkupContainer.onRender(MarkupContainer.java:1521)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.MarkupContainer.renderNext(MarkupContainer.java:1399)
+	at org.apache.wicket.MarkupContainer.renderComponentTagBody(MarkupContainer.java:1586)
+	at org.apache.wicket.MarkupContainer.renderAssociatedMarkup(MarkupContainer.java:668)
+	at org.apache.wicket.markup.html.border.Border.onComponentTagBody(Border.java:305)
+	at org.apache.wicket.Component.renderComponent(Component.java:2596)
+	at org.apache.wicket.MarkupContainer.onRender(MarkupContainer.java:1521)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.MarkupContainer.renderNext(MarkupContainer.java:1399)
+	at org.apache.wicket.MarkupContainer.renderAll(MarkupContainer.java:1537)
+	at org.apache.wicket.Page.onRender(Page.java:1515)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.Page.renderPage(Page.java:919)
+	at org.apache.wicket.request.target.component.BookmarkablePageRequestTarget.respond(BookmarkablePageRequestTarget.java:262)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.respond(AbstractRequestCycleProcessor.java:105)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1200)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:547)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:478)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:390)
+	at org.apache.wicket.util.tester.BaseWicketTester.startPage(BaseWicketTester.java:293)
+	at org.apache.wicket.markup.html.border.BoxBorderTest.test4(BoxBorderTest.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+=== org.apache.wicket.markup.html.border.BorderRenderWrappedTestPage_1 ===
+=== org.apache.wicket.markup.html.border.BoxBorderTestPage_5 ===
+=== org.apache.wicket.markup.html.border.BoxBorderTestPage_6 ===
+=== org.apache.wicket.markup.html.border.BoxBorderTestPage_1 ===
+=== org.apache.wicket.markup.html.border.BoxBorderTestPage_8 ===
+=== org.apache.wicket.markup.html.border.BoxBorderTestPage_9 ===
+=== org.apache.wicket.markup.html.border.BoxBorderTestPage_10 ===
+ERROR - RequestCycle               - The border tag must be an open tag. Open-close is not allowed: <image wicket:id="border1"/>
+org.apache.wicket.WicketRuntimeException: The border tag must be an open tag. Open-close is not allowed: <image wicket:id="border1"/>
+	at org.apache.wicket.markup.html.border.Border.onComponentTag(Border.java:276)
+	at org.apache.wicket.Component.renderComponent(Component.java:2567)
+	at org.apache.wicket.MarkupContainer.onRender(MarkupContainer.java:1521)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.MarkupContainer.renderNext(MarkupContainer.java:1399)
+	at org.apache.wicket.MarkupContainer.renderAll(MarkupContainer.java:1537)
+	at org.apache.wicket.Page.onRender(Page.java:1515)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.Page.renderPage(Page.java:919)
+	at org.apache.wicket.request.target.component.BookmarkablePageRequestTarget.respond(BookmarkablePageRequestTarget.java:262)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.respond(AbstractRequestCycleProcessor.java:105)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1200)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:547)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:478)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:390)
+	at org.apache.wicket.util.tester.BaseWicketTester.startPage(BaseWicketTester.java:293)
+	at org.apache.wicket.WicketTestCase.executeTest(WicketTestCase.java:87)
+	at org.apache.wicket.markup.html.border.BoxBorderTest.test10(BoxBorderTest.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.306 sec
+Running org.apache.wicket.ajax.AjaxTimerBehaviorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec
+Running org.apache.wicket.util.time.DurationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.505 sec
+Running org.apache.wicket.util.string.interpolator.VariableInterpolatorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec
+Running org.apache.wicket.util.tester.apps_2.Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.wicket.markup.html.header.threelayers2.InheritanceHeadTest
+=== org.apache.wicket.markup.html.header.threelayers2.MeldingPage ===
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+Running org.apache.wicket.markup.html.navigation.paging.PagingNavigationIncrementLinkTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.wicket.request.target.coding.IndexParamWithStatelessIFrameTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+Running org.apache.wicket.util.string.AppendingStringBufferTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.AttributeModifierComponentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.apache.wicket.markup.HtmlProblemFinderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+Running org.apache.wicket.protocol.http.WebSessionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.util.collections.MiniMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.markup.html.form.FormComponentPanelProcessingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec
+Running org.apache.wicket.ajax.form.AjaxFormSubmitTest
+=== org.apache.wicket.ajax.form.AjaxFormSubmitTestPage ===
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.apache.wicket.util.value.ValueMapTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+Running org.apache.wicket.markup.outputTransformer.OutputTransformerContainerTest
+=== org.apache.wicket.markup.outputTransformer.Page_2 ===
+=== org.apache.wicket.markup.outputTransformer.Page_3 ===
+=== org.apache.wicket.markup.outputTransformer.Page_1 ===
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.583 sec
+Running org.apache.wicket.markup.html.header.testing3.HeaderTest
+=== org.apache.wicket.markup.html.header.testing3.TestPage ===
+=== org.apache.wicket.markup.html.header.testing3.TestPage : link ===
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.apache.wicket.markup.html.form.ValidatorPropertiesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+Running org.apache.wicket.markup.html.form.imagebutton.ImageButtonTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running org.apache.wicket.redirect.intercept.InterceptTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.apache.wicket.markup.parser.filter.DoubleHeaderPartPageTest
+=== org.apache.wicket.markup.parser.filter.DoubleHeaderPartPage ===
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+Running org.apache.wicket.model.PropertyModelTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.behavior.ImmutableBehaviorIndexTest
+<html><body><a wicket:id="container" class="border" autocomplete="off" href="?wicket:interface=:0:container::IBehaviorListener:2:" class2="border" onclick="?wicket:interface=:0:container::IBehaviorListener:4:" autocomplete2="off"></a></body></html>
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.apache.wicket.markup.html.panel.PanelTest
+=== org.apache.wicket.markup.html.panel.PanelPage_1 ===
+ERROR - RequestCycle               - Tag <span wicket:id="test"> at 70 did not have a close tag
+[markup = file:/home/ylyu/dataset/wicket3/dataset/wicket/WICKET-1677_01a3dd663aef5f0a2c0ad6cf1bd04543f414bc42/wicket/target/test-classes/org/apache/wicket/markup/html/panel/SimplePanel_1.html
+<!-- tag not closed in panel (and wicket:panel is missing as well -->
+<span wicket:id="test">xxxx, index = 2, current = [Raw markup]]
+org.apache.wicket.markup.MarkupException: Tag <span wicket:id="test"> at 70 did not have a close tag
+[markup = file:/home/ylyu/dataset/wicket3/dataset/wicket/WICKET-1677_01a3dd663aef5f0a2c0ad6cf1bd04543f414bc42/wicket/target/test-classes/org/apache/wicket/markup/html/panel/SimplePanel_1.html
+<!-- tag not closed in panel (and wicket:panel is missing as well -->
+<span wicket:id="test">xxxx, index = 2, current = [Raw markup]]
+	at org.apache.wicket.markup.MarkupParser.parseMarkup(MarkupParser.java:395)
+	at org.apache.wicket.markup.MarkupParser.parse(MarkupParser.java:272)
+	at org.apache.wicket.markup.loader.SimpleMarkupLoader.loadMarkup(SimpleMarkupLoader.java:52)
+	at org.apache.wicket.markup.loader.InheritedMarkupMarkupLoader.loadMarkup(InheritedMarkupMarkupLoader.java:62)
+	at org.apache.wicket.markup.loader.DefaultMarkupLoader.loadMarkup(DefaultMarkupLoader.java:55)
+	at org.apache.wicket.markup.MarkupCache.loadMarkup(MarkupCache.java:463)
+	at org.apache.wicket.markup.MarkupCache.loadMarkupAndWatchForChanges(MarkupCache.java:558)
+	at org.apache.wicket.markup.MarkupCache.getMarkup(MarkupCache.java:324)
+	at org.apache.wicket.markup.MarkupCache.getMarkupStream(MarkupCache.java:215)
+	at org.apache.wicket.MarkupContainer.getAssociatedMarkupStream(MarkupContainer.java:351)
+	at org.apache.wicket.markup.html.ContainerWithAssociatedMarkupHelper.renderHeadFromAssociatedMarkupFile(ContainerWithAssociatedMarkupHelper.java:72)
+	at org.apache.wicket.markup.html.WebMarkupContainerWithAssociatedMarkup.renderHeadFromAssociatedMarkupFile(WebMarkupContainerWithAssociatedMarkup.java:73)
+	at org.apache.wicket.markup.html.panel.Panel.renderHead(Panel.java:137)
+	at org.apache.wicket.markup.html.internal.HtmlHeaderContainer$1.component(HtmlHeaderContainer.java:231)
+	at org.apache.wicket.MarkupContainer.visitChildren(MarkupContainer.java:871)
+	at org.apache.wicket.MarkupContainer.visitChildren(MarkupContainer.java:911)
+	at org.apache.wicket.markup.html.internal.HtmlHeaderContainer.renderHeaderSections(HtmlHeaderContainer.java:222)
+	at org.apache.wicket.markup.html.internal.HtmlHeaderContainer.onComponentTagBody(HtmlHeaderContainer.java:137)
+	at org.apache.wicket.Component.renderComponent(Component.java:2596)
+	at org.apache.wicket.MarkupContainer.onRender(MarkupContainer.java:1521)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.MarkupContainer.autoAdd(MarkupContainer.java:229)
+	at org.apache.wicket.markup.resolver.HtmlHeaderResolver.resolve(HtmlHeaderResolver.java:80)
+	at org.apache.wicket.MarkupContainer.renderNext(MarkupContainer.java:1426)
+	at org.apache.wicket.MarkupContainer.renderAll(MarkupContainer.java:1537)
+	at org.apache.wicket.Page.onRender(Page.java:1515)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.Page.renderPage(Page.java:919)
+	at org.apache.wicket.request.target.component.BookmarkablePageRequestTarget.respond(BookmarkablePageRequestTarget.java:262)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.respond(AbstractRequestCycleProcessor.java:105)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1200)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:547)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:478)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:390)
+	at org.apache.wicket.util.tester.BaseWicketTester.startPage(BaseWicketTester.java:293)
+	at org.apache.wicket.WicketTestCase.executeTest(WicketTestCase.java:87)
+	at org.apache.wicket.markup.html.panel.PanelTest.testRenderHomePage_1(PanelTest.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+Caused by: java.text.ParseException: Tag <span wicket:id="test"> at 70 did not have a close tag
+	at org.apache.wicket.markup.parser.filter.HtmlHandler.nextTag(HtmlHandler.java:93)
+	at org.apache.wicket.markup.parser.filter.WicketRemoveTagHandler.nextTag(WicketRemoveTagHandler.java:60)
+	at org.apache.wicket.markup.parser.filter.WicketLinkTagHandler.nextTag(WicketLinkTagHandler.java:94)
+	at org.apache.wicket.markup.parser.AbstractMarkupFilter.nextComponentTag(AbstractMarkupFilter.java:82)
+	at org.apache.wicket.markup.parser.filter.WicketNamespaceHandler.nextTag(WicketNamespaceHandler.java:72)
+	at org.apache.wicket.markup.parser.AbstractMarkupFilter.nextComponentTag(AbstractMarkupFilter.java:82)
+	at org.apache.wicket.markup.parser.filter.WicketMessageTagHandler.nextTag(WicketMessageTagHandler.java:81)
+	at org.apache.wicket.markup.parser.filter.HeadForceTagIdHandler.nextTag(HeadForceTagIdHandler.java:79)
+	at org.apache.wicket.markup.parser.AbstractMarkupFilter.nextComponentTag(AbstractMarkupFilter.java:82)
+	at org.apache.wicket.markup.parser.filter.OpenCloseTagExpander.nextTag(OpenCloseTagExpander.java:56)
+	at org.apache.wicket.markup.parser.AbstractMarkupFilter.nextComponentTag(AbstractMarkupFilter.java:82)
+	at org.apache.wicket.markup.parser.filter.EnclosureHandler.nextTag(EnclosureHandler.java:76)
+	at org.apache.wicket.markup.parser.filter.RelativePathPrefixHandler.nextTag(RelativePathPrefixHandler.java:116)
+	at org.apache.wicket.markup.MarkupParser.getNextTag(MarkupParser.java:304)
+	at org.apache.wicket.markup.MarkupParser.parseMarkup(MarkupParser.java:324)
+	... 63 more
+=== org.apache.wicket.markup.html.panel.PanelPage_2 ===
+ERROR - RequestCycle               - Markup for a panel component has to contain part '<wicket:panel>'
+[markup = file:/home/ylyu/dataset/wicket3/dataset/wicket/WICKET-1677_01a3dd663aef5f0a2c0ad6cf1bd04543f414bc42/wicket/target/test-classes/org/apache/wicket/markup/html/panel/SimplePanel_2.html
+<!-- This panel is missing the wicket:panel tag -->
+<span wicket:id="test">xxxx</span>, index = 4, current = '</span>' (line 2, column 28)]
+org.apache.wicket.markup.MarkupException: Markup for a panel component has to contain part '<wicket:panel>'
+[markup = file:/home/ylyu/dataset/wicket3/dataset/wicket/WICKET-1677_01a3dd663aef5f0a2c0ad6cf1bd04543f414bc42/wicket/target/test-classes/org/apache/wicket/markup/html/panel/SimplePanel_2.html
+<!-- This panel is missing the wicket:panel tag -->
+<span wicket:id="test">xxxx</span>, index = 4, current = '</span>' (line 2, column 28)]
+	at org.apache.wicket.markup.MarkupStream.throwMarkupException(MarkupStream.java:465)
+	at org.apache.wicket.MarkupContainer.renderAssociatedMarkup(MarkupContainer.java:644)
+	at org.apache.wicket.markup.html.panel.Panel.onComponentTagBody(Panel.java:114)
+	at org.apache.wicket.Component.renderComponent(Component.java:2596)
+	at org.apache.wicket.MarkupContainer.onRender(MarkupContainer.java:1521)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.MarkupContainer.renderNext(MarkupContainer.java:1399)
+	at org.apache.wicket.MarkupContainer.renderAll(MarkupContainer.java:1537)
+	at org.apache.wicket.Page.onRender(Page.java:1515)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.Page.renderPage(Page.java:919)
+	at org.apache.wicket.request.target.component.BookmarkablePageRequestTarget.respond(BookmarkablePageRequestTarget.java:262)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.respond(AbstractRequestCycleProcessor.java:105)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1200)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:547)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:478)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:390)
+	at org.apache.wicket.util.tester.BaseWicketTester.startPage(BaseWicketTester.java:293)
+	at org.apache.wicket.WicketTestCase.executeTest(WicketTestCase.java:87)
+	at org.apache.wicket.markup.html.panel.PanelTest.testRenderHomePage_2(PanelTest.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+=== org.apache.wicket.markup.html.panel.PanelPage_3 ===
+=== org.apache.wicket.markup.html.panel.InlinePanelPage_1 ===
+=== org.apache.wicket.markup.html.panel.InlinePanelPage_2 ===
+=== org.apache.wicket.markup.html.panel.InlinePanelPage_3 ===
+=== org.apache.wicket.markup.html.panel.InlinePanelPage_4 ===
+=== org.apache.wicket.markup.html.panel.InlinePanelPage_5 ===
+=== org.apache.wicket.markup.html.panel.PanelWithAttributeModifierPage ===
+=== org.apache.wicket.markup.html.panel.InlinePanelPage_7 ===
+=== org.apache.wicket.markup.html.panel.InlinePanelPage_8 ===
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+Running org.apache.wicket.markup.parser.filter.HeaderSectionTest
+=== org.apache.wicket.markup.parser.filter.HeaderSectionPage_1 ===
+=== org.apache.wicket.markup.parser.filter.HeaderSectionPage_2 ===
+=== org.apache.wicket.markup.parser.filter.HeaderSectionPage_5 ===
+=== org.apache.wicket.markup.parser.filter.HeaderSectionPage_7 ===
+=== org.apache.wicket.markup.parser.filter.HeaderSectionPage_8 ===
+=== org.apache.wicket.markup.parser.filter.HeaderSectionPage_9 ===
+=== org.apache.wicket.markup.parser.filter.HeaderSectionPage_10 ===
+=== org.apache.wicket.markup.parser.filter.HeaderSectionPage_11 ===
+=== org.apache.wicket.markup.parser.filter.HeaderSectionPage_12 ===
+=== org.apache.wicket.markup.parser.filter.HeaderSectionPage_13 ===
+ERROR - RequestCycle               - <wicket:head> tags are only allowed before <body>, </head>, <wicket:panel> etc. tag
+org.apache.wicket.markup.MarkupException: <wicket:head> tags are only allowed before <body>, </head>, <wicket:panel> etc. tag
+	at org.apache.wicket.markup.html.ContainerWithAssociatedMarkupHelper.nextHeaderMarkup(ContainerWithAssociatedMarkupHelper.java:199)
+	at org.apache.wicket.markup.html.ContainerWithAssociatedMarkupHelper.renderHeadFromAssociatedMarkupFile(ContainerWithAssociatedMarkupHelper.java:82)
+	at org.apache.wicket.markup.html.WebMarkupContainerWithAssociatedMarkup.renderHeadFromAssociatedMarkupFile(WebMarkupContainerWithAssociatedMarkup.java:73)
+	at org.apache.wicket.markup.html.panel.Panel.renderHead(Panel.java:137)
+	at org.apache.wicket.markup.html.internal.HtmlHeaderContainer$1.component(HtmlHeaderContainer.java:231)
+	at org.apache.wicket.MarkupContainer.visitChildren(MarkupContainer.java:871)
+	at org.apache.wicket.MarkupContainer.visitChildren(MarkupContainer.java:911)
+	at org.apache.wicket.markup.html.internal.HtmlHeaderContainer.renderHeaderSections(HtmlHeaderContainer.java:222)
+	at org.apache.wicket.markup.html.internal.HtmlHeaderContainer.onComponentTagBody(HtmlHeaderContainer.java:137)
+	at org.apache.wicket.Component.renderComponent(Component.java:2596)
+	at org.apache.wicket.MarkupContainer.onRender(MarkupContainer.java:1521)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.MarkupContainer.autoAdd(MarkupContainer.java:229)
+	at org.apache.wicket.markup.resolver.HtmlHeaderResolver.resolve(HtmlHeaderResolver.java:80)
+	at org.apache.wicket.MarkupContainer.renderNext(MarkupContainer.java:1426)
+	at org.apache.wicket.MarkupContainer.renderAll(MarkupContainer.java:1537)
+	at org.apache.wicket.Page.onRender(Page.java:1515)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.Page.renderPage(Page.java:919)
+	at org.apache.wicket.request.target.component.BookmarkablePageRequestTarget.respond(BookmarkablePageRequestTarget.java:262)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.respond(AbstractRequestCycleProcessor.java:105)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1200)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:547)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:478)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:390)
+	at org.apache.wicket.util.tester.BaseWicketTester.startPage(BaseWicketTester.java:293)
+	at org.apache.wicket.WicketTestCase.executeTest(WicketTestCase.java:87)
+	at org.apache.wicket.markup.parser.filter.HeaderSectionTest.testRenderHomePage_13(HeaderSectionTest.java:167)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+=== org.apache.wicket.markup.parser.filter.HeaderSectionPage_3 ===
+=== org.apache.wicket.markup.parser.filter.HeaderSectionPage_4 ===
+=== org.apache.wicket.markup.parser.filter.HeaderSectionPage_6 ===
+=== org.apache.wicket.markup.parser.filter.HeaderSectionPage_9a ===
+=== org.apache.wicket.markup.parser.filter.HeaderSectionPage_14 ===
+=== org.apache.wicket.markup.parser.filter.HeaderSectionPage_15 ===
+=== org.apache.wicket.markup.parser.filter.HeaderSectionPage_16 ===
+=== org.apache.wicket.markup.parser.filter.HeaderSectionPage_17 ===
+=== org.apache.wicket.markup.parser.filter.HeaderSectionPage_18 ===
+=== org.apache.wicket.markup.parser.filter.HeaderSectionPage_19 ===
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec
+Running org.apache.wicket.util.parse.metapattern.MetaPatternTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.markup.html.link.IndexedParamUrlCodingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.protocol.http.ClientPropertiesTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.markup.html.link.DownloadLinkTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.apache.wicket.markup.html.list.PagedTableNavigatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec
+Running org.apache.wicket.stateless.TemporarySessionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec
+Running org.apache.wicket.markup.html.ScopedComponentResolverTest
+=== org.apache.wicket.markup.html.ScopedPage ===
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.apache.wicket.RestartWithMountedPageTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.apache.wicket.resource.ComponentStringResourceLoaderTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.apache.wicket.PageFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.ajax.AjaxPostprocessingCallDecoratorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.ajax.AjaxBehaviorAndMetaDataTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.markup.html.form.upload.FileUploadFieldTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running org.apache.wicket.markup.resolver.WicketContainerResolverTest
+=== org.apache.wicket.markup.resolver.SimpleContainerPage_1 ===
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.markup.html.image.InvalidImageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.wicket.protocol.http.WebResponseExceptionsTest
+ERROR - WebPage                    - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ERROR - WebPage                    - You probably forgot to add a <body> or <header> tag to your markup since no Header Container was 
+found but components were found which want to write to the <head> section.
+<script type="text/javascript" src="resources/org.apache.wicket.markup.html.WicketEventReference/wicket-event.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/wicket-ajax-debug.js"></script>
+<script type="text/javascript" id="wicket-ajax-debug-enable"><!--/*--><![CDATA[/*><!--*/
+wicketAjaxDebugEnable=true;
+/*-->]]>*/</script>
+
+
+ERROR - WebPage                    - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ERROR - RequestCycle               - Intentional error
+java.lang.IllegalStateException: Intentional error
+	at org.apache.wicket.protocol.http.TestErrorPage$1.onAfterRender(TestErrorPage.java:55)
+	at org.apache.wicket.Component.afterRender(Component.java:1016)
+	at org.apache.wicket.Component.renderComponent(Component.java:2542)
+	at org.apache.wicket.ajax.AjaxRequestTarget.respondComponent(AjaxRequestTarget.java:793)
+	at org.apache.wicket.ajax.AjaxRequestTarget.respondComponents(AjaxRequestTarget.java:667)
+	at org.apache.wicket.ajax.AjaxRequestTarget.respond(AjaxRequestTarget.java:579)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.respond(AbstractRequestCycleProcessor.java:105)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1200)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:501)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:504)
+	at org.apache.wicket.util.tester.BaseWicketTester.executeAjaxEvent(BaseWicketTester.java:1172)
+	at org.apache.wicket.protocol.http.WebResponseExceptionsTest.testInternalErrorPage(WebResponseExceptionsTest.java:107)
+	at org.apache.wicket.protocol.http.WebResponseExceptionsTest.testBufferedExceptionErrorPage(WebResponseExceptionsTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+ERROR - WebPage                    - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ERROR - WebPage                    - You probably forgot to add a <body> or <header> tag to your markup since no Header Container was 
+found but components were found which want to write to the <head> section.
+<script type="text/javascript" src="resources/org.apache.wicket.markup.html.WicketEventReference/wicket-event.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/wicket-ajax-debug.js"></script>
+<script type="text/javascript" id="wicket-ajax-debug-enable"><!--/*--><![CDATA[/*><!--*/
+wicketAjaxDebugEnable=true;
+/*-->]]>*/</script>
+
+
+ERROR - WebPage                    - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ERROR - RequestCycle               - Intentional error
+java.lang.IllegalStateException: Intentional error
+	at org.apache.wicket.protocol.http.TestErrorPage$1.onAfterRender(TestErrorPage.java:55)
+	at org.apache.wicket.Component.afterRender(Component.java:1016)
+	at org.apache.wicket.Component.renderComponent(Component.java:2542)
+	at org.apache.wicket.ajax.AjaxRequestTarget.respondComponent(AjaxRequestTarget.java:793)
+	at org.apache.wicket.ajax.AjaxRequestTarget.respondComponents(AjaxRequestTarget.java:667)
+	at org.apache.wicket.ajax.AjaxRequestTarget.respond(AjaxRequestTarget.java:579)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.respond(AbstractRequestCycleProcessor.java:105)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1200)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:501)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:504)
+	at org.apache.wicket.util.tester.BaseWicketTester.clickLink(BaseWicketTester.java:693)
+	at org.apache.wicket.util.tester.BaseWicketTester.clickLink(BaseWicketTester.java:638)
+	at org.apache.wicket.protocol.http.WebResponseExceptionsTest.testInternalErrorPage(WebResponseExceptionsTest.java:121)
+	at org.apache.wicket.protocol.http.WebResponseExceptionsTest.testBufferedExceptionErrorPage(WebResponseExceptionsTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+ERROR - WebPage                    - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ERROR - WebPage                    - You probably forgot to add a <body> or <header> tag to your markup since no Header Container was 
+found but components were found which want to write to the <head> section.
+<script type="text/javascript" src="resources/org.apache.wicket.markup.html.WicketEventReference/wicket-event.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/wicket-ajax-debug.js"></script>
+<script type="text/javascript" id="wicket-ajax-debug-enable"><!--/*--><![CDATA[/*><!--*/
+wicketAjaxDebugEnable=true;
+/*-->]]>*/</script>
+
+
+ERROR - WebPage                    - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ERROR - RequestCycle               - Intentional error
+java.lang.IllegalStateException: Intentional error
+	at org.apache.wicket.protocol.http.TestErrorPage$1.onAfterRender(TestErrorPage.java:55)
+	at org.apache.wicket.Component.afterRender(Component.java:1016)
+	at org.apache.wicket.Component.renderComponent(Component.java:2542)
+	at org.apache.wicket.ajax.AjaxRequestTarget.respondComponent(AjaxRequestTarget.java:793)
+	at org.apache.wicket.ajax.AjaxRequestTarget.respondComponents(AjaxRequestTarget.java:667)
+	at org.apache.wicket.ajax.AjaxRequestTarget.respond(AjaxRequestTarget.java:579)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.respond(AbstractRequestCycleProcessor.java:105)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1200)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:501)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:504)
+	at org.apache.wicket.util.tester.BaseWicketTester.executeAjaxEvent(BaseWicketTester.java:1172)
+	at org.apache.wicket.protocol.http.WebResponseExceptionsTest.testInternalErrorPage(WebResponseExceptionsTest.java:107)
+	at org.apache.wicket.protocol.http.WebResponseExceptionsTest.testExceptionErrorPage(WebResponseExceptionsTest.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+ERROR - WebPage                    - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ERROR - WebPage                    - You probably forgot to add a <body> or <header> tag to your markup since no Header Container was 
+found but components were found which want to write to the <head> section.
+<script type="text/javascript" src="resources/org.apache.wicket.markup.html.WicketEventReference/wicket-event.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/wicket-ajax-debug.js"></script>
+<script type="text/javascript" id="wicket-ajax-debug-enable"><!--/*--><![CDATA[/*><!--*/
+wicketAjaxDebugEnable=true;
+/*-->]]>*/</script>
+
+
+ERROR - WebPage                    - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ERROR - RequestCycle               - Intentional error
+java.lang.IllegalStateException: Intentional error
+	at org.apache.wicket.protocol.http.TestErrorPage$1.onAfterRender(TestErrorPage.java:55)
+	at org.apache.wicket.Component.afterRender(Component.java:1016)
+	at org.apache.wicket.Component.renderComponent(Component.java:2542)
+	at org.apache.wicket.ajax.AjaxRequestTarget.respondComponent(AjaxRequestTarget.java:793)
+	at org.apache.wicket.ajax.AjaxRequestTarget.respondComponents(AjaxRequestTarget.java:667)
+	at org.apache.wicket.ajax.AjaxRequestTarget.respond(AjaxRequestTarget.java:579)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.respond(AbstractRequestCycleProcessor.java:105)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1200)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:501)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:504)
+	at org.apache.wicket.util.tester.BaseWicketTester.clickLink(BaseWicketTester.java:693)
+	at org.apache.wicket.util.tester.BaseWicketTester.clickLink(BaseWicketTester.java:638)
+	at org.apache.wicket.protocol.http.WebResponseExceptionsTest.testInternalErrorPage(WebResponseExceptionsTest.java:121)
+	at org.apache.wicket.protocol.http.WebResponseExceptionsTest.testExceptionErrorPage(WebResponseExceptionsTest.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+ERROR - WebPage                    - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ERROR - WebPage                    - You probably forgot to add a <body> or <header> tag to your markup since no Header Container was 
+found but components were found which want to write to the <head> section.
+<script type="text/javascript" src="resources/org.apache.wicket.markup.html.WicketEventReference/wicket-event.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/wicket-ajax-debug.js"></script>
+<script type="text/javascript" id="wicket-ajax-debug-enable"><!--/*--><![CDATA[/*><!--*/
+wicketAjaxDebugEnable=true;
+/*-->]]>*/</script>
+
+
+ERROR - WebPage                    - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ERROR - RequestCycle               - Intentional error
+java.lang.IllegalStateException: Intentional error
+	at org.apache.wicket.protocol.http.TestErrorPage$1.onAfterRender(TestErrorPage.java:55)
+	at org.apache.wicket.Component.afterRender(Component.java:1016)
+	at org.apache.wicket.Component.renderComponent(Component.java:2542)
+	at org.apache.wicket.ajax.AjaxRequestTarget.respondComponent(AjaxRequestTarget.java:793)
+	at org.apache.wicket.ajax.AjaxRequestTarget.respondComponents(AjaxRequestTarget.java:667)
+	at org.apache.wicket.ajax.AjaxRequestTarget.respond(AjaxRequestTarget.java:579)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.respond(AbstractRequestCycleProcessor.java:105)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1200)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:501)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:504)
+	at org.apache.wicket.util.tester.BaseWicketTester.executeAjaxEvent(BaseWicketTester.java:1172)
+	at org.apache.wicket.protocol.http.WebResponseExceptionsTest.testInternalErrorPage(WebResponseExceptionsTest.java:107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+ERROR - WebPage                    - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ERROR - WebPage                    - You probably forgot to add a <body> or <header> tag to your markup since no Header Container was 
+found but components were found which want to write to the <head> section.
+<script type="text/javascript" src="resources/org.apache.wicket.markup.html.WicketEventReference/wicket-event.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/wicket-ajax-debug.js"></script>
+<script type="text/javascript" id="wicket-ajax-debug-enable"><!--/*--><![CDATA[/*><!--*/
+wicketAjaxDebugEnable=true;
+/*-->]]>*/</script>
+
+
+ERROR - WebPage                    - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ERROR - RequestCycle               - Intentional error
+java.lang.IllegalStateException: Intentional error
+	at org.apache.wicket.protocol.http.TestErrorPage$1.onAfterRender(TestErrorPage.java:55)
+	at org.apache.wicket.Component.afterRender(Component.java:1016)
+	at org.apache.wicket.Component.renderComponent(Component.java:2542)
+	at org.apache.wicket.ajax.AjaxRequestTarget.respondComponent(AjaxRequestTarget.java:793)
+	at org.apache.wicket.ajax.AjaxRequestTarget.respondComponents(AjaxRequestTarget.java:667)
+	at org.apache.wicket.ajax.AjaxRequestTarget.respond(AjaxRequestTarget.java:579)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.respond(AbstractRequestCycleProcessor.java:105)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1200)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:501)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:504)
+	at org.apache.wicket.util.tester.BaseWicketTester.clickLink(BaseWicketTester.java:693)
+	at org.apache.wicket.util.tester.BaseWicketTester.clickLink(BaseWicketTester.java:638)
+	at org.apache.wicket.protocol.http.WebResponseExceptionsTest.testInternalErrorPage(WebResponseExceptionsTest.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.apache.wicket.MetaDataTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.markup.html.navigation.paging.PagingNavigationLinkTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.protocol.http.WicketURLTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.util.tester.TagTesterTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.wicket.markup.ComponentCreateTagTest
+=== org.apache.wicket.markup.ComponentCreateTag_1 ===
+=== org.apache.wicket.markup.ComponentCreateTag_2 ===
+=== org.apache.wicket.markup.ComponentCreateTag_3 ===
+=== org.apache.wicket.markup.ComponentCreateTag_4 ===
+=== org.apache.wicket.markup.ComponentCreateTag_6 ===
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec
+Running org.apache.wicket.util.io.WicketOutputStreamTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.apache.wicket.markup.html.link.BookmarkableHomePageLinksTest
+=== org.apache.wicket.markup.html.link.BookmarkableHomePageLinksPage ===
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.wicket.util.time.TimeFrameTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.markup.html.autolink.AutolinkTest
+=== org.apache.wicket.markup.html.autolink.MyPage ===
+=== org.apache.wicket.markup.html.autolink.PageA ===
+=== org.apache.wicket.markup.html.autolink.sub.PageB ===
+=== org.apache.wicket.markup.html.autolink.Index ===
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running org.apache.wicket.resource.loader.ClassStringResourceLoaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.util.tester.apps_5.AjaxLinkClickTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.apache.wicket.DisabledComponentTest
+=== org.apache.wicket.DisabledComponentPage1 ===
+=== org.apache.wicket.DisabledComponentPage1 : link ===
+=== org.apache.wicket.DisabledComponentPage1 ===
+=== org.apache.wicket.DisabledComponentPage2 : link ===
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.apache.wicket.util.lang.PropertyResolverTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running org.apache.wicket.resource.ApplicationStringResourceLoaderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec
+Running org.apache.wicket.markup.html.internal.HtmlHeaderContainerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.util.string.interpolator.PropertyVariableInterpolatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.util.lang.PrimitivesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.util.string.PrependingStringBufferTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.validation.validator.EmailValidatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.ajax.AjaxBehaviorEnabledTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+Running org.apache.wicket.markup.MarkupParserTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.apache.wicket.markup.html.list.IncrementalTableNavigationTest
+=== org.apache.wicket.markup.html.list.IncrementalTableNavigationPage ===
+=== org.apache.wicket.markup.html.list.IncrementalTableNavigationPage : nextNext ===
+=== org.apache.wicket.markup.html.list.IncrementalTableNavigationPage : prev ===
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.apache.wicket.PageMarkupLoadingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.apache.wicket.markup.html.form.encryption.CryptTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Running org.apache.wicket.ParentResourceEscapePathTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.apache.wicket.resource.BundleStringResourceLoaderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.wicket.markup.html.internal.EnclosureTest
+=== org.apache.wicket.markup.html.internal.EnclosurePage_1 ===
+=== org.apache.wicket.markup.html.internal.EnclosurePage_2 ===
+=== org.apache.wicket.markup.html.internal.EnclosurePage_3 ===
+=== org.apache.wicket.markup.html.internal.EnclosurePage_4 ===
+=== org.apache.wicket.markup.html.internal.EnclosurePage_4 ===
+=== org.apache.wicket.markup.html.internal.EnclosurePage_5 ===
+=== org.apache.wicket.markup.html.internal.EnclosurePage_5 ===
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
+Running org.apache.wicket.LocalizerTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running org.apache.wicket.SetResponsePageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.protocol.http.WebResponseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.request.target.coding.StatelessStatefullUrlCodingStrategyTest
+=== org.apache.wicket.request.target.coding.StatelessPage ===
+=== org.apache.wicket.request.target.coding.StatefulPage ===
+=== org.apache.wicket.request.target.coding.StatelessPage ===
+=== org.apache.wicket.request.target.coding.StatefulPage ===
+=== org.apache.wicket.request.target.coding.StatelessPage ===
+=== org.apache.wicket.request.target.coding.StatefulPage ===
+=== org.apache.wicket.request.target.coding.StatelessPage ===
+=== org.apache.wicket.request.target.coding.StatefulPage ===
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec
+Running org.apache.wicket.markup.parser.RelativePathPrefixHandlerTest
+=== org.apache.wicket.markup.parser.Page_1 ===
+=== org.apache.wicket.markup.parser.Page_2 ===
+=== org.apache.wicket.markup.parser.Page_3 ===
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.apache.wicket.CachingDisabledLocalizerTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running org.apache.wicket.ResourceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.markup.html.link.HrefTest
+=== org.apache.wicket.markup.html.link.Href_1 ===
+=== org.apache.wicket.markup.html.link.Href_1 ===
+=== org.apache.wicket.markup.html.link.Href_3 ===
+=== org.apache.wicket.markup.html.link.Href_2 ===
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.apache.wicket.ajax.markup.html.componentMap.SimpleTestPanelTest
+=== org.apache.wicket.ajax.markup.html.componentMap.SimpleTestPage ===
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.apache.wicket.resource.InvalidResourceSpecificationExceptionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.markup.html.basic.HomePageRedirectTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.wicket.ajax.markup.html.ajaxLink.AjaxLinkTest
+=== org.apache.wicket.ajax.markup.html.ajaxLink.AjaxLinkPage ===
+=== org.apache.wicket.ajax.markup.html.ajaxLink.AjaxLinkWithBorderPage ===
+=== org.apache.wicket.ajax.markup.html.ajaxLink.AjaxPage2 : org.apache.wicket.ajax.markup.html.AjaxLink$1@41ed03b2 ===
+=== org.apache.wicket.ajax.markup.html.ajaxLink.AjaxPage2 ===
+=== org.apache.wicket.ajax.markup.html.ajaxLink.AjaxPage2 : org.apache.wicket.ajax.markup.html.AjaxLink$1@6defc379 ===
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.apache.wicket.request.target.coding.IndexedSharedResourceCodingStrategyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.PageParametersTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.request.target.coding.MixedParamUrlCodingStrategyTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.apache.wicket.markup.html.header.testing.HeaderTest
+=== org.apache.wicket.markup.html.header.testing.TestPage ===
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.wicket.TesterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.properties.PropertiesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running org.apache.wicket.util.collections.MicroMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.validation.validator.MinimumValidatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.protocol.http.MockWebApplicationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.apache.wicket.FormDispatchEventTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.apache.wicket.markup.html.SecurePackageResourceGuardTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.apache.wicket.util.tester.apps_4.FormTesterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.apache.wicket.protocol.http.WebRequestTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.resource.loader.PackageStringResourceLoaderTest
+=== org.apache.wicket.resource.loader.pages.Test1 ===
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.apache.wicket.markup.html.form.imagebutton.InvalidImageButtonTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.behavior.AttributeAppenderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.markup.html.list.PagedTableTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.wicket.util.string.StringsTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.util.string.JavascriptStripperTest
+ attr:   /\[((?:[\w-]*:)?[\w-]+)\s*(?:([!^$*~|]?=)\s*((['"])([^\4]*?)\4|([^'"][^\]]*?)))?\]/ after regex
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.markup.resolver.WicketMessageResolverTest
+=== org.apache.wicket.markup.resolver.SimplePage_1 ===
+=== org.apache.wicket.markup.resolver.SimplePage_2 ===
+=== org.apache.wicket.markup.resolver.SimplePage_3 ===
+=== org.apache.wicket.markup.resolver.SimplePage_4 ===
+ERROR - RequestCycle               - Property 'myKey' not found in property files. Markup: [markup = file:/home/ylyu/dataset/wicket3/dataset/wicket/WICKET-1677_01a3dd663aef5f0a2c0ad6cf1bd04543f414bc42/wicket/target/test-classes/org/apache/wicket/markup/resolver/SimplePage_4.html
+<html xmlns:wicket>
+<head></head><body>
+<wicket:message key="myKey"/>
+</body>
+</html>
+, index = 5, current = [Raw markup]]
+org.apache.wicket.WicketRuntimeException: Property 'myKey' not found in property files. Markup: [markup = file:/home/ylyu/dataset/wicket3/dataset/wicket/WICKET-1677_01a3dd663aef5f0a2c0ad6cf1bd04543f414bc42/wicket/target/test-classes/org/apache/wicket/markup/resolver/SimplePage_4.html
+<html xmlns:wicket>
+<head></head><body>
+<wicket:message key="myKey"/>
+</body>
+</html>
+, index = 5, current = [Raw markup]]
+	at org.apache.wicket.markup.resolver.WicketMessageResolver$MessageContainer.onComponentTagBody(WicketMessageResolver.java:217)
+	at org.apache.wicket.Component.renderComponent(Component.java:2596)
+	at org.apache.wicket.MarkupContainer.onRender(MarkupContainer.java:1521)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.MarkupContainer.autoAdd(MarkupContainer.java:229)
+	at org.apache.wicket.markup.resolver.WicketMessageResolver.resolve(WicketMessageResolver.java:148)
+	at org.apache.wicket.MarkupContainer.renderNext(MarkupContainer.java:1426)
+	at org.apache.wicket.MarkupContainer.renderAll(MarkupContainer.java:1537)
+	at org.apache.wicket.Page.onRender(Page.java:1515)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.Page.renderPage(Page.java:919)
+	at org.apache.wicket.request.target.component.BookmarkablePageRequestTarget.respond(BookmarkablePageRequestTarget.java:262)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.respond(AbstractRequestCycleProcessor.java:105)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1200)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:547)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:478)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:390)
+	at org.apache.wicket.util.tester.BaseWicketTester.startPage(BaseWicketTester.java:293)
+	at org.apache.wicket.WicketTestCase.executeTest(WicketTestCase.java:87)
+	at org.apache.wicket.markup.resolver.WicketMessageResolverTest.test_4(WicketMessageResolverTest.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+=== org.apache.wicket.markup.resolver.SimplePage_2 ===
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running org.apache.wicket.protocol.http.pagestore.DiskPageStoreTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 sec
+Running org.apache.wicket.markup.html.form.CheckGroupTest
+=== org.apache.wicket.markup.html.form.CheckGroupTestPage1 ===
+ERROR - DiffUtil                   - File name: CheckGroupTestPage1_expected.html
+ERROR - DiffUtil                   - ===================
+ERROR - DiffUtil                   - <html>
+<head><title>CheckGroupTestPage1</title></head>
+<body>
+    <!--  In addition test that chars are not converted from upper to lower and vice versa -->
+	<FORM wicket:id="form" id="form4" method="post" action="?wicket:interface=:0:form::IFormSubmitListener::"><div style="display:none"><input type="hidden" name="form4_hf_0" id="form4_hf_0" /></div>
+		
+			<Input type="checkbox" wicket:id="check1" id="group1-check12" name="group" value="check1">check1</input>
+			<span wicket:id="container">
+				<input type="checkbox" wicket:id="check2" id="group1-check23" name="group" value="check2">check2</input>
+			</span>
+		
+	</FORM>
+</body>
+</html>
+
+ERROR - DiffUtil                   - ===================
+ERROR - DiffUtil                   - <html>
+<head><title>CheckGroupTestPage1</title></head>
+<body>
+    <!--  In addition test that chars are not converted from upper to lower and vice versa -->
+	<FORM wicket:id="form" id="form1" method="post" action="?wicket:interface=:0:form::IFormSubmitListener::"><div style="display:none"><input type="hidden" name="form1_hf_0" id="form1_hf_0" /></div>
+		
+			<Input type="checkbox" wicket:id="check1" name="group" value="check1">check1</input>
+			<span wicket:id="container">
+				<input type="checkbox" wicket:id="check2" name="group" value="check2">check2</input>
+			</span>
+		
+	</FORM>
+</body>
+</html>
+
+ERROR - DiffUtil                   - ===================
+5c5
+< 	<FORM wicket:id="form" id="form4" method="post" action="?wicket:interface=:0:form::IFormSubmitListener::"><div style="display:none"><input type="hidden" name="form4_hf_0" id="form4_hf_0" /></div>
+---
+> 	<FORM wicket:id="form" id="form1" method="post" action="?wicket:interface=:0:form::IFormSubmitListener::"><div style="display:none"><input type="hidden" name="form1_hf_0" id="form1_hf_0" /></div>
+7c7
+< 			<Input type="checkbox" wicket:id="check1" id="group1-check12" name="group" value="check1">check1</input>
+---
+> 			<Input type="checkbox" wicket:id="check1" name="group" value="check1">check1</input>
+9c9
+< 				<input type="checkbox" wicket:id="check2" id="group1-check23" name="group" value="check2">check2</input>
+---
+> 				<input type="checkbox" wicket:id="check2" name="group" value="check2">check2</input>
+
+=== org.apache.wicket.markup.html.form.CheckGroupDisabledTestPage ===
+ERROR - DiffUtil                   - File name: CheckGroupDisabledTestPage_expected.html
+ERROR - DiffUtil                   - ===================
+ERROR - DiffUtil                   - <html>
+<head><title>CheckGroupTestPage1</title></head>
+<body>
+    <!--  In addition test that chars are not converted from upper to lower and vice versa -->
+	<FORM wicket:id="form" id="form4" method="post" action="?wicket:interface=:0:form::IFormSubmitListener::"><div style="display:none"><input type="hidden" name="form4_hf_0" id="form4_hf_0" /></div>
+		<span wicket:id="group">
+			<Input type="checkbox" wicket:id="check1" id="group1-check12" name="group" value="check1" checked="checked" disabled="disabled">check1</input>
+			<span wicket:id="container">
+				<input type="checkbox" wicket:id="check2" id="group1-check23" name="group" value="check2" checked="checked" disabled="disabled">check2</input>
+			</span>
+		</span>
+	</FORM>
+</body>
+</html>
+
+ERROR - DiffUtil                   - ===================
+ERROR - DiffUtil                   - <html>
+<head><title>CheckGroupTestPage1</title></head>
+<body>
+    <!--  In addition test that chars are not converted from upper to lower and vice versa -->
+	<FORM wicket:id="form" id="form1" method="post" action="?wicket:interface=:0:form::IFormSubmitListener::"><div style="display:none"><input type="hidden" name="form1_hf_0" id="form1_hf_0" /></div>
+		<span wicket:id="group">
+			<Input type="checkbox" wicket:id="check1" name="group" value="check1" checked="checked" disabled="disabled">check1</input>
+			<span wicket:id="container">
+				<input type="checkbox" wicket:id="check2" name="group" value="check2" checked="checked" disabled="disabled">check2</input>
+			</span>
+		</span>
+	</FORM>
+</body>
+</html>
+
+ERROR - DiffUtil                   - ===================
+5c5
+< 	<FORM wicket:id="form" id="form4" method="post" action="?wicket:interface=:0:form::IFormSubmitListener::"><div style="display:none"><input type="hidden" name="form4_hf_0" id="form4_hf_0" /></div>
+---
+> 	<FORM wicket:id="form" id="form1" method="post" action="?wicket:interface=:0:form::IFormSubmitListener::"><div style="display:none"><input type="hidden" name="form1_hf_0" id="form1_hf_0" /></div>
+7c7
+< 			<Input type="checkbox" wicket:id="check1" id="group1-check12" name="group" value="check1" checked="checked" disabled="disabled">check1</input>
+---
+> 			<Input type="checkbox" wicket:id="check1" name="group" value="check1" checked="checked" disabled="disabled">check1</input>
+9c9
+< 				<input type="checkbox" wicket:id="check2" id="group1-check23" name="group" value="check2" checked="checked" disabled="disabled">check2</input>
+---
+> 				<input type="checkbox" wicket:id="check2" name="group" value="check2" checked="checked" disabled="disabled">check2</input>
+
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec <<< FAILURE!
+Running org.apache.wicket.redirect.abort.AbortExceptionTest
+testing good usecase
+testing bad usecase
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.util.lang.BytesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.markup.html.basic.LabelTest
+=== org.apache.wicket.markup.html.basic.LabelWithEscapeMarkupPage ===
+=== org.apache.wicket.markup.html.basic.LabelWithoutEscapeMarkupPage ===
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.wicket.SharedResourceUrlTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.AttributeModifierTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.protocol.http.request.urlcompressing.UrlCompressingWebRequestProcessorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.apache.wicket.util.string.StringListTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.model.ResourceModelTest
+=== org.apache.wicket.model.ResourceModelTest$TestPage ===
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+Running org.apache.wicket.util.tester.WicketTesterTest
+ERROR - RequestCycle               - Access denied to (static) package resource org/apache/wicket/util/tester/BlockedResourceLinkPage.html. See IPackageResourceGuard
+org.apache.wicket.markup.html.PackageResource$PackageResourceBlockedException: Access denied to (static) package resource org/apache/wicket/util/tester/BlockedResourceLinkPage.html. See IPackageResourceGuard
+	at org.apache.wicket.markup.html.PackageResource.<init>(PackageResource.java:506)
+	at org.apache.wicket.markup.html.PackageResource.newPackageResource(PackageResource.java:446)
+	at org.apache.wicket.markup.html.PackageResource.get(PackageResource.java:422)
+	at org.apache.wicket.ResourceReference.newResource(ResourceReference.java:296)
+	at org.apache.wicket.ResourceReference.bind(ResourceReference.java:143)
+	at org.apache.wicket.markup.html.link.ResourceLink.getURL(ResourceLink.java:129)
+	at org.apache.wicket.markup.html.link.Link.onComponentTag(Link.java:405)
+	at org.apache.wicket.Component.renderComponent(Component.java:2567)
+	at org.apache.wicket.MarkupContainer.onRender(MarkupContainer.java:1521)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.MarkupContainer.renderNext(MarkupContainer.java:1399)
+	at org.apache.wicket.MarkupContainer.renderAll(MarkupContainer.java:1537)
+	at org.apache.wicket.Page.onRender(Page.java:1515)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.Page.renderPage(Page.java:919)
+	at org.apache.wicket.request.target.component.BookmarkablePageRequestTarget.respond(BookmarkablePageRequestTarget.java:262)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.respond(AbstractRequestCycleProcessor.java:105)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1200)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:547)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:478)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:390)
+	at org.apache.wicket.util.tester.BaseWicketTester.startPage(BaseWicketTester.java:293)
+	at org.apache.wicket.util.tester.WicketTesterTest.testClickResourceLink(WicketTesterTest.java:566)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+ERROR - onentResourceRequestTarget - error handling resource request for component [MarkupContainer [Component id = link]], on page [Page class = org.apache.wicket.util.tester.MockResourceLinkPage, id = 2, version = 0], listener IResourceListener - null
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.wicket.request.target.resource.ComponentResourceRequestTarget.respond(ComponentResourceRequestTarget.java:69)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.respond(AbstractRequestCycleProcessor.java:105)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1200)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:501)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:504)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:492)
+	at org.apache.wicket.util.tester.BaseWicketTester.executeListener(BaseWicketTester.java:253)
+	at org.apache.wicket.util.tester.BaseWicketTester.clickLink(BaseWicketTester.java:794)
+	at org.apache.wicket.util.tester.BaseWicketTester.clickLink(BaseWicketTester.java:638)
+	at org.apache.wicket.util.tester.WicketTesterTest.testClickResourceLink(WicketTesterTest.java:576)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+Caused by: java.lang.NullPointerException
+	at org.apache.wicket.markup.html.link.ResourceLink.onResourceRequested(ResourceLink.java:108)
+	... 41 more
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.467 sec
+Running org.apache.wicket.markup.html.basic.SimplePageTest
+=== org.apache.wicket.markup.html.basic.SimplePage ===
+=== org.apache.wicket.markup.html.basic.SimplePage_5 ===
+ERROR - RequestCycle               - Markup of type 'html' for component 'org.apache.wicket.markup.html.basic.SimplePage_5' not found. Enable debug messages for org.apache.wicket.util.resource to get a list of all filenames tried.: [Page class = org.apache.wicket.markup.html.basic.SimplePage_5, id = 0, version = 0]
+org.apache.wicket.markup.MarkupNotFoundException: Markup of type 'html' for component 'org.apache.wicket.markup.html.basic.SimplePage_5' not found. Enable debug messages for org.apache.wicket.util.resource to get a list of all filenames tried.: [Page class = org.apache.wicket.markup.html.basic.SimplePage_5, id = 0, version = 0]
+	at org.apache.wicket.markup.MarkupCache.getMarkupStream(MarkupCache.java:226)
+	at org.apache.wicket.MarkupContainer.getAssociatedMarkupStream(MarkupContainer.java:351)
+	at org.apache.wicket.Page.onRender(Page.java:1508)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.Page.renderPage(Page.java:919)
+	at org.apache.wicket.request.target.component.BookmarkablePageRequestTarget.respond(BookmarkablePageRequestTarget.java:262)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.respond(AbstractRequestCycleProcessor.java:105)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1200)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:547)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:478)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:390)
+	at org.apache.wicket.util.tester.BaseWicketTester.startPage(BaseWicketTester.java:293)
+	at org.apache.wicket.WicketTestCase.executeTest(WicketTestCase.java:87)
+	at org.apache.wicket.markup.html.basic.SimplePageTest.testRenderHomePage_5(SimplePageTest.java:313)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+=== org.apache.wicket.markup.html.basic.SimplePage_7 ===
+=== org.apache.wicket.markup.html.basic.SimplePage_8 ===
+ERROR - RequestCycle               - The component [Component id = myLabel] has the same wicket:id as another component already added at the same level
+org.apache.wicket.markup.MarkupException: The component [Component id = myLabel] has the same wicket:id as another component already added at the same level
+	at org.apache.wicket.Page.componentRendered(Page.java:387)
+	at org.apache.wicket.Component.rendered(Component.java:2649)
+	at org.apache.wicket.Component.render(Component.java:2428)
+	at org.apache.wicket.MarkupContainer.renderNext(MarkupContainer.java:1399)
+	at org.apache.wicket.MarkupContainer.renderAll(MarkupContainer.java:1537)
+	at org.apache.wicket.Page.onRender(Page.java:1515)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.Page.renderPage(Page.java:919)
+	at org.apache.wicket.request.target.component.BookmarkablePageRequestTarget.respond(BookmarkablePageRequestTarget.java:262)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.respond(AbstractRequestCycleProcessor.java:105)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1200)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:547)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:478)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:390)
+	at org.apache.wicket.util.tester.BaseWicketTester.startPage(BaseWicketTester.java:293)
+	at org.apache.wicket.WicketTestCase.executeTest(WicketTestCase.java:87)
+	at org.apache.wicket.markup.html.basic.SimplePageTest.testRenderHomePage_8(SimplePageTest.java:357)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+=== org.apache.wicket.markup.html.basic.SimplePage_9 ===
+=== org.apache.wicket.markup.html.basic.SimplePage_10 ===
+=== org.apache.wicket.markup.html.basic.SimplePage_11 ===
+=== org.apache.wicket.markup.html.basic.SimplePage_12 ===
+=== org.apache.wicket.markup.html.basic.SimplePage_13 ===
+=== org.apache.wicket.markup.html.basic.SimplePage_3 ===
+=== org.apache.wicket.markup.html.basic.SimplePage_4 ===
+ERROR - RequestCycle               - Tag '<span>' (line 4, column 3) has a mismatched close tag at '</body>' (line 5, column 1)
+[markup = file:/home/ylyu/dataset/wicket3/dataset/wicket/WICKET-1677_01a3dd663aef5f0a2c0ad6cf1bd04543f414bc42/wicket/target/test-classes/org/apache/wicket/markup/html/basic/SimplePage_4.html
+<html xmlns:wicket>
+<head></head><body>
+  <!--  force a markup exception -->
+  <span>
+</body>
+</html>
+, index = 3, current = [Raw markup]]
+org.apache.wicket.markup.MarkupException: Tag '<span>' (line 4, column 3) has a mismatched close tag at '</body>' (line 5, column 1)
+[markup = file:/home/ylyu/dataset/wicket3/dataset/wicket/WICKET-1677_01a3dd663aef5f0a2c0ad6cf1bd04543f414bc42/wicket/target/test-classes/org/apache/wicket/markup/html/basic/SimplePage_4.html
+<html xmlns:wicket>
+<head></head><body>
+  <!--  force a markup exception -->
+  <span>
+</body>
+</html>
+, index = 3, current = [Raw markup]]
+	at org.apache.wicket.markup.MarkupParser.parseMarkup(MarkupParser.java:395)
+	at org.apache.wicket.markup.MarkupParser.parse(MarkupParser.java:272)
+	at org.apache.wicket.markup.loader.SimpleMarkupLoader.loadMarkup(SimpleMarkupLoader.java:52)
+	at org.apache.wicket.markup.loader.InheritedMarkupMarkupLoader.loadMarkup(InheritedMarkupMarkupLoader.java:62)
+	at org.apache.wicket.markup.loader.DefaultMarkupLoader.loadMarkup(DefaultMarkupLoader.java:55)
+	at org.apache.wicket.markup.MarkupCache.loadMarkup(MarkupCache.java:463)
+	at org.apache.wicket.markup.MarkupCache.loadMarkupAndWatchForChanges(MarkupCache.java:558)
+	at org.apache.wicket.markup.MarkupCache.getMarkup(MarkupCache.java:324)
+	at org.apache.wicket.markup.MarkupCache.getMarkupStream(MarkupCache.java:215)
+	at org.apache.wicket.MarkupContainer.getAssociatedMarkupStream(MarkupContainer.java:351)
+	at org.apache.wicket.Page.onRender(Page.java:1508)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.Page.renderPage(Page.java:919)
+	at org.apache.wicket.request.target.component.BookmarkablePageRequestTarget.respond(BookmarkablePageRequestTarget.java:262)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.respond(AbstractRequestCycleProcessor.java:105)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1200)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:547)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:478)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:390)
+	at org.apache.wicket.util.tester.BaseWicketTester.startPage(BaseWicketTester.java:293)
+	at org.apache.wicket.WicketTestCase.executeTest(WicketTestCase.java:87)
+	at org.apache.wicket.markup.html.basic.SimplePageTest.testRenderHomePage_4(SimplePageTest.java:292)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+Caused by: java.text.ParseException: Tag '<span>' (line 4, column 3) has a mismatched close tag at '</body>' (line 5, column 1)
+	at org.apache.wicket.markup.parser.filter.HtmlHandler.nextTag(HtmlHandler.java:148)
+	at org.apache.wicket.markup.parser.filter.WicketRemoveTagHandler.nextTag(WicketRemoveTagHandler.java:60)
+	at org.apache.wicket.markup.parser.filter.WicketLinkTagHandler.nextTag(WicketLinkTagHandler.java:94)
+	at org.apache.wicket.markup.parser.AbstractMarkupFilter.nextComponentTag(AbstractMarkupFilter.java:82)
+	at org.apache.wicket.markup.parser.filter.WicketNamespaceHandler.nextTag(WicketNamespaceHandler.java:72)
+	at org.apache.wicket.markup.parser.AbstractMarkupFilter.nextComponentTag(AbstractMarkupFilter.java:82)
+	at org.apache.wicket.markup.parser.filter.WicketMessageTagHandler.nextTag(WicketMessageTagHandler.java:81)
+	at org.apache.wicket.markup.parser.AbstractMarkupFilter.nextComponentTag(AbstractMarkupFilter.java:82)
+	at org.apache.wicket.markup.parser.filter.HtmlHeaderSectionHandler.nextTag(HtmlHeaderSectionHandler.java:77)
+	at org.apache.wicket.markup.parser.filter.HeadForceTagIdHandler.nextTag(HeadForceTagIdHandler.java:79)
+	at org.apache.wicket.markup.parser.AbstractMarkupFilter.nextComponentTag(AbstractMarkupFilter.java:82)
+	at org.apache.wicket.markup.parser.filter.OpenCloseTagExpander.nextTag(OpenCloseTagExpander.java:56)
+	at org.apache.wicket.markup.parser.AbstractMarkupFilter.nextComponentTag(AbstractMarkupFilter.java:82)
+	at org.apache.wicket.markup.parser.filter.EnclosureHandler.nextTag(EnclosureHandler.java:76)
+	at org.apache.wicket.markup.parser.filter.RelativePathPrefixHandler.nextTag(RelativePathPrefixHandler.java:116)
+	at org.apache.wicket.markup.MarkupParser.getNextTag(MarkupParser.java:304)
+	at org.apache.wicket.markup.MarkupParser.parseMarkup(MarkupParser.java:324)
+	... 48 more
+=== org.apache.wicket.markup.html.basic.SimplePage_6 ===
+ERROR - RequestCycle               - The wicket:id attribute value must not be empty. May be unmatched quotes?!?
+[markup = file:/home/ylyu/dataset/wicket3/dataset/wicket/WICKET-1677_01a3dd663aef5f0a2c0ad6cf1bd04543f414bc42/wicket/target/test-classes/org/apache/wicket/markup/html/basic/SimplePanel_6.html
+<html xmlns:wicket>
+<body>
+  <wicket:panel>
+	<table>
+	    <!-- Notice that the wicket:id named container is missing its closing quote. -->
+		<tr wicket:id="container>
+			<td>Boom baby ... BOOM!</td>
+		</tr>
+	</table>
+  </wicket:panel>
+</body>
+</html>
+, index = 2, current = [Raw markup]]
+org.apache.wicket.markup.MarkupException: The wicket:id attribute value must not be empty. May be unmatched quotes?!?
+[markup = file:/home/ylyu/dataset/wicket3/dataset/wicket/WICKET-1677_01a3dd663aef5f0a2c0ad6cf1bd04543f414bc42/wicket/target/test-classes/org/apache/wicket/markup/html/basic/SimplePanel_6.html
+<html xmlns:wicket>
+<body>
+  <wicket:panel>
+	<table>
+	    <!-- Notice that the wicket:id named container is missing its closing quote. -->
+		<tr wicket:id="container>
+			<td>Boom baby ... BOOM!</td>
+		</tr>
+	</table>
+  </wicket:panel>
+</body>
+</html>
+, index = 2, current = [Raw markup]]
+	at org.apache.wicket.markup.MarkupParser.parseMarkup(MarkupParser.java:395)
+	at org.apache.wicket.markup.MarkupParser.parse(MarkupParser.java:272)
+	at org.apache.wicket.markup.loader.SimpleMarkupLoader.loadMarkup(SimpleMarkupLoader.java:52)
+	at org.apache.wicket.markup.loader.InheritedMarkupMarkupLoader.loadMarkup(InheritedMarkupMarkupLoader.java:62)
+	at org.apache.wicket.markup.loader.DefaultMarkupLoader.loadMarkup(DefaultMarkupLoader.java:55)
+	at org.apache.wicket.markup.MarkupCache.loadMarkup(MarkupCache.java:463)
+	at org.apache.wicket.markup.MarkupCache.loadMarkupAndWatchForChanges(MarkupCache.java:558)
+	at org.apache.wicket.markup.MarkupCache.getMarkup(MarkupCache.java:324)
+	at org.apache.wicket.markup.MarkupCache.getMarkupStream(MarkupCache.java:215)
+	at org.apache.wicket.MarkupContainer.getAssociatedMarkupStream(MarkupContainer.java:351)
+	at org.apache.wicket.markup.html.ContainerWithAssociatedMarkupHelper.renderHeadFromAssociatedMarkupFile(ContainerWithAssociatedMarkupHelper.java:72)
+	at org.apache.wicket.markup.html.WebMarkupContainerWithAssociatedMarkup.renderHeadFromAssociatedMarkupFile(WebMarkupContainerWithAssociatedMarkup.java:73)
+	at org.apache.wicket.markup.html.panel.Panel.renderHead(Panel.java:137)
+	at org.apache.wicket.markup.html.internal.HtmlHeaderContainer$1.component(HtmlHeaderContainer.java:231)
+	at org.apache.wicket.MarkupContainer.visitChildren(MarkupContainer.java:871)
+	at org.apache.wicket.MarkupContainer.visitChildren(MarkupContainer.java:911)
+	at org.apache.wicket.markup.html.internal.HtmlHeaderContainer.renderHeaderSections(HtmlHeaderContainer.java:222)
+	at org.apache.wicket.markup.html.internal.HtmlHeaderContainer.onComponentTagBody(HtmlHeaderContainer.java:137)
+	at org.apache.wicket.Component.renderComponent(Component.java:2596)
+	at org.apache.wicket.MarkupContainer.onRender(MarkupContainer.java:1521)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.MarkupContainer.autoAdd(MarkupContainer.java:229)
+	at org.apache.wicket.markup.resolver.HtmlHeaderResolver.resolve(HtmlHeaderResolver.java:80)
+	at org.apache.wicket.MarkupContainer.renderNext(MarkupContainer.java:1426)
+	at org.apache.wicket.MarkupContainer.renderAll(MarkupContainer.java:1537)
+	at org.apache.wicket.Page.onRender(Page.java:1515)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.Page.renderPage(Page.java:919)
+	at org.apache.wicket.request.target.component.BookmarkablePageRequestTarget.respond(BookmarkablePageRequestTarget.java:262)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.respond(AbstractRequestCycleProcessor.java:105)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1200)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:547)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:478)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:390)
+	at org.apache.wicket.util.tester.BaseWicketTester.startPage(BaseWicketTester.java:293)
+	at org.apache.wicket.WicketTestCase.executeTest(WicketTestCase.java:87)
+	at org.apache.wicket.markup.html.basic.SimplePageTest.testRenderHomePage_6(SimplePageTest.java:330)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+Caused by: java.text.ParseException: The wicket:id attribute value must not be empty. May be unmatched quotes?!?
+	at org.apache.wicket.markup.parser.filter.WicketTagIdentifier.nextTag(WicketTagIdentifier.java:118)
+	at org.apache.wicket.markup.parser.filter.TagTypeHandler.nextTag(TagTypeHandler.java:76)
+	at org.apache.wicket.markup.parser.filter.HtmlHandler.nextTag(HtmlHandler.java:78)
+	at org.apache.wicket.markup.parser.filter.WicketRemoveTagHandler.nextTag(WicketRemoveTagHandler.java:60)
+	at org.apache.wicket.markup.parser.filter.WicketLinkTagHandler.nextTag(WicketLinkTagHandler.java:94)
+	at org.apache.wicket.markup.parser.AbstractMarkupFilter.nextComponentTag(AbstractMarkupFilter.java:82)
+	at org.apache.wicket.markup.parser.filter.WicketNamespaceHandler.nextTag(WicketNamespaceHandler.java:72)
+	at org.apache.wicket.markup.parser.AbstractMarkupFilter.nextComponentTag(AbstractMarkupFilter.java:82)
+	at org.apache.wicket.markup.parser.filter.WicketMessageTagHandler.nextTag(WicketMessageTagHandler.java:81)
+	at org.apache.wicket.markup.parser.filter.HeadForceTagIdHandler.nextTag(HeadForceTagIdHandler.java:79)
+	at org.apache.wicket.markup.parser.AbstractMarkupFilter.nextComponentTag(AbstractMarkupFilter.java:82)
+	at org.apache.wicket.markup.parser.filter.OpenCloseTagExpander.nextTag(OpenCloseTagExpander.java:56)
+	at org.apache.wicket.markup.parser.AbstractMarkupFilter.nextComponentTag(AbstractMarkupFilter.java:82)
+	at org.apache.wicket.markup.parser.filter.EnclosureHandler.nextTag(EnclosureHandler.java:76)
+	at org.apache.wicket.markup.parser.filter.RelativePathPrefixHandler.nextTag(RelativePathPrefixHandler.java:116)
+	at org.apache.wicket.markup.MarkupParser.getNextTag(MarkupParser.java:304)
+	at org.apache.wicket.markup.MarkupParser.parseMarkup(MarkupParser.java:324)
+	... 63 more
+=== org.apache.wicket.markup.html.basic.SimplePage_14 ===
+=== org.apache.wicket.markup.html.basic.SimplePage_15 ===
+=== org.apache.wicket.markup.html.basic.SimplePage_16 ===
+=== org.apache.wicket.markup.html.basic.SimplePage ===
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.373 sec
+Running org.apache.wicket.markup.html.list.PagedTableNavigatorWithLabelProviderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.233 sec
+Running org.apache.wicket.markup.html.form.DropDownChoiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec
+Running org.apache.wicket.util.size.BytesTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+Running org.apache.wicket.util.io.XmlReaderTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.util.convert.converters.ConvertersTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+Running org.apache.wicket.markup.html.link.AutolinkTest
+=== org.apache.wicket.markup.html.link.AutolinkPage_1 ===
+=== org.apache.wicket.markup.html.link.AutolinkPage_2 ===
+=== org.apache.wicket.markup.html.link.AutolinkPage_3 ===
+=== org.apache.wicket.markup.html.link.AutolinkPage_4 ===
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 sec
+Running org.apache.wicket.markup.html.list.TableTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.markup.html.form.FormSubmitTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.623 sec
+Running org.apache.wicket.request.target.coding.UrlMountingTest
+ERROR - WebRequestCycleProcessor   - Direct access not allowed for mounted targets [request=[method = post, protocol = HTTP/1.1, requestURL = http://localhost/WicketTester$DummyWebApplication?wicket:bookmarkablePage=:org.apache.wicket.request.target.coding.TestPage, contentType = null, contentLength = -1, contextPath = /WicketTester$DummyWebApplication, pathInfo = , requestURI = ?wicket:bookmarkablePage=:org.apache.wicket.request.target.coding.TestPage, servletPath = /WicketTester$DummyWebApplication, pathTranslated = null],target=[BookmarkablePageRequestTarget@1371162998 pageClass=org.apache.wicket.request.target.coding.TestPage],session=org.apache.wicket.protocol.http.WebSession@784fe18c]
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec
+Running org.apache.wicket.markup.html.link.ExternalLinkTest
+=== org.apache.wicket.markup.html.link.ExternalLinkPage_1 ===
+=== org.apache.wicket.markup.html.link.ExternalLinkPage_2 ===
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.wicket.ApplicationSettingsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+Running org.apache.wicket.markup.html.header.threelayers.InheritanceHeadTest
+=== org.apache.wicket.markup.html.header.threelayers.MeldingPage ===
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+Running org.apache.wicket.protocol.http.WebRequestCodingStrategyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.util.time.TimeOfDayTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.MarkupContainerTest
+=== org.apache.wicket.MarkupIdTestPage ===
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+Running org.apache.wicket.ajax.AjaxPreprocessingCallDecoratorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.markup.html.form.PrimitiveTypeRequiredTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.session.DefaultPageFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Running org.apache.wicket.util.parse.metapattern.parsers.IndexedParamTest
+=== org.apache.wicket.util.parse.metapattern.parsers.Page1 ===
+ERROR - Page2                      - test: abc
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.model.ModelToStringTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+Running org.apache.wicket.markup.html.tags.InputTagNotClosedTest
+=== org.apache.wicket.markup.html.tags.InputTagVisibleWebPage ===
+=== org.apache.wicket.markup.html.tags.InputTagNotVisibleWebPage ===
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+Running org.apache.wicket.markup.html.header.testing2.HeaderTest
+=== org.apache.wicket.markup.html.header.testing2.TestExtendedPage ===
+=== org.apache.wicket.markup.html.header.testing2.TestExtendedPage2 ===
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running org.apache.wicket.markup.MarkupInheritanceTest
+=== org.apache.wicket.markup.MarkupInheritanceExtension_1 ===
+=== org.apache.wicket.markup.MarkupInheritanceExtension_2 ===
+=== org.apache.wicket.markup.MarkupInheritanceExtension_1 ===
+=== org.apache.wicket.markup.MarkupInheritanceExtension_5 ===
+=== org.apache.wicket.markup.MarkupInheritanceExtension_7 ===
+=== org.apache.wicket.markup.MarkupInheritanceExtension_8 ===
+=== org.apache.wicket.markup.MarkupInheritancePage_9 ===
+=== org.apache.wicket.markup.MarkupInheritanceExtension_10 ===
+=== org.apache.wicket.markup.MarkupInheritanceExtension_11 ===
+=== org.apache.wicket.markup.MarkupInheritanceExtension_12 ===
+=== org.apache.wicket.markup.MarkupInheritanceExtension_13 ===
+=== org.apache.wicket.markup.MarkupInheritanceExtension_3 ===
+=== org.apache.wicket.markup.MarkupInheritanceExtension_4 ===
+=== org.apache.wicket.markup.MarkupInheritancePage_6 ===
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.308 sec
+Running org.apache.wicket.markup.html.list.PagedTableNavigatorWithMarginTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec
+Running org.apache.wicket.util.crypt.Base64Test
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Running org.apache.wicket.markup.html.form.login.InterceptTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.apache.wicket.session.InvalidateSessionTest
+********************************************************************
+*** WARNING: Wicket is running in DEVELOPMENT mode.              ***
+***                               ^^^^^^^^^^^                    ***
+*** Do NOT deploy to your live server(s) without changing this.  ***
+*** See Application#getConfigurationType() for more information. ***
+********************************************************************
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.util.tester.apps_3.FormTesterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec
+Running org.apache.wicket.markup.html.form.LocalizedErrorMessageTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running org.apache.wicket.markup.html.basic.XmlPageTest
+=== org.apache.wicket.markup.html.basic.XmlPage_1 ===
+=== org.apache.wicket.markup.html.basic.XmlPage_2 ===
+=== org.apache.wicket.markup.html.basic.XmlPage_3 ===
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running org.apache.wicket.protocol.http.FilePageStoreTest
+=== org.apache.wicket.protocol.http.FirstPage ===
+=== org.apache.wicket.protocol.http.SecondPage : link ===
+=== org.apache.wicket.protocol.http.FirstPage ===
+=== org.apache.wicket.protocol.http.SecondPage : link ===
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.227 sec
+Running org.apache.wicket.redirect.RestartWithMountedPageTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.protocol.http.WicketTagPanelTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.wicket.model.StringResourceModelTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running org.apache.wicket.markup.html.list.ListViewTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.util.tester.FormTesterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running org.apache.wicket.response.StringResponseTest
+ERROR - RequestCycle               - Markup of type 'html' for component 'org.apache.wicket.response.BrokenPage' not found. Enable debug messages for org.apache.wicket.util.resource to get a list of all filenames tried.: [Page class = org.apache.wicket.response.BrokenPage, id = 0, version = 0]
+org.apache.wicket.markup.MarkupNotFoundException: Markup of type 'html' for component 'org.apache.wicket.response.BrokenPage' not found. Enable debug messages for org.apache.wicket.util.resource to get a list of all filenames tried.: [Page class = org.apache.wicket.response.BrokenPage, id = 0, version = 0]
+	at org.apache.wicket.markup.MarkupCache.getMarkupStream(MarkupCache.java:226)
+	at org.apache.wicket.MarkupContainer.getAssociatedMarkupStream(MarkupContainer.java:351)
+	at org.apache.wicket.Page.onRender(Page.java:1508)
+	at org.apache.wicket.Component.render(Component.java:2421)
+	at org.apache.wicket.Page.renderPage(Page.java:919)
+	at org.apache.wicket.request.target.component.BookmarkablePageRequestTarget.respond(BookmarkablePageRequestTarget.java:262)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.respond(AbstractRequestCycleProcessor.java:105)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1200)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:547)
+	at org.apache.wicket.response.StringResponseTest.testBrokenPage(StringResponseTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.ajax.form.OnChangeAjaxBehaviorTest
+=== org.apache.wicket.ajax.form.OnChangeAjaxBehaviorTestPage ===
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.apache.wicket.ajax.AjaxRequestTargetTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.apache.wicket.markup.html.image.ImageTest
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+ERROR - SharedResources            - Your path looks like: ../border/test.png
+ERROR - SharedResources            - For security reasons moving up '../' is disabled by default. Please see
+ERROR - SharedResources            - IResourceSettings.getParentFolderPlaceholder() and PackageResourceGuard for more details
+ERROR - SharedResources            - ----------------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running org.apache.wicket.util.time.TimeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.stateless.StatelessFormTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.apache.wicket.stateless.StatelessComponentTest
+=== org.apache.wicket.stateless.StatelessComponentPage ===
+ERROR - RequestCycle               - wanted exception
+org.apache.wicket.WicketRuntimeException: wanted exception
+	at org.apache.wicket.stateless.StatelessComponentPage$1.onClick(StatelessComponentPage.java:41)
+	at org.apache.wicket.markup.html.link.Link.onLinkClicked(Link.java:221)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.wicket.RequestListenerInterface.invoke(RequestListenerInterface.java:182)
+	at org.apache.wicket.request.target.component.BookmarkableListenerInterfaceRequestTarget.processEvents(BookmarkableListenerInterfaceRequestTarget.java:163)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.processEvents(AbstractRequestCycleProcessor.java:92)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1192)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:501)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:504)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:492)
+	at org.apache.wicket.stateless.StatelessComponentTest.testStatelessComponentPage(StatelessComponentTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+=== org.apache.wicket.stateless.StatelessComponentPage ===
+ERROR - RequestCycle               - wanted exception
+org.apache.wicket.WicketRuntimeException: wanted exception
+	at org.apache.wicket.stateless.StatelessComponentPage$1.onClick(StatelessComponentPage.java:41)
+	at org.apache.wicket.markup.html.link.Link.onLinkClicked(Link.java:221)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.wicket.RequestListenerInterface.invoke(RequestListenerInterface.java:182)
+	at org.apache.wicket.request.target.component.BookmarkableListenerInterfaceRequestTarget.processEvents(BookmarkableListenerInterfaceRequestTarget.java:163)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.processEvents(AbstractRequestCycleProcessor.java:92)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1192)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:501)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:504)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:492)
+	at org.apache.wicket.stateless.StatelessComponentTest.testStatelessComponentPageWithMount(StatelessComponentTest.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+=== org.apache.wicket.stateless.StatelessComponentPageWithParams ===
+ERROR - RequestCycle               - wanted exception
+org.apache.wicket.WicketRuntimeException: wanted exception
+	at org.apache.wicket.stateless.StatelessComponentPageWithParams$1.onClick(StatelessComponentPageWithParams.java:47)
+	at org.apache.wicket.markup.html.link.Link.onLinkClicked(Link.java:221)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.wicket.RequestListenerInterface.invoke(RequestListenerInterface.java:182)
+	at org.apache.wicket.request.target.component.BookmarkableListenerInterfaceRequestTarget.processEvents(BookmarkableListenerInterfaceRequestTarget.java:163)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.processEvents(AbstractRequestCycleProcessor.java:92)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1192)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:501)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:504)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:492)
+	at org.apache.wicket.stateless.StatelessComponentTest.testStatelessComponentPageWithParams(StatelessComponentTest.java:107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+=== org.apache.wicket.stateless.StatelessComponentPageWithParams ===
+ERROR - RequestCycle               - wanted exception
+org.apache.wicket.WicketRuntimeException: wanted exception
+	at org.apache.wicket.stateless.StatelessComponentPageWithParams$1.onClick(StatelessComponentPageWithParams.java:47)
+	at org.apache.wicket.markup.html.link.Link.onLinkClicked(Link.java:221)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.wicket.RequestListenerInterface.invoke(RequestListenerInterface.java:182)
+	at org.apache.wicket.request.target.component.BookmarkableListenerInterfaceRequestTarget.processEvents(BookmarkableListenerInterfaceRequestTarget.java:163)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.processEvents(AbstractRequestCycleProcessor.java:92)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1192)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:501)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:504)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:492)
+	at org.apache.wicket.stateless.StatelessComponentTest.testStatelessComponentPageWithParamsWithMount(StatelessComponentTest.java:137)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+=== org.apache.wicket.stateless.StatelessComponentPageWithParams ===
+ERROR - RequestCycle               - wanted exception
+org.apache.wicket.WicketRuntimeException: wanted exception
+	at org.apache.wicket.stateless.StatelessComponentPageWithParams$1.onClick(StatelessComponentPageWithParams.java:47)
+	at org.apache.wicket.markup.html.link.Link.onLinkClicked(Link.java:221)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.wicket.RequestListenerInterface.invoke(RequestListenerInterface.java:182)
+	at org.apache.wicket.request.target.component.BookmarkableListenerInterfaceRequestTarget.processEvents(BookmarkableListenerInterfaceRequestTarget.java:163)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.processEvents(AbstractRequestCycleProcessor.java:92)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1192)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:501)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:504)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:492)
+	at org.apache.wicket.stateless.StatelessComponentTest.testStatelessComponentPageWithParamsWithIndexMount(StatelessComponentTest.java:167)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.apache.wicket.stateless.ImageStatelessTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.markup.parser.XmlPullParserTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.protocol.http.pagestore.PageWindowManagerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.wicket.markup.html.header.inheritance.InheritanceHeadTest
+=== org.apache.wicket.markup.html.header.inheritance.ConcretePage2 ===
+=== org.apache.wicket.markup.html.header.inheritance.ConcretePage2 ===
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.apache.wicket.markup.html.form.FormTest
+=== org.apache.wicket.markup.html.form.FormMethodTestPage ===
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.validation.validator.UrlValidatorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.946 sec
+Running org.apache.wicket.validation.validator.RangeValidatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.resource.loader.ComponentStringResourceLoaderTest
+=== org.apache.wicket.resource.loader.TestPage_1 ===
+ERROR - RequestCycle               - Can't instantiate page using constructor public org.apache.wicket.resource.loader.TestPage_1()
+org.apache.wicket.WicketRuntimeException: Can't instantiate page using constructor public org.apache.wicket.resource.loader.TestPage_1()
+	at org.apache.wicket.session.DefaultPageFactory.newPage(DefaultPageFactory.java:172)
+	at org.apache.wicket.session.DefaultPageFactory.newPage(DefaultPageFactory.java:58)
+	at org.apache.wicket.request.target.component.BookmarkablePageRequestTarget.newPage(BookmarkablePageRequestTarget.java:299)
+	at org.apache.wicket.request.target.component.BookmarkablePageRequestTarget.getPage(BookmarkablePageRequestTarget.java:321)
+	at org.apache.wicket.request.target.component.BookmarkablePageRequestTarget.processEvents(BookmarkablePageRequestTarget.java:234)
+	at org.apache.wicket.request.AbstractRequestCycleProcessor.processEvents(AbstractRequestCycleProcessor.java:92)
+	at org.apache.wicket.RequestCycle.processEventsAndRespond(RequestCycle.java:1192)
+	at org.apache.wicket.RequestCycle.step(RequestCycle.java:1271)
+	at org.apache.wicket.RequestCycle.steps(RequestCycle.java:1370)
+	at org.apache.wicket.RequestCycle.request(RequestCycle.java:547)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:478)
+	at org.apache.wicket.protocol.http.MockWebApplication.processRequestCycle(MockWebApplication.java:390)
+	at org.apache.wicket.util.tester.BaseWicketTester.startPage(BaseWicketTester.java:293)
+	at org.apache.wicket.WicketTestCase.executeTest(WicketTestCase.java:87)
+	at org.apache.wicket.resource.loader.ComponentStringResourceLoaderTest.testRenderHomePage_1(ComponentStringResourceLoaderTest.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:213)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.wicket.session.DefaultPageFactory.newPage(DefaultPageFactory.java:153)
+	... 39 more
+Caused by: org.apache.wicket.WicketRuntimeException: invalid XML properties format
+	at org.apache.wicket.util.io.Streams.loadFromXml(Streams.java:173)
+	at org.apache.wicket.resource.PropertiesFactory$XmlFilePropertiesLoader.loadProperties(PropertiesFactory.java:384)
+	at org.apache.wicket.resource.PropertiesFactory$AbstractPropertiesLoader.load(PropertiesFactory.java:273)
+	at org.apache.wicket.resource.PropertiesFactory.load(PropertiesFactory.java:132)
+	at org.apache.wicket.resource.loader.ComponentStringResourceLoader.loadStringResource(ComponentStringResourceLoader.java:140)
+	at org.apache.wicket.resource.loader.ComponentStringResourceLoader.loadStringResource(ComponentStringResourceLoader.java:258)
+	at org.apache.wicket.Localizer.getStringIgnoreSettings(Localizer.java:239)
+	at org.apache.wicket.Localizer.getString(Localizer.java:311)
+	at org.apache.wicket.Localizer.getString(Localizer.java:118)
+	at org.apache.wicket.Component.getString(Component.java:1869)
+	at org.apache.wicket.Component.getString(Component.java:1856)
+	at org.apache.wicket.resource.loader.TestPage_1.<init>(TestPage_1.java:34)
+	... 44 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 7; Document root element "root", must match DOCTYPE root "null".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.rootElementSpecified(XMLDTDValidator.java:1599)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleStartElement(XMLDTDValidator.java:1877)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(XMLDTDValidator.java:742)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1364)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$ContentDriver.scanRootElementHook(XMLDocumentScannerImpl.java:1295)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3135)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:338)
+	at org.apache.wicket.util.io.Streams.loadFromXml(Streams.java:153)
+	... 55 more
+=== org.apache.wicket.resource.loader.TestPage_1 ===
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.apache.wicket.ajax.AjaxComponentVisibilityTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.validation.validator.MaximumValidatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.ajax.DomReadyOrderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.ComponentTest
+=== org.apache.wicket.TestPage_1 ===
+=== org.apache.wicket.TestDetachPage ===
+=== org.apache.wicket.TestDetachPage ===
+=== org.apache.wicket.TestDetachPage : org.apache.wicket.TestDetachPage$2@7cbf7c56 ===
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.apache.wicket.markup.WicketNamespaceTest
+=== org.apache.wicket.markup.WicketNamespace_1 ===
+=== org.apache.wicket.markup.WicketNamespace_2 ===
+=== org.apache.wicket.markup.WicketNamespace_5 ===
+=== org.apache.wicket.markup.WicketNamespace_3 ===
+=== org.apache.wicket.markup.WicketNamespace_4 ===
+=== org.apache.wicket.markup.WicketNamespace_6 ===
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.apache.wicket.util.license.ApacheLicenceHeaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.367 sec
+
+Results :
+
+Failed tests: 
+  testRendering(org.apache.wicket.markup.html.form.RadioGroupTest)
+  testRadioGroupTestPage3(org.apache.wicket.markup.html.form.RadioGroupTest)
+  testDisabledRadioGroup(org.apache.wicket.markup.html.form.RadioGroupTest)
+  testRendering(org.apache.wicket.markup.html.form.CheckGroupTest)
+  testDisabledCheckGroup(org.apache.wicket.markup.html.form.CheckGroupTest)
+
+Tests run: 763, Failures: 5, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 16.774 s
+[INFO] Finished at: 2016-07-31T11:35:27-07:00
+[INFO] Final Memory: 13M/606M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.4:test (default-test) on project wicket: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-1677_01a3dd663aef5f0a2c0ad6cf1bd04543f414bc42/wicket/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

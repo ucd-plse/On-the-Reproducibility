@@ -1,0 +1,153 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Log4j JUL Adapter 2.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-jul ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ log4j-jul ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-1025_a96b455c4330dae86c1177ce526d09afa3892144/log4j-jul/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ log4j-jul ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.3:manifest (default) @ log4j-jul ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ log4j-jul ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ log4j-jul ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ log4j-jul ---
+[INFO] Surefire report directory: /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-1025_a96b455c4330dae86c1177ce526d09afa3892144/log4j-jul/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.logging.log4j.jul.CallerInformationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.359 sec - in org.apache.logging.log4j.jul.CallerInformationTest
+Running org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest
+Tests run: 9, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec <<< FAILURE! - in org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest
+testCustomJulLevelNearFine(org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest)  Time elapsed: 0.006 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<DEBUG> but was:<null>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest.testCustomJulLevelNearFine(DefaultLevelConverterCustomJulLevelsTest.java:98)
+
+testCustomJulLevelNearInfo(org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<INFO> but was:<null>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest.testCustomJulLevelNearInfo(DefaultLevelConverterCustomJulLevelsTest.java:116)
+
+testCustomJulLevelNearAll(org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<ALL> but was:<null>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest.testCustomJulLevelNearAll(DefaultLevelConverterCustomJulLevelsTest.java:72)
+
+testCustomJulLevelNearOff(org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<OFF> but was:<null>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest.testCustomJulLevelNearOff(DefaultLevelConverterCustomJulLevelsTest.java:143)
+
+testCustomJulLevelNearConfig(org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<CONFIG> but was:<null>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest.testCustomJulLevelNearConfig(DefaultLevelConverterCustomJulLevelsTest.java:107)
+
+testCustomJulLevelNearFinest(org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<FINEST> but was:<null>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest.testCustomJulLevelNearFinest(DefaultLevelConverterCustomJulLevelsTest.java:80)
+
+testCustomJulLevelNearSevere(org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<ERROR> but was:<null>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest.testCustomJulLevelNearSevere(DefaultLevelConverterCustomJulLevelsTest.java:134)
+
+testCustomJulLevelNearFiner(org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<TRACE> but was:<null>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest.testCustomJulLevelNearFiner(DefaultLevelConverterCustomJulLevelsTest.java:89)
+
+testCustomJulLevelNearWarning(org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<WARN> but was:<null>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest.testCustomJulLevelNearWarning(DefaultLevelConverterCustomJulLevelsTest.java:125)
+
+Running org.apache.logging.log4j.jul.ApiLoggerTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.37 sec - in org.apache.logging.log4j.jul.ApiLoggerTest
+Running org.apache.logging.log4j.jul.Log4jLevelTranslatorTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.apache.logging.log4j.jul.Log4jLevelTranslatorTest
+Running org.apache.logging.log4j.jul.CoreLoggerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.379 sec - in org.apache.logging.log4j.jul.CoreLoggerTest
+Running org.apache.logging.log4j.jul.JavaLevelTranslatorTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.apache.logging.log4j.jul.JavaLevelTranslatorTest
+
+Results :
+
+Failed tests: 
+  DefaultLevelConverterCustomJulLevelsTest.testCustomJulLevelNearAll:72 expected:<ALL> but was:<null>
+  DefaultLevelConverterCustomJulLevelsTest.testCustomJulLevelNearConfig:107 expected:<CONFIG> but was:<null>
+  DefaultLevelConverterCustomJulLevelsTest.testCustomJulLevelNearFine:98 expected:<DEBUG> but was:<null>
+  DefaultLevelConverterCustomJulLevelsTest.testCustomJulLevelNearFiner:89 expected:<TRACE> but was:<null>
+  DefaultLevelConverterCustomJulLevelsTest.testCustomJulLevelNearFinest:80 expected:<FINEST> but was:<null>
+  DefaultLevelConverterCustomJulLevelsTest.testCustomJulLevelNearInfo:116 expected:<INFO> but was:<null>
+  DefaultLevelConverterCustomJulLevelsTest.testCustomJulLevelNearOff:143 expected:<OFF> but was:<null>
+  DefaultLevelConverterCustomJulLevelsTest.testCustomJulLevelNearSevere:134 expected:<ERROR> but was:<null>
+  DefaultLevelConverterCustomJulLevelsTest.testCustomJulLevelNearWarning:125 expected:<WARN> but was:<null>
+
+Tests run: 55, Failures: 9, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.924 s
+[INFO] Finished at: 2016-07-16T10:25:12-07:00
+[INFO] Final Memory: 20M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project log4j-jul: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-1025_a96b455c4330dae86c1177ce526d09afa3892144/log4j-jul/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

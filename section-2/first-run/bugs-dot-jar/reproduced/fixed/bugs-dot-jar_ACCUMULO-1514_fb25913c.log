@@ -1,0 +1,807 @@
+[INFO] Scanning for projects...
+[WARNING] The project org.apache.accumulo:accumulo-project:pom:1.6.0-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Accumulo Project                                            [pom]
+[INFO] Trace                                                              [jar]
+[INFO] Fate                                                               [jar]
+[INFO] Start                                                              [jar]
+[INFO] Core                                                               [jar]
+[INFO] Server                                                             [jar]
+[INFO] Simple Examples                                                    [jar]
+[INFO] MiniCluster                                                        [jar]
+[INFO] Accumulo Maven Plugin                                     [maven-plugin]
+[INFO] Testing                                                            [jar]
+[INFO] Proxy                                                              [jar]
+[INFO] Assemblies                                                         [pom]
+[INFO] Documentation                                                      [pom]
+[INFO] 
+[INFO] ----------------< org.apache.accumulo:accumulo-project >----------------
+[INFO] Building Apache Accumulo Project 1.6.0-SNAPSHOT                   [1/13]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-project ---
+[INFO] Verifying file /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-project ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-project ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-project ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-project ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (run-integration-tests) @ accumulo-project ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.10:check (default) @ accumulo-project ---
+[INFO] 63 implicit excludes (use -debug for more details).
+[INFO] No excludes explicitly specified.
+[INFO] 132 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 4 unknown: 4 generated: 0 approved: 124 licence.
+[INFO] 
+[INFO] -----------------< org.apache.accumulo:accumulo-trace >-----------------
+[INFO] Building Trace 1.6.0-SNAPSHOT                                     [2/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-trace ---
+[INFO] Verifying file /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/trace/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-trace ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-trace ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-trace ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/trace/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-trace ---
+[INFO] Compiling 22 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/trace/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-trace ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/trace/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-trace ---
+[INFO] Compiling 3 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/trace/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-trace ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-trace ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/trace/target/accumulo-trace-1.6.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-trace ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-trace ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (run-integration-tests) @ accumulo-trace ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.10:check (default) @ accumulo-trace ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] No excludes explicitly specified.
+[INFO] 28 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 28 licence.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-trace ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/trace/target/accumulo-trace-1.6.0-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-trace/1.6.0-SNAPSHOT/accumulo-trace-1.6.0-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/trace/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-trace/1.6.0-SNAPSHOT/accumulo-trace-1.6.0-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.apache.accumulo:accumulo-fate >------------------
+[INFO] Building Fate 1.6.0-SNAPSHOT                                      [3/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-fate ---
+[INFO] Verifying file /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/fate/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-fate ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-fate ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-fate ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/fate/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-fate ---
+[INFO] Compiling 22 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/fate/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-fate ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-fate ---
+[INFO] Compiling 4 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/fate/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-fate ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-fate ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/fate/target/accumulo-fate-1.6.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-fate ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-fate ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (run-integration-tests) @ accumulo-fate ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.10:check (default) @ accumulo-fate ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] No excludes explicitly specified.
+[INFO] 28 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 28 licence.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-fate ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/fate/target/accumulo-fate-1.6.0-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-fate/1.6.0-SNAPSHOT/accumulo-fate-1.6.0-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/fate/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-fate/1.6.0-SNAPSHOT/accumulo-fate-1.6.0-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.apache.accumulo:accumulo-start >-----------------
+[INFO] Building Start 1.6.0-SNAPSHOT                                     [4/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-start ---
+[INFO] Verifying file /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-start ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-start ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-start ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-start ---
+[INFO] Compiling 19 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-start ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-start ---
+[INFO] Compiling 8 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-start ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-start ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start/target/accumulo-start-1.6.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-start ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-start ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (run-integration-tests) @ accumulo-start ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.10:check (default) @ accumulo-start ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] No excludes explicitly specified.
+[INFO] 37 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 32 licence.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-start ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start/target/accumulo-start-1.6.0-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-start/1.6.0-SNAPSHOT/accumulo-start-1.6.0-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-start/1.6.0-SNAPSHOT/accumulo-start-1.6.0-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.apache.accumulo:accumulo-core >------------------
+[INFO] Building Core 1.6.0-SNAPSHOT                                      [5/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-core ---
+[INFO] Verifying file /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:copy-resources (prepare-filtered-java-source) @ accumulo-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:add-source (add-filtered-java-source) @ accumulo-core ---
+[INFO] Source directory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core/target/filtered-java-src added.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-core ---
+[INFO] Compiling 546 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 7 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-core ---
+[INFO] Compiling 111 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-core ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core/target/accumulo-core-1.6.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-core ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (run-integration-tests) @ accumulo-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.10:check (default) @ accumulo-core ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/test/resources/shelltest.txt
+[INFO] Exclude: src/test/resources/org/apache/accumulo/core/file/rfile/ver_3.rf
+[INFO] Exclude: src/test/resources/org/apache/accumulo/core/file/rfile/ver_4.rf
+[INFO] Exclude: src/test/resources/org/apache/accumulo/core/file/rfile/ver_6.rf
+[INFO] 671 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 671 licence.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-core ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core/target/accumulo-core-1.6.0-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-core/1.6.0-SNAPSHOT/accumulo-core-1.6.0-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-core/1.6.0-SNAPSHOT/accumulo-core-1.6.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ----------------< org.apache.accumulo:accumulo-server >-----------------
+[INFO] Building Server 1.6.0-SNAPSHOT                                    [6/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-server ---
+[INFO] Verifying file /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/server/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-server ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-server ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 68 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-server ---
+[INFO] Compiling 260 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/server/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-server ---
+[INFO] Compiling 30 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/server/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-server ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/server/target/accumulo-server-1.6.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-server ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (run-integration-tests) @ accumulo-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.10:check (default) @ accumulo-server ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/main/resources/web/flot/**/*.js
+[INFO] 351 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 344 licence.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-server ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/server/target/accumulo-server-1.6.0-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-server/1.6.0-SNAPSHOT/accumulo-server-1.6.0-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/server/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-server/1.6.0-SNAPSHOT/accumulo-server-1.6.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------< org.apache.accumulo:accumulo-examples-simple >------------
+[INFO] Building Simple Examples 1.6.0-SNAPSHOT                           [7/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-examples-simple ---
+[INFO] Verifying file /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples/simple/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-examples-simple ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-examples-simple ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-examples-simple ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-examples-simple ---
+[INFO] Compiling 44 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples/simple/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-examples-simple ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-examples-simple ---
+[INFO] Compiling 5 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples/simple/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-examples-simple ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-examples-simple ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples/simple/target/accumulo-examples-simple-1.6.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-examples-simple ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-examples-simple ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (run-integration-tests) @ accumulo-examples-simple ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.10:check (default) @ accumulo-examples-simple ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/main/resources/META-INF/services/org.apache.accumulo.core.util.shell.ShellExtension
+[INFO] 51 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 51 licence.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-examples-simple ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples/simple/target/accumulo-examples-simple-1.6.0-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-examples-simple/1.6.0-SNAPSHOT/accumulo-examples-simple-1.6.0-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples/simple/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-examples-simple/1.6.0-SNAPSHOT/accumulo-examples-simple-1.6.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --------------< org.apache.accumulo:accumulo-minicluster >--------------
+[INFO] Building MiniCluster 1.6.0-SNAPSHOT                               [8/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-minicluster ---
+[INFO] Verifying file /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/minicluster/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-minicluster ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-minicluster ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-minicluster ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/minicluster/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-minicluster ---
+[INFO] Compiling 8 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/minicluster/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-minicluster ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-minicluster ---
+[INFO] Compiling 3 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/minicluster/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-minicluster ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-minicluster ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/minicluster/target/accumulo-minicluster-1.6.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-minicluster ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-minicluster ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (run-integration-tests) @ accumulo-minicluster ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.10:check (default) @ accumulo-minicluster ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] No excludes explicitly specified.
+[INFO] 15 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 14 licence.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-minicluster ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/minicluster/target/accumulo-minicluster-1.6.0-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-minicluster/1.6.0-SNAPSHOT/accumulo-minicluster-1.6.0-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/minicluster/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-minicluster/1.6.0-SNAPSHOT/accumulo-minicluster-1.6.0-SNAPSHOT.pom
+[INFO] 
+[INFO] -------------< org.apache.accumulo:accumulo-maven-plugin >--------------
+[INFO] Building Accumulo Maven Plugin 1.6.0-SNAPSHOT                     [9/13]
+[INFO] ----------------------------[ maven-plugin ]----------------------------
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-maven-plugin ---
+[INFO] Verifying file /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-maven-plugin ---
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.2:helpmojo (help-goal) @ accumulo-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Applying mojo extractor for language: java
+[INFO] Mojo extractor for language: java found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: bsh
+[INFO] Mojo extractor for language: bsh found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: java-annotations
+[INFO] Mojo extractor for language: java-annotations found 0 mojo descriptors.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-maven-plugin ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-maven-plugin ---
+[INFO] Compiling 4 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/classes
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.2:descriptor (default-descriptor) @ accumulo-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Applying mojo extractor for language: java
+[INFO] Mojo extractor for language: java found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: bsh
+[INFO] Mojo extractor for language: bsh found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: java-annotations
+[INFO] Mojo extractor for language: java-annotations found 3 mojo descriptors.
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.2:descriptor (mojo-descriptor) @ accumulo-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Applying mojo extractor for language: java
+[INFO] Mojo extractor for language: java found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: bsh
+[INFO] Mojo extractor for language: bsh found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: java-annotations
+[INFO] Mojo extractor for language: java-annotations found 3 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-maven-plugin ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-maven-plugin ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-maven-plugin ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/accumulo-maven-plugin-1.6.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.2:addPluginArtifactMetadata (default-addPluginArtifactMetadata) @ accumulo-maven-plugin ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-maven-plugin ---
+[INFO] 
+[INFO] --- maven-invoker-plugin:1.7:install (integration-test) @ accumulo-maven-plugin ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/minicluster/pom.xml to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-minicluster/1.6.0-SNAPSHOT/accumulo-minicluster-1.6.0-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/minicluster/target/accumulo-minicluster-1.6.0-SNAPSHOT.jar to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-minicluster/1.6.0-SNAPSHOT/accumulo-minicluster-1.6.0-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/minicluster/pom.xml to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-minicluster/1.6.0-SNAPSHOT/accumulo-minicluster-1.6.0-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/pom.xml to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-project/1.6.0-SNAPSHOT/accumulo-project-1.6.0-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core/pom.xml to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-core/1.6.0-SNAPSHOT/accumulo-core-1.6.0-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core/target/accumulo-core-1.6.0-SNAPSHOT.jar to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-core/1.6.0-SNAPSHOT/accumulo-core-1.6.0-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core/pom.xml to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-core/1.6.0-SNAPSHOT/accumulo-core-1.6.0-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/fate/pom.xml to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-fate/1.6.0-SNAPSHOT/accumulo-fate-1.6.0-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/fate/target/accumulo-fate-1.6.0-SNAPSHOT.jar to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-fate/1.6.0-SNAPSHOT/accumulo-fate-1.6.0-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/fate/pom.xml to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-fate/1.6.0-SNAPSHOT/accumulo-fate-1.6.0-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/trace/pom.xml to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-trace/1.6.0-SNAPSHOT/accumulo-trace-1.6.0-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/trace/target/accumulo-trace-1.6.0-SNAPSHOT.jar to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-trace/1.6.0-SNAPSHOT/accumulo-trace-1.6.0-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/trace/pom.xml to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-trace/1.6.0-SNAPSHOT/accumulo-trace-1.6.0-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/server/pom.xml to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-server/1.6.0-SNAPSHOT/accumulo-server-1.6.0-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/server/target/accumulo-server-1.6.0-SNAPSHOT.jar to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-server/1.6.0-SNAPSHOT/accumulo-server-1.6.0-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/server/pom.xml to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-server/1.6.0-SNAPSHOT/accumulo-server-1.6.0-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start/pom.xml to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-start/1.6.0-SNAPSHOT/accumulo-start-1.6.0-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start/target/accumulo-start-1.6.0-SNAPSHOT.jar to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-start/1.6.0-SNAPSHOT/accumulo-start-1.6.0-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start/pom.xml to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-start/1.6.0-SNAPSHOT/accumulo-start-1.6.0-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/pom.xml to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-maven-plugin/1.6.0-SNAPSHOT/accumulo-maven-plugin-1.6.0-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/accumulo-maven-plugin-1.6.0-SNAPSHOT.jar to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/local-repo/org/apache/accumulo/accumulo-maven-plugin/1.6.0-SNAPSHOT/accumulo-maven-plugin-1.6.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-maven-plugin ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-invoker-plugin:1.7:run (integration-test) @ accumulo-maven-plugin ---
+[INFO] Building: plugin-test/pom.xml
+[INFO] run script postbuild.groovy
+[INFO] ..FAILED (16.3 s)
+[INFO]   The post-build script did not succeed. assert testCreateTable.isFile()
+       |               |
+       |               false
+       /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/maven-plugin/target/it/plugin-test/target/accumulo-maven-plugin/plugin-it-instance/testCreateTablePassed
+[INFO] -------------------------------------------------
+[INFO] Build Summary:
+[INFO]   Passed: 0, Failed: 1, Errors: 0, Skipped: 0
+[INFO] -------------------------------------------------
+[ERROR] The following builds failed:
+[ERROR] *  plugin-test/pom.xml
+[INFO] -------------------------------------------------
+[INFO] 
+[INFO] -----------------< org.apache.accumulo:accumulo-test >------------------
+[INFO] Building Testing 1.6.0-SNAPSHOT                                  [10/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-test ---
+[INFO] Verifying file /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/test/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-test ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-test ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/test/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-test ---
+[INFO] Compiling 150 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/test/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-test ---
+[INFO] Compiling 86 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/test/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-test ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-test ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/test/target/accumulo-test-1.6.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-test ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.7:build-classpath (setup-mini-classpath) @ accumulo-test ---
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (run-mini-for-integration-tests) > validate @ accumulo-test >>>
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-test ---
+[INFO] Verifying file /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/test/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-test ---
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (run-mini-for-integration-tests) < validate @ accumulo-test <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (run-mini-for-integration-tests) @ accumulo-test ---
+Starting MiniAccumuloCluster: testInstance1 in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/test/target/accumulo-maven-plugin/testInstance1
+[WARNING] 
+java.lang.reflect.InvocationTargetException
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:297)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: org.apache.maven.plugin.MojoExecutionException: Unable to start MiniAccumuloCluster
+    at org.apache.accumulo.maven.plugin.StartMojo.execute (StartMojo.java:71)
+    at org.apache.accumulo.maven.plugin.StartMojo.main (StartMojo.java:90)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:297)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: java.lang.RuntimeException: Initialize process returned 1. Check the logs in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/test/target/accumulo-maven-plugin/testInstance1/logs for errors.
+    at org.apache.accumulo.minicluster.MiniAccumuloCluster.start (MiniAccumuloCluster.java:435)
+    at org.apache.accumulo.maven.plugin.StartMojo.execute (StartMojo.java:68)
+    at org.apache.accumulo.maven.plugin.StartMojo.main (StartMojo.java:90)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:297)
+    at java.lang.Thread.run (Thread.java:748)
+[INFO] 
+[INFO] -----------------< org.apache.accumulo:accumulo-proxy >-----------------
+[INFO] Building Proxy 1.6.0-SNAPSHOT                                    [11/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-proxy ---
+[INFO] Verifying file /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/proxy/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-proxy ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-proxy ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-proxy ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/proxy/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-proxy ---
+[INFO] Compiling 42 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/proxy/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-proxy ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-proxy ---
+[INFO] Compiling 5 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/proxy/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-proxy ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-proxy ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/proxy/target/accumulo-proxy-1.6.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-proxy ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-proxy ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (run-integration-tests) @ accumulo-proxy ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.10:check (default) @ accumulo-proxy ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] No excludes explicitly specified.
+[INFO] 57 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 54 licence.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-proxy ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/proxy/target/accumulo-proxy-1.6.0-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-proxy/1.6.0-SNAPSHOT/accumulo-proxy-1.6.0-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/proxy/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-proxy/1.6.0-SNAPSHOT/accumulo-proxy-1.6.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --------------------< org.apache.accumulo:accumulo >--------------------
+[INFO] Building Assemblies 1.6.0-SNAPSHOT                               [12/13]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo ---
+[INFO] Verifying file /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/assemble/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo ---
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.2.1:single (directory-assembly) @ accumulo ---
+[INFO] Reading assembly descriptor: src/main/assemblies/dev-directory.xml
+[WARNING] The following patterns were never triggered in this artifact exclusion filter:
+o  'org.apache.accumulo:accumulo-docs'
+
+[WARNING] The following patterns were never triggered in this artifact inclusion filter:
+o  'org.apache.accumulo:accumulo-docs'
+
+[INFO] Copying files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/assemble/target/accumulo-1.6.0-SNAPSHOT-dev
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (run-integration-tests) @ accumulo ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.10:check (default) @ accumulo ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] No excludes explicitly specified.
+[INFO] 33 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 33 licence.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/assemble/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo/1.6.0-SNAPSHOT/accumulo-1.6.0-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.apache.accumulo:accumulo-docs >------------------
+[INFO] Building Documentation 1.6.0-SNAPSHOT                            [13/13]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-docs ---
+[INFO] Verifying file /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/docs/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-docs ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-docs ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-docs ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-docs ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (run-integration-tests) @ accumulo-docs ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.10:check (default) @ accumulo-docs ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] No excludes explicitly specified.
+[INFO] 21 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 15 licence.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-docs ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/docs/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-docs/1.6.0-SNAPSHOT/accumulo-docs-1.6.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Apache Accumulo Project 1.6.0-SNAPSHOT ............. FAILURE [  1.902 s]
+[INFO] Trace .............................................. SUCCESS [  1.765 s]
+[INFO] Fate ............................................... SUCCESS [  0.491 s]
+[INFO] Start .............................................. SUCCESS [  2.000 s]
+[INFO] Core ............................................... SUCCESS [  6.347 s]
+[INFO] Server ............................................. SUCCESS [  2.379 s]
+[INFO] Simple Examples .................................... SUCCESS [  0.587 s]
+[INFO] MiniCluster ........................................ SUCCESS [  1.189 s]
+[INFO] Accumulo Maven Plugin .............................. FAILURE [ 24.461 s]
+[INFO] Testing ............................................ FAILURE [  5.867 s]
+[INFO] Proxy .............................................. SUCCESS [  3.334 s]
+[INFO] Assemblies ......................................... SUCCESS [  4.936 s]
+[INFO] Documentation 1.6.0-SNAPSHOT ....................... SUCCESS [  0.041 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 55.708 s
+[INFO] Finished at: 2022-07-15T14:06:19-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.rat:apache-rat-plugin:0.10:check (default) on project accumulo-project: Too many files with unapproved license: 4 See RAT report in: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/target/rat.txt -> [Help 1]
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-invoker-plugin:1.7:run (integration-test) on project accumulo-maven-plugin: 1 build failed. See console output above for details. -> [Help 1]
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:1.2.1:java (run-mini-for-integration-tests) on project accumulo-test: An exception occured while executing the Java class. null: InvocationTargetException: Unable to start MiniAccumuloCluster: Initialize process returned 1. Check the logs in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/test/target/accumulo-maven-plugin/testInstance1/logs for errors. -> [Help 2]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Build failures were ignored.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.apache.accumulo:accumulo-start >-----------------
+[INFO] Building Start 1.6.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-start ---
+[INFO] Verifying file /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-start ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-start ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-start ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-start ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-start ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-start ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-start ---
+[INFO] Surefire report directory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.start.MainTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.21 sec
+Running org.apache.accumulo.start.classloader.vfs.AccumuloReloadingVFSClassLoaderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.244 sec
+Running org.apache.accumulo.start.classloader.vfs.AccumuloVFSClassLoaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.076 sec
+Running org.apache.accumulo.start.classloader.vfs.ContextManagerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.222 sec
+Running org.apache.accumulo.start.classloader.vfs.providers.ReadOnlyHdfsFileProviderTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.565 sec
+Running org.apache.accumulo.start.classloader.vfs.providers.VfsClassLoaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.361 sec
+
+Results :
+
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 29.659 s
+[INFO] Finished at: 2022-07-15T14:06:50-07:00
+[INFO] ------------------------------------------------------------------------

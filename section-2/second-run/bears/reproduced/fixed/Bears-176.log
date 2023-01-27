@@ -1,0 +1,836 @@
+Apache Maven 3.6.3
+Maven home: /usr/share/maven
+Java version: 1.8.0_312, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.15.0-41-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Zipkin (Parent)                                                    [pom]
+[INFO] Zipkin v2                                                          [jar]
+[INFO] Zipkin                                                             [jar]
+[INFO] Zipkin UI                                                          [jar]
+[INFO] Zipkin JUnit                                                       [jar]
+[INFO] Guava support library                                              [jar]
+[INFO] Auto Configuration                                                 [pom]
+[INFO] Auto Configuration: Ui                                             [jar]
+[INFO] Storage                                                            [pom]
+[INFO] Storage: Cassandra                                                 [jar]
+[INFO] Auto Configuration: Cassandra Storage                              [jar]
+[INFO] Storage: Cassandra (Zipkin V2)                                     [jar]
+[INFO] Auto Configuration: Cassandra 3 Storage                            [jar]
+[INFO] Storage: Elasticsearch (V2)                                        [jar]
+[INFO] Storage: Elasticsearch (HTTP)                                      [jar]
+[INFO] Auto Configuration: Elasticsearch Storage (HTTP)                   [jar]
+[INFO] Auto Configuration: Elasticsearch Storage (AWS)                    [jar]
+[INFO] Storage: MySQL                                                     [jar]
+[INFO] Auto Configuration: MySQL Storage                                  [jar]
+[INFO] Zipkin Collectors                                                  [pom]
+[INFO] Collector: Kafka                                                   [jar]
+[INFO] Auto Configuration: Kafka Collector                                [jar]
+[INFO] Collector: RabbitMQ                                                [jar]
+[INFO] Auto Configuration: RabbitMQ Collector                             [jar]
+[INFO] Collector: Scribe                                                  [jar]
+[INFO] Auto Configuration: Scribe Collector                               [jar]
+[INFO] Auto Configuration: Prometheus Metrics                             [jar]
+[INFO] Zipkin Server                                                      [jar]
+[INFO] Benchmarks                                                         [jar]
+[INFO] ZooKeeper support library                                          [jar]
+[INFO] Collector: Kafka 0.10+                                             [jar]
+[INFO] Auto Configuration: Kafka 0.10 Collector                           [jar]
+[INFO] 
+[INFO] -----------------------< io.zipkin.java:parent >------------------------
+[INFO] Building Zipkin (Parent) 2.4.5-SNAPSHOT                           [1/32]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ parent ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ parent ---
+[INFO] 
+[INFO] --- retrolambda-maven-plugin:2.5.3:process-main (default) @ parent ---
+[INFO] Retrieving Retrolambda 2.5.3
+[INFO] Configured Artifact: net.orfjackal.retrolambda:retrolambda:2.5.3:jar
+[INFO] Copying retrolambda-2.5.3.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/target/retrolambda/retrolambda.jar
+[INFO] Processing classes with Retrolambda
+[INFO] Executing tasks
+
+main:
+     [exec] Retrolambda 2.5.3
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (default) @ parent ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] ----------------------< io.zipkin.zipkin2:zipkin >----------------------
+[INFO] Building Zipkin v2 2.4.5-SNAPSHOT                                 [2/32]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ zipkin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ zipkin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin2/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ zipkin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ zipkin ---
+[INFO] 
+[INFO] --- retrolambda-maven-plugin:2.5.3:process-main (default) @ zipkin ---
+[INFO] Retrieving Retrolambda 2.5.3
+[INFO] Configured Artifact: net.orfjackal.retrolambda:retrolambda:2.5.3:jar
+[INFO] Copying retrolambda-2.5.3.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin2/target/retrolambda/retrolambda.jar
+[INFO] Processing classes with Retrolambda
+[INFO] Executing tasks
+
+main:
+     [exec] Retrolambda 2.5.3
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (default) @ zipkin ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.4.0:manifest (default) @ zipkin ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ zipkin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin2/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ zipkin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ zipkin ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running zipkin2.internal.JsonCodecTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in zipkin2.internal.JsonCodecTest
+[INFO] Running zipkin2.internal.JsonEscaperTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in zipkin2.internal.JsonEscaperTest
+[INFO] Running zipkin2.internal.V2SpanWriterTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in zipkin2.internal.V2SpanWriterTest
+[INFO] Running zipkin2.internal.PlatformTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.574 s - in zipkin2.internal.PlatformTest
+[INFO] Running zipkin2.internal.DependencyLinkerTest
+[INFO] Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in zipkin2.internal.DependencyLinkerTest
+[INFO] Running zipkin2.internal.NodeTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in zipkin2.internal.NodeTest
+[INFO] Running zipkin2.internal.V1SpanWriterTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in zipkin2.internal.V1SpanWriterTest
+[INFO] Running zipkin2.internal.BufferTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 s - in zipkin2.internal.BufferTest
+[INFO] Running zipkin2.AnnotationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in zipkin2.AnnotationTest
+[INFO] Running zipkin2.SpanTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in zipkin2.SpanTest
+[INFO] Running zipkin2.CallTest
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 s - in zipkin2.CallTest
+[INFO] Running zipkin2.storage.InMemoryStorageTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in zipkin2.storage.InMemoryStorageTest
+[INFO] Running zipkin2.storage.QueryRequestTest
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in zipkin2.storage.QueryRequestTest
+[INFO] Running zipkin2.EndpointTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in zipkin2.EndpointTest
+[INFO] Running zipkin2.codec.EncodingTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in zipkin2.codec.EncodingTest
+[INFO] Running zipkin2.codec.KryoTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in zipkin2.codec.KryoTest
+[INFO] Running zipkin2.codec.SpanBytesEncoderTest
+[INFO] Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in zipkin2.codec.SpanBytesEncoderTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 212, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] -----------------------< io.zipkin.java:zipkin >------------------------
+[INFO] Building Zipkin 2.4.5-SNAPSHOT                                    [3/32]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ zipkin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ zipkin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ zipkin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ zipkin ---
+[INFO] 
+[INFO] --- retrolambda-maven-plugin:2.5.3:process-main (default) @ zipkin ---
+[INFO] Retrieving Retrolambda 2.5.3
+[INFO] Configured Artifact: net.orfjackal.retrolambda:retrolambda:2.5.3:jar
+[INFO] Copying retrolambda-2.5.3.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin/target/retrolambda/retrolambda.jar
+[INFO] Processing classes with Retrolambda
+[INFO] Executing tasks
+
+main:
+     [exec] Retrolambda 2.5.3
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (default) @ zipkin ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.4.0:manifest (default) @ zipkin ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ zipkin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ zipkin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ zipkin ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running zipkin.internal.JsonCodecTest
+[INFO] Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.372 s - in zipkin.internal.JsonCodecTest
+[INFO] Running zipkin.internal.UtilTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in zipkin.internal.UtilTest
+[INFO] Running zipkin.internal.DependenciesTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in zipkin.internal.DependenciesTest
+[INFO] Running zipkin.internal.CorrectForClockSkewTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in zipkin.internal.CorrectForClockSkewTest
+[INFO] Running zipkin.internal.ThriftCodecTest
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 s - in zipkin.internal.ThriftCodecTest
+[INFO] Running zipkin.internal.V2SpanStoreAdapterTest
+[INFO] Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.477 s - in zipkin.internal.V2SpanStoreAdapterTest
+[INFO] Running zipkin.internal.DetectingSpanDecoderTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in zipkin.internal.DetectingSpanDecoderTest
+[INFO] Running zipkin.internal.V2SpanConverterTest
+[INFO] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in zipkin.internal.V2SpanConverterTest
+[INFO] Running zipkin.internal.V2SpanConsumerAdapterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in zipkin.internal.V2SpanConsumerAdapterTest
+[INFO] Running zipkin.internal.LenientDoubleCallbackAsyncSpanStoreTest
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 s - in zipkin.internal.LenientDoubleCallbackAsyncSpanStoreTest
+[INFO] Running zipkin.internal.V2JsonSpanDecoderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in zipkin.internal.V2JsonSpanDecoderTest
+[INFO] Running zipkin.internal.LazyTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in zipkin.internal.LazyTest
+[INFO] Running zipkin.internal.CallbackCaptorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in zipkin.internal.CallbackCaptorTest
+[INFO] Running zipkin.internal.ApplyTimestampAndDurationTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in zipkin.internal.ApplyTimestampAndDurationTest
+[INFO] Running zipkin.internal.PeekingIteratorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in zipkin.internal.PeekingIteratorTest
+[INFO] Running zipkin.internal.GroupByTraceIdTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in zipkin.internal.GroupByTraceIdTest
+[INFO] Running zipkin.internal.CollectorTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.231 s - in zipkin.internal.CollectorTest
+[INFO] Running zipkin.internal.LazyCloseableTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.009 s - in zipkin.internal.LazyCloseableTest
+[INFO] Running zipkin.internal.LenientDoubleCallbackTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in zipkin.internal.LenientDoubleCallbackTest
+[INFO] Running zipkin.internal.BufferTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 s - in zipkin.internal.BufferTest
+[INFO] Running zipkin.AnnotationTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in zipkin.AnnotationTest
+[INFO] Running zipkin.DependencyLinkTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in zipkin.DependencyLinkTest
+[INFO] Running zipkin.SpanTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in zipkin.SpanTest
+[INFO] Running zipkin.BinaryAnnotationTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in zipkin.BinaryAnnotationTest
+[INFO] Running zipkin.collector.CollectorSamplerTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 s - in zipkin.collector.CollectorSamplerTest
+[INFO] Running zipkin.collector.CollectorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s - in zipkin.collector.CollectorTest
+[INFO] Running zipkin.storage.InMemorySpanStoreTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in zipkin.storage.InMemorySpanStoreTest
+[INFO] Running zipkin.storage.InternalBlockingToAsyncSpanConsumerAdapterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in zipkin.storage.InternalBlockingToAsyncSpanConsumerAdapterTest
+[INFO] Running zipkin.storage.QueryRequestTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in zipkin.storage.QueryRequestTest
+[INFO] Running zipkin.storage.InternalAsyncToBlockingSpanStoreAdapterTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in zipkin.storage.InternalAsyncToBlockingSpanStoreAdapterTest
+[INFO] Running zipkin.storage.InternalBlockingToAsyncSpanStoreAdapterTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in zipkin.storage.InternalBlockingToAsyncSpanStoreAdapterTest
+[INFO] Running zipkin.EndpointTest
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in zipkin.EndpointTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 366, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ----------------------< io.zipkin.java:zipkin-ui >----------------------
+[INFO] Building Zipkin UI 2.4.5-SNAPSHOT                                 [4/32]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ zipkin-ui ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- frontend-maven-plugin:1.6:install-node-and-npm (install node and npm) @ zipkin-ui ---
+[INFO] Node v6.9.2 is already installed.
+[INFO] 
+[INFO] --- frontend-maven-plugin:1.6:npm (npm install) @ zipkin-ui ---
+[INFO] Skipping execution.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ zipkin-ui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin-ui/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ zipkin-ui ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- frontend-maven-plugin:1.6:npm (npm lint) @ zipkin-ui ---
+[INFO] Skipping execution.
+[INFO] 
+[INFO] --- frontend-maven-plugin:1.6:npm (npm run build) @ zipkin-ui ---
+[INFO] Skipping execution.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (default) @ zipkin-ui ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ zipkin-ui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin-ui/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ zipkin-ui ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ zipkin-ui ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- frontend-maven-plugin:1.6:npm (npm run test) @ zipkin-ui ---
+[INFO] Skipping execution.
+[INFO] 
+[INFO] --------------------< io.zipkin.java:zipkin-junit >---------------------
+[INFO] Building Zipkin JUnit 2.4.5-SNAPSHOT                              [5/32]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ zipkin-junit ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ zipkin-junit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin-junit/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ zipkin-junit ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ zipkin-junit ---
+[INFO] 
+[INFO] --- retrolambda-maven-plugin:2.5.3:process-main (default) @ zipkin-junit ---
+[INFO] Retrieving Retrolambda 2.5.3
+[INFO] Configured Artifact: net.orfjackal.retrolambda:retrolambda:2.5.3:jar
+[INFO] Copying retrolambda-2.5.3.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin-junit/target/retrolambda/retrolambda.jar
+[INFO] Processing classes with Retrolambda
+[INFO] Executing tasks
+
+main:
+     [exec] Retrolambda 2.5.3
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (default) @ zipkin-junit ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ zipkin-junit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin-junit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ zipkin-junit ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ zipkin-junit ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running zipkin.junit.ZipkinRuleTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.73 s - in zipkin.junit.ZipkinRuleTest
+[INFO] Running zipkin.junit.ZipkinDispatcherTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in zipkin.junit.ZipkinDispatcherTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --------------------< io.zipkin.java:zipkin-guava >---------------------
+[INFO] Building Guava support library 2.4.5-SNAPSHOT                     [6/32]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ zipkin-guava ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ zipkin-guava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin-guava/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ zipkin-guava ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ zipkin-guava ---
+[INFO] 
+[INFO] --- retrolambda-maven-plugin:2.5.3:process-main (default) @ zipkin-guava ---
+[INFO] Retrieving Retrolambda 2.5.3
+[INFO] Configured Artifact: net.orfjackal.retrolambda:retrolambda:2.5.3:jar
+[INFO] Copying retrolambda-2.5.3.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin-guava/target/retrolambda/retrolambda.jar
+[INFO] Processing classes with Retrolambda
+[INFO] Executing tasks
+
+main:
+     [exec] Retrolambda 2.5.3
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (default) @ zipkin-guava ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ zipkin-guava ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin-guava/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ zipkin-guava ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ zipkin-guava ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running zipkin.storage.guava.InternalGuavaSpanStoreAdapterTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.52 s - in zipkin.storage.guava.InternalGuavaSpanStoreAdapterTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ----------------< io.zipkin.java:zipkin-autoconfigure >-----------------
+[INFO] Building Auto Configuration 2.4.5-SNAPSHOT                        [7/32]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ zipkin-autoconfigure ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ zipkin-autoconfigure ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ zipkin-autoconfigure ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (default) @ zipkin-autoconfigure ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] ---------------< io.zipkin.java:zipkin-autoconfigure-ui >---------------
+[INFO] Building Auto Configuration: Ui 2.4.5-SNAPSHOT                    [8/32]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ zipkin-autoconfigure-ui ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ zipkin-autoconfigure-ui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ zipkin-autoconfigure-ui ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ zipkin-autoconfigure-ui ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (default) @ zipkin-autoconfigure-ui ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ zipkin-autoconfigure-ui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ zipkin-autoconfigure-ui ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ zipkin-autoconfigure-ui ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running zipkin.autoconfigure.ui.ZipkinUiAutoConfigurationTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.437 s - in zipkin.autoconfigure.ui.ZipkinUiAutoConfigurationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] -------------------< io.zipkin.java:zipkin-storage >--------------------
+[INFO] Building Storage 2.4.5-SNAPSHOT                                   [9/32]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ zipkin-storage ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ zipkin-storage ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ zipkin-storage ---
+[INFO] 
+[INFO] --- retrolambda-maven-plugin:2.5.3:process-main (default) @ zipkin-storage ---
+[INFO] Retrieving Retrolambda 2.5.3
+[INFO] Configured Artifact: net.orfjackal.retrolambda:retrolambda:2.5.3:jar
+[INFO] Copying retrolambda-2.5.3.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin-storage/target/retrolambda/retrolambda.jar
+[INFO] Processing classes with Retrolambda
+[INFO] Executing tasks
+
+main:
+     [exec] Retrolambda 2.5.3
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (default) @ zipkin-storage ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --------------< io.zipkin.java:zipkin-storage-cassandra >---------------
+[INFO] Building Storage: Cassandra 2.4.5-SNAPSHOT                       [10/32]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ zipkin-storage-cassandra ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ zipkin-storage-cassandra ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ zipkin-storage-cassandra ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ zipkin-storage-cassandra ---
+[INFO] 
+[INFO] --- retrolambda-maven-plugin:2.5.3:process-main (default) @ zipkin-storage-cassandra ---
+[INFO] Retrieving Retrolambda 2.5.3
+[INFO] Configured Artifact: net.orfjackal.retrolambda:retrolambda:2.5.3:jar
+[INFO] Copying retrolambda-2.5.3.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin-storage/cassandra/target/retrolambda/retrolambda.jar
+[INFO] Processing classes with Retrolambda
+[INFO] Executing tasks
+
+main:
+     [exec] Retrolambda 2.5.3
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (default) @ zipkin-storage-cassandra ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ zipkin-storage-cassandra ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ zipkin-storage-cassandra ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ zipkin-storage-cassandra ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running zipkin.storage.cassandra.CassandraStorageTest
+17:55:50.292 [main] INFO  c.d.driver.core.GuavaCompatibility - Detected Guava >= 19 in the classpath, using modern compatibility layer
+17:55:50.510 [main] INFO  c.datastax.driver.core.ClockFactory - Using native clock to generate timestamps.
+17:55:50.611 [main] INFO  com.datastax.driver.core.NettyUtil - Did not find Netty's native epoll transport in the classpath, defaulting to NIO.
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.204 s - in zipkin.storage.cassandra.CassandraStorageTest
+[INFO] Running zipkin.storage.cassandra.IndexerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in zipkin.storage.cassandra.IndexerTest
+[INFO] Running zipkin.storage.cassandra.DeduplicatingExecutorTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.555 s - in zipkin.storage.cassandra.DeduplicatingExecutorTest
+[INFO] Running zipkin.storage.cassandra.SessionFactoryTest
+17:55:59.876 [main] INFO  c.datastax.driver.core.ClockFactory - Using native clock to generate timestamps.
+17:55:59.881 [main] INFO  c.datastax.driver.core.ClockFactory - Using native clock to generate timestamps.
+17:55:59.893 [main] INFO  c.d.d.c.p.DCAwareRoundRobinPolicy - Using provided data-center name 'bar' for DCAwareRoundRobinPolicy
+17:55:59.895 [main] WARN  c.d.d.c.p.DCAwareRoundRobinPolicy - Some contact points don't match local data center. Local DC = bar. Non-conforming contact points: Mock for Host, hashCode: 589987187 (foo)
+17:55:59.896 [main] INFO  c.datastax.driver.core.ClockFactory - Using native clock to generate timestamps.
+17:55:59.897 [main] INFO  c.datastax.driver.core.ClockFactory - Using native clock to generate timestamps.
+17:55:59.899 [main] INFO  c.datastax.driver.core.ClockFactory - Using native clock to generate timestamps.
+17:55:59.900 [main] INFO  c.datastax.driver.core.ClockFactory - Using native clock to generate timestamps.
+17:55:59.901 [main] INFO  c.datastax.driver.core.ClockFactory - Using native clock to generate timestamps.
+17:55:59.902 [main] INFO  c.datastax.driver.core.ClockFactory - Using native clock to generate timestamps.
+17:55:59.904 [main] INFO  c.datastax.driver.core.ClockFactory - Using native clock to generate timestamps.
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s - in zipkin.storage.cassandra.SessionFactoryTest
+[INFO] Running zipkin.storage.cassandra.CassandraUtilTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.23 s - in zipkin.storage.cassandra.CassandraUtilTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] -------< io.zipkin.java:zipkin-autoconfigure-storage-cassandra >--------
+[INFO] Building Auto Configuration: Cassandra Storage 2.4.5-SNAPSHOT    [11/32]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ zipkin-autoconfigure-storage-cassandra ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ zipkin-autoconfigure-storage-cassandra ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ zipkin-autoconfigure-storage-cassandra ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ zipkin-autoconfigure-storage-cassandra ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (default) @ zipkin-autoconfigure-storage-cassandra ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ zipkin-autoconfigure-storage-cassandra ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin-autoconfigure/storage-cassandra/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ zipkin-autoconfigure-storage-cassandra ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ zipkin-autoconfigure-storage-cassandra ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running zipkin.storage.cassandra.ZipkinCassandraStorageAutoConfigurationTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.978 s - in zipkin.storage.cassandra.ZipkinCassandraStorageAutoConfigurationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] -------------< io.zipkin.zipkin2:zipkin-storage-cassandra >-------------
+[INFO] Building Storage: Cassandra (Zipkin V2) 2.4.5-SNAPSHOT           [12/32]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ zipkin-storage-cassandra ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ zipkin-storage-cassandra ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ zipkin-storage-cassandra ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ zipkin-storage-cassandra ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (default) @ zipkin-storage-cassandra ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ zipkin-storage-cassandra ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ zipkin-storage-cassandra ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ zipkin-storage-cassandra ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running zipkin2.storage.cassandra.CassandraSpanConsumerTest
+17:56:04.335 [main] INFO  c.d.driver.core.GuavaCompatibility - Detected Guava >= 19 in the classpath, using modern compatibility layer
+17:56:04.873 [main] INFO  com.datastax.driver.core.utils.UUIDs - PID obtained through native call to getpid(): 724535
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.898 s - in zipkin2.storage.cassandra.CassandraSpanConsumerTest
+[INFO] Running zipkin2.storage.cassandra.CassandraSpanStoreTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in zipkin2.storage.cassandra.CassandraSpanStoreTest
+[INFO] Running zipkin2.storage.cassandra.CassandraStorageTest
+17:56:05.062 [main] INFO  c.datastax.driver.core.ClockFactory - Using native clock to generate timestamps.
+17:56:05.118 [main] INFO  com.datastax.driver.core.NettyUtil - Did not find Netty's native epoll transport in the classpath, defaulting to NIO.
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.661 s - in zipkin2.storage.cassandra.CassandraStorageTest
+[INFO] Running zipkin2.storage.cassandra.InsertServiceSpanFactoryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.171 s - in zipkin2.storage.cassandra.InsertServiceSpanFactoryTest
+[INFO] Running zipkin2.storage.cassandra.SessionFactoryTest
+17:56:13.879 [main] INFO  c.datastax.driver.core.ClockFactory - Using native clock to generate timestamps.
+17:56:13.883 [main] INFO  c.datastax.driver.core.ClockFactory - Using native clock to generate timestamps.
+17:56:13.889 [main] INFO  c.d.d.c.p.DCAwareRoundRobinPolicy - Using provided data-center name 'bar' for DCAwareRoundRobinPolicy
+17:56:13.889 [main] WARN  c.d.d.c.p.DCAwareRoundRobinPolicy - Some contact points don't match local data center. Local DC = bar. Non-conforming contact points: Mock for Host, hashCode: 712627377 (foo)
+17:56:13.890 [main] INFO  c.datastax.driver.core.ClockFactory - Using native clock to generate timestamps.
+17:56:13.891 [main] INFO  c.datastax.driver.core.ClockFactory - Using native clock to generate timestamps.
+17:56:13.893 [main] INFO  c.datastax.driver.core.ClockFactory - Using native clock to generate timestamps.
+17:56:13.894 [main] INFO  c.datastax.driver.core.ClockFactory - Using native clock to generate timestamps.
+17:56:13.895 [main] INFO  c.datastax.driver.core.ClockFactory - Using native clock to generate timestamps.
+17:56:13.896 [main] INFO  c.datastax.driver.core.ClockFactory - Using native clock to generate timestamps.
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in zipkin2.storage.cassandra.SessionFactoryTest
+[INFO] Running zipkin2.storage.cassandra.CassandraUtilTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in zipkin2.storage.cassandra.CassandraUtilTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 43, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] -------< io.zipkin.java:zipkin-autoconfigure-storage-cassandra3 >-------
+[INFO] Building Auto Configuration: Cassandra 3 Storage 2.4.5-SNAPSHOT  [13/32]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ zipkin-autoconfigure-storage-cassandra3 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ zipkin-autoconfigure-storage-cassandra3 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ zipkin-autoconfigure-storage-cassandra3 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ zipkin-autoconfigure-storage-cassandra3 ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (default) @ zipkin-autoconfigure-storage-cassandra3 ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ zipkin-autoconfigure-storage-cassandra3 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin-autoconfigure/storage-cassandra3/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ zipkin-autoconfigure-storage-cassandra3 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ zipkin-autoconfigure-storage-cassandra3 ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running zipkin2.storage.cassandra.ZipkinCassandraStorageAutoConfigurationTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.006 s - in zipkin2.storage.cassandra.ZipkinCassandraStorageAutoConfigurationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] -----------< io.zipkin.zipkin2:zipkin-storage-elasticsearch >-----------
+[INFO] Building Storage: Elasticsearch (V2) 2.4.5-SNAPSHOT              [14/32]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ zipkin-storage-elasticsearch ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ zipkin-storage-elasticsearch ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin-storage/elasticsearch/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ zipkin-storage-elasticsearch ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ zipkin-storage-elasticsearch ---
+[INFO] 
+[INFO] --- retrolambda-maven-plugin:2.5.3:process-main (default) @ zipkin-storage-elasticsearch ---
+[INFO] Retrieving Retrolambda 2.5.3
+[INFO] Configured Artifact: net.orfjackal.retrolambda:retrolambda:2.5.3:jar
+[INFO] Copying retrolambda-2.5.3.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin-storage/elasticsearch/target/retrolambda/retrolambda.jar
+[INFO] Processing classes with Retrolambda
+[INFO] Executing tasks
+
+main:
+     [exec] Retrolambda 2.5.3
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (default) @ zipkin-storage-elasticsearch ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ zipkin-storage-elasticsearch ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin-storage/elasticsearch/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ zipkin-storage-elasticsearch ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ zipkin-storage-elasticsearch ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running zipkin2.elasticsearch.internal.IndexNameFormatterTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.143 s - in zipkin2.elasticsearch.internal.IndexNameFormatterTest
+[INFO] Running zipkin2.elasticsearch.internal.client.SearchCallFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.245 s - in zipkin2.elasticsearch.internal.client.SearchCallFactoryTest
+[INFO] Running zipkin2.elasticsearch.internal.client.HttpCallTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 s - in zipkin2.elasticsearch.internal.client.HttpCallTest
+[INFO] Running zipkin2.elasticsearch.internal.client.SearchRequestTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in zipkin2.elasticsearch.internal.client.SearchRequestTest
+[INFO] Running zipkin2.elasticsearch.JsonAdaptersTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in zipkin2.elasticsearch.JsonAdaptersTest
+[INFO] Running zipkin2.elasticsearch.ElasticsearchSpanConsumerTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 s - in zipkin2.elasticsearch.ElasticsearchSpanConsumerTest
+[INFO] Running zipkin2.elasticsearch.ElasticsearchStorageTest
+[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.55 s <<< FAILURE! - in zipkin2.elasticsearch.ElasticsearchStorageTest
+[ERROR] check_ssl(zipkin2.elasticsearch.ElasticsearchStorageTest)  Time elapsed: 0.093 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<CheckResult{ok=[true, error=null]}> but was:<CheckResult{ok=[false, error=javax.net.ssl.SSLHandshakeException: PKIX path validation failed: sun.security.validator.ValidatorException: TrustAnchor with subject "CN=localhost" is not a CA certificate]}>
+	at zipkin2.elasticsearch.ElasticsearchStorageTest.check_ssl(ElasticsearchStorageTest.java:118)
+
+[INFO] Running zipkin2.elasticsearch.VersionSpecificTemplatesTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in zipkin2.elasticsearch.VersionSpecificTemplatesTest
+[INFO] Running zipkin2.elasticsearch.PseudoAddressRecordSetTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in zipkin2.elasticsearch.PseudoAddressRecordSetTest
+[INFO] Running zipkin2.elasticsearch.ElasticsearchSpanStoreTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in zipkin2.elasticsearch.ElasticsearchSpanStoreTest
+[INFO] Running zipkin2.elasticsearch.JsonReadersTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in zipkin2.elasticsearch.JsonReadersTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   ElasticsearchStorageTest.check_ssl:118 expected:<CheckResult{ok=[true, error=null]}> but was:<CheckResult{ok=[false, error=javax.net.ssl.SSLHandshakeException: PKIX path validation failed: sun.security.validator.ValidatorException: TrustAnchor with subject "CN=localhost" is not a CA certificate]}>
+[INFO] 
+[ERROR] Tests run: 78, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Zipkin (Parent) 2.4.5-SNAPSHOT:
+[INFO] 
+[INFO] Zipkin (Parent) .................................... SUCCESS [  2.497 s]
+[INFO] Zipkin v2 .......................................... SUCCESS [  4.983 s]
+[INFO] Zipkin ............................................. SUCCESS [  5.007 s]
+[INFO] Zipkin UI .......................................... SUCCESS [  0.380 s]
+[INFO] Zipkin JUnit ....................................... SUCCESS [  2.580 s]
+[INFO] Guava support library .............................. SUCCESS [  2.128 s]
+[INFO] Auto Configuration ................................. SUCCESS [  0.745 s]
+[INFO] Auto Configuration: Ui ............................. SUCCESS [  3.055 s]
+[INFO] Storage ............................................ SUCCESS [  0.867 s]
+[INFO] Storage: Cassandra ................................. SUCCESS [ 11.938 s]
+[INFO] Auto Configuration: Cassandra Storage .............. SUCCESS [  2.437 s]
+[INFO] Storage: Cassandra (Zipkin V2) ..................... SUCCESS [ 11.334 s]
+[INFO] Auto Configuration: Cassandra 3 Storage ............ SUCCESS [  2.734 s]
+[INFO] Storage: Elasticsearch (V2) ........................ FAILURE [  3.017 s]
+[INFO] Storage: Elasticsearch (HTTP) ...................... SKIPPED
+[INFO] Auto Configuration: Elasticsearch Storage (HTTP) ... SKIPPED
+[INFO] Auto Configuration: Elasticsearch Storage (AWS) .... SKIPPED
+[INFO] Storage: MySQL ..................................... SKIPPED
+[INFO] Auto Configuration: MySQL Storage .................. SKIPPED
+[INFO] Zipkin Collectors .................................. SKIPPED
+[INFO] Collector: Kafka ................................... SKIPPED
+[INFO] Auto Configuration: Kafka Collector ................ SKIPPED
+[INFO] Collector: RabbitMQ ................................ SKIPPED
+[INFO] Auto Configuration: RabbitMQ Collector ............. SKIPPED
+[INFO] Collector: Scribe .................................. SKIPPED
+[INFO] Auto Configuration: Scribe Collector ............... SKIPPED
+[INFO] Auto Configuration: Prometheus Metrics ............. SKIPPED
+[INFO] Zipkin Server ...................................... SKIPPED
+[INFO] Benchmarks ......................................... SKIPPED
+[INFO] ZooKeeper support library .......................... SKIPPED
+[INFO] Collector: Kafka 0.10+ ............................. SKIPPED
+[INFO] Auto Configuration: Kafka 0.10 Collector ........... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  54.015 s
+[INFO] Finished at: 2022-07-25T17:56:20-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project zipkin-storage-elasticsearch: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-176/zipkin-storage/elasticsearch/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :zipkin-storage-elasticsearch
+Running the tests related to the bug Bears-176...
+The tests related to the bug Bears-176 were executed.

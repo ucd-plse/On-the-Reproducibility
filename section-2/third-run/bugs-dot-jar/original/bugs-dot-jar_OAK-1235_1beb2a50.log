@@ -1,0 +1,65 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak upgrade 0.13-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ oak-upgrade ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ oak-upgrade ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-1235_1beb2a5047ab6fd3a29b9a027272847fa18194ef/oak-upgrade/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ oak-upgrade ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ oak-upgrade ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ oak-upgrade ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ oak-upgrade ---
+[INFO] Surefire report directory: /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-1235_1beb2a5047ab6fd3a29b9a027272847fa18194ef/oak-upgrade/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.jackrabbit.oak.upgrade.RepositoryGroupMemberSplitUpgradeTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 8.437 sec <<< FAILURE!
+Running org.apache.jackrabbit.oak.upgrade.RepositoryUpgradeTest
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.564 sec <<< FAILURE!
+Running org.apache.jackrabbit.oak.upgrade.RepositoryGroupMemberUpgradeTest
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 2.537 sec <<< FAILURE!
+
+Results :
+
+Failed tests:   verifyGroupNodeTypes(org.apache.jackrabbit.oak.upgrade.RepositoryGroupMemberSplitUpgradeTest): Migrated group needs to be new node type
+  verifyReplacedBuiltinNodeTypes(org.apache.jackrabbit.oak.upgrade.RepositoryUpgradeTest): Migrated repository must have new nodetype definitions
+  verifyMemberOf(org.apache.jackrabbit.oak.upgrade.RepositoryGroupMemberUpgradeTest): user TestUser-0 must be member of all groups expected:<0> but was:<2>
+  verifyGroupNodeTypes(org.apache.jackrabbit.oak.upgrade.RepositoryGroupMemberUpgradeTest): Migrated group needs to be new node type
+
+Tests run: 12, Failures: 4, Errors: 0, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 17.813 s
+[INFO] Finished at: 2016-07-29T13:09:07-07:00
+[INFO] Final Memory: 16M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.9:test (default-test) on project oak-upgrade: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-1235_1beb2a5047ab6fd3a29b9a027272847fa18194ef/oak-upgrade/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

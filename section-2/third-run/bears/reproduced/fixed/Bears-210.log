@@ -1,0 +1,88 @@
+Apache Maven 3.6.3
+Maven home: /usr/share/maven
+Java version: 1.8.0_342, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.15.0-41-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] 
+[INFO] ------------------------< org.dungba:joo-libra >------------------------
+[INFO] Building Libra 1.0.3
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ joo-libra ---
+[INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/On-the-Reproducibility/section-2/reproducibility-scanner/reproducer/workspace/Bears-210/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ joo-libra ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /On-the-Reproducibility/section-2/reproducibility-scanner/reproducer/workspace/Bears-210/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ joo-libra ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ joo-libra ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /On-the-Reproducibility/section-2/reproducibility-scanner/reproducer/workspace/Bears-210/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ joo-libra ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ joo-libra ---
+[INFO] Surefire report directory: /On-the-Reproducibility/section-2/reproducibility-scanner/reproducer/workspace/Bears-210/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.joo.libra.test.TestSqlSimple
+Tests run: 57, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.439 sec
+Running org.joo.libra.test.TestJavaPredicate
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.joo.libra.test.TestSqlMisc
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running org.joo.libra.test.TestSqlPerf
+Setting up...
+Parsed expression: AND(EQUALS(name,'John'),GREATER(age,27))
+Parsed expression: AND(CONTAIN(bar.foo.collection1,age),EQUALS(data,'ok'),OR(NOT(VAR(female)), EQUALS(name,bar.foo.name)),NOT(EQUALS(bar,null)),MATCH(bar.foo.name,'[Ms]ario.*'))
+Warming up...
+
+Testing with Java object...
+Elapsed: 10066 ms
+Pace: 993400 ops/sec
+Avg: 1006 ns
+
+Testing with Map...
+Elapsed: 7144 ms
+Pace: 1399689 ops/sec
+Avg: 714 ns
+
+Test Complex SQL
+Elapsed: 15191 ms
+Pace: 658258 ops/sec
+Avg: 1519 ns
+
+Cleaning up...
+Finished
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.573 sec
+Running org.joo.libra.test.TestSqlVariable
+Tests run: 68, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec
+Running org.joo.libra.test.TestSqlError
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.joo.libra.test.TestSqlComplex
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Running org.joo.libra.test.TestSqlOptimized
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+
+Results :
+
+Tests run: 178, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  35.744 s
+[INFO] Finished at: 2022-08-18T13:05:20-07:00
+[INFO] ------------------------------------------------------------------------
+Running the tests related to the bug Bears-210...
+The tests related to the bug Bears-210 were executed.

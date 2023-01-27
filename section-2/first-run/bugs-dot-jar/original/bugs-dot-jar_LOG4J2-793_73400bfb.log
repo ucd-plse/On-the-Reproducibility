@@ -1,0 +1,93 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Log4j SLF4J Binding 2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-slf4j-impl ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-slf4j-impl ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-793_73400bfb9002683f7d8ae79147b93e9aa75fa819/log4j-slf4j-impl/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-slf4j-impl ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-793_73400bfb9002683f7d8ae79147b93e9aa75fa819/log4j-slf4j-impl/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] CAL10NAnnotationProcessor 0.8.1 initialized
+[WARNING] Supported source version 'RELEASE_5' from annotation processor 'ch.qos.cal10n.verifier.processor.CAL10NAnnotationProcessor' less than -source '1.6'
+[WARNING] /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-793_73400bfb9002683f7d8ae79147b93e9aa75fa819/log4j-slf4j-impl/src/main/java/org/apache/logging/slf4j/Log4jMarker.java:[79,21] iterator() in org.apache.logging.slf4j.Log4jMarker implements iterator() in org.slf4j.Marker
+  return type requires unchecked conversion from java.util.Iterator to java.util.Iterator<org.slf4j.Marker>
+[WARNING] /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-793_73400bfb9002683f7d8ae79147b93e9aa75fa819/log4j-slf4j-impl/src/main/java/org/apache/logging/slf4j/Log4jMarker.java:[73,20] hasChildren() in org.slf4j.Marker has been deprecated
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:manifest (default) @ log4j-slf4j-impl ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-slf4j-impl ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-slf4j-impl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log4j-slf4j-impl ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-tests) @ log4j-slf4j-impl ---
+[INFO] Surefire report directory: /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-793_73400bfb9002683f7d8ae79147b93e9aa75fa819/log4j-slf4j-impl/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.logging.slf4j.SerializeTest
+Running org.apache.logging.slf4j.LoggerTest
+Running org.apache.logging.slf4j.MarkerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in org.apache.logging.slf4j.MarkerTest
+2016-07-16 11:51:26,245 ERROR Appenders contains an invalid element or attribute "SLF4J"
+2016-07-16 11:51:26,268 ERROR Appenders contains an invalid element or attribute "SLF4J"
+2016-07-16 11:51:26,400 ERROR Appenders contains an invalid element or attribute "SLF4J"
+Tests run: 12, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.595 sec <<< FAILURE! - in org.apache.logging.slf4j.LoggerTest
+supportsCustomSLF4JMarkers(org.apache.logging.slf4j.LoggerTest)  Time elapsed: 0.006 sec  <<< ERROR!
+java.lang.ClassCastException: org.apache.logging.slf4j.CustomFlatMarker cannot be cast to org.apache.logging.slf4j.Log4jMarker
+	at org.apache.logging.slf4j.Log4jLogger.getMarker(Log4jLogger.java:378)
+	at org.apache.logging.slf4j.Log4jLogger.debug(Log4jLogger.java:152)
+	at org.apache.logging.slf4j.LoggerTest.supportsCustomSLF4JMarkers(LoggerTest.java:126)
+
+2016-07-16 11:51:26,531 ERROR Appenders contains an invalid element or attribute "SLF4J"
+2016-07-16 11:51:26,546 ERROR No log4j2 configuration file found. Using default configuration: logging only errors to the console.
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.798 sec - in org.apache.logging.slf4j.SerializeTest
+
+Results :
+
+Tests in error: 
+  LoggerTest.supportsCustomSLF4JMarkers:126 » ClassCast org.apache.logging.slf4j...
+
+Tests run: 14, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.118 s
+[INFO] Finished at: 2016-07-16T11:51:26-07:00
+[INFO] Final Memory: 24M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-tests) on project log4j-slf4j-impl: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-793_73400bfb9002683f7d8ae79147b93e9aa75fa819/log4j-slf4j-impl/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

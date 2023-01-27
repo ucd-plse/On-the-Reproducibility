@@ -1,0 +1,43 @@
+Checking out fb007815 to /tmp/test_d4j_3429126_1658747110/test_trigger/Math FAIL
+Executed command: git clone /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/project_repos/commons-math.git /tmp/test_d4j_3429126_1658747110/test_trigger/Math 2>&1 && cd /tmp/test_d4j_3429126_1658747110/test_trigger/Math && git checkout fb0078159d2463da149de54018fca79a9447153e 2>&1
+Cloning into '/tmp/test_d4j_3429126_1658747110/test_trigger/Math'...
+done.
+fatal: reference is not a tree: fb0078159d2463da149de54018fca79a9447153e
+Cannot checkout program version! at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-checkout line 102.
+Compilation failed in require at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: checkout: Math-6b
+Cannot open config file (/tmp/test_d4j_3429126_1658747110/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_3429126_1658747110/test_trigger/Math is not a valid working directory!
+Error: compile: Math-6b
+Cannot open config file (/tmp/test_d4j_3429126_1658747110/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_3429126_1658747110/test_trigger/Math is not a valid working directory!
+Error: run relevant tests: Math-6b
+cat: /tmp/test_d4j_3429126_1658747110/test_trigger/Math/failing_tests: No such file or directory
+grep: /tmp/test_d4j_3429126_1658747110/test_trigger/Math/failing_tests: No such file or directory
+Error: verify number of triggering tests: Math-6b (expected: 1, actual: 0)
+grep: /tmp/test_d4j_3429126_1658747110/test_trigger/Math/failing_tests: No such file or directory
+Error: expected triggering test org.apache.commons.math4.stat.correlation.KendallsCorrelationTest::testMath1277 did not fail
+Cannot open config file (/tmp/test_d4j_3429126_1658747110/test_trigger/Math/.defects4j.config): No such file or directory
+Directory exists but is not a previously used working directory: /tmp/test_d4j_3429126_1658747110/test_trigger/Math at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/core/Vcs.pm line 285.
+Compilation failed in require at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: checkout: Math-6f
+Cannot open config file (/tmp/test_d4j_3429126_1658747110/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_3429126_1658747110/test_trigger/Math is not a valid working directory!
+Error: compile: Math-6f
+Cannot open config file (/tmp/test_d4j_3429126_1658747110/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_3429126_1658747110/test_trigger/Math is not a valid working directory!
+Error: run relevant tests: Math-6f
+cat: /tmp/test_d4j_3429126_1658747110/test_trigger/Math/failing_tests: No such file or directory
+grep: /tmp/test_d4j_3429126_1658747110/test_trigger/Math/failing_tests: No such file or directory
+================================================================================
+The following errors occurred:
+Error: checkout: Math-6b
+Error: compile: Math-6b
+Error: run relevant tests: Math-6b
+Error: verify number of triggering tests: Math-6b (expected: 1, actual: 0)
+Error: expected triggering test org.apache.commons.math4.stat.correlation.KendallsCorrelationTest::testMath1277 did not fail
+Error: checkout: Math-6f
+Error: compile: Math-6f
+Error: run relevant tests: Math-6f
+================================================================================
+FAILED

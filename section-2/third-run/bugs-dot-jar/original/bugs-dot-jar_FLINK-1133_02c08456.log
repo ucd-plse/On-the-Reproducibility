@@ -1,0 +1,197 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building flink-java 0.7-incubating-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.12.1:check (validate) @ flink-java ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven) @ flink-java ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ flink-java ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ flink-java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /space/parallel/flink/flink9/dataset/flink/FLINK-1133_02c08456410689e10acb53bd7c33d6fdaeb671fb/flink-java/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ flink-java ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 213 source files to /space/parallel/flink/flink9/dataset/flink/FLINK-1133_02c08456410689e10acb53bd7c33d6fdaeb671fb/flink-java/target/classes
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-1133_02c08456410689e10acb53bd7c33d6fdaeb671fb/flink-java/src/main/java/org/apache/flink/api/java/record/functions/MapFunction.java: Some input files use or override a deprecated API.
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-1133_02c08456410689e10acb53bd7c33d6fdaeb671fb/flink-java/src/main/java/org/apache/flink/api/java/record/functions/MapFunction.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-1133_02c08456410689e10acb53bd7c33d6fdaeb671fb/flink-java/src/main/java/org/apache/flink/api/java/typeutils/TupleTypeInfo.java: Some input files use unchecked or unsafe operations.
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-1133_02c08456410689e10acb53bd7c33d6fdaeb671fb/flink-java/src/main/java/org/apache/flink/api/java/typeutils/TupleTypeInfo.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ flink-java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /space/parallel/flink/flink9/dataset/flink/FLINK-1133_02c08456410689e10acb53bd7c33d6fdaeb671fb/flink-java/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ flink-java ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ flink-java ---
+[INFO] Surefire report directory: /space/parallel/flink/flink9/dataset/flink/FLINK-1133_02c08456410689e10acb53bd7c33d6fdaeb671fb/flink-java/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.flink.api.java.operators.translation.AggregateTranslationTest
+Running org.apache.flink.api.java.operators.translation.DistrinctTranslationTest
+Running org.apache.flink.api.java.type.extractor.TypeExtractorInputFormatsTest
+Running org.apache.flink.api.java.functions.SemanticPropUtilTest
+Running org.apache.flink.api.java.functions.SemanticPropertiesTranslationTest
+Running org.apache.flink.api.java.type.extractor.TypeExtractorTest
+Running org.apache.flink.api.java.type.extractor.PojoTypeInformationTest
+Running org.apache.flink.api.java.operators.translation.DeltaIterationTranslationTest
+Running org.apache.flink.api.java.operator.GroupingTest
+Running org.apache.flink.api.java.functions.SemanticPropertiesProjectionTest
+Running org.apache.flink.api.java.operator.FirstNOperatorTest
+Running org.apache.flink.api.java.operator.JoinOperatorTest
+Running org.apache.flink.api.java.operator.CrossOperatorTest
+Running org.apache.flink.api.java.operator.MinByOperatorTest
+Running org.apache.flink.api.java.functions.SelectByFunctionsTest
+Running org.apache.flink.api.java.operator.ProjectionOperatorTest
+Running org.apache.flink.api.java.operator.CoGroupOperatorTest
+Running org.apache.flink.api.java.operator.MaxByOperatorTest
+Running org.apache.flink.api.java.operator.AggregateOperatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.178 sec - in org.apache.flink.api.java.type.extractor.PojoTypeInformationTest
+Running org.apache.flink.api.java.operator.DistinctOperatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.393 sec - in org.apache.flink.api.java.operators.translation.DistrinctTranslationTest
+Running org.apache.flink.api.java.MultipleInvokationsTest
+Running org.apache.flink.api.java.record.ReduceWrappingFunctionTest
+Running org.apache.flink.api.java.record.CoGroupWrappingFunctionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.151 sec - in org.apache.flink.api.java.MultipleInvokationsTest
+Running org.apache.flink.api.java.record.io.ExternalProcessFixedLengthInputFormatTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.42 sec - in org.apache.flink.api.java.functions.SelectByFunctionsTest
+Running org.apache.flink.api.java.record.io.TextInputFormatTest
+Tests run: 51, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.53 sec <<< FAILURE! - in org.apache.flink.api.java.type.extractor.TypeExtractorTest
+testDuplicateValueNested(org.apache.flink.api.java.type.extractor.TypeExtractorTest)  Time elapsed: 0.018 sec  <<< ERROR!
+org.apache.flink.api.common.functions.InvalidTypesException: Type of TypeVariable 'T' in 'class org.apache.flink.api.java.type.extractor.TypeExtractorTest$DuplicateValueNested' could not be determined. This is most likely a type erasure problem. The type extraction currently supports types with generic variables only in cases where all variables in the return type can be deduced from the input type(s).
+	at org.apache.flink.api.java.typeutils.TypeExtractor.createTypeInfoWithTypeHierarchy(TypeExtractor.java:287)
+	at org.apache.flink.api.java.typeutils.TypeExtractor.privateCreateTypeInfo(TypeExtractor.java:212)
+	at org.apache.flink.api.java.typeutils.TypeExtractor.getUnaryOperatorReturnType(TypeExtractor.java:140)
+	at org.apache.flink.api.java.typeutils.TypeExtractor.getMapReturnTypes(TypeExtractor.java:71)
+	at org.apache.flink.api.java.type.extractor.TypeExtractorTest.testDuplicateValueNested(TypeExtractorTest.java:1486)
+
+Running org.apache.flink.api.java.record.io.FixedLenghtInputFormatTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.666 sec - in org.apache.flink.api.java.operator.ProjectionOperatorTest
+Running org.apache.flink.api.java.record.io.CsvInputFormatTest
+Running org.apache.flink.api.java.record.io.CsvOutputFormatTest
+Running org.apache.flink.api.java.record.io.ExternalProcessInputFormatTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.623 sec - in org.apache.flink.api.java.operator.DistinctOperatorTest
+Running org.apache.flink.api.java.typeutils.TypeInfoParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.38 sec - in org.apache.flink.api.java.record.io.TextInputFormatTest
+Running org.apache.flink.api.java.typeutils.runtime.AvroGenericTypeSerializerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.039 sec - in org.apache.flink.api.java.type.extractor.TypeExtractorInputFormatsTest
+Running org.apache.flink.api.java.typeutils.runtime.AvroSerializerEmptyArrayTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.44 sec - in org.apache.flink.api.java.record.io.FixedLenghtInputFormatTest
+Running org.apache.flink.api.java.typeutils.runtime.WritableSerializerTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.113 sec - in org.apache.flink.api.java.functions.SemanticPropUtilTest
+Running org.apache.flink.api.java.typeutils.runtime.TupleComparatorILDXC2Test
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.567 sec - in org.apache.flink.api.java.record.io.ExternalProcessFixedLengthInputFormatTest
+Running org.apache.flink.api.java.typeutils.runtime.TupleComparatorISD1Test
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.999 sec - in org.apache.flink.api.java.operator.MinByOperatorTest
+Running org.apache.flink.api.java.typeutils.runtime.TupleComparatorTTT2Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.045 sec - in org.apache.flink.api.java.functions.SemanticPropertiesProjectionTest
+Running org.apache.flink.api.java.typeutils.runtime.GenericPairComparatorTest
+Running org.apache.flink.api.java.typeutils.runtime.TupleComparatorILD3Test
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.224 sec - in org.apache.flink.api.java.typeutils.TypeInfoParserTest
+Running org.apache.flink.api.java.typeutils.runtime.KryoGenericArraySerializerTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 sec - in org.apache.flink.api.java.typeutils.runtime.TupleComparatorILDXC2Test
+Running org.apache.flink.api.java.typeutils.runtime.AvroGenericTypeComparatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.214 sec - in org.apache.flink.api.java.typeutils.runtime.TupleComparatorISD1Test
+Running org.apache.flink.api.java.typeutils.runtime.TupleSerializerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.285 sec - in org.apache.flink.api.java.functions.SemanticPropertiesTranslationTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.207 sec - in org.apache.flink.api.java.typeutils.runtime.TupleComparatorILD3Test
+Running org.apache.flink.api.java.typeutils.runtime.TupleComparatorISD2Test
+Running org.apache.flink.api.java.typeutils.runtime.ValueComparatorTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 1.318 sec - in org.apache.flink.api.java.operator.CoGroupOperatorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.372 sec - in org.apache.flink.api.java.operator.FirstNOperatorTest
+Running org.apache.flink.api.java.typeutils.runtime.TupleComparatorILDC3Test
+Running org.apache.flink.api.java.typeutils.runtime.TupleComparatorISD3Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.296 sec - in org.apache.flink.api.java.operator.AggregateOperatorTest
+Running org.apache.flink.api.java.typeutils.runtime.TupleComparatorTTT3Test
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 sec - in org.apache.flink.api.java.typeutils.runtime.TupleComparatorISD2Test
+Running org.apache.flink.api.java.typeutils.runtime.WritableComparatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.371 sec - in org.apache.flink.api.java.typeutils.runtime.TupleComparatorTTT2Test
+Running org.apache.flink.api.java.typeutils.runtime.KryoGenericTypeSerializerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.138 sec - in org.apache.flink.api.java.record.CoGroupWrappingFunctionTest
+Running org.apache.flink.api.java.typeutils.runtime.CopyableValueComparatorTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.854 sec - in org.apache.flink.api.java.record.io.CsvInputFormatTest
+Running org.apache.flink.api.java.typeutils.runtime.TupleComparatorILD2Test
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 1.617 sec - in org.apache.flink.api.java.operator.GroupingTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 sec - in org.apache.flink.api.java.typeutils.runtime.CopyableValueComparatorTest
+Running org.apache.flink.api.java.typeutils.runtime.TupleComparatorTTT1Test
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.629 sec - in org.apache.flink.api.java.operator.CrossOperatorTest
+Running org.apache.flink.api.java.typeutils.runtime.AvroGenericArraySerializerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.668 sec - in org.apache.flink.api.java.operators.translation.DeltaIterationTranslationTest
+Running org.apache.flink.api.java.typeutils.runtime.TupleComparatorILDX1Test
+Running org.apache.flink.api.java.typeutils.runtime.KryoGenericTypeComparatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.603 sec - in org.apache.flink.api.java.operator.MaxByOperatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.284 sec - in org.apache.flink.api.java.typeutils.runtime.TupleComparatorILDC3Test
+Running org.apache.flink.api.java.typeutils.runtime.PojoSerializerTest
+Running org.apache.flink.api.java.tuple.Tuple2Test
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.31 sec - in org.apache.flink.api.java.typeutils.runtime.TupleComparatorISD3Test
+Running org.apache.flink.api.java.io.CSVReaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.04 sec - in org.apache.flink.api.java.typeutils.runtime.PojoSerializerTest
+Running org.apache.flink.api.java.io.TextInputFormatTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in org.apache.flink.api.java.tuple.Tuple2Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.964 sec - in org.apache.flink.api.java.record.io.ExternalProcessInputFormatTest
+Running org.apache.flink.api.java.io.CollectionInputFormatTest
+Running org.apache.flink.api.java.io.CsvInputFormatTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.786 sec - in org.apache.flink.api.java.typeutils.runtime.WritableSerializerTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.167 sec - in org.apache.flink.api.java.typeutils.runtime.TupleComparatorILD2Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.525 sec - in org.apache.flink.api.java.record.ReduceWrappingFunctionTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 sec - in org.apache.flink.api.java.typeutils.runtime.TupleComparatorILDX1Test
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.57 sec - in org.apache.flink.api.java.typeutils.runtime.ValueComparatorTest
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 1.835 sec - in org.apache.flink.api.java.operator.JoinOperatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.443 sec - in org.apache.flink.api.java.typeutils.runtime.TupleComparatorTTT3Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.803 sec - in org.apache.flink.api.java.typeutils.runtime.GenericPairComparatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.113 sec - in org.apache.flink.api.java.operators.translation.AggregateTranslationTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.305 sec - in org.apache.flink.api.java.typeutils.runtime.TupleComparatorTTT1Test
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.558 sec - in org.apache.flink.api.java.typeutils.runtime.WritableComparatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.408 sec - in org.apache.flink.api.java.io.CSVReaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.482 sec - in org.apache.flink.api.java.io.TextInputFormatTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.311 sec - in org.apache.flink.api.java.typeutils.runtime.AvroSerializerEmptyArrayTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.62 sec - in org.apache.flink.api.java.io.CsvInputFormatTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.654 sec - in org.apache.flink.api.java.record.io.CsvOutputFormatTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.127 sec - in org.apache.flink.api.java.typeutils.runtime.KryoGenericTypeSerializerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.492 sec - in org.apache.flink.api.java.typeutils.runtime.KryoGenericArraySerializerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.23 sec - in org.apache.flink.api.java.typeutils.runtime.KryoGenericTypeComparatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.205 sec - in org.apache.flink.api.java.io.CollectionInputFormatTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.104 sec - in org.apache.flink.api.java.typeutils.runtime.AvroGenericTypeSerializerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.065 sec - in org.apache.flink.api.java.typeutils.runtime.AvroGenericTypeComparatorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.641 sec - in org.apache.flink.api.java.typeutils.runtime.AvroGenericArraySerializerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.442 sec - in org.apache.flink.api.java.typeutils.runtime.TupleSerializerTest
+
+Results :
+
+Tests in error: 
+  TypeExtractorTest.testDuplicateValueNested:1486 » InvalidTypes Type of TypeVar...
+
+Tests run: 456, Failures: 0, Errors: 1, Skipped: 17
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 15.803 s
+[INFO] Finished at: 2016-07-15T09:13:03-07:00
+[INFO] Final Memory: 43M/2476M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project flink-java: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /space/parallel/flink/flink9/dataset/flink/FLINK-1133_02c08456410689e10acb53bd7c33d6fdaeb671fb/flink-java/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

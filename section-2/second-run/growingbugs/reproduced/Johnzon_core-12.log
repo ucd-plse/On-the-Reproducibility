@@ -1,0 +1,111 @@
+Checking out 17fdff13 to /tmp/test_d4j_3282668_1658743233/test_trigger/John OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Copy generated Ant build file.............................................. OK
+Run post-checkout hook..................................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff 17fdff13:5852983b..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: Johnzon_core-12b................................ OK
+Running ant (compile)...................................................... FAIL
+Executed command:  cd /tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core && /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/major/bin/ant -f /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml -Dd4j.home=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs -Dd4j.dir.projects=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects -Dbasedir=/tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core -Dbuild.compiler=javac1.8  compile 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [mkdir] Created dir: /tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core/target/classes
+    [javac] /tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core/maven-build.xml:78: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+BUILD FAILED
+/tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core/maven-build.xml:78: srcdir "/tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core/src/main/java" does not exist!
+
+Total time: 0 seconds
+Cannot compile sources! at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-compile line 82.
+Compilation failed in require at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: compile: Johnzon_core-12b
+Running ant (compile.tests)................................................ FAIL
+Executed command:  cd /tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core && /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/major/bin/ant -f /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml -Dd4j.home=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs -Dd4j.dir.projects=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects -Dbasedir=/tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core -Dbuild.compiler=javac1.8  compile.tests 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [javac] /tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core/maven-build.xml:78: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+BUILD FAILED
+/tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core/maven-build.xml:78: srcdir "/tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core/src/main/java" does not exist!
+
+Total time: 0 seconds
+Cannot compile test suite! at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-test line 130.
+Compilation failed in require at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: run relevant tests: Johnzon_core-12b
+cat: /tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core/failing_tests: No such file or directory
+grep: /tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core/failing_tests: No such file or directory
+Error: verify number of triggering tests: Johnzon_core-12b (expected: 2, actual: 0)
+grep: /tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core/failing_tests: No such file or directory
+Error: expected triggering test org.apache.johnzon.core.JsonReaderImplTest::badTypeArray did not fail
+grep: /tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core/failing_tests: No such file or directory
+Error: expected triggering test org.apache.johnzon.core.JsonReaderImplTest::badTypeObject did not fail
+Check out program version: Johnzon_core-12f................................ OK
+Running ant (compile)...................................................... FAIL
+Executed command:  cd /tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core && /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/major/bin/ant -f /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml -Dd4j.home=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs -Dd4j.dir.projects=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects -Dbasedir=/tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core -Dbuild.compiler=javac1.8  compile 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [mkdir] Created dir: /tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core/target/classes
+    [javac] /tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core/maven-build.xml:78: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+BUILD FAILED
+/tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core/maven-build.xml:78: srcdir "/tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core/src/main/java" does not exist!
+
+Total time: 0 seconds
+Cannot compile sources! at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-compile line 82.
+Compilation failed in require at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: compile: Johnzon_core-12f
+Running ant (compile.tests)................................................ FAIL
+Executed command:  cd /tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core && /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/major/bin/ant -f /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml -Dd4j.home=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs -Dd4j.dir.projects=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects -Dbasedir=/tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core -Dbuild.compiler=javac1.8  compile.tests 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [javac] /tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core/maven-build.xml:78: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+BUILD FAILED
+/tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core/maven-build.xml:78: srcdir "/tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core/src/main/java" does not exist!
+
+Total time: 0 seconds
+Cannot compile test suite! at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-test line 130.
+Compilation failed in require at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: run relevant tests: Johnzon_core-12f
+cat: /tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core/failing_tests: No such file or directory
+grep: /tmp/test_d4j_3282668_1658743233/test_trigger/Johnzon_core/failing_tests: No such file or directory
+================================================================================
+The following errors occurred:
+Error: compile: Johnzon_core-12b
+Error: run relevant tests: Johnzon_core-12b
+Error: verify number of triggering tests: Johnzon_core-12b (expected: 2, actual: 0)
+Error: expected triggering test org.apache.johnzon.core.JsonReaderImplTest::badTypeArray did not fail
+Error: expected triggering test org.apache.johnzon.core.JsonReaderImplTest::badTypeObject did not fail
+Error: compile: Johnzon_core-12f
+Error: run relevant tests: Johnzon_core-12f
+================================================================================
+FAILED

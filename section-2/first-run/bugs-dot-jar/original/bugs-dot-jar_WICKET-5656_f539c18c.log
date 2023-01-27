@@ -1,0 +1,90 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Wicket Bean Validation 7.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ wicket-bean-validation ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wicket-bean-validation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] skip non existing resourceDirectory /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-5656_f539c18cb16deffdcdc86b9ec69dd80f4f3abe0d/wicket-bean-validation/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ wicket-bean-validation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] >>> clirr-maven-plugin:2.6.1:check (clirr-check) > compile @ wicket-bean-validation >>>
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ wicket-bean-validation ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wicket-bean-validation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] skip non existing resourceDirectory /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-5656_f539c18cb16deffdcdc86b9ec69dd80f4f3abe0d/wicket-bean-validation/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ wicket-bean-validation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< clirr-maven-plugin:2.6.1:check (clirr-check) < compile @ wicket-bean-validation <<<
+[INFO] 
+[INFO] --- clirr-maven-plugin:2.6.1:check (clirr-check) @ wicket-bean-validation ---
+[INFO] Skipping execution
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:manifest (bundle-manifest) @ wicket-bean-validation ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ wicket-bean-validation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ wicket-bean-validation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ wicket-bean-validation ---
+[INFO] Surefire report directory: /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-5656_f539c18cb16deffdcdc86b9ec69dd80f4f3abe0d/wicket-bean-validation/target/surefire-reports
+[INFO] Using configured provider org.apache.maven.surefire.junitcore.JUnitCoreProvider
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.wicket.bean.validation.DefaultPropertyResolverTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.169 sec - in org.apache.wicket.bean.validation.DefaultPropertyResolverTest
+Running org.apache.wicket.bean.validation.PropertyValidatorRequiredTest
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.305 sec <<< FAILURE! - in org.apache.wicket.bean.validation.PropertyValidatorRequiredTest
+testResolveComposedConstraints(org.apache.wicket.bean.validation.PropertyValidatorRequiredTest)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.apache.wicket.bean.validation.PropertyValidatorRequiredTest.testResolveComposedConstraints(PropertyValidatorRequiredTest.java:84)
+
+
+Results :
+
+Failed tests: 
+  PropertyValidatorRequiredTest.testResolveComposedConstraints:84 null
+
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.865 s
+[INFO] Finished at: 2016-07-30T12:19:16-07:00
+[INFO] Final Memory: 24M/606M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project wicket-bean-validation: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-5656_f539c18cb16deffdcdc86b9ec69dd80f4f3abe0d/wicket-bean-validation/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

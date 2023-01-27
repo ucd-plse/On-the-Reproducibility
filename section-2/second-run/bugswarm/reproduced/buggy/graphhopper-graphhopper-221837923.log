@@ -1,0 +1,1908 @@
+travis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: java
+Build group: stable
+Build dist: precise
+Build id: ''
+Job id: ''
+Runtime kernel version: 4.15.0-109-generic
+[34m[1mBuild image provisioning date and time[0m
+Thu Feb  5 15:09:33 UTC 2015
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 12.04.5 LTS
+Release:	12.04
+Codename:	precise
+[34m[1mLinux Version[0m
+3.13.0-29-generic
+[34m[1mCookbooks Version[0m
+a68419e https://github.com/travis-ci/travis-cookbooks/tree/a68419e
+[34m[1mGCC version[0m
+gcc (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
+Copyright (C) 2011 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mLLVM version[0m
+clang version 3.4 (tags/RELEASE_34/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+[34m[1mPre-installed Ruby versions[0m
+ruby-1.9.3-p551
+[34m[1mPre-installed Node.js versions[0m
+v0.10.36
+[34m[1mPre-installed Go versions[0m
+1.4.1
+[34m[1mRedis version[0m
+redis-server 2.8.19
+[34m[1mriak version[0m
+2.0.2
+[34m[1mMongoDB version[0m
+MongoDB 2.4.12
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mNeo4j version[0m
+1.9.4
+[34m[1mRabbitMQ Version[0m
+3.4.3
+[34m[1mElasticSearch version[0m
+1.4.0
+[34m[1mInstalled Sphinx versions[0m
+2.0.10
+2.1.9
+2.2.6
+[34m[1mDefault Sphinx version[0m
+2.2.6
+[34m[1mInstalled Firefox version[0m
+firefox 31.0esr
+[34m[1mPhantomJS version[0m
+1.9.8
+[34m[1mant -version[0m
+Apache Ant(TM) version 1.8.2 compiled on December 3 2011
+[34m[1mmvn -version[0m
+Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T17:29:23+00:00)
+Maven home: /usr/local/maven
+Java version: 1.7.0_76, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-7-oracle/jre
+Default locale: en_US, platform encoding: ANSI_X3.4-1968
+OS name: "linux", version: "3.13.0-29-generic", arch: "amd64", family: "unix"
+travis_fold:end:system_info[0K
+[31;1mTimeout waiting for network availability.[0m
+sed: cannot rename /etc/hosts: Device or resource busy
+travis_fold:start:docker_mtu[0Ktee: /etc/docker/daemon.json: No such file or directory
+docker: unrecognized service
+travis_fold:end:docker_mtu[0K
+travis_fold:start:install_jdk[0K[33;1mInstalling oraclejdk8[0m
+$ jdk_switcher use "oraclejdk8"
+Switching to Oracle JDK8 (java-8-oracle), JAVA_HOME will be set to /usr/lib/jvm/java-8-oracle
+travis_fold:end:install_jdk[0K
+$ cd failed/graphhopper/graphhopper
+
+
+[33;1mSetting environment variables from .travis.yml[0m
+$ export BASEURL=https://www-eu.apache.org/dist/maven/maven-3/VERSION/binaries/apache-maven-VERSION-bin.zip
+$ export FILE=apache-maven-VERSION-bin.zip
+$ export DIR=apache-maven-VERSION
+$ export VERSION=3.3.9
+$ export CI_DEPLOY_USERNAME=[secure]
+$ export CI_DEPLOY_PASSWORD=[secure]
+
+travis_fold:start:cache.1[0KSetting up build cache
+$ export CASHER_DIR=${TRAVIS_HOME}/.casher
+travis_time:start:1af7f002[0K$ Installing caching utilities
+
+[31;1mThe command "eval curl -sf  -o $CASHER_DIR/bin/casher https:///files/casher " failed. Retrying, 2 of 3.[0m
+
+
+[31;1mThe command "eval curl -sf  -o $CASHER_DIR/bin/casher https:///files/casher " failed. Retrying, 3 of 3.[0m
+
+
+[31;1mThe command "eval curl -sf  -o $CASHER_DIR/bin/casher https:///files/casher " failed 3 times.[0m
+
+travis_time:end:1af7f002:start=1659220877092770586,finish=1659220880175425869,duration=3082655283[0Ktravis_time:start:0014d192[0K$ Installing caching utilities from the Travis CI server (https:///files/casher) failed, failing over to using GitHub (https://raw.githubusercontent.com/travis-ci/casher/bash/bin/casher)
+travis_time:end:0014d192:start=1659220880183404765,finish=1659220880383838404,duration=200433639[0Ktravis_time:start:28e2bf4b[0Ktravis_time:end:28e2bf4b:start=1659220880394476649,finish=1659220880400317679,duration=5841030[0Ktravis_time:start:3487fce0[0KYAML safe loading is not available. Please upgrade psych to a version that supports safe loading (>= 2.0).
+attempting to download cache archive[0m
+[31;1mcould not download cache[0m
+travis_time:end:3487fce0:start=1659220880407161291,finish=1659220881774740258,duration=1367578967[0Ktravis_time:start:08dfd91d[0Ktravis_time:end:08dfd91d:start=1659220881781616123,finish=1659220881786343336,duration=4727213[0Ktravis_time:start:07b8facf[0KYAML safe loading is not available. Please upgrade psych to a version that supports safe loading (>= 2.0).
+adding /home/travis/.m2 to cache[0m
+travis_time:end:07b8facf:start=1659220881793178705,finish=1659220883366262819,duration=1573084114[0Ktravis_fold:end:cache.1[0K
+$ java -Xmx32m -version
+java version "1.8.0_31"
+Java(TM) SE Runtime Environment (build 1.8.0_31-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 25.31-b07, mixed mode)
+$ javac -J-Xmx32m -version
+javac 1.8.0_31
+travis_fold:start:before_install.1[0Ktravis_time:start:15e22530[0K$ if [ "$TRAVIS_OS_NAME" == "linux" ]; then wget --no-check-certificate $(echo -n $BASEURL | sed -e 's#VERSION#'$VERSION'#g'); unzip -qq $(echo -n $FILE | sed -e 's#VERSION#'$VERSION'#'); export M2_HOME=$PWD/$(echo -n $DIR | sed -e 's#VERSION#'$VERSION'#'); export PATH=$M2_HOME/bin:$PATH; fi
+--2022-07-30 22:41:23--  https://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.zip
+Resolving www-eu.apache.org (www-eu.apache.org)... 65.108.131.22, 2a01:4f9:6b:2ecf::1
+Connecting to www-eu.apache.org (www-eu.apache.org)|65.108.131.22|:443... connected.
+WARNING: no certificate subject alternative name matches
+	requested host name `www-eu.apache.org'.
+HTTP request sent, awaiting response... 302 Found
+Location: https://downloads.apache.org/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.zip [following]
+--2022-07-30 22:41:24--  https://downloads.apache.org/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.zip
+Resolving downloads.apache.org (downloads.apache.org)... 135.181.214.104, 88.99.95.219, 2a01:4f9:3a:2c57::2, ...
+Connecting to downloads.apache.org (downloads.apache.org)|135.181.214.104|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8617253 (8.2M) [application/zip]
+Saving to: `apache-maven-3.3.9-bin.zip'
+
+     0K .......... .......... .......... .......... ..........  0% 93.6K 89s
+    50K .......... .......... .......... .......... ..........  1% 20.6M 45s
+   100K .......... .......... .......... .......... ..........  1%  283K 39s
+   150K .......... .......... .......... .......... ..........  2% 19.7M 29s
+   200K .......... .......... .......... .......... ..........  2%  289K 29s
+   250K .......... .......... .......... .......... ..........  3% 21.2M 24s
+   300K .......... .......... .......... .......... ..........  4% 18.8M 21s
+   350K .......... .......... .......... .......... ..........  4% 21.1M 18s
+   400K .......... .......... .......... .......... ..........  5% 14.0M 16s
+   450K .......... .......... .......... .......... ..........  5%  299K 17s
+   500K .......... .......... .......... .......... ..........  6% 21.4M 15s
+   550K .......... .......... .......... .......... ..........  7% 19.4M 14s
+   600K .......... .......... .......... .......... ..........  7% 24.5M 13s
+   650K .......... .......... .......... .......... ..........  8% 34.0M 12s
+   700K .......... .......... .......... .......... ..........  8% 25.1M 11s
+   750K .......... .......... .......... .......... ..........  9% 31.8M 10s
+   800K .......... .......... .......... .......... .......... 10% 21.8M 10s
+   850K .......... .......... .......... .......... .......... 10% 26.9M 9s
+   900K .......... .......... .......... .......... .......... 11% 1.78M 9s
+   950K .......... .......... .......... .......... .......... 11%  374K 9s
+  1000K .......... .......... .......... .......... .......... 12% 34.1M 9s
+  1050K .......... .......... .......... .......... .......... 13% 39.3M 8s
+  1100K .......... .......... .......... .......... .......... 13% 36.1M 8s
+  1150K .......... .......... .......... .......... .......... 14% 38.6M 8s
+  1200K .......... .......... .......... .......... .......... 14% 35.3M 7s
+  1250K .......... .......... .......... .......... .......... 15% 45.7M 7s
+  1300K .......... .......... .......... .......... .......... 16% 37.9M 7s
+  1350K .......... .......... .......... .......... .......... 16% 71.5M 6s
+  1400K .......... .......... .......... .......... .......... 17% 46.0M 6s
+  1450K .......... .......... .......... .......... .......... 17% 70.3M 6s
+  1500K .......... .......... .......... .......... .......... 18% 71.3M 6s
+  1550K .......... .......... .......... .......... .......... 19% 58.0M 5s
+  1600K .......... .......... .......... .......... .......... 19% 48.1M 5s
+  1650K .......... .......... .......... .......... .......... 20% 61.2M 5s
+  1700K .......... .......... .......... .......... .......... 20% 70.0M 5s
+  1750K .......... .......... .......... .......... .......... 21% 68.4M 5s
+  1800K .......... .......... .......... .......... .......... 21% 57.3M 4s
+  1850K .......... .......... .......... .......... .......... 22% 70.4M 4s
+  1900K .......... .......... .......... .......... .......... 23%  315K 5s
+  1950K .......... .......... .......... .......... .......... 23% 73.7M 5s
+  2000K .......... .......... .......... .......... .......... 24% 46.0M 4s
+  2050K .......... .......... .......... .......... .......... 24% 55.3M 4s
+  2100K .......... .......... .......... .......... .......... 25% 68.0M 4s
+  2150K .......... .......... .......... .......... .......... 26% 63.8M 4s
+  2200K .......... .......... .......... .......... .......... 26% 56.3M 4s
+  2250K .......... .......... .......... .......... .......... 27% 62.2M 4s
+  2300K .......... .......... .......... .......... .......... 27% 53.9M 4s
+  2350K .......... .......... .......... .......... .......... 28%  131M 4s
+  2400K .......... .......... .......... .......... .......... 29%  104M 3s
+  2450K .......... .......... .......... .......... .......... 29%  129M 3s
+  2500K .......... .......... .......... .......... .......... 30%  121M 3s
+  2550K .......... .......... .......... .......... .......... 30%  139M 3s
+  2600K .......... .......... .......... .......... .......... 31% 7.92M 3s
+  2650K .......... .......... .......... .......... .......... 32% 90.5M 3s
+  2700K .......... .......... .......... .......... .......... 32% 90.3M 3s
+  2750K .......... .......... .......... .......... .......... 33% 87.8M 3s
+  2800K .......... .......... .......... .......... .......... 33% 68.9M 3s
+  2850K .......... .......... .......... .......... .......... 34% 88.0M 3s
+  2900K .......... .......... .......... .......... .......... 35% 90.6M 3s
+  2950K .......... .......... .......... .......... .......... 35% 88.6M 3s
+  3000K .......... .......... .......... .......... .......... 36% 97.6M 3s
+  3050K .......... .......... .......... .......... .......... 36%  110M 2s
+  3100K .......... .......... .......... .......... .......... 37%  102M 2s
+  3150K .......... .......... .......... .......... .......... 38%  107M 2s
+  3200K .......... .......... .......... .......... .......... 38% 93.1M 2s
+  3250K .......... .......... .......... .......... .......... 39%  115M 2s
+  3300K .......... .......... .......... .......... .......... 39%  122M 2s
+  3350K .......... .......... .......... .......... .......... 40%  123M 2s
+  3400K .......... .......... .......... .......... .......... 40%  119M 2s
+  3450K .......... .......... .......... .......... .......... 41%  139M 2s
+  3500K .......... .......... .......... .......... .......... 42%  139M 2s
+  3550K .......... .......... .......... .......... .......... 42% 98.2M 2s
+  3600K .......... .......... .......... .......... .......... 43% 44.9M 2s
+  3650K .......... .......... .......... .......... .......... 43% 42.3M 2s
+  3700K .......... .......... .......... .......... .......... 44% 60.1M 2s
+  3750K .......... .......... .......... .......... .......... 45% 55.8M 2s
+  3800K .......... .......... .......... .......... .......... 45% 2.89M 2s
+  3850K .......... .......... .......... .......... .......... 46% 41.9M 2s
+  3900K .......... .......... .......... .......... .......... 46%  379K 2s
+  3950K .......... .......... .......... .......... .......... 47% 91.2M 2s
+  4000K .......... .......... .......... .......... .......... 48% 47.8M 2s
+  4050K .......... .......... .......... .......... .......... 48% 57.3M 2s
+  4100K .......... .......... .......... .......... .......... 49% 64.9M 2s
+  4150K .......... .......... .......... .......... .......... 49% 60.6M 2s
+  4200K .......... .......... .......... .......... .......... 50% 53.9M 2s
+  4250K .......... .......... .......... .......... .......... 51%  101M 2s
+  4300K .......... .......... .......... .......... .......... 51%  108M 1s
+  4350K .......... .......... .......... .......... .......... 52%  102M 1s
+  4400K .......... .......... .......... .......... .......... 52% 77.4M 1s
+  4450K .......... .......... .......... .......... .......... 53%  103M 1s
+  4500K .......... .......... .......... .......... .......... 54%  103M 1s
+  4550K .......... .......... .......... .......... .......... 54%  121M 1s
+  4600K .......... .......... .......... .......... .......... 55% 97.8M 1s
+  4650K .......... .......... .......... .......... .......... 55%  107M 1s
+  4700K .......... .......... .......... .......... .......... 56%  109M 1s
+  4750K .......... .......... .......... .......... .......... 57%  110M 1s
+  4800K .......... .......... .......... .......... .......... 57% 84.9M 1s
+  4850K .......... .......... .......... .......... .......... 58%  109M 1s
+  4900K .......... .......... .......... .......... .......... 58%  101M 1s
+  4950K .......... .......... .......... .......... .......... 59%  107M 1s
+  5000K .......... .......... .......... .......... .......... 60% 87.8M 1s
+  5050K .......... .......... .......... .......... .......... 60%  108M 1s
+  5100K .......... .......... .......... .......... .......... 61%  110M 1s
+  5150K .......... .......... .......... .......... .......... 61%  108M 1s
+  5200K .......... .......... .......... .......... .......... 62% 92.1M 1s
+  5250K .......... .......... .......... .......... .......... 62%  107M 1s
+  5300K .......... .......... .......... .......... .......... 63%  115M 1s
+  5350K .......... .......... .......... .......... .......... 64%  112M 1s
+  5400K .......... .......... .......... .......... .......... 64%  101M 1s
+  5450K .......... .......... .......... .......... .......... 65%  108M 1s
+  5500K .......... .......... .......... .......... .......... 65% 69.7M 1s
+  5550K .......... .......... .......... .......... .......... 66% 60.3M 1s
+  5600K .......... .......... .......... .......... .......... 67% 44.8M 1s
+  5650K .......... .......... .......... .......... .......... 67% 58.5M 1s
+  5700K .......... .......... .......... .......... .......... 68% 59.9M 1s
+  5750K .......... .......... .......... .......... .......... 68% 60.1M 1s
+  5800K .......... .......... .......... .......... .......... 69% 53.5M 1s
+  5850K .......... .......... .......... .......... .......... 70% 69.5M 1s
+  5900K .......... .......... .......... .......... .......... 70%  113M 1s
+  5950K .......... .......... .......... .......... .......... 71%  106M 1s
+  6000K .......... .......... .......... .......... .......... 71% 84.7M 1s
+  6050K .......... .......... .......... .......... .......... 72%  109M 1s
+  6100K .......... .......... .......... .......... .......... 73%  107M 1s
+  6150K .......... .......... .......... .......... .......... 73%  110M 1s
+  6200K .......... .......... .......... .......... .......... 74% 68.9M 1s
+  6250K .......... .......... .......... .......... .......... 74% 61.5M 1s
+  6300K .......... .......... .......... .......... .......... 75% 57.2M 1s
+  6350K .......... .......... .......... .......... .......... 76% 61.1M 1s
+  6400K .......... .......... .......... .......... .......... 76% 46.1M 0s
+  6450K .......... .......... .......... .......... .......... 77% 56.8M 0s
+  6500K .......... .......... .......... .......... .......... 77% 59.8M 0s
+  6550K .......... .......... .......... .......... .......... 78% 64.1M 0s
+  6600K .......... .......... .......... .......... .......... 79%  110M 0s
+  6650K .......... .......... .......... .......... .......... 79% 76.5M 0s
+  6700K .......... .......... .......... .......... .......... 80% 56.9M 0s
+  6750K .......... .......... .......... .......... .......... 80% 59.8M 0s
+  6800K .......... .......... .......... .......... .......... 81% 46.9M 0s
+  6850K .......... .......... .......... .......... .......... 81% 6.12M 0s
+  6900K .......... .......... .......... .......... .......... 82% 44.0M 0s
+  6950K .......... .......... .......... .......... .......... 83%  379K 0s
+  7000K .......... .......... .......... .......... .......... 83% 50.5M 0s
+  7050K .......... .......... .......... .......... .......... 84% 72.2M 0s
+  7100K .......... .......... .......... .......... .......... 84% 92.1M 0s
+  7150K .......... .......... .......... .......... .......... 85% 64.3M 0s
+  7200K .......... .......... .......... .......... .......... 86% 35.6M 0s
+  7250K .......... .......... .......... .......... .......... 86% 60.7M 0s
+  7300K .......... .......... .......... .......... .......... 87% 57.2M 0s
+  7350K .......... .......... .......... .......... .......... 87% 63.1M 0s
+  7400K .......... .......... .......... .......... .......... 88% 80.2M 0s
+  7450K .......... .......... .......... .......... .......... 89% 90.3M 0s
+  7500K .......... .......... .......... .......... .......... 89% 92.5M 0s
+  7550K .......... .......... .......... .......... .......... 90% 96.5M 0s
+  7600K .......... .......... .......... .......... .......... 90% 76.0M 0s
+  7650K .......... .......... .......... .......... .......... 91% 91.3M 0s
+  7700K .......... .......... .......... .......... .......... 92% 19.0M 0s
+  7750K .......... .......... .......... .......... .......... 92% 67.7M 0s
+  7800K .......... .......... .......... .......... .......... 93% 56.7M 0s
+  7850K .......... .......... .......... .......... .......... 93% 55.1M 0s
+  7900K .......... .......... .......... .......... .......... 94% 60.8M 0s
+  7950K .......... .......... .......... .......... .......... 95% 56.6M 0s
+  8000K .......... .......... .......... .......... .......... 95% 45.0M 0s
+  8050K .......... .......... .......... .......... .......... 96% 56.9M 0s
+  8100K .......... .......... .......... .......... .......... 96% 55.7M 0s
+  8150K .......... .......... .......... .......... .......... 97% 59.4M 0s
+  8200K .......... .......... .......... .......... .......... 98% 55.0M 0s
+  8250K .......... .......... .......... .......... .......... 98% 61.1M 0s
+  8300K .......... .......... .......... .......... .......... 99% 56.9M 0s
+  8350K .......... .......... .......... .......... .......... 99% 58.4M 0s
+  8400K .......... .....                                      100% 63.0M=1.8s
+
+2022-07-30 22:41:26 (4.57 MB/s) - `apache-maven-3.3.9-bin.zip' saved [8617253/8617253]
+
+travis_time:end:15e22530:start=1659220883673552263,finish=1659220887149078466,duration=3475526203[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:0a663c80[0K$ if [ "$TRAVIS_OS_NAME" == "linux" ] && [ "$JVM" == "latest" ]; then sudo apt-get update -qq; sudo /bin/echo -e oracle-java9-installer shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections; sudo apt-get -o Dpkg::Options::="--force-confnew" install -y oracle-java9-installer oracle-java9-set-default oracle-java9-unlimited-jce-policy; sudo update-java-alternatives -s java-9-oracle; fi
+travis_time:end:0a663c80:start=1659220887155578339,finish=1659220887159777042,duration=4198703[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:install[0Ktravis_time:start:0cc46a7c[0K$ true
+travis_time:end:0cc46a7c:start=1659220887165789975,finish=1659220887169600588,duration=3810613[0Ktravis_fold:end:install[0Ktravis_time:start:34d8bf8d[0K$ mvn clean test verify -Dhttps.protocols=TLSv1.2 -B
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=192m; support was removed in 8.0
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] GraphHopper Parent Project
+[INFO] GraphHopper Core
+[INFO] GraphHopper Reader for OpenStreetMap Data
+[INFO] GraphHopper Reader for Gtfs Data
+[INFO] GraphHopper Reader JSON
+[INFO] GraphHopper Tools
+[INFO] GraphHopper Web
+[INFO] GraphHopper Reader for Shapefile Data
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GraphHopper Parent Project 0.9-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/2.19.1/maven-failsafe-plugin-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/2.19.1/maven-failsafe-plugin-2.19.1.pom (10 KB at 20.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.19.1/surefire-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.19.1/surefire-2.19.1.pom (19 KB at 222.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/26/maven-parent-26.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/26/maven-parent-26.pom (39 KB at 925.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/16/apache-16.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/16/apache-16.pom (16 KB at 578.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/2.19.1/maven-failsafe-plugin-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/2.19.1/maven-failsafe-plugin-2.19.1.jar (85 KB at 889.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom (4 KB at 191.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom (13 KB at 578.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/21/maven-parent-21.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/21/maven-parent-21.pom (26 KB at 627.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/10/apache-10.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/10/apache-10.pom (15 KB at 628.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar (25 KB at 707.5 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/junit/junit/4.12/junit-4.12.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.pom (24 KB at 268.9 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom (766 B at 31.2 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom (2 KB at 80.2 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/junit/junit/4.12/junit-4.12.jar
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar (44 KB at 375.8 KB/sec)
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar (308 KB at 481.3 KB/sec)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ graphhopper-parent ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.pom (2 KB at 74.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.6/maven-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.6/maven-2.0.6.pom (9 KB at 401.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/5/maven-parent-5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/5/maven-parent-5.pom (15 KB at 595.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/3/apache-3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/3/apache-3.pom (4 KB at 167.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom (4 KB at 209.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/16/spice-parent-16.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/16/spice-parent-16.pom (9 KB at 340.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/5/forge-parent-5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/5/forge-parent-5.pom (9 KB at 340.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar (13 KB at 322.0 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar (221 KB at 1092.9 KB/sec)
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.19.1:integration-test (default) @ graphhopper-parent ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.pom (2 KB at 75.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.2.1/maven-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.2.1/maven-2.2.1.pom (22 KB at 841.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/11/maven-parent-11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/11/maven-parent-11.pom (32 KB at 1020.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/5/apache-5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/5/apache-5.pom (5 KB at 222.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.19.1/maven-surefire-common-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.19.1/maven-surefire-common-2.19.1.pom (8 KB at 166.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.pom (2 KB at 88.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.3/maven-plugin-tools-3.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.3/maven-plugin-tools-3.3.pom (13 KB at 514.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/24/maven-parent-24.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/24/maven-parent-24.pom (37 KB at 1162.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/14/apache-14.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/14/apache-14.pom (15 KB at 623.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom (2 KB at 96.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.pom (7 KB at 304.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.2/plexus-2.0.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.2/plexus-2.0.2.pom (12 KB at 493.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.19.1/surefire-api-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.19.1/surefire-api-2.19.1.pom (4 KB at 74.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.19.1/surefire-booter-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.19.1/surefire-booter-2.19.1.pom (4 KB at 129.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.pom (3 KB at 118.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom (4 KB at 214.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.0.3/plexus-containers-1.0.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.0.3/plexus-containers-1.0.3.pom (492 B at 32.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.4/plexus-1.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.4/plexus-1.0.4.pom (6 KB at 350.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.pom (7 KB at 352.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom (4 KB at 179.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom (3 KB at 150.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.pom (3 KB at 112.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.pom (4 KB at 197.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.pom (889 B at 51.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.14/plexus-components-1.1.14.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.14/plexus-components-1.1.14.pom (6 KB at 316.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.pom (3 KB at 124.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom (4 KB at 168.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.pom (2 KB at 114.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.pom (880 B at 53.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.pom (2 KB at 117.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.pom (12 KB at 568.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom (2 KB at 119.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.pom (2 KB at 123.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.5.6/slf4j-parent-1.5.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.5.6/slf4j-parent-1.5.6.pom (8 KB at 407.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.pom (3 KB at 171.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.pom (3 KB at 105.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.pom (3 KB at 128.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/15/maven-shared-components-15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/15/maven-shared-components-15.pom (10 KB at 350.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/16/maven-parent-16.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/16/maven-parent-16.pom (23 KB at 909.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/7/apache-7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/7/apache-7.pom (15 KB at 542.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom (2 KB at 98.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.pom (2 KB at 76.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/classworlds/classworlds/1.1/classworlds-1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/classworlds/classworlds/1.1/classworlds-1.1.pom (4 KB at 115.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom (3 KB at 144.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/12/spice-parent-12.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/12/spice-parent-12.pom (7 KB at 368.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/4/forge-parent-4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/4/forge-parent-4.pom (9 KB at 410.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom (6 KB at 279.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom (9 KB at 461.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom (3 KB at 126.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.pom (4 KB at 163.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom (17 KB at 627.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/22/commons-parent-22.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/22/commons-parent-22.pom (41 KB at 1411.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/9/apache-9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/9/apache-9.pom (15 KB at 705.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.19.1/maven-surefire-common-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.19.1/surefire-booter-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.jar (13 KB at 549.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.19.1/surefire-booter-2.19.1.jar (45 KB at 766.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar (79 KB at 1060.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.jar (223 KB at 1825.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar (190 KB at 1335.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.jar (39 KB at 264.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar (153 KB at 984.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.jar (48 KB at 292.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.jar (35 KB at 178.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.19.1/maven-surefire-common-2.19.1.jar (286 KB at 1231.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.jar (86 KB at 307.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar (66 KB at 185.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.jar (174 KB at 473.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar (9 KB at 22.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.jar (22 KB at 55.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.jar (17 KB at 39.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar (22 KB at 52.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar (11 KB at 24.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.jar (30 KB at 31.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar (50 KB at 54.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/classworlds/classworlds/1.1/classworlds-1.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.jar (11 KB at 10.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/classworlds/classworlds/1.1/classworlds-1.1.jar (37 KB at 38.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar (14 KB at 13.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.jar (37 KB at 36.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar (324 KB at 299.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.19.1/surefire-api-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar (309 KB at 272.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.jar (26 KB at 21.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar (13 KB at 11.0 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.19.1/surefire-api-2.19.1.jar (192 KB at 162.5 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar (28 KB at 20.5 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.jar (14 KB at 8.3 KB/sec)
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.19.1:verify (default) @ graphhopper-parent ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GraphHopper Core 0.9-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/3.0.2/maven-jar-plugin-3.0.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/3.0.2/maven-jar-plugin-3.0.2.pom (7 KB at 335.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/30/maven-plugins-30.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/30/maven-plugins-30.pom (10 KB at 496.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/30/maven-parent-30.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/30/maven-parent-30.pom (41 KB at 1152.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/18/apache-18.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/18/apache-18.pom (16 KB at 566.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/3.0.2/maven-jar-plugin-3.0.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/3.0.2/maven-jar-plugin-3.0.2.jar (27 KB at 878.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.pom (8 KB at 396.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/23/maven-plugins-23.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/23/maven-plugins-23.pom (9 KB at 499.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/22/maven-parent-22.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/22/maven-parent-22.pom (30 KB at 829.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/11/apache-11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/11/apache-11.pom (15 KB at 361.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.jar (29 KB at 900.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.5.1/maven-compiler-plugin-3.5.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.5.1/maven-compiler-plugin-3.5.1.pom (10 KB at 471.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/28/maven-plugins-28.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/28/maven-plugins-28.pom (12 KB at 559.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/27/maven-parent-27.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/27/maven-parent-27.pom (40 KB at 1135.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/17/apache-17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/17/apache-17.pom (16 KB at 784.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.5.1/maven-compiler-plugin-3.5.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.5.1/maven-compiler-plugin-3.5.1.jar (50 KB at 817.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.19.1/maven-surefire-plugin-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.19.1/maven-surefire-plugin-2.19.1.pom (6 KB at 226.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.19.1/maven-surefire-plugin-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.19.1/maven-surefire-plugin-2.19.1.jar (38 KB at 559.7 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/carrotsearch/hppc/0.7.2/hppc-0.7.2.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.2/hppc-0.7.2.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.2/hppc-0.7.2.pom (18 KB at 588.1 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/carrotsearch/hppc-parent/0.7.2/hppc-parent-0.7.2.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/carrotsearch/hppc-parent/0.7.2/hppc-parent-0.7.2.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/carrotsearch/hppc-parent/0.7.2/hppc-parent-0.7.2.pom (20 KB at 641.3 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom (7 KB at 291.6 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.pom (3 KB at 112.9 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/slf4j/slf4j-parent/1.7.21/slf4j-parent-1.7.21.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.7.21/slf4j-parent-1.7.21.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.7.21/slf4j-parent-1.7.21.pom (14 KB at 488.4 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.pom (2 KB at 26.9 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/log4j/log4j/1.2.17/log4j-1.2.17.pom
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/log4j/log4j/1.2.17/log4j-1.2.17.pom (378 B at 3.9 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/apache/xmlgraphics/xmlgraphics-commons/2.1/xmlgraphics-commons-2.1.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/xmlgraphics/xmlgraphics-commons/2.1/xmlgraphics-commons-2.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/xmlgraphics/xmlgraphics-commons/2.1/xmlgraphics-commons-2.1.pom (4 KB at 14.9 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/commons-io/commons-io/1.3.1/commons-io-1.3.1.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/commons-io/commons-io/1.3.1/commons-io-1.3.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/commons-io/commons-io/1.3.1/commons-io-1.3.1.pom (7 KB at 220.7 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.pom
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.pom (6 KB at 53.0 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/fasterxml/jackson/core/jackson-annotations/2.8.4/jackson-annotations-2.8.4.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.4/jackson-annotations-2.8.4.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.4/jackson-annotations-2.8.4.pom (2 KB at 85.9 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/fasterxml/jackson/jackson-parent/2.8/jackson-parent-2.8.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/jackson-parent/2.8/jackson-parent-2.8.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/jackson-parent/2.8/jackson-parent-2.8.pom (8 KB at 311.4 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/fasterxml/oss-parent/27/oss-parent-27.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/oss-parent/27/oss-parent-27.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/oss-parent/27/oss-parent-27.pom (20 KB at 479.5 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/json/json/20160810/json-20160810.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/json/json/20160810/json-20160810.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/json/json/20160810/json-20160810.pom (6 KB at 230.8 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/vividsolutions/jts/1.13/jts-1.13.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/vividsolutions/jts/1.13/jts-1.13.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/vividsolutions/jts/1.13/jts-1.13.pom (3 KB at 70.3 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/carrotsearch/hppc/0.7.2/hppc-0.7.2.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/log4j/log4j/1.2.17/log4j-1.2.17.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/apache/xmlgraphics/xmlgraphics-commons/2.1/xmlgraphics-commons-2.1.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/commons-io/commons-io/1.3.1/commons-io-1.3.1.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/fasterxml/jackson/core/jackson-annotations/2.8.4/jackson-annotations-2.8.4.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/json/json/20160810/json-20160810.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/vividsolutions/jts/1.13/jts-1.13.jar
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar (38 KB at 76.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.2/hppc-0.7.2.jar
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.jar
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/xmlgraphics/xmlgraphics-commons/2.1/xmlgraphics-commons-2.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.jar (10 KB at 128.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/commons-io/commons-io/1.3.1/commons-io-1.3.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar (41 KB at 358.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.4/jackson-annotations-2.8.4.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.2/hppc-0.7.2.jar (1632 KB at 13599.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/json/json/20160810/json-20160810.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/json/json/20160810/json-20160810.jar (54 KB at 339.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/vividsolutions/jts/1.13/jts-1.13.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/vividsolutions/jts/1.13/jts-1.13.jar (777 KB at 3696.9 KB/sec)
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/commons-io/commons-io/1.3.1/commons-io-1.3.1.jar (82 KB at 341.6 KB/sec)
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.4/jackson-annotations-2.8.4.jar (55 KB at 217.0 KB/sec)
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar (479 KB at 531.6 KB/sec)
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/xmlgraphics/xmlgraphics-commons/2.1/xmlgraphics-commons-2.1.jar (630 KB at 361.8 KB/sec)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ graphhopper-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ graphhopper-core ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.pom (3 KB at 183.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.pom (2 KB at 122.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.pom (3 KB at 228.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.1/plexus-utils-1.4.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.1/plexus-utils-1.4.1.pom (2 KB at 133.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.pom (998 B at 65.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.pom (2 KB at 120.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.pom (3 KB at 160.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.pom (2 KB at 106.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.pom (2 KB at 110.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.pom (2 KB at 146.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.pom (7 KB at 364.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.pom (2 KB at 109.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.pom (2 KB at 106.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.0.6/maven-reporting-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.0.6/maven-reporting-2.0.6.pom (2 KB at 93.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.pom (424 B at 24.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.0-alpha-7/doxia-1.0-alpha-7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.0-alpha-7/doxia-1.0-alpha-7.pom (4 KB at 212.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.pom (2 KB at 118.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.0/commons-cli-1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.0/commons-cli-1.0.pom (3 KB at 137.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.pom (2 KB at 115.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.pom (7 KB at 384.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.pom (2 KB at 76.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom (4 KB at 232.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom (17 KB at 606.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.pom (6 KB at 376.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/17/maven-shared-components-17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/17/maven-shared-components-17.pom (9 KB at 386.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.12/plexus-interpolation-1.12.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.12/plexus-interpolation-1.12.pom (889 B at 62.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.pom (3 KB at 186.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/10/spice-parent-10.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/10/spice-parent-10.pom (3 KB at 210.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/3/forge-parent-3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/3/forge-parent-3.pom (5 KB at 327.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.pom (8 KB at 463.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.pom (890 B at 66.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.15/plexus-components-1.1.15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.15/plexus-components-1.1.15.pom (3 KB at 163.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.3/plexus-2.0.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.3/plexus-2.0.3.pom (16 KB at 719.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar (35 KB at 860.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.jar (21 KB at 307.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.jar (29 KB at 386.9 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar (56 KB at 755.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar (114 KB at 1512.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar (149 KB at 1741.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.0/commons-cli-1.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar (6 KB at 59.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.jar (14 KB at 137.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.jar (10 KB at 100.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.jar (24 KB at 239.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.0/commons-cli-1.0.jar (30 KB at 265.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.jar (14 KB at 110.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar (48 KB at 357.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.jar (11 KB at 73.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.jar (86 KB at 546.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.jar (37 KB at 227.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.jar (85 KB at 496.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.jar (7 KB at 38.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.jar (43 KB at 214.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar (119 KB at 597.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.jar (218 KB at 943.5 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.jar (60 KB at 114.7 KB/sec)
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 46 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ graphhopper-core ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.pom (3 KB at 149.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.0/maven-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.0/maven-3.0.pom (22 KB at 1017.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/15/maven-parent-15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/15/maven-parent-15.pom (24 KB at 732.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/6/apache-6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/6/apache-6.pom (13 KB at 520.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.0/maven-model-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.0/maven-model-3.0.pom (4 KB at 223.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.pom (4 KB at 203.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.pom (2 KB at 110.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.pom (6 KB at 201.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-plexus/1.4.2/guice-plexus-1.4.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-plexus/1.4.2/guice-plexus-1.4.2.pom (4 KB at 235.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-bean/1.4.2/guice-bean-1.4.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-bean/1.4.2/guice-bean-1.4.2.pom (3 KB at 169.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject/1.4.2/sisu-inject-1.4.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject/1.4.2/sisu-inject-1.4.2.pom (2 KB at 76.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-parent/1.4.2/sisu-parent-1.4.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-parent/1.4.2/sisu-parent-1.4.2.pom (8 KB at 316.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/6/forge-parent-6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/6/forge-parent-6.pom (11 KB at 583.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom (815 B at 61.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom (5 KB at 276.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.7/plexus-2.0.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.7/plexus-2.0.7.pom (17 KB at 888.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.pom (4 KB at 216.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.pom (6 KB at 313.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7.pom (11 KB at 568.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.0/maven-core-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.0/maven-core-3.0.pom (7 KB at 359.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.0/maven-settings-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.0/maven-settings-3.0.pom (2 KB at 108.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.pom (3 KB at 154.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.pom (910 B at 31.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.18/plexus-components-1.1.18.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.18/plexus-components-1.1.18.pom (6 KB at 275.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.pom (2 KB at 117.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.pom (3 KB at 121.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.pom (3 KB at 150.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-api/1.7/aether-api-1.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-api/1.7/aether-api-1.7.pom (2 KB at 102.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-parent/1.7/aether-parent-1.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-parent/1.7/aether-parent-1.7.pom (8 KB at 419.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-util/1.7/aether-util-1.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-util/1.7/aether-util-1.7.pom (3 KB at 134.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.pom (4 KB at 240.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.pom (2 KB at 106.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.pom (2 KB at 120.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.2.1/maven-reporting-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.2.1/maven-reporting-2.2.1.pom (2 KB at 82.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.pom (2 KB at 153.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.1/doxia-1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.1/doxia-1.1.pom (15 KB at 592.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.pom (2 KB at 118.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30.pom (4 KB at 188.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.0-alpha-30/plexus-containers-1.0-alpha-30.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.0-alpha-30/plexus-containers-1.0-alpha-30.pom (2 KB at 88.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.5/plexus-utils-1.4.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.5/plexus-utils-1.4.5.pom (3 KB at 158.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/1.2-alpha-9/plexus-classworlds-1.2-alpha-9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/1.2-alpha-9/plexus-classworlds-1.2-alpha-9.pom (4 KB at 209.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.10/plexus-1.0.10.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.10/plexus-1.0.10.pom (9 KB at 277.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.2/commons-cli-1.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.2/commons-cli-1.2.pom (8 KB at 432.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/11/commons-parent-11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/11/commons-parent-11.pom (25 KB at 1003.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/4/apache-4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/4/apache-4.pom (5 KB at 231.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.0/maven-shared-utils-3.0.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.0/maven-shared-utils-3.0.0.pom (6 KB at 303.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/21/maven-shared-components-21.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/21/maven-shared-components-21.pom (5 KB at 23.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/25/maven-parent-25.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/25/maven-parent-25.pom (37 KB at 1108.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/15/apache-15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/15/apache-15.pom (15 KB at 743.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.pom (10 KB at 522.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/25/commons-parent-25.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/25/commons-parent-25.pom (48 KB at 786.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.pom (965 B at 55.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom (5 KB at 171.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/19/maven-shared-components-19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/19/maven-shared-components-19.pom (7 KB at 248.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/23/maven-parent-23.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/23/maven-parent-23.pom (32 KB at 1060.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/13/apache-13.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/13/apache-13.pom (14 KB at 718.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.pom (4 KB at 282.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/18/maven-shared-components-18.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/18/maven-shared-components-18.pom (5 KB at 321.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.7/plexus-compiler-api-2.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.7/plexus-compiler-api-2.7.pom (891 B at 58.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/2.7/plexus-compiler-2.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/2.7/plexus-compiler-2.7.pom (5 KB at 192.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/4.0/plexus-components-4.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/4.0/plexus-components-4.0.pom (3 KB at 173.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/4.0/plexus-4.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/4.0/plexus-4.0.pom (21 KB at 656.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/10/forge-parent-10.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/10/forge-parent-10.pom (14 KB at 735.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.pom (4 KB at 233.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1.pom (20 KB at 907.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom (7 KB at 366.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.7/plexus-compiler-manager-2.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.7/plexus-compiler-manager-2.7.pom (711 B at 31.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.7/plexus-compiler-javac-2.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.7/plexus-compiler-javac-2.7.pom (792 B at 51.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/2.7/plexus-compilers-2.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/2.7/plexus-compilers-2.7.pom (2 KB at 84.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.0/maven-model-3.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar (48 KB at 853.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.0/maven-model-3.0.jar (161 KB at 2061.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar (150 KB at 1915.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.0/maven-core-3.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.jar (51 KB at 551.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.0/maven-settings-3.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.0/maven-settings-3.0.jar (46 KB at 340.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar (197 KB at 1172.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.jar (217 KB at 1225.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.jar (37 KB at 201.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar (461 KB at 2280.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.jar (30 KB at 145.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.jar (14 KB at 58.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-api/1.7/aether-api-1.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.jar (104 KB at 402.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-util/1.7/aether-util-1.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.jar (145 KB at 553.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.jar (50 KB at 186.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-api/1.7/aether-api-1.7.jar (73 KB at 265.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.0/maven-core-3.0.jar (515 KB at 1787.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar (5 KB at 14.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.0/maven-shared-utils-3.0.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-util/1.7/aether-util-1.7.jar (106 KB at 336.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar (46 KB at 136.4 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.jar (60 KB at 180.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.7/plexus-compiler-api-2.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar (32 KB at 89.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.7/plexus-compiler-manager-2.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.7/plexus-compiler-api-2.7.jar (26 KB at 68.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.7/plexus-compiler-javac-2.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar (181 KB at 468.4 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar (14 KB at 32.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.0/maven-shared-utils-3.0.0.jar (152 KB at 365.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.7/plexus-compiler-manager-2.7.jar (5 KB at 11.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.7/plexus-compiler-javac-2.7.jar (20 KB at 46.2 KB/sec)
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 266 source files to /home/travis/build/failed/graphhopper/graphhopper/core/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ graphhopper-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ graphhopper-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 130 source files to /home/travis/build/failed/graphhopper/graphhopper/core/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ graphhopper-core ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 177.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 83.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1363.9 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.graphhopper.reader.OSMElementTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in com.graphhopper.reader.OSMElementTest
+Running com.graphhopper.reader.osm.conditional.ConditionalParserTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 sec - in com.graphhopper.reader.osm.conditional.ConditionalParserTest
+Running com.graphhopper.reader.osm.conditional.DateRangeParserTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in com.graphhopper.reader.osm.conditional.DateRangeParserTest
+Running com.graphhopper.reader.osm.conditional.ConditionalOSMTagInspectorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.graphhopper.reader.osm.conditional.ConditionalOSMTagInspectorTest
+Running com.graphhopper.reader.dem.CGIARProviderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.958 sec - in com.graphhopper.reader.dem.CGIARProviderTest
+Running com.graphhopper.reader.dem.TunnelElevationInterpolatorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec - in com.graphhopper.reader.dem.TunnelElevationInterpolatorTest
+Running com.graphhopper.reader.dem.BridgeElevationInterpolatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.graphhopper.reader.dem.BridgeElevationInterpolatorTest
+Running com.graphhopper.reader.dem.ElevationInterpolatorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.reader.dem.ElevationInterpolatorTest
+Running com.graphhopper.reader.dem.HeightTileTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.graphhopper.reader.dem.HeightTileTest
+Running com.graphhopper.reader.dem.SRTMProviderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.404 sec - in com.graphhopper.reader.dem.SRTMProviderTest
+Running com.graphhopper.reader.OSMNodeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.reader.OSMNodeTest
+Running com.graphhopper.reader.PrinctonReaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in com.graphhopper.reader.PrinctonReaderTest
+Running com.graphhopper.routing.util.MotorcycleFlagEncoderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.graphhopper.routing.util.MotorcycleFlagEncoderTest
+Running com.graphhopper.routing.util.BikeFlagEncoderTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec - in com.graphhopper.routing.util.BikeFlagEncoderTest
+Running com.graphhopper.routing.util.Bike2WeightFlagEncoderTest
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in com.graphhopper.routing.util.Bike2WeightFlagEncoderTest
+Running com.graphhopper.routing.util.FootFlagEncoderTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.graphhopper.routing.util.FootFlagEncoderTest
+Running com.graphhopper.routing.util.MountainBikeFlagEncoderTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.graphhopper.routing.util.MountainBikeFlagEncoderTest
+Running com.graphhopper.routing.util.spatialrules.SpatialRuleLookupArrayTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in com.graphhopper.routing.util.spatialrules.SpatialRuleLookupArrayTest
+Running com.graphhopper.routing.util.spatialrules.PolygonTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.routing.util.spatialrules.PolygonTest
+Running com.graphhopper.routing.util.AbstractFlagEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.routing.util.AbstractFlagEncoderTest
+Running com.graphhopper.routing.util.HikeFlagEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.routing.util.HikeFlagEncoderTest
+Running com.graphhopper.routing.util.CarFlagEncoderTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.graphhopper.routing.util.CarFlagEncoderTest
+Running com.graphhopper.routing.util.Car4WDFlagEncoderTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.graphhopper.routing.util.Car4WDFlagEncoderTest
+Running com.graphhopper.routing.util.tour.SinglePointTourTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.graphhopper.routing.util.tour.SinglePointTourTest
+Running com.graphhopper.routing.util.DataFlagEncoderTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in com.graphhopper.routing.util.DataFlagEncoderTest
+Running com.graphhopper.routing.util.EncodedValueTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.routing.util.EncodedValueTest
+Running com.graphhopper.routing.util.NameSimilarityEdgeFilterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.graphhopper.routing.util.NameSimilarityEdgeFilterTest
+Running com.graphhopper.routing.util.RacingBikeFlagEncoderTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.graphhopper.routing.util.RacingBikeFlagEncoderTest
+Running com.graphhopper.routing.util.EncodingManagerTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.graphhopper.routing.util.EncodingManagerTest
+Running com.graphhopper.routing.util.EncodedDoubleValueTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.routing.util.EncodedDoubleValueTest
+Running com.graphhopper.routing.ch.CHAlgoFactoryDecoratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.routing.ch.CHAlgoFactoryDecoratorTest
+Running com.graphhopper.routing.ch.DijkstraBidirectionCHTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.395 sec - in com.graphhopper.routing.ch.DijkstraBidirectionCHTest
+Running com.graphhopper.routing.ch.PrepareContractionHierarchiesTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.189 sec - in com.graphhopper.routing.ch.PrepareContractionHierarchiesTest
+Running com.graphhopper.routing.ch.PrepareEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.routing.ch.PrepareEncoderTest
+Running com.graphhopper.routing.weighting.AbstractWeightingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.routing.weighting.AbstractWeightingTest
+Running com.graphhopper.routing.weighting.ShortFastestWeightingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.routing.weighting.ShortFastestWeightingTest
+Running com.graphhopper.routing.weighting.GenericWeightingTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in com.graphhopper.routing.weighting.GenericWeightingTest
+Running com.graphhopper.routing.weighting.FastestWeightingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.graphhopper.routing.weighting.FastestWeightingTest
+Running com.graphhopper.routing.lm.LandmarkStorageTest
+2022-07-30 22:42:31,712 [main] WARN  com.graphhopper.routing.lm.LandmarkStorage - next start node not found in big enough network of size 2, first element is 5, 0.0,0.0
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 sec - in com.graphhopper.routing.lm.LandmarkStorageTest
+Running com.graphhopper.routing.lm.PrepareLandmarksTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in com.graphhopper.routing.lm.PrepareLandmarksTest
+Running com.graphhopper.routing.lm.LMAlgoFactoryDecoratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.graphhopper.routing.lm.LMAlgoFactoryDecoratorTest
+Running com.graphhopper.routing.template.RoundTripRoutingTemplateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.graphhopper.routing.template.RoundTripRoutingTemplateTest
+Running com.graphhopper.routing.PathBidirRefTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in com.graphhopper.routing.PathBidirRefTest
+Running com.graphhopper.routing.AStarTest
+Tests run: 96, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.516 sec - in com.graphhopper.routing.AStarTest
+Running com.graphhopper.routing.QueryGraphTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in com.graphhopper.routing.QueryGraphTest
+Running com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworksTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworksTest
+Running com.graphhopper.routing.subnetwork.SubnetworkStorageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.routing.subnetwork.SubnetworkStorageTest
+Running com.graphhopper.routing.DijkstraTest
+Tests run: 96, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.355 sec - in com.graphhopper.routing.DijkstraTest
+Running com.graphhopper.routing.EdgeBasedRoutingAlgorithmTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in com.graphhopper.routing.EdgeBasedRoutingAlgorithmTest
+Running com.graphhopper.routing.PathTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 sec - in com.graphhopper.routing.PathTest
+Running com.graphhopper.routing.DijkstraOneToManyTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 sec - in com.graphhopper.routing.DijkstraOneToManyTest
+Running com.graphhopper.routing.AStarBidirectionTest
+Tests run: 100, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.463 sec - in com.graphhopper.routing.AStarBidirectionTest
+Running com.graphhopper.routing.AlternativeRouteTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in com.graphhopper.routing.AlternativeRouteTest
+Running com.graphhopper.routing.DijkstraBidirectionRefTest
+Tests run: 96, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.606 sec - in com.graphhopper.routing.DijkstraBidirectionRefTest
+Running com.graphhopper.storage.index.Location2IDQuadtreeTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.118 sec - in com.graphhopper.storage.index.Location2IDQuadtreeTest
+Running com.graphhopper.storage.index.Location2IDFullIndexTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.327 sec - in com.graphhopper.storage.index.Location2IDFullIndexTest
+Running com.graphhopper.storage.index.LocationIndexTreeCHTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.597 sec - in com.graphhopper.storage.index.LocationIndexTreeCHTest
+Running com.graphhopper.storage.index.LocationIndexTreeTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.974 sec - in com.graphhopper.storage.index.LocationIndexTreeTest
+Running com.graphhopper.storage.index.Location2IDFullWithEdgesIndexTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.322 sec - in com.graphhopper.storage.index.Location2IDFullWithEdgesIndexTest
+Running com.graphhopper.storage.index.BresenhamLineTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.graphhopper.storage.index.BresenhamLineTest
+Running com.graphhopper.storage.GraphEdgeIdFinderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.graphhopper.storage.GraphEdgeIdFinderTest
+Running com.graphhopper.storage.UnsafeDataAccessTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.graphhopper.storage.UnsafeDataAccessTest
+Running com.graphhopper.storage.EdgeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.storage.EdgeTest
+Running com.graphhopper.storage.GraphHopperStorageCHTest
+Tests run: 56, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.764 sec - in com.graphhopper.storage.GraphHopperStorageCHTest
+Running com.graphhopper.storage.GraphHopperStorageTest
+Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.379 sec - in com.graphhopper.storage.GraphHopperStorageTest
+Running com.graphhopper.storage.GraphStorageViaMMapTest
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.666 sec - in com.graphhopper.storage.GraphStorageViaMMapTest
+Running com.graphhopper.storage.RAMDirectoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.graphhopper.storage.RAMDirectoryTest
+Running com.graphhopper.storage.MMapDirectoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 sec - in com.graphhopper.storage.MMapDirectoryTest
+Running com.graphhopper.storage.RAMDataAccessTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.graphhopper.storage.RAMDataAccessTest
+Running com.graphhopper.storage.VLongStorageTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.storage.VLongStorageTest
+Running com.graphhopper.storage.GraphHopperStorageWithTurnCostsTest
+Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.768 sec - in com.graphhopper.storage.GraphHopperStorageWithTurnCostsTest
+Running com.graphhopper.storage.MMapDataAccessTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.994 sec - in com.graphhopper.storage.MMapDataAccessTest
+Running com.graphhopper.storage.SimpleFSLockFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.graphhopper.storage.SimpleFSLockFactoryTest
+Running com.graphhopper.storage.StorablePropertiesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.graphhopper.storage.StorablePropertiesTest
+Running com.graphhopper.storage.NativeFSLockFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.graphhopper.storage.NativeFSLockFactoryTest
+Running com.graphhopper.storage.RAMIntDataAccessTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.graphhopper.storage.RAMIntDataAccessTest
+Running com.graphhopper.storage.GraphHopperStorageForDataFlagEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec - in com.graphhopper.storage.GraphHopperStorageForDataFlagEncoderTest
+Running com.graphhopper.util.shapes.GHPoint3DTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.graphhopper.util.shapes.GHPoint3DTest
+Running com.graphhopper.util.shapes.BBoxTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.graphhopper.util.shapes.BBoxTest
+Running com.graphhopper.util.shapes.GHPointTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.util.shapes.GHPointTest
+Running com.graphhopper.util.shapes.CircleTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.util.shapes.CircleTest
+Running com.graphhopper.util.BitUtilBigTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.graphhopper.util.BitUtilBigTest
+Running com.graphhopper.util.SimpleIntDequeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.util.SimpleIntDequeTest
+Running com.graphhopper.util.TranslationMapTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.util.TranslationMapTest
+Running com.graphhopper.util.DepthFirstSearchTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in com.graphhopper.util.DepthFirstSearchTest
+Running com.graphhopper.util.BreadthFirstSearchTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.graphhopper.util.BreadthFirstSearchTest
+Running com.graphhopper.util.GHUtilityTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in com.graphhopper.util.GHUtilityTest
+Running com.graphhopper.util.ConfigMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.util.ConfigMapTest
+Running com.graphhopper.util.FinishInstructionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.util.FinishInstructionTest
+Running com.graphhopper.util.PointListTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.util.PointListTest
+Running com.graphhopper.util.DistanceCalcEarthTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.util.DistanceCalcEarthTest
+Running com.graphhopper.util.InstructionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.util.InstructionTest
+Running com.graphhopper.util.CHEdgeIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.util.CHEdgeIteratorTest
+Running com.graphhopper.util.DouglasPeuckerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.graphhopper.util.DouglasPeuckerTest
+Running com.graphhopper.util.BitUtilLittleTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.util.BitUtilLittleTest
+Running com.graphhopper.util.AngleCalcTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.util.AngleCalcTest
+Running com.graphhopper.util.PMapTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.util.PMapTest
+Running com.graphhopper.util.HelperTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.graphhopper.util.HelperTest
+Running com.graphhopper.util.InstructionListTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.147 sec - in com.graphhopper.util.InstructionListTest
+Running com.graphhopper.coll.GHTreeMapComposedTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.coll.GHTreeMapComposedTest
+Running com.graphhopper.coll.GHTBitSetTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.coll.GHTBitSetTest
+Running com.graphhopper.coll.BitSetImplTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.coll.BitSetImplTest
+Running com.graphhopper.coll.GHLongIntBTreeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.graphhopper.coll.GHLongIntBTreeTest
+Running com.graphhopper.coll.GHSortedCollectionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.graphhopper.coll.GHSortedCollectionTest
+Running com.graphhopper.coll.CompressedArrayTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in com.graphhopper.coll.CompressedArrayTest
+Running com.graphhopper.coll.GHIntArrayListTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.coll.GHIntArrayListTest
+Running com.graphhopper.coll.OSMIDMapTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.graphhopper.coll.OSMIDMapTest
+Running com.graphhopper.geohash.LinearKeyAlgoTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.geohash.LinearKeyAlgoTest
+Running com.graphhopper.geohash.SpatialKeyAlgoTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.graphhopper.geohash.SpatialKeyAlgoTest
+Running com.graphhopper.GHRequestTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.graphhopper.GHRequestTest
+Running com.graphhopper.GHResponseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.graphhopper.GHResponseTest
+Running com.graphhopper.search.NameIndexTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.graphhopper.search.NameIndexTest
+Running com.graphhopper.apache.commons.lang3.StringUtilsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.apache.commons.lang3.StringUtilsTest
+Running com.graphhopper.apache.commons.collections.IntDoubleBinaryHeapTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.graphhopper.apache.commons.collections.IntDoubleBinaryHeapTest
+Running com.graphhopper.GraphHopperAPITest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.509 sec - in com.graphhopper.GraphHopperAPITest
+
+Results :
+
+Tests run: 1316, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ graphhopper-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 46 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ graphhopper-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ graphhopper-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ graphhopper-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ graphhopper-core ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ graphhopper-core ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.pom (748 B at 48.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.6/plexus-containers-1.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.6/plexus-containers-1.6.pom (4 KB at 159.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.2/plexus-3.3.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.2/plexus-3.3.2.pom (22 KB at 725.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.1.1/maven-archiver-3.1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.1.1/maven-archiver-3.1.1.pom (5 KB at 176.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/30/maven-shared-components-30.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/30/maven-shared-components-30.pom (5 KB at 263.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.1/maven-shared-utils-3.0.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.1/maven-shared-utils-3.0.1.pom (5 KB at 77.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.pom (13 KB at 683.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/39/commons-parent-39.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/39/commons-parent-39.pom (61 KB at 1260.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/3.3/plexus-archiver-3.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/3.3/plexus-archiver-3.3.pom (6 KB at 289.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.2/plexus-3.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.2/plexus-3.2.pom (19 KB at 963.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.pom (5 KB at 167.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.7.1/plexus-io-2.7.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.7.1/plexus-io-2.7.1.pom (5 KB at 282.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.pom (11 KB at 513.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/24/commons-parent-24.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/24/commons-parent-24.pom (47 KB at 1247.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.11/commons-compress-1.11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.11/commons-compress-1.11.pom (13 KB at 533.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4.pom (15 KB at 645.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/tukaani/xz/1.5/xz-1.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/tukaani/xz/1.5/xz-1.5.pom (2 KB at 103.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.22/plexus-interpolation-1.22.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.22/plexus-interpolation-1.22.pom (2 KB at 68.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom (3 KB at 106.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/3.4/plexus-archiver-3.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/3.4/plexus-archiver-3.4.pom (6 KB at 273.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.1.1/maven-archiver-3.1.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.1/maven-shared-utils-3.0.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/3.4/plexus-archiver-3.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar (5 KB at 143.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.7.1/plexus-io-2.7.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.1.1/maven-archiver-3.1.1.jar (24 KB at 700.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.11/commons-compress-1.11.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/3.4/plexus-archiver-3.4.jar (183 KB at 1963.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.1/maven-shared-utils-3.0.1.jar (151 KB at 1539.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/tukaani/xz/1.5/xz-1.5.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.7.1/plexus-io-2.7.1.jar (84 KB at 855.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.jar (204 KB at 1742.0 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4.jar (57 KB at 422.4 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/tukaani/xz/1.5/xz-1.5.jar (98 KB at 582.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.11/commons-compress-1.11.jar (416 KB at 1791.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar (242 KB at 1019.2 KB/sec)
+[INFO] Building jar: /home/travis/build/failed/graphhopper/graphhopper/core/target/graphhopper-core-0.9-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:3.0.2:test-jar (default) @ graphhopper-core ---
+[INFO] Building jar: /home/travis/build/failed/graphhopper/graphhopper/core/target/graphhopper-core-0.9-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.19.1:integration-test (default) @ graphhopper-core ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.graphhopper.routing.RoutingAlgorithmIT
+# RoutingAlgorithmIT algoEntry(astar):0.15205848, per run:0.01900731
+# RoutingAlgorithmIT algoEntry(dijkstra):0.1314072, per run:0.0164259
+# RoutingAlgorithmIT algoEntry(astarbi):0.059393756, per run:0.0074242195
+# RoutingAlgorithmIT algoEntry(dijkstrabi):0.07611478, per run:0.009514348
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.157 sec - in com.graphhopper.routing.RoutingAlgorithmIT
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.19.1:verify (default) @ graphhopper-core ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GraphHopper Reader for OpenStreetMap Data 0.9-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/openstreetmap/osmosis/osmosis-osm-binary/0.45/osmosis-osm-binary-0.45.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/openstreetmap/osmosis/osmosis-osm-binary/0.45/osmosis-osm-binary-0.45.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/openstreetmap/osmosis/osmosis-osm-binary/0.45/osmosis-osm-binary-0.45.pom (2 KB at 3.2 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/google/protobuf/protobuf-java/2.6.1/protobuf-java-2.6.1.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.6.1/protobuf-java-2.6.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.6.1/protobuf-java-2.6.1.pom (10 KB at 21.4 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/google/google/1/google-1.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/google/1/google-1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/google/1/google-1.pom (2 KB at 63.2 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/openstreetmap/osmosis/osmosis-osm-binary/0.45/osmosis-osm-binary-0.45.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/google/protobuf/protobuf-java/2.6.1/protobuf-java-2.6.1.jar
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/openstreetmap/osmosis/osmosis-osm-binary/0.45/osmosis-osm-binary-0.45.jar
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.6.1/protobuf-java-2.6.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/openstreetmap/osmosis/osmosis-osm-binary/0.45/osmosis-osm-binary-0.45.jar (177 KB at 208.2 KB/sec)
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.6.1/protobuf-java-2.6.1.jar (583 KB at 320.5 KB/sec)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ graphhopper-reader-osm ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ graphhopper-reader-osm ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/travis/build/failed/graphhopper/graphhopper/reader-osm/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ graphhopper-reader-osm ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /home/travis/build/failed/graphhopper/graphhopper/reader-osm/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ graphhopper-reader-osm ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ graphhopper-reader-osm ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /home/travis/build/failed/graphhopper/graphhopper/reader-osm/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ graphhopper-reader-osm ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.graphhopper.reader.osm.GraphHopperOSMTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.267 sec - in com.graphhopper.reader.osm.GraphHopperOSMTest
+Running com.graphhopper.reader.osm.OSMReaderTest
+2022-07-30 22:43:07,899 [main] WARN  com.graphhopper.reader.osm.OSMReader - Parsing error in way with OSMID=17 : Cannot parse duration tag value: P01:10
+2022-07-30 22:43:07,902 [main] WARN  com.graphhopper.routing.util.AbstractFlagEncoder - Unrealistic long duration ignored in way with way ID=18 : Duration tag value=P1M (=44640 minutes)
+2022-07-30 22:43:07,902 [main] WARN  com.graphhopper.routing.util.AbstractFlagEncoder - Unrealistic long duration ignored in way with way ID=18 : Duration tag value=P1M (=44640 minutes)
+2022-07-30 22:43:07,902 [main] WARN  com.graphhopper.routing.util.AbstractFlagEncoder - Unrealistic long duration ignored in way with way ID=18 : Duration tag value=P1M (=44640 minutes)
+2022-07-30 22:43:08,528 [main] WARN  com.graphhopper.reader.osm.OSMReader - Parsing error in way with OSMID=17 : Cannot parse duration tag value: P01:10
+2022-07-30 22:43:08,529 [main] WARN  com.graphhopper.routing.util.AbstractFlagEncoder - Unrealistic long duration ignored in way with way ID=18 : Duration tag value=P1M (=44640 minutes)
+2022-07-30 22:43:08,529 [main] WARN  com.graphhopper.routing.util.AbstractFlagEncoder - Unrealistic long duration ignored in way with way ID=18 : Duration tag value=P1M (=44640 minutes)
+2022-07-30 22:43:08,529 [main] WARN  com.graphhopper.routing.util.AbstractFlagEncoder - Unrealistic long duration ignored in way with way ID=18 : Duration tag value=P1M (=44640 minutes)
+2022-07-30 22:43:08,573 [main] WARN  com.graphhopper.reader.osm.OSMReader - Parsing error in way with OSMID=17 : Cannot parse duration tag value: P01:10
+2022-07-30 22:43:08,573 [main] WARN  com.graphhopper.routing.util.AbstractFlagEncoder - Unrealistic long duration ignored in way with way ID=18 : Duration tag value=P1M (=44640 minutes)
+2022-07-30 22:43:08,573 [main] WARN  com.graphhopper.routing.util.AbstractFlagEncoder - Unrealistic long duration ignored in way with way ID=18 : Duration tag value=P1M (=44640 minutes)
+2022-07-30 22:43:08,573 [main] WARN  com.graphhopper.routing.util.AbstractFlagEncoder - Unrealistic long duration ignored in way with way ID=18 : Duration tag value=P1M (=44640 minutes)
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.934 sec - in com.graphhopper.reader.osm.OSMReaderTest
+Running com.graphhopper.reader.osm.OSMTagParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.graphhopper.reader.osm.OSMTagParserTest
+Running com.graphhopper.reader.osm.OSMTurnRelationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.graphhopper.reader.osm.OSMTurnRelationTest
+
+Results :
+
+Tests run: 50, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ graphhopper-reader-osm ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/travis/build/failed/graphhopper/graphhopper/reader-osm/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ graphhopper-reader-osm ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ graphhopper-reader-osm ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ graphhopper-reader-osm ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ graphhopper-reader-osm ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ graphhopper-reader-osm ---
+[INFO] Building jar: /home/travis/build/failed/graphhopper/graphhopper/reader-osm/target/graphhopper-reader-osm-0.9-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.19.1:integration-test (default) @ graphhopper-reader-osm ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.graphhopper.GraphHopperIT
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.597 sec - in com.graphhopper.GraphHopperIT
+Running com.graphhopper.routing.RoutingAlgorithmWithOSMIT
+testMonacoParallel takes a bit time...
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.484 sec - in com.graphhopper.routing.RoutingAlgorithmWithOSMIT
+
+Results :
+
+Tests run: 50, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.19.1:verify (default) @ graphhopper-reader-osm ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GraphHopper Reader for Gtfs Data 0.9-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/github/graphhopper/gtfs-lib/f955eec/gtfs-lib-f955eec.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/github/graphhopper/gtfs-lib/f955eec/gtfs-lib-f955eec.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/github/graphhopper/gtfs-lib/f955eec/gtfs-lib-f955eec.pom
+[INFO] Downloading: https://repository.apache.org/content/repositories/releases/com/github/graphhopper/gtfs-lib/f955eec/gtfs-lib-f955eec.pom
+[INFO] Downloading: https://jitpack.io/com/github/graphhopper/gtfs-lib/f955eec/gtfs-lib-f955eec.pom
+[INFO] Downloaded: https://jitpack.io/com/github/graphhopper/gtfs-lib/f955eec/gtfs-lib-f955eec.pom (5 KB at 8.3 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/net/sourceforge/javacsv/javacsv/2.0/javacsv-2.0.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/net/sourceforge/javacsv/javacsv/2.0/javacsv-2.0.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/net/sourceforge/javacsv/javacsv/2.0/javacsv-2.0.pom (865 B at 3.6 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/beust/jcommander/1.30/jcommander-1.30.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/beust/jcommander/1.30/jcommander-1.30.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/beust/jcommander/1.30/jcommander-1.30.pom (8 KB at 16.3 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/sonatype/oss/oss-parent/3/oss-parent-3.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/sonatype/oss/oss-parent/3/oss-parent-3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/sonatype/oss/oss-parent/3/oss-parent-3.pom (4 KB at 142.3 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/google/guava/guava/18.0/guava-18.0.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom (6 KB at 184.4 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom (8 KB at 288.7 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom (5 KB at 181.2 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/mapdb/mapdb/1.0.8/mapdb-1.0.8.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/mapdb/mapdb/1.0.8/mapdb-1.0.8.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/mapdb/mapdb/1.0.8/mapdb-1.0.8.pom (11 KB at 46.3 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.pom (3 KB at 89.6 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.pom (13 KB at 446.1 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/geotools/gt-api/14.0/gt-api-14.0.pom
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/org/geotools/gt-api/14.0/gt-api-14.0.pom (5 KB at 42.5 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/geotools/library/14.0/library-14.0.pom
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/org/geotools/library/14.0/library-14.0.pom (3 KB at 42.7 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/geotools/modules/14.0/modules-14.0.pom
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/org/geotools/modules/14.0/modules-14.0.pom (4 KB at 61.2 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/geotools/geotools/14.0/geotools-14.0.pom
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/org/geotools/geotools/14.0/geotools-14.0.pom (70 KB at 637.6 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/geotools/gt-referencing/14.0/gt-referencing-14.0.pom
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/org/geotools/gt-referencing/14.0/gt-referencing-14.0.pom (8 KB at 127.8 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/googlecode/efficient-java-matrix-library/core/0.26/core-0.26.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/core/0.26/core-0.26.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/core/0.26/core-0.26.pom (2 KB at 3.6 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.pom (12 KB at 273.7 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/apache/commons/commons-parent/12/commons-parent-12.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/commons/commons-parent/12/commons-parent-12.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/commons/commons-parent/12/commons-parent-12.pom (27 KB at 611.4 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/geotools/gt-metadata/14.0/gt-metadata-14.0.pom
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/org/geotools/gt-metadata/14.0/gt-metadata-14.0.pom (5 KB at 49.2 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/geotools/gt-opengis/14.0/gt-opengis-14.0.pom
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/org/geotools/gt-opengis/14.0/gt-opengis-14.0.pom (6 KB at 105.9 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.pom (4 KB at 9.4 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/javax/media/jai_core/1.1.3/jai_core-1.1.3.pom
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/javax/media/jai_core/1.1.3/jai_core-1.1.3.pom (276 B at 2.9 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/jgridshift/jgridshift/1.0/jgridshift-1.0.pom
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/jgridshift/jgridshift/1.0/jgridshift-1.0.pom (391 B at 7.8 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.pom (5 KB at 10.7 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/geotools/gt-epsg-hsql/11-beta/gt-epsg-hsql-11-beta.pom
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/org/geotools/gt-epsg-hsql/11-beta/gt-epsg-hsql-11-beta.pom (6 KB at 34.6 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/geotools/plugin/11-beta/plugin-11-beta.pom
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/org/geotools/plugin/11-beta/plugin-11-beta.pom (3 KB at 23.3 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/geotools/modules/11-beta/modules-11-beta.pom
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/org/geotools/modules/11-beta/modules-11-beta.pom (11 KB at 74.8 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/geotools/geotools/11-beta/geotools-11-beta.pom
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/org/geotools/geotools/11-beta/geotools-11-beta.pom (52 KB at 333.9 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/geotools/gt-referencing/11-beta/gt-referencing-11-beta.pom
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/org/geotools/gt-referencing/11-beta/gt-referencing-11-beta.pom (7 KB at 76.8 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/geotools/library/11-beta/library-11-beta.pom
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/org/geotools/library/11-beta/library-11-beta.pom (3 KB at 19.0 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/java3d/vecmath/1.3.2/vecmath-1.3.2.pom
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/java3d/vecmath/1.3.2/vecmath-1.3.2.pom (386 B at 7.5 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/geotools/gt-metadata/11-beta/gt-metadata-11-beta.pom
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/org/geotools/gt-metadata/11-beta/gt-metadata-11-beta.pom (5 KB at 47.9 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/geotools/gt-opengis/11-beta/gt-opengis-11-beta.pom
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/org/geotools/gt-opengis/11-beta/gt-opengis-11-beta.pom (7 KB at 53.6 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/hsqldb/hsqldb/2.2.8/hsqldb-2.2.8.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hsqldb/hsqldb/2.2.8/hsqldb-2.2.8.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hsqldb/hsqldb/2.2.8/hsqldb-2.2.8.pom (2 KB at 2.3 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/amazonaws/aws-java-sdk-s3/1.11.18/aws-java-sdk-s3-1.11.18.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-s3/1.11.18/aws-java-sdk-s3-1.11.18.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-s3/1.11.18/aws-java-sdk-s3-1.11.18.pom (4 KB at 129.9 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/amazonaws/aws-java-sdk-pom/1.11.18/aws-java-sdk-pom-1.11.18.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-pom/1.11.18/aws-java-sdk-pom-1.11.18.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-pom/1.11.18/aws-java-sdk-pom-1.11.18.pom (9 KB at 34.7 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/amazonaws/aws-java-sdk-kms/1.11.18/aws-java-sdk-kms-1.11.18.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-kms/1.11.18/aws-java-sdk-kms-1.11.18.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-kms/1.11.18/aws-java-sdk-kms-1.11.18.pom (4 KB at 8.1 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/amazonaws/aws-java-sdk-core/1.11.18/aws-java-sdk-core-1.11.18.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-core/1.11.18/aws-java-sdk-core-1.11.18.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-core/1.11.18/aws-java-sdk-core-1.11.18.pom (4 KB at 7.6 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.pom (18 KB at 716.9 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/apache/commons/commons-parent/28/commons-parent-28.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/commons/commons-parent/28/commons-parent-28.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/commons/commons-parent/28/commons-parent-28.pom (49 KB at 619.9 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.pom (7 KB at 249.7 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/apache/httpcomponents/httpcomponents-client/4.5.2/httpcomponents-client-4.5.2.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.5.2/httpcomponents-client-4.5.2.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.5.2/httpcomponents-client-4.5.2.pom (16 KB at 527.7 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/apache/httpcomponents/project/7/project-7.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/httpcomponents/project/7/project-7.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/httpcomponents/project/7/project-7.pom (27 KB at 475.1 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.pom (6 KB at 215.7 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/apache/httpcomponents/httpcomponents-core/4.4.4/httpcomponents-core-4.4.4.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.4.4/httpcomponents-core-4.4.4.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.4.4/httpcomponents-core-4.4.4.pom (13 KB at 406.2 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/commons-logging/commons-logging/1.2/commons-logging-1.2.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.pom (19 KB at 669.9 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/apache/commons/commons-parent/34/commons-parent-34.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/commons/commons-parent/34/commons-parent-34.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/commons/commons-parent/34/commons-parent-34.pom (55 KB at 1365.8 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/commons-codec/commons-codec/1.9/commons-codec-1.9.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.pom (12 KB at 331.5 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/apache/commons/commons-parent/32/commons-parent-32.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/commons/commons-parent/32/commons-parent-32.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/commons/commons-parent/32/commons-parent-32.pom (52 KB at 1562.0 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/fasterxml/jackson/core/jackson-databind/2.6.6/jackson-databind-2.6.6.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.6.6/jackson-databind-2.6.6.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.6.6/jackson-databind-2.6.6.pom (6 KB at 160.1 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/fasterxml/jackson/jackson-parent/2.6.2/jackson-parent-2.6.2.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/jackson-parent/2.6.2/jackson-parent-2.6.2.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/jackson-parent/2.6.2/jackson-parent-2.6.2.pom (8 KB at 281.8 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/fasterxml/oss-parent/24/oss-parent-24.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/oss-parent/24/oss-parent-24.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/oss-parent/24/oss-parent-24.pom (19 KB at 654.5 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0.pom (2 KB at 51.8 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/fasterxml/jackson/jackson-parent/2.6.1/jackson-parent-2.6.1.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/jackson-parent/2.6.1/jackson-parent-2.6.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/jackson-parent/2.6.1/jackson-parent-2.6.1.pom (8 KB at 262.5 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/fasterxml/oss-parent/23/oss-parent-23.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/oss-parent/23/oss-parent-23.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/oss-parent/23/oss-parent-23.pom (19 KB at 538.3 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/fasterxml/jackson/core/jackson-core/2.6.6/jackson-core-2.6.6.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.6.6/jackson-core-2.6.6.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.6.6/jackson-core-2.6.6.pom (5 KB at 182.8 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.6.6/jackson-dataformat-cbor-2.6.6.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.6.6/jackson-dataformat-cbor-2.6.6.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.6.6/jackson-dataformat-cbor-2.6.6.pom (3 KB at 95.5 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/joda-time/joda-time/2.8.1/joda-time-2.8.1.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/joda-time/joda-time/2.8.1/joda-time-2.8.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/joda-time/joda-time/2.8.1/joda-time-2.8.1.pom (29 KB at 967.2 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.pom (2 KB at 61.2 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/google/transit/gtfs-realtime-bindings/0.0.4/gtfs-realtime-bindings-0.0.4.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/transit/gtfs-realtime-bindings/0.0.4/gtfs-realtime-bindings-0.0.4.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/transit/gtfs-realtime-bindings/0.0.4/gtfs-realtime-bindings-0.0.4.pom (3 KB at 15.6 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.pom (820 B at 34.8 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/github/graphhopper/gtfs-lib/f955eec/gtfs-lib-f955eec.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/net/sourceforge/javacsv/javacsv/2.0/javacsv-2.0.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/beust/jcommander/1.30/jcommander-1.30.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/google/guava/guava/18.0/guava-18.0.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/mapdb/mapdb/1.0.8/mapdb-1.0.8.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/geotools/gt-api/14.0/gt-api-14.0.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/geotools/gt-referencing/14.0/gt-referencing-14.0.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/googlecode/efficient-java-matrix-library/core/0.26/core-0.26.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/geotools/gt-metadata/14.0/gt-metadata-14.0.jar
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/org/geotools/gt-api/14.0/gt-api-14.0.jar (196 KB at 429.5 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/geotools/gt-opengis/14.0/gt-opengis-14.0.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/jgridshift/jgridshift/1.0/jgridshift-1.0.jar
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/jgridshift/jgridshift/1.0/jgridshift-1.0.jar (12 KB at 17.6 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.jar
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/org/geotools/gt-metadata/14.0/gt-metadata-14.0.jar (498 KB at 732.0 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/javax/media/jai_core/1.1.3/jai_core-1.1.3.jar
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/org/geotools/gt-opengis/14.0/gt-opengis-14.0.jar (338 KB at 475.7 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/geotools/gt-epsg-hsql/11-beta/gt-epsg-hsql-11-beta.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/hsqldb/hsqldb/2.2.8/hsqldb-2.2.8.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/amazonaws/aws-java-sdk-s3/1.11.18/aws-java-sdk-s3-1.11.18.jar
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/org/geotools/gt-referencing/14.0/gt-referencing-14.0.jar (1138 KB at 1276.1 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/amazonaws/aws-java-sdk-kms/1.11.18/aws-java-sdk-kms-1.11.18.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/amazonaws/aws-java-sdk-core/1.11.18/aws-java-sdk-core-1.11.18.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/commons-codec/commons-codec/1.9/commons-codec-1.9.jar
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/javax/media/jai_core/1.1.3/jai_core-1.1.3.jar (1857 KB at 1368.8 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/fasterxml/jackson/core/jackson-databind/2.6.6/jackson-databind-2.6.6.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/fasterxml/jackson/core/jackson-core/2.6.6/jackson-core-2.6.6.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.6.6/jackson-dataformat-cbor-2.6.6.jar
+[INFO] Downloaded: https://repo.osgeo.org/repository/release/org/geotools/gt-epsg-hsql/11-beta/gt-epsg-hsql-11-beta.jar (1915 KB at 1304.9 KB/sec)
+[INFO] Downloading: https://repo.osgeo.org/repository/release/joda-time/joda-time/2.8.1/joda-time-2.8.1.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/com/google/transit/gtfs-realtime-bindings/0.0.4/gtfs-realtime-bindings-0.0.4.jar
+[INFO] Downloading: https://repo.osgeo.org/repository/release/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/github/graphhopper/gtfs-lib/f955eec/gtfs-lib-f955eec.jar
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/net/sourceforge/javacsv/javacsv/2.0/javacsv-2.0.jar
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/beust/jcommander/1.30/jcommander-1.30.jar
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/mapdb/mapdb/1.0.8/mapdb-1.0.8.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar (2204 KB at 20984.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/core/0.26/core-0.26.jar
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar (94 KB at 320.7 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/core/0.26/core-0.26.jar (335 KB at 513.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.jar (90 KB at 107.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hsqldb/hsqldb/2.2.8/hsqldb-2.2.8.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/net/sourceforge/javacsv/javacsv/2.0/javacsv-2.0.jar (14 KB at 14.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-s3/1.11.18/aws-java-sdk-s3-1.11.18.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/beust/jcommander/1.30/jcommander-1.30.jar (59 KB at 61.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-kms/1.11.18/aws-java-sdk-kms-1.11.18.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/mapdb/mapdb/1.0.8/mapdb-1.0.8.jar (407 KB at 422.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-core/1.11.18/aws-java-sdk-core-1.11.18.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.jar (31 KB at 24.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar (720 KB at 549.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar (320 KB at 233.7 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.jar (258 KB at 185.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.6.6/jackson-databind-2.6.6.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.6.6/jackson-databind-2.6.6.jar (1144 KB at 775.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.6.6/jackson-core-2.6.6.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.6.6/jackson-core-2.6.6.jar (253 KB at 168.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.6.6/jackson-dataformat-cbor-2.6.6.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.6.6/jackson-dataformat-cbor-2.6.6.jar (48 KB at 31.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/joda-time/joda-time/2.8.1/joda-time-2.8.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/joda-time/joda-time/2.8.1/joda-time-2.8.1.jar (608 KB at 348.7 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-kms/1.11.18/aws-java-sdk-kms-1.11.18.jar (376 KB at 196.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/transit/gtfs-realtime-bindings/0.0.4/gtfs-realtime-bindings-0.0.4.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-s3/1.11.18/aws-java-sdk-s3-1.11.18.jar (632 KB at 315.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar (52 KB at 25.6 KB/sec)
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar (2465 KB at 1148.8 KB/sec)
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/transit/gtfs-realtime-bindings/0.0.4/gtfs-realtime-bindings-0.0.4.jar (205 KB at 90.2 KB/sec)
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-core/1.11.18/aws-java-sdk-core-1.11.18.jar (633 KB at 232.5 KB/sec)
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hsqldb/hsqldb/2.2.8/hsqldb-2.2.8.jar (1363 KB at 350.3 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/github/graphhopper/gtfs-lib/f955eec/gtfs-lib-f955eec.jar
+[INFO] Downloading: https://repository.apache.org/content/repositories/releases/com/github/graphhopper/gtfs-lib/f955eec/gtfs-lib-f955eec.jar
+[INFO] Downloading: https://jitpack.io/com/github/graphhopper/gtfs-lib/f955eec/gtfs-lib-f955eec.jar
+[INFO] Downloaded: https://jitpack.io/com/github/graphhopper/gtfs-lib/f955eec/gtfs-lib-f955eec.jar (195 KB at 161.0 KB/sec)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ graphhopper-reader-gtfs ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ graphhopper-reader-gtfs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/travis/build/failed/graphhopper/graphhopper/reader-gtfs/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ graphhopper-reader-gtfs ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 26 source files to /home/travis/build/failed/graphhopper/graphhopper/reader-gtfs/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ graphhopper-reader-gtfs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/travis/build/failed/graphhopper/graphhopper/reader-gtfs/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ graphhopper-reader-gtfs ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/travis/build/failed/graphhopper/graphhopper/reader-gtfs/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ graphhopper-reader-gtfs ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.graphhopper.gtfs.fare.FareTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.38 sec - in com.graphhopper.gtfs.fare.FareTest
+
+Results :
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ graphhopper-reader-gtfs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/travis/build/failed/graphhopper/graphhopper/reader-gtfs/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ graphhopper-reader-gtfs ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ graphhopper-reader-gtfs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/travis/build/failed/graphhopper/graphhopper/reader-gtfs/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ graphhopper-reader-gtfs ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ graphhopper-reader-gtfs ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ graphhopper-reader-gtfs ---
+[INFO] Building jar: /home/travis/build/failed/graphhopper/graphhopper/reader-gtfs/target/graphhopper-reader-gtfs-0.9-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.19.1:integration-test (default) @ graphhopper-reader-gtfs ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.graphhopper.RealtimeIT
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 1.716 sec <<< FAILURE! - in com.graphhopper.RealtimeIT
+testSkipDepartureStop(com.graphhopper.RealtimeIT)  Time elapsed: 0.058 sec  <<< ERROR!
+java.lang.NullPointerException: text
+	at com.graphhopper.RealtimeIT.testSkipDepartureStop(RealtimeIT.java:75)
+
+testBlockTrips(com.graphhopper.RealtimeIT)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: text
+	at com.graphhopper.RealtimeIT.testBlockTrips(RealtimeIT.java:167)
+
+testSkipTransferStop(com.graphhopper.RealtimeIT)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException: text
+	at com.graphhopper.RealtimeIT.testSkipTransferStop(RealtimeIT.java:137)
+
+testSkipArrivalStop(com.graphhopper.RealtimeIT)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: text
+	at com.graphhopper.RealtimeIT.testSkipArrivalStop(RealtimeIT.java:106)
+
+Running com.graphhopper.GraphHopperGtfsIT
+Tests run: 15, Failures: 0, Errors: 15, Skipped: 0, Time elapsed: 0.571 sec <<< FAILURE! - in com.graphhopper.GraphHopperGtfsIT
+testRoute1ProfileEarliestArrival(com.graphhopper.GraphHopperGtfsIT)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException: text
+	at com.graphhopper.GraphHopperGtfsIT.testRoute1ProfileEarliestArrival(GraphHopperGtfsIT.java:144)
+
+testRoute1GoesAt744(com.graphhopper.GraphHopperGtfsIT)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: text
+	at com.graphhopper.GraphHopperGtfsIT.testRoute1GoesAt744(GraphHopperGtfsIT.java:103)
+
+testWeekendRouteWorksOnlyOnWeekend(com.graphhopper.GraphHopperGtfsIT)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException: text
+	at com.graphhopper.GraphHopperGtfsIT.testWeekendRouteWorksOnlyOnWeekend(GraphHopperGtfsIT.java:249)
+
+testTransferRules(com.graphhopper.GraphHopperGtfsIT)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: text
+	at com.graphhopper.GraphHopperGtfsIT.testTransferRules(GraphHopperGtfsIT.java:299)
+
+testRoute1DoesNotGoAt654(com.graphhopper.GraphHopperGtfsIT)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException: text
+	at com.graphhopper.GraphHopperGtfsIT.testRoute1DoesNotGoAt654(GraphHopperGtfsIT.java:85)
+
+testBlockTrips(com.graphhopper.GraphHopperGtfsIT)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: text
+	at com.graphhopper.GraphHopperGtfsIT.testBlockTrips(GraphHopperGtfsIT.java:278)
+
+testRoute1ProfileLatestDeparture(com.graphhopper.GraphHopperGtfsIT)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException: text
+	at com.graphhopper.GraphHopperGtfsIT.testRoute1ProfileLatestDeparture(GraphHopperGtfsIT.java:171)
+
+testRouteWithLaterDepartureTime(com.graphhopper.GraphHopperGtfsIT)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException: text
+	at com.graphhopper.GraphHopperGtfsIT.assertTravelTimeIs(GraphHopperGtfsIT.java:351)
+	at com.graphhopper.GraphHopperGtfsIT.testRouteWithLaterDepartureTime(GraphHopperGtfsIT.java:234)
+
+testRoute1ArriveBy(com.graphhopper.GraphHopperGtfsIT)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: text
+	at com.graphhopper.GraphHopperGtfsIT.testRoute1ArriveBy(GraphHopperGtfsIT.java:123)
+
+testRoute1(com.graphhopper.GraphHopperGtfsIT)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: text
+	at com.graphhopper.GraphHopperGtfsIT.testRoute1(GraphHopperGtfsIT.java:68)
+
+testRoute2(com.graphhopper.GraphHopperGtfsIT)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: text
+	at com.graphhopper.GraphHopperGtfsIT.assertTravelTimeIs(GraphHopperGtfsIT.java:351)
+	at com.graphhopper.GraphHopperGtfsIT.assertTravelTimeIs(GraphHopperGtfsIT.java:359)
+	at com.graphhopper.GraphHopperGtfsIT.testRoute2(GraphHopperGtfsIT.java:186)
+
+testRoute3(com.graphhopper.GraphHopperGtfsIT)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: text
+	at com.graphhopper.GraphHopperGtfsIT.assertTravelTimeIs(GraphHopperGtfsIT.java:351)
+	at com.graphhopper.GraphHopperGtfsIT.assertTravelTimeIs(GraphHopperGtfsIT.java:359)
+	at com.graphhopper.GraphHopperGtfsIT.testRoute3(GraphHopperGtfsIT.java:193)
+
+testRoute4(com.graphhopper.GraphHopperGtfsIT)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException: text
+	at com.graphhopper.GraphHopperGtfsIT.assertTravelTimeIs(GraphHopperGtfsIT.java:351)
+	at com.graphhopper.GraphHopperGtfsIT.assertTravelTimeIs(GraphHopperGtfsIT.java:359)
+	at com.graphhopper.GraphHopperGtfsIT.testRoute4(GraphHopperGtfsIT.java:200)
+
+testRoute5(com.graphhopper.GraphHopperGtfsIT)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: text
+	at com.graphhopper.GraphHopperGtfsIT.testRoute5(GraphHopperGtfsIT.java:213)
+
+testRoute6(com.graphhopper.GraphHopperGtfsIT)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException: text
+	at com.graphhopper.GraphHopperGtfsIT.assertNoRoute(GraphHopperGtfsIT.java:370)
+	at com.graphhopper.GraphHopperGtfsIT.testRoute6(GraphHopperGtfsIT.java:226)
+
+
+Results :
+
+Tests in error: 
+  GraphHopperGtfsIT.testBlockTrips:278 » NullPointer text
+  GraphHopperGtfsIT.testRoute1:68 » NullPointer text
+  GraphHopperGtfsIT.testRoute1ArriveBy:123 » NullPointer text
+  GraphHopperGtfsIT.testRoute1DoesNotGoAt654:85 » NullPointer text
+  GraphHopperGtfsIT.testRoute1GoesAt744:103 » NullPointer text
+  GraphHopperGtfsIT.testRoute1ProfileEarliestArrival:144 » NullPointer text
+  GraphHopperGtfsIT.testRoute1ProfileLatestDeparture:171 » NullPointer text
+  GraphHopperGtfsIT.testRoute2:186->assertTravelTimeIs:359->assertTravelTimeIs:351 » NullPointer
+  GraphHopperGtfsIT.testRoute3:193->assertTravelTimeIs:359->assertTravelTimeIs:351 » NullPointer
+  GraphHopperGtfsIT.testRoute4:200->assertTravelTimeIs:359->assertTravelTimeIs:351 » NullPointer
+  GraphHopperGtfsIT.testRoute5:213 » NullPointer text
+  GraphHopperGtfsIT.testRoute6:226->assertNoRoute:370 » NullPointer text
+  GraphHopperGtfsIT.testRouteWithLaterDepartureTime:234->assertTravelTimeIs:351 » NullPointer
+  GraphHopperGtfsIT.testTransferRules:299 » NullPointer text
+  GraphHopperGtfsIT.testWeekendRouteWorksOnlyOnWeekend:249 » NullPointer text
+  RealtimeIT.testBlockTrips:167 » NullPointer text
+  RealtimeIT.testSkipArrivalStop:106 » NullPointer text
+  RealtimeIT.testSkipDepartureStop:75 » NullPointer text
+  RealtimeIT.testSkipTransferStop:137 » NullPointer text
+
+Tests run: 19, Failures: 0, Errors: 19, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.19.1:verify (default) @ graphhopper-reader-gtfs ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] GraphHopper Parent Project ......................... SUCCESS [  9.784 s]
+[INFO] GraphHopper Core ................................... SUCCESS [01:19 min]
+[INFO] GraphHopper Reader for OpenStreetMap Data .......... SUCCESS [ 39.862 s]
+[INFO] GraphHopper Reader for Gtfs Data ................... FAILURE [ 41.166 s]
+[INFO] GraphHopper Reader JSON ............................ SKIPPED
+[INFO] GraphHopper Tools .................................. SKIPPED
+[INFO] GraphHopper Web .................................... SKIPPED
+[INFO] GraphHopper Reader for Shapefile Data .............. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:50 min
+[INFO] Finished at: 2022-07-30T22:44:19+00:00
+[INFO] Final Memory: 17M/355M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-failsafe-plugin:2.19.1:verify (default) on project graphhopper-reader-gtfs: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/travis/build/failed/graphhopper/graphhopper/reader-gtfs/target/failsafe-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :graphhopper-reader-gtfs
+travis_time:end:34d8bf8d:start=1659220887175625634,finish=1659221059262003438,duration=172086377804[0K[31;1mThe command "mvn clean test verify -Dhttps.protocols=TLSv1.2 -B" exited with 1.[0m
+
+travis_fold:start:cache.2[0Kstore build cache
+travis_time:start:18e4ea6b[0Ktravis_time:end:18e4ea6b:start=1659221059270266241,finish=1659221059276903635,duration=6637394[0Ktravis_time:start:1c9f13c2[0KYAML safe loading is not available. Please upgrade psych to a version that supports safe loading (>= 2.0).
+[32;1mchanges detected, packing new archive[0m
+[32;1muploading /[0m
+[31;1mfailed to upload cache[0m
+travis_time:end:1c9f13c2:start=1659221059284121298,finish=1659221062323907773,duration=3039786475[0Ktravis_fold:end:cache.2[0K
+
+Done. Your build exited with 1.

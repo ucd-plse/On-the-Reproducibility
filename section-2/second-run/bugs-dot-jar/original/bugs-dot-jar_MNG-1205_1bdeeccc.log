@@ -1,0 +1,65 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Artifact 2.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ maven-artifact ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ maven-artifact ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ maven-artifact ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-1205_1bdeecccadb9951fd48550a7aa3b9ee23ea111bc/maven-artifact/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ maven-artifact ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ maven-artifact ---
+[INFO] Surefire report directory: /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-1205_1bdeecccadb9951fd48550a7aa3b9ee23ea111bc/maven-artifact/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.maven.artifact.factory.DefaultArtifactFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 sec
+Running org.apache.maven.artifact.resolver.DefaultArtifactCollectorTest
+Tests run: 24, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.272 sec <<< FAILURE!
+testOptionalIncludedAtRoot(org.apache.maven.artifact.resolver.DefaultArtifactCollectorTest)  Time elapsed: 0.01 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Check artifact list expected:<[test:a:jar:1.0, test:b:jar:1.0]> but was:<[test:a:jar:1.0]>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at org.apache.maven.artifact.resolver.DefaultArtifactCollectorTest.testOptionalIncludedAtRoot(DefaultArtifactCollectorTest.java:504)
+
+Running org.apache.maven.artifact.versioning.DefaultArtifactVersionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.maven.artifact.versioning.VersionRangeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+
+Results :
+
+Failed tests:   testOptionalIncludedAtRoot(org.apache.maven.artifact.resolver.DefaultArtifactCollectorTest): Check artifact list expected:<[test:a:jar:1.0, test:b:jar:1.0]> but was:<[test:a:jar:1.0]>
+
+Tests run: 30, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.682 s
+[INFO] Finished at: 2016-07-13T22:17:36-07:00
+[INFO] Final Memory: 21M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project maven-artifact: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-1205_1bdeecccadb9951fd48550a7aa3b9ee23ea111bc/maven-artifact/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

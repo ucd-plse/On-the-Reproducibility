@@ -1,0 +1,58 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Commons 0.9-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ oak-commons ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ oak-commons ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-888_6d82cb648d0e5b77391beae39bb8b48a5e50802b/oak-commons/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ oak-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ oak-commons ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-888_6d82cb648d0e5b77391beae39bb8b48a5e50802b/oak-commons/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ oak-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ oak-commons ---
+[INFO] Surefire report directory: /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-888_6d82cb648d0e5b77391beae39bb8b48a5e50802b/oak-commons/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.jackrabbit.oak.commons.PathUtilsTest
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec <<< FAILURE!
+
+Results :
+
+Failed tests:   testGetDepth(org.apache.jackrabbit.oak.commons.PathUtilsTest): expected:<0> but was:<1>
+
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.664 s
+[INFO] Finished at: 2016-07-29T15:25:45-07:00
+[INFO] Final Memory: 24M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.9:test (default-test) on project oak-commons: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-888_6d82cb648d0e5b77391beae39bb8b48a5e50802b/oak-commons/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

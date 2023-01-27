@@ -1,0 +1,202 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Log4j SLF4J Binding 2.0-rc2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-slf4j-impl ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-slf4j-impl ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-410_8f0c48719769a99a927cd25364ccc7612b6c8874/log4j-slf4j-impl/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-slf4j-impl ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 13 source files to /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-410_8f0c48719769a99a927cd25364ccc7612b6c8874/log4j-slf4j-impl/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-slf4j-impl ---
+[WARNING] Manifest org.apache.logging.log4j:log4j-slf4j-impl:jar:2.0-rc2-SNAPSHOT : Superfluous export-package instructions: [org.apache.logging.log4j.*]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-slf4j-impl ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-slf4j-impl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-slf4j-impl ---
+[WARNING] The parameter forkMode is deprecated since version 2.14. Use forkCount and reuseForks instead.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-tests) @ log4j-slf4j-impl ---
+[WARNING] The parameter forkMode is deprecated since version 2.14. Use forkCount and reuseForks instead.
+[INFO] Surefire report directory: /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-410_8f0c48719769a99a927cd25364ccc7612b6c8874/log4j-slf4j-impl/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.logging.slf4j.SerializeTest
+2016-07-16 13:43:34,454 DEBUG Found Plugin Map at jar:file:/home/ylyu/.m2/repository/org/apache/logging/log4j/log4j-core/2.0-rc2-SNAPSHOT/log4j-core-2.0-rc2-SNAPSHOT.jar!/org/apache/logging/log4j/core/config/plugins/Log4j2Plugins.dat
+2016-07-16 13:43:34,486 DEBUG Generated plugins in 0.033599733 seconds
+2016-07-16 13:43:34,510 DEBUG Generated plugins in 0.023280545 seconds
+2016-07-16 13:43:34,518 DEBUG Calling createProperty on class org.apache.logging.log4j.core.config.Property for element property with params(name="filename", value="target/test.log")
+2016-07-16 13:43:34,522 DEBUG Calling configureSubstitutor on class org.apache.logging.log4j.core.config.plugins.PropertiesPlugin for element properties with params(Properties={filename=target/test.log}, Configuration(LoggerTest))
+2016-07-16 13:43:34,542 DEBUG Generated plugins in 0.019297077 seconds
+2016-07-16 13:43:34,543 DEBUG Calling createFilter on class org.apache.logging.log4j.core.filter.ThresholdFilter for element ThresholdFilter with params(level="trace", onMatch="null", onMismatch="null")
+2016-07-16 13:43:34,545 DEBUG Calling createLayout on class org.apache.logging.log4j.core.layout.PatternLayout for element PatternLayout with params(pattern="%C{1.} %m%n", Configuration(LoggerTest), null, charset="null", alwaysWriteExceptions="null", noConsoleNoAnsi="null")
+2016-07-16 13:43:34,563 DEBUG Generated plugins in 0.017477083 seconds
+2016-07-16 13:43:34,565 DEBUG Calling createAppender on class org.apache.logging.log4j.test.appender.ListAppender for element List with params(name="EventLogger", entryPerNewLine="null", raw="null", PatternLayout(%C{1.} %m%n), null)
+2016-07-16 13:43:34,566 DEBUG Calling createLayout on class org.apache.logging.log4j.core.layout.PatternLayout for element PatternLayout with params(pattern="%C{1.} %m MDC%X%n", Configuration(LoggerTest), null, charset="null", alwaysWriteExceptions="null", noConsoleNoAnsi="null")
+2016-07-16 13:43:34,567 DEBUG Calling createAppender on class org.apache.logging.log4j.core.appender.ConsoleAppender for element Console with params(PatternLayout(%C{1.} %m MDC%X%n), null, target="null", name="STDOUT", follow="null", ignoreExceptions="null")
+2016-07-16 13:43:34,568 DEBUG Calling createLayout on class org.apache.logging.log4j.core.layout.PatternLayout for element PatternLayout with params(pattern="%d %p %C{1.} [%t] %m%n", Configuration(LoggerTest), null, charset="null", alwaysWriteExceptions="null", noConsoleNoAnsi="null")
+2016-07-16 13:43:34,570 DEBUG Calling createAppender on class org.apache.logging.log4j.core.appender.FileAppender for element File with params(fileName="target/test.log", append="null", locking="null", name="File", immediateFlush="null", ignoreExceptions="null", bufferedIO="null", bufferSize="null", PatternLayout(%d %p %C{1.} [%t] %m%n), null, advertise="null", advertiseURI="null", Configuration(LoggerTest))
+2016-07-16 13:43:34,571 DEBUG Starting FileManager target/test.log
+2016-07-16 13:43:34,572 DEBUG Calling createLayout on class org.apache.logging.log4j.core.layout.PatternLayout for element PatternLayout with params(pattern="%C{1.} %m MDC%X%n%ex{0}", Configuration(LoggerTest), null, charset="null", alwaysWriteExceptions="null", noConsoleNoAnsi="null")
+2016-07-16 13:43:34,575 DEBUG Calling createAppender on class org.apache.logging.log4j.test.appender.ListAppender for element List with params(name="List", entryPerNewLine="null", raw="null", PatternLayout(%C{1.} %m MDC%X%n%ex{0}), null)
+2016-07-16 13:43:34,576 ERROR Appenders contains an invalid element or attribute "SLF4J"
+2016-07-16 13:43:34,576 DEBUG Calling createAppenders on class org.apache.logging.log4j.core.config.plugins.AppendersPlugin for element Appenders with params(Appenders={EventLogger, STDOUT, File, List})
+2016-07-16 13:43:34,577 DEBUG Calling createAppenderRef on class org.apache.logging.log4j.core.config.AppenderRef for element AppenderRef with params(ref="EventLogger", level="null", null)
+2016-07-16 13:43:34,578 DEBUG Calling createLogger on class org.apache.logging.log4j.core.config.LoggerConfig for element Logger with params(additivity="false", level="info", name="EventLogger", includeLocation="null", AppenderRef={EventLogger}, Properties={}, Configuration(LoggerTest), null)
+2016-07-16 13:43:34,579 DEBUG Calling createAppenderRef on class org.apache.logging.log4j.core.config.AppenderRef for element AppenderRef with params(ref="File", level="null", null)
+2016-07-16 13:43:34,580 DEBUG Calling createLogger on class org.apache.logging.log4j.core.config.LoggerConfig for element Logger with params(additivity="false", level="debug", name="org.apache.logging.log4j.test2", includeLocation="null", AppenderRef={File}, Properties={}, Configuration(LoggerTest), null)
+2016-07-16 13:43:34,581 DEBUG Calling createAppenderRef on class org.apache.logging.log4j.core.config.AppenderRef for element AppenderRef with params(ref="List", level="null", null)
+2016-07-16 13:43:34,582 DEBUG Calling createLogger on class org.apache.logging.log4j.core.config.LoggerConfig$RootLogger for element Root with params(additivity="null", level="trace", includeLocation="null", AppenderRef={List}, Properties={}, Configuration(LoggerTest), null)
+2016-07-16 13:43:34,582 DEBUG Calling createLoggers on class org.apache.logging.log4j.core.config.plugins.LoggersPlugin for element Loggers with params(Loggers={EventLogger, org.apache.logging.log4j.test2, root})
+2016-07-16 13:43:34,632 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364
+2016-07-16 13:43:34,634 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=StatusLogger
+2016-07-16 13:43:34,636 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=ContextSelector
+2016-07-16 13:43:34,637 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=Loggers,name=org.apache.logging.log4j.test2
+2016-07-16 13:43:34,638 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=Loggers,name=EventLogger
+2016-07-16 13:43:34,638 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=Loggers,name=
+2016-07-16 13:43:34,639 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=Appenders,name=List
+2016-07-16 13:43:34,639 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=Appenders,name=EventLogger
+2016-07-16 13:43:34,640 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=Appenders,name=STDOUT
+2016-07-16 13:43:34,640 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=Appenders,name=File
+2016-07-16 13:43:34,640 DEBUG Reconfiguration completed
+2016-07-16 13:43:34,675 DEBUG Reconfiguration started for context sun.misc.Launcher$AppClassLoader@60616364
+2016-07-16 13:43:34,685 DEBUG ServletContext not present - WebLookup not added
+2016-07-16 13:43:34,703 DEBUG Generated plugins in 0.016985680 seconds
+2016-07-16 13:43:34,719 DEBUG Generated plugins in 0.015743343 seconds
+2016-07-16 13:43:34,735 DEBUG Generated plugins in 0.015455596 seconds
+2016-07-16 13:43:34,735 DEBUG Shutting down FileManager target/test.log
+2016-07-16 13:43:34,736 DEBUG Unregistering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364
+2016-07-16 13:43:34,736 DEBUG Unregistering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=StatusLogger
+2016-07-16 13:43:34,736 DEBUG Unregistering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=ContextSelector
+2016-07-16 13:43:34,737 DEBUG Unregistering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=Loggers,name=org.apache.logging.log4j.test2
+2016-07-16 13:43:34,737 DEBUG Unregistering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=Loggers,name=EventLogger
+2016-07-16 13:43:34,737 DEBUG Unregistering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=Loggers,name=
+2016-07-16 13:43:34,737 DEBUG Unregistering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=Appenders,name=File
+2016-07-16 13:43:34,738 DEBUG Unregistering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=Appenders,name=List
+2016-07-16 13:43:34,738 DEBUG Unregistering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=Appenders,name=EventLogger
+2016-07-16 13:43:34,738 DEBUG Unregistering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=Appenders,name=STDOUT
+2016-07-16 13:43:34,738 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364
+2016-07-16 13:43:34,739 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=StatusLogger
+2016-07-16 13:43:34,739 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=ContextSelector
+2016-07-16 13:43:34,739 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@60616364,component=Appenders,name=Console
+2016-07-16 13:43:34,739 DEBUG Reconfiguration completed
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.526 sec <<< FAILURE! - in org.apache.logging.slf4j.SerializeTest
+testLogger(org.apache.logging.slf4j.SerializeTest)  Time elapsed: 0.022 sec  <<< ERROR!
+java.io.NotSerializableException: org.slf4j.impl.SLF4JLogger
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1183)
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:347)
+	at org.apache.logging.slf4j.SerializeTest.testLogger(SerializeTest.java:70)
+
+Running org.apache.logging.slf4j.LoggerTest
+2016-07-16 13:43:35,253 DEBUG Found Plugin Map at jar:file:/home/ylyu/.m2/repository/org/apache/logging/log4j/log4j-core/2.0-rc2-SNAPSHOT/log4j-core-2.0-rc2-SNAPSHOT.jar!/org/apache/logging/log4j/core/config/plugins/Log4j2Plugins.dat
+2016-07-16 13:43:35,291 DEBUG Generated plugins in 0.038949227 seconds
+2016-07-16 13:43:35,318 DEBUG Generated plugins in 0.027585352 seconds
+2016-07-16 13:43:35,328 DEBUG Calling createProperty on class org.apache.logging.log4j.core.config.Property for element property with params(name="filename", value="target/test.log")
+2016-07-16 13:43:35,332 DEBUG Calling configureSubstitutor on class org.apache.logging.log4j.core.config.plugins.PropertiesPlugin for element properties with params(Properties={filename=target/test.log}, Configuration(LoggerTest))
+2016-07-16 13:43:35,356 DEBUG Generated plugins in 0.023593503 seconds
+2016-07-16 13:43:35,358 DEBUG Calling createFilter on class org.apache.logging.log4j.core.filter.ThresholdFilter for element ThresholdFilter with params(level="trace", onMatch="null", onMismatch="null")
+2016-07-16 13:43:35,360 DEBUG Calling createLayout on class org.apache.logging.log4j.core.layout.PatternLayout for element PatternLayout with params(pattern="%C{1.} %m%n", Configuration(LoggerTest), null, charset="null", alwaysWriteExceptions="null", noConsoleNoAnsi="null")
+2016-07-16 13:43:35,381 DEBUG Generated plugins in 0.020941769 seconds
+2016-07-16 13:43:35,384 DEBUG Calling createAppender on class org.apache.logging.log4j.test.appender.ListAppender for element List with params(name="EventLogger", entryPerNewLine="null", raw="null", PatternLayout(%C{1.} %m%n), null)
+2016-07-16 13:43:35,384 DEBUG Calling createLayout on class org.apache.logging.log4j.core.layout.PatternLayout for element PatternLayout with params(pattern="%C{1.} %m MDC%X%n", Configuration(LoggerTest), null, charset="null", alwaysWriteExceptions="null", noConsoleNoAnsi="null")
+2016-07-16 13:43:35,386 DEBUG Calling createAppender on class org.apache.logging.log4j.core.appender.ConsoleAppender for element Console with params(PatternLayout(%C{1.} %m MDC%X%n), null, target="null", name="STDOUT", follow="null", ignoreExceptions="null")
+2016-07-16 13:43:35,387 DEBUG Calling createLayout on class org.apache.logging.log4j.core.layout.PatternLayout for element PatternLayout with params(pattern="%d %p %C{1.} [%t] %m%n", Configuration(LoggerTest), null, charset="null", alwaysWriteExceptions="null", noConsoleNoAnsi="null")
+2016-07-16 13:43:35,389 DEBUG Calling createAppender on class org.apache.logging.log4j.core.appender.FileAppender for element File with params(fileName="target/test.log", append="null", locking="null", name="File", immediateFlush="null", ignoreExceptions="null", bufferedIO="null", bufferSize="null", PatternLayout(%d %p %C{1.} [%t] %m%n), null, advertise="null", advertiseURI="null", Configuration(LoggerTest))
+2016-07-16 13:43:35,391 DEBUG Starting FileManager target/test.log
+2016-07-16 13:43:35,392 DEBUG Calling createLayout on class org.apache.logging.log4j.core.layout.PatternLayout for element PatternLayout with params(pattern="%C{1.} %m MDC%X%n%ex{0}", Configuration(LoggerTest), null, charset="null", alwaysWriteExceptions="null", noConsoleNoAnsi="null")
+2016-07-16 13:43:35,396 DEBUG Calling createAppender on class org.apache.logging.log4j.test.appender.ListAppender for element List with params(name="List", entryPerNewLine="null", raw="null", PatternLayout(%C{1.} %m MDC%X%n%ex{0}), null)
+2016-07-16 13:43:35,397 ERROR Appenders contains an invalid element or attribute "SLF4J"
+2016-07-16 13:43:35,397 DEBUG Calling createAppenders on class org.apache.logging.log4j.core.config.plugins.AppendersPlugin for element Appenders with params(Appenders={EventLogger, STDOUT, File, List})
+2016-07-16 13:43:35,398 DEBUG Calling createAppenderRef on class org.apache.logging.log4j.core.config.AppenderRef for element AppenderRef with params(ref="EventLogger", level="null", null)
+2016-07-16 13:43:35,399 DEBUG Calling createLogger on class org.apache.logging.log4j.core.config.LoggerConfig for element Logger with params(additivity="false", level="info", name="EventLogger", includeLocation="null", AppenderRef={EventLogger}, Properties={}, Configuration(LoggerTest), null)
+2016-07-16 13:43:35,400 DEBUG Calling createAppenderRef on class org.apache.logging.log4j.core.config.AppenderRef for element AppenderRef with params(ref="File", level="null", null)
+2016-07-16 13:43:35,402 DEBUG Calling createLogger on class org.apache.logging.log4j.core.config.LoggerConfig for element Logger with params(additivity="false", level="debug", name="org.apache.logging.log4j.test2", includeLocation="null", AppenderRef={File}, Properties={}, Configuration(LoggerTest), null)
+2016-07-16 13:43:35,402 DEBUG Calling createAppenderRef on class org.apache.logging.log4j.core.config.AppenderRef for element AppenderRef with params(ref="List", level="null", null)
+2016-07-16 13:43:35,403 DEBUG Calling createLogger on class org.apache.logging.log4j.core.config.LoggerConfig$RootLogger for element Root with params(additivity="null", level="trace", includeLocation="null", AppenderRef={List}, Properties={}, Configuration(LoggerTest), null)
+2016-07-16 13:43:35,404 DEBUG Calling createLoggers on class org.apache.logging.log4j.core.config.plugins.LoggersPlugin for element Loggers with params(Loggers={EventLogger, org.apache.logging.log4j.test2, root})
+2016-07-16 13:43:35,464 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861
+2016-07-16 13:43:35,466 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=StatusLogger
+2016-07-16 13:43:35,468 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=ContextSelector
+2016-07-16 13:43:35,470 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=Loggers,name=org.apache.logging.log4j.test2
+2016-07-16 13:43:35,470 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=Loggers,name=EventLogger
+2016-07-16 13:43:35,471 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=Loggers,name=
+2016-07-16 13:43:35,472 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=Appenders,name=List
+2016-07-16 13:43:35,472 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=Appenders,name=EventLogger
+2016-07-16 13:43:35,473 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=Appenders,name=STDOUT
+2016-07-16 13:43:35,473 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=Appenders,name=File
+2016-07-16 13:43:35,473 DEBUG Reconfiguration completed
+2016-07-16 13:43:35,549 DEBUG Reconfiguration started for context sun.misc.Launcher$AppClassLoader@540fe861
+2016-07-16 13:43:35,561 DEBUG ServletContext not present - WebLookup not added
+2016-07-16 13:43:35,582 DEBUG Generated plugins in 0.020537109 seconds
+2016-07-16 13:43:35,602 DEBUG Generated plugins in 0.018923635 seconds
+2016-07-16 13:43:35,620 DEBUG Generated plugins in 0.018364765 seconds
+2016-07-16 13:43:35,621 DEBUG Shutting down FileManager target/test.log
+2016-07-16 13:43:35,621 DEBUG Unregistering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861
+2016-07-16 13:43:35,622 DEBUG Unregistering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=StatusLogger
+2016-07-16 13:43:35,622 DEBUG Unregistering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=ContextSelector
+2016-07-16 13:43:35,622 DEBUG Unregistering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=Loggers,name=org.apache.logging.log4j.test2
+2016-07-16 13:43:35,623 DEBUG Unregistering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=Loggers,name=EventLogger
+2016-07-16 13:43:35,623 DEBUG Unregistering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=Loggers,name=
+2016-07-16 13:43:35,623 DEBUG Unregistering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=Appenders,name=EventLogger
+2016-07-16 13:43:35,623 DEBUG Unregistering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=Appenders,name=STDOUT
+2016-07-16 13:43:35,624 DEBUG Unregistering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=Appenders,name=List
+2016-07-16 13:43:35,624 DEBUG Unregistering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=Appenders,name=File
+2016-07-16 13:43:35,625 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861
+2016-07-16 13:43:35,625 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=StatusLogger
+2016-07-16 13:43:35,625 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=ContextSelector
+2016-07-16 13:43:35,625 DEBUG Registering MBean org.apache.logging.log4j2:type=sun.misc.Launcher$AppClassLoader@540fe861,component=Appenders,name=Console
+2016-07-16 13:43:35,626 DEBUG Reconfiguration completed
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.671 sec - in org.apache.logging.slf4j.LoggerTest
+Running org.apache.logging.slf4j.MarkerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in org.apache.logging.slf4j.MarkerTest
+
+Results :
+
+Tests in error: 
+  SerializeTest.testLogger:70 » NotSerializable org.slf4j.impl.SLF4JLogger
+
+Tests run: 13, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.445 s
+[INFO] Finished at: 2016-07-16T13:43:35-07:00
+[INFO] Final Memory: 24M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.16:test (default-tests) on project log4j-slf4j-impl: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-410_8f0c48719769a99a927cd25364ccc7612b6c8874/log4j-slf4j-impl/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

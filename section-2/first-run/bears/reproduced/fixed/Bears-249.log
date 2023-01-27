@@ -1,0 +1,73 @@
+Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fe; 2018-06-17T11:33:14-07:00)
+Maven home: /usr/local/apache-maven
+Java version: 1.8.0_312, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.15.0-173-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< org.imdea.vcd:vcdjavaclient >---------------------
+[INFO] Building vcdjavaclient 0.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- protoc-jar-maven-plugin:3.4.0:run (default) @ vcdjavaclient ---
+[INFO] Resolving artifact: com.google.protobuf:protoc:3.4.0, platform: linux-x86_64
+protoc-jar: executing: [/tmp/protoc6694493755678583105.exe, --version]
+[INFO] Protoc command: /tmp/protoc6694493755678583105.exe
+l[INFO] Input directories:
+ibproto[INFO]     /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-249/src/main/proto
+c 3.4.[INFO] Output targets:
+0
+[INFO]     java: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-249/src/main/java (add: main, clean: false, plugin: null, outputOptions: null)
+[INFO]     Processing (java): client.proto
+protoc-jar: executing: [/tmp/protoc6694493755678583105.exe, -I/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-249/src/main/proto, --java_out=/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-249/src/main/java, /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-249/src/main/proto/client.proto]
+[INFO] Adding generated classes to classpath
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (default) @ vcdjavaclient ---
+[INFO] Source directory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-249/src/test added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ vcdjavaclient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-249/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ vcdjavaclient ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 32 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-249/target/classes
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-249/src/main/java/org/imdea/vcd/queue/ConfQueue.java: Some input files use unchecked or unsafe operations.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-249/src/main/java/org/imdea/vcd/queue/ConfQueue.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ vcdjavaclient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-249/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ vcdjavaclient ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ vcdjavaclient ---
+[INFO] Surefire report directory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-249/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.imdea.vcd.queue.clock.MaxIntTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+Running org.imdea.vcd.queue.clock.ExceptionSetTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.imdea.vcd.queue.clock.ClockTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Running org.imdea.vcd.queue.ConfQueueTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.355 sec
+Running org.imdea.vcd.queue.DepQueueTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.655 sec
+
+Results :
+
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 33.712 s
+[INFO] Finished at: 2022-07-14T19:28:20-07:00
+[INFO] ------------------------------------------------------------------------
+Running the tests related to the bug Bears-249...
+The tests related to the bug Bears-249 were executed.

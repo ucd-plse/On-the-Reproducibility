@@ -1,0 +1,43 @@
+Checking out 41f29780 to /tmp/test_d4j_8326_1657606626/test_trigger/Math... FAIL
+Executed command: git clone /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/project_repos/commons-math.git /tmp/test_d4j_8326_1657606626/test_trigger/Math 2>&1 && cd /tmp/test_d4j_8326_1657606626/test_trigger/Math && git checkout 41f297809965523fcd021bef20b304b3584d9b4f 2>&1
+Cloning into '/tmp/test_d4j_8326_1657606626/test_trigger/Math'...
+done.
+fatal: reference is not a tree: 41f297809965523fcd021bef20b304b3584d9b4f
+Cannot checkout program version! at /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-checkout line 102.
+Compilation failed in require at /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: checkout: Math-10b
+Cannot open config file (/tmp/test_d4j_8326_1657606626/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_8326_1657606626/test_trigger/Math is not a valid working directory!
+Error: compile: Math-10b
+Cannot open config file (/tmp/test_d4j_8326_1657606626/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_8326_1657606626/test_trigger/Math is not a valid working directory!
+Error: run relevant tests: Math-10b
+cat: /tmp/test_d4j_8326_1657606626/test_trigger/Math/failing_tests: No such file or directory
+grep: /tmp/test_d4j_8326_1657606626/test_trigger/Math/failing_tests: No such file or directory
+Error: verify number of triggering tests: Math-10b (expected: 1, actual: 0)
+grep: /tmp/test_d4j_8326_1657606626/test_trigger/Math/failing_tests: No such file or directory
+Error: expected triggering test org.apache.commons.math4.geometry.euclidean.oned.IntervalTest::testStrictOrdering did not fail
+Cannot open config file (/tmp/test_d4j_8326_1657606626/test_trigger/Math/.defects4j.config): No such file or directory
+Directory exists but is not a previously used working directory: /tmp/test_d4j_8326_1657606626/test_trigger/Math at /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/core/Vcs.pm line 285.
+Compilation failed in require at /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: checkout: Math-10f
+Cannot open config file (/tmp/test_d4j_8326_1657606626/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_8326_1657606626/test_trigger/Math is not a valid working directory!
+Error: compile: Math-10f
+Cannot open config file (/tmp/test_d4j_8326_1657606626/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_8326_1657606626/test_trigger/Math is not a valid working directory!
+Error: run relevant tests: Math-10f
+cat: /tmp/test_d4j_8326_1657606626/test_trigger/Math/failing_tests: No such file or directory
+grep: /tmp/test_d4j_8326_1657606626/test_trigger/Math/failing_tests: No such file or directory
+================================================================================
+The following errors occurred:
+Error: checkout: Math-10b
+Error: compile: Math-10b
+Error: run relevant tests: Math-10b
+Error: verify number of triggering tests: Math-10b (expected: 1, actual: 0)
+Error: expected triggering test org.apache.commons.math4.geometry.euclidean.oned.IntervalTest::testStrictOrdering did not fail
+Error: checkout: Math-10f
+Error: compile: Math-10f
+Error: run relevant tests: Math-10f
+================================================================================
+FAILED

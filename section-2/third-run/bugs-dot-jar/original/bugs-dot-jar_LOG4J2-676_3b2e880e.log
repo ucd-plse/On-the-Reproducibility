@@ -1,0 +1,85 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Log4j NoSQL Plugins 2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-nosql ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-nosql ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-676_3b2e880e9a0400faa233c0634a2f48b1c11f61b4/log4j-nosql/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-nosql ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 14 source files to /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-676_3b2e880e9a0400faa233c0634a2f48b1c11f61b4/log4j-nosql/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-676_3b2e880e9a0400faa233c0634a2f48b1c11f61b4/log4j-nosql/src/main/java/org/apache/logging/log4j/nosql/appender/NoSQLDatabaseManager.java:[147,57] found raw type: org.apache.logging.log4j.nosql.appender.NoSQLObject
+  missing type arguments for generic class org.apache.logging.log4j.nosql.appender.NoSQLObject<W>
+[WARNING] /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-676_3b2e880e9a0400faa233c0634a2f48b1c11f61b4/log4j-nosql/src/main/java/org/apache/logging/log4j/nosql/appender/NoSQLDatabaseManager.java:[217,24] found raw type: org.apache.logging.log4j.nosql.appender.NoSQLDatabaseManager
+  missing type arguments for generic class org.apache.logging.log4j.nosql.appender.NoSQLDatabaseManager<W>
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:manifest (default) @ log4j-nosql ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-nosql ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-676_3b2e880e9a0400faa233c0634a2f48b1c11f61b4/log4j-nosql/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-nosql ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log4j-nosql ---
+[INFO] Surefire report directory: /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-676_3b2e880e9a0400faa233c0634a2f48b1c11f61b4/log4j-nosql/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.logging.log4j.nosql.appender.NoSQLAppenderTest
+Running org.apache.logging.log4j.nosql.appender.NoSQLDatabaseManagerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec - in org.apache.logging.log4j.nosql.appender.NoSQLAppenderTest
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec <<< FAILURE! - in org.apache.logging.log4j.nosql.appender.NoSQLDatabaseManagerTest
+testConnection(org.apache.logging.log4j.nosql.appender.NoSQLDatabaseManagerTest)  Time elapsed: 0.05 sec  <<< FAILURE!
+java.lang.AssertionError: 
+  Unexpected method call NoSQLConnection.isClosed():
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:44)
+	at org.easymock.internal.ObjectMethodsFilter.invoke(ObjectMethodsFilter.java:94)
+	at com.sun.proxy.$Proxy5.isClosed(Unknown Source)
+	at org.apache.logging.log4j.nosql.appender.NoSQLDatabaseManager.commitAndClose(NoSQLDatabaseManager.java:159)
+	at org.apache.logging.log4j.nosql.appender.NoSQLDatabaseManagerTest.testConnection(NoSQLDatabaseManagerTest.java:74)
+
+
+Results :
+
+Failed tests: 
+  NoSQLDatabaseManagerTest.testConnection:74 
+  Unexpected method call NoSQLConnection.isClosed():
+
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.193 s
+[INFO] Finished at: 2016-07-16T12:08:08-07:00
+[INFO] Final Memory: 24M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project log4j-nosql: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-676_3b2e880e9a0400faa233c0634a2f48b1c11f61b4/log4j-nosql/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

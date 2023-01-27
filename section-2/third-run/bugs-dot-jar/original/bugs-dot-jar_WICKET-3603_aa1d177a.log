@@ -1,0 +1,83 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Wicket Extensions 1.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2:process (default) @ wicket-extensions ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:resources (default-resources) @ wicket-extensions ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 117 resources
+[INFO] Copying 0 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ wicket-extensions ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.2.0:manifest (bundle-manifest) @ wicket-extensions ---
+[WARNING] Warning in manifest for org.apache.wicket:wicket-extensions:jar:1.5-SNAPSHOT : Superfluous export-package instructions: [org.apache.wicket.extensions.markup.html.repeater, org.apache.wicket.extensions.markup.html.image, org.apache.wicket.extensions.markup, org.apache, org.apache.wicket.extensions.ajax.markup, org.apache.wicket.extensions.markup.html, org.apache.wicket.extensions.markup.html.repeater.data, org.apache.wicket, org.apache.wicket.extensions.captcha, org.apache.wicket.extensions.util, org.apache.wicket.extensions.ajax, org, org.apache.wicket.extensions.validation, org.apache.wicket.extensions.ajax.markup.html.repeater.data, org.apache.wicket.extensions.ajax.markup.html.form, org.apache.wicket.extensions.ajax.markup.html.repeater]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:testResources (default-testResources) @ wicket-extensions ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ wicket-extensions ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.6:test (default-test) @ wicket-extensions ---
+[INFO] Surefire report directory: /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-3603_aa1d177acc6239b66ec4fe44c0cd31dfa7c57806/wicket-extensions/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.wicket.extensions.markup.html.tree.MoveChildToParentNodeMarkedForRecreationTest
+log4j:WARN No appenders could be found for logger (org.apache.wicket.Application).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.338 sec
+Running org.apache.wicket.extensions.validation.validator.RfcCompliantEmailValidatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec
+Running org.apache.wicket.extensions.markup.html.basic.DefaultLinkParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running org.apache.wicket.extensions.ajax.markup.html.AjaxEditableTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 sec
+Running org.apache.wicket.extensions.markup.html.AjaxLazyLoadPanelTesterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec
+Running org.apache.wicket.extensions.markup.html.repeater.data.table.DataTableTest
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.484 sec <<< FAILURE!
+Running org.apache.wicket.extensions.markup.html.upload.UploadFormWithProgressBarTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 sec
+Running org.apache.wicket.util.license.ApacheLicenceHeaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.019 sec
+
+Results :
+
+Tests in error: 
+  testWicket3603(org.apache.wicket.extensions.markup.html.repeater.data.table.DataTableTest)
+  test_1(org.apache.wicket.extensions.markup.html.repeater.data.table.DataTableTest)
+
+Tests run: 12, Failures: 0, Errors: 2, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.674 s
+[INFO] Finished at: 2016-07-31T08:31:07-07:00
+[INFO] Final Memory: 16M/606M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.6:test (default-test) on project wicket-extensions: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-3603_aa1d177acc6239b66ec4fe44c0cd31dfa7c57806/wicket-extensions/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

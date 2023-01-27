@@ -1,0 +1,155 @@
+Checking out ab1f195d to /tmp/test_d4j_3378043_1658745090/test_trigger/Vali OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Run post-checkout hook..................................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff ab1f195d:2404939a..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: Validator-23b................................... OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ FAIL
+Executed command:  cd /tmp/test_d4j_3378043_1658745090/test_trigger/Validator && /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/major/bin/ant -f /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml -Dd4j.home=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs -Dd4j.dir.projects=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects -Dbasedir=/tmp/test_d4j_3378043_1658745090/test_trigger/Validator -Dbuild.compiler=javac1.8 -DOUTFILE=/tmp/test_d4j_3378043_1658745090/test_trigger/Validator/failing_tests -Dd4j.relevant.tests.only=true run.dev.tests 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml
+
+init:
+     [echo] -------- validator 1.5.0-SNAPSHOT --------
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-beanutils:
+     [echo] Downloading beanutils...
+      [get] Getting: https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar
+      [get] To: /tmp/test_d4j_3378043_1658745090/test_trigger/Validator/lib/commons-beanutils.jar
+      [get] Not modified - so not downloaded
+
+download-digester:
+     [echo] Downloading digester...
+      [get] Getting: https://repo1.maven.org/maven2/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar
+      [get] To: /tmp/test_d4j_3378043_1658745090/test_trigger/Validator/lib/commons-digester.jar
+      [get] Not modified - so not downloaded
+
+download-logging:
+     [echo] Downloading logging...
+      [get] Getting: https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar
+      [get] To: /tmp/test_d4j_3378043_1658745090/test_trigger/Validator/lib/commons-logging.jar
+      [get] Not modified - so not downloaded
+
+download-collections:
+     [echo] Downloading collections...
+      [get] Getting: https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar
+      [get] To: /tmp/test_d4j_3378043_1658745090/test_trigger/Validator/lib/commons-collections.jar
+      [get] Not modified - so not downloaded
+
+download-junit:
+
+prepare:
+
+static:
+
+compile:
+    [javac] /tmp/test_d4j_3378043_1658745090/test_trigger/Validator/build.xml:216: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile.tests:
+    [javac] /tmp/test_d4j_3378043_1658745090/test_trigger/Validator/build.xml:317: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+update.all.tests:
+
+run.dev.tests:
+
+BUILD FAILED
+/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml:127: Test is running with empty fileset
+
+Total time: 1 second
+Cannot run tests! at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-test line 131.
+Compilation failed in require at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: run relevant tests: Validator-23b
+cat: /tmp/test_d4j_3378043_1658745090/test_trigger/Validator/failing_tests: No such file or directory
+grep: /tmp/test_d4j_3378043_1658745090/test_trigger/Validator/failing_tests: No such file or directory
+Error: verify number of triggering tests: Validator-23b (expected: 1, actual: 0)
+grep: /tmp/test_d4j_3378043_1658745090/test_trigger/Validator/failing_tests: No such file or directory
+Error: expected triggering test org.apache.commons.validator.routines.UrlValidatorTest::testValidator353 did not fail
+Check out program version: Validator-23f................................... OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ FAIL
+Executed command:  cd /tmp/test_d4j_3378043_1658745090/test_trigger/Validator && /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/major/bin/ant -f /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml -Dd4j.home=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs -Dd4j.dir.projects=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects -Dbasedir=/tmp/test_d4j_3378043_1658745090/test_trigger/Validator -Dbuild.compiler=javac1.8 -DOUTFILE=/tmp/test_d4j_3378043_1658745090/test_trigger/Validator/failing_tests -Dd4j.relevant.tests.only=true run.dev.tests 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml
+
+init:
+     [echo] -------- validator 1.5.0-SNAPSHOT --------
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-beanutils:
+     [echo] Downloading beanutils...
+      [get] Getting: https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar
+      [get] To: /tmp/test_d4j_3378043_1658745090/test_trigger/Validator/lib/commons-beanutils.jar
+      [get] Not modified - so not downloaded
+
+download-digester:
+     [echo] Downloading digester...
+      [get] Getting: https://repo1.maven.org/maven2/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar
+      [get] To: /tmp/test_d4j_3378043_1658745090/test_trigger/Validator/lib/commons-digester.jar
+      [get] Not modified - so not downloaded
+
+download-logging:
+     [echo] Downloading logging...
+      [get] Getting: https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar
+      [get] To: /tmp/test_d4j_3378043_1658745090/test_trigger/Validator/lib/commons-logging.jar
+      [get] Not modified - so not downloaded
+
+download-collections:
+     [echo] Downloading collections...
+      [get] Getting: https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar
+      [get] To: /tmp/test_d4j_3378043_1658745090/test_trigger/Validator/lib/commons-collections.jar
+      [get] Not modified - so not downloaded
+
+download-junit:
+
+prepare:
+
+static:
+
+compile:
+    [javac] /tmp/test_d4j_3378043_1658745090/test_trigger/Validator/build.xml:216: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile.tests:
+    [javac] /tmp/test_d4j_3378043_1658745090/test_trigger/Validator/build.xml:317: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+update.all.tests:
+
+run.dev.tests:
+
+BUILD FAILED
+/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml:127: Test is running with empty fileset
+
+Total time: 1 second
+Cannot run tests! at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-test line 131.
+Compilation failed in require at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: run relevant tests: Validator-23f
+cat: /tmp/test_d4j_3378043_1658745090/test_trigger/Validator/failing_tests: No such file or directory
+grep: /tmp/test_d4j_3378043_1658745090/test_trigger/Validator/failing_tests: No such file or directory
+================================================================================
+The following errors occurred:
+Error: run relevant tests: Validator-23b
+Error: verify number of triggering tests: Validator-23b (expected: 1, actual: 0)
+Error: expected triggering test org.apache.commons.validator.routines.UrlValidatorTest::testValidator353 did not fail
+Error: run relevant tests: Validator-23f
+================================================================================
+FAILED

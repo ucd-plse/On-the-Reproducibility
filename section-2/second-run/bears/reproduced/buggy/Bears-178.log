@@ -1,0 +1,154 @@
+Apache Maven 3.6.3
+Maven home: /usr/share/maven
+Java version: 1.8.0_312, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.15.0-41-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Byte Buddy (parent)                                                [pom]
+[INFO] Byte Buddy Java agent                                              [jar]
+[INFO] Byte Buddy (with dependencies)                                     [jar]
+[INFO] Byte Buddy (without dependencies)                                  [jar]
+[INFO] Byte Buddy benchmarks                                              [jar]
+[INFO] Byte Buddy for Android                                             [jar]
+[INFO] Byte Buddy (Maven plugin)                                 [maven-plugin]
+[INFO] Byte Buddy (Gradle plugin)                                         [jar]
+[INFO] 
+[INFO] ------------------< net.bytebuddy:byte-buddy-parent >-------------------
+[INFO] Building Byte Buddy (parent) 1.8.1-SNAPSHOT                        [1/8]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ byte-buddy-parent ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (default) @ byte-buddy-parent ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ byte-buddy-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] -------------------< net.bytebuddy:byte-buddy-agent >-------------------
+[INFO] Building Byte Buddy Java agent 1.8.1-SNAPSHOT                      [2/8]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ byte-buddy-agent ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (default) @ byte-buddy-agent ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ byte-buddy-agent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ byte-buddy-agent ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-178/byte-buddy-agent/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ byte-buddy-agent ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-178/byte-buddy-agent/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ byte-buddy-agent ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-178/byte-buddy-agent/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ byte-buddy-agent ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ byte-buddy-agent ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running net.bytebuddy.agent.ByteBuddyAgentProcessProviderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in net.bytebuddy.agent.ByteBuddyAgentProcessProviderTest
+[INFO] Running net.bytebuddy.agent.ByteBuddyAgentAgentProviderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.572 s - in net.bytebuddy.agent.ByteBuddyAgentAgentProviderTest
+[INFO] Running net.bytebuddy.agent.InstallerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in net.bytebuddy.agent.InstallerTest
+[INFO] Running net.bytebuddy.agent.ByteBuddyAgentTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.bytebuddy.agent.ByteBuddyAgentTest
+[INFO] Running net.bytebuddy.agent.AttacherTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in net.bytebuddy.agent.AttacherTest
+[INFO] Running net.bytebuddy.agent.ByteBuddyAgentAttachmentProviderTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 s - in net.bytebuddy.agent.ByteBuddyAgentAttachmentProviderTest
+[INFO] Running net.bytebuddy.agent.VirtualMachineForHotSpotTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in net.bytebuddy.agent.VirtualMachineForHotSpotTest
+[INFO] Running net.bytebuddy.agent.ByteBuddyAgentInstallationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.245 s - in net.bytebuddy.agent.ByteBuddyAgentInstallationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --------------------< net.bytebuddy:byte-buddy-dep >--------------------
+[INFO] Building Byte Buddy (with dependencies) 1.8.1-SNAPSHOT             [3/8]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ byte-buddy-dep ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (default) @ byte-buddy-dep ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ byte-buddy-dep ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ byte-buddy-dep ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-178/byte-buddy-dep/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ byte-buddy-dep ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 265 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-178/byte-buddy-dep/target/classes
+[INFO] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-178/byte-buddy-dep/src/main/java/net/bytebuddy/asm/Advice.java: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-178/byte-buddy-dep/src/main/java/net/bytebuddy/asm/Advice.java uses unchecked or unsafe operations.
+[INFO] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-178/byte-buddy-dep/src/main/java/net/bytebuddy/asm/Advice.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ byte-buddy-dep ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 77 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ byte-buddy-dep ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 649 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-178/byte-buddy-dep/target/test-classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-178/byte-buddy-dep/src/test/java/net/bytebuddy/implementation/EqualsMethodTest.java:[11,24] cannot find symbol
+  symbol:   class Debug
+  location: package sun.security.ssl
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Byte Buddy (parent) 1.8.1-SNAPSHOT:
+[INFO] 
+[INFO] Byte Buddy (parent) ................................ SUCCESS [  1.374 s]
+[INFO] Byte Buddy Java agent .............................. SUCCESS [  3.429 s]
+[INFO] Byte Buddy (with dependencies) ..................... FAILURE [ 16.943 s]
+[INFO] Byte Buddy (without dependencies) .................. SKIPPED
+[INFO] Byte Buddy benchmarks .............................. SKIPPED
+[INFO] Byte Buddy for Android ............................. SKIPPED
+[INFO] Byte Buddy (Maven plugin) .......................... SKIPPED
+[INFO] Byte Buddy (Gradle plugin) ......................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  21.915 s
+[INFO] Finished at: 2022-07-25T17:59:29-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.7.0:testCompile (default-testCompile) on project byte-buddy-dep: Compilation failure
+[ERROR] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-178/byte-buddy-dep/src/test/java/net/bytebuddy/implementation/EqualsMethodTest.java:[11,24] cannot find symbol
+[ERROR]   symbol:   class Debug
+[ERROR]   location: package sun.security.ssl
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :byte-buddy-dep
+Running the tests related to the bug Bears-178...
+The tests related to the bug Bears-178 were executed.

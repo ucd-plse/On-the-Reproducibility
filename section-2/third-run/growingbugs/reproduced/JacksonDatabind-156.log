@@ -1,0 +1,43 @@
+Checking out d1959f88 to /tmp/test_d4j_3101200_1660801771/test_trigger/Jack FAIL
+Executed command: git clone /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/project_repos/jackson-databind.git /tmp/test_d4j_3101200_1660801771/test_trigger/JacksonDatabind 2>&1 && cd /tmp/test_d4j_3101200_1660801771/test_trigger/JacksonDatabind && git checkout d1959f88327a6172a527de201a2134afd9aaf01f 2>&1
+Cloning into '/tmp/test_d4j_3101200_1660801771/test_trigger/JacksonDatabind'...
+done.
+fatal: reference is not a tree: d1959f88327a6172a527de201a2134afd9aaf01f
+Cannot checkout program version! at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-checkout line 102.
+Compilation failed in require at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: checkout: JacksonDatabind-156b
+Cannot open config file (/tmp/test_d4j_3101200_1660801771/test_trigger/JacksonDatabind/.defects4j.config): No such file or directory
+/tmp/test_d4j_3101200_1660801771/test_trigger/JacksonDatabind is not a valid working directory!
+Error: compile: JacksonDatabind-156b
+Cannot open config file (/tmp/test_d4j_3101200_1660801771/test_trigger/JacksonDatabind/.defects4j.config): No such file or directory
+/tmp/test_d4j_3101200_1660801771/test_trigger/JacksonDatabind is not a valid working directory!
+Error: run relevant tests: JacksonDatabind-156b
+cat: /tmp/test_d4j_3101200_1660801771/test_trigger/JacksonDatabind/failing_tests: No such file or directory
+grep: /tmp/test_d4j_3101200_1660801771/test_trigger/JacksonDatabind/failing_tests: No such file or directory
+Error: verify number of triggering tests: JacksonDatabind-156b (expected: 1, actual: 0)
+grep: /tmp/test_d4j_3101200_1660801771/test_trigger/JacksonDatabind/failing_tests: No such file or directory
+Error: expected triggering test com.fasterxml.jackson.databind.deser.jdk.EnumMapDeserializationTest::testCustomEnumAsRootMapKey did not fail
+Cannot open config file (/tmp/test_d4j_3101200_1660801771/test_trigger/JacksonDatabind/.defects4j.config): No such file or directory
+Directory exists but is not a previously used working directory: /tmp/test_d4j_3101200_1660801771/test_trigger/JacksonDatabind at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/core/Vcs.pm line 285.
+Compilation failed in require at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: checkout: JacksonDatabind-156f
+Cannot open config file (/tmp/test_d4j_3101200_1660801771/test_trigger/JacksonDatabind/.defects4j.config): No such file or directory
+/tmp/test_d4j_3101200_1660801771/test_trigger/JacksonDatabind is not a valid working directory!
+Error: compile: JacksonDatabind-156f
+Cannot open config file (/tmp/test_d4j_3101200_1660801771/test_trigger/JacksonDatabind/.defects4j.config): No such file or directory
+/tmp/test_d4j_3101200_1660801771/test_trigger/JacksonDatabind is not a valid working directory!
+Error: run relevant tests: JacksonDatabind-156f
+cat: /tmp/test_d4j_3101200_1660801771/test_trigger/JacksonDatabind/failing_tests: No such file or directory
+grep: /tmp/test_d4j_3101200_1660801771/test_trigger/JacksonDatabind/failing_tests: No such file or directory
+================================================================================
+The following errors occurred:
+Error: checkout: JacksonDatabind-156b
+Error: compile: JacksonDatabind-156b
+Error: run relevant tests: JacksonDatabind-156b
+Error: verify number of triggering tests: JacksonDatabind-156b (expected: 1, actual: 0)
+Error: expected triggering test com.fasterxml.jackson.databind.deser.jdk.EnumMapDeserializationTest::testCustomEnumAsRootMapKey did not fail
+Error: checkout: JacksonDatabind-156f
+Error: compile: JacksonDatabind-156f
+Error: run relevant tests: JacksonDatabind-156f
+================================================================================
+FAILED

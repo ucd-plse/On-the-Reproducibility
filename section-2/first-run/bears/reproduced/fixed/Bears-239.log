@@ -1,0 +1,300 @@
+Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fe; 2018-06-17T11:33:14-07:00)
+Maven home: /usr/local/apache-maven
+Java version: 1.8.0_312, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.15.0-173-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] 
+[INFO] -------------------< com.shapesecurity.shift:es2017 >-------------------
+[INFO] Building Shift AST 1.5.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (pre-unit-test) @ es2017 ---
+[INFO] JACOCO_AGENT_OPT set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-239/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-source) @ es2017 ---
+[INFO] Source directory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-239/generated-sources/main/java added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ es2017 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-239/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ es2017 ---
+[INFO] Compiling 24 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-239/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ es2017 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 24 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ es2017 ---
+[INFO] Compiling 12 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-239/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ es2017 ---
+[INFO] Surefire report directory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-239/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.shapesecurity.shift.es2017.test262.Test262
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.106 sec <<< FAILURE! - in com.shapesecurity.shift.es2017.test262.Test262
+testTest262(com.shapesecurity.shift.es2017.test262.Test262)  Time elapsed: 0.015 sec  <<< ERROR!
+java.nio.file.NoSuchFileException: src/test/resources/test262/test
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+	at sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.FileTreeWalker.getAttributes(FileTreeWalker.java:219)
+	at java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:276)
+	at java.nio.file.FileTreeWalker.walk(FileTreeWalker.java:322)
+	at java.nio.file.FileTreeIterator.<init>(FileTreeIterator.java:72)
+	at java.nio.file.Files.walk(Files.java:3574)
+	at java.nio.file.Files.walk(Files.java:3625)
+	at com.shapesecurity.shift.es2017.test262.Test262.testTest262(Test262.java:187)
+
+Running com.shapesecurity.shift.es2017.test262.parser.EarlyTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in com.shapesecurity.shift.es2017.test262.parser.EarlyTest
+initializationError(com.shapesecurity.shift.es2017.test262.parser.EarlyTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at java.util.Arrays.stream(Arrays.java:5004)
+	at com.shapesecurity.shift.es2017.test262.parser.EarlyTest.data(EarlyTest.java:117)
+
+Running com.shapesecurity.shift.es2017.test262.parser.PassTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE! - in com.shapesecurity.shift.es2017.test262.parser.PassTest
+initializationError(com.shapesecurity.shift.es2017.test262.parser.PassTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at java.util.Arrays.stream(Arrays.java:5004)
+	at com.shapesecurity.shift.es2017.test262.parser.PassTest.data(PassTest.java:178)
+
+Running com.shapesecurity.shift.es2017.test262.parser.FailTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in com.shapesecurity.shift.es2017.test262.parser.FailTest
+initializationError(com.shapesecurity.shift.es2017.test262.parser.FailTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at java.util.Arrays.stream(Arrays.java:5004)
+	at com.shapesecurity.shift.es2017.test262.parser.FailTest.data(FailTest.java:46)
+
+Running com.shapesecurity.shift.es2017.fuzzer.FuzzerTest
+[  8.1%] Average speed 56.054 tests per milli-second. 3363245 tests per min.[  8.4%] Average speed 43.374 tests per milli-second. 2602433 tests per min.[  8.7%] Average speed 34.493 tests per milli-second. 2069551 tests per min.[  9.0%] Average speed 30.892 tests per milli-second. 1853518 tests per min.[  9.3%] Average speed 27.993 tests per milli-second. 1679603 tests per min.[  9.6%] Average speed 25.979 tests per milli-second. 1558746 tests per min.[  9.9%] Average speed 24.563 tests per milli-second. 1473760 tests per min.[ 10.2%] Average speed 23.263 tests per milli-second. 1395776 tests per min.[ 10.5%] Average speed 22.033 tests per milli-second. 1321979 tests per min.[ 10.8%] Average speed 21.203 tests per milli-second. 1272196 tests per min.[ 11.1%] Average speed 20.311 tests per milli-second. 1218671 tests per min.[ 11.4%] Average speed 19.626 tests per milli-second. 1177550 tests per min.[ 11.7%] Average speed 19.155 tests per milli-second. 1149287 tests per min.[ 12.0%] Average speed 18.725 tests per milli-second. 1123517 tests per min.[ 12.3%] Average speed 18.359 tests per milli-second. 1101514 tests per min.[ 12.6%] Average speed 17.744 tests per milli-second. 1064669 tests per min.[ 12.9%] Average speed 17.579 tests per milli-second. 1054732 tests per min.[ 13.2%] Average speed 17.260 tests per milli-second. 1035587 tests per min.[ 13.5%] Average speed 16.984 tests per milli-second. 1019014 tests per min.[ 13.8%] Average speed 16.625 tests per milli-second. 997471 tests per min.[ 14.1%] Average speed 16.052 tests per milli-second. 963130 tests per min.[ 14.4%] Average speed 16.062 tests per milli-second. 963692 tests per min.[ 14.7%] Average speed 16.041 tests per milli-second. 962480 tests per min.[ 15.0%] Average speed 15.951 tests per milli-second. 957031 tests per min.[ 15.3%] Average speed 15.995 tests per milli-second. 959707 tests per min.[ 15.6%] Average speed 15.999 tests per milli-second. 959926 tests per min.[ 15.9%] Average speed 15.948 tests per milli-second. 956869 tests per min.[ 16.2%] Average speed 15.944 tests per milli-second. 956630 tests per min.[ 16.5%] Average speed 16.006 tests per milli-second. 960362 tests per min.[ 16.8%] Average speed 16.019 tests per milli-second. 961134 tests per min.[ 17.1%] Average speed 16.114 tests per milli-second. 966828 tests per min.[ 17.4%] Average speed 16.171 tests per milli-second. 970275 tests per min.[ 17.7%] Average speed 16.142 tests per milli-second. 968534 tests per min.[ 18.0%] Average speed 16.208 tests per milli-second. 972487 tests per min.[ 18.3%] Average speed 16.264 tests per milli-second. 975822 tests per min.[ 18.6%] Average speed 16.313 tests per milli-second. 978758 tests per min.[ 18.9%] Average speed 16.392 tests per milli-second. 983497 tests per min.[ 19.2%] Average speed 16.497 tests per milli-second. 989824 tests per min.[ 19.5%] Average speed 16.615 tests per milli-second. 996907 tests per min.[ 19.8%] Average speed 16.640 tests per milli-second. 998375 tests per min.[ 20.1%] Average speed 16.720 tests per milli-second. 1003228 tests per min.[ 20.4%] Average speed 16.812 tests per milli-second. 1008726 tests per min.[ 20.7%] Average speed 16.900 tests per milli-second. 1013988 tests per min.[ 21.0%] Average speed 16.941 tests per milli-second. 1016467 tests per min.[ 21.3%] Average speed 16.973 tests per milli-second. 1018397 tests per min.[ 21.6%] Average speed 17.050 tests per milli-second. 1022977 tests per min.[ 21.9%] Average speed 17.110 tests per milli-second. 1026619 tests per min.[ 22.2%] Average speed 17.216 tests per milli-second. 1032953 tests per min.[ 22.5%] Average speed 17.254 tests per milli-second. 1035238 tests per min.[ 22.8%] Average speed 17.323 tests per milli-second. 1039408 tests per min.[ 23.1%] Average speed 17.391 tests per milli-second. 1043469 tests per min.[ 23.4%] Average speed 17.475 tests per milli-second. 1048505 tests per min.[ 23.7%] Average speed 17.531 tests per milli-second. 1051852 tests per min.[ 24.0%] Average speed 17.571 tests per milli-second. 1054282 tests per min.[ 24.3%] Average speed 17.652 tests per milli-second. 1059137 tests per min.[ 24.6%] Average speed 17.734 tests per milli-second. 1064055 tests per min.[ 24.9%] Average speed 17.783 tests per milli-second. 1067009 tests per min.[ 25.2%] Average speed 17.815 tests per milli-second. 1068916 tests per min.[ 25.5%] Average speed 17.879 tests per milli-second. 1072718 tests per min.[ 25.8%] Average speed 17.938 tests per milli-second. 1076264 tests per min.[ 26.1%] Average speed 18.005 tests per milli-second. 1080283 tests per min.[ 26.4%] Average speed 18.033 tests per milli-second. 1081965 tests per min.[ 26.7%] Average speed 18.061 tests per milli-second. 1083649 tests per min.[ 27.0%] Average speed 18.105 tests per milli-second. 1086278 tests per min.[ 27.3%] Average speed 18.172 tests per milli-second. 1090315 tests per min.[ 27.6%] Average speed 18.223 tests per milli-second. 1093370 tests per min.[ 27.9%] Average speed 18.276 tests per milli-second. 1096576 tests per min.[ 28.2%] Average speed 18.382 tests per milli-second. 1102948 tests per min.[ 28.5%] Average speed 18.443 tests per milli-second. 1106564 tests per min.[ 28.8%] Average speed 18.471 tests per milli-second. 1108266 tests per min.[ 29.1%] Average speed 18.509 tests per milli-second. 1110540 tests per min.[ 29.4%] Average speed 18.505 tests per milli-second. 1110271 tests per min.[ 29.7%] Average speed 18.532 tests per milli-second. 1111944 tests per min.[ 30.0%] Average speed 18.566 tests per milli-second. 1113948 tests per min.[ 30.3%] Average speed 18.589 tests per milli-second. 1115334 tests per min.[ 30.6%] Average speed 18.663 tests per milli-second. 1119765 tests per min.[ 30.9%] Average speed 18.703 tests per milli-second. 1122194 tests per min.[ 31.2%] Average speed 18.759 tests per milli-second. 1125543 tests per min.[ 31.5%] Average speed 18.772 tests per milli-second. 1126342 tests per min.[ 31.8%] Average speed 18.851 tests per milli-second. 1131039 tests per min.[ 32.1%] Average speed 18.923 tests per milli-second. 1135388 tests per min.[ 32.4%] Average speed 18.990 tests per milli-second. 1139405 tests per min.[ 32.7%] Average speed 19.016 tests per milli-second. 1140958 tests per min.[ 33.0%] Average speed 19.043 tests per milli-second. 1142553 tests per min.[ 33.3%] Average speed 19.106 tests per milli-second. 1146387 tests per min.[ 33.6%] Average speed 19.139 tests per milli-second. 1148345 tests per min.[ 33.9%] Average speed 19.168 tests per milli-second. 1150056 tests per min.[ 34.2%] Average speed 19.188 tests per milli-second. 1151297 tests per min.[ 34.5%] Average speed 19.234 tests per milli-second. 1154055 tests per min.[ 34.8%] Average speed 19.301 tests per milli-second. 1158075 tests per min.[ 35.1%] Average speed 19.329 tests per milli-second. 1159724 tests per min.[ 35.4%] Average speed 19.367 tests per milli-second. 1162048 tests per min.[ 35.7%] Average speed 19.421 tests per milli-second. 1165249 tests per min.[ 36.0%] Average speed 19.463 tests per milli-second. 1167808 tests per min.[ 36.3%] Average speed 19.517 tests per milli-second. 1171018 tests per min.[ 36.6%] Average speed 19.545 tests per milli-second. 1172717 tests per min.[ 36.9%] Average speed 19.592 tests per milli-second. 1175497 tests per min.[ 37.2%] Average speed 19.641 tests per milli-second. 1178452 tests per min.[ 37.5%] Average speed 19.684 tests per milli-second. 1181059 tests per min.[ 37.8%] Average speed 19.735 tests per milli-second. 1184097 tests per min.[ 38.1%] Average speed 19.790 tests per milli-second. 1187378 tests per min.[ 38.4%] Average speed 19.844 tests per milli-second. 1190632 tests per min.[ 38.7%] Average speed 19.893 tests per milli-second. 1193564 tests per min.[ 39.0%] Average speed 19.902 tests per milli-second. 1194092 tests per min.[ 39.3%] Average speed 19.945 tests per milli-second. 1196717 tests per min.[ 39.6%] Average speed 19.983 tests per milli-second. 1198962 tests per min.[ 39.9%] Average speed 20.010 tests per milli-second. 1200572 tests per min.[ 40.2%] Average speed 20.068 tests per milli-second. 1204085 tests per min.[ 40.5%] Average speed 20.103 tests per milli-second. 1206196 tests per min.[ 40.8%] Average speed 20.172 tests per milli-second. 1210307 tests per min.[ 41.1%] Average speed 19.524 tests per milli-second. 1171455 tests per min.[ 41.4%] Average speed 19.571 tests per milli-second. 1174258 tests per min.[ 41.7%] Average speed 19.581 tests per milli-second. 1174857 tests per min.[ 42.0%] Average speed 19.602 tests per milli-second. 1176122 tests per min.[ 42.3%] Average speed 19.604 tests per milli-second. 1176255 tests per min.[ 42.6%] Average speed 19.639 tests per milli-second. 1178368 tests per min.[ 42.9%] Average speed 19.674 tests per milli-second. 1180466 tests per min.[ 43.2%] Average speed 19.739 tests per milli-second. 1184348 tests per min.[ 43.5%] Average speed 19.799 tests per milli-second. 1187960 tests per min.[ 43.8%] Average speed 19.846 tests per milli-second. 1190782 tests per min.[ 44.1%] Average speed 19.912 tests per milli-second. 1194746 tests per min.[ 44.4%] Average speed 19.960 tests per milli-second. 1197619 tests per min.[ 44.7%] Average speed 20.004 tests per milli-second. 1200233 tests per min.[ 45.0%] Average speed 20.058 tests per milli-second. 1203499 tests per min.[ 45.3%] Average speed 20.103 tests per milli-second. 1206159 tests per min.[ 45.6%] Average speed 20.166 tests per milli-second. 1209940 tests per min.[ 45.9%] Average speed 20.228 tests per milli-second. 1213703 tests per min.[ 46.2%] Average speed 20.282 tests per milli-second. 1216909 tests per min.[ 46.5%] Average speed 20.319 tests per milli-second. 1219170 tests per min.[ 46.8%] Average speed 20.371 tests per milli-second. 1222257 tests per min.[ 47.1%] Average speed 20.428 tests per milli-second. 1225666 tests per min.[ 47.4%] Average speed 20.471 tests per milli-second. 1228270 tests per min.[ 47.7%] Average speed 20.516 tests per milli-second. 1230980 tests per min.[ 48.0%] Average speed 20.564 tests per milli-second. 1233855 tests per min.[ 48.3%] Average speed 20.597 tests per milli-second. 1235808 tests per min.[ 48.6%] Average speed 20.663 tests per milli-second. 1239776 tests per min.[ 48.9%] Average speed 20.695 tests per milli-second. 1241704 tests per min.[ 49.2%] Average speed 20.742 tests per milli-second. 1244499 tests per min.[ 49.5%] Average speed 20.795 tests per milli-second. 1247686 tests per min.[ 49.8%] Average speed 20.855 tests per milli-second. 1251271 tests per min.[ 50.1%] Average speed 20.917 tests per milli-second. 1254994 tests per min.[ 50.4%] Average speed 20.965 tests per milli-second. 1257923 tests per min.[ 50.7%] Average speed 21.012 tests per milli-second. 1260690 tests per min.[ 51.0%] Average speed 21.048 tests per milli-second. 1262861 tests per min.[ 51.3%] Average speed 21.105 tests per milli-second. 1266289 tests per min.[ 51.6%] Average speed 21.147 tests per milli-second. 1268811 tests per min.[ 51.9%] Average speed 21.216 tests per milli-second. 1272942 tests per min.[ 52.2%] Average speed 21.272 tests per milli-second. 1276310 tests per min.[ 52.5%] Average speed 21.312 tests per milli-second. 1278722 tests per min.[ 52.8%] Average speed 21.376 tests per milli-second. 1282577 tests per min.[ 53.1%] Average speed 21.396 tests per milli-second. 1283778 tests per min.[ 53.4%] Average speed 21.450 tests per milli-second. 1286991 tests per min.[ 53.7%] Average speed 21.515 tests per milli-second. 1290916 tests per min.[ 54.0%] Average speed 21.551 tests per milli-second. 1293037 tests per min.[ 54.3%] Average speed 21.605 tests per milli-second. 1296272 tests per min.[ 54.6%] Average speed 21.636 tests per milli-second. 1298166 tests per min.[ 54.9%] Average speed 21.675 tests per milli-second. 1300486 tests per min.[ 55.2%] Average speed 21.718 tests per milli-second. 1303077 tests per min.[ 55.5%] Average speed 21.766 tests per milli-second. 1305941 tests per min.[ 55.8%] Average speed 21.819 tests per milli-second. 1309135 tests per min.[ 56.1%] Average speed 21.883 tests per milli-second. 1312973 tests per min.[ 56.4%] Average speed 21.912 tests per milli-second. 1314728 tests per min.[ 56.7%] Average speed 21.933 tests per milli-second. 1316003 tests per min.[ 57.0%] Average speed 21.962 tests per milli-second. 1317733 tests per min.[ 57.3%] Average speed 22.006 tests per milli-second. 1320372 tests per min.[ 57.6%] Average speed 22.033 tests per milli-second. 1322007 tests per min.[ 57.9%] Average speed 22.087 tests per milli-second. 1325196 tests per min.[ 58.2%] Average speed 22.128 tests per milli-second. 1327663 tests per min.[ 58.5%] Average speed 22.159 tests per milli-second. 1329511 tests per min.[ 58.8%] Average speed 22.182 tests per milli-second. 1330905 tests per min.[ 59.1%] Average speed 22.210 tests per milli-second. 1332576 tests per min.[ 59.4%] Average speed 22.250 tests per milli-second. 1334999 tests per min.[ 59.7%] Average speed 22.298 tests per milli-second. 1337860 tests per min.[ 60.0%] Average speed 22.327 tests per milli-second. 1339607 tests per min.[ 60.3%] Average speed 22.377 tests per milli-second. 1342593 tests per min.[ 60.6%] Average speed 22.395 tests per milli-second. 1343727 tests per min.[ 60.9%] Average speed 22.434 tests per milli-second. 1346019 tests per min.[ 61.2%] Average speed 22.479 tests per milli-second. 1348727 tests per min.[ 61.5%] Average speed 22.500 tests per milli-second. 1350028 tests per min.[ 61.8%] Average speed 22.553 tests per milli-second. 1353188 tests per min.[ 62.1%] Average speed 22.584 tests per milli-second. 1355010 tests per min.[ 62.4%] Average speed 22.616 tests per milli-second. 1356960 tests per min.[ 62.7%] Average speed 22.653 tests per milli-second. 1359203 tests per min.[ 63.0%] Average speed 22.673 tests per milli-second. 1360382 tests per min.[ 63.3%] Average speed 22.705 tests per milli-second. 1362309 tests per min.[ 63.6%] Average speed 22.758 tests per milli-second. 1365458 tests per min.[ 63.9%] Average speed 22.775 tests per milli-second. 1366492 tests per min.[ 64.2%] Average speed 22.816 tests per milli-second. 1368983 tests per min.[ 64.5%] Average speed 22.859 tests per milli-second. 1371555 tests per min.[ 64.8%] Average speed 22.894 tests per milli-second. 1373627 tests per min.[ 65.1%] Average speed 22.936 tests per milli-second. 1376132 tests per min.[ 65.4%] Average speed 22.980 tests per milli-second. 1378795 tests per min.[ 65.7%] Average speed 23.030 tests per milli-second. 1381820 tests per min.[ 66.0%] Average speed 23.087 tests per milli-second. 1385239 tests per min.[ 66.3%] Average speed 23.108 tests per milli-second. 1386472 tests per min.[ 66.6%] Average speed 23.137 tests per milli-second. 1388203 tests per min.[ 66.9%] Average speed 23.164 tests per milli-second. 1389863 tests per min.[ 67.2%] Average speed 23.192 tests per milli-second. 1391502 tests per min.[ 67.5%] Average speed 23.212 tests per milli-second. 1392724 tests per min.[ 67.8%] Average speed 23.246 tests per milli-second. 1394739 tests per min.[ 68.1%] Average speed 23.281 tests per milli-second. 1396868 tests per min.[ 68.4%] Average speed 23.333 tests per milli-second. 1399976 tests per min.[ 68.7%] Average speed 23.353 tests per milli-second. 1401177 tests per min.[ 69.0%] Average speed 23.384 tests per milli-second. 1403040 tests per min.[ 69.3%] Average speed 23.419 tests per milli-second. 1405141 tests per min.[ 69.6%] Average speed 23.427 tests per milli-second. 1405598 tests per min.[ 69.9%] Average speed 23.436 tests per milli-second. 1406179 tests per min.[ 70.2%] Average speed 23.491 tests per milli-second. 1409463 tests per min.[ 70.5%] Average speed 23.525 tests per milli-second. 1411503 tests per min.[ 70.8%] Average speed 23.549 tests per milli-second. 1412914 tests per min.[ 71.1%] Average speed 23.594 tests per milli-second. 1415634 tests per min.[ 71.4%] Average speed 23.618 tests per milli-second. 1417051 tests per min.[ 71.7%] Average speed 23.635 tests per milli-second. 1418078 tests per min.[ 72.0%] Average speed 23.663 tests per milli-second. 1419786 tests per min.[ 72.3%] Average speed 23.686 tests per milli-second. 1421154 tests per min.[ 72.6%] Average speed 23.733 tests per milli-second. 1423962 tests per min.[ 72.9%] Average speed 23.771 tests per milli-second. 1426266 tests per min.[ 73.2%] Average speed 23.814 tests per milli-second. 1428857 tests per min.[ 73.5%] Average speed 23.846 tests per milli-second. 1430751 tests per min.[ 73.8%] Average speed 23.880 tests per milli-second. 1432810 tests per min.[ 74.1%] Average speed 23.912 tests per milli-second. 1434734 tests per min.[ 74.4%] Average speed 23.961 tests per milli-second. 1437650 tests per min.[ 74.7%] Average speed 23.977 tests per milli-second. 1438629 tests per min.[ 75.0%] Average speed 24.017 tests per milli-second. 1441036 tests per min.[ 75.3%] Average speed 24.062 tests per milli-second. 1443749 tests per min.[ 75.6%] Average speed 24.107 tests per milli-second. 1446400 tests per min.[ 75.9%] Average speed 24.148 tests per milli-second. 1448881 tests per min.[ 76.2%] Average speed 24.185 tests per milli-second. 1451088 tests per min.[ 76.5%] Average speed 24.217 tests per milli-second. 1453017 tests per min.[ 76.8%] Average speed 24.250 tests per milli-second. 1454987 tests per min.[ 77.1%] Average speed 24.295 tests per milli-second. 1457696 tests per min.[ 77.4%] Average speed 24.332 tests per milli-second. 1459934 tests per min.[ 77.7%] Average speed 24.354 tests per milli-second. 1461250 tests per min.[ 78.0%] Average speed 24.404 tests per milli-second. 1464250 tests per min.[ 78.3%] Average speed 24.429 tests per milli-second. 1465766 tests per min.[ 78.6%] Average speed 24.482 tests per milli-second. 1468936 tests per min.[ 78.9%] Average speed 24.521 tests per milli-second. 1471231 tests per min.[ 79.2%] Average speed 24.562 tests per milli-second. 1473710 tests per min.[ 79.5%] Average speed 24.602 tests per milli-second. 1476144 tests per min.[ 79.8%] Average speed 24.644 tests per milli-second. 1478643 tests per min.[ 80.1%] Average speed 24.688 tests per milli-second. 1481264 tests per min.[ 80.4%] Average speed 24.712 tests per milli-second. 1482695 tests per min.[ 80.7%] Average speed 24.721 tests per milli-second. 1483248 tests per min.[ 81.0%] Average speed 24.752 tests per milli-second. 1485140 tests per min.[ 81.3%] Average speed 24.797 tests per milli-second. 1487836 tests per min.[ 81.6%] Average speed 24.850 tests per milli-second. 1491005 tests per min.[ 81.9%] Average speed 24.872 tests per milli-second. 1492327 tests per min.[ 82.2%] Average speed 24.904 tests per milli-second. 1494250 tests per min.[ 82.5%] Average speed 24.910 tests per milli-second. 1494604 tests per min.[ 82.8%] Average speed 24.918 tests per milli-second. 1495092 tests per min.[ 83.1%] Average speed 24.949 tests per milli-second. 1496960 tests per min.[ 83.4%] Average speed 24.983 tests per milli-second. 1498990 tests per min.[ 83.7%] Average speed 25.020 tests per milli-second. 1501215 tests per min.[ 84.0%] Average speed 25.044 tests per milli-second. 1502644 tests per min.[ 84.3%] Average speed 25.062 tests per milli-second. 1503716 tests per min.[ 84.6%] Average speed 25.079 tests per milli-second. 1504728 tests per min.[ 84.9%] Average speed 25.126 tests per milli-second. 1507557 tests per min.[ 85.2%] Average speed 25.155 tests per milli-second. 1509318 tests per min.[ 85.5%] Average speed 25.162 tests per milli-second. 1509695 tests per min.[ 85.8%] Average speed 25.204 tests per milli-second. 1512226 tests per min.[ 86.1%] Average speed 25.238 tests per milli-second. 1514285 tests per min.[ 86.4%] Average speed 25.278 tests per milli-second. 1516670 tests per min.[ 86.7%] Average speed 25.324 tests per milli-second. 1519427 tests per min.[ 87.0%] Average speed 25.362 tests per milli-second. 1521718 tests per min.[ 87.3%] Average speed 25.384 tests per milli-second. 1523038 tests per min.[ 87.6%] Average speed 25.425 tests per milli-second. 1525512 tests per min.[ 87.9%] Average speed 25.450 tests per milli-second. 1527001 tests per min.[ 88.2%] Average speed 25.461 tests per milli-second. 1527681 tests per min.[ 88.5%] Average speed 25.493 tests per milli-second. 1529551 tests per min.[ 88.8%] Average speed 25.514 tests per milli-second. 1530839 tests per min.[ 89.1%] Average speed 25.544 tests per milli-second. 1532639 tests per min.[ 89.4%] Average speed 25.563 tests per milli-second. 1533785 tests per min.[ 89.7%] Average speed 25.560 tests per milli-second. 1533589 tests per min.[ 90.0%] Average speed 25.550 tests per milli-second. 1533027 tests per min.[ 90.3%] Average speed 25.550 tests per milli-second. 1532990 tests per min.[ 90.6%] Average speed 25.580 tests per milli-second. 1534826 tests per min.[ 90.9%] Average speed 25.616 tests per milli-second. 1536971 tests per min.[ 91.2%] Average speed 25.641 tests per milli-second. 1538458 tests per min.[ 91.5%] Average speed 25.672 tests per milli-second. 1540328 tests per min.[ 91.8%] Average speed 25.706 tests per milli-second. 1542366 tests per min.[ 92.1%] Average speed 25.731 tests per milli-second. 1543888 tests per min.[ 92.4%] Average speed 25.766 tests per milli-second. 1545974 tests per min.[ 92.7%] Average speed 25.774 tests per milli-second. 1546438 tests per min.[ 93.0%] Average speed 25.800 tests per milli-second. 1547974 tests per min.[ 93.3%] Average speed 25.823 tests per milli-second. 1549373 tests per min.[ 93.6%] Average speed 25.846 tests per milli-second. 1550789 tests per min.[ 93.9%] Average speed 25.871 tests per milli-second. 1552261 tests per min.[ 94.2%] Average speed 25.888 tests per milli-second. 1553286 tests per min.[ 94.5%] Average speed 25.906 tests per milli-second. 1554359 tests per min.[ 94.8%] Average speed 25.917 tests per milli-second. 1555050 tests per min.[ 95.1%] Average speed 25.915 tests per milli-second. 1554886 tests per min.[ 95.4%] Average speed 25.917 tests per milli-second. 1555010 tests per min.[ 95.7%] Average speed 25.920 tests per milli-second. 1555194 tests per min.[ 96.0%] Average speed 25.944 tests per milli-second. 1556654 tests per min.[ 96.3%] Average speed 25.973 tests per milli-second. 1558405 tests per min.[ 96.6%] Average speed 26.002 tests per milli-second. 1560101 tests per min.[ 96.9%] Average speed 26.001 tests per milli-second. 1560062 tests per min.[ 97.2%] Average speed 26.042 tests per milli-second. 1562534 tests per min.[ 97.5%] Average speed 26.070 tests per milli-second. 1564178 tests per min.[ 97.8%] Average speed 26.104 tests per milli-second. 1566259 tests per min.[ 98.1%] Average speed 26.126 tests per milli-second. 1567539 tests per min.[ 98.4%] Average speed 26.140 tests per milli-second. 1568428 tests per min.[ 98.7%] Average speed 26.169 tests per milli-second. 1570118 tests per min.[ 99.0%] Average speed 26.180 tests per milli-second. 1570821 tests per min.[ 99.3%] Average speed 26.200 tests per milli-second. 1572016 tests per min.[ 99.6%] Average speed 26.217 tests per milli-second. 1573021 tests per min.[ 99.9%] Average speed 26.236 tests per milli-second. 1574180 tests per min.[100.0%] Average speed 26.234 tests per milli-second. 1574050 tests per min.
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.545 sec - in com.shapesecurity.shift.es2017.fuzzer.FuzzerTest
+Running com.shapesecurity.shift.es2017.scope.ScopeSerializerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec - in com.shapesecurity.shift.es2017.scope.ScopeSerializerTest
+Running com.shapesecurity.shift.es2017.scope.ScopeLookupTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in com.shapesecurity.shift.es2017.scope.ScopeLookupTest
+Running com.shapesecurity.shift.es2017.scope.ScopeTest
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec - in com.shapesecurity.shift.es2017.scope.ScopeTest
+Running com.shapesecurity.shift.es2017.integration.IntegrationTest
+Fuzzer ran for 5 seconds and generated all valid ASTs.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.077 sec - in com.shapesecurity.shift.es2017.integration.IntegrationTest
+Running com.shapesecurity.shift.es2017.parser.ParserTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.shapesecurity.shift.es2017.parser.ParserTest
+Running com.shapesecurity.shift.es2017.parser.miscellaneous.WhitespaceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in com.shapesecurity.shift.es2017.parser.miscellaneous.WhitespaceTest
+Running com.shapesecurity.shift.es2017.parser.miscellaneous.SemicolonsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.shapesecurity.shift.es2017.parser.miscellaneous.SemicolonsTest
+Running com.shapesecurity.shift.es2017.parser.miscellaneous.GroupingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.shapesecurity.shift.es2017.parser.miscellaneous.GroupingTest
+Running com.shapesecurity.shift.es2017.parser.miscellaneous.CommentsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.miscellaneous.CommentsTest
+Running com.shapesecurity.shift.es2017.parser.miscellaneous.IncompatibilitiesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.shapesecurity.shift.es2017.parser.miscellaneous.IncompatibilitiesTest
+Running com.shapesecurity.shift.es2017.parser.miscellaneous.LocationTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in com.shapesecurity.shift.es2017.parser.miscellaneous.LocationTest
+Running com.shapesecurity.shift.es2017.parser.miscellaneous.InteractionsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.shapesecurity.shift.es2017.parser.miscellaneous.InteractionsTest
+Running com.shapesecurity.shift.es2017.parser.miscellaneous.AsyncAwaitTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in com.shapesecurity.shift.es2017.parser.miscellaneous.AsyncAwaitTest
+Running com.shapesecurity.shift.es2017.parser.DirectiveTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.shapesecurity.shift.es2017.parser.DirectiveTest
+Running com.shapesecurity.shift.es2017.parser.API.APITest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.shapesecurity.shift.es2017.parser.API.APITest
+Running com.shapesecurity.shift.es2017.parser.API.ModuleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.API.ModuleTest
+Running com.shapesecurity.shift.es2017.parser.API.ScriptTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.API.ScriptTest
+Running com.shapesecurity.shift.es2017.parser.destructuring.assignment.ObjectAssignmentTargetTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.shapesecurity.shift.es2017.parser.destructuring.assignment.ObjectAssignmentTargetTest
+Running com.shapesecurity.shift.es2017.parser.destructuring.assignment.ArrayAssignmentTargetTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.shapesecurity.shift.es2017.parser.destructuring.assignment.ArrayAssignmentTargetTest
+Running com.shapesecurity.shift.es2017.parser.destructuring.binding_pattern.ArrayBindingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.shapesecurity.shift.es2017.parser.destructuring.binding_pattern.ArrayBindingTest
+Running com.shapesecurity.shift.es2017.parser.destructuring.binding_pattern.BindingIdentifierTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.destructuring.binding_pattern.BindingIdentifierTest
+Running com.shapesecurity.shift.es2017.parser.destructuring.binding_pattern.ObjectBindingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.shapesecurity.shift.es2017.parser.destructuring.binding_pattern.ObjectBindingTest
+Running com.shapesecurity.shift.es2017.parser.expressions.FunctionExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.shapesecurity.shift.es2017.parser.expressions.FunctionExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.GroupedExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.shapesecurity.shift.es2017.parser.expressions.GroupedExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.StaticMemberExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.shapesecurity.shift.es2017.parser.expressions.StaticMemberExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.ArrayExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.shapesecurity.shift.es2017.parser.expressions.ArrayExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.NewExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.shapesecurity.shift.es2017.parser.expressions.NewExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.NewTargetExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.shapesecurity.shift.es2017.parser.expressions.NewTargetExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.ObjectExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.shapesecurity.shift.es2017.parser.expressions.ObjectExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.BinaryExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.shapesecurity.shift.es2017.parser.expressions.BinaryExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.literals.LiteralStringExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.shapesecurity.shift.es2017.parser.expressions.literals.LiteralStringExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.literals.LiteralNullExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.expressions.literals.LiteralNullExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.literals.LiteralNumericExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.shapesecurity.shift.es2017.parser.expressions.literals.LiteralNumericExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.literals.LiteralInfinityExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.expressions.literals.LiteralInfinityExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.literals.LiteralRegExpExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.shapesecurity.shift.es2017.parser.expressions.literals.LiteralRegExpExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.UpdateExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.expressions.UpdateExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.ConditionalExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.shapesecurity.shift.es2017.parser.expressions.ConditionalExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.ComputedMemberExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.expressions.ComputedMemberExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.ArrowExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.shapesecurity.shift.es2017.parser.expressions.ArrowExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.ThisExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.expressions.ThisExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.TemplateExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.shapesecurity.shift.es2017.parser.expressions.TemplateExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.SuperExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.shapesecurity.shift.es2017.parser.expressions.SuperExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.ClassExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.shapesecurity.shift.es2017.parser.expressions.ClassExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.YieldExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.shapesecurity.shift.es2017.parser.expressions.YieldExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.YieldGeneratorExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.shapesecurity.shift.es2017.parser.expressions.YieldGeneratorExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.UnaryExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.expressions.UnaryExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.IdentifierExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.shapesecurity.shift.es2017.parser.expressions.IdentifierExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.AssignmentExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.shapesecurity.shift.es2017.parser.expressions.AssignmentExpressionTest
+Running com.shapesecurity.shift.es2017.parser.expressions.CallExpressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.shapesecurity.shift.es2017.parser.expressions.CallExpressionTest
+Running com.shapesecurity.shift.es2017.parser.modules.ExportTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.shapesecurity.shift.es2017.parser.modules.ExportTest
+Running com.shapesecurity.shift.es2017.parser.modules.ImportTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.shapesecurity.shift.es2017.parser.modules.ImportTest
+Running com.shapesecurity.shift.es2017.parser.EarlyErrorsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 sec - in com.shapesecurity.shift.es2017.parser.EarlyErrorsTest
+Running com.shapesecurity.shift.es2017.parser.FailuresTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.shapesecurity.shift.es2017.parser.FailuresTest
+Running com.shapesecurity.shift.es2017.parser.property_definitions.PropertyNameTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.shapesecurity.shift.es2017.parser.property_definitions.PropertyNameTest
+Running com.shapesecurity.shift.es2017.parser.property_definitions.GeneratorMethodTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.property_definitions.GeneratorMethodTest
+Running com.shapesecurity.shift.es2017.parser.statements.ForOfStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.shapesecurity.shift.es2017.parser.statements.ForOfStatementTest
+Running com.shapesecurity.shift.es2017.parser.statements.WithStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.statements.WithStatementTest
+Running com.shapesecurity.shift.es2017.parser.statements.TryCatchStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.shapesecurity.shift.es2017.parser.statements.TryCatchStatementTest
+Running com.shapesecurity.shift.es2017.parser.statements.IfStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.shapesecurity.shift.es2017.parser.statements.IfStatementTest
+Running com.shapesecurity.shift.es2017.parser.statements.EmptyStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.statements.EmptyStatementTest
+Running com.shapesecurity.shift.es2017.parser.statements.BlockStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.statements.BlockStatementTest
+Running com.shapesecurity.shift.es2017.parser.statements.SwitchStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.shapesecurity.shift.es2017.parser.statements.SwitchStatementTest
+Running com.shapesecurity.shift.es2017.parser.statements.ExpressionStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.statements.ExpressionStatementTest
+Running com.shapesecurity.shift.es2017.parser.statements.ForStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.shapesecurity.shift.es2017.parser.statements.ForStatementTest
+Running com.shapesecurity.shift.es2017.parser.statements.LabeledStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.shapesecurity.shift.es2017.parser.statements.LabeledStatementTest
+Running com.shapesecurity.shift.es2017.parser.statements.WhileStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.statements.WhileStatementTest
+Running com.shapesecurity.shift.es2017.parser.statements.SwitchStatementWithDefaultTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.shapesecurity.shift.es2017.parser.statements.SwitchStatementWithDefaultTest
+Running com.shapesecurity.shift.es2017.parser.statements.ReturnStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.shapesecurity.shift.es2017.parser.statements.ReturnStatementTest
+Running com.shapesecurity.shift.es2017.parser.statements.ContinueStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.shapesecurity.shift.es2017.parser.statements.ContinueStatementTest
+Running com.shapesecurity.shift.es2017.parser.statements.DoWhileStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.shapesecurity.shift.es2017.parser.statements.DoWhileStatementTest
+Running com.shapesecurity.shift.es2017.parser.statements.BreakStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.statements.BreakStatementTest
+Running com.shapesecurity.shift.es2017.parser.statements.VariableDeclarationStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.shapesecurity.shift.es2017.parser.statements.VariableDeclarationStatementTest
+Running com.shapesecurity.shift.es2017.parser.statements.TryFinallyStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.statements.TryFinallyStatementTest
+Running com.shapesecurity.shift.es2017.parser.statements.ForInStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.shapesecurity.shift.es2017.parser.statements.ForInStatementTest
+Running com.shapesecurity.shift.es2017.parser.statements.DebuggerStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.statements.DebuggerStatementTest
+Running com.shapesecurity.shift.es2017.parser.statements.ThrowStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.statements.ThrowStatementTest
+Running com.shapesecurity.shift.es2017.parser.declarations.LexicalDeclarationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.shapesecurity.shift.es2017.parser.declarations.LexicalDeclarationTest
+Running com.shapesecurity.shift.es2017.parser.declarations.GeneratorDeclarationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.shapesecurity.shift.es2017.parser.declarations.GeneratorDeclarationTest
+Running com.shapesecurity.shift.es2017.parser.declarations.ClassDeclarationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.parser.declarations.ClassDeclarationTest
+Running com.shapesecurity.shift.es2017.parser.declarations.FunctionDeclarationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.shapesecurity.shift.es2017.parser.declarations.FunctionDeclarationTest
+Running com.shapesecurity.shift.es2017.path.BranchGetterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.shapesecurity.shift.es2017.path.BranchGetterTest
+Running com.shapesecurity.shift.es2017.path.ToStringTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.shapesecurity.shift.es2017.path.ToStringTest
+Running com.shapesecurity.shift.es2017.path.EqualityTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.shapesecurity.shift.es2017.path.EqualityTest
+Running com.shapesecurity.shift.es2017.path.BranchIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.427 sec - in com.shapesecurity.shift.es2017.path.BranchIteratorTest
+Running com.shapesecurity.shift.es2017.validator.ValidatorTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.shapesecurity.shift.es2017.validator.ValidatorTest
+Running com.shapesecurity.shift.es2017.Serialization.DeserializerTest
+Tests run: 52, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec - in com.shapesecurity.shift.es2017.Serialization.DeserializerTest
+Running com.shapesecurity.shift.es2017.codegen.CodeGenTest
+Tests run: 73, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec - in com.shapesecurity.shift.es2017.codegen.CodeGenTest
+Running com.shapesecurity.shift.es2017.codegen.WebSafeCodeGenTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in com.shapesecurity.shift.es2017.codegen.WebSafeCodeGenTest
+Running com.shapesecurity.shift.es2017.template.FindNodesTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in com.shapesecurity.shift.es2017.template.FindNodesTest
+Running com.shapesecurity.shift.es2017.template.ApplyStructuredTemplateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in com.shapesecurity.shift.es2017.template.ApplyStructuredTemplateTest
+Running com.shapesecurity.shift.es2017.template.ApplyTemplateTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.shapesecurity.shift.es2017.template.ApplyTemplateTest
+Running com.shapesecurity.shift.es2017.reducer.ReducerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.151 sec - in com.shapesecurity.shift.es2017.reducer.ReducerTest
+Running com.shapesecurity.shift.es2017.reducer.CloneReducerTest
+Tests run: 64, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in com.shapesecurity.shift.es2017.reducer.CloneReducerTest
+
+Results :
+
+Tests in error: 
+  Test262.testTest262:187 » NoSuchFile src/test/resources/test262/test
+  EarlyTest.data:117 » NullPointer
+  PassTest.data:178 » NullPointer
+  FailTest.data:46 » NullPointer
+
+Tests run: 407, Failures: 0, Errors: 4, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.288 s
+[INFO] Finished at: 2022-07-14T19:21:18-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project es2017: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-239/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Running the tests related to the bug Bears-239...
+The tests related to the bug Bears-239 were executed.

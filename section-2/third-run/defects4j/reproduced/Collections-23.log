@@ -1,0 +1,244 @@
+Checking out 72784c46 to /tmp/test_d4j_271706_1660724972/test_trigger/Colle OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff 72784c46:15ee56bd..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: Collections-23b................................. OK
+Running ant (compile)...................................................... FAIL
+Executed command:  cd /tmp/test_d4j_271706_1660724972/test_trigger/Collections && /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/major/bin/ant -f /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/projects/defects4j.build.xml -Dd4j.home=/On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j -Dd4j.dir.projects=/On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/projects -Dbasedir=/tmp/test_d4j_271706_1660724972/test_trigger/Collections -Dbuild.compiler=javac1.7  compile 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/projects/defects4j.build.xml
+
+init:
+     [echo] -------- commons-collections4 4.0-SNAPSHOT --------
+    [mkdir] Created dir: /tmp/test_d4j_271706_1660724972/test_trigger/Collections/target
+
+compile:
+    [mkdir] Created dir: /tmp/test_d4j_271706_1660724972/test_trigger/Collections/target/classes
+    [javac] Compiling 285 source files to /tmp/test_d4j_271706_1660724972/test_trigger/Collections/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.7
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/iterators/ObjectGraphIterator.java:22: warning: [deprecation] ArrayStack in org.apache.commons.collections4 has been deprecated
+    [javac] import org.apache.commons.collections4.ArrayStack;
+    [javac]                                       ^
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/iterators/PushbackIterator.java:22: warning: [deprecation] ArrayStack in org.apache.commons.collections4 has been deprecated
+    [javac] import org.apache.commons.collections4.ArrayStack;
+    [javac]                                       ^
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/list/TreeList.java:26: warning: [deprecation] ArrayStack in org.apache.commons.collections4 has been deprecated
+    [javac] import org.apache.commons.collections4.ArrayStack;
+    [javac]                                       ^
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/map/MultiValueMap.java:211: error: remove(Object,Object) in MultiValueMap cannot implement remove(Object,Object) in Map
+    [javac]     public V remove(final Object key, final Object value) {
+    [javac]              ^
+    [javac]   return type V is not compatible with boolean
+    [javac]   where V is a type-variable:
+    [javac]     V extends Object declared in class MultiValueMap
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/MultiMap.java:64: error: name clash: remove(K,V) in MultiMap and remove(Object,Object) in Map have the same erasure, yet neither overrides the other
+    [javac]     public V remove(K key, V item);
+    [javac]              ^
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface MultiMap
+    [javac]     V extends Object declared in interface MultiMap
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/map/MultiKeyMap.java:199: error: remove(Object,Object) in MultiKeyMap cannot implement remove(Object,Object) in Map
+    [javac]     public V remove(final Object key1, final Object key2) {
+    [javac]              ^
+    [javac]   return type V is not compatible with boolean
+    [javac]   where V is a type-variable:
+    [javac]     V extends Object declared in class MultiKeyMap
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 3 errors
+    [javac] 4 warnings
+
+BUILD FAILED
+/tmp/test_d4j_271706_1660724972/test_trigger/Collections/build.xml:62: Compile failed; see the compiler error output for details.
+
+Total time: 4 seconds
+Cannot compile sources! at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/bin/d4j/d4j-compile line 82.
+Compilation failed in require at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/bin/defects4j line 195.
+Error: compile: Collections-23b
+Running ant (compile.tests)................................................ FAIL
+Executed command:  cd /tmp/test_d4j_271706_1660724972/test_trigger/Collections && /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/major/bin/ant -f /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/projects/defects4j.build.xml -Dd4j.home=/On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j -Dd4j.dir.projects=/On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/projects -Dbasedir=/tmp/test_d4j_271706_1660724972/test_trigger/Collections -Dbuild.compiler=javac1.7  compile.tests 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/projects/defects4j.build.xml
+
+compile.tests:
+
+init:
+     [echo] -------- commons-collections4 4.0-SNAPSHOT --------
+
+compile:
+    [javac] Compiling 250 source files to /tmp/test_d4j_271706_1660724972/test_trigger/Collections/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.7
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/iterators/ObjectGraphIterator.java:22: warning: [deprecation] ArrayStack in org.apache.commons.collections4 has been deprecated
+    [javac] import org.apache.commons.collections4.ArrayStack;
+    [javac]                                       ^
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/iterators/PushbackIterator.java:22: warning: [deprecation] ArrayStack in org.apache.commons.collections4 has been deprecated
+    [javac] import org.apache.commons.collections4.ArrayStack;
+    [javac]                                       ^
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/list/TreeList.java:26: warning: [deprecation] ArrayStack in org.apache.commons.collections4 has been deprecated
+    [javac] import org.apache.commons.collections4.ArrayStack;
+    [javac]                                       ^
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/MultiMap.java:64: error: name clash: remove(K,V) in MultiMap and remove(Object,Object) in Map have the same erasure, yet neither overrides the other
+    [javac]     public V remove(K key, V item);
+    [javac]              ^
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface MultiMap
+    [javac]     V extends Object declared in interface MultiMap
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/map/MultiKeyMap.java:199: error: remove(Object,Object) in MultiKeyMap cannot implement remove(Object,Object) in Map
+    [javac]     public V remove(final Object key1, final Object key2) {
+    [javac]              ^
+    [javac]   return type V is not compatible with boolean
+    [javac]   where V is a type-variable:
+    [javac]     V extends Object declared in class MultiKeyMap
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/map/MultiValueMap.java:211: error: remove(Object,Object) in MultiValueMap cannot implement remove(Object,Object) in Map
+    [javac]     public V remove(final Object key, final Object value) {
+    [javac]              ^
+    [javac]   return type V is not compatible with boolean
+    [javac]   where V is a type-variable:
+    [javac]     V extends Object declared in class MultiValueMap
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 3 errors
+    [javac] 4 warnings
+
+BUILD FAILED
+/On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/projects/Collections/Collections.build.xml:54: The following error occurred while executing this line:
+/tmp/test_d4j_271706_1660724972/test_trigger/Collections/build.xml:62: Compile failed; see the compiler error output for details.
+
+Total time: 3 seconds
+Cannot compile test suite! at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/bin/d4j/d4j-test line 130.
+Compilation failed in require at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/bin/defects4j line 195.
+Error: run relevant tests: Collections-23b
+cat: /tmp/test_d4j_271706_1660724972/test_trigger/Collections/failing_tests: No such file or directory
+grep: /tmp/test_d4j_271706_1660724972/test_trigger/Collections/failing_tests: No such file or directory
+Error: verify number of triggering tests: Collections-23b (expected: 2, actual: 0)
+grep: /tmp/test_d4j_271706_1660724972/test_trigger/Collections/failing_tests: No such file or directory
+Error: expected triggering test org.apache.commons.collections4.TrieUtilsTest::testUnmodifiableTrie did not fail
+grep: /tmp/test_d4j_271706_1660724972/test_trigger/Collections/failing_tests: No such file or directory
+Error: expected triggering test org.apache.commons.collections4.trie.UnmodifiableTrieTest::testDecorateFactory did not fail
+Check out program version: Collections-23f................................. OK
+Running ant (compile)...................................................... FAIL
+Executed command:  cd /tmp/test_d4j_271706_1660724972/test_trigger/Collections && /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/major/bin/ant -f /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/projects/defects4j.build.xml -Dd4j.home=/On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j -Dd4j.dir.projects=/On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/projects -Dbasedir=/tmp/test_d4j_271706_1660724972/test_trigger/Collections -Dbuild.compiler=javac1.7  compile 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/projects/defects4j.build.xml
+
+init:
+     [echo] -------- commons-collections4 4.0-SNAPSHOT --------
+    [mkdir] Created dir: /tmp/test_d4j_271706_1660724972/test_trigger/Collections/target
+
+compile:
+    [mkdir] Created dir: /tmp/test_d4j_271706_1660724972/test_trigger/Collections/target/classes
+    [javac] Compiling 285 source files to /tmp/test_d4j_271706_1660724972/test_trigger/Collections/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.7
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/iterators/ObjectGraphIterator.java:22: warning: [deprecation] ArrayStack in org.apache.commons.collections4 has been deprecated
+    [javac] import org.apache.commons.collections4.ArrayStack;
+    [javac]                                       ^
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/iterators/PushbackIterator.java:22: warning: [deprecation] ArrayStack in org.apache.commons.collections4 has been deprecated
+    [javac] import org.apache.commons.collections4.ArrayStack;
+    [javac]                                       ^
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/list/TreeList.java:26: warning: [deprecation] ArrayStack in org.apache.commons.collections4 has been deprecated
+    [javac] import org.apache.commons.collections4.ArrayStack;
+    [javac]                                       ^
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/map/MultiValueMap.java:211: error: remove(Object,Object) in MultiValueMap cannot implement remove(Object,Object) in Map
+    [javac]     public V remove(final Object key, final Object value) {
+    [javac]              ^
+    [javac]   return type V is not compatible with boolean
+    [javac]   where V is a type-variable:
+    [javac]     V extends Object declared in class MultiValueMap
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/MultiMap.java:64: error: name clash: remove(K,V) in MultiMap and remove(Object,Object) in Map have the same erasure, yet neither overrides the other
+    [javac]     public V remove(K key, V item);
+    [javac]              ^
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface MultiMap
+    [javac]     V extends Object declared in interface MultiMap
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/map/MultiKeyMap.java:199: error: remove(Object,Object) in MultiKeyMap cannot implement remove(Object,Object) in Map
+    [javac]     public V remove(final Object key1, final Object key2) {
+    [javac]              ^
+    [javac]   return type V is not compatible with boolean
+    [javac]   where V is a type-variable:
+    [javac]     V extends Object declared in class MultiKeyMap
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 3 errors
+    [javac] 4 warnings
+
+BUILD FAILED
+/tmp/test_d4j_271706_1660724972/test_trigger/Collections/build.xml:62: Compile failed; see the compiler error output for details.
+
+Total time: 3 seconds
+Cannot compile sources! at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/bin/d4j/d4j-compile line 82.
+Compilation failed in require at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/bin/defects4j line 195.
+Error: compile: Collections-23f
+Running ant (compile.tests)................................................ FAIL
+Executed command:  cd /tmp/test_d4j_271706_1660724972/test_trigger/Collections && /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/major/bin/ant -f /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/projects/defects4j.build.xml -Dd4j.home=/On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j -Dd4j.dir.projects=/On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/projects -Dbasedir=/tmp/test_d4j_271706_1660724972/test_trigger/Collections -Dbuild.compiler=javac1.7  compile.tests 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/projects/defects4j.build.xml
+
+compile.tests:
+
+init:
+     [echo] -------- commons-collections4 4.0-SNAPSHOT --------
+
+compile:
+    [javac] Compiling 250 source files to /tmp/test_d4j_271706_1660724972/test_trigger/Collections/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.7
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/iterators/ObjectGraphIterator.java:22: warning: [deprecation] ArrayStack in org.apache.commons.collections4 has been deprecated
+    [javac] import org.apache.commons.collections4.ArrayStack;
+    [javac]                                       ^
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/iterators/PushbackIterator.java:22: warning: [deprecation] ArrayStack in org.apache.commons.collections4 has been deprecated
+    [javac] import org.apache.commons.collections4.ArrayStack;
+    [javac]                                       ^
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/list/TreeList.java:26: warning: [deprecation] ArrayStack in org.apache.commons.collections4 has been deprecated
+    [javac] import org.apache.commons.collections4.ArrayStack;
+    [javac]                                       ^
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/MultiMap.java:64: error: name clash: remove(K,V) in MultiMap and remove(Object,Object) in Map have the same erasure, yet neither overrides the other
+    [javac]     public V remove(K key, V item);
+    [javac]              ^
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface MultiMap
+    [javac]     V extends Object declared in interface MultiMap
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/map/MultiKeyMap.java:199: error: remove(Object,Object) in MultiKeyMap cannot implement remove(Object,Object) in Map
+    [javac]     public V remove(final Object key1, final Object key2) {
+    [javac]              ^
+    [javac]   return type V is not compatible with boolean
+    [javac]   where V is a type-variable:
+    [javac]     V extends Object declared in class MultiKeyMap
+    [javac] /tmp/test_d4j_271706_1660724972/test_trigger/Collections/src/main/java/org/apache/commons/collections4/map/MultiValueMap.java:211: error: remove(Object,Object) in MultiValueMap cannot implement remove(Object,Object) in Map
+    [javac]     public V remove(final Object key, final Object value) {
+    [javac]              ^
+    [javac]   return type V is not compatible with boolean
+    [javac]   where V is a type-variable:
+    [javac]     V extends Object declared in class MultiValueMap
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 3 errors
+    [javac] 4 warnings
+
+BUILD FAILED
+/On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/projects/Collections/Collections.build.xml:54: The following error occurred while executing this line:
+/tmp/test_d4j_271706_1660724972/test_trigger/Collections/build.xml:62: Compile failed; see the compiler error output for details.
+
+Total time: 3 seconds
+Cannot compile test suite! at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/bin/d4j/d4j-test line 130.
+Compilation failed in require at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/framework/bin/defects4j line 195.
+Error: run relevant tests: Collections-23f
+cat: /tmp/test_d4j_271706_1660724972/test_trigger/Collections/failing_tests: No such file or directory
+grep: /tmp/test_d4j_271706_1660724972/test_trigger/Collections/failing_tests: No such file or directory
+================================================================================
+The following errors occurred:
+Error: compile: Collections-23b
+Error: run relevant tests: Collections-23b
+Error: verify number of triggering tests: Collections-23b (expected: 2, actual: 0)
+Error: expected triggering test org.apache.commons.collections4.TrieUtilsTest::testUnmodifiableTrie did not fail
+Error: expected triggering test org.apache.commons.collections4.trie.UnmodifiableTrieTest::testDecorateFactory did not fail
+Error: compile: Collections-23f
+Error: run relevant tests: Collections-23f
+================================================================================
+FAILED

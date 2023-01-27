@@ -1,0 +1,35 @@
+Checking out a2a45b37 to /tmp/test_d4j_2877289_1658737727/test_trigger/Jack OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Copy generated Ant build file.............................................. OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff a2a45b37:88d12b4b..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: JacksonDatabind-136b............................ OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+Failing tests: 2
+  - com.fasterxml.jackson.databind.introspect.IntrospectorPairTest::testHasAnySetter
+  - com.fasterxml.jackson.databind.module.SimpleModuleTest::testAutoDiscovery
+Error: verify number of triggering tests: JacksonDatabind-136b (expected: 1, actual: 2)
+Check out program version: JacksonDatabind-136f............................ OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+Failing tests: 1
+  - com.fasterxml.jackson.databind.module.SimpleModuleTest::testAutoDiscovery
+Error: verify number of triggering tests: JacksonDatabind-136f (expected: 0, actual: 1)
+================================================================================
+The following errors occurred:
+Error: verify number of triggering tests: JacksonDatabind-136b (expected: 1, actual: 2)
+Error: verify number of triggering tests: JacksonDatabind-136f (expected: 0, actual: 1)
+================================================================================
+FAILED

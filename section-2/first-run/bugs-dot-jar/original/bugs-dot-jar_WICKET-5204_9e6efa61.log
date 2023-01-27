@@ -1,0 +1,89 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Wicket Date/Time 7.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ wicket-datetime ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wicket-datetime ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 21 resources
+[INFO] Copying 0 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ wicket-datetime ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] >>> clirr-maven-plugin:2.5:check (clirr-check) > compile @ wicket-datetime >>>
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ wicket-datetime ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wicket-datetime ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 21 resources
+[INFO] Copying 0 resource
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ wicket-datetime ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< clirr-maven-plugin:2.5:check (clirr-check) < compile @ wicket-datetime <<<
+[INFO] 
+[INFO] --- clirr-maven-plugin:2.5:check (clirr-check) @ wicket-datetime ---
+[INFO] Skipping execution
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ wicket-datetime ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ wicket-datetime ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ wicket-datetime ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.2:test (default-test) @ wicket-datetime ---
+[INFO] Surefire report directory: /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-5204_9e6efa619c144eb654e321a1409feb2804a1e2d5/wicket-datetime/target/surefire-reports
+[INFO] Using configured provider org.apache.maven.surefire.junitcore.JUnitCoreProvider
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Concurrency config is parallel='none', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running org.apache.wicket.extensions.yui.calendar.DateTimeFieldTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.983 sec
+Running org.apache.wicket.datetime.DateConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.util.markup.xhtml.WellFormedXmlTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+Running org.apache.wicket.util.license.ApacheLicenceHeaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.274 sec
+Running org.apache.wicket.extensions.yui.calendar.DatePickerTest
+=== org.apache.wicket.extensions.yui.calendar.DatesPage1 ===
+Tests run: 12, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.058 sec <<< FAILURE!
+
+Results :
+
+Failed tests:   testDateFieldsWithDateModels(org.apache.wicket.extensions.yui.calendar.DatePickerTest): expected:<1[4].06.11> but was:<1[5].06.11>
+
+Tests run: 17, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.624 s
+[INFO] Finished at: 2016-07-30T18:09:00-07:00
+[INFO] Final Memory: 24M/606M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.2:test (default-test) on project wicket-datetime: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-5204_9e6efa619c144eb654e321a1409feb2804a1e2d5/wicket-datetime/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,43 @@
+Checking out a56d4998 to /tmp/test_d4j_8923_1657606629/test_trigger/Math... FAIL
+Executed command: git clone /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/project_repos/commons-math.git /tmp/test_d4j_8923_1657606629/test_trigger/Math 2>&1 && cd /tmp/test_d4j_8923_1657606629/test_trigger/Math && git checkout a56d4998cf16ff08f5593fb7d4dda66ca05dc269 2>&1
+Cloning into '/tmp/test_d4j_8923_1657606629/test_trigger/Math'...
+done.
+fatal: reference is not a tree: a56d4998cf16ff08f5593fb7d4dda66ca05dc269
+Cannot checkout program version! at /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-checkout line 102.
+Compilation failed in require at /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: checkout: Math-14b
+Cannot open config file (/tmp/test_d4j_8923_1657606629/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_8923_1657606629/test_trigger/Math is not a valid working directory!
+Error: compile: Math-14b
+Cannot open config file (/tmp/test_d4j_8923_1657606629/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_8923_1657606629/test_trigger/Math is not a valid working directory!
+Error: run relevant tests: Math-14b
+cat: /tmp/test_d4j_8923_1657606629/test_trigger/Math/failing_tests: No such file or directory
+grep: /tmp/test_d4j_8923_1657606629/test_trigger/Math/failing_tests: No such file or directory
+Error: verify number of triggering tests: Math-14b (expected: 1, actual: 0)
+grep: /tmp/test_d4j_8923_1657606629/test_trigger/Math/failing_tests: No such file or directory
+Error: expected triggering test org.apache.commons.math4.analysis.solvers.UnivariateSolverUtilsTest::testBracketLoopConditionForB did not fail
+Cannot open config file (/tmp/test_d4j_8923_1657606629/test_trigger/Math/.defects4j.config): No such file or directory
+Directory exists but is not a previously used working directory: /tmp/test_d4j_8923_1657606629/test_trigger/Math at /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/core/Vcs.pm line 285.
+Compilation failed in require at /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: checkout: Math-14f
+Cannot open config file (/tmp/test_d4j_8923_1657606629/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_8923_1657606629/test_trigger/Math is not a valid working directory!
+Error: compile: Math-14f
+Cannot open config file (/tmp/test_d4j_8923_1657606629/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_8923_1657606629/test_trigger/Math is not a valid working directory!
+Error: run relevant tests: Math-14f
+cat: /tmp/test_d4j_8923_1657606629/test_trigger/Math/failing_tests: No such file or directory
+grep: /tmp/test_d4j_8923_1657606629/test_trigger/Math/failing_tests: No such file or directory
+================================================================================
+The following errors occurred:
+Error: checkout: Math-14b
+Error: compile: Math-14b
+Error: run relevant tests: Math-14b
+Error: verify number of triggering tests: Math-14b (expected: 1, actual: 0)
+Error: expected triggering test org.apache.commons.math4.analysis.solvers.UnivariateSolverUtilsTest::testBracketLoopConditionForB did not fail
+Error: checkout: Math-14f
+Error: compile: Math-14f
+Error: run relevant tests: Math-14f
+================================================================================
+FAILED

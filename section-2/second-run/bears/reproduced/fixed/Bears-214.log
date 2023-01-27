@@ -1,0 +1,97 @@
+Apache Maven 3.6.3
+Maven home: /usr/share/maven
+Java version: 1.8.0_312, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.15.0-41-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Baragon                                                            [pom]
+[INFO] BaragonCore                                                        [jar]
+[INFO] BaragonData                                                        [jar]
+[INFO] BaragonUI                                                          [jar]
+[INFO] BaragonService                                                     [jar]
+[INFO] BaragonAgentService                                                [jar]
+[INFO] BaragonClient                                                      [jar]
+[INFO] BaragonWatcher                                                     [jar]
+[INFO] BaragonServiceIntegrationTests                                     [jar]
+[INFO] 
+[INFO] ------------------------< com.hubspot:Baragon >-------------------------
+[INFO] Building Baragon 0.7.1-SNAPSHOT                                    [1/9]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- property-helper-maven-plugin:2.0:get (get-build-id) @ Baragon ---
+[INFO] 
+[INFO] --- dependency-management-maven-plugin:0.8:analyze (analyze) @ Baragon ---
+[INFO] No dependency management issues found
+[INFO] 
+[INFO] --- dependency-scope-maven-plugin:0.8:check (check) @ Baragon ---
+[INFO] No test dependency scope issues found
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ Baragon ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.2:check (default) @ Baragon ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ Baragon ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.0:revision (default) @ Baragon ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ Baragon ---
+[INFO] argLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-214/target/jacoco.exec
+[INFO] 
+[INFO] ----------------------< com.hubspot:BaragonCore >-----------------------
+[INFO] Building BaragonCore 0.7.1-SNAPSHOT                                [2/9]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- property-helper-maven-plugin:2.0:get (get-build-id) @ BaragonCore ---
+[INFO] 
+[INFO] --- dependency-management-maven-plugin:0.8:analyze (analyze) @ BaragonCore ---
+[INFO] No dependency management issues found
+[INFO] 
+[INFO] --- dependency-scope-maven-plugin:0.8:check (check) @ BaragonCore ---
+[INFO] No test dependency scope issues found
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ BaragonCore ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.2:check (default) @ BaragonCore ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ BaragonCore ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.0:revision (default) @ BaragonCore ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Baragon 0.7.1-SNAPSHOT:
+[INFO] 
+[INFO] Baragon ............................................ SUCCESS [  2.125 s]
+[INFO] BaragonCore ........................................ FAILURE [  0.752 s]
+[INFO] BaragonData ........................................ SKIPPED
+[INFO] BaragonUI .......................................... SKIPPED
+[INFO] BaragonService ..................................... SKIPPED
+[INFO] BaragonAgentService ................................ SKIPPED
+[INFO] BaragonClient ...................................... SKIPPED
+[INFO] BaragonWatcher ..................................... SKIPPED
+[INFO] BaragonServiceIntegrationTests ..................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.155 s
+[INFO] Finished at: 2022-07-25T19:35:01-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal pl.project13.maven:git-commit-id-plugin:2.2.0:revision (default) on project BaragonCore: Could not complete Mojo execution... Could not get HEAD Ref, are you sure you have set the dotGitDirectory property of this plugin to a valid path? -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :BaragonCore
+Running the tests related to the bug Bears-214...
+The tests related to the bug Bears-214 were executed.

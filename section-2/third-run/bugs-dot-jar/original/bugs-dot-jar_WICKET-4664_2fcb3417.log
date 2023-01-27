@@ -1,0 +1,127 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Wicket Request 6.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (default) @ wicket-request ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wicket-request ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] skip non existing resourceDirectory /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-4664_2fcb34178a13b54e9718f40b0b4fe19475fa5dad/wicket-request/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ wicket-request ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] >>> clirr-maven-plugin:2.5:check (clirr-check) > compile @ wicket-request >>>
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (default) @ wicket-request ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wicket-request ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] skip non existing resourceDirectory /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-4664_2fcb34178a13b54e9718f40b0b4fe19475fa5dad/wicket-request/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ wicket-request ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< clirr-maven-plugin:2.5:check (clirr-check) < compile @ wicket-request <<<
+[INFO] 
+[INFO] --- clirr-maven-plugin:2.5:check (clirr-check) @ wicket-request ---
+[INFO] Comparing to version: 6.0.0
+[WARNING] org.apache.wicket.request.http.WebRequest: Value of compile-time constant PARAM_AJAX_REQUEST_ANTI_CACHE has been changed
+[INFO] Succeeded with 0 errors; 1 warnings; and 0 other changes.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ wicket-request ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ wicket-request ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ wicket-request ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.2:test (default-test) @ wicket-request ---
+[INFO] Surefire report directory: /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-4664_2fcb34178a13b54e9718f40b0b4fe19475fa5dad/wicket-request/target/surefire-reports
+[INFO] Using configured provider org.apache.maven.surefire.junitcore.JUnitCoreProvider
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Concurrency config is parallel='none', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running org.apache.wicket.request.HttpHeaderCollectionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 sec
+Running org.apache.wicket.request.util.license.ApacheLicenceHeaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.263 sec
+Running org.apache.wicket.request.http.handler.RedirectRequestHandlerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.305 sec
+Running org.apache.wicket.request.UrlUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.request.mapper.mount.MountParametersTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.wicket.request.mapper.CompoundRequestMapperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.wicket.request.mapper.parameter.PageParametersEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.wicket.request.mapper.parameter.PageParametersTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+Running org.apache.wicket.request.UrlTest
+Tests run: 65, Failures: 24, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec <<< FAILURE!
+Running org.apache.wicket.request.parameter.CombinedRequestParametersAdapterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.wicket.request.mapper.parameter.UrlPathPageParametersEncoderTest
+Tests run: 9, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE!
+
+Results :
+
+Failed tests:   resolveRelative1(org.apache.wicket.request.UrlTest): expected:<c/a/b[?]p1=v1> but was:<c/a/b[]p1=v1>
+  resolveRelative2(org.apache.wicket.request.UrlTest): expected:<c/a/b[?]p1=v1> but was:<c/a/b[]p1=v1>
+  resolveRelative3(org.apache.wicket.request.UrlTest): expected:<a/b[?]p1=v1> but was:<a/b[]p1=v1>
+  resolveRelative4(org.apache.wicket.request.UrlTest): expected:<[?]p1=v1> but was:<[]p1=v1>
+  resolveRelative_EmptyTrailingSegmentInBase(org.apache.wicket.request.UrlTest): expected:<Home/[?]0-1.ILinkListener-li...> but was:<Home/[]0-1.ILinkListener-li...>
+  resolveRelative_EmptyTrailingSegmentInBase2(org.apache.wicket.request.UrlTest): expected:<Home/foo/[?]0-1.ILinkListener-li...> but was:<Home/foo/[]0-1.ILinkListener-li...>
+  resolveRelative_NoSegmentsInBase(org.apache.wicket.request.UrlTest): expected:<[?]a=b> but was:<[]a=b>
+  resolveRelative_NoSegmentsInBase2(org.apache.wicket.request.UrlTest): expected:<bar/baz[?]a=b> but was:<bar/baz[]a=b>
+  resolveRelative_DotFollowedByEmptySegment1(org.apache.wicket.request.UrlTest): expected:<[?]a=b> but was:<[]a=b>
+  resolveRelative_DotFollowedByEmptySegment2(org.apache.wicket.request.UrlTest): expected:<bar/[?]a=b> but was:<bar/[]a=b>
+  parseAbsoluteUrl(org.apache.wicket.request.UrlTest): expected:<ftp://myhost:8081/[]> but was:<ftp://myhost:8081/[null]>
+  render1(org.apache.wicket.request.UrlTest): expected:<foo/b=r/b&z/x%3F[?]a=b&x%3F%264=y%3Dz> but was:<foo/b=r/b&z/x%3F[]a=b&x%3F%264=y%3Dz>
+  render2(org.apache.wicket.request.UrlTest): expected:</absolute/url[null]> but was:</absolute/url[]>
+  render3(org.apache.wicket.request.UrlTest): expected:<//absolute/url[null]> but was:<//absolute/url[]>
+  render4(org.apache.wicket.request.UrlTest): expected:</[null]> but was:</[]>
+  render5(org.apache.wicket.request.UrlTest): expected:</foo/bar[?]baz=ban> but was:</foo/bar[]baz=ban>
+  parseHttpSlashSlashColon(org.apache.wicket.request.UrlTest): expected:<...bc/http://host:9090/[]> but was:<...bc/http://host:9090/[null]>
+  prependLeadingSegments1(org.apache.wicket.request.UrlTest): expected:<x/y/a[]> but was:<x/y/a[null]>
+  prependLeadingSegments2(org.apache.wicket.request.UrlTest): expected:<x/a[]> but was:<x/a[null]>
+  prependLeadingSegments3(org.apache.wicket.request.UrlTest): expected:<a[]> but was:<a[null]>
+  prependLeadingSegments4(org.apache.wicket.request.UrlTest): expected:<x[]> but was:<x[null]>
+  removeLeadingSegments1(org.apache.wicket.request.UrlTest): expected:<b[]> but was:<b[null]>
+  removeLeadingSegments2(org.apache.wicket.request.UrlTest): expected:<[]> but was:<[null]>
+  wicket_5114_allowtoStringFullWhenContainingTwoDots(org.apache.wicket.request.UrlTest): expected:<...ntPoint/whatever.../[]> but was:<...ntPoint/whatever.../[null]>
+  encodeNamedParameters(org.apache.wicket.request.mapper.parameter.UrlPathPageParametersEncoderTest): expected:<.../value1/name2/value2[]> but was:<.../value1/name2/value2[null]>
+  encodeNamedParametersWithSpecialChars(org.apache.wicket.request.mapper.parameter.UrlPathPageParametersEncoderTest): expected:<...name%E3%84%98/value2[]> but was:<...name%E3%84%98/value2[null]>
+
+Tests run: 96, Failures: 26, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.720 s
+[INFO] Finished at: 2016-07-30T23:47:05-07:00
+[INFO] Final Memory: 22M/606M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.2:test (default-test) on project wicket-request: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-4664_2fcb34178a13b54e9718f40b0b4fe19475fa5dad/wicket-request/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

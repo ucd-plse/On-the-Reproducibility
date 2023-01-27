@@ -1,0 +1,55 @@
+Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fe; 2018-06-17T11:33:14-07:00)
+Maven home: /usr/local/apache-maven
+Java version: 1.8.0_312, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.15.0-173-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] 
+[INFO] -----------------------< com.milaboratory:milib >-----------------------
+[INFO] Building MiLib 1.9-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ milib ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.8:run (default) @ milib ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (create-buildnumber) @ milib ---
+[INFO] ShortRevision tag detected. The value is '7'.
+[INFO] Executing: /bin/sh -c cd '/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-226' && 'git' 'rev-parse' '--verify' '--short=7' 'HEAD'
+[INFO] Working directory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-226
+[INFO] Storing buildNumber: null at timestamp: 1657849923516
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: not a git repository: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-226/../../.git/modules/benchmarks/bears-benchmark
+
+[INFO] ShortRevision tag detected. The value is '7'.
+[INFO] Executing: /bin/sh -c cd '/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-226' && 'git' 'rev-parse' '--verify' '--short=7' 'HEAD'
+[INFO] Working directory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-226
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-metadata (create-metadata) @ milib ---
+[INFO] ShortRevision tag detected. The value is '7'.
+[INFO] Executing: /bin/sh -c cd '/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-226' && 'git' 'rev-parse' '--verify' '--short=7' 'HEAD'
+[INFO] Working directory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-226
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.739 s
+[INFO] Finished at: 2022-07-14T18:52:03-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:buildnumber-maven-plugin:1.4:create-metadata (create-metadata) on project milib: Execution create-metadata of goal org.codehaus.mojo:buildnumber-maven-plugin:1.4:create-metadata failed. NullPointerException -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+Running the tests related to the bug Bears-226...
+The tests related to the bug Bears-226 were executed.

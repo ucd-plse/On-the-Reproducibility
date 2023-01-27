@@ -1,0 +1,286 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.accumulo:accumulo-core:jar:1.4.0-incubating-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-clean-plugin is missing. @ org.apache.accumulo:accumulo:1.4.0-incubating-SNAPSHOT, /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-178_efef09b0ab25b480910312c63e876d0d5613b646/pom.xml, line 59, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ org.apache.accumulo:accumulo:1.4.0-incubating-SNAPSHOT, /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-178_efef09b0ab25b480910312c63e876d0d5613b646/pom.xml, line 145, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ org.apache.accumulo:accumulo:1.4.0-incubating-SNAPSHOT, /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-178_efef09b0ab25b480910312c63e876d0d5613b646/pom.xml, line 172, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ org.apache.accumulo:accumulo-core:[unknown-version], /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-178_efef09b0ab25b480910312c63e876d0d5613b646/src/core/pom.xml, line 61, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building accumulo-core 1.4.0-incubating-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0-beta-1:enforce (enforce-mvn) @ accumulo-core ---
+[INFO] 
+[INFO] --- exec-maven-plugin:1.1.1:exec (generate-core-thrift) @ accumulo-core ---
+[INFO] thrift is not available
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4:resources (default-resources) @ accumulo-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-178_efef09b0ab25b480910312c63e876d0d5613b646/src/core/src/main/resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (copy-dependencies) @ accumulo-core ---
+[INFO] commons-collections-3.2.jar already exists in destination.
+[INFO] commons-lang-2.4.jar already exists in destination.
+[INFO] log4j-1.2.16.jar already exists in destination.
+[INFO] jline-0.9.94.jar already exists in destination.
+[INFO] libthrift-0.6.1.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ accumulo-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- exec-maven-plugin:1.1.1:exec (generate-documentation) @ accumulo-core ---
+[INFO] HADOOP_HOME is not set
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4:testResources (default-testResources) @ accumulo-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ accumulo-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-core ---
+[INFO] Surefire report directory: /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-178_efef09b0ab25b480910312c63e876d0d5613b646/src/core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.core.iterators.RegExFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 sec
+Running org.apache.accumulo.core.iterators.RegExIteratorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+Running org.apache.accumulo.core.iterators.ColumnFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.iterators.FilterTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.292 sec
+Running org.apache.accumulo.core.iterators.LargeRowFilterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec
+Running org.apache.accumulo.core.iterators.WholeRowIteratorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.accumulo.core.iterators.filter.ColumnFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.iterators.VersioningIteratorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.apache.accumulo.core.iterators.FilteringIteratorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec
+Running org.apache.accumulo.core.iterators.ColumnFamilySkippingIteratorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.319 sec
+Running org.apache.accumulo.core.iterators.system.MultiIteratorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 sec
+Running org.apache.accumulo.core.iterators.system.SourceSwitchingIteratorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.iterators.system.DeletingIteratorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.iterators.system.TimeSettingIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.iterators.IterUtilTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Running org.apache.accumulo.core.iterators.AggregatingIteratorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.accumulo.core.iterators.IntersectingIteratorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.479 sec
+Running org.apache.accumulo.core.iterators.CombinerTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Running org.apache.accumulo.core.iterators.RowDeletingIteratorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.iterators.FamilyIntersectingIteratorTest
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 1.183 sec <<< FAILURE!
+test3(org.apache.accumulo.core.iterators.FamilyIntersectingIteratorTest)  Time elapsed: 0.758 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: null
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at org.apache.accumulo.core.iterators.FamilyIntersectingIteratorTest.test3(FamilyIntersectingIteratorTest.java:264)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:81)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+test1(org.apache.accumulo.core.iterators.FamilyIntersectingIteratorTest)  Time elapsed: 0.221 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: null
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at org.apache.accumulo.core.iterators.FamilyIntersectingIteratorTest.test1(FamilyIntersectingIteratorTest.java:191)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:81)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+test2(org.apache.accumulo.core.iterators.FamilyIntersectingIteratorTest)  Time elapsed: 0.195 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: null
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at org.apache.accumulo.core.iterators.FamilyIntersectingIteratorTest.test2(FamilyIntersectingIteratorTest.java:224)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:81)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running org.apache.accumulo.core.iterators.aggregation.conf.AggregatorConfigurationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.iterators.aggregation.NumSummationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.conf.PropertyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.accumulo.core.client.RowIteratorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.client.mapreduce.lib.partition.RangePartitionerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.392 sec
+Running org.apache.accumulo.core.client.mapreduce.AccumuloRowInputFormatTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Running org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 sec
+Running org.apache.accumulo.core.client.mapreduce.AccumuloFileOutputFormatTest
+file:/local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-178_efef09b0ab25b480910312c63e876d0d5613b646/target/_temporary/_attempt__0000_r_000000_0/part-r-00000.rf
+file:/local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-178_efef09b0ab25b480910312c63e876d0d5613b646/target/_temporary/_attempt__0000_r_000000_0/part-r-00000.rf
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Running org.apache.accumulo.core.client.mock.MockConnectorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running org.apache.accumulo.core.client.impl.ScannerOptionsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.client.impl.TabletLocatorImplTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Running org.apache.accumulo.core.client.admin.TableOperationsHelperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.client.admin.FindMaxTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.733 sec
+Running org.apache.accumulo.core.client.ClientSideIteratorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.data.ColumnTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.data.KeyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.data.MapFileTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.628 sec
+Running org.apache.accumulo.core.data.MutationTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+Running org.apache.accumulo.core.data.KeyExtentTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.apache.accumulo.core.data.RangeTest
+Tests run: 43, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.apache.accumulo.core.util.MetadataTableTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.util.TextUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.util.MergeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.util.LocalityGroupUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.accumulo.core.util.EscapeTokenizerTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.util.TestStringUtil
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.util.AddressUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.apache.accumulo.core.util.TestVersion
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.security.VisibilityEvaluatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.security.ColumnVisibilityTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.apache.accumulo.core.security.AuthorizationsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.file.blockfile.cache.TestCachedBlockQueue
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.accumulo.core.file.blockfile.cache.TestLruBlockCache
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.033 sec
+Running org.apache.accumulo.core.file.rfile.RFileTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.663 sec
+Running org.apache.accumulo.core.file.rfile.MultiLevelIndexTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.201 sec
+
+Results :
+
+Failed tests:   test3(org.apache.accumulo.core.iterators.FamilyIntersectingIteratorTest)
+  test1(org.apache.accumulo.core.iterators.FamilyIntersectingIteratorTest)
+  test2(org.apache.accumulo.core.iterators.FamilyIntersectingIteratorTest)
+
+Tests run: 272, Failures: 3, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.408 s
+[INFO] Finished at: 2016-08-09T20:11:28-07:00
+[INFO] Final Memory: 13M/246M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project accumulo-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-178_efef09b0ab25b480910312c63e876d0d5613b646/src/core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

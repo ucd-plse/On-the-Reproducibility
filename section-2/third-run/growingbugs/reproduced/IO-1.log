@@ -1,0 +1,42 @@
+Checking out 1d0c2d0b to /tmp/test_d4j_2319582_1660787873/test_trigger/IO.. OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff 1d0c2d0b:e7ca7823..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: IO-1b........................................... OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+Failing tests: 6
+  - org.apache.commons.io.FileUtilsCleanDirectoryTestCase::testThrowsOnNullList
+  - org.apache.commons.io.FileUtilsCleanDirectoryTestCase::testThrowsOnCannotDeleteFile
+  - org.apache.commons.io.IOUtilsCopyTestCase::testCopy_readerToWriter_IO84
+  - org.apache.commons.io.IOUtilsCopyTestCase::testCopy_inputStreamToOutputStream_IO84
+  - org.apache.commons.io.filefilter.FileFilterTestCase::testCanRead
+  - org.apache.commons.io.filefilter.FileFilterTestCase::testCanWrite
+Error: verify number of triggering tests: IO-1b (expected: 2, actual: 6)
+Check out program version: IO-1f........................................... OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+Failing tests: 4
+  - org.apache.commons.io.FileUtilsCleanDirectoryTestCase::testThrowsOnNullList
+  - org.apache.commons.io.FileUtilsCleanDirectoryTestCase::testThrowsOnCannotDeleteFile
+  - org.apache.commons.io.filefilter.FileFilterTestCase::testCanRead
+  - org.apache.commons.io.filefilter.FileFilterTestCase::testCanWrite
+Error: verify number of triggering tests: IO-1f (expected: 0, actual: 4)
+================================================================================
+The following errors occurred:
+Error: verify number of triggering tests: IO-1b (expected: 2, actual: 6)
+Error: verify number of triggering tests: IO-1f (expected: 0, actual: 4)
+================================================================================
+FAILED

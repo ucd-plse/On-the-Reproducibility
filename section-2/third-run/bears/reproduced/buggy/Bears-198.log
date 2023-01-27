@@ -1,0 +1,66 @@
+Apache Maven 3.6.3
+Maven home: /usr/share/maven
+Java version: 1.8.0_342, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.15.0-41-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.amazonaws:aws-encryption-sdk-java >----------------
+[INFO] Building aws-encryption-sdk-java 1.3.6-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ aws-encryption-sdk-java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /On-the-Reproducibility/section-2/reproducibility-scanner/reproducer/workspace/Bears-198/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ aws-encryption-sdk-java ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 67 source files to /On-the-Reproducibility/section-2/reproducibility-scanner/reproducer/workspace/Bears-198/target/classes
+[WARNING] /On-the-Reproducibility/section-2/reproducibility-scanner/reproducer/workspace/Bears-198/src/main/java/com/amazonaws/encryptionsdk/internal/EncryptionHandler.java: Some input files use unchecked or unsafe operations.
+[WARNING] /On-the-Reproducibility/section-2/reproducibility-scanner/reproducer/workspace/Bears-198/src/main/java/com/amazonaws/encryptionsdk/internal/EncryptionHandler.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ aws-encryption-sdk-java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /On-the-Reproducibility/section-2/reproducibility-scanner/reproducer/workspace/Bears-198/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ aws-encryption-sdk-java ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ aws-encryption-sdk-java ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.amazonaws.encryptionsdk.AllTestsSuite
+[ERROR] Tests run: 5726, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 120.931 s <<< FAILURE! - in com.amazonaws.encryptionsdk.AllTestsSuite
+[ERROR] build(com.amazonaws.encryptionsdk.model.DecryptionMaterialsRequestTest)  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.amazonaws.encryptionsdk.model.DecryptionMaterialsRequestTest.build(DecryptionMaterialsRequestTest.java:46)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   DecryptionMaterialsRequestTest.build:46 NullPointer
+[INFO] 
+[ERROR] Tests run: 5726, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:05 min
+[INFO] Finished at: 2022-08-18T12:29:16-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20:test (default-test) on project aws-encryption-sdk-java: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /On-the-Reproducibility/section-2/reproducibility-scanner/reproducer/workspace/Bears-198/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Running the tests related to the bug Bears-198...
+The tests related to the bug Bears-198 were executed.

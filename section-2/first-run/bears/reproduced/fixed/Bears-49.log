@@ -1,0 +1,65 @@
+Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fe; 2018-06-17T11:33:14-07:00)
+Maven home: /usr/local/apache-maven
+Java version: 1.8.0_312, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.15.0-173-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] 
+[INFO] ------------------< fr.inria.gforge.spoon:spoon-core >------------------
+[INFO] Building Spoon Core 5.7.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ spoon-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ spoon-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ spoon-core ---
+[INFO] argLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-49/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spoon-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spoon-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 479 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-49/target/classes
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-49/src/main/java/spoon/reflect/visitor/filter/AbstractReferenceFilter.java: Some input files use or override a deprecated API.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-49/src/main/java/spoon/reflect/visitor/filter/AbstractReferenceFilter.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-49/src/main/java/spoon/support/reflect/declaration/CtElementImpl.java: Some input files use unchecked or unsafe operations.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-49/src/main/java/spoon/support/reflect/declaration/CtElementImpl.java: Recompile with -Xlint:unchecked for details.
+[INFO] 4 warnings 
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-49/src/main/java/spoon/Launcher.java:[672,85] <anonymous spoon.Launcher$1> is not abstract and does not override abstract method accept(java.nio.file.Path,java.nio.file.attribute.BasicFileAttributes) in org.apache.commons.io.file.PathFilter
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-49/src/main/java/spoon/Launcher.java:[684,78] <anonymous spoon.Launcher$2> is not abstract and does not override abstract method accept(java.nio.file.Path,java.nio.file.attribute.BasicFileAttributes) in org.apache.commons.io.file.PathFilter
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.992 s
+[INFO] Finished at: 2022-07-13T17:49:38-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project spoon-core: Compilation failure: Compilation failure: 
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-49/src/main/java/spoon/Launcher.java:[672,85] <anonymous spoon.Launcher$1> is not abstract and does not override abstract method accept(java.nio.file.Path,java.nio.file.attribute.BasicFileAttributes) in org.apache.commons.io.file.PathFilter
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-49/src/main/java/spoon/Launcher.java:[684,78] <anonymous spoon.Launcher$2> is not abstract and does not override abstract method accept(java.nio.file.Path,java.nio.file.attribute.BasicFileAttributes) in org.apache.commons.io.file.PathFilter
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Running the tests related to the bug Bears-49...
+The tests related to the bug Bears-49 were executed.

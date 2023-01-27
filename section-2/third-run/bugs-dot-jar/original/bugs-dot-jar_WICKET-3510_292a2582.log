@@ -1,0 +1,98 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Wicket Date/Time 1.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2:process (default) @ wicket-datetime ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:resources (default-resources) @ wicket-datetime ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 21 resources
+[INFO] Copying 0 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ wicket-datetime ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:1.4.1:manifest (bundle-manifest) @ wicket-datetime ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:testResources (default-testResources) @ wicket-datetime ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ wicket-datetime ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.6:test (default-test) @ wicket-datetime ---
+[INFO] Surefire report directory: /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-3510_292a2582cbd0c76367b9b197bafb7ec6f35f4bc4/wicket-datetime/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.wicket.extensions.yui.calendar.DatePickerTest
+ERROR - DatePickerTest             - =========== testDifferentDateTimeZoneConversion() =================
+ERROR - DatePickerTest             - orig: 1288963800000; date: 1288877400000; dateTime: 1288877400000
+ERROR - DatePickerTest             - orig: Fri Nov 05 14:30:00 CET 2010; date: Thu Nov 04 14:30:00 CET 2010; dateTime: Thu Nov 04 14:30:00 CET 2010
+ERROR - DatePickerTest             - =========== testDates1() =================
+ERROR - DatePickerTest             - >>> convertDateNew()
+ERROR - DatePickerTest             - 1. date: 1289026800000  2010-11-06T00:00:00.000-07:00
+ERROR - DatePickerTest             - 2. halfday adjustments: 1289026800000  2010-11-06T00:00:00.000-07:00
+ERROR - DatePickerTest             - 3. final date: 1289026800000  Sat Nov 06 08:00:00 CET 2010
+ERROR - DatePickerTest             - ; origNew: 1289026800000; expected: 1289026800000
+ERROR - DatePickerTest             - ; origNew: Sat Nov 06 08:00:00 CET 2010; expected: Sat Nov 06 08:00:00 CET 2010
+ERROR - DatePickerTest             - =========== testDates2() =================
+ERROR - DatePickerTest             - >>> convertDateNew()
+ERROR - DatePickerTest             - 1. date: 1289026800000  2010-11-06T00:00:00.000-07:00
+ERROR - DatePickerTest             - 2. halfday adjustments: 1289026800000  2010-11-06T00:00:00.000-07:00
+ERROR - DatePickerTest             - 3. final date: 1289026800000  Sat Nov 06 08:00:00 CET 2010
+ERROR - DatePickerTest             - ; origNew: 1289026800000; expected: 1289026800000
+ERROR - DatePickerTest             - ; origNew: Sat Nov 06 08:00:00 CET 2010; expected: Sat Nov 06 08:00:00 CET 2010
+ERROR - DatePickerTest             - =========== testDates3() =================
+ERROR - DatePickerTest             - >>> convertDateNew()
+ERROR - DatePickerTest             - 1. date: 1289070000000  2010-11-06T12:00:00.000-07:00
+ERROR - DatePickerTest             - 2. halfday adjustments: 1289070000000  2010-11-06T12:00:00.000-07:00
+ERROR - DatePickerTest             - 3. final date: 1289070000000  Sat Nov 06 20:00:00 CET 2010
+ERROR - DatePickerTest             - ; origNew: 1289070000000; expected: 1289070000000
+ERROR - DatePickerTest             - ; origNew: Sat Nov 06 20:00:00 CET 2010; expected: Sat Nov 06 20:00:00 CET 2010
+ERROR - DatePickerTest             - =========== test1() =================
+=== org.apache.wicket.extensions.yui.calendar.DatesPage1 ===
+ERROR - DatePickerTest             - =========== test2() =================
+ERROR - DatePickerTest             - orig: 1289026800000; date: 1289026800000; dateTime: 1289026800000
+ERROR - DatePickerTest             - orig: Sat Nov 06 00:00:00 PDT 2010; date: Sat Nov 06 00:00:00 PDT 2010; dateTime: Sat Nov 06 00:00:00 PDT 2010
+ERROR - DatePickerTest             - =========== test3() =================
+ERROR - DatePickerTest             - orig: 1289026800000; date: 1289026800000; dateTime: 1289026800000
+ERROR - DatePickerTest             - orig: Sat Nov 06 08:00:00 CET 2010; date: Sat Nov 06 08:00:00 CET 2010; dateTime: Sat Nov 06 08:00:00 CET 2010
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.098 sec <<< FAILURE!
+Running org.apache.wicket.util.license.ApacheLicenceHeaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.254 sec
+
+Results :
+
+Failed tests: 
+  testDifferentDateTimeZoneConversion(org.apache.wicket.extensions.yui.calendar.DatePickerTest)
+
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.464 s
+[INFO] Finished at: 2016-07-31T09:15:28-07:00
+[INFO] Final Memory: 18M/606M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.6:test (default-test) on project wicket-datetime: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-3510_292a2582cbd0c76367b9b197bafb7ec6f35f4bc4/wicket-datetime/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

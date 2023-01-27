@@ -1,0 +1,131 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak TarMK Standby 1.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-tarmk-standby ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-tarmk-standby ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-tarmk-standby ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-tarmk-standby ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-tarmk-standby ---
+[INFO] Generating 1 MetaType Descriptors in /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-2260_0ac7ff203ed1213d61ce3ea5d9313751a8510ade/oak-tarmk-standby/target/classes/OSGI-INF/metatype/org.apache.jackrabbit.oak.plugins.segment.standby.store.StandbyStoreService.xml
+[INFO] Writing 1 Service Component Descriptors to /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-2260_0ac7ff203ed1213d61ce3ea5d9313751a8510ade/oak-tarmk-standby/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.segment.standby.store.StandbyStoreService.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-tarmk-standby ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.9:reserve-network-port (reserve-network-port) @ oak-tarmk-standby ---
+[INFO] Reserved port 43926 for standby.server.port
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-tarmk-standby ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-tarmk-standby ---
+[INFO] Surefire report directory: /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-2260_0ac7ff203ed1213d61ce3ea5d9313751a8510ade/oak-tarmk-standby/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.jackrabbit.oak.plugins.segment.standby.FailoverTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.293 sec <<< FAILURE!
+testFailover(org.apache.jackrabbit.oak.plugins.segment.standby.FailoverTest)  Time elapsed: 11.26 sec  <<< ERROR!
+java.lang.IllegalStateException
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:134)
+	at org.apache.jackrabbit.oak.plugins.segment.Segment.pos(Segment.java:178)
+	at org.apache.jackrabbit.oak.plugins.segment.Segment.readBytes(Segment.java:297)
+	at org.apache.jackrabbit.oak.plugins.segment.BlockRecord.read(BlockRecord.java:55)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentStream.read(SegmentStream.java:171)
+	at com.google.common.io.ByteStreams.read(ByteStreams.java:828)
+	at com.google.common.io.ByteSource.contentEquals(ByteSource.java:304)
+	at com.google.common.io.ByteStreams.equal(ByteStreams.java:661)
+	at org.apache.jackrabbit.oak.plugins.memory.AbstractBlob.equal(AbstractBlob.java:58)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentBlob.equals(SegmentBlob.java:210)
+	at com.google.common.base.Objects.equal(Objects.java:55)
+	at org.apache.jackrabbit.oak.plugins.memory.AbstractPropertyState.equal(AbstractPropertyState.java:53)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentPropertyState.equals(SegmentPropertyState.java:225)
+	at org.apache.jackrabbit.oak.plugins.segment.Template.compare(Template.java:233)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentNodeState.equals(SegmentNodeState.java:570)
+	at org.apache.jackrabbit.oak.plugins.segment.Template.compare(Template.java:244)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentNodeState.equals(SegmentNodeState.java:570)
+	at org.apache.jackrabbit.oak.plugins.segment.Template.compare(Template.java:244)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentNodeState.equals(SegmentNodeState.java:570)
+	at org.junit.Assert.isEquals(Assert.java:132)
+	at org.junit.Assert.assertEquals(Assert.java:121)
+	at org.junit.Assert.assertEquals(Assert.java:147)
+	at org.apache.jackrabbit.oak.plugins.segment.standby.FailoverTest.testFailover(FailoverTest.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running org.apache.jackrabbit.oak.plugins.segment.standby.FailoverSslTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.076 sec
+Running org.apache.jackrabbit.oak.plugins.segment.standby.FailoverMultipleClientsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.882 sec
+Running org.apache.jackrabbit.oak.plugins.segment.standby.RecoverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 38.942 sec
+
+Results :
+
+Tests in error: 
+  testFailover(org.apache.jackrabbit.oak.plugins.segment.standby.FailoverTest)
+
+Tests run: 7, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:37 min
+[INFO] Finished at: 2016-07-29T04:37:25-07:00
+[INFO] Final Memory: 23M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project oak-tarmk-standby: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-2260_0ac7ff203ed1213d61ce3ea5d9313751a8510ade/oak-tarmk-standby/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

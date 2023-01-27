@@ -1,0 +1,33 @@
+Checking out f229ea44 to /tmp/test_d4j_2313513_1658729752/test_trigger/Pool OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff f229ea44:d289e4fd..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: Pool-6b......................................... OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+Failing tests: 1
+  - org.apache.commons.pool2.impl.TestGenericKeyedObjectPool::testWhenExhaustedBlockClosePool
+Error: verify number of triggering tests: Pool-6b (expected: 2, actual: 1)
+Error: expected triggering test org.apache.commons.pool2.impl.TestGenericObjectPool::testWhenExhaustedBlockClosePool did not fail
+Check out program version: Pool-6f......................................... OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+Failing tests: 0
+================================================================================
+The following errors occurred:
+Error: verify number of triggering tests: Pool-6b (expected: 2, actual: 1)
+Error: expected triggering test org.apache.commons.pool2.impl.TestGenericObjectPool::testWhenExhaustedBlockClosePool did not fail
+================================================================================
+FAILED

@@ -1,0 +1,91 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Proxy 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.1:create (default) @ accumulo-proxy ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-1183_cfbf5999d44678be3ba30b7cb98d813d8ecb6d73/proxy && svn --non-interactive info
+[INFO] Working directory: /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-1183_cfbf5999d44678be3ba30b7cb98d813d8ecb6d73/proxy
+[INFO] Storing buildNumber: null at timestamp: 1469580126899
+[INFO] Executing: /bin/sh -c cd /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-1183_cfbf5999d44678be3ba30b7cb98d813d8ecb6d73/proxy && svn --non-interactive info
+[INFO] Working directory: /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-1183_cfbf5999d44678be3ba30b7cb98d813d8ecb6d73/proxy
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-proxy ---
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:exec (generate-thrift) @ accumulo-proxy ---
+****************************************************
+*** thrift is not available
+***   expecting 'thrift -version' to return 0.9
+*** generated code will not be updated
+****************************************************
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (default) @ accumulo-proxy ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ accumulo-proxy ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-1183_cfbf5999d44678be3ba30b7cb98d813d8ecb6d73/proxy/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ accumulo-proxy ---
+[INFO] libthrift-0.9.0.jar already exists in destination.
+[INFO] guava-13.0.1.jar already exists in destination.
+[INFO] jcommander-1.30.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ accumulo-proxy ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ accumulo-proxy ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-1183_cfbf5999d44678be3ba30b7cb98d813d8ecb6d73/proxy/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ accumulo-proxy ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ accumulo-proxy ---
+[INFO] Surefire report directory: /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-1183_cfbf5999d44678be3ba30b7cb98d813d8ecb6d73/proxy/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.proxy.TestProxyTableOperations
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.65 sec
+Running org.apache.accumulo.proxy.TestProxySecurityOperations
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.46 sec
+Running org.apache.accumulo.proxy.SimpleTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.005 sec
+Running org.apache.accumulo.proxy.TestProxyReadWrite
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 10.348 sec <<< FAILURE!
+Running org.apache.accumulo.proxy.TestProxyInstanceOperations
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+
+Results :
+
+Failed tests:   readWriteBatchOneShotWithColumnFamilyOnly(org.apache.accumulo.proxy.TestProxyReadWrite): expected:<100000> but was:<50000>
+  readWriteBatchOneShotWithFullColumn(org.apache.accumulo.proxy.TestProxyReadWrite): expected:<100000> but was:<50000>
+
+Tests run: 24, Failures: 2, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 39.513 s
+[INFO] Finished at: 2016-07-26T17:42:44-07:00
+[INFO] Final Memory: 25M/858M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (default-test) on project accumulo-proxy: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-1183_cfbf5999d44678be3ba30b7cb98d813d8ecb6d73/proxy/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

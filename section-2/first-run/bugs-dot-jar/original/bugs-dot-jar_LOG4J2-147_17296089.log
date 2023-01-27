@@ -1,0 +1,992 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Log4J Core 2.0-beta4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-core ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ log4j-core ---
+[INFO] Compiling 17 source files to /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core/target/classes
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default) > validate @ log4j-core >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default) < validate @ log4j-core <<<
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default) @ log4j-core ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 57 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ log4j-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ log4j-core ---
+[INFO] Surefire report directory: /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.logging.log4j.core.lookup.StrSubstitutorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 sec
+Running org.apache.logging.log4j.core.lookup.ContextMapLookupTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec
+Running org.apache.logging.log4j.core.lookup.InterpolatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.148 sec
+Running org.apache.logging.log4j.core.lookup.DateLookupTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 sec
+Running org.apache.logging.log4j.core.lookup.StructuredDataLookupTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec
+Running org.apache.logging.log4j.core.lookup.EnvironmentLookupTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Running org.apache.logging.log4j.core.lookup.SystemPropertiesLookupTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+Running org.apache.logging.log4j.core.BasicLoggingTest
+15:51:32.842 [main] ERROR org.apache.logging.log4j.core.BasicLoggingTest - Test message
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.282 sec
+Running org.apache.logging.log4j.core.filter.BurstFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.141 sec
+Running org.apache.logging.log4j.core.filter.MarkerFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec
+Running org.apache.logging.log4j.core.filter.RegexFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec
+Running org.apache.logging.log4j.core.filter.TimeFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec
+Running org.apache.logging.log4j.core.filter.ThresholdFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec
+Running org.apache.logging.log4j.core.filter.StructuredDataFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.331 sec
+Running org.apache.logging.log4j.core.filter.DynamicThresholdFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.377 sec
+Running org.apache.logging.log4j.core.filter.ThreadContextMapFilterTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec <<< FAILURE!
+testFilter(org.apache.logging.log4j.core.filter.ThreadContextMapFilterTest)  Time elapsed: 0.041 sec  <<< FAILURE!
+java.lang.AssertionError: 
+	at org.junit.Assert.fail(Assert.java:91)
+	at org.junit.Assert.assertTrue(Assert.java:43)
+	at org.junit.Assert.assertTrue(Assert.java:54)
+	at org.apache.logging.log4j.core.filter.ThreadContextMapFilterTest.testFilter(ThreadContextMapFilterTest.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running org.apache.logging.log4j.core.filter.MapFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.387 sec
+Running org.apache.logging.log4j.core.SimplePerfTest
+Timer Setup stopped. Elapsed time: 0.108533424 seconds Average per iteration: 0.000000010 seconds
+Timer DebugDisabled stopped. Elapsed time: 0.033138991 seconds Average per iteration: 0.000000003 seconds
+Timer DebugDisabled stopped. Elapsed time: 0.030185542 seconds Average per iteration: 0.000000003 seconds
+Timer DebugLogger stopped. Elapsed time: 0.039961646 seconds Average per iteration: 0.000000003 seconds
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.623 sec
+Running org.apache.logging.log4j.core.FileConfigTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.401 sec
+Running org.apache.logging.log4j.core.AppenderRefLevelTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.354 sec
+Running org.apache.logging.log4j.core.ThreadedPerfTest
+Timer DebugDisabled stopped. Elapsed time: 0.001388724 seconds Average per iteration: 0.000000000 seconds
+Timer DebugLogger stopped. Elapsed time: 0.053676658 seconds Average per iteration: 0.000000000 seconds
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.292 sec
+Running org.apache.logging.log4j.core.config.XMLLoggerPropsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.313 sec
+Running org.apache.logging.log4j.core.config.FileOutputTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.337 sec
+Running org.apache.logging.log4j.core.config.TestConfigurator
+2016-07-16 15:51:53,027 ERROR Unknown object "logger" of type org.apache.logging.log4j.core.config.LoggerConfig is ignored
+2016-07-16 15:51:53,028 ERROR Unknown object "logger" of type org.apache.logging.log4j.core.config.LoggerConfig is ignored
+2016-07-16 15:51:53,029 ERROR Unknown object "root" of type org.apache.logging.log4j.core.config.LoggerConfig is ignored
+2016-07-16 15:51:53,030 WARN No Loggers were configured, using default. Is the Loggers element missing?
+2016-07-16 15:51:53,058 ERROR KeyValuePair contains an invalid element or attribute "key1"
+2016-07-16 15:51:53,059 ERROR A null key is not valid in MapFilter
+2016-07-16 15:51:53,059 ERROR ThreadContextMapFilter is not configured with any valid key value pairs
+2016-07-16 15:51:53,084 ERROR Console contains an invalid element or attribute "TypoLayout"
+2016-07-16 15:51:53,099 ERROR FileManager (/VeryLongDirectoryNameaaaaaaaaaaAAAAAAAAAAbbbbbbbbbbBBBBBBBBBBccccccccccCCCCCCCCCCddddddddddDDDDDDDDDDeeeeeeeeeeEEEEEEEEEEffffffffffFFFFFFFFFFggggggggggGGGGGGGGGGhhhhhhhhhhHHHHHHHHHHiiiiiiiiiiIIIIIIIIIIjjjjjjjjjjJJJJJJJJJJkkkkkkkkkkKKKKKKKKKKllllllllllLLLLLLLLLLmmmmmmmmmmMMMMMMMMMM/test.log) java.io.FileNotFoundException: /VeryLongDirectoryNameaaaaaaaaaaAAAAAAAAAAbbbbbbbbbbBBBBBBBBBBccccccccccCCCCCCCCCCddddddddddDDDDDDDDDDeeeeeeeeeeEEEEEEEEEEffffffffffFFFFFFFFFFggggggggggGGGGGGGGGGhhhhhhhhhhHHHHHHHHHHiiiiiiiiiiIIIIIIIIIIjjjjjjjjjjJJJJJJJJJJkkkkkkkkkkKKKKKKKKKKllllllllllLLLLLLLLLLmmmmmmmmmmMMMMMMMMMM/test.log (File name too long)
+2016-07-16 15:51:53,100 ERROR Unable to invoke method createAppender in class org.apache.logging.log4j.core.appender.FileAppender for element File java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.logging.log4j.core.config.BaseConfiguration.createPluginObject(BaseConfiguration.java:718)
+	at org.apache.logging.log4j.core.config.BaseConfiguration.createConfiguration(BaseConfiguration.java:484)
+	at org.apache.logging.log4j.core.config.BaseConfiguration.createConfiguration(BaseConfiguration.java:476)
+	at org.apache.logging.log4j.core.config.BaseConfiguration.doConfigure(BaseConfiguration.java:161)
+	at org.apache.logging.log4j.core.config.BaseConfiguration.start(BaseConfiguration.java:119)
+	at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:270)
+	at org.apache.logging.log4j.core.config.Configurator.initialize(Configurator.java:62)
+	at org.apache.logging.log4j.core.config.Configurator.initialize(Configurator.java:43)
+	at org.apache.logging.log4j.core.config.TestConfigurator.testBadFileName(TestConfigurator.java:252)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.IllegalStateException: Unable to create a manager
+	at org.apache.logging.log4j.core.appender.AbstractManager.getManager(AbstractManager.java:70)
+	at org.apache.logging.log4j.core.appender.OutputStreamManager.getManager(OutputStreamManager.java:47)
+	at org.apache.logging.log4j.core.appender.FileManager.getFileManager(FileManager.java:58)
+	at org.apache.logging.log4j.core.appender.FileAppender.createAppender(FileAppender.java:99)
+	... 41 more
+
+2016-07-16 15:51:53,102 ERROR Null object returned for File in appenders
+2016-07-16 15:51:53,106 ERROR Unable to locate appender File for logger org.apache.logging.log4j.test2
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.006 sec
+Running org.apache.logging.log4j.core.config.XMLConfigurationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.348 sec
+Running org.apache.logging.log4j.core.config.XMLConfigurationPropsTest
+2016-07-16 15:51:54,604 DEBUG Generated plugins in 0.000237879 seconds
+2016-07-16 15:51:54,616 DEBUG Calling createLayout on class org.apache.logging.log4j.core.layout.PatternLayout for element PatternLayout with params(pattern="[%-5level] %msg%n", Configuration(DSI), null, charset="null")
+2016-07-16 15:51:54,616 DEBUG Generated plugins in 0.000204845 seconds
+2016-07-16 15:51:54,618 DEBUG Calling createAppender on class org.apache.logging.log4j.core.appender.ConsoleAppender for element Console with params(PatternLayout([%-5level] %msg%n), null, target="SYSTEM_OUT", name="Console", follow="null", suppressExceptions="null")
+2016-07-16 15:51:54,619 DEBUG Calling createAppenders on class org.apache.logging.log4j.core.config.plugins.AppendersPlugin for element appenders with params(appenders={Console})
+2016-07-16 15:51:54,619 DEBUG Generated plugins in 0.000182705 seconds
+2016-07-16 15:51:54,621 DEBUG Calling createAppenderRef on class org.apache.logging.log4j.core.config.AppenderRef for element appender-ref with params(ref="Console", level="null", null)
+2016-07-16 15:51:54,622 DEBUG Calling createLogger on class org.apache.logging.log4j.core.config.LoggerConfig$RootLogger for element root with params(additivity="null", level="${sys:log.level}", appender-ref={org.apache.logging.log4j.core.config.AppenderRef@ce0d675}, properties={}, Configuration(DSI), null)
+2016-07-16 15:51:54,623 DEBUG Calling createLoggers on class org.apache.logging.log4j.core.config.plugins.LoggersPlugin for element loggers with params(loggers={root})
+2016-07-16 15:51:54,623 DEBUG Reconfiguration completed
+2016-07-16 15:51:54,623 DEBUG Reconfiguration started for context Default
+2016-07-16 15:51:54,624 DEBUG Generated plugins in 0.000188712 seconds
+2016-07-16 15:51:54,626 DEBUG Generated plugins in 0.000172368 seconds
+2016-07-16 15:51:54,627 DEBUG Calling createLayout on class org.apache.logging.log4j.core.layout.PatternLayout for element PatternLayout with params(pattern="[%-5level] %msg%n", Configuration(DSI), null, charset="null")
+2016-07-16 15:51:54,628 DEBUG Generated plugins in 0.000185917 seconds
+2016-07-16 15:51:54,629 DEBUG Calling createAppender on class org.apache.logging.log4j.core.appender.ConsoleAppender for element Console with params(PatternLayout([%-5level] %msg%n), null, target="SYSTEM_OUT", name="Console", follow="null", suppressExceptions="null")
+2016-07-16 15:51:54,630 DEBUG Calling createAppenders on class org.apache.logging.log4j.core.config.plugins.AppendersPlugin for element appenders with params(appenders={Console})
+2016-07-16 15:51:54,630 DEBUG Generated plugins in 0.000188083 seconds
+2016-07-16 15:51:54,631 DEBUG Calling createAppenderRef on class org.apache.logging.log4j.core.config.AppenderRef for element appender-ref with params(ref="Console", level="null", null)
+2016-07-16 15:51:54,632 DEBUG Calling createLogger on class org.apache.logging.log4j.core.config.LoggerConfig$RootLogger for element root with params(additivity="null", level="${sys:log.level}", appender-ref={org.apache.logging.log4j.core.config.AppenderRef@a470f4f}, properties={}, Configuration(DSI), null)
+2016-07-16 15:51:54,633 DEBUG Calling createLoggers on class org.apache.logging.log4j.core.config.plugins.LoggersPlugin for element loggers with params(loggers={root})
+2016-07-16 15:51:54,633 DEBUG Reconfiguration completed
+2016-07-16 15:51:54,634 DEBUG Reconfiguration started for context Default
+2016-07-16 15:51:54,634 DEBUG Generated plugins in 0.000180680 seconds
+2016-07-16 15:51:54,645 DEBUG Generated plugins in 0.000170064 seconds
+2016-07-16 15:51:54,646 DEBUG Calling createLayout on class org.apache.logging.log4j.core.layout.PatternLayout for element PatternLayout with params(pattern="[%-5level] %msg%n", Configuration(DSI), null, charset="null")
+2016-07-16 15:51:54,646 DEBUG Generated plugins in 0.000185010 seconds
+2016-07-16 15:51:54,647 DEBUG Calling createAppender on class org.apache.logging.log4j.core.appender.ConsoleAppender for element Console with params(PatternLayout([%-5level] %msg%n), null, target="SYSTEM_OUT", name="Console", follow="null", suppressExceptions="null")
+2016-07-16 15:51:54,647 DEBUG Calling createAppenders on class org.apache.logging.log4j.core.config.plugins.AppendersPlugin for element appenders with params(appenders={Console})
+2016-07-16 15:51:54,648 DEBUG Generated plugins in 0.000188362 seconds
+2016-07-16 15:51:54,648 DEBUG Calling createAppenderRef on class org.apache.logging.log4j.core.config.AppenderRef for element appender-ref with params(ref="Console", level="null", null)
+2016-07-16 15:51:54,649 DEBUG Calling createLogger on class org.apache.logging.log4j.core.config.LoggerConfig$RootLogger for element root with params(additivity="null", level="debug", appender-ref={org.apache.logging.log4j.core.config.AppenderRef@3d79839e}, properties={}, Configuration(DSI), null)
+2016-07-16 15:51:54,649 DEBUG Calling createLoggers on class org.apache.logging.log4j.core.config.plugins.LoggersPlugin for element loggers with params(loggers={root})
+2016-07-16 15:51:54,650 DEBUG Reconfiguration completed
+2016-07-16 15:51:54,650 DEBUG Reconfiguration started for context Default
+2016-07-16 15:51:54,651 DEBUG Generated plugins in 0.000178654 seconds
+2016-07-16 15:51:54,692 DEBUG Generated plugins in 0.000127670 seconds
+2016-07-16 15:51:54,693 DEBUG Generated plugins in 0.000294590 seconds
+2016-07-16 15:51:54,693 DEBUG Reconfiguration completed
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.357 sec
+Running org.apache.logging.log4j.core.ThreadedTest
+Counter = 100
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.619 sec
+Running org.apache.logging.log4j.core.net.SocketServerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.388 sec
+Running org.apache.logging.log4j.core.net.JMSQueueTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.578 sec
+Running org.apache.logging.log4j.core.net.JMSQueueFailoverTest
+2016-07-16 15:51:57,781 ERROR An exception occurred processing Appender Log4j2Queue org.apache.logging.log4j.core.appender.AppenderRuntimeException: javax.naming.NameNotFoundException: Name Log4j2Queue not found. 
+	at org.apache.logging.log4j.core.appender.JMSQueueAppender.append(JMSQueueAppender.java:52)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	at org.apache.logging.log4j.core.appender.rewrite.RewriteAppender.append(RewriteAppender.java:83)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	at org.apache.logging.log4j.core.appender.FailoverAppender.callAppender(FailoverAppender.java:122)
+	at org.apache.logging.log4j.core.appender.FailoverAppender.append(FailoverAppender.java:109)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:334)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:315)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:280)
+	at org.apache.logging.log4j.core.Logger.log(Logger.java:108)
+	at org.apache.logging.log4j.spi.AbstractLogger.debug(AbstractLogger.java:460)
+	at org.apache.logging.log4j.core.net.JMSQueueFailoverTest.testFailover(JMSQueueFailoverTest.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: javax.naming.NameNotFoundException: Name Log4j2Queue not found. 
+	at org.mockejb.jndi.MockContext.lookup(MockContext.java:543)
+	at org.mockejb.jndi.MockContext$$FastClassByCGLIB$$8f78c5.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at org.mockejb.interceptor.InterceptorInvoker$CglibMethodInvoker.intercept(InterceptorInvoker.java:95)
+	at org.mockejb.interceptor.InvocationContext.proceed(InvocationContext.java:177)
+	at org.mockejb.interceptor.InterceptorInvoker.invoke(InterceptorInvoker.java:53)
+	at org.mockejb.interceptor.InterceptableProxy.intercept(InterceptableProxy.java:58)
+	at $javax.naming.Context$$EnhancerByCGLIB$$b681ec35.lookup(<generated>)
+	at javax.naming.InitialContext.lookup(InitialContext.java:411)
+	at org.apache.logging.log4j.core.net.AbstractJMSManager.lookup(AbstractJMSManager.java:76)
+	at org.apache.logging.log4j.core.net.JMSQueueManager.connect(JMSQueueManager.java:178)
+	at org.apache.logging.log4j.core.net.JMSQueueManager.send(JMSQueueManager.java:103)
+	at org.apache.logging.log4j.core.appender.JMSQueueAppender.append(JMSQueueAppender.java:50)
+	... 43 more
+
+2016-07-16 15:51:57,784 ERROR An exception occurred processing Appender Rewrite org.apache.logging.log4j.core.appender.AppenderRuntimeException: An exception occurred processing Appender Log4j2Queue
+	at org.apache.logging.log4j.core.appender.DefaultErrorHandler.error(DefaultErrorHandler.java:71)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:104)
+	at org.apache.logging.log4j.core.appender.rewrite.RewriteAppender.append(RewriteAppender.java:83)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	at org.apache.logging.log4j.core.appender.FailoverAppender.callAppender(FailoverAppender.java:122)
+	at org.apache.logging.log4j.core.appender.FailoverAppender.append(FailoverAppender.java:109)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:334)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:315)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:280)
+	at org.apache.logging.log4j.core.Logger.log(Logger.java:108)
+	at org.apache.logging.log4j.spi.AbstractLogger.debug(AbstractLogger.java:460)
+	at org.apache.logging.log4j.core.net.JMSQueueFailoverTest.testFailover(JMSQueueFailoverTest.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.apache.logging.log4j.core.appender.AppenderRuntimeException: javax.naming.NameNotFoundException: Name Log4j2Queue not found. 
+	at org.apache.logging.log4j.core.appender.JMSQueueAppender.append(JMSQueueAppender.java:52)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	... 42 more
+Caused by: javax.naming.NameNotFoundException: Name Log4j2Queue not found. 
+	at org.mockejb.jndi.MockContext.lookup(MockContext.java:543)
+	at org.mockejb.jndi.MockContext$$FastClassByCGLIB$$8f78c5.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at org.mockejb.interceptor.InterceptorInvoker$CglibMethodInvoker.intercept(InterceptorInvoker.java:95)
+	at org.mockejb.interceptor.InvocationContext.proceed(InvocationContext.java:177)
+	at org.mockejb.interceptor.InterceptorInvoker.invoke(InterceptorInvoker.java:53)
+	at org.mockejb.interceptor.InterceptableProxy.intercept(InterceptableProxy.java:58)
+	at $javax.naming.Context$$EnhancerByCGLIB$$b681ec35.lookup(<generated>)
+	at javax.naming.InitialContext.lookup(InitialContext.java:411)
+	at org.apache.logging.log4j.core.net.AbstractJMSManager.lookup(AbstractJMSManager.java:76)
+	at org.apache.logging.log4j.core.net.JMSQueueManager.connect(JMSQueueManager.java:178)
+	at org.apache.logging.log4j.core.net.JMSQueueManager.send(JMSQueueManager.java:103)
+	at org.apache.logging.log4j.core.appender.JMSQueueAppender.append(JMSQueueAppender.java:50)
+	... 43 more
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.521 sec
+Running org.apache.logging.log4j.core.net.JMSTopicFailoverTest
+2016-07-16 15:51:58,490 ERROR An exception occurred processing Appender Log4j2Topic org.apache.logging.log4j.core.appender.AppenderRuntimeException: javax.naming.NameNotFoundException: Name Log4j2Topic not found. 
+	at org.apache.logging.log4j.core.appender.JMSTopicAppender.append(JMSTopicAppender.java:52)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	at org.apache.logging.log4j.core.appender.rewrite.RewriteAppender.append(RewriteAppender.java:83)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	at org.apache.logging.log4j.core.appender.FailoverAppender.callAppender(FailoverAppender.java:122)
+	at org.apache.logging.log4j.core.appender.FailoverAppender.append(FailoverAppender.java:109)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:334)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:315)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:280)
+	at org.apache.logging.log4j.core.Logger.log(Logger.java:108)
+	at org.apache.logging.log4j.spi.AbstractLogger.debug(AbstractLogger.java:460)
+	at org.apache.logging.log4j.core.net.JMSTopicFailoverTest.testFailover(JMSTopicFailoverTest.java:107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: javax.naming.NameNotFoundException: Name Log4j2Topic not found. 
+	at org.mockejb.jndi.MockContext.lookup(MockContext.java:543)
+	at org.mockejb.jndi.MockContext$$FastClassByCGLIB$$8f78c5.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at org.mockejb.interceptor.InterceptorInvoker$CglibMethodInvoker.intercept(InterceptorInvoker.java:95)
+	at org.mockejb.interceptor.InvocationContext.proceed(InvocationContext.java:177)
+	at org.mockejb.interceptor.InterceptorInvoker.invoke(InterceptorInvoker.java:53)
+	at org.mockejb.interceptor.InterceptableProxy.intercept(InterceptableProxy.java:58)
+	at $javax.naming.Context$$EnhancerByCGLIB$$b681ec35.lookup(<generated>)
+	at javax.naming.InitialContext.lookup(InitialContext.java:411)
+	at org.apache.logging.log4j.core.net.AbstractJMSManager.lookup(AbstractJMSManager.java:76)
+	at org.apache.logging.log4j.core.net.JMSTopicManager.connect(JMSTopicManager.java:179)
+	at org.apache.logging.log4j.core.net.JMSTopicManager.send(JMSTopicManager.java:103)
+	at org.apache.logging.log4j.core.appender.JMSTopicAppender.append(JMSTopicAppender.java:50)
+	... 43 more
+
+2016-07-16 15:51:58,493 ERROR An exception occurred processing Appender Rewrite org.apache.logging.log4j.core.appender.AppenderRuntimeException: An exception occurred processing Appender Log4j2Topic
+	at org.apache.logging.log4j.core.appender.DefaultErrorHandler.error(DefaultErrorHandler.java:71)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:104)
+	at org.apache.logging.log4j.core.appender.rewrite.RewriteAppender.append(RewriteAppender.java:83)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	at org.apache.logging.log4j.core.appender.FailoverAppender.callAppender(FailoverAppender.java:122)
+	at org.apache.logging.log4j.core.appender.FailoverAppender.append(FailoverAppender.java:109)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:334)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:315)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:280)
+	at org.apache.logging.log4j.core.Logger.log(Logger.java:108)
+	at org.apache.logging.log4j.spi.AbstractLogger.debug(AbstractLogger.java:460)
+	at org.apache.logging.log4j.core.net.JMSTopicFailoverTest.testFailover(JMSTopicFailoverTest.java:107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.apache.logging.log4j.core.appender.AppenderRuntimeException: javax.naming.NameNotFoundException: Name Log4j2Topic not found. 
+	at org.apache.logging.log4j.core.appender.JMSTopicAppender.append(JMSTopicAppender.java:52)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	... 42 more
+Caused by: javax.naming.NameNotFoundException: Name Log4j2Topic not found. 
+	at org.mockejb.jndi.MockContext.lookup(MockContext.java:543)
+	at org.mockejb.jndi.MockContext$$FastClassByCGLIB$$8f78c5.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at org.mockejb.interceptor.InterceptorInvoker$CglibMethodInvoker.intercept(InterceptorInvoker.java:95)
+	at org.mockejb.interceptor.InvocationContext.proceed(InvocationContext.java:177)
+	at org.mockejb.interceptor.InterceptorInvoker.invoke(InterceptorInvoker.java:53)
+	at org.mockejb.interceptor.InterceptableProxy.intercept(InterceptableProxy.java:58)
+	at $javax.naming.Context$$EnhancerByCGLIB$$b681ec35.lookup(<generated>)
+	at javax.naming.InitialContext.lookup(InitialContext.java:411)
+	at org.apache.logging.log4j.core.net.AbstractJMSManager.lookup(AbstractJMSManager.java:76)
+	at org.apache.logging.log4j.core.net.JMSTopicManager.connect(JMSTopicManager.java:179)
+	at org.apache.logging.log4j.core.net.JMSTopicManager.send(JMSTopicManager.java:103)
+	at org.apache.logging.log4j.core.appender.JMSTopicAppender.append(JMSTopicAppender.java:50)
+	... 43 more
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.53 sec
+Running org.apache.logging.log4j.core.net.JMSTopicTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.581 sec
+Running org.apache.logging.log4j.core.net.SocketTest
+2016-07-16 15:51:59,778 DEBUG Generated plugins in 0.000017530 seconds
+2016-07-16 15:51:59,791 DEBUG Calling createLayout on class org.apache.logging.log4j.core.layout.PatternLayout for element PatternLayout with params(pattern="%msg%n", Configuration(MyApp), null, charset="null")
+2016-07-16 15:51:59,791 DEBUG Generated plugins in 0.000015435 seconds
+2016-07-16 15:51:59,794 DEBUG Calling createAppender on class org.apache.logging.log4j.core.appender.SocketAppender for element Socket with params(host="localhost", port="5514", protocol="TCP", reconnectionDelay="250", name="socket", immediateFlush="null", suppressExceptions="false", PatternLayout(%msg%n), null)
+2016-07-16 15:51:59,800 ERROR TCPSocketManager (TCP:localhost:5514) java.net.ConnectException: Connection refused
+2016-07-16 15:51:59,800 DEBUG Starting TCPSocketManager TCP:localhost:5514
+2016-07-16 15:51:59,802 DEBUG Calling createAppenders on class org.apache.logging.log4j.core.config.plugins.AppendersPlugin for element appenders with params(appenders={socket})
+2016-07-16 15:51:59,802 DEBUG Generated plugins in 0.000015086 seconds
+2016-07-16 15:51:59,803 DEBUG Calling createAppenderRef on class org.apache.logging.log4j.core.config.AppenderRef for element appender-ref with params(ref="socket", level="null", null)
+2016-07-16 15:51:59,805 DEBUG Calling createLogger on class org.apache.logging.log4j.core.config.LoggerConfig$RootLogger for element root with params(additivity="null", level="debug", appender-ref={org.apache.logging.log4j.core.config.AppenderRef@62f80604}, properties={}, Configuration(MyApp), null)
+2016-07-16 15:51:59,806 DEBUG Calling createLoggers on class org.apache.logging.log4j.core.config.plugins.LoggersPlugin for element loggers with params(loggers={root})
+2016-07-16 15:51:59,806 DEBUG Shutting down OutputStreamManager SYSTEM_OUT
+2016-07-16 15:51:59,806 DEBUG Reconfiguration completed
+2016-07-16 15:52:00,053 DEBUG localhost:5514 refused connection
+2016-07-16 15:52:00,053 ERROR Unable to write to stream TCP:localhost:5514 for appender socket
+2016-07-16 15:52:00,054 ERROR An exception occurred processing Appender socket org.apache.logging.log4j.core.appender.AppenderRuntimeException: Error writing to TCP:localhost:5514 socket not available
+	at org.apache.logging.log4j.core.net.TCPSocketManager.write(TCPSocketManager.java:107)
+	at org.apache.logging.log4j.core.appender.OutputStreamManager.write(OutputStreamManager.java:126)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.append(AbstractOutputStreamAppender.java:114)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:334)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:315)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:280)
+	at org.apache.logging.log4j.core.Logger.log(Logger.java:108)
+	at org.apache.logging.log4j.spi.AbstractLogger.error(AbstractLogger.java:1048)
+	at org.apache.logging.log4j.core.net.SocketTest.testConnect(SocketTest.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.567 sec
+Running org.apache.logging.log4j.core.net.SocketMessageLossTest
+2016-07-16 15:52:00,580 DEBUG Generated plugins in 0.000017880 seconds
+2016-07-16 15:52:00,592 DEBUG Calling createLayout on class org.apache.logging.log4j.core.layout.PatternLayout for element PatternLayout with params(pattern="%msg%n", Configuration(MyApp), null, charset="null")
+2016-07-16 15:52:00,593 DEBUG Generated plugins in 0.000015505 seconds
+2016-07-16 15:52:00,595 DEBUG Calling createAppender on class org.apache.logging.log4j.core.appender.SocketAppender for element Socket with params(host="localhost", port="5514", protocol="TCP", reconnectionDelay="0", name="socket", immediateFlush="null", suppressExceptions="false", PatternLayout(%msg%n), null)
+2016-07-16 15:52:00,600 DEBUG Starting TCPSocketManager TCP:localhost:5514
+2016-07-16 15:52:00,600 DEBUG Calling createAppenders on class org.apache.logging.log4j.core.config.plugins.AppendersPlugin for element appenders with params(appenders={socket})
+2016-07-16 15:52:00,601 DEBUG Generated plugins in 0.000015226 seconds
+2016-07-16 15:52:00,602 DEBUG Calling createAppenderRef on class org.apache.logging.log4j.core.config.AppenderRef for element appender-ref with params(ref="socket", level="null", null)
+2016-07-16 15:52:00,603 DEBUG Calling createLogger on class org.apache.logging.log4j.core.config.LoggerConfig$RootLogger for element root with params(additivity="null", level="debug", appender-ref={org.apache.logging.log4j.core.config.AppenderRef@427aff0}, properties={}, Configuration(MyApp), null)
+2016-07-16 15:52:00,604 DEBUG Calling createLoggers on class org.apache.logging.log4j.core.config.plugins.LoggersPlugin for element loggers with params(loggers={root})
+2016-07-16 15:52:00,605 DEBUG Shutting down OutputStreamManager SYSTEM_OUT
+2016-07-16 15:52:00,605 DEBUG Reconfiguration completed
+2016-07-16 15:52:01,616 ERROR Unable to write to stream TCP:localhost:5514 for appender socket
+2016-07-16 15:52:01,617 ERROR An exception occurred processing Appender socket org.apache.logging.log4j.core.appender.AppenderRuntimeException: Error writing to TCP:localhost:5514
+	at org.apache.logging.log4j.core.net.TCPSocketManager.write(TCPSocketManager.java:120)
+	at org.apache.logging.log4j.core.appender.OutputStreamManager.write(OutputStreamManager.java:126)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.append(AbstractOutputStreamAppender.java:114)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:334)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:315)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:280)
+	at org.apache.logging.log4j.core.Logger.log(Logger.java:108)
+	at org.apache.logging.log4j.spi.AbstractLogger.error(AbstractLogger.java:1048)
+	at org.apache.logging.log4j.core.net.SocketMessageLossTest.testSocket(SocketMessageLossTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:118)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:159)
+	at org.apache.logging.log4j.core.net.TCPSocketManager.write(TCPSocketManager.java:111)
+	... 38 more
+
+2016-07-16 15:52:01,623 ERROR Unable to write to stream TCP:localhost:5514 for appender socket
+2016-07-16 15:52:01,623 ERROR An exception occurred processing Appender socket org.apache.logging.log4j.core.appender.AppenderRuntimeException: Error writing to TCP:localhost:5514
+	at org.apache.logging.log4j.core.net.TCPSocketManager.write(TCPSocketManager.java:120)
+	at org.apache.logging.log4j.core.appender.OutputStreamManager.write(OutputStreamManager.java:126)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.append(AbstractOutputStreamAppender.java:114)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:334)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:315)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:280)
+	at org.apache.logging.log4j.core.Logger.log(Logger.java:108)
+	at org.apache.logging.log4j.spi.AbstractLogger.error(AbstractLogger.java:1048)
+	at org.apache.logging.log4j.core.net.SocketMessageLossTest.testSocket(SocketMessageLossTest.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:159)
+	at org.apache.logging.log4j.core.net.TCPSocketManager.write(TCPSocketManager.java:111)
+	... 38 more
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.345 sec
+Running org.apache.logging.log4j.core.net.JMSQueueAppenderTest
+2016-07-16 15:52:02,284 DEBUG Generated plugins in 0.002631550 seconds
+2016-07-16 15:52:02,293 DEBUG Calling createLayout on class org.apache.logging.log4j.core.layout.PatternLayout for element PatternLayout with params(pattern="%m%n", Configuration(ConfigTest), null, charset="null")
+2016-07-16 15:52:02,295 DEBUG Generated plugins in 0.000855835 seconds
+2016-07-16 15:52:02,297 DEBUG Calling createAppender on class org.apache.logging.log4j.core.appender.JMSQueueAppender for element JMSQueue with params(name="JMSQueue", factoryName="null", providerURL="null", urlPkgPrefixes="null", securityPrincipalName="null", securityCredentials="null", factoryBindingName="TestQueueConnectionFactory", queueBindingName="TestQueue", userName="null", password="null", PatternLayout(%m%n), null, suppressExceptions="null")
+2016-07-16 15:52:02,308 DEBUG Starting JMSQueueManager JMSQueue:TestQueueConnectionFactory.TestQueue
+2016-07-16 15:52:02,309 DEBUG Calling createAppenders on class org.apache.logging.log4j.core.config.plugins.AppendersPlugin for element appenders with params(appenders={JMSQueue})
+2016-07-16 15:52:02,310 DEBUG Generated plugins in 0.000820286 seconds
+2016-07-16 15:52:02,311 DEBUG Calling createAppenderRef on class org.apache.logging.log4j.core.config.AppenderRef for element appender-ref with params(ref="JMSQueue", level="null", null)
+2016-07-16 15:52:02,313 DEBUG Calling createLogger on class org.apache.logging.log4j.core.config.LoggerConfig$RootLogger for element root with params(additivity="null", level="error", appender-ref={org.apache.logging.log4j.core.config.AppenderRef@730c7f9a}, properties={}, Configuration(ConfigTest), null)
+2016-07-16 15:52:02,314 DEBUG Calling createLoggers on class org.apache.logging.log4j.core.config.plugins.LoggersPlugin for element loggers with params(loggers={root})
+2016-07-16 15:52:02,314 DEBUG Shutting down OutputStreamManager SYSTEM_OUT
+2016-07-16 15:52:02,314 DEBUG Reconfiguration completed
+2016-07-16 15:52:02,327 DEBUG Generated plugins in 0.000846825 seconds
+2016-07-16 15:52:02,328 DEBUG Reconfiguration started for context Default
+2016-07-16 15:52:02,329 DEBUG Generated plugins in 0.000818679 seconds
+2016-07-16 15:52:02,332 DEBUG Generated plugins in 0.000844660 seconds
+2016-07-16 15:52:02,333 DEBUG Calling createLayout on class org.apache.logging.log4j.core.layout.PatternLayout for element PatternLayout with params(pattern="%m%n", Configuration(ConfigTest), null, charset="null")
+2016-07-16 15:52:02,334 DEBUG Generated plugins in 0.000843055 seconds
+2016-07-16 15:52:02,336 DEBUG Calling createAppender on class org.apache.logging.log4j.core.appender.JMSQueueAppender for element JMSQueue with params(name="JMSQueue", factoryName="null", providerURL="null", urlPkgPrefixes="null", securityPrincipalName="null", securityCredentials="null", factoryBindingName="TestQueueConnectionFactory", queueBindingName="TestQueue", userName="null", password="null", PatternLayout(%m%n), null, suppressExceptions="null")
+2016-07-16 15:52:02,337 DEBUG Calling createAppenders on class org.apache.logging.log4j.core.config.plugins.AppendersPlugin for element appenders with params(appenders={JMSQueue})
+2016-07-16 15:52:02,338 DEBUG Generated plugins in 0.000841657 seconds
+2016-07-16 15:52:02,338 DEBUG Calling createAppenderRef on class org.apache.logging.log4j.core.config.AppenderRef for element appender-ref with params(ref="JMSQueue", level="null", null)
+2016-07-16 15:52:02,340 DEBUG Calling createLogger on class org.apache.logging.log4j.core.config.LoggerConfig$RootLogger for element root with params(additivity="null", level="error", appender-ref={org.apache.logging.log4j.core.config.AppenderRef@4f9fe278}, properties={}, Configuration(ConfigTest), null)
+2016-07-16 15:52:02,340 DEBUG Calling createLoggers on class org.apache.logging.log4j.core.config.plugins.LoggersPlugin for element loggers with params(loggers={root})
+2016-07-16 15:52:02,341 DEBUG Shutting down OutputStreamManager SYSTEM_OUT
+2016-07-16 15:52:02,341 DEBUG Reconfiguration completed
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.495 sec
+Running org.apache.logging.log4j.core.net.PriorityTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+Running org.apache.logging.log4j.core.net.SocketReconnectTest
+2016-07-16 15:52:03,415 DEBUG Generated plugins in 0.000018019 seconds
+2016-07-16 15:52:03,428 DEBUG Calling createLayout on class org.apache.logging.log4j.core.layout.PatternLayout for element PatternLayout with params(pattern="%msg%n", Configuration(MyApp), null, charset="null")
+2016-07-16 15:52:03,428 DEBUG Generated plugins in 0.000015086 seconds
+2016-07-16 15:52:03,430 DEBUG Calling createAppender on class org.apache.logging.log4j.core.appender.SocketAppender for element Socket with params(host="localhost", port="5514", protocol="TCP", reconnectionDelay="250", name="socket", immediateFlush="null", suppressExceptions="false", PatternLayout(%msg%n), null)
+2016-07-16 15:52:03,435 DEBUG Starting TCPSocketManager TCP:localhost:5514
+2016-07-16 15:52:03,435 DEBUG Calling createAppenders on class org.apache.logging.log4j.core.config.plugins.AppendersPlugin for element appenders with params(appenders={socket})
+2016-07-16 15:52:03,436 DEBUG Generated plugins in 0.000015085 seconds
+2016-07-16 15:52:03,437 DEBUG Calling createAppenderRef on class org.apache.logging.log4j.core.config.AppenderRef for element appender-ref with params(ref="socket", level="null", null)
+2016-07-16 15:52:03,438 DEBUG Calling createLogger on class org.apache.logging.log4j.core.config.LoggerConfig$RootLogger for element root with params(additivity="null", level="debug", appender-ref={org.apache.logging.log4j.core.config.AppenderRef@498fb7b1}, properties={}, Configuration(MyApp), null)
+2016-07-16 15:52:03,439 DEBUG Calling createLoggers on class org.apache.logging.log4j.core.config.plugins.LoggersPlugin for element loggers with params(loggers={root})
+2016-07-16 15:52:03,440 DEBUG Shutting down OutputStreamManager SYSTEM_OUT
+2016-07-16 15:52:03,440 DEBUG Reconfiguration completed
+2016-07-16 15:52:03,450 ERROR Unable to write to stream TCP:localhost:5514 for appender socket
+2016-07-16 15:52:03,450 ERROR An exception occurred processing Appender socket org.apache.logging.log4j.core.appender.AppenderRuntimeException: Error writing to TCP:localhost:5514
+	at org.apache.logging.log4j.core.net.TCPSocketManager.write(TCPSocketManager.java:120)
+	at org.apache.logging.log4j.core.appender.OutputStreamManager.write(OutputStreamManager.java:126)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.append(AbstractOutputStreamAppender.java:114)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:334)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:315)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:280)
+	at org.apache.logging.log4j.core.Logger.log(Logger.java:108)
+	at org.apache.logging.log4j.spi.AbstractLogger.error(AbstractLogger.java:1048)
+	at org.apache.logging.log4j.core.net.SocketReconnectTest.testReconnect(SocketReconnectTest.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:159)
+	at org.apache.logging.log4j.core.net.TCPSocketManager.write(TCPSocketManager.java:111)
+	... 38 more
+
+2016-07-16 15:52:03,700 DEBUG Connection to localhost:5514 reestablished.
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.161 sec
+Running org.apache.logging.log4j.core.helpers.UUIDTest
+Elapsed for 200 UUIDS = 240673 Average = 1203 ns
+Elapsed for 2000 UUIDS = 7647480 Average = 3823 ns
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec
+Running org.apache.logging.log4j.core.pattern.StyleConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.349 sec
+Running org.apache.logging.log4j.core.pattern.MessagePatternConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.203 sec
+Running org.apache.logging.log4j.core.pattern.LevelPatternConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec
+Running org.apache.logging.log4j.core.pattern.MapPatternConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec
+Running org.apache.logging.log4j.core.pattern.PatternParserTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.275 sec
+Running org.apache.logging.log4j.core.pattern.RegexReplacementConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.267 sec
+Running org.apache.logging.log4j.core.pattern.NameAbbreviatorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec
+Running org.apache.logging.log4j.core.pattern.MarkerPatternConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 sec
+Running org.apache.logging.log4j.core.pattern.RegexReplacementTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.355 sec
+Running org.apache.logging.log4j.core.layout.PatternLayoutTest
+15:52:08.212 [main] DEBUG  - starting mdc pattern test
+15:52:08.213 [main] DEBUG  - empty mdc, no key specified in pattern
+15:52:08.213 [main] DEBUG  - empty mdc, key1 in pattern
+15:52:08.213 [main] DEBUG  - empty mdc, key2 in pattern
+15:52:08.213 [main] DEBUG  - empty mdc, key3 in pattern
+15:52:08.213 [main] DEBUG  - empty mdc, key1, key2, and key3 in pattern
+15:52:08.214 [main] DEBUG  - filled mdc, no key specified in pattern
+15:52:08.214 [main] DEBUG  - filled mdc, key1 in pattern
+15:52:08.214 [main] DEBUG  - filled mdc, key2 in pattern
+15:52:08.214 [main] DEBUG  - filled mdc, key3 in pattern
+15:52:08.215 [main] DEBUG  - filled mdc, key1, key2, and key3 in pattern
+15:52:08.215 [main] DEBUG  - finished mdc pattern test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.279 sec
+Running org.apache.logging.log4j.core.layout.SyslogLayoutTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.279 sec
+Running org.apache.logging.log4j.core.appender.ConsoleAppenderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.189 sec
+Running org.apache.logging.log4j.core.appender.rolling.RollingAppenderTimeAndSizeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.442 sec
+Running org.apache.logging.log4j.core.appender.rolling.RollingAppenderUncompressedTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.387 sec
+Running org.apache.logging.log4j.core.appender.rolling.OnStartupTriggeringPolicyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 sec
+Running org.apache.logging.log4j.core.appender.rolling.RollingAppenderTimeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.375 sec
+Running org.apache.logging.log4j.core.appender.rolling.RollingAppenderSizeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.395 sec
+Running org.apache.logging.log4j.core.appender.routing.JSONRoutingAppender2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.417 sec
+Running org.apache.logging.log4j.core.appender.routing.RoutingAppenderTest
+2016-07-16 15:52:32,483 DEBUG Generated plugins in 0.003384020 seconds
+2016-07-16 15:52:32,493 DEBUG Calling createProperty on class org.apache.logging.log4j.core.config.Property for element property with params(name="filename", value="target/routing1/routingtest-${sd:type}.log")
+2016-07-16 15:52:32,497 DEBUG Calling configureSubstitutor on class org.apache.logging.log4j.core.config.plugins.PropertiesPlugin for element properties with params(properties={filename=target/routing1/routingtest-${sd:type}.log}, Configuration(RoutingTest))
+2016-07-16 15:52:32,498 DEBUG Generated plugins in 0.000846266 seconds
+2016-07-16 15:52:32,500 DEBUG Calling createFilter on class org.apache.logging.log4j.core.filter.ThresholdFilter for element ThresholdFilter with params(level="debug", onMatch="null", onMismatch="null")
+2016-07-16 15:52:32,501 DEBUG Calling createLayout on class org.apache.logging.log4j.core.layout.PatternLayout for element PatternLayout with params(pattern="%m%n", Configuration(RoutingTest), null, charset="null")
+2016-07-16 15:52:32,502 DEBUG Generated plugins in 0.000834534 seconds
+2016-07-16 15:52:32,504 DEBUG Calling createAppender on class org.apache.logging.log4j.core.appender.ConsoleAppender for element Console with params(PatternLayout(%m%n), null, target="null", name="STDOUT", follow="null", suppressExceptions="null")
+2016-07-16 15:52:32,505 DEBUG Calling createFilter on class org.apache.logging.log4j.core.filter.ThresholdFilter for element ThresholdFilter with params(level="debug", onMatch="null", onMismatch="null")
+2016-07-16 15:52:32,507 DEBUG Calling createAppender on class org.apache.logging.log4j.test.appender.ListAppender for element List with params(name="List", entryPerNewLine="null", raw="null", null, ThresholdFilter(DEBUG))
+2016-07-16 15:52:32,509 DEBUG Calling createRoute on class org.apache.logging.log4j.core.appender.routing.Route for element Route with params(ref="null", key="null", Node=Route)
+2016-07-16 15:52:32,509 DEBUG Calling createRoute on class org.apache.logging.log4j.core.appender.routing.Route for element Route with params(ref="STDOUT", key="Audit", Node=Route)
+2016-07-16 15:52:32,510 DEBUG Calling createRoute on class org.apache.logging.log4j.core.appender.routing.Route for element Route with params(ref="List", key="Service", Node=Route)
+2016-07-16 15:52:32,510 DEBUG Calling createRoutes on class org.apache.logging.log4j.core.appender.routing.Routes for element Routes with params(pattern="${sd:type}", routes={Route(type=dynamic - type=Route default), Route(type=static Reference=STDOUT key='Audit'), Route(type=static Reference=List key='Service')})
+2016-07-16 15:52:32,511 DEBUG Calling createAppender on class org.apache.logging.log4j.core.appender.routing.RoutingAppender for element Routing with params(name="Routing", suppressExceptions="null", Routes({Route(type=dynamic - type=Route default),Route(type=static Reference=STDOUT key='Audit'),Route(type=static Reference=List key='Service')}), Configuration(RoutingTest), null, null)
+2016-07-16 15:52:32,512 DEBUG Calling createAppenders on class org.apache.logging.log4j.core.config.plugins.AppendersPlugin for element appenders with params(appenders={STDOUT, List, Routing})
+2016-07-16 15:52:32,513 DEBUG Calling createAppenderRef on class org.apache.logging.log4j.core.config.AppenderRef for element appender-ref with params(ref="Routing", level="null", null)
+2016-07-16 15:52:32,514 DEBUG Calling createLogger on class org.apache.logging.log4j.core.config.LoggerConfig for element logger with params(additivity="false", level="info", name="EventLogger", appender-ref={org.apache.logging.log4j.core.config.AppenderRef@a614146}, properties={}, Configuration(RoutingTest), null)
+2016-07-16 15:52:32,516 DEBUG Calling createAppenderRef on class org.apache.logging.log4j.core.config.AppenderRef for element appender-ref with params(ref="STDOUT", level="null", null)
+2016-07-16 15:52:32,517 DEBUG Calling createLogger on class org.apache.logging.log4j.core.config.LoggerConfig$RootLogger for element root with params(additivity="null", level="error", appender-ref={org.apache.logging.log4j.core.config.AppenderRef@1f7a6f44}, properties={}, Configuration(RoutingTest), null)
+2016-07-16 15:52:32,518 DEBUG Calling createLoggers on class org.apache.logging.log4j.core.config.plugins.LoggersPlugin for element loggers with params(loggers={EventLogger, root})
+2016-07-16 15:52:32,518 DEBUG Reconfiguration completed
+2016-07-16 15:52:32,529 DEBUG Calling createLayout on class org.apache.logging.log4j.core.layout.PatternLayout for element PatternLayout with params(pattern="%d %p %C{1.} [%t] %m%n", Configuration(RoutingTest), null, charset="null")
+2016-07-16 15:52:32,531 DEBUG Calling createPolicy on class org.apache.logging.log4j.core.appender.rolling.SizeBasedTriggeringPolicy for element SizeBasedTriggeringPolicy with params(size="500")
+2016-07-16 15:52:32,532 DEBUG Calling createAppender on class org.apache.logging.log4j.core.appender.RollingFileAppender for element RollingFile with params(fileName="target/routing1/routingtest-Alert.log", filePattern="target/routing1/test1-Alert.%i.log.gz", append="null", name="Routing-Alert", bufferedIO="null", immediateFlush="null", SizeBasedTriggeringPolicy(SizeBasedTriggeringPolicy(size=500)), null, PatternLayout(%d %p %C{1.} [%t] %m%n), null, suppressExceptions="null", Configuration(RoutingTest))
+2016-07-16 15:52:32,534 DEBUG Starting RollingFileManager target/routing1/routingtest-Alert.log
+2016-07-16 15:52:32,537 DEBUG Generated plugins in 0.000981969 seconds
+2016-07-16 15:52:32,538 DEBUG Calling createLayout on class org.apache.logging.log4j.core.layout.PatternLayout for element PatternLayout with params(pattern="%d %p %C{1.} [%t] %m%n", Configuration(RoutingTest), null, charset="null")
+2016-07-16 15:52:32,539 DEBUG Calling createPolicy on class org.apache.logging.log4j.core.appender.rolling.SizeBasedTriggeringPolicy for element SizeBasedTriggeringPolicy with params(size="500")
+2016-07-16 15:52:32,540 DEBUG Calling createAppender on class org.apache.logging.log4j.core.appender.RollingFileAppender for element RollingFile with params(fileName="target/routing1/routingtest-Activity.log", filePattern="target/routing1/test1-Activity.%i.log.gz", append="null", name="Routing-Activity", bufferedIO="null", immediateFlush="null", SizeBasedTriggeringPolicy(SizeBasedTriggeringPolicy(size=500)), null, PatternLayout(%d %p %C{1.} [%t] %m%n), null, suppressExceptions="null", Configuration(RoutingTest))
+2016-07-16 15:52:32,541 DEBUG Starting RollingFileManager target/routing1/routingtest-Activity.log
+2016-07-16 15:52:32,542 DEBUG Generated plugins in 0.000974425 seconds
+2016-07-16 15:52:32,543 DEBUG Reconfiguration started for context sun.misc.Launcher$AppClassLoader@1395ddba
+2016-07-16 15:52:32,544 DEBUG Generated plugins in 0.000808063 seconds
+2016-07-16 15:52:32,564 DEBUG Generated plugins in 0.000753099 seconds
+2016-07-16 15:52:32,566 DEBUG Generated plugins in 0.000722159 seconds
+2016-07-16 15:52:32,567 DEBUG Shutting down RollingFileManager target/routing1/routingtest-Activity.log
+2016-07-16 15:52:32,567 DEBUG Shutting down RollingFileManager target/routing1/routingtest-Alert.log
+2016-07-16 15:52:32,567 DEBUG Reconfiguration completed
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.353 sec
+Running org.apache.logging.log4j.core.appender.routing.JSONRoutingAppenderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.415 sec
+Running org.apache.logging.log4j.core.appender.FileAppenderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.745 sec
+Running org.apache.logging.log4j.core.appender.OutputStreamAppenderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.165 sec
+Running org.apache.logging.log4j.core.appender.FailoverAppenderTest
+2016-07-16 15:52:34,747 ERROR logger contains an invalid element or attribute "additvity"
+2016-07-16 15:52:34,759 ERROR An exception occurred processing Appender Fail org.apache.logging.log4j.LoggingException: Always fail
+	at org.apache.logging.log4j.test.appender.AlwaysFailAppender.append(AlwaysFailAppender.java:37)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	at org.apache.logging.log4j.core.appender.FailoverAppender.callAppender(FailoverAppender.java:122)
+	at org.apache.logging.log4j.core.appender.FailoverAppender.append(FailoverAppender.java:109)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:334)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:315)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:280)
+	at org.apache.logging.log4j.core.Logger.log(Logger.java:108)
+	at org.apache.logging.log4j.spi.AbstractLogger.error(AbstractLogger.java:1048)
+	at org.apache.logging.log4j.core.appender.FailoverAppenderTest.testFailover(FailoverAppenderTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-07-16 15:52:34,765 ERROR An exception occurred processing Appender Once org.apache.logging.log4j.LoggingException: Always fail
+	at org.apache.logging.log4j.test.appender.FailOnceAppender.append(FailOnceAppender.java:46)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	at org.apache.logging.log4j.core.appender.FailoverAppender.callAppender(FailoverAppender.java:122)
+	at org.apache.logging.log4j.core.appender.FailoverAppender.append(FailoverAppender.java:109)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:334)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:315)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:280)
+	at org.apache.logging.log4j.core.Logger.log(Logger.java:108)
+	at org.apache.logging.log4j.spi.AbstractLogger.error(AbstractLogger.java:1048)
+	at org.apache.logging.log4j.core.appender.FailoverAppenderTest.testRecovery(FailoverAppenderTest.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.428 sec
+Running org.apache.logging.log4j.core.appender.SyslogAppenderTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.284 sec
+Running org.apache.logging.log4j.core.appender.rewrite.RewriteAppenderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.335 sec
+Running org.apache.logging.log4j.core.CollectionLoggingTest
+15:52:37.569 [main] ERROR org.apache.logging.log4j.core.CollectionLoggingTest - {Big5=Big5, Big5-HKSCS=Big5-HKSCS, EUC-JP=EUC-JP, EUC-KR=EUC-KR, GB18030=GB18030, GB2312=GB2312, GBK=GBK, IBM-Thai=IBM-Thai, IBM00858=IBM00858, IBM01140=IBM01140, IBM01141=IBM01141, IBM01142=IBM01142, IBM01143=IBM01143, IBM01144=IBM01144, IBM01145=IBM01145, IBM01146=IBM01146, IBM01147=IBM01147, IBM01148=IBM01148, IBM01149=IBM01149, IBM037=IBM037, IBM1026=IBM1026, IBM1047=IBM1047, IBM273=IBM273, IBM277=IBM277, IBM278=IBM278, IBM280=IBM280, IBM284=IBM284, IBM285=IBM285, IBM290=IBM290, IBM297=IBM297, IBM420=IBM420, IBM424=IBM424, IBM437=IBM437, IBM500=IBM500, IBM775=IBM775, IBM850=IBM850, IBM852=IBM852, IBM855=IBM855, IBM857=IBM857, IBM860=IBM860, IBM861=IBM861, IBM862=IBM862, IBM863=IBM863, IBM864=IBM864, IBM865=IBM865, IBM866=IBM866, IBM868=IBM868, IBM869=IBM869, IBM870=IBM870, IBM871=IBM871, IBM918=IBM918, ISO-2022-CN=ISO-2022-CN, ISO-2022-JP=ISO-2022-JP, ISO-2022-JP-2=ISO-2022-JP-2, ISO-2022-KR=ISO-2022-KR, ISO-8859-1=ISO-8859-1, ISO-8859-13=ISO-8859-13, ISO-8859-15=ISO-8859-15, ISO-8859-2=ISO-8859-2, ISO-8859-3=ISO-8859-3, ISO-8859-4=ISO-8859-4, ISO-8859-5=ISO-8859-5, ISO-8859-6=ISO-8859-6, ISO-8859-7=ISO-8859-7, ISO-8859-8=ISO-8859-8, ISO-8859-9=ISO-8859-9, JIS_X0201=JIS_X0201, JIS_X0212-1990=JIS_X0212-1990, KOI8-R=KOI8-R, KOI8-U=KOI8-U, Shift_JIS=Shift_JIS, TIS-620=TIS-620, US-ASCII=US-ASCII, UTF-16=UTF-16, UTF-16BE=UTF-16BE, UTF-16LE=UTF-16LE, UTF-32=UTF-32, UTF-32BE=UTF-32BE, UTF-32LE=UTF-32LE, UTF-8=UTF-8, windows-1250=windows-1250, windows-1251=windows-1251, windows-1252=windows-1252, windows-1253=windows-1253, windows-1254=windows-1254, windows-1255=windows-1255, windows-1256=windows-1256, windows-1257=windows-1257, windows-1258=windows-1258, windows-31j=windows-31j, x-Big5-HKSCS-2001=x-Big5-HKSCS-2001, x-Big5-Solaris=x-Big5-Solaris, x-COMPOUND_TEXT=x-COMPOUND_TEXT, x-euc-jp-linux=x-euc-jp-linux, x-EUC-TW=x-EUC-TW, x-eucJP-Open=x-eucJP-Open, x-IBM1006=x-IBM1006, x-IBM1025=x-IBM1025, x-IBM1046=x-IBM1046, x-IBM1097=x-IBM1097, x-IBM1098=x-IBM1098, x-IBM1112=x-IBM1112, x-IBM1122=x-IBM1122, x-IBM1123=x-IBM1123, x-IBM1124=x-IBM1124, x-IBM1364=x-IBM1364, x-IBM1381=x-IBM1381, x-IBM1383=x-IBM1383, x-IBM300=x-IBM300, x-IBM33722=x-IBM33722, x-IBM737=x-IBM737, x-IBM833=x-IBM833, x-IBM834=x-IBM834, x-IBM856=x-IBM856, x-IBM874=x-IBM874, x-IBM875=x-IBM875, x-IBM921=x-IBM921, x-IBM922=x-IBM922, x-IBM930=x-IBM930, x-IBM933=x-IBM933, x-IBM935=x-IBM935, x-IBM937=x-IBM937, x-IBM939=x-IBM939, x-IBM942=x-IBM942, x-IBM942C=x-IBM942C, x-IBM943=x-IBM943, x-IBM943C=x-IBM943C, x-IBM948=x-IBM948, x-IBM949=x-IBM949, x-IBM949C=x-IBM949C, x-IBM950=x-IBM950, x-IBM964=x-IBM964, x-IBM970=x-IBM970, x-ISCII91=x-ISCII91, x-ISO-2022-CN-CNS=x-ISO-2022-CN-CNS, x-ISO-2022-CN-GB=x-ISO-2022-CN-GB, x-iso-8859-11=x-iso-8859-11, x-JIS0208=x-JIS0208, x-JISAutoDetect=x-JISAutoDetect, x-Johab=x-Johab, x-MacArabic=x-MacArabic, x-MacCentralEurope=x-MacCentralEurope, x-MacCroatian=x-MacCroatian, x-MacCyrillic=x-MacCyrillic, x-MacDingbat=x-MacDingbat, x-MacGreek=x-MacGreek, x-MacHebrew=x-MacHebrew, x-MacIceland=x-MacIceland, x-MacRoman=x-MacRoman, x-MacRomania=x-MacRomania, x-MacSymbol=x-MacSymbol, x-MacThai=x-MacThai, x-MacTurkish=x-MacTurkish, x-MacUkraine=x-MacUkraine, x-MS932_0213=x-MS932_0213, x-MS950-HKSCS=x-MS950-HKSCS, x-MS950-HKSCS-XP=x-MS950-HKSCS-XP, x-mswin-936=x-mswin-936, x-PCK=x-PCK, x-SJIS_0213=x-SJIS_0213, x-UTF-16LE-BOM=x-UTF-16LE-BOM, X-UTF-32BE-BOM=X-UTF-32BE-BOM, X-UTF-32LE-BOM=X-UTF-32LE-BOM, x-windows-50220=x-windows-50220, x-windows-50221=x-windows-50221, x-windows-874=x-windows-874, x-windows-949=x-windows-949, x-windows-950=x-windows-950, x-windows-iso2022jp=x-windows-iso2022jp}
+15:52:37.573 [main] ERROR org.apache.logging.log4j.core.CollectionLoggingTest - {java.runtime.name=OpenJDK Runtime Environment, sun.boot.library.path=/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64, java.vm.version=24.95-b01, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=OpenJDK 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core, java.runtime.version=1.7.0_101-b00, basedir=/home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.endorsed.dirs=/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/endorsed, os.arch=amd64, surefire.real.class.path=/home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core/target/surefire/surefirebooter2572192530447841737.jar, java.io.tmpdir=/tmp, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, os.name=Linux, sun.jnu.encoding=UTF-8, java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, surefire.test.class.path=/home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core/target/test-classes:/home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core/target/classes:/home/ylyu/.m2/repository/org/apache/logging/log4j/log4j-api/2.0-beta4-SNAPSHOT/log4j-api-2.0-beta4-SNAPSHOT.jar:/home/ylyu/.m2/repository/org/osgi/core/4.3.0/core-4.3.0.jar:/home/ylyu/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.2/jackson-core-asl-1.9.2.jar:/home/ylyu/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.2/jackson-mapper-asl-1.9.2.jar:/home/ylyu/.m2/repository/org/fusesource/jansi/jansi/1.9/jansi-1.9.jar:/home/ylyu/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/home/ylyu/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16.jar:/home/ylyu/.m2/repository/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar:/home/ylyu/.m2/repository/org/slf4j/slf4j-ext/1.7.2/slf4j-ext-1.7.2.jar:/home/ylyu/.m2/repository/ch/qos/cal10n/cal10n-api/0.7.4/cal10n-api-0.7.4.jar:/home/ylyu/.m2/repository/junit/junit/4.7/junit-4.7.jar:/home/ylyu/.m2/repository/org/mockejb/mockejb/0.6-beta2/mockejb-0.6-beta2.jar:/home/ylyu/.m2/repository/cglib/cglib-full/2.0.2/cglib-full-2.0.2.jar:/home/ylyu/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar:/home/ylyu/.m2/repository/ch/qos/logback/logback-core/1.0.7/logback-core-1.0.7.jar:/home/ylyu/.m2/repository/ch/qos/logback/logback-classic/1.0.7/logback-classic-1.0.7.jar:/home/ylyu/.m2/repository/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.0/geronimo-jms_1.1_spec-1.0.jar:/home/ylyu/.m2/repository/javax/mail/mail/1.4.5/mail-1.4.5.jar:/home/ylyu/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:, java.specification.name=Java Platform API Specification, java.class.version=51.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=4.2.0-27-generic, user.home=/home/ylyu, user.timezone=America/Los_Angeles, java.awt.printerjob=sun.print.PSPrinterJob, file.encoding=UTF-8, java.specification.version=1.7, java.class.path=/home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core/target/test-classes:/home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core/target/classes:/home/ylyu/.m2/repository/org/apache/logging/log4j/log4j-api/2.0-beta4-SNAPSHOT/log4j-api-2.0-beta4-SNAPSHOT.jar:/home/ylyu/.m2/repository/org/osgi/core/4.3.0/core-4.3.0.jar:/home/ylyu/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.2/jackson-core-asl-1.9.2.jar:/home/ylyu/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.2/jackson-mapper-asl-1.9.2.jar:/home/ylyu/.m2/repository/org/fusesource/jansi/jansi/1.9/jansi-1.9.jar:/home/ylyu/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/home/ylyu/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16.jar:/home/ylyu/.m2/repository/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar:/home/ylyu/.m2/repository/org/slf4j/slf4j-ext/1.7.2/slf4j-ext-1.7.2.jar:/home/ylyu/.m2/repository/ch/qos/cal10n/cal10n-api/0.7.4/cal10n-api-0.7.4.jar:/home/ylyu/.m2/repository/junit/junit/4.7/junit-4.7.jar:/home/ylyu/.m2/repository/org/mockejb/mockejb/0.6-beta2/mockejb-0.6-beta2.jar:/home/ylyu/.m2/repository/cglib/cglib-full/2.0.2/cglib-full-2.0.2.jar:/home/ylyu/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar:/home/ylyu/.m2/repository/ch/qos/logback/logback-core/1.0.7/logback-core-1.0.7.jar:/home/ylyu/.m2/repository/ch/qos/logback/logback-classic/1.0.7/logback-classic-1.0.7.jar:/home/ylyu/.m2/repository/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.0/geronimo-jms_1.1_spec-1.0.jar:/home/ylyu/.m2/repository/javax/mail/mail/1.4.5/mail-1.4.5.jar:/home/ylyu/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:, user.name=ylyu, java.vm.specification.version=1.7, sun.java.command=/home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core/target/surefire/surefirebooter2572192530447841737.jar /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core/target/surefire/surefire1035097592001875656tmp /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core/target/surefire/surefire_634969349405856180990tmp, java.home=/usr/lib/jvm/java-7-openjdk-amd64/jre, sun.arch.data.model=64, user.language=en, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.X11.XToolkit, java.vm.info=mixed mode, java.version=1.7.0_101, java.ext.dirs=/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext, sun.boot.class.path=/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes, java.vendor=Oracle Corporation, localRepository=/home/ylyu/.m2/repository, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.cpu.isalist=}
+15:52:37.574 [main] ERROR org.apache.logging.log4j.core.CollectionLoggingTest - {java.runtime.name=OpenJDK Runtime Environment, sun.boot.library.path=/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64, java.vm.version=24.95-b01, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=OpenJDK 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core, java.runtime.version=1.7.0_101-b00, basedir=/home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.endorsed.dirs=/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/endorsed, os.arch=amd64, surefire.real.class.path=/home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core/target/surefire/surefirebooter2572192530447841737.jar, java.io.tmpdir=/tmp, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, os.name=Linux, sun.jnu.encoding=UTF-8, java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, surefire.test.class.path=/home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core/target/test-classes:/home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core/target/classes:/home/ylyu/.m2/repository/org/apache/logging/log4j/log4j-api/2.0-beta4-SNAPSHOT/log4j-api-2.0-beta4-SNAPSHOT.jar:/home/ylyu/.m2/repository/org/osgi/core/4.3.0/core-4.3.0.jar:/home/ylyu/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.2/jackson-core-asl-1.9.2.jar:/home/ylyu/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.2/jackson-mapper-asl-1.9.2.jar:/home/ylyu/.m2/repository/org/fusesource/jansi/jansi/1.9/jansi-1.9.jar:/home/ylyu/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/home/ylyu/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16.jar:/home/ylyu/.m2/repository/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar:/home/ylyu/.m2/repository/org/slf4j/slf4j-ext/1.7.2/slf4j-ext-1.7.2.jar:/home/ylyu/.m2/repository/ch/qos/cal10n/cal10n-api/0.7.4/cal10n-api-0.7.4.jar:/home/ylyu/.m2/repository/junit/junit/4.7/junit-4.7.jar:/home/ylyu/.m2/repository/org/mockejb/mockejb/0.6-beta2/mockejb-0.6-beta2.jar:/home/ylyu/.m2/repository/cglib/cglib-full/2.0.2/cglib-full-2.0.2.jar:/home/ylyu/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar:/home/ylyu/.m2/repository/ch/qos/logback/logback-core/1.0.7/logback-core-1.0.7.jar:/home/ylyu/.m2/repository/ch/qos/logback/logback-classic/1.0.7/logback-classic-1.0.7.jar:/home/ylyu/.m2/repository/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.0/geronimo-jms_1.1_spec-1.0.jar:/home/ylyu/.m2/repository/javax/mail/mail/1.4.5/mail-1.4.5.jar:/home/ylyu/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:, java.specification.name=Java Platform API Specification, java.class.version=51.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=4.2.0-27-generic, user.home=/home/ylyu, user.timezone=America/Los_Angeles, java.awt.printerjob=sun.print.PSPrinterJob, file.encoding=UTF-8, java.specification.version=1.7, java.class.path=/home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core/target/test-classes:/home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core/target/classes:/home/ylyu/.m2/repository/org/apache/logging/log4j/log4j-api/2.0-beta4-SNAPSHOT/log4j-api-2.0-beta4-SNAPSHOT.jar:/home/ylyu/.m2/repository/org/osgi/core/4.3.0/core-4.3.0.jar:/home/ylyu/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.2/jackson-core-asl-1.9.2.jar:/home/ylyu/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.2/jackson-mapper-asl-1.9.2.jar:/home/ylyu/.m2/repository/org/fusesource/jansi/jansi/1.9/jansi-1.9.jar:/home/ylyu/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/home/ylyu/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16.jar:/home/ylyu/.m2/repository/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar:/home/ylyu/.m2/repository/org/slf4j/slf4j-ext/1.7.2/slf4j-ext-1.7.2.jar:/home/ylyu/.m2/repository/ch/qos/cal10n/cal10n-api/0.7.4/cal10n-api-0.7.4.jar:/home/ylyu/.m2/repository/junit/junit/4.7/junit-4.7.jar:/home/ylyu/.m2/repository/org/mockejb/mockejb/0.6-beta2/mockejb-0.6-beta2.jar:/home/ylyu/.m2/repository/cglib/cglib-full/2.0.2/cglib-full-2.0.2.jar:/home/ylyu/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar:/home/ylyu/.m2/repository/ch/qos/logback/logback-core/1.0.7/logback-core-1.0.7.jar:/home/ylyu/.m2/repository/ch/qos/logback/logback-classic/1.0.7/logback-classic-1.0.7.jar:/home/ylyu/.m2/repository/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.0/geronimo-jms_1.1_spec-1.0.jar:/home/ylyu/.m2/repository/javax/mail/mail/1.4.5/mail-1.4.5.jar:/home/ylyu/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:, user.name=ylyu, java.vm.specification.version=1.7, sun.java.command=/home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core/target/surefire/surefirebooter2572192530447841737.jar /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core/target/surefire/surefire1035097592001875656tmp /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core/target/surefire/surefire_634969349405856180990tmp, java.home=/usr/lib/jvm/java-7-openjdk-amd64/jre, sun.arch.data.model=64, user.language=en, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.X11.XToolkit, java.vm.info=mixed mode, java.version=1.7.0_101, java.ext.dirs=/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext, sun.boot.class.path=/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes, java.vendor=Oracle Corporation, localRepository=/home/ylyu/.m2/repository, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.cpu.isalist=}
+15:52:37.576 [main] ERROR org.apache.logging.log4j.core.CollectionLoggingTest - MyKey1="MyValue1" MyKey2="MyValue2"
+15:52:37.576 [main] ERROR org.apache.logging.log4j.core.CollectionLoggingTest - {MyKey2=MyValue2, MyKey1=MyValue1}
+15:52:37.577 [main] ERROR org.apache.logging.log4j.core.CollectionLoggingTest - java.net.NetworkInterface$1@7b446af8
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.339 sec
+
+Results :
+
+Failed tests:   testFilter(org.apache.logging.log4j.core.filter.ThreadContextMapFilterTest)
+
+Tests run: 112, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:09 min
+[INFO] Finished at: 2016-07-16T15:52:37-07:00
+[INFO] Final Memory: 19M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project log4j-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-147_1729608908b9691ad9f68bd53da3b0479fa46138/core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,95 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building stratosphere-compiler 0.6-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.12.1:check (validate) @ stratosphere-compiler ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven) @ stratosphere-compiler ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ stratosphere-compiler ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /space/parallel/flink/flink9/dataset/flink/FLINK-996_32a003d5c0f507f4634851434e8ffb8ce6b880b2/stratosphere-compiler/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ stratosphere-compiler ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ stratosphere-compiler ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /space/parallel/flink/flink9/dataset/flink/FLINK-996_32a003d5c0f507f4634851434e8ffb8ce6b880b2/stratosphere-compiler/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ stratosphere-compiler ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ stratosphere-compiler ---
+[INFO] Surefire report directory: /space/parallel/flink/flink9/dataset/flink/FLINK-996_32a003d5c0f507f4634851434e8ffb8ce6b880b2/stratosphere-compiler/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running eu.stratosphere.compiler.plandump.NumberFormattingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec - in eu.stratosphere.compiler.plandump.NumberFormattingTest
+Running eu.stratosphere.pact.compiler.BranchingPlansCompilerTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.94 sec - in eu.stratosphere.pact.compiler.BranchingPlansCompilerTest
+Running eu.stratosphere.pact.compiler.FeedbackPropertiesMatchTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in eu.stratosphere.pact.compiler.FeedbackPropertiesMatchTest
+Running eu.stratosphere.pact.compiler.UnionReplacementTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec <<< FAILURE! - in eu.stratosphere.pact.compiler.UnionReplacementTest
+testUnionReplacement(eu.stratosphere.pact.compiler.UnionReplacementTest)  Time elapsed: 0.032 sec  <<< FAILURE!
+java.lang.AssertionError: The Pact compiler is unable to compile this plan correctly.
+	at org.junit.Assert.fail(Assert.java:91)
+	at eu.stratosphere.pact.compiler.UnionReplacementTest.testUnionReplacement(UnionReplacementTest.java:46)
+
+Running eu.stratosphere.pact.compiler.AdditionalOperatorsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in eu.stratosphere.pact.compiler.AdditionalOperatorsTest
+Running eu.stratosphere.pact.compiler.ReduceCompilationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in eu.stratosphere.pact.compiler.ReduceCompilationTest
+Running eu.stratosphere.pact.compiler.GroupReduceCompilationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in eu.stratosphere.pact.compiler.GroupReduceCompilationTest
+Running eu.stratosphere.pact.compiler.WorksetIterationsRecordApiCompilerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec - in eu.stratosphere.pact.compiler.WorksetIterationsRecordApiCompilerTest
+Running eu.stratosphere.pact.compiler.HardPlansCompilationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in eu.stratosphere.pact.compiler.HardPlansCompilationTest
+Running eu.stratosphere.pact.compiler.CoGroupSolutionSetFirstTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in eu.stratosphere.pact.compiler.CoGroupSolutionSetFirstTest
+Running eu.stratosphere.pact.compiler.UnionPropertyPropagationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in eu.stratosphere.pact.compiler.UnionPropertyPropagationTest
+Running eu.stratosphere.pact.compiler.GroupOrderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in eu.stratosphere.pact.compiler.GroupOrderTest
+Running eu.stratosphere.pact.compiler.IterationsCompilerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.199 sec - in eu.stratosphere.pact.compiler.IterationsCompilerTest
+Running eu.stratosphere.pact.compiler.BroadcastVariablePipelinebreakerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in eu.stratosphere.pact.compiler.BroadcastVariablePipelinebreakerTest
+Running eu.stratosphere.pact.compiler.DOPChangeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in eu.stratosphere.pact.compiler.DOPChangeTest
+Running eu.stratosphere.pact.compiler.WorksetIterationsJavaApiCompilerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec - in eu.stratosphere.pact.compiler.WorksetIterationsJavaApiCompilerTest
+Running eu.stratosphere.pact.compiler.ReduceAllTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in eu.stratosphere.pact.compiler.ReduceAllTest
+
+Results :
+
+Failed tests: 
+  UnionReplacementTest.testUnionReplacement:46 The Pact compiler is unable to compile this plan correctly.
+
+Tests run: 64, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.960 s
+[INFO] Finished at: 2016-07-15T09:33:59-07:00
+[INFO] Final Memory: 39M/1963M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.16:test (default-test) on project stratosphere-compiler: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /space/parallel/flink/flink9/dataset/flink/FLINK-996_32a003d5c0f507f4634851434e8ffb8ce6b880b2/stratosphere-compiler/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

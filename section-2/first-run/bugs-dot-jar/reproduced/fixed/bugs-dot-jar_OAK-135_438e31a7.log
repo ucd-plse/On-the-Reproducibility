@@ -1,0 +1,594 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.jackrabbit:oak-it-osgi:jar:0.3-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-failsafe-plugin is missing. @ org.apache.jackrabbit:oak-it-osgi:[unknown-version], /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/pom.xml, line 56, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Oak Parent POM                                                     [pom]
+[INFO] Oak Commons                                                     [bundle]
+[INFO] Oak MicroKernel                                                 [bundle]
+[INFO] Oak Integration Tests for MicroKernel implementations              [jar]
+[INFO] Oak Core                                                        [bundle]
+[INFO] Oak JCR Binding                                                 [bundle]
+[INFO] Oak support for Apache Sling                                    [bundle]
+[INFO] Oak Runnable Jar                                                   [jar]
+[INFO] Oak Integration Tests for JCR                                      [jar]
+[INFO] Oak Integration Tests for OSGi deployments                         [jar]
+[INFO] Oak Integration Tests                                              [pom]
+[INFO] Oak Benchmark                                                      [jar]
+[INFO] Jackrabbit Oak                                                     [pom]
+[INFO] 
+[INFO] ------------------< org.apache.jackrabbit:oak-parent >------------------
+[INFO] Building Oak Parent POM 0.3-SNAPSHOT                              [1/13]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ oak-parent ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.0:attach-descriptor (attach-descriptor) @ oak-parent ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-parent ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-parent/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-parent/0.3-SNAPSHOT/oak-parent-0.3-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.apache.jackrabbit:oak-commons >------------------
+[INFO] Building Oak Commons 0.3-SNAPSHOT                                 [2/13]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ oak-commons ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ oak-commons ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-commons/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ oak-commons ---
+[INFO] Compiling 2 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-commons/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ oak-commons ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-commons/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ oak-commons ---
+[INFO] Compiling 2 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-commons/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ oak-commons ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ oak-commons ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.0:attach-descriptor (attach-descriptor) @ oak-commons ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-commons ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-commons/target/oak-commons-0.3-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-commons/0.3-SNAPSHOT/oak-commons-0.3-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-commons/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-commons/0.3-SNAPSHOT/oak-commons-0.3-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ oak-commons ---
+[INFO] Installing org/apache/jackrabbit/oak-commons/0.3-SNAPSHOT/oak-commons-0.3-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO] 
+[INFO] --------------------< org.apache.jackrabbit:oak-mk >--------------------
+[INFO] Building Oak MicroKernel 0.3-SNAPSHOT                             [3/13]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ oak-mk ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ oak-mk ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 20 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ oak-mk ---
+[INFO] Compiling 84 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.7.4:scr (generate-scr-scrdescriptor) @ oak-mk ---
+[INFO] Writing abstract service descriptor /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/scr-plugin-generated/OSGI-INF/scr-plugin/scrinfo.xml with 1 entries.
+[INFO] Generating 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/scr-plugin-generated/OSGI-INF/serviceComponents.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ oak-mk ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ oak-mk ---
+[INFO] Compiling 20 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ oak-mk ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ oak-mk ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.0:attach-descriptor (attach-descriptor) @ oak-mk ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-mk ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-0.3-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-mk/0.3-SNAPSHOT/oak-mk-0.3-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-mk/0.3-SNAPSHOT/oak-mk-0.3-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ oak-mk ---
+[INFO] Installing org/apache/jackrabbit/oak-mk/0.3-SNAPSHOT/oak-mk-0.3-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO] 
+[INFO] ------------------< org.apache.jackrabbit:oak-it-mk >-------------------
+[INFO] Building Oak Integration Tests for MicroKernel implementations 0.3-SNAPSHOT [4/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ oak-it-mk ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ oak-it-mk ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/mk/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ oak-it-mk ---
+[INFO] Compiling 6 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/mk/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ oak-it-mk ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ oak-it-mk ---
+[INFO] Compiling 3 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/mk/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ oak-it-mk ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ oak-it-mk ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/mk/target/oak-it-mk-0.3-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.0:attach-descriptor (attach-descriptor) @ oak-it-mk ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-it-mk ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/mk/target/oak-it-mk-0.3-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-it-mk/0.3-SNAPSHOT/oak-it-mk-0.3-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/mk/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-it-mk/0.3-SNAPSHOT/oak-it-mk-0.3-SNAPSHOT.pom
+[INFO] 
+[INFO] -------------------< org.apache.jackrabbit:oak-core >-------------------
+[INFO] Building Oak Core 0.3-SNAPSHOT                                    [5/13]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ oak-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ oak-core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-core/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ oak-core ---
+[INFO] Compiling 179 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-core/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.7.4:scr (generate-scr-scrdescriptor) @ oak-core ---
+[INFO] Writing abstract service descriptor /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-core/target/scr-plugin-generated/OSGI-INF/scr-plugin/scrinfo.xml with 2 entries.
+[INFO] Generating 2 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-core/target/scr-plugin-generated/OSGI-INF/serviceComponents.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ oak-core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ oak-core ---
+[INFO] Compiling 48 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-core/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ oak-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ oak-core ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.0:attach-descriptor (attach-descriptor) @ oak-core ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-core ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-core/target/oak-core-0.3-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-core/0.3-SNAPSHOT/oak-core-0.3-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-core/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-core/0.3-SNAPSHOT/oak-core-0.3-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ oak-core ---
+[INFO] Installing org/apache/jackrabbit/oak-core/0.3-SNAPSHOT/oak-core-0.3-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO] 
+[INFO] -------------------< org.apache.jackrabbit:oak-jcr >--------------------
+[INFO] Building Oak JCR Binding 0.3-SNAPSHOT                             [6/13]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ oak-jcr ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ oak-jcr ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ oak-jcr ---
+[INFO] Compiling 90 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ oak-jcr ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ oak-jcr ---
+[INFO] Compiling 17 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ oak-jcr ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ oak-jcr ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.0:attach-descriptor (attach-descriptor) @ oak-jcr ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-jcr ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/target/oak-jcr-0.3-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-jcr/0.3-SNAPSHOT/oak-jcr-0.3-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-jcr/0.3-SNAPSHOT/oak-jcr-0.3-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ oak-jcr ---
+[INFO] Installing org/apache/jackrabbit/oak-jcr/0.3-SNAPSHOT/oak-jcr-0.3-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO] 
+[INFO] ------------------< org.apache.jackrabbit:oak-sling >-------------------
+[INFO] Building Oak support for Apache Sling 0.3-SNAPSHOT                [7/13]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ oak-sling ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ oak-sling ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-sling/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ oak-sling ---
+[INFO] Compiling 2 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-sling/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ oak-sling ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-sling/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ oak-sling ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ oak-sling ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ oak-sling ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.0:attach-descriptor (attach-descriptor) @ oak-sling ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-sling ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-sling/target/oak-sling-0.3-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-sling/0.3-SNAPSHOT/oak-sling-0.3-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-sling/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-sling/0.3-SNAPSHOT/oak-sling-0.3-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ oak-sling ---
+[INFO] Installing org/apache/jackrabbit/oak-sling/0.3-SNAPSHOT/oak-sling-0.3-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO] 
+[INFO] -------------------< org.apache.jackrabbit:oak-run >--------------------
+[INFO] Building Oak Runnable Jar 0.3-SNAPSHOT                            [8/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ oak-run ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ oak-run ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ oak-run ---
+[INFO] Compiling 3 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ oak-run ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ oak-run ---
+[INFO] Compiling 1 source file to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ oak-run ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ oak-run ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/target/oak-run-0.3-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.0:attach-descriptor (attach-descriptor) @ oak-run ---
+[INFO] 
+[INFO] --- maven-shade-plugin:1.6:shade (default) @ oak-run ---
+[INFO] Including org.apache.jackrabbit:oak-jcr:jar:0.3-SNAPSHOT in the shaded jar.
+[INFO] Including javax.jcr:jcr:jar:2.0 in the shaded jar.
+[INFO] Including org.apache.jackrabbit:oak-core:jar:0.3-SNAPSHOT in the shaded jar.
+[INFO] Including org.apache.jackrabbit:oak-mk:jar:0.3-SNAPSHOT in the shaded jar.
+[INFO] Including org.apache.jackrabbit:oak-commons:jar:0.3-SNAPSHOT in the shaded jar.
+[INFO] Including com.google.code.findbugs:jsr305:jar:2.0.0 in the shaded jar.
+[INFO] Including org.apache.jackrabbit:jackrabbit-api:jar:2.6-SNAPSHOT in the shaded jar.
+[INFO] Including org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.6-SNAPSHOT in the shaded jar.
+[INFO] Including commons-collections:commons-collections:jar:3.2.1 in the shaded jar.
+[INFO] Including commons-io:commons-io:jar:1.4 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-api:jar:1.6.4 in the shaded jar.
+[INFO] Including com.h2database:h2:jar:1.3.158 in the shaded jar.
+[INFO] Including org.apache.jackrabbit:jackrabbit-jcr-server:jar:2.6-SNAPSHOT in the shaded jar.
+[INFO] Including org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.6-SNAPSHOT in the shaded jar.
+[INFO] Including org.apache.jackrabbit:jackrabbit-spi:jar:2.6-SNAPSHOT in the shaded jar.
+[INFO] Including org.apache.jackrabbit:jackrabbit-webdav:jar:2.6-SNAPSHOT in the shaded jar.
+[INFO] Including commons-httpclient:commons-httpclient:jar:3.1 in the shaded jar.
+[INFO] Including commons-codec:commons-codec:jar:1.2 in the shaded jar.
+[INFO] Including org.slf4j:jcl-over-slf4j:jar:1.6.4 in the shaded jar.
+[INFO] Including org.apache.tika:tika-core:jar:1.0 in the shaded jar.
+[INFO] Including commons-fileupload:commons-fileupload:jar:1.2.1 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-servlet:jar:8.1.2.v20120308 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-security:jar:8.1.2.v20120308 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-server:jar:8.1.2.v20120308 in the shaded jar.
+[INFO] Including org.eclipse.jetty.orbit:javax.servlet:jar:3.0.0.v201112011016 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-continuation:jar:8.1.2.v20120308 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-http:jar:8.1.2.v20120308 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-io:jar:8.1.2.v20120308 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-util:jar:8.1.2.v20120308 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-classic:jar:1.0.1 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-core:jar:1.0.1 in the shaded jar.
+[WARNING] We have a duplicate org/apache/jackrabbit/mk/util/AbstractFilteringIterator.class in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-0.3-SNAPSHOT.jar
+[WARNING] We have a duplicate org/apache/jackrabbit/mk/util/AbstractRangeIterator.class in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-0.3-SNAPSHOT.jar
+[WARNING] We have a duplicate org/apache/jackrabbit/mk/util/BoundedInputStream.class in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-0.3-SNAPSHOT.jar
+[WARNING] We have a duplicate org/apache/jackrabbit/mk/util/Cache$1.class in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-0.3-SNAPSHOT.jar
+[WARNING] We have a duplicate org/apache/jackrabbit/mk/util/Cache$Backend.class in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-0.3-SNAPSHOT.jar
+[WARNING] We have a duplicate org/apache/jackrabbit/mk/util/Cache$Value.class in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-0.3-SNAPSHOT.jar
+[WARNING] We have a duplicate org/apache/jackrabbit/mk/util/Cache.class in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-0.3-SNAPSHOT.jar
+[WARNING] We have a duplicate org/apache/jackrabbit/mk/util/ChunkedInputStream.class in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-0.3-SNAPSHOT.jar
+[WARNING] We have a duplicate org/apache/jackrabbit/mk/util/ChunkedOutputStream.class in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-0.3-SNAPSHOT.jar
+[WARNING] We have a duplicate org/apache/jackrabbit/mk/util/CommitGate.class in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-0.3-SNAPSHOT.jar
+[WARNING] We have a duplicate org/apache/jackrabbit/mk/util/IOUtils.class in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-0.3-SNAPSHOT.jar
+[WARNING] We have a duplicate org/apache/jackrabbit/mk/util/MicroKernelInputStream.class in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-0.3-SNAPSHOT.jar
+[WARNING] We have a duplicate org/apache/jackrabbit/mk/util/NameFilter.class in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-0.3-SNAPSHOT.jar
+[WARNING] We have a duplicate org/apache/jackrabbit/mk/util/RangeIterator.class in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-0.3-SNAPSHOT.jar
+[WARNING] We have a duplicate org/apache/jackrabbit/mk/util/SimpleLRUCache.class in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-0.3-SNAPSHOT.jar
+[WARNING] We have a duplicate org/apache/jackrabbit/mk/util/StringUtils.class in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-0.3-SNAPSHOT.jar
+[WARNING] We have a duplicate org/apache/jackrabbit/mk/util/UnmodifiableIterator.class in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-0.3-SNAPSHOT.jar
+[WARNING] We have a duplicate org/apache/jackrabbit/mk/util/package-info.class in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-0.3-SNAPSHOT.jar
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/target/oak-run-0.3-SNAPSHOT.jar with /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/target/oak-run-0.3-SNAPSHOT-shaded.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-run ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/target/oak-run-0.3-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-run/0.3-SNAPSHOT/oak-run-0.3-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-run/0.3-SNAPSHOT/oak-run-0.3-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------------< org.apache.jackrabbit:oak-it-jcr >------------------
+[INFO] Building Oak Integration Tests for JCR 0.3-SNAPSHOT               [9/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ oak-it-jcr ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ oak-it-jcr ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/jcr/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ oak-it-jcr ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ oak-it-jcr ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ oak-it-jcr ---
+[INFO] Compiling 3 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/jcr/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ oak-it-jcr ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ oak-it-jcr ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/jcr/target/oak-it-jcr-0.3-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.0:attach-descriptor (attach-descriptor) @ oak-it-jcr ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-it-jcr ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/jcr/target/oak-it-jcr-0.3-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-it-jcr/0.3-SNAPSHOT/oak-it-jcr-0.3-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/jcr/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-it-jcr/0.3-SNAPSHOT/oak-it-jcr-0.3-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.apache.jackrabbit:oak-it-osgi >------------------
+[INFO] Building Oak Integration Tests for OSGi deployments 0.3-SNAPSHOT [10/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ oak-it-osgi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ oak-it-osgi ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ oak-it-osgi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ oak-it-osgi ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ oak-it-osgi ---
+[INFO] Compiling 1 source file to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ oak-it-osgi ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ oak-it-osgi ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/target/oak-it-osgi-0.3-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.0:attach-descriptor (attach-descriptor) @ oak-it-osgi ---
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.2.1:single (default) @ oak-it-osgi ---
+[INFO] Copying files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/target/test-bundles
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-it-osgi ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/target/oak-it-osgi-0.3-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-it-osgi/0.3-SNAPSHOT/oak-it-osgi-0.3-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-it-osgi/0.3-SNAPSHOT/oak-it-osgi-0.3-SNAPSHOT.pom
+[INFO] 
+[INFO] --------------------< org.apache.jackrabbit:oak-it >--------------------
+[INFO] Building Oak Integration Tests 0.3-SNAPSHOT                      [11/13]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ oak-it ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.0:attach-descriptor (attach-descriptor) @ oak-it ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-it ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-it/0.3-SNAPSHOT/oak-it-0.3-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------------< org.apache.jackrabbit:oak-bench >-------------------
+[INFO] Building Oak Benchmark 0.3-SNAPSHOT                              [12/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ oak-bench ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ oak-bench ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-bench/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ oak-bench ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ oak-bench ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-bench/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ oak-bench ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ oak-bench ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ oak-bench ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-bench/target/oak-bench-0.3-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.0:attach-descriptor (attach-descriptor) @ oak-bench ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-bench ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-bench/target/oak-bench-0.3-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-bench/0.3-SNAPSHOT/oak-bench-0.3-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-bench/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-bench/0.3-SNAPSHOT/oak-bench-0.3-SNAPSHOT.pom
+[INFO] 
+[INFO] ----------------< org.apache.jackrabbit:jackrabbit-oak >----------------
+[INFO] Building Jackrabbit Oak 0.3-SNAPSHOT                             [13/13]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ jackrabbit-oak ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.0:attach-descriptor (attach-descriptor) @ jackrabbit-oak ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ jackrabbit-oak ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/jackrabbit-oak/0.3-SNAPSHOT/jackrabbit-oak-0.3-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Oak Parent POM ..................................... SUCCESS [  0.929 s]
+[INFO] Oak Commons ........................................ SUCCESS [  3.238 s]
+[INFO] Oak MicroKernel .................................... SUCCESS [  3.510 s]
+[INFO] Oak Integration Tests for MicroKernel implementations SUCCESS [  1.646 s]
+[INFO] Oak Core ........................................... SUCCESS [  4.587 s]
+[INFO] Oak JCR Binding .................................... SUCCESS [  3.251 s]
+[INFO] Oak support for Apache Sling ....................... SUCCESS [  1.334 s]
+[INFO] Oak Runnable Jar ................................... SUCCESS [  2.994 s]
+[INFO] Oak Integration Tests for JCR ...................... SUCCESS [  0.451 s]
+[INFO] Oak Integration Tests for OSGi deployments ......... SUCCESS [  1.318 s]
+[INFO] Oak Integration Tests .............................. SUCCESS [  0.012 s]
+[INFO] Oak Benchmark ...................................... SUCCESS [  0.063 s]
+[INFO] Jackrabbit Oak 0.3-SNAPSHOT ........................ SUCCESS [  0.009 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 23.860 s
+[INFO] Finished at: 2022-07-13T22:37:34-07:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.jackrabbit:oak-it-osgi:jar:0.3-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-failsafe-plugin is missing. @ org.apache.jackrabbit:oak-it-osgi:[unknown-version], /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/pom.xml, line 56, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -------------------< org.apache.jackrabbit:oak-jcr >--------------------
+[INFO] Building Oak JCR Binding 0.3-SNAPSHOT
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ oak-jcr ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ oak-jcr ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ oak-jcr ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ oak-jcr ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ oak-jcr ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ oak-jcr ---
+[INFO] Surefire report directory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.jackrabbit.oak.jcr.security.privilege.PrivilegeManagerImplTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.449 sec
+Running org.apache.jackrabbit.oak.jcr.security.user.EveryoneGroupTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Running org.apache.jackrabbit.oak.jcr.security.user.GroupImplTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.18 sec
+Running org.apache.jackrabbit.oak.jcr.security.user.UserManagerImplTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 sec
+Running org.apache.jackrabbit.oak.jcr.security.user.ImpersonationImplTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.apache.jackrabbit.oak.jcr.security.user.AuthorizableImplTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec
+Running org.apache.jackrabbit.oak.jcr.security.user.UserImplTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec
+Running org.apache.jackrabbit.oak.jcr.CompatibilityIssuesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+Running org.apache.jackrabbit.oak.jcr.RepositoryTest
+Tests run: 76, Failures: 0, Errors: 0, Skipped: 13, Time elapsed: 0.837 sec
+Running org.apache.jackrabbit.oak.jcr.query.qom.QomTest
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec
+Running org.apache.jackrabbit.oak.jcr.query.QueryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running org.apache.jackrabbit.oak.jcr.CRUDTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+
+Results :
+
+Tests run: 194, Failures: 0, Errors: 0, Skipped: 13
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.983 s
+[INFO] Finished at: 2022-07-13T22:37:39-07:00
+[INFO] ------------------------------------------------------------------------

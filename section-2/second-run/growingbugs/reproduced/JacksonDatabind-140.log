@@ -1,0 +1,35 @@
+Checking out b06bec88 to /tmp/test_d4j_2937698_1658738449/test_trigger/Jack OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Copy generated Ant build file.............................................. OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff b06bec88:49987547..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: JacksonDatabind-140b............................ OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+Failing tests: 2
+  - com.fasterxml.jackson.databind.deser.jdk.DateDeserializationTest::testISO8601FractionalTimezoneOffset
+  - com.fasterxml.jackson.databind.module.SimpleModuleTest::testAutoDiscovery
+Error: verify number of triggering tests: JacksonDatabind-140b (expected: 1, actual: 2)
+Check out program version: JacksonDatabind-140f............................ OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+Failing tests: 1
+  - com.fasterxml.jackson.databind.module.SimpleModuleTest::testAutoDiscovery
+Error: verify number of triggering tests: JacksonDatabind-140f (expected: 0, actual: 1)
+================================================================================
+The following errors occurred:
+Error: verify number of triggering tests: JacksonDatabind-140b (expected: 1, actual: 2)
+Error: verify number of triggering tests: JacksonDatabind-140f (expected: 0, actual: 1)
+================================================================================
+FAILED

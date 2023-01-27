@@ -1,0 +1,190 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Lucene 1.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-lucene ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-lucene ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-lucene ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-lucene ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-lucene ---
+[INFO] Generating 1 MetaType Descriptors in /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-3769_306a9e000791dbf938643cb9f023a0018d3bd3ab/oak-lucene/target/classes/OSGI-INF/metatype/org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService.xml
+[INFO] Writing 1 Service Component Descriptors to /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-3769_306a9e000791dbf938643cb9f023a0018d3bd3ab/oak-lucene/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.lucene.score.impl.ScorerProviderFactoryImpl.xml
+[INFO] Writing 1 Service Component Descriptors to /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-3769_306a9e000791dbf938643cb9f023a0018d3bd3ab/oak-lucene/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-lucene ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-lucene ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-lucene ---
+[INFO] Surefire report directory: /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-3769_306a9e000791dbf938643cb9f023a0018d3bd3ab/oak-lucene/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexQueryTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 13.105 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.AggregateTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexLookupTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.IndexDefinitionTest
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.IndexAugmentorFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.OakDirectoryTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderServiceTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.193 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexSuggestionTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.291 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndexTest
+Tests run: 67, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.202 sec <<< FAILURE!
+fulltextQueryWithSpecialChars(org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndexTest)  Time elapsed: 0.065 sec  <<< ERROR!
+java.lang.RuntimeException: INVALID_SYNTAX_CANNOT_PARSE: Syntax Error, cannot parse stockphotography\:business/business_abstract: Lexical error at line 1, column 45.  Encountered: <EOF> after : "/business_abstract" 
+	at org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex.tokenToQuery(LucenePropertyIndex.java:1333)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex.tokenToQuery(LucenePropertyIndex.java:1301)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex.access$800(LucenePropertyIndex.java:188)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex$3.visitTerm(LucenePropertyIndex.java:1236)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex$3.visit(LucenePropertyIndex.java:1190)
+	at org.apache.jackrabbit.oak.query.fulltext.FullTextContains.accept(FullTextContains.java:63)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex.getFullTextQuery(LucenePropertyIndex.java:1186)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex.getLuceneRequest(LucenePropertyIndex.java:672)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex.getPlanDescription(LucenePropertyIndex.java:285)
+	at org.apache.jackrabbit.oak.query.ast.SelectorImpl.getPlan(SelectorImpl.java:345)
+	at org.apache.jackrabbit.oak.query.QueryImpl.getPlan(QueryImpl.java:607)
+	at org.apache.jackrabbit.oak.query.QueryImpl.getRows(QueryImpl.java:500)
+	at org.apache.jackrabbit.oak.query.ResultImpl$1.iterator(ResultImpl.java:72)
+	at org.apache.jackrabbit.oak.query.AbstractQueryTest.executeQuery(AbstractQueryTest.java:263)
+	at org.apache.jackrabbit.oak.query.AbstractQueryTest.executeQuery(AbstractQueryTest.java:255)
+	at org.apache.jackrabbit.oak.query.AbstractQueryTest.executeQuery(AbstractQueryTest.java:251)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndexTest.explain(LucenePropertyIndexTest.java:1914)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndexTest.fulltextQueryWithSpecialChars(LucenePropertyIndexTest.java:1860)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: INVALID_SYNTAX_CANNOT_PARSE: Syntax Error, cannot parse stockphotography\:business/business_abstract: Lexical error at line 1, column 45.  Encountered: <EOF> after : "/business_abstract" 
+	at org.apache.lucene.queryparser.flexible.standard.parser.StandardSyntaxParser.parse(StandardSyntaxParser.java:74)
+	at org.apache.lucene.queryparser.flexible.core.QueryParserHelper.parse(QueryParserHelper.java:250)
+	at org.apache.lucene.queryparser.flexible.standard.StandardQueryParser.parse(StandardQueryParser.java:168)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex.tokenToQuery(LucenePropertyIndex.java:1331)
+	... 50 more
+Caused by: org.apache.lucene.queryparser.flexible.standard.parser.TokenMgrError: Lexical error at line 1, column 45.  Encountered: <EOF> after : "/business_abstract"
+	at org.apache.lucene.queryparser.flexible.standard.parser.StandardSyntaxParserTokenManager.getNextToken(StandardSyntaxParserTokenManager.java:937)
+	at org.apache.lucene.queryparser.flexible.standard.parser.StandardSyntaxParser.jj_scan_token(StandardSyntaxParser.java:945)
+	at org.apache.lucene.queryparser.flexible.standard.parser.StandardSyntaxParser.jj_3R_4(StandardSyntaxParser.java:827)
+	at org.apache.lucene.queryparser.flexible.standard.parser.StandardSyntaxParser.jj_3_2(StandardSyntaxParser.java:739)
+	at org.apache.lucene.queryparser.flexible.standard.parser.StandardSyntaxParser.jj_2_2(StandardSyntaxParser.java:730)
+	at org.apache.lucene.queryparser.flexible.standard.parser.StandardSyntaxParser.Clause(StandardSyntaxParser.java:318)
+	at org.apache.lucene.queryparser.flexible.standard.parser.StandardSyntaxParser.ModClause(StandardSyntaxParser.java:303)
+	at org.apache.lucene.queryparser.flexible.standard.parser.StandardSyntaxParser.ConjQuery(StandardSyntaxParser.java:234)
+	at org.apache.lucene.queryparser.flexible.standard.parser.StandardSyntaxParser.DisjQuery(StandardSyntaxParser.java:204)
+	at org.apache.lucene.queryparser.flexible.standard.parser.StandardSyntaxParser.Query(StandardSyntaxParser.java:166)
+	at org.apache.lucene.queryparser.flexible.standard.parser.StandardSyntaxParser.TopLevelQuery(StandardSyntaxParser.java:147)
+	at org.apache.lucene.queryparser.flexible.standard.parser.StandardSyntaxParser.parse(StandardSyntaxParser.java:65)
+	... 53 more
+
+Running org.apache.jackrabbit.oak.plugins.index.lucene.NodeStateAnalyzerFactoryTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneBlobCacheTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.ExtractedTextCacheTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexEditorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.498 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexAugmentTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.473 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.IndexCopierTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexExclusionQueryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexAggregationTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.456 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.IndexPlannerTest
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 sec
+Running org.apache.jackrabbit.oak.jcr.query.QueryFulltextTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.128 sec
+Running org.apache.jackrabbit.oak.jcr.query.TextExtractionQueryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.536 sec
+Running org.apache.jackrabbit.oak.jcr.query.SuggestTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.635 sec
+Running org.apache.jackrabbit.oak.jcr.query.SpellcheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.049 sec
+Running org.apache.jackrabbit.oak.jcr.query.MultiSessionQueryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.202 sec
+Running org.apache.jackrabbit.oak.jcr.query.FacetTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.915 sec
+Running org.apache.jackrabbit.oak.jcr.query.ResultSizeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.316 sec
+
+Results :
+
+Tests in error: 
+  fulltextQueryWithSpecialChars(org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndexTest): INVALID_SYNTAX_CANNOT_PARSE: Syntax Error, cannot parse stockphotography\:business/business_abstract: Lexical error at line 1, column 45.  Encountered: <EOF> after : "/business_abstract" 
+
+Tests run: 315, Failures: 0, Errors: 1, Skipped: 3
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 53.291 s
+[INFO] Finished at: 2016-07-28T14:21:13-07:00
+[INFO] Final Memory: 31M/1216M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project oak-lucene: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-3769_306a9e000791dbf938643cb9f023a0018d3bd3ab/oak-lucene/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

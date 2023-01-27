@@ -1,0 +1,159 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Server Base 1.7.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.3.0:verify (verify-sorted-pom) @ accumulo-server-base ---
+[INFO] Verifying file /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-2952_11d11e0da910b6242c764ab6365bc11c66ee56f0/server/base/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-mvn) @ accumulo-server-base ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo-server-base ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.10:check (check-licenses) @ accumulo-server-base ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] No excludes explicitly specified.
+[INFO] 194 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 194 licence.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ accumulo-server-base ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-server-base ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-2952_11d11e0da910b6242c764ab6365bc11c66ee56f0/server/base/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ accumulo-server-base ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-server-base ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ accumulo-server-base ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ accumulo-server-base ---
+[INFO] Surefire report directory: /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-2952_11d11e0da910b6242c764ab6365bc11c66ee56f0/server/base/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.server.iterators.MetadataBulkLoadFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 sec - in org.apache.accumulo.server.iterators.MetadataBulkLoadFilterTest
+Running org.apache.accumulo.server.fs.FileTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in org.apache.accumulo.server.fs.FileTypeTest
+Running org.apache.accumulo.server.fs.ViewFSUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.563 sec - in org.apache.accumulo.server.fs.ViewFSUtilsTest
+Running org.apache.accumulo.server.fs.VolumeUtilTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.67 sec - in org.apache.accumulo.server.fs.VolumeUtilTest
+Running org.apache.accumulo.server.fs.FileRefTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec - in org.apache.accumulo.server.fs.FileRefTest
+Running org.apache.accumulo.server.conf.TableConfigurationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.367 sec - in org.apache.accumulo.server.conf.TableConfigurationTest
+Running org.apache.accumulo.server.watcher.MonitorLog4jWatcherTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 sec - in org.apache.accumulo.server.watcher.MonitorLog4jWatcherTest
+Running org.apache.accumulo.server.client.BulkImporterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.823 sec - in org.apache.accumulo.server.client.BulkImporterTest
+Running org.apache.accumulo.server.constraints.MetadataConstraintsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 sec - in org.apache.accumulo.server.constraints.MetadataConstraintsTest
+Running org.apache.accumulo.server.data.ServerMutationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.273 sec - in org.apache.accumulo.server.data.ServerMutationTest
+Running org.apache.accumulo.server.AccumuloTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.311 sec - in org.apache.accumulo.server.AccumuloTest
+Running org.apache.accumulo.server.master.state.TabletLocationStateTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.212 sec - in org.apache.accumulo.server.master.state.TabletLocationStateTest
+Running org.apache.accumulo.server.master.state.MergeInfoTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.197 sec - in org.apache.accumulo.server.master.state.MergeInfoTest
+Running org.apache.accumulo.server.master.balancer.TableLoadBalancerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.74 sec - in org.apache.accumulo.server.master.balancer.TableLoadBalancerTest
+Running org.apache.accumulo.server.master.balancer.DefaultLoadBalancerTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.261 sec <<< FAILURE! - in org.apache.accumulo.server.master.balancer.DefaultLoadBalancerTest
+testUnevenAssignment(org.apache.accumulo.server.master.balancer.DefaultLoadBalancerTest)  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<8> but was:<9>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at org.apache.accumulo.server.master.balancer.DefaultLoadBalancerTest.testUnevenAssignment(DefaultLoadBalancerTest.java:206)
+
+Running org.apache.accumulo.server.master.balancer.ChaoticLoadBalancerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.148 sec - in org.apache.accumulo.server.master.balancer.ChaoticLoadBalancerTest
+Running org.apache.accumulo.server.ServerOptsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec - in org.apache.accumulo.server.ServerOptsTest
+Running org.apache.accumulo.server.util.AdminCommandsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec - in org.apache.accumulo.server.util.AdminCommandsTest
+Running org.apache.accumulo.server.util.FileInfoTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec - in org.apache.accumulo.server.util.FileInfoTest
+Running org.apache.accumulo.server.util.time.SimpleTimerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.433 sec - in org.apache.accumulo.server.util.time.SimpleTimerTest
+Running org.apache.accumulo.server.util.time.BaseRelativeTimeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in org.apache.accumulo.server.util.time.BaseRelativeTimeTest
+Running org.apache.accumulo.server.util.FileUtilTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.8 sec - in org.apache.accumulo.server.util.FileUtilTest
+Running org.apache.accumulo.server.util.TServerUtilsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.245 sec - in org.apache.accumulo.server.util.TServerUtilsTest
+Running org.apache.accumulo.server.util.TabletIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.656 sec - in org.apache.accumulo.server.util.TabletIteratorTest
+Running org.apache.accumulo.server.util.CloneTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.711 sec - in org.apache.accumulo.server.util.CloneTest
+Running org.apache.accumulo.server.util.ReplicationTableUtilTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.318 sec - in org.apache.accumulo.server.util.ReplicationTableUtilTest
+Running org.apache.accumulo.server.util.DefaultMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in org.apache.accumulo.server.util.DefaultMapTest
+Running org.apache.accumulo.server.ServerConstantsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.942 sec - in org.apache.accumulo.server.ServerConstantsTest
+Running org.apache.accumulo.server.security.SystemCredentialsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.731 sec - in org.apache.accumulo.server.security.SystemCredentialsTest
+Running org.apache.accumulo.server.security.handler.ZKAuthenticatorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 sec - in org.apache.accumulo.server.security.handler.ZKAuthenticatorTest
+Running org.apache.accumulo.server.tablets.LogicalTimeTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.19 sec - in org.apache.accumulo.server.tablets.LogicalTimeTest
+Running org.apache.accumulo.server.tablets.MillisTimeTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.191 sec - in org.apache.accumulo.server.tablets.MillisTimeTest
+Running org.apache.accumulo.server.tablets.TabletTimeTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.203 sec - in org.apache.accumulo.server.tablets.TabletTimeTest
+Running org.apache.accumulo.server.problems.ProblemReportingIteratorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 sec - in org.apache.accumulo.server.problems.ProblemReportingIteratorTest
+Running org.apache.accumulo.server.problems.ProblemReportTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.258 sec - in org.apache.accumulo.server.problems.ProblemReportTest
+Running org.apache.accumulo.server.init.InitializeTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.805 sec - in org.apache.accumulo.server.init.InitializeTest
+Running org.apache.accumulo.server.replication.StatusCombinerTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.229 sec - in org.apache.accumulo.server.replication.StatusCombinerTest
+Running org.apache.accumulo.server.replication.ReplicationTableTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.7 sec - in org.apache.accumulo.server.replication.ReplicationTableTest
+Running org.apache.accumulo.server.replication.ZooKeeperInitializationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 sec - in org.apache.accumulo.server.replication.ZooKeeperInitializationTest
+
+Results :
+
+Failed tests: 
+  DefaultLoadBalancerTest.testUnevenAssignment:206 expected:<8> but was:<9>
+
+Tests run: 179, Failures: 1, Errors: 0, Skipped: 2
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 38.175 s
+[INFO] Finished at: 2016-08-09T19:55:44-07:00
+[INFO] Final Memory: 19M/310M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.16:test (default-test) on project accumulo-server-base: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-2952_11d11e0da910b6242c764ab6365bc11c66ee56f0/server/base/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

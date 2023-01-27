@@ -1,0 +1,72 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Model Builder 3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ maven-model-builder ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4:resources (default-resources) @ maven-model-builder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.0.2:compile (default-compile) @ maven-model-builder ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- plexus-component-metadata:1.5.2:generate-metadata (default) @ maven-model-builder ---
+[INFO] Discovered 23 component descriptors(s)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4:testResources (default-testResources) @ maven-model-builder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 30 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.0.2:testCompile (default-testCompile) @ maven-model-builder ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- plexus-component-metadata:1.5.2:generate-test-metadata (default) @ maven-model-builder ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.4.3:test (default-test) @ maven-model-builder ---
+[INFO] Surefire report directory: /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-4512_8cb042536eb0cd8713a89a921c574e3d1e907ef1/maven-model-builder/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.maven.model.profile.activation.PropertyProfileActivatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.342 sec
+Running org.apache.maven.model.profile.activation.JdkVersionProfileActivatorTest
+Tests run: 7, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.066 sec <<< FAILURE!
+Running org.apache.maven.model.validation.DefaultModelValidatorTest
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 sec
+
+Results :
+
+Tests in error: 
+  testVersionRangeInclusiveBounds(org.apache.maven.model.profile.activation.JdkVersionProfileActivatorTest)
+  testVersionRangeInclusiveLowerBound(org.apache.maven.model.profile.activation.JdkVersionProfileActivatorTest)
+  testVersionRangeExclusiveUpperBound(org.apache.maven.model.profile.activation.JdkVersionProfileActivatorTest)
+
+Tests run: 45, Failures: 0, Errors: 3, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.452 s
+[INFO] Finished at: 2016-07-13T22:03:32-07:00
+[INFO] Final Memory: 14M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.4.3:test (default-test) on project maven-model-builder: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-4512_8cb042536eb0cd8713a89a921c574e3d1e907ef1/maven-model-builder/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

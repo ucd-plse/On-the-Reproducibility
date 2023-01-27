@@ -1,0 +1,70 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Aether Provider 3.1.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ maven-aether-provider ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ maven-aether-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-5459_c225847e4f3436ecc78544fa00192307d579f1d3/maven-aether-provider/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ maven-aether-provider ---
+[INFO] Compiling 1 source file to /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-5459_c225847e4f3436ecc78544fa00192307d579f1d3/maven-aether-provider/target/classes
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.6:check (check-java-1.5-compat) @ maven-aether-provider ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java15:1.0
+[INFO] 
+[INFO] --- plexus-component-metadata:1.5.5:generate-metadata (default) @ maven-aether-provider ---
+[INFO] Discovered 5 component descriptors(s)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ maven-aether-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 13 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ maven-aether-provider ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- plexus-component-metadata:1.5.5:generate-test-metadata (default) @ maven-aether-provider ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ maven-aether-provider ---
+[INFO] Surefire report directory: /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-5459_c225847e4f3436ecc78544fa00192307d579f1d3/maven-aether-provider/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.maven.repository.internal.DefaultVersionResolverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.741 sec
+Running org.apache.maven.repository.internal.MavenRepositorySystemUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.maven.repository.internal.DefaultArtifactDescriptorReaderTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.205 sec <<< FAILURE!
+Running org.apache.maven.repository.internal.RepositorySystemTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.65 sec
+
+Results :
+
+Failed tests:   testMng5459(org.apache.maven.repository.internal.DefaultArtifactDescriptorReaderTest): expected:<...om:0.4.0-20130404.09[0532-2] in repo (file:/home...> but was:<...om:0.4.0-20130404.09[3655-3] in repo (file:/home...>
+
+Tests run: 16, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.167 s
+[INFO] Finished at: 2016-07-13T21:40:31-07:00
+[INFO] Final Memory: 27M/1216M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (default-test) on project maven-aether-provider: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-5459_c225847e4f3436ecc78544fa00192307d579f1d3/maven-aether-provider/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,40 @@
+Checking out d062bd01 to /tmp/test_d4j_2330310_1660788321/test_trigger/IO.. OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff d062bd01:ed01f165..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: IO-13b.......................................... OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+Failing tests: 5
+  - org.apache.commons.io.FileUtilsCleanDirectoryTestCase::testThrowsOnNullList
+  - org.apache.commons.io.FileUtilsCleanDirectoryTestCase::testThrowsOnCannotDeleteFile
+  - org.apache.commons.io.FilenameUtilsWildcardTestCase::test_IO_246
+  - org.apache.commons.io.filefilter.FileFilterTestCase::testCanRead
+  - org.apache.commons.io.filefilter.FileFilterTestCase::testCanWrite
+Error: verify number of triggering tests: IO-13b (expected: 1, actual: 5)
+Check out program version: IO-13f.......................................... OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+Failing tests: 4
+  - org.apache.commons.io.FileUtilsCleanDirectoryTestCase::testThrowsOnNullList
+  - org.apache.commons.io.FileUtilsCleanDirectoryTestCase::testThrowsOnCannotDeleteFile
+  - org.apache.commons.io.filefilter.FileFilterTestCase::testCanRead
+  - org.apache.commons.io.filefilter.FileFilterTestCase::testCanWrite
+Error: verify number of triggering tests: IO-13f (expected: 0, actual: 4)
+================================================================================
+The following errors occurred:
+Error: verify number of triggering tests: IO-13b (expected: 1, actual: 5)
+Error: verify number of triggering tests: IO-13f (expected: 0, actual: 4)
+================================================================================
+FAILED

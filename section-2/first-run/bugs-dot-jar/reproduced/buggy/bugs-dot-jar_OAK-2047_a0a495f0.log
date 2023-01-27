@@ -1,0 +1,1291 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Oak Parent POM                                                     [pom]
+[INFO] Oak MicroKernel API                                             [bundle]
+[INFO] Oak Commons                                                     [bundle]
+[INFO] Oak Blob Store                                                  [bundle]
+[INFO] Oak MicroKernel                                                 [bundle]
+[INFO] Oak MicroKernel Remoting                                        [bundle]
+[INFO] Oak Core                                                        [bundle]
+[INFO] Oak JCR Binding                                                 [bundle]
+[INFO] Oak upgrade                                                        [jar]
+[INFO] Oak HTTP Binding                                                [bundle]
+[INFO] Oak Lucene                                                      [bundle]
+[INFO] Oak Solr core                                                   [bundle]
+[INFO] Oak Solr OSGi                                                   [bundle]
+[INFO] Oak External Authentication Support                             [bundle]
+[INFO] Oak LDAP Authentication Support                                 [bundle]
+[INFO] Oak TarMK Failover                                              [bundle]
+[INFO] Oak Runnable Jar                                                   [jar]
+[INFO] Oak Integration Tests for MicroKernel implementations              [jar]
+[INFO] Oak Integration Tests for OSGi deployments                         [jar]
+[INFO] Oak Integration Tests                                              [pom]
+[INFO] Oak PojoSR                                                         [jar]
+[INFO] Jackrabbit Oak                                                     [pom]
+[INFO] Oak CUG                                                         [bundle]
+[INFO] 
+[INFO] ------------------< org.apache.jackrabbit:oak-parent >------------------
+[INFO] Building Oak Parent POM 1.1-SNAPSHOT                              [1/23]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-parent ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-parent ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-parent ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-parent ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-parent ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-parent/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-parent/1.1-SNAPSHOT/oak-parent-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------------< org.apache.jackrabbit:oak-mk-api >------------------
+[INFO] Building Oak MicroKernel API 1.1-SNAPSHOT                         [2/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-mk-api ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-mk-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-mk-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-mk-api ---
+[INFO] Compiling 3 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk-api/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-mk-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-mk-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk-api/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-mk-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-mk-api ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-mk-api ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-mk-api ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-mk-api ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-mk-api ---
+[INFO] Baseline analisys complete, 0 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-mk-api ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk-api/target/oak-mk-api-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-mk-api/1.1-SNAPSHOT/oak-mk-api-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk-api/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-mk-api/1.1-SNAPSHOT/oak-mk-api-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-mk-api ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] -----------------< org.apache.jackrabbit:oak-commons >------------------
+[INFO] Building Oak Commons 1.1-SNAPSHOT                                 [3/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-commons ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-commons ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-commons/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-commons ---
+[INFO] Compiling 24 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-commons/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-commons ---
+[INFO] Compiling 12 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-commons/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-commons ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-commons ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-commons ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-commons ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ oak-commons ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-commons/target/oak-commons-1.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-commons ---
+[ERROR] org.apache.jackrabbit.oak.commons: Version increase required; detected 1.0.0, suggested 2.0.0
+[ERROR] org.apache.jackrabbit.oak.commons.json: Version increase required; detected 1.0.0, suggested 2.0.0
+[ERROR] org.apache.jackrabbit.oak.commons.sort: Version increase required; detected 1.0.0, suggested 2.0.0
+[INFO] Baseline analisys complete, 3 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-commons ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-commons/target/oak-commons-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-commons/1.1-SNAPSHOT/oak-commons-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-commons/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-commons/1.1-SNAPSHOT/oak-commons-1.1-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-commons/target/oak-commons-1.1-SNAPSHOT-tests.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-commons/1.1-SNAPSHOT/oak-commons-1.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-commons ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] -------------------< org.apache.jackrabbit:oak-blob >-------------------
+[INFO] Building Oak Blob Store 1.1-SNAPSHOT                              [4/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-blob ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-blob ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-blob ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-blob/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-blob ---
+[INFO] Compiling 8 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-blob/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-blob ---
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-blob/target/classes/OSGI-INF/org.apache.jackrabbit.oak.spi.blob.osgi.FileBlobStoreService.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-blob ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-blob ---
+[INFO] Compiling 4 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-blob/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-blob ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-blob ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-blob ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-blob ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ oak-blob ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-blob/target/oak-blob-1.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-blob ---
+[ERROR] org.apache.jackrabbit.oak.spi.blob: Version increase required; detected 1.0.0, suggested 2.0.0
+[INFO] Baseline analisys complete, 1 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-blob ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-blob/target/oak-blob-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-blob/1.1-SNAPSHOT/oak-blob-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-blob/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-blob/1.1-SNAPSHOT/oak-blob-1.1-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-blob/target/oak-blob-1.1-SNAPSHOT-tests.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-blob/1.1-SNAPSHOT/oak-blob-1.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-blob ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] --------------------< org.apache.jackrabbit:oak-mk >--------------------
+[INFO] Building Oak MicroKernel 1.1-SNAPSHOT                             [5/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-mk ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-mk ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-mk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-mk ---
+[INFO] Compiling 47 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-mk ---
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/classes/OSGI-INF/org.apache.jackrabbit.mk.osgi.MicroKernelService.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-mk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-mk ---
+[INFO] Compiling 8 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-mk ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-mk ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-mk ---
+[WARNING] Bundle org.apache.jackrabbit:oak-mk:bundle:1.1-SNAPSHOT : Export org.apache.jackrabbit.mk.core,  has 2,  private references [org.apache.jackrabbit.mk.store, org.apache.jackrabbit.mk.model], 
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-mk ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-mk ---
+[ERROR] org.apache.jackrabbit.mk.util: Version increase required; detected 1.0.0, suggested 2.0.0
+[INFO] Baseline analisys complete, 1 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-mk ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-mk/1.1-SNAPSHOT/oak-mk-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-mk/1.1-SNAPSHOT/oak-mk-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-mk ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] ----------------< org.apache.jackrabbit:oak-mk-remote >-----------------
+[INFO] Building Oak MicroKernel Remoting 1.1-SNAPSHOT                    [6/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-mk-remote ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-mk-remote ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-mk-remote ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 20 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-mk-remote ---
+[INFO] Compiling 17 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk-remote/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-mk-remote ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-mk-remote ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk-remote/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-mk-remote ---
+[INFO] Compiling 1 source file to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk-remote/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-mk-remote ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-mk-remote ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-mk-remote ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-mk-remote ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-mk-remote ---
+[INFO] Baseline analisys complete, 0 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-mk-remote ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk-remote/target/oak-mk-remote-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-mk-remote/1.1-SNAPSHOT/oak-mk-remote-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk-remote/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-mk-remote/1.1-SNAPSHOT/oak-mk-remote-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-mk-remote ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] -------------------< org.apache.jackrabbit:oak-core >-------------------
+[INFO] Building Oak Core 1.1-SNAPSHOT                                    [7/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-aws-ext/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 786 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-aws-ext/2.9-SNAPSHOT/maven-metadata.xml (786 B at 788 B/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-aws-ext/2.9-SNAPSHOT/jackrabbit-aws-ext-2.9-20150323.101644-50.pom
+Progress (1): 4.1/4.7 kBProgress (1): 4.7 kB                        Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-aws-ext/2.9-SNAPSHOT/jackrabbit-aws-ext-2.9-20150323.101644-50.pom (4.7 kB at 9.7 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-parent/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 613 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-parent/2.9-SNAPSHOT/maven-metadata.xml (613 B at 1.1 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-parent/2.9-SNAPSHOT/jackrabbit-parent-2.9-20150323.101644-54.pom
+Progress (1): 4.1/30 kBProgress (1): 7.8/30 kBProgress (1): 12/30 kB Progress (1): 14/30 kBProgress (1): 18/30 kBProgress (1): 22/30 kBProgress (1): 26/30 kBProgress (1): 30 kB                      Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-parent/2.9-SNAPSHOT/jackrabbit-parent-2.9-20150323.101644-54.pom (30 kB at 54 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-commons/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 790 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-commons/2.9-SNAPSHOT/maven-metadata.xml (790 B at 1.7 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-commons/2.9-SNAPSHOT/jackrabbit-jcr-commons-2.9-20150323.101644-52.pom
+Progress (1): 4.1/4.6 kBProgress (1): 4.6 kB                        Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-commons/2.9-SNAPSHOT/jackrabbit-jcr-commons-2.9-20150323.101644-52.pom (4.6 kB at 9.8 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-data/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 994 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-data/2.9-SNAPSHOT/maven-metadata.xml (994 B at 1.5 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-data/2.9-SNAPSHOT/jackrabbit-data-2.9-20150323.101644-50.pom
+Progress (1): 4.0 kB                    Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-data/2.9-SNAPSHOT/jackrabbit-data-2.9-20150323.101644-50.pom (4.0 kB at 8.9 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-api/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 782 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-api/2.9-SNAPSHOT/maven-metadata.xml (782 B at 1.3 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-api/2.9-SNAPSHOT/jackrabbit-api-2.9-20150323.101644-52.pom
+Progress (1): 3.4 kB                    Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-api/2.9-SNAPSHOT/jackrabbit-api-2.9-20150323.101644-52.pom (3.4 kB at 7.1 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-aws-ext/2.9-SNAPSHOT/jackrabbit-aws-ext-2.9-20150323.101644-50.jar
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-api/2.9-SNAPSHOT/jackrabbit-api-2.9-20150323.101644-52.jar
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-data/2.9-SNAPSHOT/jackrabbit-data-2.9-20150323.101644-50-tests.jar
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-data/2.9-SNAPSHOT/jackrabbit-data-2.9-20150323.101644-50.jar
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-commons/2.9-SNAPSHOT/jackrabbit-jcr-commons-2.9-20150323.101644-52.jar
+Progress (1): 4.1/32 kBProgress (1): 7.8/32 kBProgress (1): 12/32 kB Progress (1): 14/32 kBProgress (2): 14/32 kB | 4.1/398 kBProgress (2): 14/32 kB | 7.8/398 kBProgress (2): 14/32 kB | 12/398 kB Progress (2): 14/32 kB | 14/398 kBProgress (3): 14/32 kB | 14/398 kB | 4.1/32 kBProgress (3): 14/32 kB | 14/398 kB | 7.8/32 kBProgress (3): 14/32 kB | 14/398 kB | 12/32 kB Progress (3): 14/32 kB | 14/398 kB | 14/32 kBProgress (3): 18/32 kB | 14/398 kB | 14/32 kBProgress (3): 22/32 kB | 14/398 kB | 14/32 kBProgress (3): 26/32 kB | 14/398 kB | 14/32 kBProgress (4): 26/32 kB | 14/398 kB | 14/32 kB | 4.1/154 kBProgress (4): 30/32 kB | 14/398 kB | 14/32 kB | 4.1/154 kBProgress (4): 30/32 kB | 14/398 kB | 14/32 kB | 7.8/154 kBProgress (5): 30/32 kB | 14/398 kB | 14/32 kB | 7.8/154 kB | 4.1/40 kBProgress (5): 32 kB | 14/398 kB | 14/32 kB | 7.8/154 kB | 4.1/40 kB   Progress (5): 32 kB | 14/398 kB | 14/32 kB | 7.8/154 kB | 7.8/40 kBProgress (5): 32 kB | 14/398 kB | 14/32 kB | 12/154 kB | 7.8/40 kB Progress (5): 32 kB | 14/398 kB | 14/32 kB | 12/154 kB | 12/40 kB Progress (5): 32 kB | 14/398 kB | 14/32 kB | 14/154 kB | 12/40 kBProgress (5): 32 kB | 14/398 kB | 14/32 kB | 14/154 kB | 14/40 kBProgress (5): 32 kB | 18/398 kB | 14/32 kB | 14/154 kB | 14/40 kBProgress (5): 32 kB | 22/398 kB | 14/32 kB | 14/154 kB | 14/40 kBProgress (5): 32 kB | 26/398 kB | 14/32 kB | 14/154 kB | 14/40 kBProgress (5): 32 kB | 30/398 kB | 14/32 kB | 14/154 kB | 14/40 kBProgress (5): 32 kB | 35/398 kB | 14/32 kB | 14/154 kB | 14/40 kBProgress (5): 32 kB | 39/398 kB | 14/32 kB | 14/154 kB | 14/40 kBProgress (5): 32 kB | 43/398 kB | 14/32 kB | 14/154 kB | 14/40 kBProgress (5): 32 kB | 43/398 kB | 14/32 kB | 14/154 kB | 14/40 kBProgress (5): 32 kB | 43/398 kB | 18/32 kB | 14/154 kB | 14/40 kBProgress (5): 32 kB | 43/398 kB | 22/32 kB | 14/154 kB | 14/40 kBProgress (5): 32 kB | 43/398 kB | 26/32 kB | 14/154 kB | 14/40 kBProgress (5): 32 kB | 43/398 kB | 30/32 kB | 14/154 kB | 14/40 kBProgress (5): 32 kB | 43/398 kB | 32 kB | 14/154 kB | 14/40 kB   Progress (5): 32 kB | 43/398 kB | 32 kB | 18/154 kB | 14/40 kBProgress (5): 32 kB | 43/398 kB | 32 kB | 22/154 kB | 14/40 kBProgress (5): 32 kB | 43/398 kB | 32 kB | 26/154 kB | 14/40 kBProgress (5): 32 kB | 43/398 kB | 32 kB | 30/154 kB | 14/40 kBProgress (5): 32 kB | 43/398 kB | 32 kB | 35/154 kB | 14/40 kBProgress (5): 32 kB | 43/398 kB | 32 kB | 39/154 kB | 14/40 kBProgress (5): 32 kB | 43/398 kB | 32 kB | 43/154 kB | 14/40 kBProgress (5): 32 kB | 43/398 kB | 32 kB | 43/154 kB | 14/40 kBProgress (5): 32 kB | 43/398 kB | 32 kB | 43/154 kB | 18/40 kBProgress (5): 32 kB | 43/398 kB | 32 kB | 43/154 kB | 22/40 kBProgress (5): 32 kB | 43/398 kB | 32 kB | 43/154 kB | 26/40 kBProgress (5): 32 kB | 43/398 kB | 32 kB | 43/154 kB | 30/40 kBProgress (5): 32 kB | 43/398 kB | 32 kB | 43/154 kB | 35/40 kBProgress (5): 32 kB | 43/398 kB | 32 kB | 43/154 kB | 39/40 kBProgress (5): 32 kB | 43/398 kB | 32 kB | 43/154 kB | 40 kB                                                              Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-aws-ext/2.9-SNAPSHOT/jackrabbit-aws-ext-2.9-20150323.101644-50.jar (32 kB at 42 kB/s)
+Progress (4): 47/398 kB | 32 kB | 43/154 kB | 40 kBProgress (4): 51/398 kB | 32 kB | 43/154 kB | 40 kBProgress (4): 55/398 kB | 32 kB | 43/154 kB | 40 kBProgress (4): 59/398 kB | 32 kB | 43/154 kB | 40 kBProgress (4): 63/398 kB | 32 kB | 43/154 kB | 40 kBProgress (4): 68/398 kB | 32 kB | 43/154 kB | 40 kBProgress (4): 72/398 kB | 32 kB | 43/154 kB | 40 kBProgress (4): 76/398 kB | 32 kB | 43/154 kB | 40 kBProgress (4): 79/398 kB | 32 kB | 43/154 kB | 40 kB                                                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-data/2.9-SNAPSHOT/jackrabbit-data-2.9-20150323.101644-50-tests.jar (32 kB at 34 kB/s)
+Progress (3): 79/398 kB | 47/154 kB | 40 kBProgress (3): 79/398 kB | 51/154 kB | 40 kBProgress (3): 79/398 kB | 55/154 kB | 40 kBProgress (3): 79/398 kB | 59/154 kB | 40 kBProgress (3): 79/398 kB | 63/154 kB | 40 kBProgress (3): 79/398 kB | 68/154 kB | 40 kBProgress (3): 79/398 kB | 72/154 kB | 40 kBProgress (3): 79/398 kB | 76/154 kB | 40 kBProgress (3): 79/398 kB | 79/154 kB | 40 kB                                           Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-api/2.9-SNAPSHOT/jackrabbit-api-2.9-20150323.101644-52.jar (40 kB at 41 kB/s)
+Progress (2): 79/398 kB | 83/154 kBProgress (2): 79/398 kB | 87/154 kBProgress (2): 79/398 kB | 92/154 kBProgress (2): 79/398 kB | 96/154 kBProgress (2): 79/398 kB | 97/154 kBProgress (2): 83/398 kB | 97/154 kBProgress (2): 87/398 kB | 97/154 kBProgress (2): 92/398 kB | 97/154 kBProgress (2): 96/398 kB | 97/154 kBProgress (2): 100/398 kB | 97/154 kBProgress (2): 104/398 kB | 97/154 kBProgress (2): 108/398 kB | 97/154 kBProgress (2): 112/398 kB | 97/154 kBProgress (2): 116/398 kB | 97/154 kBProgress (2): 120/398 kB | 97/154 kBProgress (2): 124/398 kB | 97/154 kBProgress (2): 128/398 kB | 97/154 kBProgress (2): 132/398 kB | 97/154 kBProgress (2): 137/398 kB | 97/154 kBProgress (2): 141/398 kB | 97/154 kBProgress (2): 145/398 kB | 97/154 kBProgress (2): 149/398 kB | 97/154 kBProgress (2): 152/398 kB | 97/154 kBProgress (2): 156/398 kB | 97/154 kBProgress (2): 160/398 kB | 97/154 kBProgress (2): 164/398 kB | 97/154 kBProgress (2): 168/398 kB | 97/154 kBProgress (2): 172/398 kB | 97/154 kBProgress (2): 176/398 kB | 97/154 kBProgress (2): 180/398 kB | 97/154 kBProgress (2): 184/398 kB | 97/154 kBProgress (2): 188/398 kB | 97/154 kBProgress (2): 193/398 kB | 97/154 kBProgress (2): 197/398 kB | 97/154 kBProgress (2): 201/398 kB | 97/154 kBProgress (2): 205/398 kB | 97/154 kBProgress (2): 209/398 kB | 97/154 kBProgress (2): 213/398 kB | 97/154 kBProgress (2): 217/398 kB | 97/154 kBProgress (2): 221/398 kB | 97/154 kBProgress (2): 225/398 kB | 97/154 kBProgress (2): 229/398 kB | 97/154 kBProgress (2): 234/398 kB | 97/154 kBProgress (2): 238/398 kB | 97/154 kBProgress (2): 242/398 kB | 97/154 kBProgress (2): 246/398 kB | 97/154 kBProgress (2): 250/398 kB | 97/154 kBProgress (2): 254/398 kB | 97/154 kBProgress (2): 258/398 kB | 97/154 kBProgress (2): 262/398 kB | 97/154 kBProgress (2): 265/398 kB | 97/154 kBProgress (2): 265/398 kB | 101/154 kBProgress (2): 265/398 kB | 105/154 kBProgress (2): 265/398 kB | 109/154 kBProgress (2): 265/398 kB | 113/154 kBProgress (2): 265/398 kB | 117/154 kBProgress (2): 265/398 kB | 121/154 kBProgress (2): 265/398 kB | 125/154 kBProgress (2): 265/398 kB | 129/154 kBProgress (2): 265/398 kB | 133/154 kBProgress (2): 265/398 kB | 138/154 kBProgress (2): 265/398 kB | 142/154 kBProgress (2): 265/398 kB | 146/154 kBProgress (2): 265/398 kB | 150/154 kBProgress (2): 265/398 kB | 154 kB    Progress (2): 270/398 kB | 154 kBProgress (2): 274/398 kB | 154 kBProgress (2): 278/398 kB | 154 kBProgress (2): 282/398 kB | 154 kBProgress (2): 286/398 kB | 154 kBProgress (2): 290/398 kB | 154 kBProgress (2): 294/398 kB | 154 kBProgress (2): 298/398 kB | 154 kBProgress (2): 302/398 kB | 154 kBProgress (2): 306/398 kB | 154 kBProgress (2): 310/398 kB | 154 kBProgress (2): 315/398 kB | 154 kBProgress (2): 319/398 kB | 154 kBProgress (2): 323/398 kB | 154 kBProgress (2): 327/398 kB | 154 kBProgress (2): 331/398 kB | 154 kBProgress (2): 335/398 kB | 154 kBProgress (2): 339/398 kB | 154 kBProgress (2): 343/398 kB | 154 kBProgress (2): 347/398 kB | 154 kBProgress (2): 351/398 kB | 154 kBProgress (2): 356/398 kB | 154 kBProgress (2): 356/398 kB | 154 kB                                 Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-data/2.9-SNAPSHOT/jackrabbit-data-2.9-20150323.101644-50.jar (154 kB at 93 kB/s)
+Progress (1): 360/398 kBProgress (1): 364/398 kBProgress (1): 368/398 kBProgress (1): 372/398 kBProgress (1): 376/398 kBProgress (1): 380/398 kBProgress (1): 385/398 kBProgress (1): 389/398 kBProgress (1): 393/398 kBProgress (1): 396/398 kBProgress (1): 398 kB                        Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-commons/2.9-SNAPSHOT/jackrabbit-jcr-commons-2.9-20150323.101644-52.jar (398 kB at 187 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-kms/1.9.22/aws-java-sdk-kms-1.9.22.jar
+Downloading from central: https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-core/1.9.22/aws-java-sdk-core-1.9.22.jar
+Progress (1): 1.4/481 kBProgress (2): 1.4/481 kB | 1.4/244 kBProgress (2): 2.7/481 kB | 1.4/244 kBProgress (2): 2.7/481 kB | 2.7/244 kBProgress (2): 4.1/481 kB | 2.7/244 kBProgress (2): 4.1/481 kB | 4.1/244 kBProgress (2): 5.5/481 kB | 4.1/244 kBProgress (2): 5.5/481 kB | 5.5/244 kBProgress (2): 6.9/481 kB | 5.5/244 kBProgress (2): 6.9/481 kB | 6.9/244 kBProgress (2): 8.2/481 kB | 6.9/244 kBProgress (2): 8.2/481 kB | 8.2/244 kBProgress (2): 9.6/481 kB | 8.2/244 kBProgress (2): 9.6/481 kB | 9.6/244 kBProgress (2): 11/481 kB | 9.6/244 kB Progress (2): 11/481 kB | 11/244 kB Progress (2): 12/481 kB | 11/244 kBProgress (2): 14/481 kB | 11/244 kBProgress (2): 14/481 kB | 12/244 kBProgress (2): 15/481 kB | 12/244 kBProgress (2): 15/481 kB | 14/244 kBProgress (2): 16/481 kB | 14/244 kBProgress (2): 16/481 kB | 15/244 kBProgress (2): 16/481 kB | 16/244 kBProgress (2): 17/481 kB | 16/244 kBProgress (2): 17/481 kB | 17/244 kBProgress (2): 19/481 kB | 17/244 kBProgress (2): 19/481 kB | 19/244 kBProgress (2): 20/481 kB | 19/244 kBProgress (2): 20/481 kB | 20/244 kBProgress (2): 21/481 kB | 20/244 kBProgress (2): 21/481 kB | 21/244 kBProgress (2): 21/481 kB | 23/244 kBProgress (2): 23/481 kB | 23/244 kBProgress (2): 23/481 kB | 24/244 kBProgress (2): 24/481 kB | 24/244 kBProgress (2): 25/481 kB | 24/244 kBProgress (2): 25/481 kB | 25/244 kBProgress (2): 27/481 kB | 25/244 kBProgress (2): 27/481 kB | 27/244 kBProgress (2): 28/481 kB | 27/244 kBProgress (2): 28/481 kB | 28/244 kBProgress (2): 30/481 kB | 28/244 kBProgress (2): 30/481 kB | 30/244 kBProgress (2): 31/481 kB | 30/244 kBProgress (2): 31/481 kB | 31/244 kBProgress (2): 32/481 kB | 31/244 kBProgress (2): 32/481 kB | 32/244 kBProgress (2): 34/481 kB | 32/244 kBProgress (2): 34/481 kB | 34/244 kBProgress (2): 35/481 kB | 34/244 kBProgress (2): 35/481 kB | 35/244 kBProgress (2): 36/481 kB | 35/244 kBProgress (2): 36/481 kB | 36/244 kBProgress (2): 38/481 kB | 36/244 kBProgress (2): 38/481 kB | 38/244 kBProgress (2): 39/481 kB | 38/244 kBProgress (2): 39/481 kB | 39/244 kBProgress (2): 40/481 kB | 39/244 kBProgress (2): 40/481 kB | 40/244 kBProgress (2): 42/481 kB | 40/244 kBProgress (2): 42/481 kB | 42/244 kBProgress (2): 43/481 kB | 42/244 kBProgress (2): 43/481 kB | 43/244 kBProgress (2): 45/481 kB | 43/244 kBProgress (2): 45/481 kB | 45/244 kBProgress (2): 46/481 kB | 45/244 kBProgress (2): 46/481 kB | 46/244 kBProgress (2): 47/481 kB | 46/244 kBProgress (2): 47/481 kB | 47/244 kBProgress (2): 49/481 kB | 47/244 kBProgress (2): 49/481 kB | 49/244 kBProgress (2): 53/481 kB | 49/244 kBProgress (2): 57/481 kB | 49/244 kBProgress (2): 61/481 kB | 49/244 kBProgress (2): 65/481 kB | 49/244 kBProgress (2): 65/481 kB | 53/244 kBProgress (2): 65/481 kB | 57/244 kBProgress (2): 65/481 kB | 61/244 kBProgress (2): 65/481 kB | 65/244 kBProgress (2): 69/481 kB | 65/244 kBProgress (2): 73/481 kB | 65/244 kBProgress (2): 77/481 kB | 65/244 kBProgress (2): 81/481 kB | 65/244 kBProgress (2): 81/481 kB | 69/244 kBProgress (2): 81/481 kB | 73/244 kBProgress (2): 81/481 kB | 77/244 kBProgress (2): 81/481 kB | 81/244 kBProgress (2): 85/481 kB | 81/244 kBProgress (2): 90/481 kB | 81/244 kBProgress (2): 94/481 kB | 81/244 kBProgress (2): 98/481 kB | 81/244 kBProgress (2): 98/481 kB | 85/244 kBProgress (2): 102/481 kB | 85/244 kBProgress (2): 102/481 kB | 90/244 kBProgress (2): 106/481 kB | 90/244 kBProgress (2): 106/481 kB | 94/244 kBProgress (2): 110/481 kB | 94/244 kBProgress (2): 110/481 kB | 98/244 kBProgress (2): 114/481 kB | 98/244 kBProgress (2): 114/481 kB | 102/244 kBProgress (2): 118/481 kB | 102/244 kBProgress (2): 118/481 kB | 106/244 kBProgress (2): 122/481 kB | 106/244 kBProgress (2): 122/481 kB | 110/244 kBProgress (2): 126/481 kB | 110/244 kBProgress (2): 126/481 kB | 114/244 kBProgress (2): 131/481 kB | 114/244 kBProgress (2): 131/481 kB | 118/244 kBProgress (2): 135/481 kB | 118/244 kBProgress (2): 135/481 kB | 122/244 kBProgress (2): 139/481 kB | 122/244 kBProgress (2): 139/481 kB | 126/244 kBProgress (2): 143/481 kB | 126/244 kBProgress (2): 143/481 kB | 131/244 kBProgress (2): 147/481 kB | 131/244 kBProgress (2): 147/481 kB | 135/244 kBProgress (2): 147/481 kB | 139/244 kBProgress (2): 151/481 kB | 139/244 kBProgress (2): 151/481 kB | 143/244 kBProgress (2): 155/481 kB | 143/244 kBProgress (2): 155/481 kB | 147/244 kBProgress (2): 159/481 kB | 147/244 kBProgress (2): 163/481 kB | 147/244 kBProgress (2): 163/481 kB | 151/244 kBProgress (2): 167/481 kB | 151/244 kBProgress (2): 167/481 kB | 155/244 kBProgress (2): 171/481 kB | 155/244 kBProgress (2): 171/481 kB | 159/244 kBProgress (2): 176/481 kB | 159/244 kBProgress (2): 176/481 kB | 163/244 kBProgress (2): 180/481 kB | 163/244 kBProgress (2): 180/481 kB | 167/244 kBProgress (2): 184/481 kB | 167/244 kBProgress (2): 184/481 kB | 171/244 kBProgress (2): 188/481 kB | 171/244 kBProgress (2): 188/481 kB | 176/244 kBProgress (2): 192/481 kB | 176/244 kBProgress (2): 192/481 kB | 180/244 kBProgress (2): 196/481 kB | 180/244 kBProgress (2): 196/481 kB | 184/244 kBProgress (2): 200/481 kB | 184/244 kBProgress (2): 200/481 kB | 188/244 kBProgress (2): 204/481 kB | 188/244 kBProgress (2): 204/481 kB | 192/244 kBProgress (2): 208/481 kB | 192/244 kBProgress (2): 208/481 kB | 196/244 kBProgress (2): 212/481 kB | 196/244 kBProgress (2): 212/481 kB | 200/244 kBProgress (2): 217/481 kB | 200/244 kBProgress (2): 217/481 kB | 204/244 kBProgress (2): 221/481 kB | 204/244 kBProgress (2): 221/481 kB | 208/244 kBProgress (2): 225/481 kB | 208/244 kBProgress (2): 225/481 kB | 212/244 kBProgress (2): 229/481 kB | 212/244 kBProgress (2): 229/481 kB | 217/244 kBProgress (2): 233/481 kB | 217/244 kBProgress (2): 233/481 kB | 221/244 kBProgress (2): 237/481 kB | 221/244 kBProgress (2): 237/481 kB | 225/244 kBProgress (2): 241/481 kB | 225/244 kBProgress (2): 241/481 kB | 229/244 kBProgress (2): 245/481 kB | 229/244 kBProgress (2): 245/481 kB | 233/244 kBProgress (2): 249/481 kB | 233/244 kBProgress (2): 249/481 kB | 237/244 kBProgress (2): 253/481 kB | 237/244 kBProgress (2): 253/481 kB | 241/244 kBProgress (2): 258/481 kB | 241/244 kBProgress (2): 258/481 kB | 244 kB    Progress (2): 262/481 kB | 244 kBProgress (2): 266/481 kB | 244 kBProgress (2): 270/481 kB | 244 kBProgress (2): 274/481 kB | 244 kBProgress (2): 278/481 kB | 244 kBProgress (2): 282/481 kB | 244 kBProgress (2): 286/481 kB | 244 kBProgress (2): 290/481 kB | 244 kBProgress (2): 294/481 kB | 244 kBProgress (2): 298/481 kB | 244 kBProgress (2): 303/481 kB | 244 kBProgress (2): 307/481 kB | 244 kBProgress (2): 311/481 kB | 244 kBProgress (2): 315/481 kB | 244 kBProgress (2): 319/481 kB | 244 kBProgress (2): 323/481 kB | 244 kBProgress (2): 327/481 kB | 244 kBProgress (2): 331/481 kB | 244 kBProgress (2): 335/481 kB | 244 kBProgress (2): 339/481 kB | 244 kBProgress (2): 343/481 kB | 244 kBProgress (2): 348/481 kB | 244 kBProgress (2): 352/481 kB | 244 kBProgress (2): 356/481 kB | 244 kBProgress (2): 360/481 kB | 244 kBProgress (2): 364/481 kB | 244 kBProgress (2): 368/481 kB | 244 kBProgress (2): 372/481 kB | 244 kBProgress (2): 376/481 kB | 244 kBProgress (2): 380/481 kB | 244 kBProgress (2): 384/481 kB | 244 kBProgress (2): 389/481 kB | 244 kBProgress (2): 393/481 kB | 244 kBProgress (2): 397/481 kB | 244 kBProgress (2): 401/481 kB | 244 kBProgress (2): 405/481 kB | 244 kBProgress (2): 409/481 kB | 244 kBProgress (2): 413/481 kB | 244 kBProgress (2): 417/481 kB | 244 kBProgress (2): 421/481 kB | 244 kBProgress (2): 425/481 kB | 244 kBProgress (2): 429/481 kB | 244 kBProgress (2): 434/481 kB | 244 kBProgress (2): 438/481 kB | 244 kBProgress (2): 442/481 kB | 244 kBProgress (2): 446/481 kB | 244 kBProgress (2): 450/481 kB | 244 kBProgress (2): 454/481 kB | 244 kBProgress (2): 458/481 kB | 244 kBProgress (2): 462/481 kB | 244 kBProgress (2): 466/481 kB | 244 kBProgress (2): 470/481 kB | 244 kBProgress (2): 475/481 kB | 244 kBProgress (2): 479/481 kB | 244 kBProgress (2): 481 kB | 244 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-kms/1.9.22/aws-java-sdk-kms-1.9.22.jar (244 kB at 482 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-core/1.9.22/aws-java-sdk-core-1.9.22.jar (481 kB at 922 kB/s)
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-core ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-core ---
+[INFO] Compiling 807 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-core/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-core/src/main/java/org/apache/jackrabbit/oak/plugins/blob/datastore/DataStoreWrapperBackend.java:[42,7] error: DataStoreWrapperBackend is not abstract and does not override abstract method touchAsync(DataIdentifier,long,AsyncTouchCallback) in Backend
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] 
+[INFO] -------------------< org.apache.jackrabbit:oak-jcr >--------------------
+[INFO] Building Oak JCR Binding 1.1-SNAPSHOT                             [8/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-tests/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 788 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-tests/2.9-SNAPSHOT/maven-metadata.xml (788 B at 347 B/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-tests/2.9-SNAPSHOT/jackrabbit-jcr-tests-2.9-20150323.101644-52.pom
+Progress (1): 1.0/2.5 kBProgress (1): 2.5 kB                        Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-tests/2.9-SNAPSHOT/jackrabbit-jcr-tests-2.9-20150323.101644-52.pom (2.5 kB at 5.0 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-core/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 994 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-core/2.9-SNAPSHOT/maven-metadata.xml (994 B at 1.3 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-core/2.9-SNAPSHOT/jackrabbit-core-2.9-20150323.101644-50.pom
+Progress (1): 1.0/23 kBProgress (1): 5.1/23 kBProgress (1): 8.3/23 kBProgress (1): 9.7/23 kBProgress (1): 11/23 kB Progress (1): 14/23 kBProgress (1): 16/23 kBProgress (1): 18/23 kBProgress (1): 23/23 kBProgress (1): 23 kB                      Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-core/2.9-SNAPSHOT/jackrabbit-core-2.9-20150323.101644-50.pom (23 kB at 37 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-spi-commons/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 790 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-spi-commons/2.9-SNAPSHOT/maven-metadata.xml (790 B at 1.1 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-spi-commons/2.9-SNAPSHOT/jackrabbit-spi-commons-2.9-20150323.101644-50.pom
+Progress (1): 1.0/6.8 kBProgress (1): 5.1/6.8 kBProgress (1): 6.8 kB                        Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-spi-commons/2.9-SNAPSHOT/jackrabbit-spi-commons-2.9-20150323.101644-50.pom (6.8 kB at 10 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-spi/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 993 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-spi/2.9-SNAPSHOT/maven-metadata.xml (993 B at 1.3 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-spi/2.9-SNAPSHOT/jackrabbit-spi-2.9-20150323.101644-50.pom
+Progress (1): 1.0/3.0 kBProgress (1): 3.0 kB                        Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-spi/2.9-SNAPSHOT/jackrabbit-spi-2.9-20150323.101644-50.pom (3.0 kB at 5.7 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-server/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 789 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-server/2.9-SNAPSHOT/maven-metadata.xml (789 B at 992 B/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-server/2.9-SNAPSHOT/jackrabbit-jcr-server-2.9-20150323.101644-50.pom
+Progress (1): 1.0/8.6 kBProgress (1): 5.1/8.6 kBProgress (1): 8.6 kB                        Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-server/2.9-SNAPSHOT/jackrabbit-jcr-server-2.9-20150323.101644-50.pom (8.6 kB at 19 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-webdav/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 785 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-webdav/2.9-SNAPSHOT/maven-metadata.xml (785 B at 1.4 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-webdav/2.9-SNAPSHOT/jackrabbit-webdav-2.9-20150323.101644-50.pom
+Progress (1): 1.0/4.9 kBProgress (1): 4.9 kB                        Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-webdav/2.9-SNAPSHOT/jackrabbit-webdav-2.9-20150323.101644-50.pom (4.9 kB at 11 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-tests/2.9-SNAPSHOT/jackrabbit-jcr-tests-2.9-20150323.101644-52.jar
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-spi/2.9-SNAPSHOT/jackrabbit-spi-2.9-20150323.101644-50.jar
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-spi-commons/2.9-SNAPSHOT/jackrabbit-spi-commons-2.9-20150323.101644-50.jar
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-core/2.9-SNAPSHOT/jackrabbit-core-2.9-20150323.101644-50-tests.jar
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-core/2.9-SNAPSHOT/jackrabbit-core-2.9-20150323.101644-50.jar
+Progress (1): 4.1/28 kBProgress (1): 7.8/28 kBProgress (1): 12/28 kB Progress (1): 14/28 kBProgress (2): 14/28 kB | 2.5/852 kBProgress (2): 14/28 kB | 6.6/852 kBProgress (2): 14/28 kB | 11/852 kB Progress (2): 14/28 kB | 14/852 kBProgress (3): 14/28 kB | 14/852 kB | 4.1/798 kBProgress (3): 14/28 kB | 14/852 kB | 7.8/798 kBProgress (3): 14/28 kB | 14/852 kB | 12/798 kB Progress (3): 14/28 kB | 14/852 kB | 14/798 kBProgress (4): 14/28 kB | 14/852 kB | 14/798 kB | 0/2.4 MBProgress (4): 14/28 kB | 14/852 kB | 14/798 kB | 0/2.4 MBProgress (4): 14/28 kB | 14/852 kB | 14/798 kB | 0/2.4 MBProgress (4): 14/28 kB | 14/852 kB | 14/798 kB | 0/2.4 MBProgress (5): 14/28 kB | 14/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 14/28 kB | 14/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 14/28 kB | 14/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 14/28 kB | 14/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 14/28 kB | 16/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 14/28 kB | 17/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 14/28 kB | 21/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 14/28 kB | 25/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 14/28 kB | 29/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 14/28 kB | 33/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 14/28 kB | 37/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 14/28 kB | 42/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 14/28 kB | 43/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 18/28 kB | 43/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 22/28 kB | 43/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 26/28 kB | 43/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MB   Progress (5): 28 kB | 43/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 14/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 18/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 22/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 26/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 30/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 35/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 39/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 43/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 47/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 51/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 55/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 59/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 63/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 68/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 72/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 76/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 80/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 84/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 88/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 92/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 96/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 100/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (5): 28 kB | 101/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MB                                                                  Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-spi/2.9-SNAPSHOT/jackrabbit-spi-2.9-20150323.101644-50.jar (28 kB at 41 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-server/2.9-SNAPSHOT/jackrabbit-jcr-server-2.9-20150323.101644-50.jar
+Progress (4): 101/852 kB | 43/798 kB | 0/2.4 MB | 0/1.2 MBProgress (4): 101/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 101/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 101/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 101/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 105/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 105/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 109/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 109/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 113/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 113/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 117/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 117/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 121/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 121/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 126/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 126/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 130/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 134/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 138/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 142/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 146/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 150/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 154/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 158/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 162/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 166/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 171/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 175/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 179/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 183/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 187/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 191/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 195/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 199/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 203/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 207/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 212/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 216/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 217/852 kB | 43/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 217/852 kB | 47/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 217/852 kB | 51/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 217/852 kB | 55/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 217/852 kB | 59/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 217/852 kB | 63/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 217/852 kB | 68/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 217/852 kB | 72/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 217/852 kB | 76/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 217/852 kB | 80/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 217/852 kB | 84/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 217/852 kB | 86/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 217/852 kB | 86/798 kB | 0.1/2.4 MB | 0/1.2 MBProgress (4): 217/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 217/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 217/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 217/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 217/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 217/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 217/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 217/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 217/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 217/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 221/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 225/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 229/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 233/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 237/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 241/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 245/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 250/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 254/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 258/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 262/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 266/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 270/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 274/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 278/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 282/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 286/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 291/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 295/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 299/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 303/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 307/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 311/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 315/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 319/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 323/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 327/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 331/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 336/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 340/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 344/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 348/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 352/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 356/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 360/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 364/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 368/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 372/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 377/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 381/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 385/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 389/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 393/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 397/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 401/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 405/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 409/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 413/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 417/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 422/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 426/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 430/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 434/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 438/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 442/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 446/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 448/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 448/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 448/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 448/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 448/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 448/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 448/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 448/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 448/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 448/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (4): 448/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MBProgress (5): 448/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 4.1/363 kBProgress (5): 448/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 6.8/363 kBProgress (5): 448/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 11/363 kB Progress (5): 448/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 15/363 kBProgress (5): 448/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 19/363 kBProgress (5): 448/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 23/363 kBProgress (5): 448/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 27/363 kBProgress (5): 448/852 kB | 86/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 448/852 kB | 91/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 448/852 kB | 95/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 448/852 kB | 99/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 448/852 kB | 103/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 448/852 kB | 107/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 448/852 kB | 111/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 448/852 kB | 115/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 448/852 kB | 119/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 448/852 kB | 123/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 448/852 kB | 127/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 448/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 453/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 457/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 461/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 465/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 469/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 473/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 477/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 481/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 485/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 489/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 494/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 498/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 502/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 506/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 510/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 514/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 518/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 522/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 526/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 530/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 534/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 539/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 29/363 kBProgress (5): 539/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 543/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 547/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 551/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 555/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 559/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 563/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 567/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 571/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 575/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 580/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 584/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 588/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 592/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 596/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 600/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 604/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 608/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 612/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 616/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 620/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 625/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 629/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 633/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 637/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 641/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 645/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 649/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 653/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 657/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 661/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 666/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 670/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 674/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 678/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 682/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 686/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 690/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 694/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 698/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 702/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 707/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 711/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 715/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 719/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 723/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 727/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 731/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 735/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 739/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 743/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 747/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 752/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 756/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 760/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 764/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 768/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 772/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 776/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 780/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 784/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 788/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 793/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 797/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 801/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 805/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 809/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 813/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 817/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 821/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 825/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 829/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 833/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 838/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 842/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 846/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 850/852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kB    Progress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 130/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 134/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 138/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 142/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 146/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 31/363 kBProgress (5): 852 kB | 146/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 36/363 kBProgress (5): 852 kB | 147/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 36/363 kBProgress (5): 852 kB | 147/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 40/363 kBProgress (5): 852 kB | 147/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 44/363 kBProgress (5): 852 kB | 147/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 48/363 kBProgress (5): 852 kB | 147/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 52/363 kBProgress (5): 852 kB | 147/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 56/363 kBProgress (5): 852 kB | 147/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 60/363 kBProgress (5): 852 kB | 147/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 64/363 kBProgress (5): 852 kB | 147/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 68/363 kBProgress (5): 852 kB | 147/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 72/363 kBProgress (5): 852 kB | 147/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 76/363 kBProgress (5): 852 kB | 147/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 81/363 kBProgress (5): 852 kB | 147/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 85/363 kBProgress (5): 852 kB | 147/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 86/363 kBProgress (5): 852 kB | 147/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 91/363 kBProgress (5): 852 kB | 147/798 kB | 0.1/2.4 MB | 0.1/1.2 MB | 92/363 kB                                                                       Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-tests/2.9-SNAPSHOT/jackrabbit-jcr-tests-2.9-20150323.101644-52.jar (852 kB at 640 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-webdav/2.9-SNAPSHOT/jackrabbit-webdav-2.9-20150323.101644-50.jar
+Progress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 92/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 92/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 92/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 92/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 92/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 92/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 92/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 92/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 92/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 92/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 92/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 96/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 100/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 105/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 109/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 113/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 117/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 121/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 125/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 129/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 133/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 137/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 141/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 145/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 150/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 154/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 158/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 162/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 166/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 170/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 174/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 178/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 182/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 186/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 191/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 195/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 199/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 202/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 206/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 210/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 211/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.1/1.2 MB | 211/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 211/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 211/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 211/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 211/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 211/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 211/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 211/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 211/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 211/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 211/363 kBProgress (4): 147/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 214/363 kBProgress (4): 151/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 214/363 kBProgress (4): 155/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 214/363 kBProgress (4): 160/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 214/363 kBProgress (4): 164/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 214/363 kBProgress (4): 168/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 214/363 kBProgress (4): 172/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 214/363 kBProgress (4): 176/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 214/363 kBProgress (4): 180/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 214/363 kBProgress (4): 184/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 214/363 kBProgress (4): 188/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 214/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 214/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 218/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 222/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 226/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 230/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 234/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 238/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 243/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 247/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 251/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 255/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 259/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 263/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 267/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 271/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 275/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 279/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 284/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 288/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 292/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 296/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 300/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 304/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 308/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 312/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 316/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 320/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 324/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 329/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 333/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 337/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 341/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 345/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 349/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 353/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 357/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 361/363 kBProgress (4): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB    Progress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 1.0/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 5.1/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 9.2/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 13/328 kB Progress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 17/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 22/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 26/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 30/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 34/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 38/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 42/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 46/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 50/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 54/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 58/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 62/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 67/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 71/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 75/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 79/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 83/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 87/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 91/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 95/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 99/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 103/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 108/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 112/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 116/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 120/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 124/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 128/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 132/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 136/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 140/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 144/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 148/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 153/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 157/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 161/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 165/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 169/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 173/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 177/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 181/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 185/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 189/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 194/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 198/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 202/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 206/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 210/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 214/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 218/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 222/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 226/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 230/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 234/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 239/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 243/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 247/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 251/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 255/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 259/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 263/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 267/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 271/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 275/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 280/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 284/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 288/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 292/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 296/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 300/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 304/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 308/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 312/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 316/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 321/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 325/328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kB    Progress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 192/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 196/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 200/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 204/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 209/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 213/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 217/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 221/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 225/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 229/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 233/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kBProgress (5): 237/798 kB | 0.2/2.4 MB | 0.2/1.2 MB | 363 kB | 328 kB                                                                    Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-server/2.9-SNAPSHOT/jackrabbit-jcr-server-2.9-20150323.101644-50.jar (363 kB at 204 kB/s)
+Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-webdav/2.9-SNAPSHOT/jackrabbit-webdav-2.9-20150323.101644-50.jar (328 kB at 183 kB/s)
+Progress (3): 237/798 kB | 0.2/2.4 MB | 0.2/1.2 MBProgress (3): 237/798 kB | 0.2/2.4 MB | 0.2/1.2 MBProgress (3): 237/798 kB | 0.2/2.4 MB | 0.2/1.2 MBProgress (3): 237/798 kB | 0.3/2.4 MB | 0.2/1.2 MBProgress (3): 237/798 kB | 0.3/2.4 MB | 0.2/1.2 MBProgress (3): 237/798 kB | 0.3/2.4 MB | 0.2/1.2 MBProgress (3): 237/798 kB | 0.3/2.4 MB | 0.2/1.2 MBProgress (3): 237/798 kB | 0.3/2.4 MB | 0.2/1.2 MBProgress (3): 237/798 kB | 0.3/2.4 MB | 0.2/1.2 MBProgress (3): 237/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 237/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 237/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 237/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 237/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 237/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 237/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 241/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 245/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 249/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 253/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 258/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 262/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 266/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 270/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 274/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 278/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 282/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 286/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 290/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 294/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 298/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 302/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 307/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 311/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 315/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 319/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 323/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 327/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.3/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.4/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.4/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.4/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.4/1.2 MBProgress (3): 330/798 kB | 0.3/2.4 MB | 0.4/1.2 MBProgress (3): 330/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 330/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 330/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 330/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 330/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 334/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 338/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 342/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 346/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 350/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 354/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 358/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 362/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 367/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 371/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 375/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 378/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 378/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 378/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 378/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 378/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 378/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 378/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 378/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 378/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 378/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 378/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 378/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 378/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 382/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 386/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 390/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 394/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 398/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 402/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 406/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 410/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 414/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 418/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 423/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.4/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 425/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 429/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 433/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 438/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 442/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 446/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 450/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 454/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 458/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 462/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 466/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 470/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 474/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.4/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 477/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 482/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 486/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 490/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 494/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 498/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 502/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 506/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 510/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 514/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 518/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 522/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 527/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.5/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 531/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 535/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 535/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 539/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 539/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 543/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 543/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 547/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 547/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 551/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 551/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 556/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 556/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 560/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 560/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 564/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 568/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 572/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 576/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 580/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 584/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 587/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 587/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 587/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 587/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 587/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 587/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 587/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 587/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 587/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 587/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 587/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 587/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 587/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 587/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 592/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 596/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 600/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 600/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 604/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 604/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 608/798 kB | 0.5/2.4 MB | 0.6/1.2 MBProgress (3): 608/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 612/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 612/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 616/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 616/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 620/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 620/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 624/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 624/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 628/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 628/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 633/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 633/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 637/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 637/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 641/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 641/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 645/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 648/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 648/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 648/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 648/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 648/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 648/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 648/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 648/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 648/798 kB | 0.6/2.4 MB | 0.6/1.2 MBProgress (3): 648/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 648/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 648/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 648/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 648/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 648/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 652/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 656/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 661/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 665/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 669/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 673/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 677/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 681/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 685/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 689/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 693/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 697/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 702/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 706/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 710/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.6/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 713/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 718/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 722/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 726/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 730/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 734/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 738/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 742/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 746/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 750/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 754/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 758/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 763/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 767/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 771/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 775/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 779/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 783/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 783/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 783/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 783/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 783/798 kB | 0.7/2.4 MB | 0.7/1.2 MBProgress (3): 783/798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 783/798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 783/798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 783/798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 783/798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 783/798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 783/798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 783/798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 783/798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 783/798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 783/798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 783/798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 787/798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 791/798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 795/798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MB    Progress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.8/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.9/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.9/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.9/1.2 MBProgress (3): 798 kB | 0.7/2.4 MB | 0.9/1.2 MB                                              Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-spi-commons/2.9-SNAPSHOT/jackrabbit-spi-commons-2.9-20150323.101644-50.jar (798 kB at 176 kB/s)
+Progress (2): 0.7/2.4 MB | 0.9/1.2 MBProgress (2): 0.7/2.4 MB | 0.9/1.2 MBProgress (2): 0.7/2.4 MB | 0.9/1.2 MBProgress (2): 0.7/2.4 MB | 0.9/1.2 MBProgress (2): 0.7/2.4 MB | 0.9/1.2 MBProgress (2): 0.7/2.4 MB | 0.9/1.2 MBProgress (2): 0.7/2.4 MB | 0.9/1.2 MBProgress (2): 0.7/2.4 MB | 0.9/1.2 MBProgress (2): 0.7/2.4 MB | 0.9/1.2 MBProgress (2): 0.7/2.4 MB | 0.9/1.2 MBProgress (2): 0.7/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 0.9/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.8/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.0/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 0.9/2.4 MB | 1.1/1.2 MBProgress (2): 1.0/2.4 MB | 1.1/1.2 MBProgress (2): 1.0/2.4 MB | 1.1/1.2 MBProgress (2): 1.0/2.4 MB | 1.1/1.2 MBProgress (2): 1.0/2.4 MB | 1.1/1.2 MBProgress (2): 1.0/2.4 MB | 1.1/1.2 MBProgress (2): 1.0/2.4 MB | 1.1/1.2 MBProgress (2): 1.0/2.4 MB | 1.1/1.2 MBProgress (2): 1.0/2.4 MB | 1.1/1.2 MBProgress (2): 1.0/2.4 MB | 1.1/1.2 MBProgress (2): 1.0/2.4 MB | 1.2/1.2 MBProgress (2): 1.0/2.4 MB | 1.2/1.2 MBProgress (2): 1.0/2.4 MB | 1.2/1.2 MBProgress (2): 1.0/2.4 MB | 1.2/1.2 MBProgress (2): 1.0/2.4 MB | 1.2/1.2 MBProgress (2): 1.0/2.4 MB | 1.2/1.2 MBProgress (2): 1.0/2.4 MB | 1.2/1.2 MBProgress (2): 1.0/2.4 MB | 1.2/1.2 MBProgress (2): 1.0/2.4 MB | 1.2/1.2 MBProgress (2): 1.0/2.4 MB | 1.2/1.2 MBProgress (2): 1.0/2.4 MB | 1.2 MB    Progress (2): 1.0/2.4 MB | 1.2 MBProgress (2): 1.0/2.4 MB | 1.2 MBProgress (2): 1.0/2.4 MB | 1.2 MBProgress (2): 1.0/2.4 MB | 1.2 MBProgress (2): 1.0/2.4 MB | 1.2 MBProgress (2): 1.0/2.4 MB | 1.2 MBProgress (2): 1.0/2.4 MB | 1.2 MBProgress (2): 1.0/2.4 MB | 1.2 MBProgress (2): 1.0/2.4 MB | 1.2 MBProgress (2): 1.0/2.4 MB | 1.2 MBProgress (2): 1.0/2.4 MB | 1.2 MBProgress (2): 1.0/2.4 MB | 1.2 MBProgress (2): 1.0/2.4 MB | 1.2 MB                                 Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-core/2.9-SNAPSHOT/jackrabbit-core-2.9-20150323.101644-50-tests.jar (1.2 MB at 201 kB/s)
+Progress (1): 1.0/2.4 MBProgress (1): 1.0/2.4 MBProgress (1): 1.0/2.4 MBProgress (1): 1.0/2.4 MBProgress (1): 1.0/2.4 MBProgress (1): 1.0/2.4 MBProgress (1): 1.0/2.4 MBProgress (1): 1.0/2.4 MBProgress (1): 1.0/2.4 MBProgress (1): 1.0/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.4 MB                        Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-core/2.9-SNAPSHOT/jackrabbit-core-2.9-20150323.101644-50.jar (2.4 MB at 212 kB/s)
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-jcr ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-jcr ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-jcr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-jcr ---
+[INFO] Compiling 102 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/session/SessionContext.java:[308,4] error: method does not override or implement a method from a supertype
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/session/SessionContext.java:[311,29] error: cannot find symbol
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] 
+[INFO] -----------------< org.apache.jackrabbit:oak-upgrade >------------------
+[INFO] Building Oak upgrade 1.1-SNAPSHOT                                 [9/23]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-upgrade ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-upgrade ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-upgrade ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-upgrade/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-upgrade ---
+[INFO] Compiling 11 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-upgrade/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-upgrade ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-upgrade ---
+[INFO] Compiling 5 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-upgrade/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-upgrade ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-upgrade ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ oak-upgrade ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-upgrade/target/oak-upgrade-1.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-upgrade ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-upgrade ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-upgrade/target/oak-upgrade-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-upgrade/1.1-SNAPSHOT/oak-upgrade-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-upgrade/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-upgrade/1.1-SNAPSHOT/oak-upgrade-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] -------------------< org.apache.jackrabbit:oak-http >-------------------
+[INFO] Building Oak HTTP Binding 1.1-SNAPSHOT                           [10/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-http ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-http ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-http/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-http ---
+[INFO] Compiling 9 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-http/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-http/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-http ---
+[INFO] Compiling 1 source file to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-http/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-http ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-http ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-http ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-http ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-http ---
+[INFO] Baseline analisys complete, 0 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-http ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-http/target/oak-http-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-http/1.1-SNAPSHOT/oak-http-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-http/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-http/1.1-SNAPSHOT/oak-http-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-http ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] ------------------< org.apache.jackrabbit:oak-lucene >------------------
+[INFO] Building Oak Lucene 1.1-SNAPSHOT                                 [11/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-lucene ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-lucene ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-lucene ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-lucene ---
+[INFO] Compiling 25 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-lucene/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-lucene ---
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-lucene/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexEditorProvider.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-lucene/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-lucene ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-lucene ---
+[INFO] Compiling 10 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-lucene/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-lucene ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-lucene ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-lucene ---
+[WARNING] Bundle org.apache.jackrabbit:oak-lucene:bundle:1.1-SNAPSHOT : Export org.apache.jackrabbit.oak.plugins.index.lucene,  has 5,  private references [org.apache.lucene.analysis, org.apache.lucene.util, org.apache.lucene.index, org.apache.lucene.document, org.apache.lucene.codecs], 
+[WARNING] Bundle org.apache.jackrabbit:oak-lucene:bundle:1.1-SNAPSHOT : Export org.apache.jackrabbit.oak.plugins.index.lucene.util,  has 6,  private references [org.apache.lucene.search, org.apache.lucene.analysis.tokenattributes, org.apache.lucene.analysis, org.apache.lucene.util, org.apache.lucene.analysis.util, org.apache.lucene.index], 
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-lucene ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-lucene ---
+[ERROR] org.apache.jackrabbit.oak.plugins.index.lucene: Version increase required; detected 1.0.0, suggested 2.0.0
+[ERROR] org.apache.jackrabbit.oak.plugins.index.lucene.util: Version increase required; detected 1.0.0, suggested 2.0.0
+[INFO] Baseline analisys complete, 2 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-lucene ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-lucene/target/oak-lucene-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-lucene/1.1-SNAPSHOT/oak-lucene-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-lucene/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-lucene/1.1-SNAPSHOT/oak-lucene-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-lucene ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] ----------------< org.apache.jackrabbit:oak-solr-core >-----------------
+[INFO] Building Oak Solr core 1.1-SNAPSHOT                              [12/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-solr-core ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-solr-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-solr-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-solr-core ---
+[INFO] Compiling 33 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-solr-core ---
+[INFO] Generating 1 MetaType Descriptors in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes/OSGI-INF/metatype/org.apache.jackrabbit.oak.plugins.index.solr.osgi.RemoteSolrServerConfigurationProvider.xml
+[INFO] Generating 1 MetaType Descriptors in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes/OSGI-INF/metatype/org.apache.jackrabbit.oak.plugins.index.solr.osgi.OakSolrConfigurationProviderService.xml
+[INFO] Generating 1 MetaType Descriptors in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes/OSGI-INF/metatype/org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService.xml
+[INFO] Generating 1 MetaType Descriptors in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes/OSGI-INF/metatype/org.apache.jackrabbit.oak.plugins.index.solr.osgi.EmbeddedSolrServerConfigurationProvider.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrIndexEditorProviderService.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrQueryIndexProviderService.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.solr.osgi.RemoteSolrServerConfigurationProvider.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.solr.osgi.OakSolrConfigurationProviderService.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.solr.osgi.EmbeddedSolrServerConfigurationProvider.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-solr-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-solr-core ---
+[INFO] Compiling 17 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-solr-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-solr-core ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-solr-core ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-solr-core ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (default) @ oak-solr-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-solr-core ---
+[INFO] Baseline analisys complete, 0 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (default) @ oak-solr-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-solr-core ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/oak-solr-core-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-solr-core/1.1-SNAPSHOT/oak-solr-core-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-solr-core/1.1-SNAPSHOT/oak-solr-core-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-solr-core ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] ----------------< org.apache.jackrabbit:oak-solr-osgi >-----------------
+[INFO] Building Oak Solr OSGi 1.1-SNAPSHOT                              [13/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-solr-osgi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-solr-osgi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-solr-osgi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-osgi/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-solr-osgi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-solr-osgi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-osgi/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-solr-osgi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-solr-osgi ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-solr-osgi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-solr-osgi ---
+[WARNING] Bundle org.apache.jackrabbit:oak-solr-osgi:bundle:1.1-SNAPSHOT : Unused Private-Package instructions, no such package(s) on the class path: [!*]
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-solr-osgi ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-solr-osgi ---
+[INFO] Baseline analisys complete, 0 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-solr-osgi ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-osgi/target/oak-solr-osgi-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-solr-osgi/1.1-SNAPSHOT/oak-solr-osgi-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-osgi/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-solr-osgi/1.1-SNAPSHOT/oak-solr-osgi-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-solr-osgi ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] --------------< org.apache.jackrabbit:oak-auth-external >---------------
+[INFO] Building Oak External Authentication Support 1.1-SNAPSHOT        [14/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-auth-external ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-auth-external ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-auth-external ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-auth-external ---
+[INFO] Compiling 25 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-auth-external ---
+[INFO] Generating 1 MetaType Descriptors in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/classes/OSGI-INF/metatype/org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncConfig.xml
+[INFO] Generating 1 MetaType Descriptors in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/classes/OSGI-INF/metatype/org.apache.jackrabbit.oak.spi.security.authentication.external.impl.ExternalLoginModuleFactory.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/classes/OSGI-INF/org.apache.jackrabbit.oak.spi.security.authentication.external.impl.ExternalIDPManagerImpl.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/classes/OSGI-INF/org.apache.jackrabbit.oak.spi.security.authentication.external.impl.ExternalLoginModuleFactory.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/classes/OSGI-INF/org.apache.jackrabbit.oak.spi.security.authentication.external.impl.SyncManagerImpl.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/classes/OSGI-INF/org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-auth-external ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-auth-external ---
+[INFO] Compiling 3 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-auth-external ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-auth-external ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-auth-external ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-auth-external ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ oak-auth-external ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/oak-auth-external-1.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-auth-external ---
+[ERROR] org.apache.jackrabbit.oak.spi.security.authentication.external: Version increase required; detected 1.0.0, suggested 3.0.0
+[INFO] Baseline analisys complete, 1 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-auth-external ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/oak-auth-external-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-auth-external/1.1-SNAPSHOT/oak-auth-external-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-auth-external/1.1-SNAPSHOT/oak-auth-external-1.1-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/oak-auth-external-1.1-SNAPSHOT-tests.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-auth-external/1.1-SNAPSHOT/oak-auth-external-1.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-auth-external ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] ----------------< org.apache.jackrabbit:oak-auth-ldap >-----------------
+[INFO] Building Oak LDAP Authentication Support 1.1-SNAPSHOT            [15/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-auth-ldap ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-auth-ldap ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-auth-ldap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-ldap/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-auth-ldap ---
+[INFO] Compiling 11 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-ldap/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-auth-ldap ---
+[INFO] Generating 1 MetaType Descriptors in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-ldap/target/classes/OSGI-INF/metatype/org.apache.jackrabbit.oak.security.authentication.ldap.impl.LdapProviderConfig.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-ldap/target/classes/OSGI-INF/org.apache.jackrabbit.oak.security.authentication.ldap.impl.LdapIdentityProvider.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-auth-ldap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-auth-ldap ---
+[INFO] Compiling 8 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-ldap/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-auth-ldap ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-auth-ldap ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-auth-ldap ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-auth-ldap ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-auth-ldap ---
+[INFO] Baseline analisys complete, 0 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-auth-ldap ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-ldap/target/oak-auth-ldap-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-auth-ldap/1.1-SNAPSHOT/oak-auth-ldap-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-ldap/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-auth-ldap/1.1-SNAPSHOT/oak-auth-ldap-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-auth-ldap ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] --------------< org.apache.jackrabbit:oak-tarmk-failover >--------------
+[INFO] Building Oak TarMK Failover 1.1-SNAPSHOT                         [16/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-tarmk-failover ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-tarmk-failover ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-tarmk-failover ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-tarmk-failover/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-tarmk-failover ---
+[INFO] Compiling 19 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-tarmk-failover/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-tarmk-failover ---
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-tarmk-failover/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.segment.failover.store.FailoverStoreService.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-tarmk-failover ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.9:reserve-network-port (reserve-network-port) @ oak-tarmk-failover ---
+[INFO] Reserved port 39105 for failover.server.port
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-tarmk-failover ---
+[INFO] Compiling 8 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-tarmk-failover/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-tarmk-failover ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-tarmk-failover ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-tarmk-failover ---
+[WARNING] Bundle org.apache.jackrabbit:oak-tarmk-failover:bundle:1.1-SNAPSHOT : Export org.apache.jackrabbit.oak.plugins.segment.failover.server,  has 1,  private references [io.netty.channel], 
+[WARNING] Bundle org.apache.jackrabbit:oak-tarmk-failover:bundle:1.1-SNAPSHOT : Export org.apache.jackrabbit.oak.plugins.segment.failover.codec,  has 3,  private references [io.netty.handler.codec, io.netty.buffer, io.netty.channel], 
+[WARNING] Bundle org.apache.jackrabbit:oak-tarmk-failover:bundle:1.1-SNAPSHOT : Export org.apache.jackrabbit.oak.plugins.segment.failover.client,  has 2,  private references [io.netty.channel, io.netty.util.concurrent], 
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-tarmk-failover ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-tarmk-failover ---
+[INFO] Unable to find a previous version of the project in the repository
+[INFO] Not generating Baseline report as there is no previous version of the library to compare against
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-tarmk-failover ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-tarmk-failover/target/oak-tarmk-failover-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-tarmk-failover/1.1-SNAPSHOT/oak-tarmk-failover-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-tarmk-failover/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-tarmk-failover/1.1-SNAPSHOT/oak-tarmk-failover-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-tarmk-failover ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] -------------------< org.apache.jackrabbit:oak-run >--------------------
+[INFO] Building Oak Runnable Jar 1.1-SNAPSHOT                           [17/23]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-run ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- gmaven-plugin:1.4:generateStubs (default) @ oak-run ---
+[INFO] Generated 13 Java stubs
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-run ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-run ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 10 resources
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:reserve-network-port (reserve-network-port) @ oak-run ---
+[INFO] Reserved port 44335 for jetty.http.port
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-run ---
+[INFO] Compiling 105 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/target/classes
+[INFO] 
+[INFO] --- gmaven-plugin:1.4:compile (default) @ oak-run ---
+[INFO] Compiled 25 Groovy classes
+[INFO] 
+[INFO] --- gmaven-plugin:1.4:generateTestStubs (default) @ oak-run ---
+[INFO] No sources found for Java stub generation
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-run ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-run ---
+[INFO] Compiling 1 source file to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/target/test-classes
+[INFO] 
+[INFO] --- gmaven-plugin:1.4:testCompile (default) @ oak-run ---
+[INFO] No sources found to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-run ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-run ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ oak-run ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/target/oak-run-1.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-run ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:unpack (copy) @ oak-run ---
+[INFO] Configured Artifact: org.apache.lucene:lucene-core:3.6.0:jar
+[INFO] Unpacking /home/user/.m2/repository/org/apache/lucene/lucene-core/3.6.0/lucene-core-3.6.0.jar to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/target/jr2 with includes "" and excludes ""
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.4:single (create-oak) @ oak-run ---
+[INFO] Reading assembly descriptor: src/main/assembly/oak-run.xml
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/target/oak-run-1.1-SNAPSHOT-oak.jar
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.4:single (create-jr2) @ oak-run ---
+[INFO] Reading assembly descriptor: src/main/assembly/oak-run-jr2.xml
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/target/oak-run-1.1-SNAPSHOT-jr2.jar
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (default) @ oak-run ---
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 1 file to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/target
+   [delete] Deleting: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/target/oak-run-1.1-SNAPSHOT-oak.jar
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-run ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/target/oak-run-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-run/1.1-SNAPSHOT/oak-run-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-run/1.1-SNAPSHOT/oak-run-1.1-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/target/oak-run-1.1-SNAPSHOT-jr2.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-run/1.1-SNAPSHOT/oak-run-1.1-SNAPSHOT-jr2.jar
+[INFO] 
+[INFO] ------------------< org.apache.jackrabbit:oak-it-mk >-------------------
+[INFO] Building Oak Integration Tests for MicroKernel implementations 1.1-SNAPSHOT [18/23]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-it-mk ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-it-mk ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-it-mk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/mk/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-it-mk ---
+[INFO] Compiling 6 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/mk/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-it-mk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-it-mk ---
+[INFO] Compiling 11 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/mk/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-it-mk ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-it-mk ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ oak-it-mk ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/mk/target/oak-it-mk-1.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-it-mk ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-it-mk ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/mk/target/oak-it-mk-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-it-mk/1.1-SNAPSHOT/oak-it-mk-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/mk/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-it-mk/1.1-SNAPSHOT/oak-it-mk-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.apache.jackrabbit:oak-it-osgi >------------------
+[INFO] Building Oak Integration Tests for OSGi deployments 1.1-SNAPSHOT [19/23]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-it-osgi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-it-osgi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-it-osgi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-it-osgi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-it-osgi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-it-osgi ---
+[INFO] Compiling 1 source file to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-it-osgi ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-it-osgi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ oak-it-osgi ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/target/oak-it-osgi-1.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-it-osgi ---
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.2.1:single (default) @ oak-it-osgi ---
+[INFO] Reading assembly descriptor: test-bundles.xml
+[INFO] Copying files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/target/test-bundles
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-it-osgi ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/target/oak-it-osgi-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-it-osgi/1.1-SNAPSHOT/oak-it-osgi-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-it-osgi/1.1-SNAPSHOT/oak-it-osgi-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --------------------< org.apache.jackrabbit:oak-it >--------------------
+[INFO] Building Oak Integration Tests 1.1-SNAPSHOT                      [20/23]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-it ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-it ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-it ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-it ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-it ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-it/1.1-SNAPSHOT/oak-it-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------------< org.apache.jackrabbit:oak-pojosr >------------------
+[INFO] Building Oak PojoSR 1.1-SNAPSHOT                                 [21/23]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-pojosr ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-pojosr ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-pojosr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-pojosr ---
+[INFO] Compiling 7 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-pojosr/target/classes
+[INFO] 
+[INFO] --- gmaven-plugin:1.4:generateTestStubs (default) @ oak-pojosr ---
+[INFO] Generated 17 Java stubs
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-pojosr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-pojosr ---
+[INFO] Compiling 12 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-pojosr/target/test-classes
+[INFO] 
+[INFO] --- gmaven-plugin:1.4:testCompile (default) @ oak-pojosr ---
+[INFO] Compiled 22 Groovy classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-pojosr ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-pojosr ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ oak-pojosr ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-pojosr/target/oak-pojosr-1.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-pojosr ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-pojosr ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-pojosr/target/oak-pojosr-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-pojosr/1.1-SNAPSHOT/oak-pojosr-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-pojosr/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-pojosr/1.1-SNAPSHOT/oak-pojosr-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] ----------------< org.apache.jackrabbit:jackrabbit-oak >----------------
+[INFO] Building Jackrabbit Oak 1.1-SNAPSHOT                             [22/23]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ jackrabbit-oak ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ jackrabbit-oak ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ jackrabbit-oak ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ jackrabbit-oak ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ jackrabbit-oak ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/jackrabbit-oak/1.1-SNAPSHOT/jackrabbit-oak-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------< org.apache.jackrabbit:oak-authorization-cug >-------------
+[INFO] Building Oak CUG 1.1-SNAPSHOT                                    [23/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-authorization-cug ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-authorization-cug ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-authorization-cug ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-authorization-cug ---
+[INFO] Compiling 11 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-authorization-cug ---
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/target/classes/OSGI-INF/org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugConfiguration.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/target/classes/OSGI-INF/org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugExcludeImpl.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-authorization-cug ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-authorization-cug ---
+[INFO] Compiling 5 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-authorization-cug ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-authorization-cug ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-authorization-cug ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-authorization-cug ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ oak-authorization-cug ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/target/oak-authorization-cug-1.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-authorization-cug ---
+[INFO] Unable to find a previous version of the project in the repository
+[INFO] Not generating Baseline report as there is no previous version of the library to compare against
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-authorization-cug ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/target/oak-authorization-cug-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-authorization-cug/1.1-SNAPSHOT/oak-authorization-cug-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-authorization-cug/1.1-SNAPSHOT/oak-authorization-cug-1.1-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/target/oak-authorization-cug-1.1-SNAPSHOT-tests.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-authorization-cug/1.1-SNAPSHOT/oak-authorization-cug-1.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-authorization-cug ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Oak Parent POM ..................................... SUCCESS [  1.113 s]
+[INFO] Oak MicroKernel API ................................ SUCCESS [  1.602 s]
+[INFO] Oak Commons ........................................ SUCCESS [  1.220 s]
+[INFO] Oak Blob Store ..................................... SUCCESS [  0.771 s]
+[INFO] Oak MicroKernel .................................... SUCCESS [  0.939 s]
+[INFO] Oak MicroKernel Remoting ........................... SUCCESS [  0.394 s]
+[INFO] Oak Core ........................................... FAILURE [ 12.011 s]
+[INFO] Oak JCR Binding .................................... FAILURE [ 20.943 s]
+[INFO] Oak upgrade ........................................ SUCCESS [  1.700 s]
+[INFO] Oak HTTP Binding ................................... SUCCESS [  0.286 s]
+[INFO] Oak Lucene ......................................... SUCCESS [  5.398 s]
+[INFO] Oak Solr core ...................................... SUCCESS [  1.581 s]
+[INFO] Oak Solr OSGi ...................................... SUCCESS [ 11.342 s]
+[INFO] Oak External Authentication Support ................ SUCCESS [  0.473 s]
+[INFO] Oak LDAP Authentication Support .................... SUCCESS [  1.160 s]
+[INFO] Oak TarMK Failover ................................. SUCCESS [  0.932 s]
+[INFO] Oak Runnable Jar ................................... SUCCESS [ 15.921 s]
+[INFO] Oak Integration Tests for MicroKernel implementations SUCCESS [  0.250 s]
+[INFO] Oak Integration Tests for OSGi deployments ......... SUCCESS [  1.376 s]
+[INFO] Oak Integration Tests .............................. SUCCESS [  0.013 s]
+[INFO] Oak PojoSR ......................................... SUCCESS [  1.442 s]
+[INFO] Jackrabbit Oak 1.1-SNAPSHOT ........................ SUCCESS [  0.013 s]
+[INFO] Oak CUG 1.1-SNAPSHOT ............................... SUCCESS [  0.425 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:22 min
+[INFO] Finished at: 2022-07-14T10:29:19-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.5.1:compile (default-compile) on project oak-core: Compilation failure
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-core/src/main/java/org/apache/jackrabbit/oak/plugins/blob/datastore/DataStoreWrapperBackend.java:[42,7] error: DataStoreWrapperBackend is not abstract and does not override abstract method touchAsync(DataIdentifier,long,AsyncTouchCallback) in Backend
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.5.1:compile (default-compile) on project oak-jcr: Compilation failure: Compilation failure: 
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/session/SessionContext.java:[308,4] error: method does not override or implement a method from a supertype
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/session/SessionContext.java:[311,29] error: cannot find symbol
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :oak-core
+[INFO] Build failures were ignored.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.apache.jackrabbit:oak-upgrade >------------------
+[INFO] Building Oak upgrade 1.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-upgrade ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-upgrade ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-upgrade ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-upgrade/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-upgrade ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-upgrade ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-upgrade ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-upgrade ---
+[INFO] Surefire report directory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-upgrade/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.jackrabbit.oak.upgrade.RepositoryUpgradeTest
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.368 sec <<< FAILURE!
+verifyPrivileges(org.apache.jackrabbit.oak.upgrade.RepositoryUpgradeTest)  Time elapsed: 0.019 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Miss match in aggregate privilege jcr:all expected [rep:readNodes, rep:readProperties, rep:addProperties, rep:alterProperties, rep:removeProperties, jcr:addChildNodes, jcr:removeChildNodes, jcr:removeNode, jcr:readAccessControl, jcr:modifyAccessControl, jcr:nodeTypeManagement, jcr:versionManagement, jcr:lockManagement, jcr:lifecycleManagement, jcr:retentionManagement, jcr:workspaceManagement, jcr:nodeTypeDefinitionManagement, jcr:namespaceManagement, rep:privilegeManagement, rep:userManagement, rep:indexDefinitionManagement, jcr:read, jcr:modifyProperties, jcr:write, rep:write] actual [jcr:versionManagement, jcr:addChildNodes, jcr:readAccessControl, jcr:nodeTypeDefinitionManagement, jcr:retentionManagement, jcr:lifecycleManagement, rep:alterProperties, jcr:removeNode, rep:readProperties, jcr:write, rep:privilegeManagement, jcr:workspaceManagement, rep:removeProperties, jcr:modifyAccessControl, test:aggregate, jcr:read, jcr:namespaceManagement, rep:write, rep:addProperties, jcr:lockManagement, jcr:nodeTypeManagement, jcr:removeChildNodes, test:privilege, jcr:modifyProperties, rep:readNodes]
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at org.apache.jackrabbit.oak.upgrade.RepositoryUpgradeTest.verifyPrivileges(RepositoryUpgradeTest.java:258)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running org.apache.jackrabbit.oak.upgrade.RepositoryGroupMemberSplitUpgradeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.722 sec
+Running org.apache.jackrabbit.oak.upgrade.RepositoryGroupMemberUpgradeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.86 sec
+Running org.apache.jackrabbit.oak.upgrade.TickerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+
+Results :
+
+Failed tests:   verifyPrivileges(org.apache.jackrabbit.oak.upgrade.RepositoryUpgradeTest): Miss match in aggregate privilege jcr:all expected [rep:readNodes, rep:readProperties, rep:addProperties, rep:alterProperties, rep:removeProperties, jcr:addChildNodes, jcr:removeChildNodes, jcr:removeNode, jcr:readAccessControl, jcr:modifyAccessControl, jcr:nodeTypeManagement, jcr:versionManagement, jcr:lockManagement, jcr:lifecycleManagement, jcr:retentionManagement, jcr:workspaceManagement, jcr:nodeTypeDefinitionManagement, jcr:namespaceManagement, rep:privilegeManagement, rep:userManagement, rep:indexDefinitionManagement, jcr:read, jcr:modifyProperties, jcr:write, rep:write] actual [jcr:versionManagement, jcr:addChildNodes, jcr:readAccessControl, jcr:nodeTypeDefinitionManagement, jcr:retentionManagement, jcr:lifecycleManagement, rep:alterProperties, jcr:removeNode, rep:readProperties, jcr:write, rep:privilegeManagement, jcr:workspaceManagement, rep:removeProperties, jcr:modifyAccessControl, test:aggregate, jcr:read, jcr:namespaceManagement, rep:write, rep:addProperties, jcr:lockManagement, jcr:nodeTypeManagement, jcr:removeChildNodes, test:privilege, jcr:modifyProperties, rep:readNodes]
+
+Tests run: 17, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 20.560 s
+[INFO] Finished at: 2022-07-14T10:29:41-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project oak-upgrade: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-upgrade/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

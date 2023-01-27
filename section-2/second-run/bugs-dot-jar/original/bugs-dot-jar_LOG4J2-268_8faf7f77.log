@@ -1,0 +1,193 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Log4j Flume NG Bridge 2.0-beta7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-flume-ng ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-flume-ng ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-268_8faf7f77446f4d5169ed52d5509d4c8e0dd18654/flume-ng/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-flume-ng ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 13 source files to /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-268_8faf7f77446f4d5169ed52d5509d4c8e0dd18654/flume-ng/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-268_8faf7f77446f4d5169ed52d5509d4c8e0dd18654/flume-ng/src/main/java/org/apache/logging/log4j/flume/appender/FlumePersistentManager.java:[298,39] found raw type: org.apache.logging.log4j.core.config.plugins.PluginType
+  missing type arguments for generic class org.apache.logging.log4j.core.config.plugins.PluginType<T>
+[WARNING] /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-268_8faf7f77446f4d5169ed52d5509d4c8e0dd18654/flume-ng/src/main/java/org/apache/logging/log4j/flume/appender/FlumePersistentManager.java:[301,48] found raw type: org.apache.logging.log4j.core.config.plugins.PluginType
+  missing type arguments for generic class org.apache.logging.log4j.core.config.plugins.PluginType<T>
+[WARNING] /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-268_8faf7f77446f4d5169ed52d5509d4c8e0dd18654/flume-ng/src/main/java/org/apache/logging/log4j/flume/appender/FlumePersistentManager.java:[304,33] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-flume-ng ---
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default) > validate @ log4j-flume-ng >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default) < validate @ log4j-flume-ng <<<
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default) @ log4j-flume-ng ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-flume-ng ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-flume-ng ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ log4j-flume-ng ---
+[WARNING] The parameter forkMode is deprecated since version 2.14. Use forkCount and reuseForks instead.
+[INFO] Surefire report directory: /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-268_8faf7f77446f4d5169ed52d5509d4c8e0dd18654/flume-ng/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest
+2016-07-16 15:09:55,127 [WARN] org.apache.flume.sink.FailoverSinkProcessor Sink agent1 failed and has been sent to failover list
+org.apache.flume.EventDeliveryException: Failed to send events
+	at org.apache.flume.sink.AvroSink.process(AvroSink.java:325) ~[flume-ng-core-1.3.1.jar:1.3.1]
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:182) [flume-ng-core-1.3.1.jar:1.3.1]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:147) [flume-ng-core-1.3.1.jar:1.3.1]
+	at java.lang.Thread.run(Thread.java:745) [?:1.7.0_101]
+Caused by: org.apache.flume.EventDeliveryException: NettyAvroRpcClient { host: localhost, port: 38003 }: Failed to send batch
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:236) ~[flume-ng-sdk-1.3.1.jar:1.3.1]
+	at org.apache.flume.sink.AvroSink.process(AvroSink.java:309) ~[flume-ng-core-1.3.1.jar:1.3.1]
+	... 3 more
+Caused by: org.apache.flume.EventDeliveryException: NettyAvroRpcClient { host: localhost, port: 38003 }: RPC request exception
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:286) ~[flume-ng-sdk-1.3.1.jar:1.3.1]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:224) ~[flume-ng-sdk-1.3.1.jar:1.3.1]
+	at org.apache.flume.sink.AvroSink.process(AvroSink.java:309) ~[flume-ng-core-1.3.1.jar:1.3.1]
+	... 3 more
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: Error connecting to localhost/127.0.0.1:38003
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.7.0_101]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:202) ~[?:1.7.0_101]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:278) ~[flume-ng-sdk-1.3.1.jar:1.3.1]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:224) ~[flume-ng-sdk-1.3.1.jar:1.3.1]
+	at org.apache.flume.sink.AvroSink.process(AvroSink.java:309) ~[flume-ng-core-1.3.1.jar:1.3.1]
+	... 3 more
+Caused by: java.io.IOException: Error connecting to localhost/127.0.0.1:38003
+	at org.apache.avro.ipc.NettyTransceiver.getChannel(NettyTransceiver.java:261) ~[avro-ipc-1.7.2.jar:1.7.2]
+	at org.apache.avro.ipc.NettyTransceiver.getRemoteName(NettyTransceiver.java:386) ~[avro-ipc-1.7.2.jar:1.7.2]
+	at org.apache.avro.ipc.Requestor.writeHandshake(Requestor.java:202) ~[avro-ipc-1.7.2.jar:1.7.2]
+	at org.apache.avro.ipc.Requestor.access$300(Requestor.java:52) ~[avro-ipc-1.7.2.jar:1.7.2]
+	at org.apache.avro.ipc.Requestor$Request.getBytes(Requestor.java:478) ~[avro-ipc-1.7.2.jar:1.7.2]
+	at org.apache.avro.ipc.Requestor.request(Requestor.java:147) ~[avro-ipc-1.7.2.jar:1.7.2]
+	at org.apache.avro.ipc.Requestor.request(Requestor.java:129) ~[avro-ipc-1.7.2.jar:1.7.2]
+	at org.apache.avro.ipc.specific.SpecificRequestor.invoke(SpecificRequestor.java:68) ~[avro-ipc-1.7.2.jar:1.7.2]
+	at com.sun.proxy.$Proxy15.appendBatch(Unknown Source) ~[?:?]
+	at org.apache.flume.api.NettyAvroRpcClient$2.call(NettyAvroRpcClient.java:269) ~[flume-ng-sdk-1.3.1.jar:1.3.1]
+	at org.apache.flume.api.NettyAvroRpcClient$2.call(NettyAvroRpcClient.java:265) ~[flume-ng-sdk-1.3.1.jar:1.3.1]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262) ~[?:1.7.0_101]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[?:1.7.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[?:1.7.0_101]
+	... 1 more
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:1.7.0_101]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744) ~[?:1.7.0_101]
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:396) ~[netty-3.4.0.Final.jar:?]
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:358) ~[netty-3.4.0.Final.jar:?]
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:274) ~[netty-3.4.0.Final.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[?:1.7.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[?:1.7.0_101]
+	... 1 more
+Time to log 10000 events 3111ms
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.183 sec
+Running org.apache.logging.log4j.flume.appender.FlumePersistentAppenderTest
+2016-07-16 15:10:04,119 ERROR An exception occurred processing Appender eventLogger java.lang.NullPointerException
+	at org.apache.logging.log4j.flume.appender.FlumePersistentManager.send(FlumePersistentManager.java:145)
+	at org.apache.logging.log4j.flume.appender.FlumeAppender.append(FlumeAppender.java:86)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:404)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:385)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:346)
+	at org.apache.logging.log4j.core.Logger.log(Logger.java:110)
+	at org.apache.logging.log4j.spi.AbstractLogger.info(AbstractLogger.java:916)
+	at org.apache.logging.log4j.flume.appender.FlumePersistentAppenderTest.testSingle(FlumePersistentAppenderTest.java:226)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.794 sec <<< FAILURE!
+testSingle(org.apache.logging.log4j.flume.appender.FlumePersistentAppenderTest)  Time elapsed: 0.095 sec  <<< ERROR!
+org.apache.logging.log4j.core.appender.AppenderRuntimeException: An exception occurred processing Appender eventLogger
+	at org.apache.logging.log4j.flume.appender.FlumePersistentManager.send(FlumePersistentManager.java:145)
+	at org.apache.logging.log4j.flume.appender.FlumeAppender.append(FlumeAppender.java:86)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:102)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:404)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:385)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:346)
+	at org.apache.logging.log4j.core.Logger.log(Logger.java:110)
+	at org.apache.logging.log4j.spi.AbstractLogger.info(AbstractLogger.java:916)
+	at org.apache.logging.log4j.flume.appender.FlumePersistentAppenderTest.testSingle(FlumePersistentAppenderTest.java:226)
+
+Running org.apache.logging.log4j.flume.appender.FlumeAppenderTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.739 sec
+Running org.apache.logging.log4j.flume.appender.FlumeEmbeddedAgentTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.811 sec
+
+Results :
+
+Tests in error: 
+  FlumePersistentAppenderTest.testSingle:226 » AppenderRuntime An exception occu...
+
+Tests run: 18, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 22.307 s
+[INFO] Finished at: 2016-07-16T15:10:10-07:00
+[INFO] Final Memory: 28M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.14.1:test (default-test) on project log4j-flume-ng: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-268_8faf7f77446f4d5169ed52d5509d4c8e0dd18654/flume-ng/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

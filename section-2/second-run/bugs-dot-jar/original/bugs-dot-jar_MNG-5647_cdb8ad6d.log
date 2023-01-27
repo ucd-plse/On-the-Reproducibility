@@ -1,0 +1,154 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Model Builder 3.2.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-bytecode-version) @ maven-model-builder ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (ban-known-bad-maven-versions) @ maven-model-builder ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.10:check (check) @ maven-model-builder ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/test/resources*/**
+[INFO] Exclude: src/test/projects/**
+[INFO] Exclude: src/test/remote-repo/**
+[INFO] Exclude: **/*.odg
+[INFO] Exclude: bootstrap/**
+[INFO] Exclude: README.bootstrap.txt
+[INFO] Exclude: .repository/**
+[INFO] 108 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 108 licence.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ maven-model-builder ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ maven-model-builder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ maven-model-builder ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.10:check (check-java-1.6-compat) @ maven-model-builder ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] --- plexus-component-metadata:1.5.5:generate-metadata (default) @ maven-model-builder ---
+[INFO] Discovered 26 component descriptors(s)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ maven-model-builder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 52 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ maven-model-builder ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- plexus-component-metadata:1.5.5:generate-test-metadata (default) @ maven-model-builder ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ maven-model-builder ---
+[INFO] Surefire report directory: /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-5647_cdb8ad6dd1ee5e24abede7ec22dce7a8197dbd1a/maven-model-builder/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.maven.model.building.ComplexActivationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec - in org.apache.maven.model.building.ComplexActivationTest
+Running org.apache.maven.model.building.DefaultModelBuilderFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.maven.model.building.DefaultModelBuilderFactoryTest
+Running org.apache.maven.model.profile.activation.JdkVersionProfileActivatorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.445 sec - in org.apache.maven.model.profile.activation.JdkVersionProfileActivatorTest
+Running org.apache.maven.model.profile.activation.PropertyProfileActivatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.147 sec - in org.apache.maven.model.profile.activation.PropertyProfileActivatorTest
+Running org.apache.maven.model.interpolation.MavenBuildTimestampTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.maven.model.interpolation.MavenBuildTimestampTest
+Running org.apache.maven.model.interpolation.StringSearchModelInterpolatorTest
+Tests run: 29, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.463 sec <<< FAILURE! - in org.apache.maven.model.interpolation.StringSearchModelInterpolatorTest
+testDefaultBuildTimestampFormatShouldFormatTimeIn24HourFormat(org.apache.maven.model.interpolation.StringSearchModelInterpolatorTest)  Time elapsed: 0.016 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<1976[-11-11T00:16:00Z]> but was:<1976[1111-0016]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.apache.maven.model.interpolation.AbstractModelInterpolatorTest.testDefaultBuildTimestampFormatShouldFormatTimeIn24HourFormat(AbstractModelInterpolatorTest.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:164)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+testDefaultBuildTimestampFormatWithLocalTimeZoneMidnightRollover(org.apache.maven.model.interpolation.StringSearchModelInterpolatorTest)  Time elapsed: 0.013 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2014[-06-15T23:16:00Z]> but was:<2014[0615-2316]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.apache.maven.model.interpolation.AbstractModelInterpolatorTest.testDefaultBuildTimestampFormatWithLocalTimeZoneMidnightRollover(AbstractModelInterpolatorTest.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:164)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+Running org.apache.maven.model.path.DefaultUrlNormalizerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.maven.model.path.DefaultUrlNormalizerTest
+Running org.apache.maven.model.validation.DefaultModelValidatorTest
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.435 sec - in org.apache.maven.model.validation.DefaultModelValidatorTest
+Running org.apache.maven.model.inheritance.DefaultInheritanceAssemblerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 sec - in org.apache.maven.model.inheritance.DefaultInheritanceAssemblerTest
+
+Results :
+
+Failed tests: 
+  org.apache.maven.model.interpolation.StringSearchModelInterpolatorTest#testDefaultBuildTimestampFormatShouldFormatTimeIn24HourFormat ComparisonFailure
+  org.apache.maven.model.interpolation.StringSearchModelInterpolatorTest#testDefaultBuildTimestampFormatWithLocalTimeZoneMidnightRollover ComparisonFailure
+
+Tests run: 98, Failures: 2, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.679 s
+[INFO] Finished at: 2016-07-13T21:35:12-07:00
+[INFO] Final Memory: 19M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.16:test (default-test) on project maven-model-builder: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-5647_cdb8ad6dd1ee5e24abede7ec22dce7a8197dbd1a/maven-model-builder/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,65 @@
+Checking out 2c24ab2a to /tmp/test_d4j_2145978_1658727196/test_trigger/Mrun OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Copy generated Ant build file.............................................. OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff 2c24ab2a:2929a3a9..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: Mrunit-1b....................................... OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+Failing tests: 17
+  - org.apache.hadoop.mrunit.internal.mapreduce.MockReduceContextWrapperTest::testContext_getNumReduceTasks
+  - org.apache.hadoop.mrunit.mapreduce.TestDistributedCache::testAddCacheFileToMapperUsingDriverMethod
+  - org.apache.hadoop.mrunit.mapreduce.TestDistributedCache::testAddCacheArchiveToMapReduceUsingDriverMethod
+  - org.apache.hadoop.mrunit.mapreduce.TestDistributedCache::testAddCacheArchiveToMapReduceUsingDriverMethod2
+  - org.apache.hadoop.mrunit.mapreduce.TestDistributedCache::testAddCacheFileToMapperUsingStaticMethod
+  - org.apache.hadoop.mrunit.mapreduce.TestDistributedCache::testAddCacheFileToReducerUsingDriverMethod
+  - org.apache.hadoop.mrunit.mapreduce.TestDistributedCache::testAddCacheArchiveToMapperUsingDriverMethod
+  - org.apache.hadoop.mrunit.mapreduce.TestDistributedCache::testAddCacheFileToReducerUsingStaticMethod
+  - org.apache.hadoop.mrunit.mapreduce.TestDistributedCache::testAddCacheArchiveToReducerUsingDriverMethod
+  - org.apache.hadoop.mrunit.mapreduce.TestDistributedCache::testAddCacheArchiveWithInvalidExtension
+  - org.apache.hadoop.mrunit.mapreduce.TestMapDriver::testCountingOutputFormat
+  - org.apache.hadoop.mrunit.mapreduce.TestMapDriver::testOutputFormatWithMismatchInOutputClasses
+  - org.apache.hadoop.mrunit.mapreduce.TestMapDriver::testOutputFormat
+  - org.apache.hadoop.mrunit.mapreduce.TestMapReduceDriver::testOutputFormatWithMismatchInOutputClasses
+  - org.apache.hadoop.mrunit.mapreduce.TestMapReduceDriver::testOutputFormat
+  - org.apache.hadoop.mrunit.mapreduce.TestReduceDriver::testOutputFormatWithMismatchInOutputClasses
+  - org.apache.hadoop.mrunit.mapreduce.TestReduceDriver::testOutputFormat
+Error: verify number of triggering tests: Mrunit-1b (expected: 1, actual: 17)
+Check out program version: Mrunit-1f....................................... OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+Failing tests: 16
+  - org.apache.hadoop.mrunit.mapreduce.TestDistributedCache::testAddCacheFileToMapperUsingDriverMethod
+  - org.apache.hadoop.mrunit.mapreduce.TestDistributedCache::testAddCacheArchiveToMapReduceUsingDriverMethod
+  - org.apache.hadoop.mrunit.mapreduce.TestDistributedCache::testAddCacheArchiveToMapReduceUsingDriverMethod2
+  - org.apache.hadoop.mrunit.mapreduce.TestDistributedCache::testAddCacheFileToMapperUsingStaticMethod
+  - org.apache.hadoop.mrunit.mapreduce.TestDistributedCache::testAddCacheFileToReducerUsingDriverMethod
+  - org.apache.hadoop.mrunit.mapreduce.TestDistributedCache::testAddCacheArchiveToMapperUsingDriverMethod
+  - org.apache.hadoop.mrunit.mapreduce.TestDistributedCache::testAddCacheFileToReducerUsingStaticMethod
+  - org.apache.hadoop.mrunit.mapreduce.TestDistributedCache::testAddCacheArchiveToReducerUsingDriverMethod
+  - org.apache.hadoop.mrunit.mapreduce.TestDistributedCache::testAddCacheArchiveWithInvalidExtension
+  - org.apache.hadoop.mrunit.mapreduce.TestMapDriver::testCountingOutputFormat
+  - org.apache.hadoop.mrunit.mapreduce.TestMapDriver::testOutputFormatWithMismatchInOutputClasses
+  - org.apache.hadoop.mrunit.mapreduce.TestMapDriver::testOutputFormat
+  - org.apache.hadoop.mrunit.mapreduce.TestMapReduceDriver::testOutputFormatWithMismatchInOutputClasses
+  - org.apache.hadoop.mrunit.mapreduce.TestMapReduceDriver::testOutputFormat
+  - org.apache.hadoop.mrunit.mapreduce.TestReduceDriver::testOutputFormatWithMismatchInOutputClasses
+  - org.apache.hadoop.mrunit.mapreduce.TestReduceDriver::testOutputFormat
+Error: verify number of triggering tests: Mrunit-1f (expected: 0, actual: 16)
+================================================================================
+The following errors occurred:
+Error: verify number of triggering tests: Mrunit-1b (expected: 1, actual: 17)
+Error: verify number of triggering tests: Mrunit-1f (expected: 0, actual: 16)
+================================================================================
+FAILED

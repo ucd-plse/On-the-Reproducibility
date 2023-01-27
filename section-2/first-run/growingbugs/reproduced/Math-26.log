@@ -1,0 +1,43 @@
+Checking out 8e5867ed to /tmp/test_d4j_10339_1657606638/test_trigger/Math.. FAIL
+Executed command: git clone /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/project_repos/commons-math.git /tmp/test_d4j_10339_1657606638/test_trigger/Math 2>&1 && cd /tmp/test_d4j_10339_1657606638/test_trigger/Math && git checkout 8e5867eda8328e4cb2e103d098d0c9f3c2fab50e 2>&1
+Cloning into '/tmp/test_d4j_10339_1657606638/test_trigger/Math'...
+done.
+fatal: reference is not a tree: 8e5867eda8328e4cb2e103d098d0c9f3c2fab50e
+Cannot checkout program version! at /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-checkout line 102.
+Compilation failed in require at /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: checkout: Math-26b
+Cannot open config file (/tmp/test_d4j_10339_1657606638/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_10339_1657606638/test_trigger/Math is not a valid working directory!
+Error: compile: Math-26b
+Cannot open config file (/tmp/test_d4j_10339_1657606638/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_10339_1657606638/test_trigger/Math is not a valid working directory!
+Error: run relevant tests: Math-26b
+cat: /tmp/test_d4j_10339_1657606638/test_trigger/Math/failing_tests: No such file or directory
+grep: /tmp/test_d4j_10339_1657606638/test_trigger/Math/failing_tests: No such file or directory
+Error: verify number of triggering tests: Math-26b (expected: 1, actual: 0)
+grep: /tmp/test_d4j_10339_1657606638/test_trigger/Math/failing_tests: No such file or directory
+Error: expected triggering test org.apache.commons.math3.util.PrecisionTest::testRoundFloat did not fail
+Cannot open config file (/tmp/test_d4j_10339_1657606638/test_trigger/Math/.defects4j.config): No such file or directory
+Directory exists but is not a previously used working directory: /tmp/test_d4j_10339_1657606638/test_trigger/Math at /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/core/Vcs.pm line 285.
+Compilation failed in require at /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: checkout: Math-26f
+Cannot open config file (/tmp/test_d4j_10339_1657606638/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_10339_1657606638/test_trigger/Math is not a valid working directory!
+Error: compile: Math-26f
+Cannot open config file (/tmp/test_d4j_10339_1657606638/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_10339_1657606638/test_trigger/Math is not a valid working directory!
+Error: run relevant tests: Math-26f
+cat: /tmp/test_d4j_10339_1657606638/test_trigger/Math/failing_tests: No such file or directory
+grep: /tmp/test_d4j_10339_1657606638/test_trigger/Math/failing_tests: No such file or directory
+================================================================================
+The following errors occurred:
+Error: checkout: Math-26b
+Error: compile: Math-26b
+Error: run relevant tests: Math-26b
+Error: verify number of triggering tests: Math-26b (expected: 1, actual: 0)
+Error: expected triggering test org.apache.commons.math3.util.PrecisionTest::testRoundFloat did not fail
+Error: checkout: Math-26f
+Error: compile: Math-26f
+Error: run relevant tests: Math-26f
+================================================================================
+FAILED

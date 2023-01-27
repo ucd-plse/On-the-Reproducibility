@@ -1,0 +1,551 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] accumulo
+[INFO] cloudtrace
+[INFO] accumulo-start
+[INFO] accumulo-core
+[INFO] accumulo-server
+[INFO] accumulo-examples
+[INFO] examples-simple
+[INFO] accumulo-wikisearch
+[INFO] wikisearch-ingest
+[INFO] wikisearch-query
+[INFO] wikisearch-query-war
+[INFO] accumulo-assemble
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building accumulo 1.5.0-incubating-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ accumulo ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ accumulo ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cloudtrace 1.5.0-incubating-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ cloudtrace ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ cloudtrace ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ cloudtrace ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-366_db4a291f944e8a6ad9d63dcbedfa9fe3108f0ead/src/trace/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ cloudtrace ---
+[INFO] log4j-1.2.16.jar already exists in destination.
+[INFO] libthrift-0.6.1.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ cloudtrace ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ cloudtrace ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-366_db4a291f944e8a6ad9d63dcbedfa9fe3108f0ead/src/trace/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ cloudtrace ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ cloudtrace ---
+[INFO] Surefire report directory: /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-366_db4a291f944e8a6ad9d63dcbedfa9fe3108f0ead/src/trace/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running cloudtrace.instrument.PerformanceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running cloudtrace.instrument.CountSamplerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+Running cloudtrace.instrument.TracerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.431 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building accumulo-start 1.5.0-incubating-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-start ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ accumulo-start ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ accumulo-start ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-366_db4a291f944e8a6ad9d63dcbedfa9fe3108f0ead/src/start/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ accumulo-start ---
+[INFO] commons-jci-core-1.0.jar already exists in destination.
+[INFO] commons-io-1.4.jar already exists in destination.
+[INFO] log4j-1.2.16.jar already exists in destination.
+[INFO] commons-logging-api-1.0.4.jar already exists in destination.
+[INFO] commons-logging-1.0.4.jar already exists in destination.
+[INFO] commons-jci-fam-1.0.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ accumulo-start ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ accumulo-start ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ accumulo-start ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ accumulo-start ---
+[INFO] Surefire report directory: /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-366_db4a291f944e8a6ad9d63dcbedfa9fe3108f0ead/src/start/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.start.Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.913 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building accumulo-core 1.5.0-incubating-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-core ---
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2:exec (generate-core-thrift) @ accumulo-core ---
+thrift is not available
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ accumulo-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ accumulo-core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ accumulo-core ---
+[INFO] commons-collections-3.2.jar already exists in destination.
+[INFO] commons-lang-2.4.jar already exists in destination.
+[INFO] log4j-1.2.16.jar already exists in destination.
+[INFO] jline-0.9.94.jar already exists in destination.
+[INFO] libthrift-0.6.1.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ accumulo-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ accumulo-core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ accumulo-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ accumulo-core ---
+[INFO] Surefire report directory: /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-366_db4a291f944e8a6ad9d63dcbedfa9fe3108f0ead/src/core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.core.iterators.AggregatingIteratorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.362 sec
+Running org.apache.accumulo.core.iterators.system.ColumnFamilySkippingIteratorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.657 sec
+Running org.apache.accumulo.core.iterators.system.SourceSwitchingIteratorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.accumulo.core.iterators.system.TimeSettingIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.iterators.system.DeletingIteratorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.iterators.system.ColumnFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.iterators.system.MultiIteratorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.2 sec
+Running org.apache.accumulo.core.iterators.IterUtilTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec
+Running org.apache.accumulo.core.iterators.aggregation.NumSummationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.accumulo.core.iterators.aggregation.conf.AggregatorConfigurationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.accumulo.core.iterators.user.LargeRowFilterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.139 sec
+Running org.apache.accumulo.core.iterators.user.FilterTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec
+Running org.apache.accumulo.core.iterators.user.VersioningIteratorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running org.apache.accumulo.core.iterators.user.IntersectingIteratorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.335 sec
+Running org.apache.accumulo.core.iterators.user.RowDeletingIteratorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.iterators.user.WholeRowIteratorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.iterators.user.RegExFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.iterators.user.IndexedDocIteratorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.856 sec
+Running org.apache.accumulo.core.iterators.user.GrepIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.iterators.user.CombinerTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Running org.apache.accumulo.core.data.MutationTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.247 sec
+Running org.apache.accumulo.core.data.KeyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.data.ColumnTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.data.KeyExtentTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.data.RangeTest
+Tests run: 43, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.apache.accumulo.core.security.AuthorizationsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.security.ColumnVisibilityTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.apache.accumulo.core.security.VisibilityEvaluatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.util.EscapeTokenizerTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.util.LocalityGroupUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.accumulo.core.util.MergeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.util.TestStringUtil
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.util.TextUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.util.TestVersion
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.util.MetadataTableTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.util.AddressUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.file.blockfile.cache.TestCachedBlockQueue
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.file.blockfile.cache.TestLruBlockCache
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.999 sec
+Running org.apache.accumulo.core.file.rfile.MultiLevelIndexTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.971 sec
+Running org.apache.accumulo.core.file.rfile.RFileTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.234 sec
+Running org.apache.accumulo.core.conf.PropertyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.client.RowIteratorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.client.impl.TabletLocatorImplTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running org.apache.accumulo.core.client.impl.ScannerOptionsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.client.mapreduce.AccumuloRowInputFormatTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
+Running org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 sec
+Running org.apache.accumulo.core.client.mapreduce.lib.partition.RangePartitionerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.364 sec
+Running org.apache.accumulo.core.client.mapreduce.AccumuloOutputFormatTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.apache.accumulo.core.client.mapreduce.AccumuloFileOutputFormatTest
+file:/home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-366_db4a291f944e8a6ad9d63dcbedfa9fe3108f0ead/target/_temporary/_attempt_local_0000_m_000000_0/part-m-00000.rf
+file:/home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-366_db4a291f944e8a6ad9d63dcbedfa9fe3108f0ead/target/_temporary/_attempt_local_0000_m_000000_0/part-m-00000.rf
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec
+Running org.apache.accumulo.core.client.ClientSideIteratorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.accumulo.core.client.mock.MockTableOperationsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.client.mock.MockConnectorTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.client.admin.FindMaxTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.483 sec
+Running org.apache.accumulo.core.client.admin.TableOperationsHelperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+
+Results :
+
+Tests run: 273, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building accumulo-server 1.5.0-incubating-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-server ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ accumulo-server ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ accumulo-server ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 37 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ accumulo-server ---
+[INFO] commons-lang-2.4.jar already exists in destination.
+[INFO] commons-io-1.4.jar already exists in destination.
+[INFO] log4j-1.2.16.jar already exists in destination.
+[INFO] commons-configuration-1.5.jar already exists in destination.
+[INFO] jline-0.9.94.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ accumulo-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ accumulo-server ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-366_db4a291f944e8a6ad9d63dcbedfa9fe3108f0ead/src/server/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ accumulo-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ accumulo-server ---
+[INFO] Surefire report directory: /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-366_db4a291f944e8a6ad9d63dcbedfa9fe3108f0ead/src/server/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.server.tabletserver.InMemoryMapTest
+16/07/26 18:58:47 WARN conf.SiteConfiguration: accumulo-site.xml not found on classpath
+16/07/26 18:58:47 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/07/26 18:58:47 INFO compress.CodecPool: Got brand-new compressor
+16/07/26 18:58:47 INFO compress.CodecPool: Got brand-new decompressor
+16/07/26 18:58:47 INFO compress.CodecPool: Got brand-new decompressor
+16/07/26 18:58:47 INFO compress.CodecPool: Got brand-new decompressor
+16/07/26 18:58:47 INFO compress.CodecPool: Got brand-new decompressor
+16/07/26 18:58:47 INFO compress.CodecPool: Got brand-new decompressor
+16/07/26 18:58:47 INFO compress.CodecPool: Got brand-new decompressor
+16/07/26 18:58:47 INFO compress.CodecPool: Got brand-new decompressor
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.047 sec
+Running org.apache.accumulo.server.tabletserver.log.MultiReaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.276 sec
+Running org.apache.accumulo.server.tabletserver.log.SortedLogRecoveryTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.774 sec
+Running org.apache.accumulo.server.gc.TestConfirmDeletes
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.182 sec
+Running org.apache.accumulo.server.test.randomwalk.FrameworkTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.715 sec
+Running org.apache.accumulo.server.test.iterator.RegExTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.205 sec
+Running org.apache.accumulo.server.security.ZKAuthenticatorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.accumulo.server.util.TabletIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.server.util.CloneTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running org.apache.accumulo.server.util.DefaultMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.server.util.time.BaseRelativeTimeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.server.master.TestTabletServerLoggers
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.accumulo.server.master.balancer.TableLoadBalancerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.apache.accumulo.server.master.balancer.DefaultLoadBalancerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+Running org.apache.accumulo.server.master.balancer.SimpleLoggerBalancerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.apache.accumulo.server.master.state.MergeInfoTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.server.master.state.RootTabletStateStoreTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.accumulo.server.master.DefaultMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.server.master.TestMergeState
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.apache.accumulo.server.constraints.MetadataConstraintsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.accumulo.server.client.BulkImporterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.server.logger.TestLogWriter
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.17 sec
+Running org.apache.accumulo.server.logger.LogFileTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.server.zookeeper.DistributedReadWriteLockTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.accumulo.server.zookeeper.TransactionWatcherTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+
+Results :
+
+Tests run: 81, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building accumulo-examples 1.5.0-incubating-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-examples ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ accumulo-examples ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ accumulo-examples ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building examples-simple 1.5.0-incubating-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ examples-simple ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ examples-simple ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ examples-simple ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-366_db4a291f944e8a6ad9d63dcbedfa9fe3108f0ead/src/examples/simple/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ examples-simple ---
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ examples-simple ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ examples-simple ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-366_db4a291f944e8a6ad9d63dcbedfa9fe3108f0ead/src/examples/simple/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ examples-simple ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ examples-simple ---
+[INFO] Surefire report directory: /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-366_db4a291f944e8a6ad9d63dcbedfa9fe3108f0ead/src/examples/simple/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.examples.simple.filedata.KeyUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.251 sec
+Running org.apache.accumulo.examples.simple.filedata.ChunkInputFormatTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.567 sec
+Running org.apache.accumulo.examples.simple.filedata.ChunkCombinerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.apache.accumulo.examples.simple.filedata.ChunkInputStreamTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
+Running org.apache.accumulo.examples.simple.dirlist.CountTest
+Max depth              : 3
+Time to find max depth : 1 ms
+Time to compute counts : 2 ms
+Entries scanned        : 30 
+Counts inserted        : 4 
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec
+
+Results :
+
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building accumulo-wikisearch 1.5.0-incubating-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-wikisearch ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ accumulo-wikisearch ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ accumulo-wikisearch ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building wikisearch-ingest 1.5.0-incubating-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ wikisearch-ingest ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ wikisearch-ingest ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ wikisearch-ingest ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-366_db4a291f944e8a6ad9d63dcbedfa9fe3108f0ead/src/examples/wikisearch/ingest/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ wikisearch-ingest ---
+[INFO] commons-lang-2.4.jar already exists in destination.
+[INFO] lucene-wikipedia-3.0.2.jar already exists in destination.
+[INFO] google-collections-1.0.jar already exists in destination.
+[INFO] lucene-analyzers-3.0.2.jar already exists in destination.
+[INFO] lucene-core-3.0.2.jar already exists in destination.
+[INFO] protobuf-java-2.3.0.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ wikisearch-ingest ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ wikisearch-ingest ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ wikisearch-ingest ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ wikisearch-ingest ---
+[INFO] Surefire report directory: /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-366_db4a291f944e8a6ad9d63dcbedfa9fe3108f0ead/src/examples/wikisearch/ingest/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.examples.wikisearch.ingest.WikipediaInputSplitTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.403 sec <<< FAILURE!
+Running org.apache.accumulo.examples.wikisearch.iterator.GlobalIndexUidTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.284 sec
+Running org.apache.accumulo.examples.wikisearch.iterator.TextIndexTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.apache.accumulo.examples.wikisearch.reader.AggregatingRecordReaderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.084 sec
+
+Results :
+
+Failed tests:   testSerialization(org.apache.accumulo.examples.wikisearch.ingest.WikipediaInputSplitTest)
+
+Tests run: 18, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] accumulo ........................................... SUCCESS [  1.726 s]
+[INFO] cloudtrace ......................................... SUCCESS [  1.539 s]
+[INFO] accumulo-start ..................................... SUCCESS [ 19.257 s]
+[INFO] accumulo-core ...................................... SUCCESS [ 37.796 s]
+[INFO] accumulo-server .................................... SUCCESS [  5.743 s]
+[INFO] accumulo-examples .................................. SUCCESS [  0.009 s]
+[INFO] examples-simple .................................... SUCCESS [  1.719 s]
+[INFO] accumulo-wikisearch ................................ SUCCESS [  0.008 s]
+[INFO] wikisearch-ingest .................................. FAILURE [  2.422 s]
+[INFO] wikisearch-query ................................... SKIPPED
+[INFO] wikisearch-query-war ............................... SKIPPED
+[INFO] accumulo-assemble .................................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:11 min
+[INFO] Finished at: 2016-07-26T18:58:55-07:00
+[INFO] Final Memory: 26M/858M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.9:test (default-test) on project wikisearch-ingest: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-366_db4a291f944e8a6ad9d63dcbedfa9fe3108f0ead/src/examples/wikisearch/ingest/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :wikisearch-ingest

@@ -1,0 +1,82 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Log4j JUL Adapter 2.5.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-jul ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ log4j-jul ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-1251_424068f7e73e35ba2ad10e5087736bbf2dec6333/log4j-jul/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ log4j-jul ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.3:manifest (default) @ log4j-jul ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ log4j-jul ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ log4j-jul ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ log4j-jul ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.logging.log4j.jul.CallerInformationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.408 sec - in org.apache.logging.log4j.jul.CallerInformationTest
+Running org.apache.logging.log4j.jul.DefaultLevelConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in org.apache.logging.log4j.jul.DefaultLevelConverterTest
+Running org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec - in org.apache.logging.log4j.jul.DefaultLevelConverterCustomJulLevelsTest
+Running org.apache.logging.log4j.jul.BracketInNotInterpolatedMessageTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.458 sec <<< FAILURE! - in org.apache.logging.log4j.jul.BracketInNotInterpolatedMessageTest
+noInterpolation(org.apache.logging.log4j.jul.BracketInNotInterpolatedMessageTest)  Time elapsed: 0.409 sec  <<< ERROR!
+java.lang.IllegalArgumentException: can't parse argument number: raw
+	at org.apache.logging.log4j.jul.BracketInNotInterpolatedMessageTest.noInterpolation(BracketInNotInterpolatedMessageTest.java:53)
+Caused by: java.lang.NumberFormatException: For input string: "raw"
+	at org.apache.logging.log4j.jul.BracketInNotInterpolatedMessageTest.noInterpolation(BracketInNotInterpolatedMessageTest.java:53)
+
+Running org.apache.logging.log4j.jul.ApiLoggerTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.471 sec - in org.apache.logging.log4j.jul.ApiLoggerTest
+Running org.apache.logging.log4j.jul.Log4jLevelTranslatorTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec - in org.apache.logging.log4j.jul.Log4jLevelTranslatorTest
+Running org.apache.logging.log4j.jul.CoreLoggerTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.457 sec - in org.apache.logging.log4j.jul.CoreLoggerTest
+Running org.apache.logging.log4j.jul.JavaLevelTranslatorTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec - in org.apache.logging.log4j.jul.JavaLevelTranslatorTest
+
+Results :
+
+Tests in error: 
+  BracketInNotInterpolatedMessageTest.noInterpolation:53 » IllegalArgument can't...
+
+Tests run: 77, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.214 s
+[INFO] Finished at: 2016-07-16T08:38:45-07:00
+[INFO] Final Memory: 21M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project log4j-jul: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-1251_424068f7e73e35ba2ad10e5087736bbf2dec6333/log4j-jul/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

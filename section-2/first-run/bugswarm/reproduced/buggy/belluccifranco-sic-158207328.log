@@ -1,0 +1,861 @@
+travis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: java
+Build group: stable
+Build dist: precise
+Build id: ''
+Job id: ''
+[34m[1mBuild image provisioning date and time[0m
+Thu Feb  5 15:09:33 UTC 2015
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 12.04.5 LTS
+Release:	12.04
+Codename:	precise
+[34m[1mLinux Version[0m
+3.13.0-29-generic
+[34m[1mCookbooks Version[0m
+a68419e https://github.com/travis-ci/travis-cookbooks/tree/a68419e
+[34m[1mGCC version[0m
+gcc (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
+Copyright (C) 2011 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mLLVM version[0m
+clang version 3.4 (tags/RELEASE_34/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+[34m[1mPre-installed Ruby versions[0m
+ruby-1.9.3-p551
+[34m[1mPre-installed Node.js versions[0m
+v0.10.36
+[34m[1mPre-installed Go versions[0m
+1.4.1
+[34m[1mRedis version[0m
+redis-server 2.8.19
+[34m[1mriak version[0m
+2.0.2
+[34m[1mMongoDB version[0m
+MongoDB 2.4.12
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mNeo4j version[0m
+1.9.4
+[34m[1mRabbitMQ Version[0m
+3.4.3
+[34m[1mElasticSearch version[0m
+1.4.0
+[34m[1mInstalled Sphinx versions[0m
+2.0.10
+2.1.9
+2.2.6
+[34m[1mDefault Sphinx version[0m
+2.2.6
+[34m[1mInstalled Firefox version[0m
+firefox 31.0esr
+[34m[1mPhantomJS version[0m
+1.9.8
+[34m[1mant -version[0m
+Apache Ant(TM) version 1.8.2 compiled on December 3 2011
+[34m[1mmvn -version[0m
+Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T17:29:23+00:00)
+Maven home: /usr/local/maven
+Java version: 1.7.0_76, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-7-oracle/jre
+Default locale: en_US, platform encoding: ANSI_X3.4-1968
+OS name: "linux", version: "3.13.0-29-generic", arch: "amd64", family: "unix"
+travis_fold:end:system_info[0K
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/main/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/restricted/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/universe/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/multiverse/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/main/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/restricted/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/universe/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/multiverse/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/main/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/restricted/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/universe/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/multiverse/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/main/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/restricted/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/universe/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/multiverse/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/main/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/restricted/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/universe/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/multiverse/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/main/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/restricted/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/universe/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/multiverse/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/main/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/universe/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/multiverse/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/main/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/universe/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/multiverse/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/main/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/universe/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/multiverse/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/main/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/restricted/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/universe/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/multiverse/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/main/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/restricted/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/universe/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/multiverse/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/main/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/restricted/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/universe/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/multiverse/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://apt.postgresql.org/pub/repos/apt/dists/precise-pgdg/main/binary-amd64/Packages  404  Not Found [IP: 72.32.157.246 80]
+
+W: Failed to fetch http://apt.postgresql.org/pub/repos/apt/dists/precise-pgdg/main/binary-i386/Packages  404  Not Found [IP: 72.32.157.246 80]
+
+W: Failed to fetch http://ppa.launchpad.net/rwky/ppa/ubuntu/dists/precise/main/binary-amd64/Packages  403  Forbidden
+
+W: Failed to fetch http://ppa.launchpad.net/rwky/ppa/ubuntu/dists/precise/main/binary-i386/Packages  403  Forbidden
+
+W: Failed to fetch http://ppa.launchpad.net/travis-ci/zero-mq/ubuntu/dists/precise/main/binary-amd64/Packages  403  Forbidden
+
+W: Failed to fetch http://ppa.launchpad.net/travis-ci/zero-mq/ubuntu/dists/precise/main/binary-i386/Packages  403  Forbidden
+
+W: Failed to fetch http://downloads-distro.mongodb.org/repo/debian-sysvinit/dists/dist/10gen/binary-amd64/Packages  Undetermined Error [IP: 52.21.89.200 80]
+
+W: Failed to fetch http://downloads-distro.mongodb.org/repo/debian-sysvinit/dists/dist/10gen/binary-i386/Packages  Undetermined Error [IP: 52.21.89.200 80]
+
+E: Some index files failed to download. They have been ignored, or old ones used instead.
+sed: cannot rename /etc/hosts: Device or resource busy
+sed: cannot rename /etc/hosts: Device or resource busy
+$ jdk_switcher use oraclejdk8
+Switching to Oracle JDK8 (java-8-oracle), JAVA_HOME will be set to /usr/lib/jvm/java-8-oracle
+$ cd failed/belluccifranco/sic
+$ java -Xmx32m -version
+java version "1.8.0_31"
+Java(TM) SE Runtime Environment (build 1.8.0_31-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 25.31-b07, mixed mode)
+$ javac -J-Xmx32m -version
+javac 1.8.0_31
+travis_fold:start:install[0Ktravis_time:start:27f30020[0K$ mvn install -Dhttps.protocols=TLSv1.2 -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=192m; support was removed in 8.0
+Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T17:29:23+00:00)
+Maven home: /usr/local/maven
+Java version: 1.8.0_31, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.15.0-109-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-parent/1.4.0.RELEASE/spring-boot-starter-parent-1.4.0.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-parent/1.4.0.RELEASE/spring-boot-starter-parent-1.4.0.RELEASE.pom (8 KB at 41.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-dependencies/1.4.0.RELEASE/spring-boot-dependencies-1.4.0.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-dependencies/1.4.0.RELEASE/spring-boot-dependencies-1.4.0.RELEASE.pom (86 KB at 2026.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-framework-bom/4.3.2.RELEASE/spring-framework-bom-4.3.2.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-framework-bom/4.3.2.RELEASE/spring-framework-bom-4.3.2.RELEASE.pom (5 KB at 142.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/data/spring-data-releasetrain/Hopper-SR2/spring-data-releasetrain-Hopper-SR2.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/data/spring-data-releasetrain/Hopper-SR2/spring-data-releasetrain-Hopper-SR2.pom (5 KB at 186.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/data/build/spring-data-build/1.8.2.RELEASE/spring-data-build-1.8.2.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/data/build/spring-data-build/1.8.2.RELEASE/spring-data-build-1.8.2.RELEASE.pom (6 KB at 211.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/integration/spring-integration-bom/4.3.1.RELEASE/spring-integration-bom-4.3.1.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/integration/spring-integration-bom/4.3.1.RELEASE/spring-integration-bom-4.3.1.RELEASE.pom (9 KB at 236.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/security/spring-security-bom/4.1.1.RELEASE/spring-security-bom-4.1.1.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/security/spring-security-bom/4.1.1.RELEASE/spring-security-bom-4.1.1.RELEASE.pom (5 KB at 176.7 KB/sec)
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SIC 1.9.2
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/1.4.0.RELEASE/spring-boot-maven-plugin-1.4.0.RELEASE.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/1.4.0.RELEASE/spring-boot-maven-plugin-1.4.0.RELEASE.pom (7 KB at 18.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-tools/1.4.0.RELEASE/spring-boot-tools-1.4.0.RELEASE.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-tools/1.4.0.RELEASE/spring-boot-tools-1.4.0.RELEASE.pom (2 KB at 49.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-parent/1.4.0.RELEASE/spring-boot-parent-1.4.0.RELEASE.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-parent/1.4.0.RELEASE/spring-boot-parent-1.4.0.RELEASE.pom (26 KB at 512.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/1.4.0.RELEASE/spring-boot-maven-plugin-1.4.0.RELEASE.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/1.4.0.RELEASE/spring-boot-maven-plugin-1.4.0.RELEASE.jar (61 KB at 1186.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.7/maven-resources-plugin-2.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.7/maven-resources-plugin-2.7.pom (8 KB at 221.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/25/maven-plugins-25.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/25/maven-plugins-25.pom (10 KB at 373.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/24/maven-parent-24.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/24/maven-parent-24.pom (37 KB at 766.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/14/apache-14.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/14/apache-14.pom (15 KB at 597.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.7/maven-resources-plugin-2.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.7/maven-resources-plugin-2.7.jar (31 KB at 614.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.3/maven-compiler-plugin-3.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.3/maven-compiler-plugin-3.3.pom (12 KB at 552.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/27/maven-plugins-27.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/27/maven-plugins-27.pom (12 KB at 462.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/26/maven-parent-26.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/26/maven-parent-26.pom (39 KB at 844.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/16/apache-16.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/16/apache-16.pom (16 KB at 601.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.3/maven-compiler-plugin-3.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.3/maven-compiler-plugin-3.3.jar (46 KB at 984.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.18.1/maven-surefire-plugin-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.18.1/maven-surefire-plugin-2.18.1.pom (6 KB at 276.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.18.1/surefire-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.18.1/surefire-2.18.1.pom (17 KB at 546.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.18.1/maven-surefire-plugin-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.18.1/maven-surefire-plugin-2.18.1.jar (37 KB at 803.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.10/maven-dependency-plugin-2.10.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.10/maven-dependency-plugin-2.10.pom (12 KB at 509.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.10/maven-dependency-plugin-2.10.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.10/maven-dependency-plugin-2.10.jar (157 KB at 1487.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.6/maven-jar-plugin-2.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.6/maven-jar-plugin-2.6.pom (6 KB at 302.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.6/maven-jar-plugin-2.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.6/maven-jar-plugin-2.6.jar (26 KB at 758.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.pom (7 KB at 329.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.jar (33 KB at 924.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.pom (22 KB at 732.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/net/sf/jasperreports/jasperreports/6.3.0/jasperreports-6.3.0.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/net/sf/jasperreports/jasperreports/6.3.0/jasperreports-6.3.0.pom (15 KB at 528.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.pom (14 KB at 537.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/commons/commons-parent/33/commons-parent-33.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/commons/commons-parent/33/commons-parent-33.pom (52 KB at 1524.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/apache/13/apache-13.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/apache/13/apache-13.pom (14 KB at 568.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.pom (13 KB at 484.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/commons/commons-parent/39/commons-parent-39.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/commons/commons-parent/39/commons-parent-39.pom (61 KB at 1891.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/commons-digester/commons-digester/2.1/commons-digester-2.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/commons-digester/commons-digester/2.1/commons-digester-2.1.pom (11 KB at 400.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/commons/commons-parent/17/commons-parent-17.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/commons/commons-parent/17/commons-parent-17.pom (31 KB at 1015.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/apache/7/apache-7.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/apache/7/apache-7.pom (15 KB at 587.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom (18 KB at 717.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/commons/commons-parent/5/commons-parent-5.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/commons/commons-parent/5/commons-parent-5.pom (16 KB at 681.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/apache/4/apache-4.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/apache/4/apache-4.pom (5 KB at 219.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/lowagie/itext/2.1.7.js5/itext-2.1.7.js5.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/lowagie/itext/2.1.7.js5/itext-2.1.7.js5.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/lowagie/itext/2.1.7.js5/itext-2.1.7.js5.pom
+[INFO] Downloading: http://jasperreports.sourceforge.net/maven2/com/lowagie/itext/2.1.7.js5/itext-2.1.7.js5.pom
+[INFO] Downloaded: http://jasperreports.sourceforge.net/maven2/com/lowagie/itext/2.1.7.js5/itext-2.1.7.js5.pom (3 KB at 5.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138.pom (1018 B at 38.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138.pom (2 KB at 48.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/bouncycastle/bctsp-jdk14/138/bctsp-jdk14-138.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/bouncycastle/bctsp-jdk14/138/bctsp-jdk14-138.pom (363 B at 16.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/bouncycastle/bctsp-jdk14/1.38/bctsp-jdk14-1.38.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/bouncycastle/bctsp-jdk14/1.38/bctsp-jdk14-1.38.pom (2 KB at 55.7 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk14/1.38/bcprov-jdk14-1.38.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk14/1.38/bcprov-jdk14-1.38.pom (819 B at 40.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/bouncycastle/bcmail-jdk14/1.38/bcmail-jdk14-1.38.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/bouncycastle/bcmail-jdk14/1.38/bcmail-jdk14-1.38.pom (2 KB at 59.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/jfree/jcommon/1.0.23/jcommon-1.0.23.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/jfree/jcommon/1.0.23/jcommon-1.0.23.pom (9 KB at 346.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom (7 KB at 305.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/jfree/jfreechart/1.0.19/jfreechart-1.0.19.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/jfree/jfreechart/1.0.19/jfreechart-1.0.19.pom (10 KB at 333.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/eclipse/jdt/core/compiler/ecj/4.3.1/ecj-4.3.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/eclipse/jdt/core/compiler/ecj/4.3.1/ecj-4.3.1.pom (2 KB at 65.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/codehaus/castor/castor-xml/1.3.3/castor-xml-1.3.3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/codehaus/castor/castor-xml/1.3.3/castor-xml-1.3.3.pom (8 KB at 298.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/codehaus/castor/castor/1.3.3/castor-1.3.3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/codehaus/castor/castor/1.3.3/castor-1.3.3.pom (34 KB at 1086.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/codehaus/codehaus-parent/3/codehaus-parent-3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/codehaus/codehaus-parent/3/codehaus-parent-3.pom (5 KB at 182.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/codehaus/castor/castor-core/1.3.3/castor-core-1.3.3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/codehaus/castor/castor-core/1.3.3/castor-core-1.3.3.pom (3 KB at 100.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.pom (18 KB at 657.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom (612 B at 23.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/stax/stax/1.2.0/stax-1.2.0.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/stax/stax/1.2.0/stax-1.2.0.pom (4 KB at 154.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.pom (2 KB at 71.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.pom (962 B at 44.7 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.pom (5 KB at 223.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-aop/4.3.2.RELEASE/spring-aop-4.3.2.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-aop/4.3.2.RELEASE/spring-aop-4.3.2.RELEASE.pom (3 KB at 125.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-beans/4.3.2.RELEASE/spring-beans-4.3.2.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-beans/4.3.2.RELEASE/spring-beans-4.3.2.RELEASE.pom (3 KB at 116.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-core/4.3.2.RELEASE/spring-core-4.3.2.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-core/4.3.2.RELEASE/spring-core-4.3.2.RELEASE.pom (3 KB at 128.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-expression/4.3.2.RELEASE/spring-expression-4.3.2.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-expression/4.3.2.RELEASE/spring-expression-4.3.2.RELEASE.pom (2 KB at 88.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.1/jackson-core-2.8.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.1/jackson-core-2.8.1.pom (6 KB at 229.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/jackson-parent/2.8/jackson-parent-2.8.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/jackson-parent/2.8/jackson-parent-2.8.pom (8 KB at 370.7 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/oss-parent/27/oss-parent-27.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/oss-parent/27/oss-parent-27.pom (20 KB at 767.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.1/jackson-databind-2.8.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.1/jackson-databind-2.8.1.pom (6 KB at 240.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.1/jackson-annotations-2.8.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.1/jackson-annotations-2.8.1.pom (2 KB at 85.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-core/4.5.1/lucene-core-4.5.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-core/4.5.1/lucene-core-4.5.1.pom (5 KB at 232.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-parent/4.5.1/lucene-parent-4.5.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-parent/4.5.1/lucene-parent-4.5.1.pom (5 KB at 154.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-solr-grandparent/4.5.1/lucene-solr-grandparent-4.5.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-solr-grandparent/4.5.1/lucene-solr-grandparent-4.5.1.pom (31 KB at 1102.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-analyzers-common/4.5.1/lucene-analyzers-common-4.5.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-analyzers-common/4.5.1/lucene-analyzers-common-4.5.1.pom (3 KB at 99.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-queryparser/4.5.1/lucene-queryparser-4.5.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-queryparser/4.5.1/lucene-queryparser-4.5.1.pom (6 KB at 241.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-queries/4.5.1/lucene-queries-4.5.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-queries/4.5.1/lucene-queries-4.5.1.pom (3 KB at 136.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-sandbox/4.5.1/lucene-sandbox-4.5.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-sandbox/4.5.1/lucene-sandbox-4.5.1.pom (3 KB at 142.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/jakarta-regexp/jakarta-regexp/1.4/jakarta-regexp-1.4.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/jakarta-regexp/jakarta-regexp/1.4/jakarta-regexp-1.4.pom (160 B at 6.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/olap4j/olap4j/0.9.7.309-JS-3/olap4j-0.9.7.309-JS-3.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/olap4j/olap4j/0.9.7.309-JS-3/olap4j-0.9.7.309-JS-3.pom
+[INFO] Downloading: https://repository.apache.org/releases/org/olap4j/olap4j/0.9.7.309-JS-3/olap4j-0.9.7.309-JS-3.pom
+[INFO] Downloading: http://jasperreports.sourceforge.net/maven2/org/olap4j/olap4j/0.9.7.309-JS-3/olap4j-0.9.7.309-JS-3.pom
+[INFO] Downloading: http://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts/org/olap4j/olap4j/0.9.7.309-JS-3/olap4j-0.9.7.309-JS-3.pom
+[WARNING] The POM for org.olap4j:olap4j:jar:0.9.7.309-JS-3 is missing, no dependency information available
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/zxing/core/2.3.0/core-2.3.0.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/zxing/core/2.3.0/core-2.3.0.pom (3 KB at 81.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/zxing/zxing-parent/2.3.0/zxing-parent-2.3.0.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/zxing/zxing-parent/2.3.0/zxing-parent-2.3.0.pom (11 KB at 261.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom (5 KB at 174.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/ibm/icu/icu4j/57.1/icu4j-57.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/ibm/icu/icu4j/57.1/icu4j-57.1.pom (5 KB at 168.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/poi/poi/3.10.1/poi-3.10.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/poi/poi/3.10.1/poi-3.10.1.pom (3 KB at 106.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom (12 KB at 419.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/commons/commons-parent/35/commons-parent-35.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/commons/commons-parent/35/commons-parent-35.pom (57 KB at 1282.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/apache/15/apache-15.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/apache/15/apache-15.pom (15 KB at 531.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.pom (2 KB at 40.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/toedter/jcalendar/1.4/jcalendar-1.4.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/toedter/jcalendar/1.4/jcalendar-1.4.pom (2 KB at 60.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.pom (24 KB at 722.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom (766 B at 28.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom (2 KB at 60.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/projectlombok/lombok/1.16.10/lombok-1.16.10.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/projectlombok/lombok/1.16.10/lombok-1.16.10.pom (2 KB at 56.7 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.pom (2 KB at 49.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/objenesis/objenesis/2.1/objenesis-2.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/objenesis/objenesis/2.1/objenesis-2.1.pom (3 KB at 91.7 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/objenesis/objenesis-parent/2.1/objenesis-parent-2.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/objenesis/objenesis-parent/2.1/objenesis-parent-2.1.pom (17 KB at 526.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-web/1.4.0.RELEASE/spring-boot-starter-web-1.4.0.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-web/1.4.0.RELEASE/spring-boot-starter-web-1.4.0.RELEASE.pom (2 KB at 56.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starters/1.4.0.RELEASE/spring-boot-starters-1.4.0.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starters/1.4.0.RELEASE/spring-boot-starters-1.4.0.RELEASE.pom (7 KB at 190.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter/1.4.0.RELEASE/spring-boot-starter-1.4.0.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter/1.4.0.RELEASE/spring-boot-starter-1.4.0.RELEASE.pom (2 KB at 60.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot/1.4.0.RELEASE/spring-boot-1.4.0.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot/1.4.0.RELEASE/spring-boot-1.4.0.RELEASE.pom (10 KB at 351.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-autoconfigure/1.4.0.RELEASE/spring-boot-autoconfigure-1.4.0.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-autoconfigure/1.4.0.RELEASE/spring-boot-autoconfigure-1.4.0.RELEASE.pom (20 KB at 607.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-logging/1.4.0.RELEASE/spring-boot-starter-logging-1.4.0.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-logging/1.4.0.RELEASE/spring-boot-starter-logging-1.4.0.RELEASE.pom (2 KB at 49.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.7/logback-classic-1.1.7.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.7/logback-classic-1.1.7.pom (13 KB at 499.7 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/ch/qos/logback/logback-parent/1.1.7/logback-parent-1.1.7.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/ch/qos/logback/logback-parent/1.1.7/logback-parent-1.1.7.pom (18 KB at 533.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.7/logback-core-1.1.7.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.7/logback-core-1.1.7.pom (5 KB at 205.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.pom (3 KB at 129.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.7.21/slf4j-parent-1.7.21.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.7.21/slf4j-parent-1.7.21.pom (14 KB at 549.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.21/jcl-over-slf4j-1.7.21.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.21/jcl-over-slf4j-1.7.21.pom (963 B at 47.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.21/jul-to-slf4j-1.7.21.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.21/jul-to-slf4j-1.7.21.pom (986 B at 48.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/slf4j/log4j-over-slf4j/1.7.21/log4j-over-slf4j-1.7.21.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/slf4j/log4j-over-slf4j/1.7.21/log4j-over-slf4j-1.7.21.pom (2 KB at 47.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/yaml/snakeyaml/1.17/snakeyaml-1.17.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/yaml/snakeyaml/1.17/snakeyaml-1.17.pom (28 KB at 854.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/1.4.0.RELEASE/spring-boot-starter-tomcat-1.4.0.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/1.4.0.RELEASE/spring-boot-starter-tomcat-1.4.0.RELEASE.pom (2 KB at 49.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/tomcat/embed/tomcat-embed-core/8.5.4/tomcat-embed-core-8.5.4.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/tomcat/embed/tomcat-embed-core/8.5.4/tomcat-embed-core-8.5.4.pom (2 KB at 54.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/tomcat/embed/tomcat-embed-el/8.5.4/tomcat-embed-el-8.5.4.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/tomcat/embed/tomcat-embed-el/8.5.4/tomcat-embed-el-8.5.4.pom (2 KB at 56.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.4/tomcat-embed-websocket-8.5.4.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.4/tomcat-embed-websocket-8.5.4.pom (2 KB at 64.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.2.4.Final/hibernate-validator-5.2.4.Final.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.2.4.Final/hibernate-validator-5.2.4.Final.pom (13 KB at 459.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hibernate/hibernate-validator-parent/5.2.4.Final/hibernate-validator-parent-5.2.4.Final.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hibernate/hibernate-validator-parent/5.2.4.Final/hibernate-validator-parent-5.2.4.Final.pom (35 KB at 883.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/jboss/arquillian/arquillian-bom/1.1.9.Final/arquillian-bom-1.1.9.Final.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/jboss/arquillian/arquillian-bom/1.1.9.Final/arquillian-bom-1.1.9.Final.pom (11 KB at 384.7 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/jboss/shrinkwrap/shrinkwrap-bom/1.2.2/shrinkwrap-bom-1.2.2.pom
+[INFO] Downloaded: https://oss.sonatype.org/content/repositories/releases/org/jboss/shrinkwrap/shrinkwrap-bom/1.2.2/shrinkwrap-bom-1.2.2.pom (4 KB at 15.7 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-bom/2.1.1/shrinkwrap-resolver-bom-2.1.1.pom
+[INFO] Downloaded: https://oss.sonatype.org/content/repositories/releases/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-bom/2.1.1/shrinkwrap-resolver-bom-2.1.1.pom (5 KB at 20.6 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-bom/2.0.0-alpha-7/shrinkwrap-descriptors-bom-2.0.0-alpha-7.pom
+[INFO] Downloaded: https://oss.sonatype.org/content/repositories/releases/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-bom/2.0.0-alpha-7/shrinkwrap-descriptors-bom-2.0.0-alpha-7.pom (6 KB at 23.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.pom (8 KB at 284.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.pom (6 KB at 179.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/jboss/jboss-parent/15/jboss-parent-15.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/jboss/jboss-parent/15/jboss-parent-15.pom (31 KB at 993.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/classmate/1.3.1/classmate-1.3.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/classmate/1.3.1/classmate-1.3.1.pom (6 KB at 180.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/oss-parent/24/oss-parent-24.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/oss-parent/24/oss-parent-24.pom (19 KB at 593.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-web/4.3.2.RELEASE/spring-web-4.3.2.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-web/4.3.2.RELEASE/spring-web-4.3.2.RELEASE.pom (8 KB at 311.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-webmvc/4.3.2.RELEASE/spring-webmvc-4.3.2.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-webmvc/4.3.2.RELEASE/spring-webmvc-4.3.2.RELEASE.pom (13 KB at 448.7 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-data-jpa/1.4.0.RELEASE/spring-boot-starter-data-jpa-1.4.0.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-data-jpa/1.4.0.RELEASE/spring-boot-starter-data-jpa-1.4.0.RELEASE.pom (3 KB at 76.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-aop/1.4.0.RELEASE/spring-boot-starter-aop-1.4.0.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-aop/1.4.0.RELEASE/spring-boot-starter-aop-1.4.0.RELEASE.pom (2 KB at 48.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9.pom (2 KB at 39.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-jdbc/1.4.0.RELEASE/spring-boot-starter-jdbc-1.4.0.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-jdbc/1.4.0.RELEASE/spring-boot-starter-jdbc-1.4.0.RELEASE.pom (2 KB at 54.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/tomcat/tomcat-jdbc/8.5.4/tomcat-jdbc-8.5.4.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/tomcat/tomcat-jdbc/8.5.4/tomcat-jdbc-8.5.4.pom (2 KB at 58.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/tomcat/tomcat-juli/8.5.4/tomcat-juli-8.5.4.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/tomcat/tomcat-juli/8.5.4/tomcat-juli-8.5.4.pom (2 KB at 39.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-jdbc/4.3.2.RELEASE/spring-jdbc-4.3.2.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-jdbc/4.3.2.RELEASE/spring-jdbc-4.3.2.RELEASE.pom (4 KB at 132.7 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-tx/4.3.2.RELEASE/spring-tx-4.3.2.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-tx/4.3.2.RELEASE/spring-tx-4.3.2.RELEASE.pom (4 KB at 85.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hibernate/hibernate-core/5.0.9.Final/hibernate-core-5.0.9.Final.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hibernate/hibernate-core/5.0.9.Final/hibernate-core-5.0.9.Final.pom (4 KB at 122.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.pom (3 KB at 86.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.pom (10 KB at 369.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.pom (632 B at 19.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.pom (6 KB at 243.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/jboss/jboss-parent/12/jboss-parent-12.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/jboss/jboss-parent/12/jboss-parent-12.pom (31 KB at 570.7 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.pom (7 KB at 165.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.pom (3 KB at 99.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.pom (2 KB at 58.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hibernate/hibernate-entitymanager/5.0.9.Final/hibernate-entitymanager-5.0.9.Final.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hibernate/hibernate-entitymanager/5.0.9.Final/hibernate-entitymanager-5.0.9.Final.pom (3 KB at 121.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.pom (14 KB at 561.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/net/java/jvnet-parent/3/jvnet-parent-3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/net/java/jvnet-parent/3/jvnet-parent-3.pom (5 KB at 212.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/data/spring-data-jpa/1.10.2.RELEASE/spring-data-jpa-1.10.2.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/data/spring-data-jpa/1.10.2.RELEASE/spring-data-jpa-1.10.2.RELEASE.pom (17 KB at 667.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/data/build/spring-data-parent/1.8.2.RELEASE/spring-data-parent-1.8.2.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/data/build/spring-data-parent/1.8.2.RELEASE/spring-data-parent-1.8.2.RELEASE.pom (23 KB at 855.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-framework-bom/4.2.6.RELEASE/spring-framework-bom-4.2.6.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-framework-bom/4.2.6.RELEASE/spring-framework-bom-4.2.6.RELEASE.pom (5 KB at 227.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/data/spring-data-commons/1.12.2.RELEASE/spring-data-commons-1.12.2.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/data/spring-data-commons/1.12.2.RELEASE/spring-data-commons-1.12.2.RELEASE.pom (8 KB at 247.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-orm/4.3.2.RELEASE/spring-orm-4.3.2.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-orm/4.3.2.RELEASE/spring-orm-4.3.2.RELEASE.pom (7 KB at 277.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-aspects/4.3.2.RELEASE/spring-aspects-4.3.2.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-aspects/4.3.2.RELEASE/spring-aspects-4.3.2.RELEASE.pom (4 KB at 154.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-test/1.4.0.RELEASE/spring-boot-starter-test-1.4.0.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-test/1.4.0.RELEASE/spring-boot-starter-test-1.4.0.RELEASE.pom (4 KB at 139.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-test/1.4.0.RELEASE/spring-boot-test-1.4.0.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-test/1.4.0.RELEASE/spring-boot-test-1.4.0.RELEASE.pom (5 KB at 169.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/1.4.0.RELEASE/spring-boot-test-autoconfigure-1.4.0.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/1.4.0.RELEASE/spring-boot-test-autoconfigure-1.4.0.RELEASE.pom (5 KB at 203.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.pom (3 KB at 81.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/net/minidev/json-smart/2.2.1/json-smart-2.2.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/net/minidev/json-smart/2.2.1/json-smart-2.2.1.pom (12 KB at 454.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/net/minidev/accessors-smart/1.1/accessors-smart-1.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/net/minidev/accessors-smart/1.1/accessors-smart-1.1.pom (3 KB at 88.7 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/net/minidev/minidev-parent/2.2/minidev-parent-2.2.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/net/minidev/minidev-parent/2.2/minidev-parent-2.2.pom (9 KB at 370.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/ow2/asm/asm/5.0.3/asm-5.0.3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/ow2/asm/asm/5.0.3/asm-5.0.3.pom (2 KB at 90.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/ow2/asm/asm-parent/5.0.3/asm-parent-5.0.3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/ow2/asm/asm-parent/5.0.3/asm-parent-5.0.3.pom (6 KB at 255.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/ow2/ow2/1.3/ow2-1.3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/ow2/ow2/1.3/ow2-1.3.pom (10 KB at 371.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/assertj/assertj-core/2.5.0/assertj-core-2.5.0.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/assertj/assertj-core/2.5.0/assertj-core-2.5.0.pom (7 KB at 246.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/assertj/assertj-parent-pom/2.1.4/assertj-parent-pom-2.1.4.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/assertj/assertj-parent-pom/2.1.4/assertj-parent-pom-2.1.4.pom (15 KB at 526.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.pom (820 B at 34.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/skyscreamer/jsonassert/1.3.0/jsonassert-1.3.0.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/skyscreamer/jsonassert/1.3.0/jsonassert-1.3.0.pom (6 KB at 114.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom (5 KB at 194.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-test/4.3.2.RELEASE/spring-test-4.3.2.RELEASE.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-test/4.3.2.RELEASE/spring-test-4.3.2.RELEASE.pom (8 KB at 228.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/net/sf/jasperreports/jasperreports/6.3.0/jasperreports-6.3.0.jar
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/commons-digester/commons-digester/2.1/commons-digester-2.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/commons-digester/commons-digester/2.1/commons-digester-2.1.jar (193 KB at 526.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar (229 KB at 569.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/lowagie/itext/2.1.7.js5/itext-2.1.7.js5.jar
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar (60 KB at 124.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138.jar (188 KB at 232.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/bouncycastle/bctsp-jdk14/1.38/bctsp-jdk14-1.38.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/bouncycastle/bctsp-jdk14/1.38/bctsp-jdk14-1.38.jar (23 KB at 25.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk14/1.38/bcprov-jdk14-1.38.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar (479 KB at 524.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/bouncycastle/bcmail-jdk14/1.38/bcmail-jdk14-1.38.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar (575 KB at 517.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/jfree/jcommon/1.0.23/jcommon-1.0.23.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/bouncycastle/bcmail-jdk14/1.38/bcmail-jdk14-1.38.jar (188 KB at 145.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/jfree/jfreechart/1.0.19/jfreechart-1.0.19.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/jfree/jcommon/1.0.23/jcommon-1.0.23.jar (323 KB at 172.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/eclipse/jdt/core/compiler/ecj/4.3.1/ecj-4.3.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138.jar (1516 KB at 460.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/codehaus/castor/castor-xml/1.3.3/castor-xml-1.3.3.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk14/1.38/bcprov-jdk14-1.38.jar (1516 KB at 406.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/codehaus/castor/castor-core/1.3.3/castor-core-1.3.3.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/codehaus/castor/castor-core/1.3.3/castor-core-1.3.3.jar (49 KB at 12.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/eclipse/jdt/core/compiler/ecj/4.3.1/ecj-4.3.1.jar (1788 KB at 457.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar (3 KB at 0.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/stax/stax/1.2.0/stax-1.2.0.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/stax/stax/1.2.0/stax-1.2.0.jar (176 KB at 44.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar (26 KB at 6.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar (23 KB at 5.7 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.jar (1107 KB at 272.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.1/jackson-core-2.8.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/net/sf/jasperreports/jasperreports/6.3.0/jasperreports-6.3.0.jar (5278 KB at 1297.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.1/jackson-databind-2.8.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.1/jackson-core-2.8.1.jar (274 KB at 67.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.1/jackson-annotations-2.8.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/jfree/jfreechart/1.0.19/jfreechart-1.0.19.jar (1529 KB at 372.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-core/4.5.1/lucene-core-4.5.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.1/jackson-annotations-2.8.1.jar (55 KB at 13.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-analyzers-common/4.5.1/lucene-analyzers-common-4.5.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.1/jackson-databind-2.8.1.jar (1202 KB at 289.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-queryparser/4.5.1/lucene-queryparser-4.5.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-analyzers-common/4.5.1/lucene-analyzers-common-4.5.1.jar (1549 KB at 371.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-queries/4.5.1/lucene-queries-4.5.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-queryparser/4.5.1/lucene-queryparser-4.5.1.jar (376 KB at 89.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-sandbox/4.5.1/lucene-sandbox-4.5.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-queries/4.5.1/lucene-queries-4.5.1.jar (201 KB at 47.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/jakarta-regexp/jakarta-regexp/1.4/jakarta-regexp-1.4.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/jakarta-regexp/jakarta-regexp/1.4/jakarta-regexp-1.4.jar (28 KB at 6.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/olap4j/olap4j/0.9.7.309-JS-3/olap4j-0.9.7.309-JS-3.jar
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/zxing/core/2.3.0/core-2.3.0.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar (278 KB at 65.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/ibm/icu/icu4j/57.1/icu4j-57.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-sandbox/4.5.1/lucene-sandbox-4.5.1.jar (45 KB at 10.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/poi/poi/3.10.1/poi-3.10.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/poi/poi/3.10.1/poi-3.10.1.jar (1904 KB at 436.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar (278 KB at 63.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.jar (967 KB at 217.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/toedter/jcalendar/1.4/jcalendar-1.4.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/toedter/jcalendar/1.4/jcalendar-1.4.jar (162 KB at 36.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar (308 KB at 68.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar (44 KB at 9.7 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/projectlombok/lombok/1.16.10/lombok-1.16.10.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/projectlombok/lombok/1.16.10/lombok-1.16.10.jar (1368 KB at 298.7 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar (1146 KB at 247.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/objenesis/objenesis/2.1/objenesis-2.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/objenesis/objenesis/2.1/objenesis-2.1.jar (41 KB at 8.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-web/1.4.0.RELEASE/spring-boot-starter-web-1.4.0.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-web/1.4.0.RELEASE/spring-boot-starter-web-1.4.0.RELEASE.jar (3 KB at 0.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter/1.4.0.RELEASE/spring-boot-starter-1.4.0.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter/1.4.0.RELEASE/spring-boot-starter-1.4.0.RELEASE.jar (3 KB at 0.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot/1.4.0.RELEASE/spring-boot-1.4.0.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/codehaus/castor/castor-xml/1.3.3/castor-xml-1.3.3.jar (853 KB at 182.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-autoconfigure/1.4.0.RELEASE/spring-boot-autoconfigure-1.4.0.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot/1.4.0.RELEASE/spring-boot-1.4.0.RELEASE.jar (631 KB at 133.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-logging/1.4.0.RELEASE/spring-boot-starter-logging-1.4.0.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-logging/1.4.0.RELEASE/spring-boot-starter-logging-1.4.0.RELEASE.jar (3 KB at 0.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.7/logback-classic-1.1.7.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.7/logback-classic-1.1.7.jar (297 KB at 62.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.7/logback-core-1.1.7.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-autoconfigure/1.4.0.RELEASE/spring-boot-autoconfigure-1.4.0.RELEASE.jar (911 KB at 190.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.21/jul-to-slf4j-1.7.21.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.7/logback-core-1.1.7.jar (460 KB at 95.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/slf4j/log4j-over-slf4j/1.7.21/log4j-over-slf4j-1.7.21.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.21/jul-to-slf4j-1.7.21.jar (5 KB at 0.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/slf4j/log4j-over-slf4j/1.7.21/log4j-over-slf4j-1.7.21.jar (24 KB at 4.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/1.4.0.RELEASE/spring-boot-starter-tomcat-1.4.0.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/1.4.0.RELEASE/spring-boot-starter-tomcat-1.4.0.RELEASE.jar (3 KB at 0.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/tomcat/embed/tomcat-embed-core/8.5.4/tomcat-embed-core-8.5.4.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar (268 KB at 55.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/tomcat/embed/tomcat-embed-el/8.5.4/tomcat-embed-el-8.5.4.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/tomcat/embed/tomcat-embed-el/8.5.4/tomcat-embed-el-8.5.4.jar (235 KB at 48.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.4/tomcat-embed-websocket-8.5.4.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.4/tomcat-embed-websocket-8.5.4.jar (236 KB at 48.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.2.4.Final/hibernate-validator-5.2.4.Final.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/zxing/core/2.3.0/core-2.3.0.jar (517 KB at 104.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/tomcat/embed/tomcat-embed-core/8.5.4/tomcat-embed-core-8.5.4.jar (2909 KB at 588.7 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.2.4.Final/hibernate-validator-5.2.4.Final.jar (688 KB at 139.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/fasterxml/classmate/1.3.1/classmate-1.3.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar (66 KB at 13.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-web/4.3.2.RELEASE/spring-web-4.3.2.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/fasterxml/classmate/1.3.1/classmate-1.3.1.jar (64 KB at 12.7 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-aop/4.3.2.RELEASE/spring-aop-4.3.2.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-web/4.3.2.RELEASE/spring-web-4.3.2.RELEASE.jar (793 KB at 158.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-beans/4.3.2.RELEASE/spring-beans-4.3.2.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-aop/4.3.2.RELEASE/spring-aop-4.3.2.RELEASE.jar (371 KB at 74.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-webmvc/4.3.2.RELEASE/spring-webmvc-4.3.2.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-beans/4.3.2.RELEASE/spring-beans-4.3.2.RELEASE.jar (740 KB at 146.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-expression/4.3.2.RELEASE/spring-expression-4.3.2.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-webmvc/4.3.2.RELEASE/spring-webmvc-4.3.2.RELEASE.jar (893 KB at 176.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-data-jpa/1.4.0.RELEASE/spring-boot-starter-data-jpa-1.4.0.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-expression/4.3.2.RELEASE/spring-expression-4.3.2.RELEASE.jar (258 KB at 50.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-aop/1.4.0.RELEASE/spring-boot-starter-aop-1.4.0.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-data-jpa/1.4.0.RELEASE/spring-boot-starter-data-jpa-1.4.0.RELEASE.jar (3 KB at 0.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-aop/1.4.0.RELEASE/spring-boot-starter-aop-1.4.0.RELEASE.jar (3 KB at 0.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-jdbc/1.4.0.RELEASE/spring-boot-starter-jdbc-1.4.0.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar (63 KB at 12.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/tomcat/tomcat-jdbc/8.5.4/tomcat-jdbc-8.5.4.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-jdbc/1.4.0.RELEASE/spring-boot-starter-jdbc-1.4.0.RELEASE.jar (3 KB at 0.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/apache/tomcat/tomcat-juli/8.5.4/tomcat-juli-8.5.4.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/tomcat/tomcat-juli/8.5.4/tomcat-juli-8.5.4.jar (40 KB at 7.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-jdbc/4.3.2.RELEASE/spring-jdbc-4.3.2.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9.jar (1822 KB at 354.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hibernate/hibernate-core/5.0.9.Final/hibernate-core-5.0.9.Final.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-jdbc/4.3.2.RELEASE/spring-jdbc-4.3.2.RELEASE.jar (417 KB at 80.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar (111 KB at 21.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar (733 KB at 141.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.jar (435 KB at 83.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.jar (184 KB at 34.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar (307 KB at 58.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hibernate/hibernate-core/5.0.9.Final/hibernate-core-5.0.9.Final.jar (5465 KB at 1031.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar (216 KB at 40.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hibernate/hibernate-entitymanager/5.0.9.Final/hibernate-entitymanager-5.0.9.Final.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/tomcat/tomcat-jdbc/8.5.4/tomcat-jdbc-8.5.4.jar (135 KB at 25.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar (74 KB at 13.8 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/data/spring-data-jpa/1.10.2.RELEASE/spring-data-jpa-1.10.2.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar (31 KB at 5.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/data/spring-data-commons/1.12.2.RELEASE/spring-data-commons-1.12.2.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/data/spring-data-jpa/1.10.2.RELEASE/spring-data-jpa-1.10.2.RELEASE.jar (269 KB at 50.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-orm/4.3.2.RELEASE/spring-orm-4.3.2.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/data/spring-data-commons/1.12.2.RELEASE/spring-data-commons-1.12.2.RELEASE.jar (673 KB at 125.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-tx/4.3.2.RELEASE/spring-tx-4.3.2.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-orm/4.3.2.RELEASE/spring-orm-4.3.2.RELEASE.jar (465 KB at 86.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar (41 KB at 7.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.21/jcl-over-slf4j-1.7.21.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-tx/4.3.2.RELEASE/spring-tx-4.3.2.RELEASE.jar (261 KB at 48.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-aspects/4.3.2.RELEASE/spring-aspects-4.3.2.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.21/jcl-over-slf4j-1.7.21.jar (17 KB at 3.0 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-test/1.4.0.RELEASE/spring-boot-starter-test-1.4.0.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-aspects/4.3.2.RELEASE/spring-aspects-4.3.2.RELEASE.jar (58 KB at 10.6 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-test/1.4.0.RELEASE/spring-boot-test-1.4.0.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-test/1.4.0.RELEASE/spring-boot-starter-test-1.4.0.RELEASE.jar (3 KB at 0.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/1.4.0.RELEASE/spring-boot-test-autoconfigure-1.4.0.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-test/1.4.0.RELEASE/spring-boot-test-1.4.0.RELEASE.jar (138 KB at 25.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/1.4.0.RELEASE/spring-boot-test-autoconfigure-1.4.0.RELEASE.jar (91 KB at 16.7 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/net/minidev/json-smart/2.2.1/json-smart-2.2.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.jar (203 KB at 37.1 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/net/minidev/accessors-smart/1.1/accessors-smart-1.1.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/net/minidev/json-smart/2.2.1/json-smart-2.2.1.jar (118 KB at 21.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/net/minidev/accessors-smart/1.1/accessors-smart-1.1.jar (79 KB at 14.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/assertj/assertj-core/2.5.0/assertj-core-2.5.0.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar (52 KB at 9.5 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar (52 KB at 9.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/skyscreamer/jsonassert/1.3.0/jsonassert-1.3.0.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/assertj/assertj-core/2.5.0/assertj-core-2.5.0.jar (913 KB at 165.2 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/json/json/20140107/json-20140107.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/skyscreamer/jsonassert/1.3.0/jsonassert-1.3.0.jar (28 KB at 4.9 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-core/4.3.2.RELEASE/spring-core-4.3.2.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/json/json/20140107/json-20140107.jar (64 KB at 11.4 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/springframework/spring-test/4.3.2.RELEASE/spring-test-4.3.2.RELEASE.jar
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-core/4.3.2.RELEASE/spring-core-4.3.2.RELEASE.jar (1085 KB at 194.7 KB/sec)
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/springframework/spring-test/4.3.2.RELEASE/spring-test-4.3.2.RELEASE.jar (578 KB at 103.7 KB/sec)
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/ibm/icu/icu4j/57.1/icu4j-57.1.jar (11026 KB at 1893.1 KB/sec)
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hibernate/hibernate-entitymanager/5.0.9.Final/hibernate-entitymanager-5.0.9.Final.jar (595 KB at 92.0 KB/sec)
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/apache/lucene/lucene-core/4.5.1/lucene-core-4.5.1.jar (2244 KB at 294.2 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/lowagie/itext/2.1.7.js5/itext-2.1.7.js5.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/olap4j/olap4j/0.9.7.309-JS-3/olap4j-0.9.7.309-JS-3.jar
+[INFO] Downloading: https://repository.apache.org/releases/com/lowagie/itext/2.1.7.js5/itext-2.1.7.js5.jar
+[INFO] Downloading: https://repository.apache.org/releases/org/olap4j/olap4j/0.9.7.309-JS-3/olap4j-0.9.7.309-JS-3.jar
+[INFO] Downloading: http://jasperreports.sourceforge.net/maven2/com/lowagie/itext/2.1.7.js5/itext-2.1.7.js5.jar
+[INFO] Downloading: http://jasperreports.sourceforge.net/maven2/org/olap4j/olap4j/0.9.7.309-JS-3/olap4j-0.9.7.309-JS-3.jar
+[INFO] Downloaded: http://jasperreports.sourceforge.net/maven2/com/lowagie/itext/2.1.7.js5/itext-2.1.7.js5.jar (1106 KB at 1048.1 KB/sec)
+[INFO] Downloading: http://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts/org/olap4j/olap4j/0.9.7.309-JS-3/olap4j-0.9.7.309-JS-3.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 20.910 s
+[INFO] Finished at: 2022-07-15T13:30:44+00:00
+[INFO] Final Memory: 18M/360M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project SIC: Could not resolve dependencies for project sic:SIC:jar:1.9.2: Could not find artifact org.olap4j:olap4j:jar:0.9.7.309-JS-3 in central (http://insecure.repo1.maven.org/maven2) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+
+[31;1mThe command "eval mvn install -Dhttps.protocols=TLSv1.2 -DskipTests=true -Dmaven.javadoc.skip=true -B -V " failed. Retrying, 2 of 3.[0m
+
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=192m; support was removed in 8.0
+Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T17:29:23+00:00)
+Maven home: /usr/local/maven
+Java version: 1.8.0_31, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.15.0-109-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SIC 1.9.2
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/olap4j/olap4j/0.9.7.309-JS-3/olap4j-0.9.7.309-JS-3.pom
+[INFO] Downloading: https://repository.apache.org/releases/org/olap4j/olap4j/0.9.7.309-JS-3/olap4j-0.9.7.309-JS-3.pom
+[WARNING] The POM for org.olap4j:olap4j:jar:0.9.7.309-JS-3 is missing, no dependency information available
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/olap4j/olap4j/0.9.7.309-JS-3/olap4j-0.9.7.309-JS-3.jar
+[INFO] Downloading: https://repository.apache.org/releases/org/olap4j/olap4j/0.9.7.309-JS-3/olap4j-0.9.7.309-JS-3.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.475 s
+[INFO] Finished at: 2022-07-15T13:30:50+00:00
+[INFO] Final Memory: 21M/491M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project SIC: Could not resolve dependencies for project sic:SIC:jar:1.9.2: Failure to find org.olap4j:olap4j:jar:0.9.7.309-JS-3 in http://insecure.repo1.maven.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+
+[31;1mThe command "eval mvn install -Dhttps.protocols=TLSv1.2 -DskipTests=true -Dmaven.javadoc.skip=true -B -V " failed. Retrying, 3 of 3.[0m
+
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=192m; support was removed in 8.0
+Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T17:29:23+00:00)
+Maven home: /usr/local/maven
+Java version: 1.8.0_31, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.15.0-109-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SIC 1.9.2
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/olap4j/olap4j/0.9.7.309-JS-3/olap4j-0.9.7.309-JS-3.pom
+[INFO] Downloading: https://repository.apache.org/releases/org/olap4j/olap4j/0.9.7.309-JS-3/olap4j-0.9.7.309-JS-3.pom
+[WARNING] The POM for org.olap4j:olap4j:jar:0.9.7.309-JS-3 is missing, no dependency information available
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/olap4j/olap4j/0.9.7.309-JS-3/olap4j-0.9.7.309-JS-3.jar
+[INFO] Downloading: https://repository.apache.org/releases/org/olap4j/olap4j/0.9.7.309-JS-3/olap4j-0.9.7.309-JS-3.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.690 s
+[INFO] Finished at: 2022-07-15T13:31:06+00:00
+[INFO] Final Memory: 21M/491M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project SIC: Could not resolve dependencies for project sic:SIC:jar:1.9.2: Failure to find org.olap4j:olap4j:jar:0.9.7.309-JS-3 in http://insecure.repo1.maven.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+
+[31;1mThe command "eval mvn install -Dhttps.protocols=TLSv1.2 -DskipTests=true -Dmaven.javadoc.skip=true -B -V " failed 3 times.[0m
+
+
+travis_time:end:27f30020:start=1657891821988406755,finish=1657891868701728870,duration=46713322115[0K
+[31;1mThe command "mvn install -Dhttps.protocols=TLSv1.2 -DskipTests=true -Dmaven.javadoc.skip=true -B -V" failed and exited with 1 during .[0m
+
+Your build has been stopped.

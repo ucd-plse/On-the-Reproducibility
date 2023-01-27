@@ -1,0 +1,83 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Log4j JUL Adapter 2.1.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-jul ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ log4j-jul ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-892_f9b0bbeed839f447fc0602fdee5a009315ebfcbb/log4j-jul/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-jul ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.3:manifest (default) @ log4j-jul ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ log4j-jul ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-jul ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log4j-jul ---
+[INFO] Surefire report directory: /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-892_f9b0bbeed839f447fc0602fdee5a009315ebfcbb/log4j-jul/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.logging.log4j.jul.Log4jLevelTranslatorTest
+Running org.apache.logging.log4j.jul.JavaLevelTranslatorTest
+Running org.apache.logging.log4j.jul.CoreLoggerTest
+Running org.apache.logging.log4j.jul.CallerInformationTest
+Running org.apache.logging.log4j.jul.ApiLoggerTest
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.08 sec <<< FAILURE! - in org.apache.logging.log4j.jul.Log4jLevelTranslatorTest
+testToJavaLevel[1](org.apache.logging.log4j.jul.Log4jLevelTranslatorTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<SEVERE> but was:<null>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.logging.log4j.jul.Log4jLevelTranslatorTest.testToJavaLevel(Log4jLevelTranslatorTest.java:64)
+
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec - in org.apache.logging.log4j.jul.JavaLevelTranslatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.41 sec - in org.apache.logging.log4j.jul.CallerInformationTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.419 sec - in org.apache.logging.log4j.jul.ApiLoggerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.432 sec - in org.apache.logging.log4j.jul.CoreLoggerTest
+
+Results :
+
+Failed tests: 
+  Log4jLevelTranslatorTest.testToJavaLevel:64 expected:<SEVERE> but was:<null>
+
+Tests run: 46, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.785 s
+[INFO] Finished at: 2016-07-16T11:26:12-07:00
+[INFO] Final Memory: 20M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project log4j-jul: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-892_f9b0bbeed839f447fc0602fdee5a009315ebfcbb/log4j-jul/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

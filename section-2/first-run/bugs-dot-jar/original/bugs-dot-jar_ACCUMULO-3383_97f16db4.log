@@ -1,0 +1,91 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Start 1.6.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.3.0:verify (verify-sorted-pom) @ accumulo-start ---
+[INFO] Verifying file /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-3383_97f16db4d31db63b46985da07228b89f0c346270/start/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-mvn) @ accumulo-start ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo-start ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.10:check (check-licenses) @ accumulo-start ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] No excludes explicitly specified.
+[INFO] 35 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 30 licence.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ accumulo-start ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-start ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-3383_97f16db4d31db63b46985da07228b89f0c346270/start/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ accumulo-start ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-start ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ accumulo-start ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ accumulo-start ---
+[INFO] Surefire report directory: /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-3383_97f16db4d31db63b46985da07228b89f0c346270/start/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.start.classloader.vfs.AccumuloVFSClassLoaderTest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.636 sec <<< FAILURE! - in org.apache.accumulo.start.classloader.vfs.AccumuloVFSClassLoaderTest
+testCacheDirectoryConfigured(org.apache.accumulo.start.classloader.vfs.AccumuloVFSClassLoaderTest)  Time elapsed: 0.022 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.apache.accumulo.start.classloader.vfs.AccumuloVFSClassLoaderTest.testCacheDirectoryConfigured(AccumuloVFSClassLoaderTest.java:204)
+
+Running org.apache.accumulo.start.classloader.vfs.providers.VfsClassLoaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.92 sec - in org.apache.accumulo.start.classloader.vfs.providers.VfsClassLoaderTest
+Running org.apache.accumulo.start.classloader.vfs.providers.ReadOnlyHdfsFileProviderTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.877 sec - in org.apache.accumulo.start.classloader.vfs.providers.ReadOnlyHdfsFileProviderTest
+Running org.apache.accumulo.start.classloader.vfs.ContextManagerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.167 sec - in org.apache.accumulo.start.classloader.vfs.ContextManagerTest
+Running org.apache.accumulo.start.classloader.vfs.AccumuloReloadingVFSClassLoaderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 22.516 sec - in org.apache.accumulo.start.classloader.vfs.AccumuloReloadingVFSClassLoaderTest
+Running org.apache.accumulo.start.MainTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.466 sec - in org.apache.accumulo.start.MainTest
+
+Results :
+
+Failed tests: 
+  AccumuloVFSClassLoaderTest.testCacheDirectoryConfigured:204 null
+
+Tests run: 33, Failures: 1, Errors: 0, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:08 min
+[INFO] Finished at: 2016-07-26T05:15:50-07:00
+[INFO] Final Memory: 30M/858M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.16:test (default-test) on project accumulo-start: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-3383_97f16db4d31db63b46985da07228b89f0c346270/start/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

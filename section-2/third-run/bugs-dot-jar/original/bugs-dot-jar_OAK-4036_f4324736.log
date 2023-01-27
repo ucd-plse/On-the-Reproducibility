@@ -1,0 +1,629 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Lucene 1.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-lucene ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-lucene ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-lucene ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-lucene ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-lucene ---
+[INFO] Generating 1 MetaType Descriptors in /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-4036_f432473659288f4ee39d9ff4aeb17c7e957c071d/oak-lucene/target/classes/OSGI-INF/metatype/org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService.xml
+[INFO] Writing 1 Service Component Descriptors to /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-4036_f432473659288f4ee39d9ff4aeb17c7e957c071d/oak-lucene/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.lucene.score.impl.ScorerProviderFactoryImpl.xml
+[INFO] Writing 1 Service Component Descriptors to /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-4036_f432473659288f4ee39d9ff4aeb17c7e957c071d/oak-lucene/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService.xml
+[INFO] Writing 1 Service Component Descriptors to /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-4036_f432473659288f4ee39d9ff4aeb17c7e957c071d/oak-lucene/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.lucene.IndexAugmentorFactory.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-lucene ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-lucene ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-lucene ---
+[INFO] Surefire report directory: /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-4036_f432473659288f4ee39d9ff4aeb17c7e957c071d/oak-lucene/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexQueryTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 14.141 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.AggregateTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexLookupTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.IndexDefinitionTest
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.IndexAugmentorFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexDescendantSuggestionTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 1.395 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.OakDirectoryTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.272 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderServiceTest
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.102 sec <<< FAILURE!
+preExtractedProviderBindBeforeActivate(org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderServiceTest)  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertNotNull(Assert.java:712)
+	at org.junit.Assert.assertNotNull(Assert.java:722)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderServiceTest.preExtractedProviderBindBeforeActivate(LuceneIndexProviderServiceTest.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexSuggestionTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.177 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndexTest
+Tests run: 71, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.383 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.NodeStateAnalyzerFactoryTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexDescendantSpellcheckTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.611 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.util.NodeStateFacetsConfigTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.util.FacetHelperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneBlobCacheTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.338 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.ExtractedTextCacheTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexEditorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.412 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexAugmentTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.399 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.IndexCopierTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexExclusionQueryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.287 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexAggregationTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.698 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.22 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.IndexPlannerTest
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec
+Running org.apache.jackrabbit.oak.jcr.query.QueryFulltextTest
+java.lang.OutOfMemoryError: Java heap space
+Dumping heap to java_pid19925.hprof ...
+Heap dump file created [467930829 bytes in 0.788 secs]
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 22.025 sec <<< FAILURE!
+testScore(org.apache.jackrabbit.oak.jcr.query.QueryFulltextTest)  Time elapsed: 9.577 sec  <<< ERROR!
+javax.jcr.RepositoryException: Failed to get Repository instance.
+	at org.apache.jackrabbit.test.RepositoryHelper.getRepository(RepositoryHelper.java:72)
+	at org.apache.jackrabbit.test.RepositoryHelper.getProperty(RepositoryHelper.java:152)
+	at org.apache.jackrabbit.test.AbstractJCRTest.getProperty(AbstractJCRTest.java:514)
+	at org.apache.jackrabbit.test.AbstractJCRTest.setUp(AbstractJCRTest.java:308)
+	at org.apache.jackrabbit.core.query.AbstractQueryTest.setUp(AbstractQueryTest.java:53)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.jackrabbit.test.AbstractJCRTest.run(AbstractJCRTest.java:464)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.apache.jackrabbit.test.RepositoryStubException: java.lang.reflect.InvocationTargetException
+	at org.apache.jackrabbit.test.RepositoryStub.getInstance(RepositoryStub.java:219)
+	at org.apache.jackrabbit.test.RepositoryHelper.getRepository(RepositoryHelper.java:68)
+	... 25 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.jackrabbit.test.RepositoryStub.getInstance(RepositoryStub.java:217)
+	... 26 more
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.jackrabbit.oak.plugins.index.lucene.OakDirectory$OakIndexFile.<init>(OakDirectory.java:343)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.OakDirectory$OakIndexFile.<init>(OakDirectory.java:248)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.OakDirectory$OakIndexInput.<init>(OakDirectory.java:513)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.OakDirectory$OakIndexInput.clone(OakDirectory.java:521)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.OakDirectory$OakIndexInput.clone(OakDirectory.java:497)
+	at org.apache.lucene.codecs.lucene45.Lucene45DocValuesProducer.getNumeric(Lucene45DocValuesProducer.java:299)
+	at org.apache.lucene.codecs.lucene45.Lucene45DocValuesProducer.getNumeric(Lucene45DocValuesProducer.java:290)
+	at org.apache.lucene.codecs.perfield.PerFieldDocValuesFormat$FieldsReader.getNumeric(PerFieldDocValuesFormat.java:267)
+	at org.apache.lucene.index.SegmentReader.getNumericDocValues(SegmentReader.java:411)
+	at org.apache.lucene.index.MultiDocValues.getNumericValues(MultiDocValues.java:108)
+	at org.apache.lucene.search.suggest.analyzing.AnalyzingInfixSuggester.<init>(AnalyzingInfixSuggester.java:164)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.util.SuggestHelper$2.<init>(SuggestHelper.java:127)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.util.SuggestHelper.getLookup(SuggestHelper.java:127)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.util.SuggestHelper.getLookup(SuggestHelper.java:123)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.IndexNode.<init>(IndexNode.java:109)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.IndexNode.open(IndexNode.java:69)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.IndexTracker$1.leave(IndexTracker.java:98)
+	at org.apache.jackrabbit.oak.spi.commit.EditorDiff.childNodeChanged(EditorDiff.java:153)
+	at org.apache.jackrabbit.oak.plugins.segment.MapRecord.compare(MapRecord.java:483)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentNodeState.compareAgainstBaseState(SegmentNodeState.java:583)
+	at org.apache.jackrabbit.oak.spi.commit.EditorDiff.childNodeChanged(EditorDiff.java:148)
+	at org.apache.jackrabbit.oak.plugins.segment.MapRecord.compare(MapRecord.java:456)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentNodeState.compareAgainstBaseState(SegmentNodeState.java:583)
+	at org.apache.jackrabbit.oak.spi.commit.EditorDiff.process(EditorDiff.java:52)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.IndexTracker.update(IndexTracker.java:108)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProvider.contentChanged(LuceneIndexProvider.java:76)
+	at org.apache.jackrabbit.oak.spi.commit.CompositeObserver.contentChanged(CompositeObserver.java:53)
+	at org.apache.jackrabbit.oak.spi.commit.ChangeDispatcher.contentChanged(ChangeDispatcher.java:79)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStore$Commit.setHead(SegmentNodeStore.java:476)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStore$Commit.optimisticMerge(SegmentNodeStore.java:521)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStore$Commit.execute(SegmentNodeStore.java:575)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStore.merge(SegmentNodeStore.java:238)
+
+testSurrogateFulltext(org.apache.jackrabbit.oak.jcr.query.QueryFulltextTest)  Time elapsed: 10.14 sec  <<< ERROR!
+javax.jcr.RepositoryException: Failed to get Repository instance.
+	at org.apache.jackrabbit.test.RepositoryHelper.getRepository(RepositoryHelper.java:72)
+	at org.apache.jackrabbit.test.RepositoryHelper.getProperty(RepositoryHelper.java:152)
+	at org.apache.jackrabbit.test.AbstractJCRTest.getProperty(AbstractJCRTest.java:514)
+	at org.apache.jackrabbit.test.AbstractJCRTest.setUp(AbstractJCRTest.java:308)
+	at org.apache.jackrabbit.core.query.AbstractQueryTest.setUp(AbstractQueryTest.java:53)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.jackrabbit.test.AbstractJCRTest.run(AbstractJCRTest.java:464)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.apache.jackrabbit.test.RepositoryStubException: java.lang.reflect.InvocationTargetException
+	at org.apache.jackrabbit.test.RepositoryStub.getInstance(RepositoryStub.java:219)
+	at org.apache.jackrabbit.test.RepositoryHelper.getRepository(RepositoryHelper.java:68)
+	... 25 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.jackrabbit.test.RepositoryStub.getInstance(RepositoryStub.java:217)
+	... 26 more
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.jackrabbit.oak.plugins.index.lucene.OakDirectory$OakIndexFile.<init>(OakDirectory.java:318)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.OakDirectory$OakIndexInput.<init>(OakDirectory.java:507)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.OakDirectory.openInput(OakDirectory.java:177)
+	at org.apache.lucene.store.CompoundFileDirectory.readEntries(CompoundFileDirectory.java:155)
+	at org.apache.lucene.store.CompoundFileDirectory.<init>(CompoundFileDirectory.java:104)
+	at org.apache.lucene.index.SegmentReader.readFieldInfos(SegmentReader.java:202)
+	at org.apache.lucene.index.SegmentReader.<init>(SegmentReader.java:95)
+	at org.apache.lucene.index.StandardDirectoryReader$1.doBody(StandardDirectoryReader.java:62)
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:843)
+	at org.apache.lucene.index.StandardDirectoryReader.open(StandardDirectoryReader.java:52)
+	at org.apache.lucene.index.DirectoryReader.open(DirectoryReader.java:66)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.IndexNode.<init>(IndexNode.java:105)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.IndexNode.open(IndexNode.java:69)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.IndexTracker$1.leave(IndexTracker.java:98)
+	at org.apache.jackrabbit.oak.spi.commit.EditorDiff.childNodeChanged(EditorDiff.java:153)
+	at org.apache.jackrabbit.oak.plugins.segment.MapRecord.compare(MapRecord.java:414)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentNodeState.compareAgainstBaseState(SegmentNodeState.java:583)
+	at org.apache.jackrabbit.oak.spi.commit.EditorDiff.childNodeChanged(EditorDiff.java:148)
+	at org.apache.jackrabbit.oak.plugins.segment.MapRecord.compare(MapRecord.java:456)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentNodeState.compareAgainstBaseState(SegmentNodeState.java:583)
+	at org.apache.jackrabbit.oak.spi.commit.EditorDiff.process(EditorDiff.java:52)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.IndexTracker.update(IndexTracker.java:108)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProvider.contentChanged(LuceneIndexProvider.java:76)
+	at org.apache.jackrabbit.oak.spi.commit.CompositeObserver.contentChanged(CompositeObserver.java:53)
+	at org.apache.jackrabbit.oak.spi.commit.ChangeDispatcher.contentChanged(ChangeDispatcher.java:79)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStore$Commit.setHead(SegmentNodeStore.java:476)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStore$Commit.optimisticMerge(SegmentNodeStore.java:521)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStore$Commit.execute(SegmentNodeStore.java:575)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStore.merge(SegmentNodeStore.java:238)
+	at org.apache.jackrabbit.oak.core.MutableRoot.commit(MutableRoot.java:247)
+	at org.apache.jackrabbit.oak.core.MutableRoot.commit(MutableRoot.java:258)
+	at org.apache.jackrabbit.oak.plugins.name.ReadWriteNamespaceRegistry.registerNamespace(ReadWriteNamespaceRegistry.java:94)
+
+testFulltextRelativeProperty(org.apache.jackrabbit.oak.jcr.query.QueryFulltextTest)  Time elapsed: 1.856 sec  <<< ERROR!
+javax.jcr.RepositoryException: Failed to get Repository instance.
+	at org.apache.jackrabbit.test.RepositoryHelper.getRepository(RepositoryHelper.java:72)
+	at org.apache.jackrabbit.test.RepositoryHelper.getProperty(RepositoryHelper.java:152)
+	at org.apache.jackrabbit.test.AbstractJCRTest.getProperty(AbstractJCRTest.java:514)
+	at org.apache.jackrabbit.test.AbstractJCRTest.setUp(AbstractJCRTest.java:308)
+	at org.apache.jackrabbit.core.query.AbstractQueryTest.setUp(AbstractQueryTest.java:53)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.jackrabbit.test.AbstractJCRTest.run(AbstractJCRTest.java:464)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.apache.jackrabbit.test.RepositoryStubException: java.lang.reflect.InvocationTargetException
+	at org.apache.jackrabbit.test.RepositoryStub.getInstance(RepositoryStub.java:219)
+	at org.apache.jackrabbit.test.RepositoryHelper.getRepository(RepositoryHelper.java:68)
+	... 25 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.jackrabbit.test.RepositoryStub.getInstance(RepositoryStub.java:217)
+	... 26 more
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.apache.jackrabbit.oak.plugins.segment.Template.<init>(Template.java:116)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentWriter.writeNode(SegmentWriter.java:695)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentWriter$ChildNodeCollectorDiff.childNodeChanged(SegmentWriter.java:877)
+	at org.apache.jackrabbit.oak.plugins.memory.ModifiedNodeState.compareAgainstBaseState(ModifiedNodeState.java:416)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentWriter$ChildNodeCollectorDiff.diff(SegmentWriter.java:892)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentWriter.writeNode(SegmentWriter.java:714)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentWriter$ChildNodeCollectorDiff.childNodeChanged(SegmentWriter.java:877)
+	at org.apache.jackrabbit.oak.plugins.memory.ModifiedNodeState.compareAgainstBaseState(ModifiedNodeState.java:416)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentWriter$ChildNodeCollectorDiff.diff(SegmentWriter.java:892)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentWriter.writeNode(SegmentWriter.java:714)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentWriter$ChildNodeCollectorDiff.childNodeChanged(SegmentWriter.java:877)
+	at org.apache.jackrabbit.oak.plugins.memory.ModifiedNodeState.compareAgainstBaseState(ModifiedNodeState.java:416)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentWriter$ChildNodeCollectorDiff.diff(SegmentWriter.java:892)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentWriter.writeNode(SegmentWriter.java:714)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentNodeBuilder.getNodeState(SegmentNodeBuilder.java:111)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentNodeBuilder.updated(SegmentNodeBuilder.java:95)
+	at org.apache.jackrabbit.oak.plugins.memory.MemoryNodeBuilder.updated(MemoryNodeBuilder.java:214)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentNodeBuilder.updated(SegmentNodeBuilder.java:91)
+	at org.apache.jackrabbit.oak.plugins.memory.MemoryNodeBuilder.setProperty(MemoryNodeBuilder.java:508)
+	at org.apache.jackrabbit.oak.plugins.memory.MemoryNodeBuilder.setProperty(MemoryNodeBuilder.java:522)
+	at org.apache.jackrabbit.oak.plugins.nodetype.TypeRegistration.mergeNameList(TypeRegistration.java:281)
+	at org.apache.jackrabbit.oak.plugins.nodetype.TypeRegistration.mergeSupertype(TypeRegistration.java:261)
+	at org.apache.jackrabbit.oak.plugins.nodetype.TypeRegistration.mergeSupertypes(TypeRegistration.java:214)
+	at org.apache.jackrabbit.oak.plugins.nodetype.TypeRegistration.apply(TypeRegistration.java:144)
+	at org.apache.jackrabbit.oak.plugins.nodetype.TypeEditorProvider.getRootEditor(TypeEditorProvider.java:80)
+	at org.apache.jackrabbit.oak.spi.commit.CompositeEditorProvider.getRootEditor(CompositeEditorProvider.java:80)
+	at org.apache.jackrabbit.oak.spi.commit.EditorHook.processCommit(EditorHook.java:53)
+	at org.apache.jackrabbit.oak.plugins.memory.MemoryNodeStore$MemoryNodeStoreBranch.merge(MemoryNodeStore.java:288)
+	at org.apache.jackrabbit.oak.plugins.memory.MemoryNodeStore.merge(MemoryNodeStore.java:133)
+	at org.apache.jackrabbit.oak.core.MutableRoot.commit(MutableRoot.java:247)
+	at org.apache.jackrabbit.oak.core.SystemRoot.commit(SystemRoot.java:35)
+	at org.apache.jackrabbit.oak.core.MutableRoot.commit(MutableRoot.java:258)
+
+testScoreWithOr(org.apache.jackrabbit.oak.jcr.query.QueryFulltextTest)  Time elapsed: 0.327 sec  <<< ERROR!
+javax.jcr.RepositoryException: Failed to get Repository instance.
+	at org.apache.jackrabbit.test.RepositoryHelper.getRepository(RepositoryHelper.java:72)
+	at org.apache.jackrabbit.test.RepositoryHelper.getProperty(RepositoryHelper.java:152)
+	at org.apache.jackrabbit.test.AbstractJCRTest.getProperty(AbstractJCRTest.java:514)
+	at org.apache.jackrabbit.test.AbstractJCRTest.setUp(AbstractJCRTest.java:308)
+	at org.apache.jackrabbit.core.query.AbstractQueryTest.setUp(AbstractQueryTest.java:53)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.jackrabbit.test.AbstractJCRTest.run(AbstractJCRTest.java:464)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.apache.jackrabbit.test.RepositoryStubException: java.lang.reflect.InvocationTargetException
+	at org.apache.jackrabbit.test.RepositoryStub.getInstance(RepositoryStub.java:219)
+	at org.apache.jackrabbit.test.RepositoryHelper.getRepository(RepositoryHelper.java:68)
+	... 25 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.jackrabbit.test.RepositoryStub.getInstance(RepositoryStub.java:217)
+	... 26 more
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.jackrabbit.oak.cache.CacheLIRS$Segment.clear(CacheLIRS.java:828)
+	at org.apache.jackrabbit.oak.cache.CacheLIRS$Segment.<init>(CacheLIRS.java:783)
+	at org.apache.jackrabbit.oak.cache.CacheLIRS.invalidateAll(CacheLIRS.java:195)
+	at org.apache.jackrabbit.oak.cache.CacheLIRS.<init>(CacheLIRS.java:182)
+	at org.apache.jackrabbit.oak.cache.CacheLIRS$Builder.build(CacheLIRS.java:1566)
+	at org.apache.jackrabbit.oak.cache.CacheLIRS$Builder.build(CacheLIRS.java:1562)
+	at org.apache.jackrabbit.oak.plugins.segment.StringCache.<init>(StringCache.java:55)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentTracker.<init>(SegmentTracker.java:139)
+	at org.apache.jackrabbit.oak.plugins.segment.SegmentTracker.<init>(SegmentTracker.java:158)
+	at org.apache.jackrabbit.oak.plugins.segment.file.FileStore.<init>(FileStore.java:422)
+	at org.apache.jackrabbit.oak.plugins.segment.file.FileStore.<init>(FileStore.java:367)
+	at org.apache.jackrabbit.oak.plugins.segment.file.FileStore.<init>(FileStore.java:374)
+	at org.apache.jackrabbit.oak.jcr.OakTarMKRepositoryStub.<init>(OakTarMKRepositoryStub.java:52)
+	at org.apache.jackrabbit.oak.jcr.LuceneOakRepositoryStub.<init>(LuceneOakRepositoryStub.java:50)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.jackrabbit.test.RepositoryStub.getInstance(RepositoryStub.java:217)
+	at org.apache.jackrabbit.test.RepositoryHelper.getRepository(RepositoryHelper.java:68)
+	at org.apache.jackrabbit.test.RepositoryHelper.getProperty(RepositoryHelper.java:152)
+	at org.apache.jackrabbit.test.AbstractJCRTest.getProperty(AbstractJCRTest.java:514)
+	at org.apache.jackrabbit.test.AbstractJCRTest.setUp(AbstractJCRTest.java:308)
+	at org.apache.jackrabbit.core.query.AbstractQueryTest.setUp(AbstractQueryTest.java:53)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.jackrabbit.test.AbstractJCRTest.run(AbstractJCRTest.java:464)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+
+testFulltext(org.apache.jackrabbit.oak.jcr.query.QueryFulltextTest)  Time elapsed: 0.117 sec  <<< ERROR!
+javax.jcr.RepositoryException: Failed to get Repository instance.
+	at org.apache.jackrabbit.test.RepositoryHelper.getRepository(RepositoryHelper.java:72)
+	at org.apache.jackrabbit.test.RepositoryHelper.getProperty(RepositoryHelper.java:152)
+	at org.apache.jackrabbit.test.AbstractJCRTest.getProperty(AbstractJCRTest.java:514)
+	at org.apache.jackrabbit.test.AbstractJCRTest.setUp(AbstractJCRTest.java:308)
+	at org.apache.jackrabbit.core.query.AbstractQueryTest.setUp(AbstractQueryTest.java:53)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.jackrabbit.test.AbstractJCRTest.run(AbstractJCRTest.java:464)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.apache.jackrabbit.test.RepositoryStubException: java.lang.reflect.InvocationTargetException
+	at org.apache.jackrabbit.test.RepositoryStub.getInstance(RepositoryStub.java:219)
+	at org.apache.jackrabbit.test.RepositoryHelper.getRepository(RepositoryHelper.java:68)
+	... 25 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.jackrabbit.test.RepositoryStub.getInstance(RepositoryStub.java:217)
+	... 26 more
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+
+Running org.apache.jackrabbit.oak.jcr.query.TextExtractionQueryTest
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.467 sec <<< FAILURE!
+testFileContains(org.apache.jackrabbit.oak.jcr.query.TextExtractionQueryTest)  Time elapsed: 0.23 sec  <<< ERROR!
+javax.jcr.RepositoryException: Failed to get Repository instance.
+	at org.apache.jackrabbit.test.RepositoryHelper.getRepository(RepositoryHelper.java:72)
+	at org.apache.jackrabbit.test.RepositoryHelper.getProperty(RepositoryHelper.java:152)
+	at org.apache.jackrabbit.test.AbstractJCRTest.getProperty(AbstractJCRTest.java:514)
+	at org.apache.jackrabbit.test.AbstractJCRTest.setUp(AbstractJCRTest.java:308)
+	at org.apache.jackrabbit.core.query.AbstractQueryTest.setUp(AbstractQueryTest.java:53)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.jackrabbit.test.AbstractJCRTest.run(AbstractJCRTest.java:464)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.apache.jackrabbit.test.RepositoryStubException: java.lang.reflect.InvocationTargetException
+	at org.apache.jackrabbit.test.RepositoryStub.getInstance(RepositoryStub.java:219)
+	at org.apache.jackrabbit.test.RepositoryHelper.getRepository(RepositoryHelper.java:68)
+	... 25 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.jackrabbit.test.RepositoryStub.getInstance(RepositoryStub.java:217)
+	... 26 more
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+testNtFile(org.apache.jackrabbit.oak.jcr.query.TextExtractionQueryTest)  Time elapsed: 0.119 sec  <<< ERROR!
+javax.jcr.RepositoryException: Failed to get Repository instance.
+	at org.apache.jackrabbit.test.RepositoryHelper.getRepository(RepositoryHelper.java:72)
+	at org.apache.jackrabbit.test.RepositoryHelper.getProperty(RepositoryHelper.java:152)
+	at org.apache.jackrabbit.test.AbstractJCRTest.getProperty(AbstractJCRTest.java:514)
+	at org.apache.jackrabbit.test.AbstractJCRTest.setUp(AbstractJCRTest.java:308)
+	at org.apache.jackrabbit.core.query.AbstractQueryTest.setUp(AbstractQueryTest.java:53)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.jackrabbit.test.AbstractJCRTest.run(AbstractJCRTest.java:464)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.apache.jackrabbit.test.RepositoryStubException: java.lang.reflect.InvocationTargetException
+	at org.apache.jackrabbit.test.RepositoryStub.getInstance(RepositoryStub.java:219)
+	at org.apache.jackrabbit.test.RepositoryHelper.getRepository(RepositoryHelper.java:68)
+	... 25 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.jackrabbit.test.RepositoryStub.getInstance(RepositoryStub.java:217)
+	... 26 more
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+
+testScoreWithoutFulltext(org.apache.jackrabbit.oak.jcr.query.TextExtractionQueryTest)  Time elapsed: 0.118 sec  <<< ERROR!
+javax.jcr.RepositoryException: Failed to get Repository instance.
+	at org.apache.jackrabbit.test.RepositoryHelper.getRepository(RepositoryHelper.java:72)
+	at org.apache.jackrabbit.test.RepositoryHelper.getProperty(RepositoryHelper.java:152)
+	at org.apache.jackrabbit.test.AbstractJCRTest.getProperty(AbstractJCRTest.java:514)
+	at org.apache.jackrabbit.test.AbstractJCRTest.setUp(AbstractJCRTest.java:308)
+	at org.apache.jackrabbit.core.query.AbstractQueryTest.setUp(AbstractQueryTest.java:53)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.jackrabbit.test.AbstractJCRTest.run(AbstractJCRTest.java:464)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.apache.jackrabbit.test.RepositoryStubException: java.lang.reflect.InvocationTargetException
+	at org.apache.jackrabbit.test.RepositoryStub.getInstance(RepositoryStub.java:219)
+	at org.apache.jackrabbit.test.RepositoryHelper.getRepository(RepositoryHelper.java:68)
+	... 25 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.jackrabbit.test.RepositoryStub.getInstance(RepositoryStub.java:217)
+	... 26 more
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+Running org.apache.jackrabbit.oak.jcr.query.MultiSessionQueryTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.282 sec <<< FAILURE!
+testConcurrent(org.apache.jackrabbit.oak.jcr.query.MultiSessionQueryTest)  Time elapsed: 0.282 sec  <<< ERROR!
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+
+
+Results :
+
+Failed tests:   preExtractedProviderBindBeforeActivate(org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderServiceTest)
+
+Tests in error: 
+  testScore(org.apache.jackrabbit.oak.jcr.query.QueryFulltextTest): Failed to get Repository instance.
+  testSurrogateFulltext(org.apache.jackrabbit.oak.jcr.query.QueryFulltextTest): Failed to get Repository instance.
+  testFulltextRelativeProperty(org.apache.jackrabbit.oak.jcr.query.QueryFulltextTest): Failed to get Repository instance.
+  testScoreWithOr(org.apache.jackrabbit.oak.jcr.query.QueryFulltextTest): Failed to get Repository instance.
+  testFulltext(org.apache.jackrabbit.oak.jcr.query.QueryFulltextTest): Failed to get Repository instance.
+  testFileContains(org.apache.jackrabbit.oak.jcr.query.TextExtractionQueryTest): Failed to get Repository instance.
+  testNtFile(org.apache.jackrabbit.oak.jcr.query.TextExtractionQueryTest): Failed to get Repository instance.
+  testScoreWithoutFulltext(org.apache.jackrabbit.oak.jcr.query.TextExtractionQueryTest): Failed to get Repository instance.
+  testConcurrent(org.apache.jackrabbit.oak.jcr.query.MultiSessionQueryTest): GC overhead limit exceeded
+
+Tests run: 328, Failures: 1, Errors: 9, Skipped: 5
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:05 min
+[INFO] Finished at: 2016-07-28T12:32:11-07:00
+[INFO] Final Memory: 31M/1216M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project oak-lucene: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-4036_f432473659288f4ee39d9ff4aeb17c7e957c071d/oak-lucene/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

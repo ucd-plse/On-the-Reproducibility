@@ -1,0 +1,37 @@
+Checking out 5ef97228 to /tmp/test_d4j_2322763_1660787972/test_trigger/IO.. OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff 5ef97228:fe3554cc..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: IO-6b........................................... OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+Failing tests: 3
+  - org.apache.commons.io.FilenameUtilsTestCase::testEqualsNormalizedError_IO_128
+  - org.apache.commons.io.filefilter.FileFilterTestCase::testCanRead
+  - org.apache.commons.io.filefilter.FileFilterTestCase::testCanWrite
+Error: verify number of triggering tests: IO-6b (expected: 1, actual: 3)
+Check out program version: IO-6f........................................... OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+Failing tests: 2
+  - org.apache.commons.io.filefilter.FileFilterTestCase::testCanRead
+  - org.apache.commons.io.filefilter.FileFilterTestCase::testCanWrite
+Error: verify number of triggering tests: IO-6f (expected: 0, actual: 2)
+================================================================================
+The following errors occurred:
+Error: verify number of triggering tests: IO-6b (expected: 1, actual: 3)
+Error: verify number of triggering tests: IO-6f (expected: 0, actual: 2)
+================================================================================
+FAILED

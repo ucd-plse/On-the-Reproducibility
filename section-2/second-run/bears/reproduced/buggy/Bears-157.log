@@ -1,0 +1,199 @@
+Apache Maven 3.6.3
+Maven home: /usr/share/maven
+Java version: 1.8.0_312, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.15.0-41-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.version: 5.15
+[INFO] os.detected.version.major: 5
+[INFO] os.detected.version.minor: 15
+[INFO] os.detected.release: ubuntu
+[INFO] os.detected.release.version: 20.04
+[INFO] os.detected.release.like.ubuntu: true
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] corfu                                                              [pom]
+[INFO] format                                                             [jar]
+[INFO] annotations                                                        [jar]
+[INFO] annotationProcessor                                                [jar]
+[INFO] runtime                                                            [jar]
+[INFO] infrastructure                                                     [jar]
+[INFO] cmdlets                                                            [jar]
+[INFO] test                                                               [jar]
+[INFO] samples                                                            [jar]
+[INFO] logReader                                                          [jar]
+[INFO] debian                                                             [jar]
+[INFO] generator                                                          [jar]
+[INFO] 
+[INFO] -------------------------< org.corfudb:corfu >--------------------------
+[INFO] Building corfu 0.1-SNAPSHOT                                       [1/12]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ corfu ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ corfu ---
+[INFO] argLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-157/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-junit) @ corfu ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] -------------------------< org.corfudb:format >-------------------------
+[INFO] Building format 0.1-SNAPSHOT                                      [2/12]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ format ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ format ---
+[INFO] argLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-157/format/target/jacoco.exec
+[INFO] 
+[INFO] --- protoc-jar-maven-plugin:3.1.0.2:run (default) @ format ---
+[INFO] Protoc version: 3.1.0
+protoc-jar: protoc version: 310, detected platform: linux/amd64
+[INFO] Protoc command: /tmp/protocjar1188062169275726241/bin/protoc.exe
+[INFO] Input directories:
+[INFO]     /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-157/format/proto
+[INFO] Output targets:
+[INFO]     java: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-157/format/target/generated-sources (add: main, clean: false, plugin: null, outputOptions: null)
+[INFO]     Processing (java): types.proto
+protoc-jar: executing: [/tmp/protocjar1188062169275726241/bin/protoc.exe, -I/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-157/format/proto, --java_out=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-157/format/target/generated-sources, /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-157/format/proto/types.proto]
+[INFO] Adding generated classes to classpath
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ format ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-157/format/target/generated-sources/resources
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-157/format/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ format ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-157/format/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ format ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-157/format/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ format ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ format ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-junit) @ format ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] ----------------------< org.corfudb:annotations >-----------------------
+[INFO] Building annotations 0.1-SNAPSHOT                                 [3/12]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ annotations ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ annotations ---
+[INFO] argLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-157/annotations/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ annotations ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-157/annotations/target/generated-sources/resources
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-157/annotations/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ annotations ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 26 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-157/annotations/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ annotations ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-157/annotations/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ annotations ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ annotations ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-junit) @ annotations ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] ------------------< org.corfudb:annotationProcessor >-------------------
+[INFO] Building annotationProcessor 0.1-SNAPSHOT                         [4/12]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ annotationProcessor ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ annotationProcessor ---
+[INFO] argLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-157/annotationProcessor/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ annotationProcessor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-157/annotationProcessor/target/generated-sources/resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ annotationProcessor ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ annotationProcessor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-157/annotationProcessor/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ annotationProcessor ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ annotationProcessor ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-junit) @ annotationProcessor ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] ------------------------< org.corfudb:runtime >-------------------------
+[INFO] Building runtime 0.1-SNAPSHOT                                     [5/12]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ runtime ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ runtime ---
+[INFO] argLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-157/runtime/target/jacoco.exec
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ runtime ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for corfu 0.1-SNAPSHOT:
+[INFO] 
+[INFO] corfu .............................................. SUCCESS [  1.014 s]
+[INFO] format ............................................. SUCCESS [  2.821 s]
+[INFO] annotations ........................................ SUCCESS [  2.219 s]
+[INFO] annotationProcessor ................................ SUCCESS [  0.065 s]
+[INFO] runtime ............................................ FAILURE [  0.142 s]
+[INFO] infrastructure ..................................... SKIPPED
+[INFO] cmdlets ............................................ SKIPPED
+[INFO] test ............................................... SKIPPED
+[INFO] samples ............................................ SKIPPED
+[INFO] logReader .......................................... SKIPPED
+[INFO] debian ............................................. SKIPPED
+[INFO] generator .......................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.924 s
+[INFO] Finished at: 2022-07-25T16:29:45-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal pl.project13.maven:git-commit-id-plugin:2.1.15:revision (default) on project runtime: .git directory could not be found! Please specify a valid [dotGitDirectory] in your pom.xml -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :runtime
+Running the tests related to the bug Bears-157...
+The tests related to the bug Bears-157 were executed.

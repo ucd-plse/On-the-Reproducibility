@@ -1,0 +1,570 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] flink-staging
+[INFO] flink-avro
+[INFO] flink-jdbc
+[INFO] flink-hadoop-compatibility
+[INFO] flink-streaming
+[INFO] flink-streaming-core
+[INFO] flink-streaming-scala
+[INFO] flink-streaming-connectors
+[INFO] flink-connector-twitter
+[INFO] flink-streaming-examples
+[INFO] flink-connector-flume
+[INFO] flink-connector-kafka
+[INFO] flink-connector-elasticsearch
+[INFO] flink-connector-rabbitmq
+[INFO] flink-connector-nifi
+[INFO] flink-connector-filesystem
+[INFO] flink-hbase
+[INFO] flink-hcatalog
+[INFO] flink-table
+[INFO] flink-ml
+[INFO] flink-language-binding
+[INFO] flink-language-binding-generic
+[INFO] flink-python
+[INFO] flink-scala-shell
+[INFO] flink-fs-tests
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building flink-staging 0.10-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ flink-staging ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven) @ flink-staging ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ flink-staging ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building flink-avro 0.10-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ flink-avro ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven) @ flink-avro ---
+[INFO] 
+[INFO] --- avro-maven-plugin:1.7.7:schema (default) @ flink-avro ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ flink-avro ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ flink-avro ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-avro/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ flink-avro ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ flink-avro ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ flink-avro ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-avro/target/test-classes
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-avro/src/test/java/org/apache/flink/api/io/avro/generated/User.java:[883,135] unchecked cast
+  required: java.util.List<java.lang.CharSequence>
+  found:    java.lang.Object
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-avro/src/test/java/org/apache/flink/api/io/avro/generated/User.java:[884,132] unchecked cast
+  required: java.util.List<java.lang.Boolean>
+  found:    java.lang.Object
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-avro/src/test/java/org/apache/flink/api/io/avro/generated/User.java:[885,139] unchecked cast
+  required: java.util.List<java.lang.CharSequence>
+  found:    java.lang.Object
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-avro/src/test/java/org/apache/flink/api/io/avro/generated/User.java:[887,132] unchecked cast
+  required: java.util.Map<java.lang.CharSequence,java.lang.Long>
+  found:    java.lang.Object
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-avro/src/test/java/org/apache/flink/api/io/avro/AvroRecordInputFormatTest.java:[238,124] unchecked cast
+  required: org.apache.flink.api.common.typeinfo.TypeInformation<org.apache.avro.generic.GenericData.Record>
+  found:    org.apache.flink.api.common.typeinfo.TypeInformation<capture#1 of ?>
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-avro/src/test/java/org/apache/flink/api/io/avro/AvroRecordInputFormatTest.java:[279,96] unchecked cast
+  required: org.apache.flink.api.common.typeinfo.TypeInformation<org.apache.flink.api.io.avro.generated.User>
+  found:    org.apache.flink.api.common.typeinfo.TypeInformation<capture#2 of ?>
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.4:single (create-test-dependency) @ flink-avro ---
+[INFO] Reading assembly descriptor: src/test/assembly/test-assembly.xml
+[INFO] Building jar: /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-avro/target/maven-test-jar.jar
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (remove-avroexternalprogram) @ flink-avro ---
+[INFO] Deleting /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-avro/target/test-classes (includes = [**/testjar/*.class], excludes = [])
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ flink-avro ---
+[INFO] Surefire report directory: /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-avro/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.flink.api.java.io.AvroInputFormatTypeExtractionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec - in org.apache.flink.api.java.io.AvroInputFormatTypeExtractionTest
+Running org.apache.flink.api.avro.EncoderDecoderTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.272 sec - in org.apache.flink.api.avro.EncoderDecoderTest
+Running org.apache.flink.api.io.avro.AvroRecordInputFormatTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.678 sec - in org.apache.flink.api.io.avro.AvroRecordInputFormatTest
+Running org.apache.flink.api.io.avro.AvroSplittableInputFormatTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.27 sec - in org.apache.flink.api.io.avro.AvroSplittableInputFormatTest
+Running org.apache.flink.api.io.avro.AvroPojoTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.657 sec - in org.apache.flink.api.io.avro.AvroPojoTest
+
+Results :
+
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building flink-jdbc 0.10-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ flink-jdbc ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven) @ flink-jdbc ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ flink-jdbc ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ flink-jdbc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-jdbc/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ flink-jdbc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ flink-jdbc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ flink-jdbc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ flink-jdbc ---
+[INFO] Surefire report directory: /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-jdbc/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.flink.api.java.io.jdbc.JDBCOutputFormatTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.821 sec - in org.apache.flink.api.java.io.jdbc.JDBCOutputFormatTest
+Running org.apache.flink.api.java.io.jdbc.JDBCInputFormatTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.apache.flink.api.java.io.jdbc.JDBCInputFormatTest
+
+Results :
+
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building flink-hadoop-compatibility 0.10-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ flink-hadoop-compatibility ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven) @ flink-hadoop-compatibility ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ flink-hadoop-compatibility ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ flink-hadoop-compatibility ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-hadoop-compatibility/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ flink-hadoop-compatibility ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ flink-hadoop-compatibility ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ flink-hadoop-compatibility ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ flink-hadoop-compatibility ---
+[INFO] Surefire report directory: /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-hadoop-compatibility/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.flink.test.hadoopcompatibility.mapred.wrapper.HadoopTupleUnwrappingIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 sec - in org.apache.flink.test.hadoopcompatibility.mapred.wrapper.HadoopTupleUnwrappingIteratorTest
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building flink-streaming 0.10-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ flink-streaming-parent ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven) @ flink-streaming-parent ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ flink-streaming-parent ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building flink-streaming-core 0.10-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ flink-streaming-core ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven) @ flink-streaming-core ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ flink-streaming-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ flink-streaming-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ flink-streaming-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 224 source files to /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/target/classes
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/main/java/org/apache/flink/streaming/api/datastream/DataStream.java:[175,53] Possible heap pollution from parameterized vararg type org.apache.flink.streaming.api.datastream.DataStream<T>
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/main/java/org/apache/flink/streaming/api/datastream/KeyedStream.java:[98,79] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<T,R>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<R>
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/main/java/org/apache/flink/streaming/api/datastream/CoGroupedStreams.java:[247,47] unchecked generic array creation for varargs parameter of type org.apache.flink.streaming.api.datastream.DataStream<org.apache.flink.streaming.api.datastream.CoGroupedStreams.TaggedUnion<T1,T2>>[]
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/main/java/org/apache/flink/streaming/api/datastream/CoGroupedStreams.java:[341,32] unchecked conversion
+  required: java.lang.Class<org.apache.flink.streaming.api.datastream.CoGroupedStreams.TaggedUnion<T1,T2>>
+  found:    java.lang.Class
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/main/java/org/apache/flink/streaming/util/FieldAccessor.java:[125,107] unchecked conversion
+  required: java.lang.Class<X>
+  found:    java.lang.Class
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/main/java/org/apache/flink/streaming/util/FieldAccessor.java:[125,66] unchecked method invocation: method getInfoFor in class org.apache.flink.api.common.typeinfo.BasicTypeInfo is applied to given types
+  required: java.lang.Class<X>
+  found: java.lang.Class
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/main/java/org/apache/flink/streaming/runtime/operators/windowing/EvictingWindowOperator.java:[97,49] unchecked conversion
+  required: java.lang.Iterable<org.apache.flink.streaming.runtime.streamrecord.StreamRecord<capture#1 of ? super IN>>
+  found:    java.lang.Iterable
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/main/java/org/apache/flink/streaming/api/collector/selector/BroadcastOutputSelectorWrapper.java:[40,60] unchecked cast
+  required: org.apache.flink.util.Collector<org.apache.flink.streaming.runtime.streamrecord.StreamRecord<OUT>>
+  found:    org.apache.flink.util.Collector
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/main/java/org/apache/flink/streaming/api/functions/source/FromElementsFunction.java:[66,55] Possible heap pollution from parameterized vararg type T
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/main/java/org/apache/flink/streaming/runtime/io/CollectorWrapper.java:[44,32] unchecked conversion
+  required: org.apache.flink.streaming.api.operators.Output<OUT>
+  found:    org.apache.flink.streaming.api.operators.Output
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/main/java/org/apache/flink/streaming/runtime/operators/windowing/EvictingNonKeyedWindowOperator.java:[83,49] unchecked conversion
+  required: java.lang.Iterable<org.apache.flink.streaming.runtime.streamrecord.StreamRecord<capture#2 of ? super IN>>
+  found:    java.lang.Iterable
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/main/java/org/apache/flink/streaming/util/keys/KeySelectorUtil.java:[150,32] unchecked conversion
+  required: org.apache.flink.api.common.typeinfo.TypeInformation<org.apache.flink.api.java.tuple.Tuple>
+  found:    org.apache.flink.api.java.typeutils.TupleTypeInfo
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/main/java/org/apache/flink/streaming/api/collector/selector/DirectedOutputSelectorWrapper.java:[57,77] unchecked cast
+  required: org.apache.flink.util.Collector<org.apache.flink.streaming.runtime.streamrecord.StreamRecord<OUT>>
+  found:    org.apache.flink.util.Collector
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/main/java/org/apache/flink/streaming/api/collector/selector/DirectedOutputSelectorWrapper.java:[63,104] unchecked cast
+  required: org.apache.flink.util.Collector<org.apache.flink.streaming.runtime.streamrecord.StreamRecord<OUT>>
+  found:    org.apache.flink.util.Collector
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/main/java/org/apache/flink/streaming/api/collector/selector/DirectedOutputSelectorWrapper.java:[66,112] unchecked cast
+  required: org.apache.flink.util.Collector<org.apache.flink.streaming.runtime.streamrecord.StreamRecord<OUT>>
+  found:    org.apache.flink.util.Collector
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ flink-streaming-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ flink-streaming-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 113 source files to /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/target/test-classes
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/NonKeyedWindowOperatorTest.java:[400,64] unchecked call to Factory(org.apache.flink.api.common.functions.ReduceFunction<T>) as a member of the raw type org.apache.flink.streaming.runtime.operators.windowing.buffers.PreAggregatingHeapWindowBuffer.Factory
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/api/StreamExecutionEnvironmentTest.java:[131,68] unchecked cast
+  required: org.apache.flink.streaming.api.functions.source.SourceFunction<T>
+  found:    capture#1 of ?
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/api/DataStreamTest.java:[452,60] unchecked generic array creation for varargs parameter of type org.apache.flink.streaming.api.datastream.DataStream<java.lang.Integer>[]
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/api/DataStreamTest.java:[630,72] unchecked call to <OUT>map(org.apache.flink.streaming.api.functions.co.CoMapFunction<IN1,IN2,OUT>) as a member of the raw type org.apache.flink.streaming.api.datastream.ConnectedStreams
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/api/DataStreamTest.java:[643,31] unchecked conversion
+  required: org.apache.flink.streaming.api.functions.sink.SinkFunction<capture#2 of ?>
+  found:    org.apache.flink.streaming.util.NoOpSink
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/AllWindowTranslationTest.java:[69,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/AllWindowTranslationTest.java:[92,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/AllWindowTranslationTest.java:[117,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/AllWindowTranslationTest.java:[141,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/AllWindowTranslationTest.java:[166,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/AllWindowTranslationTest.java:[192,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/timestamp/TimestampITCase.java:[132,30] unchecked generic array creation for varargs parameter of type org.apache.flink.streaming.api.datastream.DataStream<java.lang.Integer>[]
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/WindowTranslationTest.java:[72,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/WindowTranslationTest.java:[91,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/WindowTranslationTest.java:[114,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/WindowTranslationTest.java:[138,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/WindowTranslationTest.java:[164,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/WindowTranslationTest.java:[189,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/WindowTranslationTest.java:[215,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/WindowTranslationTest.java:[242,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/api/graph/StreamGraphGeneratorTest.java:[112,79] unchecked generic array creation for varargs parameter of type org.apache.flink.streaming.api.datastream.DataStream<java.lang.Integer>[]
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/api/graph/StreamGraphGeneratorTest.java:[112,91] unchecked generic array creation for varargs parameter of type org.apache.flink.streaming.api.datastream.DataStream<java.lang.Integer>[]
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/api/graph/StreamGraphGeneratorTest.java:[165,79] unchecked generic array creation for varargs parameter of type org.apache.flink.streaming.api.datastream.DataStream<java.lang.Integer>[]
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/api/graph/StreamGraphGeneratorTest.java:[165,91] unchecked generic array creation for varargs parameter of type org.apache.flink.streaming.api.datastream.DataStream<java.lang.Integer>[]
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/api/graph/StreamGraphGeneratorTest.java:[256,40] unchecked conversion
+  required: org.apache.flink.streaming.runtime.streamrecord.StreamRecord<java.lang.Integer>
+  found:    org.apache.flink.streaming.runtime.streamrecord.StreamRecord
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/api/graph/StreamGraphGeneratorTest.java:[261,40] unchecked conversion
+  required: org.apache.flink.streaming.runtime.streamrecord.StreamRecord<java.lang.Integer>
+  found:    org.apache.flink.streaming.runtime.streamrecord.StreamRecord
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/WindowOperatorTest.java:[426,64] unchecked call to Factory(org.apache.flink.api.common.functions.ReduceFunction<T>) as a member of the raw type org.apache.flink.streaming.runtime.operators.windowing.buffers.PreAggregatingHeapWindowBuffer.Factory
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/TimeWindowTranslationTest.java:[64,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/TimeWindowTranslationTest.java:[83,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/TimeWindowTranslationTest.java:[108,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/TimeWindowTranslationTest.java:[126,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ flink-streaming-core ---
+[INFO] Surefire report directory: /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.flink.streaming.api.operators.co.CoStreamFlatMapTest
+Running org.apache.flink.streaming.api.operators.StreamCounterTest
+Running org.apache.flink.streaming.api.operators.StreamGroupedFoldTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.423 sec - in org.apache.flink.streaming.api.operators.co.CoStreamFlatMapTest
+Running org.apache.flink.streaming.api.operators.StreamMapTest
+Running org.apache.flink.streaming.api.functions.PrintSinkFunctionTest
+Running org.apache.flink.streaming.api.operators.StreamFilterTest
+Running org.apache.flink.streaming.api.operators.co.CoStreamMapTest
+Running org.apache.flink.streaming.api.functions.source.SocketTextStreamFunctionTest
+Running org.apache.flink.streaming.api.functions.FromElementsFunctionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.104 sec - in org.apache.flink.streaming.api.operators.StreamGroupedFoldTest
+Running org.apache.flink.streaming.api.functions.windowing.delta.extractor.FieldsFromTupleTest
+Running org.apache.flink.streaming.api.operators.co.SelfConnectionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.872 sec - in org.apache.flink.streaming.api.operators.StreamMapTest
+Running org.apache.flink.streaming.api.functions.windowing.delta.extractor.ConcatenatedExtractTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec - in org.apache.flink.streaming.api.functions.windowing.delta.extractor.ConcatenatedExtractTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.195 sec - in org.apache.flink.streaming.api.functions.windowing.delta.extractor.FieldsFromTupleTest
+Running org.apache.flink.streaming.api.functions.windowing.delta.extractor.FieldsFromArrayTest
+Running org.apache.flink.streaming.api.functions.windowing.delta.extractor.FieldFromTupleTest
+Running org.apache.flink.streaming.api.functions.sink.SocketClientSinkTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.18 sec - in org.apache.flink.streaming.api.functions.windowing.delta.extractor.FieldsFromArrayTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.729 sec - in org.apache.flink.streaming.api.operators.StreamCounterTest
+Running org.apache.flink.streaming.api.operators.StreamProjectTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.608 sec - in org.apache.flink.streaming.api.operators.co.CoStreamMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.259 sec - in org.apache.flink.streaming.api.functions.windowing.delta.extractor.FieldFromTupleTest
+Running org.apache.flink.streaming.api.functions.windowing.delta.extractor.ArrayFromTupleTest
+Running org.apache.flink.streaming.api.functions.windowing.delta.extractor.FieldFromArrayTest
+Running org.apache.flink.streaming.api.operators.StreamFlatMapTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec - in org.apache.flink.streaming.api.functions.windowing.delta.extractor.FieldFromArrayTest
+Running org.apache.flink.streaming.api.operators.StreamGroupedReduceTest
+Running org.apache.flink.streaming.api.streamtask.StreamVertexTest
+Running org.apache.flink.streaming.api.functions.source.FileMonitoringFunctionTest
+Running org.apache.flink.streaming.api.IterateTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.542 sec - in org.apache.flink.streaming.api.functions.windowing.delta.extractor.ArrayFromTupleTest
+Running org.apache.flink.streaming.api.ChainedRuntimeContextTest
+Running org.apache.flink.streaming.api.CoStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.063 sec - in org.apache.flink.streaming.api.operators.StreamFilterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.942 sec - in org.apache.flink.streaming.api.functions.source.SocketTextStreamFunctionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.296 sec - in org.apache.flink.streaming.api.functions.PrintSinkFunctionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.529 sec - in org.apache.flink.streaming.api.functions.sink.SocketClientSinkTest
+Running org.apache.flink.streaming.api.OutputSplitterTest
+Running org.apache.flink.streaming.api.DataStreamTest
+Running org.apache.flink.streaming.api.graph.StreamingJobGraphGeneratorTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.186 sec <<< FAILURE! - in org.apache.flink.streaming.api.functions.source.FileMonitoringFunctionTest
+testForEmptyLocation(org.apache.flink.streaming.api.functions.source.FileMonitoringFunctionTest)  Time elapsed: 1.121 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.apache.flink.streaming.api.functions.source.FileMonitoringFunction.listNewFiles(FileMonitoringFunction.java:98)
+	at org.apache.flink.streaming.api.functions.source.FileMonitoringFunction.run(FileMonitoringFunction.java:69)
+	at org.apache.flink.streaming.api.functions.source.FileMonitoringFunctionTest.testForEmptyLocation(FileMonitoringFunctionTest.java:50)
+
+Running org.apache.flink.streaming.api.AggregationFunctionTest
+Running org.apache.flink.streaming.api.complex.ComplexIntegrationTest
+Running org.apache.flink.streaming.api.graph.SlotAllocationTest
+Running org.apache.flink.streaming.api.graph.StreamGraphGeneratorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.265 sec - in org.apache.flink.streaming.api.operators.StreamFlatMapTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.279 sec - in org.apache.flink.streaming.api.operators.StreamGroupedReduceTest
+Running org.apache.flink.streaming.api.TypeFillTest
+Running org.apache.flink.streaming.api.state.StatefulOperatorTest
+Running org.apache.flink.streaming.api.state.StateHandleTest
+Running org.apache.flink.streaming.api.SourceFunctionTest
+Running org.apache.flink.streaming.api.PartitionerTest
+Running org.apache.flink.streaming.api.StreamExecutionEnvironmentTest
+Running org.apache.flink.streaming.api.windowing.deltafunction.CosineDistanceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.554 sec - in org.apache.flink.streaming.api.state.StateHandleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec - in org.apache.flink.streaming.api.windowing.deltafunction.CosineDistanceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.526 sec - in org.apache.flink.streaming.api.AggregationFunctionTest
+Running org.apache.flink.streaming.api.collector.OutputSelectorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec - in org.apache.flink.streaming.api.collector.OutputSelectorTest
+Running org.apache.flink.streaming.api.streamtask.StreamIterationHeadTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.623 sec - in org.apache.flink.streaming.api.SourceFunctionTest
+Running org.apache.flink.streaming.api.windowing.deltafunction.EuclideanDistanceTest
+Running org.apache.flink.streaming.graph.TranslationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 sec - in org.apache.flink.streaming.api.windowing.deltafunction.EuclideanDistanceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.723 sec - in org.apache.flink.streaming.api.functions.FromElementsFunctionTest
+Running org.apache.flink.streaming.util.keys.ArrayKeySelectorTest
+Running org.apache.flink.streaming.api.collector.DirectedOutputTest
+Running org.apache.flink.streaming.util.TypeInformationSerializationSchemaTest
+Running org.apache.flink.streaming.util.FieldAccessorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.214 sec - in org.apache.flink.streaming.util.keys.ArrayKeySelectorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.455 sec - in org.apache.flink.streaming.util.FieldAccessorTest
+Running org.apache.flink.streaming.runtime.operators.windowing.EvictingNonKeyedWindowOperatorTest
+Running org.apache.flink.streaming.runtime.operators.windowing.TimeWindowTranslationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.408 sec - in org.apache.flink.streaming.api.streamtask.StreamVertexTest
+Running org.apache.flink.streaming.runtime.operators.windowing.WindowOperatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.866 sec - in org.apache.flink.streaming.api.graph.StreamingJobGraphGeneratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.041 sec - in org.apache.flink.streaming.runtime.operators.windowing.EvictingNonKeyedWindowOperatorTest
+Running org.apache.flink.streaming.runtime.operators.windowing.EvictingWindowOperatorTest
+Running org.apache.flink.streaming.runtime.operators.windowing.KeyMapPutIfAbsentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.088 sec - in org.apache.flink.streaming.runtime.operators.windowing.EvictingWindowOperatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.125 sec - in org.apache.flink.streaming.api.streamtask.StreamIterationHeadTest
+Running org.apache.flink.streaming.runtime.operators.StreamTaskTimerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.997 sec - in org.apache.flink.streaming.runtime.operators.windowing.WindowOperatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.343 sec - in org.apache.flink.streaming.api.graph.SlotAllocationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.487 sec - in org.apache.flink.streaming.api.operators.StreamProjectTest
+Running org.apache.flink.streaming.runtime.operators.windowing.AccumulatingAlignedProcessingTimeWindowOperatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.601 sec - in org.apache.flink.streaming.api.ChainedRuntimeContextTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.089 sec - in org.apache.flink.streaming.api.operators.co.SelfConnectionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.57 sec - in org.apache.flink.streaming.api.CoStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.602 sec - in org.apache.flink.streaming.api.state.StatefulOperatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.64 sec - in org.apache.flink.streaming.api.TypeFillTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.163 sec - in org.apache.flink.streaming.util.TypeInformationSerializationSchemaTest
+Running org.apache.flink.streaming.runtime.operators.windowing.KeyMapTest
+Running org.apache.flink.streaming.runtime.operators.windowing.KeyMapPutTest
+Running org.apache.flink.streaming.runtime.operators.windowing.AggregatingAlignedProcessingTimeWindowOperatorTest
+Running org.apache.flink.streaming.runtime.operators.windowing.WindowTranslationTest
+Running org.apache.flink.streaming.runtime.streamrecord.StreamRecordSerializerTest
+Running org.apache.flink.streaming.runtime.partitioner.ShufflePartitionerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in org.apache.flink.streaming.runtime.partitioner.ShufflePartitionerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.363 sec - in org.apache.flink.streaming.api.OutputSplitterTest
+Running org.apache.flink.streaming.runtime.operators.windowing.NonKeyedWindowOperatorTest
+Running org.apache.flink.streaming.runtime.operators.windowing.AllWindowTranslationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.756 sec - in org.apache.flink.streaming.api.graph.StreamGraphGeneratorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.61 sec - in org.apache.flink.streaming.api.DataStreamTest
+Running org.apache.flink.streaming.runtime.partitioner.GlobalPartitionerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec - in org.apache.flink.streaming.runtime.partitioner.GlobalPartitionerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.409 sec - in org.apache.flink.streaming.runtime.streamrecord.StreamRecordSerializerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.59 sec - in org.apache.flink.streaming.api.PartitionerTest
+Running org.apache.flink.streaming.runtime.partitioner.ForwardPartitionerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec - in org.apache.flink.streaming.runtime.partitioner.ForwardPartitionerTest
+Running org.apache.flink.streaming.runtime.partitioner.RebalancePartitionerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.288 sec - in org.apache.flink.streaming.graph.TranslationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in org.apache.flink.streaming.runtime.partitioner.RebalancePartitionerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.114 sec - in org.apache.flink.streaming.api.StreamExecutionEnvironmentTest
+Running org.apache.flink.streaming.runtime.partitioner.HashPartitionerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.952 sec - in org.apache.flink.streaming.runtime.operators.windowing.NonKeyedWindowOperatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.33 sec - in org.apache.flink.streaming.runtime.partitioner.HashPartitionerTest
+Running org.apache.flink.streaming.runtime.partitioner.BroadcastPartitionerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec - in org.apache.flink.streaming.runtime.partitioner.BroadcastPartitionerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 10.793 sec - in org.apache.flink.streaming.runtime.operators.windowing.TimeWindowTranslationTest
+Running org.apache.flink.streaming.runtime.io.BufferSpillerTest
+Running org.apache.flink.streaming.runtime.io.BarrierBufferTest
+Running org.apache.flink.streaming.runtime.io.BarrierTrackerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.347 sec - in org.apache.flink.streaming.runtime.io.BarrierTrackerTest
+Running org.apache.flink.streaming.runtime.io.BarrierBufferMassiveRandomTest
+Running org.apache.flink.streaming.runtime.io.SpilledBufferOrEventSequenceTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.217 sec - in org.apache.flink.streaming.runtime.io.BarrierBufferTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.214 sec - in org.apache.flink.streaming.api.collector.DirectedOutputTest
+Running org.apache.flink.streaming.runtime.io.StreamRecordWriterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.107 sec - in org.apache.flink.streaming.runtime.operators.StreamTaskTimerTest
+Running org.apache.flink.streaming.runtime.tasks.SourceStreamTaskTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.322 sec - in org.apache.flink.streaming.runtime.operators.windowing.KeyMapPutIfAbsentTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.053 sec - in org.apache.flink.streaming.runtime.operators.windowing.AccumulatingAlignedProcessingTimeWindowOperatorTest
+Running org.apache.flink.streaming.runtime.tasks.TwoInputStreamTaskTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.401 sec - in org.apache.flink.streaming.runtime.operators.windowing.AllWindowTranslationTest
+Running org.apache.flink.streaming.runtime.tasks.OneInputStreamTaskTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.812 sec - in org.apache.flink.streaming.runtime.operators.windowing.AggregatingAlignedProcessingTimeWindowOperatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.849 sec - in org.apache.flink.streaming.runtime.io.StreamRecordWriterTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.556 sec - in org.apache.flink.streaming.api.IterateTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.695 sec - in org.apache.flink.streaming.runtime.io.SpilledBufferOrEventSequenceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.793 sec - in org.apache.flink.streaming.runtime.operators.windowing.WindowTranslationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.798 sec - in org.apache.flink.streaming.runtime.operators.windowing.KeyMapPutTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.083 sec - in org.apache.flink.streaming.runtime.tasks.TwoInputStreamTaskTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.211 sec - in org.apache.flink.streaming.runtime.tasks.OneInputStreamTaskTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.659 sec - in org.apache.flink.streaming.runtime.operators.windowing.KeyMapTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.291 sec - in org.apache.flink.streaming.runtime.io.BufferSpillerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.354 sec - in org.apache.flink.streaming.runtime.tasks.SourceStreamTaskTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 31.751 sec - in org.apache.flink.streaming.api.complex.ComplexIntegrationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.366 sec - in org.apache.flink.streaming.runtime.io.BarrierBufferMassiveRandomTest
+
+Results :
+
+Tests in error: 
+  FileMonitoringFunctionTest.testForEmptyLocation:50 » NullPointer
+
+Tests run: 228, Failures: 0, Errors: 1, Skipped: 4
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] flink-staging ...................................... SUCCESS [  2.567 s]
+[INFO] flink-avro ......................................... SUCCESS [ 16.969 s]
+[INFO] flink-jdbc ......................................... SUCCESS [  2.943 s]
+[INFO] flink-hadoop-compatibility ......................... SUCCESS [  1.298 s]
+[INFO] flink-streaming .................................... SUCCESS [  0.132 s]
+[INFO] flink-streaming-core ............................... FAILURE [ 44.220 s]
+[INFO] flink-streaming-scala .............................. SKIPPED
+[INFO] flink-streaming-connectors ......................... SKIPPED
+[INFO] flink-connector-twitter ............................ SKIPPED
+[INFO] flink-streaming-examples ........................... SKIPPED
+[INFO] flink-connector-flume .............................. SKIPPED
+[INFO] flink-connector-kafka .............................. SKIPPED
+[INFO] flink-connector-elasticsearch ...................... SKIPPED
+[INFO] flink-connector-rabbitmq ........................... SKIPPED
+[INFO] flink-connector-nifi ............................... SKIPPED
+[INFO] flink-connector-filesystem ......................... SKIPPED
+[INFO] flink-hbase ........................................ SKIPPED
+[INFO] flink-hcatalog ..................................... SKIPPED
+[INFO] flink-table ........................................ SKIPPED
+[INFO] flink-ml ........................................... SKIPPED
+[INFO] flink-language-binding ............................. SKIPPED
+[INFO] flink-language-binding-generic ..................... SKIPPED
+[INFO] flink-python ....................................... SKIPPED
+[INFO] flink-scala-shell .................................. SKIPPED
+[INFO] flink-fs-tests ..................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:08 min
+[INFO] Finished at: 2016-07-14T20:04:27-07:00
+[INFO] Final Memory: 65M/3502M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project flink-streaming-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /space/parallel/flink/flink9/dataset/flink/FLINK-2817_5dfc897beb99d2d8f6d7becba972ff5756b3fb19/flink-staging/flink-streaming/flink-streaming-core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :flink-streaming-core

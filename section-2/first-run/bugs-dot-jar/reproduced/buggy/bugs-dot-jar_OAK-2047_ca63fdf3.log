@@ -1,0 +1,1426 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Oak Parent POM                                                     [pom]
+[INFO] Oak MicroKernel API                                             [bundle]
+[INFO] Oak Commons                                                     [bundle]
+[INFO] Oak Blob Store                                                  [bundle]
+[INFO] Oak MicroKernel                                                 [bundle]
+[INFO] Oak MicroKernel Remoting                                        [bundle]
+[INFO] Oak Core                                                        [bundle]
+[INFO] Oak JCR Binding                                                 [bundle]
+[INFO] Oak upgrade                                                        [jar]
+[INFO] Oak HTTP Binding                                                [bundle]
+[INFO] Oak Lucene                                                      [bundle]
+[INFO] Oak Solr core                                                   [bundle]
+[INFO] Oak Solr OSGi                                                   [bundle]
+[INFO] Oak External Authentication Support                             [bundle]
+[INFO] Oak LDAP Authentication Support                                 [bundle]
+[INFO] Oak Runnable Jar                                                   [jar]
+[INFO] Oak Integration Tests for MicroKernel implementations              [jar]
+[INFO] Oak Integration Tests for OSGi deployments                         [jar]
+[INFO] Oak Integration Tests                                              [pom]
+[INFO] Oak PojoSR                                                         [jar]
+[INFO] Oak TarMK Failover                                              [bundle]
+[INFO] Jackrabbit Oak                                                     [pom]
+[INFO] Oak CUG                                                         [bundle]
+[INFO] 
+[INFO] ------------------< org.apache.jackrabbit:oak-parent >------------------
+[INFO] Building Oak Parent POM 1.1-SNAPSHOT                              [1/23]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-parent ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-parent ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-parent ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-parent ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-parent ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-parent/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-parent/1.1-SNAPSHOT/oak-parent-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------------< org.apache.jackrabbit:oak-mk-api >------------------
+[INFO] Building Oak MicroKernel API 1.1-SNAPSHOT                         [2/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-mk-api ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-mk-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-mk-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-mk-api ---
+[INFO] Compiling 3 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk-api/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-mk-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-mk-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk-api/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-mk-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-mk-api ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-mk-api ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-mk-api ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-mk-api ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-mk-api ---
+[INFO] Baseline analisys complete, 0 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-mk-api ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk-api/target/oak-mk-api-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-mk-api/1.1-SNAPSHOT/oak-mk-api-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk-api/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-mk-api/1.1-SNAPSHOT/oak-mk-api-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-mk-api ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] -----------------< org.apache.jackrabbit:oak-commons >------------------
+[INFO] Building Oak Commons 1.1-SNAPSHOT                                 [3/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-commons ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-commons ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-commons/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-commons ---
+[INFO] Compiling 24 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-commons/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-commons ---
+[INFO] Compiling 12 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-commons/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-commons ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-commons ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-commons ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-commons ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ oak-commons ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-commons/target/oak-commons-1.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-commons ---
+[ERROR] org.apache.jackrabbit.oak.commons: Version increase required; detected 1.0.0, suggested 2.0.0
+[ERROR] org.apache.jackrabbit.oak.commons.json: Version increase required; detected 1.0.0, suggested 2.0.0
+[ERROR] org.apache.jackrabbit.oak.commons.sort: Version increase required; detected 1.0.0, suggested 2.0.0
+[INFO] Baseline analisys complete, 3 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-commons ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-commons/target/oak-commons-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-commons/1.1-SNAPSHOT/oak-commons-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-commons/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-commons/1.1-SNAPSHOT/oak-commons-1.1-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-commons/target/oak-commons-1.1-SNAPSHOT-tests.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-commons/1.1-SNAPSHOT/oak-commons-1.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-commons ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] -------------------< org.apache.jackrabbit:oak-blob >-------------------
+[INFO] Building Oak Blob Store 1.1-SNAPSHOT                              [4/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-blob ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-blob ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-blob ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-blob/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-blob ---
+[INFO] Compiling 8 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-blob/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-blob ---
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-blob/target/classes/OSGI-INF/org.apache.jackrabbit.oak.spi.blob.osgi.FileBlobStoreService.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-blob ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-blob ---
+[INFO] Compiling 4 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-blob/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-blob ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-blob ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-blob ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-blob ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ oak-blob ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-blob/target/oak-blob-1.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-blob ---
+[ERROR] org.apache.jackrabbit.oak.spi.blob: Version increase required; detected 1.0.0, suggested 2.0.0
+[INFO] Baseline analisys complete, 1 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-blob ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-blob/target/oak-blob-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-blob/1.1-SNAPSHOT/oak-blob-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-blob/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-blob/1.1-SNAPSHOT/oak-blob-1.1-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-blob/target/oak-blob-1.1-SNAPSHOT-tests.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-blob/1.1-SNAPSHOT/oak-blob-1.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-blob ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] --------------------< org.apache.jackrabbit:oak-mk >--------------------
+[INFO] Building Oak MicroKernel 1.1-SNAPSHOT                             [5/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-mk ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-mk ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-mk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-mk ---
+[INFO] Compiling 47 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-mk ---
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/classes/OSGI-INF/org.apache.jackrabbit.mk.osgi.MicroKernelService.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-mk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-mk ---
+[INFO] Compiling 8 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-mk ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-mk ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-mk ---
+[WARNING] Bundle org.apache.jackrabbit:oak-mk:bundle:1.1-SNAPSHOT : Export org.apache.jackrabbit.mk.core,  has 2,  private references [org.apache.jackrabbit.mk.store, org.apache.jackrabbit.mk.model], 
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-mk ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-mk ---
+[ERROR] org.apache.jackrabbit.mk.util: Version increase required; detected 1.0.0, suggested 2.0.0
+[INFO] Baseline analisys complete, 1 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-mk ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/target/oak-mk-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-mk/1.1-SNAPSHOT/oak-mk-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-mk/1.1-SNAPSHOT/oak-mk-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-mk ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] ----------------< org.apache.jackrabbit:oak-mk-remote >-----------------
+[INFO] Building Oak MicroKernel Remoting 1.1-SNAPSHOT                    [6/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-mk-remote ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-mk-remote ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-mk-remote ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 20 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-mk-remote ---
+[INFO] Compiling 17 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk-remote/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-mk-remote ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-mk-remote ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk-remote/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-mk-remote ---
+[INFO] Compiling 1 source file to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk-remote/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-mk-remote ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-mk-remote ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-mk-remote ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-mk-remote ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-mk-remote ---
+[INFO] Baseline analisys complete, 0 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-mk-remote ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk-remote/target/oak-mk-remote-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-mk-remote/1.1-SNAPSHOT/oak-mk-remote-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-mk-remote/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-mk-remote/1.1-SNAPSHOT/oak-mk-remote-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-mk-remote ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] -------------------< org.apache.jackrabbit:oak-core >-------------------
+[INFO] Building Oak Core 1.1-SNAPSHOT                                    [7/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-aws-ext/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 786 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-aws-ext/2.9-SNAPSHOT/maven-metadata.xml (786 B at 681 B/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-parent/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 613 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-parent/2.9-SNAPSHOT/maven-metadata.xml (613 B at 851 B/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-commons/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 790 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-commons/2.9-SNAPSHOT/maven-metadata.xml (790 B at 1.1 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-data/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 994 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-data/2.9-SNAPSHOT/maven-metadata.xml (994 B at 1.2 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-api/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 782 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-api/2.9-SNAPSHOT/maven-metadata.xml (782 B at 1.7 kB/s)
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-core ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-core ---
+[INFO] Compiling 804 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-core/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-core/src/main/java/org/apache/jackrabbit/oak/plugins/blob/datastore/DataStoreWrapperBackend.java:[42,7] error: DataStoreWrapperBackend is not abstract and does not override abstract method touchAsync(DataIdentifier,long,AsyncTouchCallback) in Backend
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] 
+[INFO] -------------------< org.apache.jackrabbit:oak-jcr >--------------------
+[INFO] Building Oak JCR Binding 1.1-SNAPSHOT                             [8/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-tests/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 788 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-tests/2.9-SNAPSHOT/maven-metadata.xml (788 B at 1.2 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-core/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 994 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-core/2.9-SNAPSHOT/maven-metadata.xml (994 B at 1.2 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-spi-commons/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 790 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-spi-commons/2.9-SNAPSHOT/maven-metadata.xml (790 B at 940 B/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-spi/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 993 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-spi/2.9-SNAPSHOT/maven-metadata.xml (993 B at 1.4 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-server/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 789 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-jcr-server/2.9-SNAPSHOT/maven-metadata.xml (789 B at 1.1 kB/s)
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-webdav/2.9-SNAPSHOT/maven-metadata.xml
+Progress (1): 785 B                   Downloaded from apache.snapshots: http://repository.apache.org/snapshots/org/apache/jackrabbit/jackrabbit-webdav/2.9-SNAPSHOT/maven-metadata.xml (785 B at 1.1 kB/s)
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-jcr ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-jcr ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-jcr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-jcr ---
+[INFO] Compiling 102 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/ObservationManagerImpl.java:[60,59] error: cannot find symbol
+[ERROR]   symbol:   class PermissionProviderFactory
+  location: package org.apache.jackrabbit.oak.plugins.observation.filter
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/ObservationManagerImpl.java:[93,18] error: cannot find symbol
+[ERROR]   symbol:   class PermissionProviderFactory
+  location: class ObservationManagerImpl
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/ChangeProcessor.java:[24,0] error: cannot find symbol
+[ERROR]   symbol:   static VISIBLE_FILTER
+  location: class
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/ObservationManagerImpl.java:[117,45] error: cannot find symbol
+[ERROR]   symbol:   class PermissionProviderFactory
+  location: class ObservationManagerImpl
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/ObservationManagerImpl.java:[236,25] error: cannot find symbol
+[ERROR]   symbol:   method addSubTree(String)
+  location: variable filterBuilder of type FilterBuilder
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/ObservationManagerImpl.java:[246,33] error: method all in class FilterBuilder cannot be applied to given types;
+[ERROR]   found: List<Condition>
+  reason: varargs mismatch; List<Condition> cannot be converted to Condition
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/ObservationManagerImpl.java:[247,33] error: method any in class FilterBuilder cannot be applied to given types;
+[ERROR]   found: List<Condition>
+  reason: varargs mismatch; List<Condition> cannot be converted to Condition
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/ObservationManagerImpl.java:[285,40] error: cannot find symbol
+[ERROR]   symbol:   method not(Condition)
+  location: variable filterBuilder of type FilterBuilder
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/ChangeProcessor.java:[267,36] error: cannot find symbol
+[ERROR]   symbol:   method getSubTrees()
+  location: variable provider of type FilterProvider
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/ChangeProcessor.java:[267,72] error: cannot find symbol
+[ERROR]   symbol:   variable VISIBLE_FILTER
+  location: class ChangeProcessor
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/EventQueue.java:[54,25] error: constructor EventGenerator in class EventGenerator cannot be applied to given types;
+[ERROR]   required: NodeState,NodeState,EventHandler
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/EventQueue.java:[73,17] error: cannot find symbol
+[INFO] 12 errors 
+[INFO] -------------------------------------------------------------
+[INFO] 
+[INFO] -----------------< org.apache.jackrabbit:oak-upgrade >------------------
+[INFO] Building Oak upgrade 1.1-SNAPSHOT                                 [9/23]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-upgrade ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-upgrade ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-upgrade ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-upgrade/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-upgrade ---
+[INFO] Compiling 11 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-upgrade/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-upgrade ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-upgrade ---
+[INFO] Compiling 5 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-upgrade/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-upgrade ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-upgrade ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ oak-upgrade ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-upgrade/target/oak-upgrade-1.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-upgrade ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-upgrade ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-upgrade/target/oak-upgrade-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-upgrade/1.1-SNAPSHOT/oak-upgrade-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-upgrade/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-upgrade/1.1-SNAPSHOT/oak-upgrade-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] -------------------< org.apache.jackrabbit:oak-http >-------------------
+[INFO] Building Oak HTTP Binding 1.1-SNAPSHOT                           [10/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-http ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-http ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-http/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-http ---
+[INFO] Compiling 9 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-http/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-http/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-http ---
+[INFO] Compiling 1 source file to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-http/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-http ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-http ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-http ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-http ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-http ---
+[INFO] Baseline analisys complete, 0 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-http ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-http/target/oak-http-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-http/1.1-SNAPSHOT/oak-http-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-http/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-http/1.1-SNAPSHOT/oak-http-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-http ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] ------------------< org.apache.jackrabbit:oak-lucene >------------------
+[INFO] Building Oak Lucene 1.1-SNAPSHOT                                 [11/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-lucene ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-lucene ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-lucene ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-lucene ---
+[INFO] Compiling 25 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-lucene/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-lucene ---
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-lucene/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexEditorProvider.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-lucene/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-lucene ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-lucene ---
+[INFO] Compiling 10 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-lucene/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-lucene ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-lucene ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-lucene ---
+[WARNING] Bundle org.apache.jackrabbit:oak-lucene:bundle:1.1-SNAPSHOT : Export org.apache.jackrabbit.oak.plugins.index.lucene,  has 5,  private references [org.apache.lucene.index, org.apache.lucene.document, org.apache.lucene.analysis, org.apache.lucene.codecs, org.apache.lucene.util], 
+[WARNING] Bundle org.apache.jackrabbit:oak-lucene:bundle:1.1-SNAPSHOT : Export org.apache.jackrabbit.oak.plugins.index.lucene.util,  has 6,  private references [org.apache.lucene.index, org.apache.lucene.search, org.apache.lucene.analysis, org.apache.lucene.analysis.util, org.apache.lucene.analysis.tokenattributes, org.apache.lucene.util], 
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-lucene ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-lucene ---
+[ERROR] org.apache.jackrabbit.oak.plugins.index.lucene: Version increase required; detected 1.0.0, suggested 2.0.0
+[ERROR] org.apache.jackrabbit.oak.plugins.index.lucene.util: Version increase required; detected 1.0.0, suggested 2.0.0
+[INFO] Baseline analisys complete, 2 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-lucene ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-lucene/target/oak-lucene-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-lucene/1.1-SNAPSHOT/oak-lucene-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-lucene/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-lucene/1.1-SNAPSHOT/oak-lucene-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-lucene ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] ----------------< org.apache.jackrabbit:oak-solr-core >-----------------
+[INFO] Building Oak Solr core 1.1-SNAPSHOT                              [12/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-solr-core ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-solr-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-solr-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-solr-core ---
+[INFO] Compiling 33 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-solr-core ---
+[INFO] Generating 1 MetaType Descriptors in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes/OSGI-INF/metatype/org.apache.jackrabbit.oak.plugins.index.solr.osgi.RemoteSolrServerConfigurationProvider.xml
+[INFO] Generating 1 MetaType Descriptors in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes/OSGI-INF/metatype/org.apache.jackrabbit.oak.plugins.index.solr.osgi.OakSolrConfigurationProviderService.xml
+[INFO] Generating 1 MetaType Descriptors in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes/OSGI-INF/metatype/org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService.xml
+[INFO] Generating 1 MetaType Descriptors in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes/OSGI-INF/metatype/org.apache.jackrabbit.oak.plugins.index.solr.osgi.EmbeddedSolrServerConfigurationProvider.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrIndexEditorProviderService.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrQueryIndexProviderService.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.solr.osgi.RemoteSolrServerConfigurationProvider.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.solr.osgi.OakSolrConfigurationProviderService.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.solr.osgi.EmbeddedSolrServerConfigurationProvider.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-solr-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-solr-core ---
+[INFO] Compiling 17 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-solr-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-solr-core ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-solr-core ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-solr-core ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (default) @ oak-solr-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-solr-core ---
+[INFO] Baseline analisys complete, 0 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (default) @ oak-solr-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-solr-core ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/target/oak-solr-core-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-solr-core/1.1-SNAPSHOT/oak-solr-core-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-core/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-solr-core/1.1-SNAPSHOT/oak-solr-core-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-solr-core ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] ----------------< org.apache.jackrabbit:oak-solr-osgi >-----------------
+[INFO] Building Oak Solr OSGi 1.1-SNAPSHOT                              [13/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-solr-osgi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-solr-osgi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-solr-osgi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-osgi/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-solr-osgi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-solr-osgi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-osgi/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-solr-osgi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-solr-osgi ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-solr-osgi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-solr-osgi ---
+[WARNING] Bundle org.apache.jackrabbit:oak-solr-osgi:bundle:1.1-SNAPSHOT : Unused Private-Package instructions, no such package(s) on the class path: [!*]
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-solr-osgi ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-solr-osgi ---
+[INFO] Baseline analisys complete, 0 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-solr-osgi ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-osgi/target/oak-solr-osgi-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-solr-osgi/1.1-SNAPSHOT/oak-solr-osgi-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-solr-osgi/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-solr-osgi/1.1-SNAPSHOT/oak-solr-osgi-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-solr-osgi ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] --------------< org.apache.jackrabbit:oak-auth-external >---------------
+[INFO] Building Oak External Authentication Support 1.1-SNAPSHOT        [14/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-auth-external ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-auth-external ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-auth-external ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-auth-external ---
+[INFO] Compiling 25 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-auth-external ---
+[INFO] Generating 1 MetaType Descriptors in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/classes/OSGI-INF/metatype/org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncConfig.xml
+[INFO] Generating 1 MetaType Descriptors in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/classes/OSGI-INF/metatype/org.apache.jackrabbit.oak.spi.security.authentication.external.impl.ExternalLoginModuleFactory.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/classes/OSGI-INF/org.apache.jackrabbit.oak.spi.security.authentication.external.impl.ExternalIDPManagerImpl.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/classes/OSGI-INF/org.apache.jackrabbit.oak.spi.security.authentication.external.impl.ExternalLoginModuleFactory.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/classes/OSGI-INF/org.apache.jackrabbit.oak.spi.security.authentication.external.impl.SyncManagerImpl.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/classes/OSGI-INF/org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-auth-external ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-auth-external ---
+[INFO] Compiling 3 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-auth-external ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-auth-external ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-auth-external ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-auth-external ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ oak-auth-external ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/oak-auth-external-1.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-auth-external ---
+[ERROR] org.apache.jackrabbit.oak.spi.security.authentication.external: Version increase required; detected 1.0.0, suggested 3.0.0
+[INFO] Baseline analisys complete, 1 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-auth-external ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/oak-auth-external-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-auth-external/1.1-SNAPSHOT/oak-auth-external-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-auth-external/1.1-SNAPSHOT/oak-auth-external-1.1-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-external/target/oak-auth-external-1.1-SNAPSHOT-tests.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-auth-external/1.1-SNAPSHOT/oak-auth-external-1.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-auth-external ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] ----------------< org.apache.jackrabbit:oak-auth-ldap >-----------------
+[INFO] Building Oak LDAP Authentication Support 1.1-SNAPSHOT            [15/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-auth-ldap ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-auth-ldap ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-auth-ldap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-ldap/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-auth-ldap ---
+[INFO] Compiling 11 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-ldap/target/classes
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-auth-ldap ---
+[INFO] Generating 1 MetaType Descriptors in /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-ldap/target/classes/OSGI-INF/metatype/org.apache.jackrabbit.oak.security.authentication.ldap.impl.LdapProviderConfig.xml
+[INFO] Writing 1 Service Component Descriptors to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-ldap/target/classes/OSGI-INF/org.apache.jackrabbit.oak.security.authentication.ldap.impl.LdapIdentityProvider.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-auth-ldap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-auth-ldap ---
+[INFO] Compiling 8 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-ldap/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-auth-ldap ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-auth-ldap ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:bundle (default-bundle) @ oak-auth-ldap ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-auth-ldap ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:baseline (baseline) @ oak-auth-ldap ---
+[INFO] Baseline analisys complete, 0 error(s), 0 warning(s)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-auth-ldap ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-ldap/target/oak-auth-ldap-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-auth-ldap/1.1-SNAPSHOT/oak-auth-ldap-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-auth-ldap/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-auth-ldap/1.1-SNAPSHOT/oak-auth-ldap-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:install (default-install) @ oak-auth-ldap ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] -------------------< org.apache.jackrabbit:oak-run >--------------------
+[INFO] Building Oak Runnable Jar 1.1-SNAPSHOT                           [16/23]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-run ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- gmaven-plugin:1.4:generateStubs (default) @ oak-run ---
+[INFO] Generated 13 Java stubs
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-run ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-run ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 10 resources
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:reserve-network-port (reserve-network-port) @ oak-run ---
+[INFO] Reserved port 32821 for jetty.http.port
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-run ---
+[INFO] Compiling 105 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[55,48] error: SegmentPropertyState is not public in org.apache.jackrabbit.oak.plugins.segment; cannot be accessed from outside package
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/run/Main.java:[313,21] error: cannot find symbol
+[ERROR]   symbol:   method compact()
+  location: variable store of type FileStore
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/run/Main.java:[321,21] error: cannot find symbol
+[ERROR]   symbol:   method cleanup()
+  location: variable store of type FileStore
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[79,21] error: cannot find symbol
+[ERROR]   symbol:   method getTarReaderIndex()
+  location: variable store of type FileStore
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[99,21] error: cannot find symbol
+[ERROR]   symbol:   method getTarReaderIndex()
+  location: variable store of type FileStore
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[190,34] error: cannot find symbol
+[ERROR]   symbol:   class SegmentPropertyState
+  location: class NodeStoreTree
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[191,37] error: cannot find symbol
+[ERROR]   symbol:   class SegmentPropertyState
+  location: class NodeStoreTree
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[230,20] error: cannot find symbol
+[ERROR]   symbol:   method getTarReaderIndex()
+  location: variable store of type FileStore
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[285,47] error: cannot find symbol
+[ERROR]   symbol:   method getTarReaderIndex()
+  location: variable store of type FileStore
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[306,30] error: cannot find symbol
+[ERROR]   symbol:   class SegmentPropertyState
+  location: class NodeStoreTree
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[307,16] error: cannot find symbol
+[ERROR]   symbol:   class SegmentPropertyState
+  location: class NodeStoreTree
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[307,44] error: cannot find symbol
+[ERROR]   symbol:   class SegmentPropertyState
+  location: class NodeStoreTree
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[399,13] error: cannot find symbol
+[ERROR]   symbol:   method compact()
+  location: variable store of type FileStore
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[414,56] error: cannot find symbol
+[INFO] 14 errors 
+[INFO] -------------------------------------------------------------
+[INFO] 
+[INFO] ------------------< org.apache.jackrabbit:oak-it-mk >-------------------
+[INFO] Building Oak Integration Tests for MicroKernel implementations 1.1-SNAPSHOT [17/23]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-it-mk ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-it-mk ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-it-mk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/mk/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-it-mk ---
+[INFO] Compiling 6 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/mk/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-it-mk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-it-mk ---
+[INFO] Compiling 11 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/mk/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-it-mk ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-it-mk ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ oak-it-mk ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/mk/target/oak-it-mk-1.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-it-mk ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-it-mk ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/mk/target/oak-it-mk-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-it-mk/1.1-SNAPSHOT/oak-it-mk-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/mk/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-it-mk/1.1-SNAPSHOT/oak-it-mk-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.apache.jackrabbit:oak-it-osgi >------------------
+[INFO] Building Oak Integration Tests for OSGi deployments 1.1-SNAPSHOT [18/23]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-it-osgi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-it-osgi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-it-osgi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-it-osgi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-it-osgi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-it-osgi ---
+[INFO] Compiling 1 source file to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-it-osgi ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-it-osgi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ oak-it-osgi ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/target/oak-it-osgi-1.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-it-osgi ---
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.2.1:single (default) @ oak-it-osgi ---
+[INFO] Reading assembly descriptor: test-bundles.xml
+[INFO] Copying files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/target/test-bundles
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-it-osgi ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/target/oak-it-osgi-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-it-osgi/1.1-SNAPSHOT/oak-it-osgi-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/osgi/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-it-osgi/1.1-SNAPSHOT/oak-it-osgi-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --------------------< org.apache.jackrabbit:oak-it >--------------------
+[INFO] Building Oak Integration Tests 1.1-SNAPSHOT                      [19/23]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-it ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-it ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-it ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-it ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-it ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-it/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-it/1.1-SNAPSHOT/oak-it-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------------< org.apache.jackrabbit:oak-pojosr >------------------
+[INFO] Building Oak PojoSR 1.1-SNAPSHOT                                 [20/23]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-pojosr ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-pojosr ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-pojosr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-pojosr ---
+[INFO] Compiling 7 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-pojosr/target/classes
+[INFO] 
+[INFO] --- gmaven-plugin:1.4:generateTestStubs (default) @ oak-pojosr ---
+[INFO] Generated 17 Java stubs
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-pojosr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-pojosr ---
+[INFO] Compiling 12 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-pojosr/target/test-classes
+[INFO] 
+[INFO] --- gmaven-plugin:1.4:testCompile (default) @ oak-pojosr ---
+[INFO] Compiled 22 Groovy classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-pojosr ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ oak-pojosr ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ oak-pojosr ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-pojosr/target/oak-pojosr-1.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ oak-pojosr ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ oak-pojosr ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-pojosr/target/oak-pojosr-1.1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/jackrabbit/oak-pojosr/1.1-SNAPSHOT/oak-pojosr-1.1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-pojosr/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/oak-pojosr/1.1-SNAPSHOT/oak-pojosr-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --------------< org.apache.jackrabbit:oak-tarmk-failover >--------------
+[INFO] Building Oak TarMK Failover 1.1-SNAPSHOT                         [21/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-tarmk-failover ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-tarmk-failover ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-tarmk-failover ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-tarmk-failover/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-tarmk-failover ---
+[INFO] Compiling 16 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-tarmk-failover/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-tarmk-failover/src/main/java/org/apache/jackrabbit/oak/plugins/segment/failover/server/FailoverServerHandler.java:[76,42] error: SegmentId(SegmentTracker,long,long) is not public in SegmentId; cannot be accessed from outside package
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-tarmk-failover/src/main/java/org/apache/jackrabbit/oak/plugins/segment/failover/codec/SegmentDecoder.java:[74,27] error: SegmentId(SegmentTracker,long,long) is not public in SegmentId; cannot be accessed from outside package
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] 
+[INFO] ----------------< org.apache.jackrabbit:jackrabbit-oak >----------------
+[INFO] Building Jackrabbit Oak 1.1-SNAPSHOT                             [22/23]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ jackrabbit-oak ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ jackrabbit-oak ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:report (post-unit-test) @ jackrabbit-oak ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ jackrabbit-oak ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ jackrabbit-oak ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/pom.xml to /home/user/.m2/repository/org/apache/jackrabbit/jackrabbit-oak/1.1-SNAPSHOT/jackrabbit-oak-1.1-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------< org.apache.jackrabbit:oak-authorization-cug >-------------
+[INFO] Building Oak CUG 1.1-SNAPSHOT                                    [23/23]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-authorization-cug ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-authorization-cug ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-authorization-cug ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-authorization-cug ---
+[INFO] Compiling 11 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/CugExclude.java:[25,55] error: cannot find symbol
+[ERROR]   symbol:   class SystemUserPrincipal
+  location: package org.apache.jackrabbit.oak.spi.security.principal
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[52,55] error: cannot find symbol
+[ERROR]   symbol:   class NodeTypeRegistry
+  location: package org.apache.jackrabbit.oak.plugins.nodetype.write
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[65,70] error: cannot find symbol
+[ERROR]   symbol:   class AggregatedPermissionProvider
+  location: package org.apache.jackrabbit.oak.spi.security.authorization.permission
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[66,70] error: cannot find symbol
+[ERROR]   symbol:   class ControlFlag
+  location: package org.apache.jackrabbit.oak.spi.security.authorization.permission
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[67,70] error: cannot find symbol
+[ERROR]   symbol:   class EmptyPermissionProvider
+  location: package org.apache.jackrabbit.oak.spi.security.authorization.permission
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugPermissionProvider.java:[39,70] error: cannot find symbol
+[ERROR]   symbol:   class AggregatedPermissionProvider
+  location: package org.apache.jackrabbit.oak.spi.security.authorization.permission
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugPermissionProvider.java:[40,70] error: cannot find symbol
+[ERROR]   symbol:   class ControlFlag
+  location: package org.apache.jackrabbit.oak.spi.security.authorization.permission
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugPermissionProvider.java:[50,59] error: cannot find symbol
+[ERROR]   symbol: class AggregatedPermissionProvider
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugPermissionProvider.java:[69,18] error: cannot find symbol
+[ERROR]   symbol:   class ControlFlag
+  location: class CugPermissionProvider
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugPermissionProvider.java:[80,35] error: cannot find symbol
+[ERROR]   symbol:   class ControlFlag
+  location: class CugPermissionProvider
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugPermissionProvider.java:[103,11] error: cannot find symbol
+[ERROR]   symbol:   class ControlFlag
+  location: class CugPermissionProvider
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[90,47] error: cannot find symbol
+[ERROR]   symbol:   variable PARAM_RANKING
+  location: class CompositeConfiguration
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[94,25] error: cannot find symbol
+[ERROR]   symbol: variable AggregatedPermissionProvider
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[98,47] error: cannot find symbol
+[ERROR]   symbol: variable ControlFlag
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[98,84] error: cannot find symbol
+[ERROR]   symbol: variable ControlFlag
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[99,47] error: cannot find symbol
+[ERROR]   symbol: variable ControlFlag
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[99,83] error: cannot find symbol
+[ERROR]   symbol: variable ControlFlag
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[101,24] error: cannot find symbol
+[ERROR]   symbol: variable ControlFlag
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/CugExclude.java:[47,64] error: cannot find symbol
+[ERROR]   symbol:   class SystemUserPrincipal
+  location: class Default
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[140,19] error: cannot find symbol
+[ERROR]   symbol:   variable EmptyPermissionProvider
+  location: class CugConfiguration
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[142,12] error: cannot find symbol
+[ERROR]   symbol:   class ControlFlag
+  location: class CugConfiguration
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[142,73] error: cannot find symbol
+[ERROR]   symbol:   variable AggregatedPermissionProvider
+  location: class CugConfiguration
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[142,122] error: cannot find symbol
+[ERROR]   symbol:   variable ControlFlag
+  location: class CugConfiguration
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[142,31] error: cannot find symbol
+[ERROR]   symbol:   variable ControlFlag
+  location: class CugConfiguration
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[231,20] error: cannot find symbol
+[ERROR]   symbol:   variable NodeTypeRegistry
+  location: class CugConfiguration
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugPermissionProvider.java:[83,42] error: cannot find symbol
+[ERROR]   symbol:   method getInstance(Root)
+  location: class ImmutableRoot
+/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugPermissionProvider.java:[119,4] error: method does not override or implement a method from a supertype
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugPermissionProvider.java:[134,37] error: cannot find symbol
+[INFO] 28 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Oak Parent POM ..................................... SUCCESS [  1.215 s]
+[INFO] Oak MicroKernel API ................................ SUCCESS [  1.746 s]
+[INFO] Oak Commons ........................................ SUCCESS [  1.319 s]
+[INFO] Oak Blob Store ..................................... SUCCESS [  0.809 s]
+[INFO] Oak MicroKernel .................................... SUCCESS [  0.980 s]
+[INFO] Oak MicroKernel Remoting ........................... SUCCESS [  0.411 s]
+[INFO] Oak Core ........................................... FAILURE [  7.582 s]
+[INFO] Oak JCR Binding .................................... FAILURE [  5.244 s]
+[INFO] Oak upgrade ........................................ SUCCESS [  1.508 s]
+[INFO] Oak HTTP Binding ................................... SUCCESS [  0.308 s]
+[INFO] Oak Lucene ......................................... SUCCESS [  6.000 s]
+[INFO] Oak Solr core ...................................... SUCCESS [  1.925 s]
+[INFO] Oak Solr OSGi ...................................... SUCCESS [ 12.678 s]
+[INFO] Oak External Authentication Support ................ SUCCESS [  1.394 s]
+[INFO] Oak LDAP Authentication Support .................... SUCCESS [  1.340 s]
+[INFO] Oak Runnable Jar ................................... FAILURE [  2.196 s]
+[INFO] Oak Integration Tests for MicroKernel implementations SUCCESS [  0.338 s]
+[INFO] Oak Integration Tests for OSGi deployments ......... SUCCESS [  1.684 s]
+[INFO] Oak Integration Tests .............................. SUCCESS [  0.014 s]
+[INFO] Oak PojoSR ......................................... SUCCESS [  1.928 s]
+[INFO] Oak TarMK Failover ................................. FAILURE [  0.210 s]
+[INFO] Jackrabbit Oak 1.1-SNAPSHOT ........................ SUCCESS [  0.013 s]
+[INFO] Oak CUG 1.1-SNAPSHOT ............................... FAILURE [  0.199 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 51.874 s
+[INFO] Finished at: 2022-07-15T14:46:07-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.5.1:compile (default-compile) on project oak-core: Compilation failure
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-core/src/main/java/org/apache/jackrabbit/oak/plugins/blob/datastore/DataStoreWrapperBackend.java:[42,7] error: DataStoreWrapperBackend is not abstract and does not override abstract method touchAsync(DataIdentifier,long,AsyncTouchCallback) in Backend
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.5.1:compile (default-compile) on project oak-jcr: Compilation failure: Compilation failure: 
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/ObservationManagerImpl.java:[60,59] error: cannot find symbol
+[ERROR]   symbol:   class PermissionProviderFactory
+[ERROR]   location: package org.apache.jackrabbit.oak.plugins.observation.filter
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/ObservationManagerImpl.java:[93,18] error: cannot find symbol
+[ERROR]   symbol:   class PermissionProviderFactory
+[ERROR]   location: class ObservationManagerImpl
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/ChangeProcessor.java:[24,0] error: cannot find symbol
+[ERROR]   symbol:   static VISIBLE_FILTER
+[ERROR]   location: class
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/ObservationManagerImpl.java:[117,45] error: cannot find symbol
+[ERROR]   symbol:   class PermissionProviderFactory
+[ERROR]   location: class ObservationManagerImpl
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/ObservationManagerImpl.java:[236,25] error: cannot find symbol
+[ERROR]   symbol:   method addSubTree(String)
+[ERROR]   location: variable filterBuilder of type FilterBuilder
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/ObservationManagerImpl.java:[246,33] error: method all in class FilterBuilder cannot be applied to given types;
+[ERROR]   found: List<Condition>
+[ERROR]   reason: varargs mismatch; List<Condition> cannot be converted to Condition
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/ObservationManagerImpl.java:[247,33] error: method any in class FilterBuilder cannot be applied to given types;
+[ERROR]   found: List<Condition>
+[ERROR]   reason: varargs mismatch; List<Condition> cannot be converted to Condition
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/ObservationManagerImpl.java:[285,40] error: cannot find symbol
+[ERROR]   symbol:   method not(Condition)
+[ERROR]   location: variable filterBuilder of type FilterBuilder
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/ChangeProcessor.java:[267,36] error: cannot find symbol
+[ERROR]   symbol:   method getSubTrees()
+[ERROR]   location: variable provider of type FilterProvider
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/ChangeProcessor.java:[267,72] error: cannot find symbol
+[ERROR]   symbol:   variable VISIBLE_FILTER
+[ERROR]   location: class ChangeProcessor
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/EventQueue.java:[54,25] error: constructor EventGenerator in class EventGenerator cannot be applied to given types;
+[ERROR]   required: NodeState,NodeState,EventHandler
+[ERROR]   found: no arguments
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/observation/EventQueue.java:[73,17] error: cannot find symbol
+[ERROR] -> [Help 1]
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.5.1:compile (default-compile) on project oak-run: Compilation failure: Compilation failure: 
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[55,48] error: SegmentPropertyState is not public in org.apache.jackrabbit.oak.plugins.segment; cannot be accessed from outside package
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/run/Main.java:[313,21] error: cannot find symbol
+[ERROR]   symbol:   method compact()
+[ERROR]   location: variable store of type FileStore
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/run/Main.java:[321,21] error: cannot find symbol
+[ERROR]   symbol:   method cleanup()
+[ERROR]   location: variable store of type FileStore
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[79,21] error: cannot find symbol
+[ERROR]   symbol:   method getTarReaderIndex()
+[ERROR]   location: variable store of type FileStore
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[99,21] error: cannot find symbol
+[ERROR]   symbol:   method getTarReaderIndex()
+[ERROR]   location: variable store of type FileStore
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[190,34] error: cannot find symbol
+[ERROR]   symbol:   class SegmentPropertyState
+[ERROR]   location: class NodeStoreTree
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[191,37] error: cannot find symbol
+[ERROR]   symbol:   class SegmentPropertyState
+[ERROR]   location: class NodeStoreTree
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[230,20] error: cannot find symbol
+[ERROR]   symbol:   method getTarReaderIndex()
+[ERROR]   location: variable store of type FileStore
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[285,47] error: cannot find symbol
+[ERROR]   symbol:   method getTarReaderIndex()
+[ERROR]   location: variable store of type FileStore
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[306,30] error: cannot find symbol
+[ERROR]   symbol:   class SegmentPropertyState
+[ERROR]   location: class NodeStoreTree
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[307,16] error: cannot find symbol
+[ERROR]   symbol:   class SegmentPropertyState
+[ERROR]   location: class NodeStoreTree
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[307,44] error: cannot find symbol
+[ERROR]   symbol:   class SegmentPropertyState
+[ERROR]   location: class NodeStoreTree
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[399,13] error: cannot find symbol
+[ERROR]   symbol:   method compact()
+[ERROR]   location: variable store of type FileStore
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-run/src/main/java/org/apache/jackrabbit/oak/explorer/NodeStoreTree.java:[414,56] error: cannot find symbol
+[ERROR] -> [Help 1]
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.5.1:compile (default-compile) on project oak-tarmk-failover: Compilation failure: Compilation failure: 
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-tarmk-failover/src/main/java/org/apache/jackrabbit/oak/plugins/segment/failover/server/FailoverServerHandler.java:[76,42] error: SegmentId(SegmentTracker,long,long) is not public in SegmentId; cannot be accessed from outside package
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-tarmk-failover/src/main/java/org/apache/jackrabbit/oak/plugins/segment/failover/codec/SegmentDecoder.java:[74,27] error: SegmentId(SegmentTracker,long,long) is not public in SegmentId; cannot be accessed from outside package
+[ERROR] -> [Help 1]
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.5.1:compile (default-compile) on project oak-authorization-cug: Compilation failure: Compilation failure: 
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/CugExclude.java:[25,55] error: cannot find symbol
+[ERROR]   symbol:   class SystemUserPrincipal
+[ERROR]   location: package org.apache.jackrabbit.oak.spi.security.principal
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[52,55] error: cannot find symbol
+[ERROR]   symbol:   class NodeTypeRegistry
+[ERROR]   location: package org.apache.jackrabbit.oak.plugins.nodetype.write
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[65,70] error: cannot find symbol
+[ERROR]   symbol:   class AggregatedPermissionProvider
+[ERROR]   location: package org.apache.jackrabbit.oak.spi.security.authorization.permission
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[66,70] error: cannot find symbol
+[ERROR]   symbol:   class ControlFlag
+[ERROR]   location: package org.apache.jackrabbit.oak.spi.security.authorization.permission
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[67,70] error: cannot find symbol
+[ERROR]   symbol:   class EmptyPermissionProvider
+[ERROR]   location: package org.apache.jackrabbit.oak.spi.security.authorization.permission
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugPermissionProvider.java:[39,70] error: cannot find symbol
+[ERROR]   symbol:   class AggregatedPermissionProvider
+[ERROR]   location: package org.apache.jackrabbit.oak.spi.security.authorization.permission
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugPermissionProvider.java:[40,70] error: cannot find symbol
+[ERROR]   symbol:   class ControlFlag
+[ERROR]   location: package org.apache.jackrabbit.oak.spi.security.authorization.permission
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugPermissionProvider.java:[50,59] error: cannot find symbol
+[ERROR]   symbol: class AggregatedPermissionProvider
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugPermissionProvider.java:[69,18] error: cannot find symbol
+[ERROR]   symbol:   class ControlFlag
+[ERROR]   location: class CugPermissionProvider
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugPermissionProvider.java:[80,35] error: cannot find symbol
+[ERROR]   symbol:   class ControlFlag
+[ERROR]   location: class CugPermissionProvider
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugPermissionProvider.java:[103,11] error: cannot find symbol
+[ERROR]   symbol:   class ControlFlag
+[ERROR]   location: class CugPermissionProvider
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[90,47] error: cannot find symbol
+[ERROR]   symbol:   variable PARAM_RANKING
+[ERROR]   location: class CompositeConfiguration
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[94,25] error: cannot find symbol
+[ERROR]   symbol: variable AggregatedPermissionProvider
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[98,47] error: cannot find symbol
+[ERROR]   symbol: variable ControlFlag
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[98,84] error: cannot find symbol
+[ERROR]   symbol: variable ControlFlag
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[99,47] error: cannot find symbol
+[ERROR]   symbol: variable ControlFlag
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[99,83] error: cannot find symbol
+[ERROR]   symbol: variable ControlFlag
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[101,24] error: cannot find symbol
+[ERROR]   symbol: variable ControlFlag
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/CugExclude.java:[47,64] error: cannot find symbol
+[ERROR]   symbol:   class SystemUserPrincipal
+[ERROR]   location: class Default
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[140,19] error: cannot find symbol
+[ERROR]   symbol:   variable EmptyPermissionProvider
+[ERROR]   location: class CugConfiguration
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[142,12] error: cannot find symbol
+[ERROR]   symbol:   class ControlFlag
+[ERROR]   location: class CugConfiguration
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[142,73] error: cannot find symbol
+[ERROR]   symbol:   variable AggregatedPermissionProvider
+[ERROR]   location: class CugConfiguration
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[142,122] error: cannot find symbol
+[ERROR]   symbol:   variable ControlFlag
+[ERROR]   location: class CugConfiguration
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[142,31] error: cannot find symbol
+[ERROR]   symbol:   variable ControlFlag
+[ERROR]   location: class CugConfiguration
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration.java:[231,20] error: cannot find symbol
+[ERROR]   symbol:   variable NodeTypeRegistry
+[ERROR]   location: class CugConfiguration
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugPermissionProvider.java:[83,42] error: cannot find symbol
+[ERROR]   symbol:   method getInstance(Root)
+[ERROR]   location: class ImmutableRoot
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugPermissionProvider.java:[119,4] error: method does not override or implement a method from a supertype
+[ERROR] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-authorization-cug/src/main/java/org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugPermissionProvider.java:[134,37] error: cannot find symbol
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :oak-core
+[INFO] Build failures were ignored.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.apache.jackrabbit:oak-upgrade >------------------
+[INFO] Building Oak upgrade 1.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-upgrade ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-upgrade ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-upgrade ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-upgrade/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-upgrade ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-upgrade ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-upgrade ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-upgrade ---
+[INFO] Surefire report directory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-upgrade/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.jackrabbit.oak.upgrade.RepositoryUpgradeTest
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.324 sec <<< FAILURE!
+verifyPrivileges(org.apache.jackrabbit.oak.upgrade.RepositoryUpgradeTest)  Time elapsed: 0.018 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Miss match in aggregate privilege rep:write expected [jcr:write, jcr:modifyProperties, rep:addProperties, rep:alterProperties, rep:removeProperties, jcr:addChildNodes, jcr:removeChildNodes, jcr:removeNode, jcr:nodeTypeManagement] actual [jcr:removeChildNodes, jcr:removeNode, jcr:write, jcr:addChildNodes, jcr:modifyProperties, jcr:nodeTypeManagement]
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at org.apache.jackrabbit.oak.upgrade.RepositoryUpgradeTest.verifyPrivileges(RepositoryUpgradeTest.java:249)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running org.apache.jackrabbit.oak.upgrade.RepositoryGroupMemberSplitUpgradeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.867 sec
+Running org.apache.jackrabbit.oak.upgrade.RepositoryGroupMemberUpgradeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.89 sec
+Running org.apache.jackrabbit.oak.upgrade.TickerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+
+Results :
+
+Failed tests:   verifyPrivileges(org.apache.jackrabbit.oak.upgrade.RepositoryUpgradeTest): Miss match in aggregate privilege rep:write expected [jcr:write, jcr:modifyProperties, rep:addProperties, rep:alterProperties, rep:removeProperties, jcr:addChildNodes, jcr:removeChildNodes, jcr:removeNode, jcr:nodeTypeManagement] actual [jcr:removeChildNodes, jcr:removeNode, jcr:write, jcr:addChildNodes, jcr:modifyProperties, jcr:nodeTypeManagement]
+
+Tests run: 17, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 20.771 s
+[INFO] Finished at: 2022-07-15T14:46:29-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project oak-upgrade: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/jackrabbit-oak/oak-upgrade/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

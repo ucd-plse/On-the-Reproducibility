@@ -1,0 +1,95 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Log4j 1.x Compatibility API 2.0-beta9-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-1.2-api ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-1.2-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-368_a8a2435732da968f95f0cf0adb40ea9fbef9525b/log4j-1.2-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-1.2-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 28 source files to /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-368_a8a2435732da968f95f0cf0adb40ea9fbef9525b/log4j-1.2-api/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-1.2-api ---
+[WARNING] Manifest org.apache.logging.log4j:log4j-1.2-api:jar:2.0-beta9-SNAPSHOT : Superfluous export-package instructions: [org.apache.logging.log4j.*]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-1.2-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-1.2-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-1.2-api ---
+[WARNING] The parameter forkMode is deprecated since version 2.14. Use forkCount and reuseForks instead.
+[INFO] Surefire report directory: /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-368_a8a2435732da968f95f0cf0adb40ea9fbef9525b/log4j-1.2-api/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.log4j.LevelTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec - in org.apache.log4j.LevelTest
+Running org.apache.log4j.LoggingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.87 sec - in org.apache.log4j.LoggingTest
+Running org.apache.log4j.CategoryTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.368 sec - in org.apache.log4j.CategoryTest
+Running org.apache.log4j.LoggerTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.389 sec - in org.apache.log4j.LoggerTest
+Running org.apache.log4j.PriorityTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec - in org.apache.log4j.PriorityTest
+Running org.apache.log4j.VelocityTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.397 sec <<< FAILURE! - in org.apache.log4j.VelocityTest
+testVelocity(org.apache.log4j.VelocityTest)  Time elapsed: 0.338 sec  <<< ERROR!
+java.lang.NoSuchMethodError: org.apache.log4j.PatternLayout.<init>(Ljava/lang/String;)V
+	at org.apache.velocity.runtime.log.Log4JLogChute.initAppender(Log4JLogChute.java:117)
+	at org.apache.velocity.runtime.log.Log4JLogChute.init(Log4JLogChute.java:85)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:157)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:269)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:871)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:262)
+	at org.apache.velocity.runtime.RuntimeSingleton.init(RuntimeSingleton.java:112)
+	at org.apache.velocity.app.Velocity.init(Velocity.java:74)
+	at org.apache.log4j.VelocityTest.testVelocity(VelocityTest.java:33)
+
+
+Results :
+
+Tests in error: 
+  VelocityTest.testVelocity:33 » NoSuchMethod org.apache.log4j.PatternLayout.<in...
+
+Tests run: 64, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.377 s
+[INFO] Finished at: 2016-07-16T14:22:04-07:00
+[INFO] Final Memory: 23M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.16:test (default-test) on project log4j-1.2-api: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-368_a8a2435732da968f95f0cf0adb40ea9fbef9525b/log4j-1.2-api/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

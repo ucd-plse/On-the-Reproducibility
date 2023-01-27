@@ -1,0 +1,923 @@
+travis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: java
+Build group: stable
+Build dist: precise
+Build id: ''
+Job id: ''
+[34m[1mBuild image provisioning date and time[0m
+Thu Feb  5 15:09:33 UTC 2015
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 12.04.5 LTS
+Release:	12.04
+Codename:	precise
+[34m[1mLinux Version[0m
+3.13.0-29-generic
+[34m[1mCookbooks Version[0m
+a68419e https://github.com/travis-ci/travis-cookbooks/tree/a68419e
+[34m[1mGCC version[0m
+gcc (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
+Copyright (C) 2011 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mLLVM version[0m
+clang version 3.4 (tags/RELEASE_34/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+[34m[1mPre-installed Ruby versions[0m
+ruby-1.9.3-p551
+[34m[1mPre-installed Node.js versions[0m
+v0.10.36
+[34m[1mPre-installed Go versions[0m
+1.4.1
+[34m[1mRedis version[0m
+redis-server 2.8.19
+[34m[1mriak version[0m
+2.0.2
+[34m[1mMongoDB version[0m
+MongoDB 2.4.12
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mNeo4j version[0m
+1.9.4
+[34m[1mRabbitMQ Version[0m
+3.4.3
+[34m[1mElasticSearch version[0m
+1.4.0
+[34m[1mInstalled Sphinx versions[0m
+2.0.10
+2.1.9
+2.2.6
+[34m[1mDefault Sphinx version[0m
+2.2.6
+[34m[1mInstalled Firefox version[0m
+firefox 31.0esr
+[34m[1mPhantomJS version[0m
+1.9.8
+[34m[1mant -version[0m
+Apache Ant(TM) version 1.8.2 compiled on December 3 2011
+[34m[1mmvn -version[0m
+Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T17:29:23+00:00)
+Maven home: /usr/local/maven
+Java version: 1.7.0_76, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-7-oracle/jre
+Default locale: en_US, platform encoding: ANSI_X3.4-1968
+OS name: "linux", version: "3.13.0-29-generic", arch: "amd64", family: "unix"
+travis_fold:end:system_info[0K
+grep: /etc/apt/sources.list.d/*: No such file or directory
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/main/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/restricted/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/universe/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/multiverse/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/main/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/restricted/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/universe/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/multiverse/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/main/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/restricted/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/universe/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/multiverse/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/main/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/universe/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/multiverse/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/main/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/universe/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/multiverse/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/main/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/universe/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/multiverse/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/main/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/restricted/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/universe/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/multiverse/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/main/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/restricted/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/universe/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/multiverse/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/main/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/restricted/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/universe/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/multiverse/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/main/source/Sources  404  Not Found [IP: 185.125.190.39 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/restricted/source/Sources  404  Not Found [IP: 185.125.190.39 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/universe/source/Sources  404  Not Found [IP: 185.125.190.39 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/multiverse/source/Sources  404  Not Found [IP: 185.125.190.39 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/main/binary-amd64/Packages  404  Not Found [IP: 185.125.190.39 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/restricted/binary-amd64/Packages  404  Not Found [IP: 185.125.190.39 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/universe/binary-amd64/Packages  404  Not Found [IP: 185.125.190.39 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/multiverse/binary-amd64/Packages  404  Not Found [IP: 185.125.190.39 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/main/binary-i386/Packages  404  Not Found [IP: 185.125.190.39 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/restricted/binary-i386/Packages  404  Not Found [IP: 185.125.190.39 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/universe/binary-i386/Packages  404  Not Found [IP: 185.125.190.39 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/multiverse/binary-i386/Packages  404  Not Found [IP: 185.125.190.39 80]
+
+E: Some index files failed to download. They have been ignored, or old ones used instead.
+sed: cannot rename /etc/hosts: Device or resource busy
+sed: cannot rename /etc/hosts: Device or resource busy
+$ jdk_switcher use oraclejdk8
+Switching to Oracle JDK8 (java-8-oracle), JAVA_HOME will be set to /usr/lib/jvm/java-8-oracle
+$ cd failed/apache/commons-lang
+$ java -Xmx512m -version
+java version "1.8.0_31"
+Java(TM) SE Runtime Environment (build 1.8.0_31-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 25.31-b07, mixed mode)
+$ javac -J-Xmx512m -version
+javac 1.8.0_31
+travis_fold:start:install[0Ktravis_time:start:002146f2[0K$ mvn install -Dhttps.protocols=TLSv1.2 -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=192m; support was removed in 8.0
+Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T17:29:23+00:00)
+Maven home: /usr/local/maven
+Java version: 1.8.0_31, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.15.0-109-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Lang 3.6-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-3) @ commons-lang3 ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:parse-version (parse-version) @ commons-lang3 ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.8:run (javadoc.resources) @ commons-lang3 ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ commons-lang3 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-lang3 ---
+[INFO] Executing: /bin/sh -c cd '/home/travis/build/failed/apache/commons-lang' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /home/travis/build/failed/apache/commons-lang
+[INFO] Storing buildNumber: b7cc7a1c7ba803e37218e53825c8aa1534071796 at timestamp: 1660944560190
+[INFO] Storing buildScmBranch: master
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-lang3 ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/travis/build/failed/apache/commons-lang/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ commons-lang3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 155 source files to /home/travis/build/failed/apache/commons-lang/target/classes
+[INFO] /home/travis/build/failed/apache/commons-lang/src/main/java/org/apache/commons/lang3/StringEscapeUtils.java: Some input files use or override a deprecated API.
+[INFO] /home/travis/build/failed/apache/commons-lang/src/main/java/org/apache/commons/lang3/StringEscapeUtils.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/travis/build/failed/apache/commons-lang/src/main/java/org/apache/commons/lang3/text/StrBuilder.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/travis/build/failed/apache/commons-lang/src/main/java/org/apache/commons/lang3/text/StrBuilder.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.0.1:manifest (bundle-manifest) @ commons-lang3 ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (checkAPIcompatibility) @ commons-lang3 ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ commons-lang3 ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ commons-lang3 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ commons-lang3 ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.0.0:jar (default-jar) @ commons-lang3 ---
+[INFO] Building jar: /home/travis/build/failed/apache/commons-lang/target/commons-lang3-3.6-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 47.471 s
+[INFO] Finished at: 2022-08-19T21:29:53+00:00
+[INFO] Final Memory: 383M/470M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-jar-plugin:3.0.0:jar (default-jar) on project commons-lang3: Error assembling JAR: Problem creating jar: Execution exception: Java heap space -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+
+[31;1mThe command "eval mvn install -Dhttps.protocols=TLSv1.2 -DskipTests=true -Dmaven.javadoc.skip=true -B -V " failed. Retrying, 2 of 3.[0m
+
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=192m; support was removed in 8.0
+Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T17:29:23+00:00)
+Maven home: /usr/local/maven
+Java version: 1.8.0_31, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.15.0-109-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Lang 3.6-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-3) @ commons-lang3 ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:parse-version (parse-version) @ commons-lang3 ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.8:run (javadoc.resources) @ commons-lang3 ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ commons-lang3 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-lang3 ---
+[INFO] Executing: /bin/sh -c cd '/home/travis/build/failed/apache/commons-lang' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /home/travis/build/failed/apache/commons-lang
+[INFO] Storing buildNumber: b7cc7a1c7ba803e37218e53825c8aa1534071796 at timestamp: 1660944598297
+[INFO] Storing buildScmBranch: master
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-lang3 ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/travis/build/failed/apache/commons-lang/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ commons-lang3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 155 source files to /home/travis/build/failed/apache/commons-lang/target/classes
+[INFO] /home/travis/build/failed/apache/commons-lang/src/main/java/org/apache/commons/lang3/StringEscapeUtils.java: Some input files use or override a deprecated API.
+[INFO] /home/travis/build/failed/apache/commons-lang/src/main/java/org/apache/commons/lang3/StringEscapeUtils.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/travis/build/failed/apache/commons-lang/src/main/java/org/apache/commons/lang3/text/StrBuilder.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/travis/build/failed/apache/commons-lang/src/main/java/org/apache/commons/lang3/text/StrBuilder.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.0.1:manifest (bundle-manifest) @ commons-lang3 ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (checkAPIcompatibility) @ commons-lang3 ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ commons-lang3 ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ commons-lang3 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ commons-lang3 ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.0.0:jar (default-jar) @ commons-lang3 ---
+[INFO] Building jar: /home/travis/build/failed/apache/commons-lang/target/commons-lang3-3.6-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.6:attach-descriptor (attach-descriptor) @ commons-lang3 ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.0.0:test-jar (default) @ commons-lang3 ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ commons-lang3 ---
+[INFO] Installing /home/travis/build/failed/apache/commons-lang/target/commons-lang3-3.6-SNAPSHOT.jar to /home/travis/.m2/repository/org/apache/commons/commons-lang3/3.6-SNAPSHOT/commons-lang3-3.6-SNAPSHOT.jar
+[INFO] Installing /home/travis/build/failed/apache/commons-lang/pom.xml to /home/travis/.m2/repository/org/apache/commons/commons-lang3/3.6-SNAPSHOT/commons-lang3-3.6-SNAPSHOT.pom
+[INFO] Installing /home/travis/build/failed/apache/commons-lang/target/commons-lang3-3.6-SNAPSHOT-tests.jar to /home/travis/.m2/repository/org/apache/commons/commons-lang3/3.6-SNAPSHOT/commons-lang3-3.6-SNAPSHOT-tests.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 15.605 s
+[INFO] Finished at: 2022-08-19T21:30:11+00:00
+[INFO] Final Memory: 28M/383M
+[INFO] ------------------------------------------------------------------------
+
+travis_time:end:002146f2:start=1660944544313015836,finish=1660944622771257830,duration=78458241994[0Ktravis_fold:end:install[0Ktravis_time:start:25206876[0K$ mvn test apache-rat:check clirr:check checkstyle:check findbugs:check javadoc:javadoc -Dhttps.protocols=TLSv1.2 -B
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=192m; support was removed in 8.0
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Lang 3.6-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-3) @ commons-lang3 ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:parse-version (parse-version) @ commons-lang3 ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.8:run (javadoc.resources) @ commons-lang3 ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ commons-lang3 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-lang3 ---
+[INFO] Executing: /bin/sh -c cd '/home/travis/build/failed/apache/commons-lang' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /home/travis/build/failed/apache/commons-lang
+[INFO] Storing buildNumber: b7cc7a1c7ba803e37218e53825c8aa1534071796 at timestamp: 1660944627828
+[INFO] Storing buildScmBranch: master
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-lang3 ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/travis/build/failed/apache/commons-lang/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ commons-lang3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 155 source files to /home/travis/build/failed/apache/commons-lang/target/classes
+[INFO] /home/travis/build/failed/apache/commons-lang/src/main/java/org/apache/commons/lang3/StringEscapeUtils.java: Some input files use or override a deprecated API.
+[INFO] /home/travis/build/failed/apache/commons-lang/src/main/java/org/apache/commons/lang3/StringEscapeUtils.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/travis/build/failed/apache/commons-lang/src/main/java/org/apache/commons/lang3/text/StrBuilder.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/travis/build/failed/apache/commons-lang/src/main/java/org/apache/commons/lang3/text/StrBuilder.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.0.1:manifest (bundle-manifest) @ commons-lang3 ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (checkAPIcompatibility) @ commons-lang3 ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ commons-lang3 ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ commons-lang3 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ commons-lang3 ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.commons.lang3.AnnotationUtilsTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 sec - in org.apache.commons.lang3.AnnotationUtilsTest
+Running org.apache.commons.lang3.ArchUtilsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.ArchUtilsTest
+Running org.apache.commons.lang3.ArrayUtilsAddTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.ArrayUtilsAddTest
+Running org.apache.commons.lang3.ArrayUtilsInsertTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.ArrayUtilsInsertTest
+Running org.apache.commons.lang3.ArrayUtilsRemoveMultipleTest
+Tests run: 55, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.apache.commons.lang3.ArrayUtilsRemoveMultipleTest
+Running org.apache.commons.lang3.ArrayUtilsRemoveTest
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.ArrayUtilsRemoveTest
+Running org.apache.commons.lang3.ArrayUtilsTest
+Tests run: 307, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec - in org.apache.commons.lang3.ArrayUtilsTest
+Running org.apache.commons.lang3.BitFieldTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.BitFieldTest
+Running org.apache.commons.lang3.BooleanUtilsTest
+Tests run: 72, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.BooleanUtilsTest
+Running org.apache.commons.lang3.CharEncodingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.CharEncodingTest
+Running org.apache.commons.lang3.CharRangeTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.apache.commons.lang3.CharRangeTest
+Running org.apache.commons.lang3.CharSequenceUtilsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.apache.commons.lang3.CharSequenceUtilsTest
+Running org.apache.commons.lang3.CharSetTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.apache.commons.lang3.CharSetTest
+Running org.apache.commons.lang3.CharSetUtilsTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.commons.lang3.CharSetUtilsTest
+Running org.apache.commons.lang3.CharUtilsTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.commons.lang3.CharUtilsTest
+Running org.apache.commons.lang3.ClassPathUtilsTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.commons.lang3.ClassPathUtilsTest
+Running org.apache.commons.lang3.ClassUtilsTest
+Tests run: 57, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec - in org.apache.commons.lang3.ClassUtilsTest
+Running org.apache.commons.lang3.ConversionTest
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.apache.commons.lang3.ConversionTest
+Running org.apache.commons.lang3.EnumUtilsTest
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.apache.commons.lang3.EnumUtilsTest
+Running org.apache.commons.lang3.JavaVersionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.JavaVersionTest
+Running org.apache.commons.lang3.LocaleUtilsTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.apache.commons.lang3.LocaleUtilsTest
+Running org.apache.commons.lang3.NotImplementedExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.NotImplementedExceptionTest
+Running org.apache.commons.lang3.ObjectUtilsTest
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.apache.commons.lang3.ObjectUtilsTest
+Running org.apache.commons.lang3.RandomStringUtilsTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 sec - in org.apache.commons.lang3.RandomStringUtilsTest
+Running org.apache.commons.lang3.RandomUtilsTest
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.RandomUtilsTest
+Running org.apache.commons.lang3.RangeTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.apache.commons.lang3.RangeTest
+Running org.apache.commons.lang3.SerializationUtilsTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.apache.commons.lang3.SerializationUtilsTest
+Running org.apache.commons.lang3.StringEscapeUtilsTest
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.428 sec - in org.apache.commons.lang3.StringEscapeUtilsTest
+Running org.apache.commons.lang3.StringUtilsContainsTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in org.apache.commons.lang3.StringUtilsContainsTest
+Running org.apache.commons.lang3.StringUtilsEmptyBlankTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.apache.commons.lang3.StringUtilsEmptyBlankTest
+Running org.apache.commons.lang3.StringUtilsEqualsIndexOfTest
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.commons.lang3.StringUtilsEqualsIndexOfTest
+Running org.apache.commons.lang3.StringUtilsIsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.StringUtilsIsTest
+Running org.apache.commons.lang3.StringUtilsStartsEndsWithTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.StringUtilsStartsEndsWithTest
+Running org.apache.commons.lang3.StringUtilsSubstringTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.apache.commons.lang3.StringUtilsSubstringTest
+Running org.apache.commons.lang3.StringUtilsTest
+Tests run: 142, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec - in org.apache.commons.lang3.StringUtilsTest
+Running org.apache.commons.lang3.StringUtilsTrimStripTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.apache.commons.lang3.StringUtilsTrimStripTest
+Running org.apache.commons.lang3.SystemUtilsTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.apache.commons.lang3.SystemUtilsTest
+Running org.apache.commons.lang3.ThreadUtilsTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.apache.commons.lang3.ThreadUtilsTest
+Running org.apache.commons.lang3.ValidateTest
+Tests run: 67, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.apache.commons.lang3.ValidateTest
+Running org.apache.commons.lang3.builder.CompareToBuilderTest
+Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.apache.commons.lang3.builder.CompareToBuilderTest
+Running org.apache.commons.lang3.builder.DefaultToStringStyleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.commons.lang3.builder.DefaultToStringStyleTest
+Running org.apache.commons.lang3.builder.DiffBuilderTest
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.apache.commons.lang3.builder.DiffBuilderTest
+Running org.apache.commons.lang3.builder.DiffResultTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.commons.lang3.builder.DiffResultTest
+Running org.apache.commons.lang3.builder.DiffTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.builder.DiffTest
+Running org.apache.commons.lang3.builder.EqualsBuilderTest
+Tests run: 53, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.apache.commons.lang3.builder.EqualsBuilderTest
+Running org.apache.commons.lang3.builder.HashCodeBuilderAndEqualsBuilderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.commons.lang3.builder.HashCodeBuilderAndEqualsBuilderTest
+Running org.apache.commons.lang3.builder.HashCodeBuilderTest
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.apache.commons.lang3.builder.HashCodeBuilderTest
+Running org.apache.commons.lang3.builder.JsonToStringStyleTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.commons.lang3.builder.JsonToStringStyleTest
+Running org.apache.commons.lang3.builder.MultiLineToStringStyleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.builder.MultiLineToStringStyleTest
+Running org.apache.commons.lang3.builder.MultilineRecursiveToStringStyleTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.apache.commons.lang3.builder.MultilineRecursiveToStringStyleTest
+Running org.apache.commons.lang3.builder.NoClassNameToStringStyleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.commons.lang3.builder.NoClassNameToStringStyleTest
+Running org.apache.commons.lang3.builder.NoFieldNamesToStringStyleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.commons.lang3.builder.NoFieldNamesToStringStyleTest
+Running org.apache.commons.lang3.builder.RecursiveToStringStyleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.commons.lang3.builder.RecursiveToStringStyleTest
+Running org.apache.commons.lang3.builder.ReflectionDiffBuilderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.commons.lang3.builder.ReflectionDiffBuilderTest
+Running org.apache.commons.lang3.builder.ReflectionToStringBuilderConcurrencyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0 sec - in org.apache.commons.lang3.builder.ReflectionToStringBuilderConcurrencyTest
+Running org.apache.commons.lang3.builder.ReflectionToStringBuilderExcludeNullValuesTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.commons.lang3.builder.ReflectionToStringBuilderExcludeNullValuesTest
+Running org.apache.commons.lang3.builder.ReflectionToStringBuilderExcludeTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.commons.lang3.builder.ReflectionToStringBuilderExcludeTest
+Running org.apache.commons.lang3.builder.ToStringBuilderTest
+Tests run: 74, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.02 sec - in org.apache.commons.lang3.builder.ToStringBuilderTest
+Running org.apache.commons.lang3.builder.ReflectionToStringBuilderExcludeWithAnnotationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.builder.ReflectionToStringBuilderExcludeWithAnnotationTest
+Running org.apache.commons.lang3.builder.ReflectionToStringBuilderMutateInspectConcurrencyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in org.apache.commons.lang3.builder.ReflectionToStringBuilderMutateInspectConcurrencyTest
+Running org.apache.commons.lang3.builder.ReflectionToStringBuilderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.builder.ReflectionToStringBuilderTest
+Running org.apache.commons.lang3.builder.ShortPrefixToStringStyleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.builder.ShortPrefixToStringStyleTest
+Running org.apache.commons.lang3.builder.SimpleToStringStyleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.builder.SimpleToStringStyleTest
+Running org.apache.commons.lang3.builder.StandardToStringStyleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.builder.StandardToStringStyleTest
+Running org.apache.commons.lang3.builder.ToStringStyleConcurrencyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.393 sec - in org.apache.commons.lang3.builder.ToStringStyleConcurrencyTest
+Running org.apache.commons.lang3.builder.ToStringStyleTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.commons.lang3.builder.ToStringStyleTest
+Running org.apache.commons.lang3.concurrent.AtomicInitializerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.apache.commons.lang3.concurrent.AtomicInitializerTest
+Running org.apache.commons.lang3.concurrent.AtomicSafeInitializerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in org.apache.commons.lang3.concurrent.AtomicSafeInitializerTest
+Running org.apache.commons.lang3.concurrent.BackgroundInitializerTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.apache.commons.lang3.concurrent.BackgroundInitializerTest
+Running org.apache.commons.lang3.concurrent.BasicThreadFactoryTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in org.apache.commons.lang3.concurrent.BasicThreadFactoryTest
+Running org.apache.commons.lang3.concurrent.CallableBackgroundInitializerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.commons.lang3.concurrent.CallableBackgroundInitializerTest
+Running org.apache.commons.lang3.concurrent.CircuitBreakingExceptionTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.concurrent.CircuitBreakingExceptionTest
+Running org.apache.commons.lang3.concurrent.ConcurrentUtilsTest
+Tests run: 41, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.apache.commons.lang3.concurrent.ConcurrentUtilsTest
+Running org.apache.commons.lang3.concurrent.ConstantInitializerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.concurrent.ConstantInitializerTest
+Running org.apache.commons.lang3.concurrent.EventCountCircuitBreakerTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 sec - in org.apache.commons.lang3.concurrent.EventCountCircuitBreakerTest
+Running org.apache.commons.lang3.concurrent.LazyInitializerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.apache.commons.lang3.concurrent.LazyInitializerTest
+Running org.apache.commons.lang3.concurrent.MemoizerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.apache.commons.lang3.concurrent.MemoizerTest
+Running org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec - in org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest
+Running org.apache.commons.lang3.concurrent.ThresholdCircuitBreakerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.concurrent.ThresholdCircuitBreakerTest
+Running org.apache.commons.lang3.concurrent.TimedSemaphoreTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.199 sec - in org.apache.commons.lang3.concurrent.TimedSemaphoreTest
+Running org.apache.commons.lang3.concurrent.annotation.ContractTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 sec - in org.apache.commons.lang3.concurrent.annotation.ContractTest
+Running org.apache.commons.lang3.concurrent.annotation.GuardedByTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.apache.commons.lang3.concurrent.annotation.GuardedByTest
+Running org.apache.commons.lang3.concurrent.annotation.ImmutableTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.concurrent.annotation.ImmutableTest
+Running org.apache.commons.lang3.concurrent.annotation.NotThreadSafeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.concurrent.annotation.NotThreadSafeTest
+Running org.apache.commons.lang3.concurrent.annotation.ThreadSafeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.concurrent.annotation.ThreadSafeTest
+Running org.apache.commons.lang3.event.EventListenerSupportTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.apache.commons.lang3.event.EventListenerSupportTest
+Running org.apache.commons.lang3.event.EventUtilsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.apache.commons.lang3.event.EventUtilsTest
+Running org.apache.commons.lang3.exception.CloneFailedExceptionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.exception.CloneFailedExceptionTest
+Running org.apache.commons.lang3.exception.ContextedExceptionTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.apache.commons.lang3.exception.ContextedExceptionTest
+Running org.apache.commons.lang3.exception.ContextedRuntimeExceptionTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.apache.commons.lang3.exception.ContextedRuntimeExceptionTest
+Running org.apache.commons.lang3.exception.DefaultExceptionContextTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.exception.DefaultExceptionContextTest
+Running org.apache.commons.lang3.exception.ExceptionUtilsTest
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.apache.commons.lang3.exception.ExceptionUtilsTest
+Running org.apache.commons.lang3.math.FractionTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec - in org.apache.commons.lang3.math.FractionTest
+Running org.apache.commons.lang3.math.IEEE754rUtilsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.math.IEEE754rUtilsTest
+Running org.apache.commons.lang3.math.NumberUtilsTest
+Tests run: 101, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.apache.commons.lang3.math.NumberUtilsTest
+Running org.apache.commons.lang3.mutable.MutableBooleanTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.mutable.MutableBooleanTest
+Running org.apache.commons.lang3.mutable.MutableByteTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.mutable.MutableByteTest
+Running org.apache.commons.lang3.mutable.MutableDoubleTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.mutable.MutableDoubleTest
+Running org.apache.commons.lang3.mutable.MutableFloatTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.mutable.MutableFloatTest
+Running org.apache.commons.lang3.mutable.MutableIntTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.mutable.MutableIntTest
+Running org.apache.commons.lang3.mutable.MutableLongTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.mutable.MutableLongTest
+Running org.apache.commons.lang3.mutable.MutableObjectTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.mutable.MutableObjectTest
+Running org.apache.commons.lang3.mutable.MutableShortTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.mutable.MutableShortTest
+Running org.apache.commons.lang3.reflect.ConstructorUtilsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.apache.commons.lang3.reflect.ConstructorUtilsTest
+Running org.apache.commons.lang3.reflect.FieldUtilsTest
+Tests run: 64, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in org.apache.commons.lang3.reflect.FieldUtilsTest
+Running org.apache.commons.lang3.reflect.InheritanceUtilsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.apache.commons.lang3.reflect.InheritanceUtilsTest
+Running org.apache.commons.lang3.reflect.MethodUtilsTest
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec - in org.apache.commons.lang3.reflect.MethodUtilsTest
+Running org.apache.commons.lang3.reflect.TypeLiteralTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.apache.commons.lang3.reflect.TypeLiteralTest
+Running org.apache.commons.lang3.reflect.TypeUtilsTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in org.apache.commons.lang3.reflect.TypeUtilsTest
+Running org.apache.commons.lang3.test.SystemDefaultsSwitchTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.commons.lang3.test.SystemDefaultsSwitchTest
+Running org.apache.commons.lang3.text.CompositeFormatTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.apache.commons.lang3.text.CompositeFormatTest
+Running org.apache.commons.lang3.text.ExtendedMessageFormatTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.914 sec - in org.apache.commons.lang3.text.ExtendedMessageFormatTest
+Running org.apache.commons.lang3.text.FormattableUtilsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.commons.lang3.text.FormattableUtilsTest
+Running org.apache.commons.lang3.text.StrBuilderAppendInsertTest
+Tests run: 51, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in org.apache.commons.lang3.text.StrBuilderAppendInsertTest
+Running org.apache.commons.lang3.text.StrBuilderTest
+Tests run: 91, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in org.apache.commons.lang3.text.StrBuilderTest
+Running org.apache.commons.lang3.text.StrLookupTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.text.StrLookupTest
+Running org.apache.commons.lang3.text.StrMatcherTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.text.StrMatcherTest
+Running org.apache.commons.lang3.text.StrSubstitutorTest
+Tests run: 41, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.apache.commons.lang3.text.StrSubstitutorTest
+Running org.apache.commons.lang3.text.StrTokenizerTest
+Tests run: 55, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.text.StrTokenizerTest
+Running org.apache.commons.lang3.text.WordUtilsTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.text.WordUtilsTest
+Running org.apache.commons.lang3.text.translate.EntityArraysTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.text.translate.EntityArraysTest
+Running org.apache.commons.lang3.text.translate.LookupTranslatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.text.translate.LookupTranslatorTest
+Running org.apache.commons.lang3.text.translate.NumericEntityEscaperTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.text.translate.NumericEntityEscaperTest
+Running org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest
+Running org.apache.commons.lang3.text.translate.OctalUnescaperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.text.translate.OctalUnescaperTest
+Running org.apache.commons.lang3.text.translate.UnicodeEscaperTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.text.translate.UnicodeEscaperTest
+Running org.apache.commons.lang3.text.translate.UnicodeUnescaperTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.text.translate.UnicodeUnescaperTest
+Running org.apache.commons.lang3.text.translate.UnicodeUnpairedSurrogateRemoverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.text.translate.UnicodeUnpairedSurrogateRemoverTest
+Running org.apache.commons.lang3.time.DateFormatUtilsTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec - in org.apache.commons.lang3.time.DateFormatUtilsTest
+Running org.apache.commons.lang3.time.DateUtilsFragmentTest
+Tests run: 57, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.apache.commons.lang3.time.DateUtilsFragmentTest
+Running org.apache.commons.lang3.time.DateUtilsRoundingTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec - in org.apache.commons.lang3.time.DateUtilsRoundingTest
+Running org.apache.commons.lang3.time.DateUtilsTest
+Tests run: 63, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 sec - in org.apache.commons.lang3.time.DateUtilsTest
+Running org.apache.commons.lang3.time.DurationFormatUtilsTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.609 sec - in org.apache.commons.lang3.time.DurationFormatUtilsTest
+Running org.apache.commons.lang3.time.FastDateFormatTest
+>>FastDateFormatTest: FastDatePrinter:791  SimpleDateFormat:3553
+>>FastDateFormatTest: FastDateParser:1050  SimpleDateFormat:3572
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.205 sec - in org.apache.commons.lang3.time.FastDateFormatTest
+Running org.apache.commons.lang3.time.FastDateFormat_ParserTest
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.042 sec - in org.apache.commons.lang3.time.FastDateFormat_ParserTest
+Running org.apache.commons.lang3.time.FastDateFormat_PrinterTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.apache.commons.lang3.time.FastDateFormat_PrinterTest
+Running org.apache.commons.lang3.time.FastDateParserSDFTest
+Tests run: 276, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec - in org.apache.commons.lang3.time.FastDateParserSDFTest
+Running org.apache.commons.lang3.time.FastDateParserTest
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.236 sec - in org.apache.commons.lang3.time.FastDateParserTest
+Running org.apache.commons.lang3.time.FastDateParser_MoreOrLessTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.time.FastDateParser_MoreOrLessTest
+Running org.apache.commons.lang3.time.FastDateParser_TimeZoneStrategyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.885 sec - in org.apache.commons.lang3.time.FastDateParser_TimeZoneStrategyTest
+Running org.apache.commons.lang3.time.FastDatePrinterTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.commons.lang3.time.FastDatePrinterTest
+Running org.apache.commons.lang3.time.FastDatePrinterTimeZonesTest
+Tests run: 617, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 sec - in org.apache.commons.lang3.time.FastDatePrinterTimeZonesTest
+Running org.apache.commons.lang3.time.StopWatchTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.741 sec - in org.apache.commons.lang3.time.StopWatchTest
+Running org.apache.commons.lang3.time.WeekYearTest
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.apache.commons.lang3.time.WeekYearTest
+Running org.apache.commons.lang3.tuple.ImmutablePairTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.tuple.ImmutablePairTest
+Running org.apache.commons.lang3.tuple.ImmutableTripleTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.commons.lang3.tuple.ImmutableTripleTest
+Running org.apache.commons.lang3.tuple.MutablePairTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.tuple.MutablePairTest
+Running org.apache.commons.lang3.tuple.MutableTripleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.tuple.MutableTripleTest
+Running org.apache.commons.lang3.tuple.PairTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.tuple.PairTest
+Running org.apache.commons.lang3.tuple.TripleTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.apache.commons.lang3.tuple.TripleTest
+
+Results :
+
+Tests run: 4002, Failures: 0, Errors: 0, Skipped: 5
+
+[INFO] 
+[INFO] --- apache-rat-plugin:0.12:check (default-cli) @ commons-lang3 ---
+[INFO] Enabled default license matchers.
+[INFO] Will parse SCM ignores for exclusions...
+[INFO] Parsing exclusions from /home/travis/build/failed/apache/commons-lang/.gitignore
+[INFO] Finished adding exclusions from SCM ignore files.
+[INFO] 73 implicit excludes (use -debug for more details).
+[INFO] Exclude: site-content/**
+[INFO] Exclude: src/site/resources/.htaccess
+[INFO] Exclude: src/site/resources/download_lang.cgi
+[INFO] Exclude: src/site/resources/release-notes/RELEASE-NOTES-*.txt
+[INFO] Exclude: src/test/resources/lang-708-input.txt
+[INFO] Exclude: site-content/**
+[INFO] Exclude: .checkstyle
+[INFO] Exclude: .fbprefs
+[INFO] Exclude: .pmd
+[INFO] Exclude: src/site/resources/download_*.cgi
+[INFO] Exclude: src/site/resources/profile.*
+[INFO] Exclude: maven-eclipse.xml
+[INFO] Exclude: .externalToolBuilders/**
+[INFO] 375 resources included (use -debug for more details)
+[INFO] Rat check: Summary over all files. Unapproved: 0, unknown: 0, generated: 0, approved: 370 licenses.
+[INFO] 
+[INFO] >>> clirr-maven-plugin:2.8:check (default-cli) > compile @ commons-lang3 >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-3) @ commons-lang3 ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:parse-version (parse-version) @ commons-lang3 ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.8:run (javadoc.resources) @ commons-lang3 ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ commons-lang3 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-lang3 ---
+[INFO] Executing: /bin/sh -c cd '/home/travis/build/failed/apache/commons-lang' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /home/travis/build/failed/apache/commons-lang
+[INFO] Storing buildNumber: b7cc7a1c7ba803e37218e53825c8aa1534071796 at timestamp: 1660944662522
+[INFO] Storing buildScmBranch: master
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-lang3 ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/travis/build/failed/apache/commons-lang/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ commons-lang3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 155 source files to /home/travis/build/failed/apache/commons-lang/target/classes
+[INFO] /home/travis/build/failed/apache/commons-lang/src/main/java/org/apache/commons/lang3/StringEscapeUtils.java: Some input files use or override a deprecated API.
+[INFO] /home/travis/build/failed/apache/commons-lang/src/main/java/org/apache/commons/lang3/StringEscapeUtils.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/travis/build/failed/apache/commons-lang/src/main/java/org/apache/commons/lang3/text/StrBuilder.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/travis/build/failed/apache/commons-lang/src/main/java/org/apache/commons/lang3/text/StrBuilder.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] <<< clirr-maven-plugin:2.8:check (default-cli) < compile @ commons-lang3 <<<
+[INFO] 
+[INFO] --- clirr-maven-plugin:2.8:check (default-cli) @ commons-lang3 ---
+[INFO] artifact org.apache.commons:commons-lang3: checking for updates from central
+[INFO] artifact org.apache.commons:commons-lang3: checking for updates from sonatype
+[INFO] artifact org.apache.commons:commons-lang3: checking for updates from sonatype-snapshots
+[INFO] artifact org.apache.commons:commons-lang3: checking for updates from sonatype-apache
+[INFO] artifact org.apache.commons:commons-lang3: checking for updates from apache-snapshots
+[INFO] artifact org.apache.commons:commons-lang3: checking for updates from codehaus-snapshots
+[WARNING] repository metadata for: 'artifact org.apache.commons:commons-lang3' could not be retrieved from repository: codehaus-snapshots due to an error: nexus.codehaus.org: unknown error
+[INFO] artifact org.apache.commons:commons-lang3: checking for updates from apache.snapshots
+[INFO] artifact org.apache.commons:commons-lang3: checking for updates from sonatype
+[INFO] artifact org.apache.commons:commons-lang3: checking for updates from sonatype-snapshots
+[INFO] artifact org.apache.commons:commons-lang3: checking for updates from sonatype-apache
+[INFO] artifact org.apache.commons:commons-lang3: checking for updates from apache-snapshots
+[INFO] artifact org.apache.commons:commons-lang3: checking for updates from codehaus-snapshots
+[WARNING] repository metadata for: 'artifact org.apache.commons:commons-lang3' could not be retrieved from repository: codehaus-snapshots due to an error: nexus.codehaus.org
+[INFO] Comparing to version: 3.5
+[INFO] Succeeded with 0 errors; 0 warnings; and 77 other changes.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default-cli) @ commons-lang3 ---
+[INFO] There are 126 errors reported by Checkstyle 6.11.2 with /home/travis/build/failed/apache/commons-lang/checkstyle.xml ruleset.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_jmhType.java:[0] (javadoc) JavadocPackage: Missing package-info.java file.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_jmhType_B1.java:[2,8] (imports) UnusedImports: Unused import - org.apache.commons.lang3.HashSetvBitSetTest.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[3,8] (imports) UnusedImports: Unused import - java.util.List.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[4,8] (imports) UnusedImports: Unused import - java.util.concurrent.atomic.AtomicInteger.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[5,8] (imports) UnusedImports: Unused import - java.util.Collection.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[6,8] (imports) UnusedImports: Unused import - java.util.ArrayList.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[8,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.CompilerControl.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[12,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.results.Result.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[18,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.Mode.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[19,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.Fork.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[20,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.Measurement.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[21,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.Threads.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[22,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.Warmup.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[23,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.BenchmarkMode.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[26,8] (imports) UnusedImports: Unused import - java.lang.reflect.Field.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[31,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.results.ScalarResult.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[32,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.results.AggregationPolicy.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[35,1] (imports) RedundantImport: Redundant import from the same package - org.apache.commons.lang3.generated.HashSetvBitSetTest_jmhType.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[61,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[110] (blocks) NeedBraces: 'else' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[114,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[128,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[177] (blocks) NeedBraces: 'else' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[181,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[195,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[245] (blocks) NeedBraces: 'else' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[249,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[263] (blocks) NeedBraces: 'if' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[282,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[311] (blocks) NeedBraces: 'else' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[315,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[319] (blocks) NeedBraces: 'if' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testBitSet_jmhTest.java:[330] (blocks) NeedBraces: 'if' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[3,8] (imports) UnusedImports: Unused import - java.util.List.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[4,8] (imports) UnusedImports: Unused import - java.util.concurrent.atomic.AtomicInteger.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[5,8] (imports) UnusedImports: Unused import - java.util.Collection.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[6,8] (imports) UnusedImports: Unused import - java.util.ArrayList.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[8,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.CompilerControl.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[12,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.results.Result.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[18,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.Mode.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[19,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.Fork.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[20,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.Measurement.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[21,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.Threads.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[22,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.Warmup.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[23,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.BenchmarkMode.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[26,8] (imports) UnusedImports: Unused import - java.lang.reflect.Field.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[31,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.results.ScalarResult.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[32,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.results.AggregationPolicy.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[35,1] (imports) RedundantImport: Redundant import from the same package - org.apache.commons.lang3.generated.HashSetvBitSetTest_jmhType.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[61,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[110] (blocks) NeedBraces: 'else' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[114,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[128,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[177] (blocks) NeedBraces: 'else' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[181,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[195,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[245] (blocks) NeedBraces: 'else' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[249,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[263] (blocks) NeedBraces: 'if' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[282,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[311] (blocks) NeedBraces: 'else' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[315,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[319] (blocks) NeedBraces: 'if' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_testHashSet_jmhTest.java:[330] (blocks) NeedBraces: 'if' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[3,8] (imports) UnusedImports: Unused import - java.util.List.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[4,8] (imports) UnusedImports: Unused import - java.util.concurrent.atomic.AtomicInteger.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[5,8] (imports) UnusedImports: Unused import - java.util.Collection.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[6,8] (imports) UnusedImports: Unused import - java.util.ArrayList.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[8,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.CompilerControl.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[12,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.results.Result.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[18,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.Mode.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[19,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.Fork.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[20,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.Measurement.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[21,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.Threads.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[22,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.Warmup.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[23,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.BenchmarkMode.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[26,8] (imports) UnusedImports: Unused import - java.lang.reflect.Field.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[31,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.results.ScalarResult.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[32,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.results.AggregationPolicy.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[35,1] (imports) RedundantImport: Redundant import from the same package - org.apache.commons.lang3.generated.HashSetvBitSetTest_jmhType.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[61,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[110] (blocks) NeedBraces: 'else' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[114,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[128,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[177] (blocks) NeedBraces: 'else' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[181,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[195,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[245] (blocks) NeedBraces: 'else' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[249,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[263] (blocks) NeedBraces: 'if' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[282,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[311] (blocks) NeedBraces: 'else' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[315,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[319] (blocks) NeedBraces: 'if' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeBitSetRemoveAll_jmhTest.java:[330] (blocks) NeedBraces: 'if' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[3,8] (imports) UnusedImports: Unused import - java.util.List.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[4,8] (imports) UnusedImports: Unused import - java.util.concurrent.atomic.AtomicInteger.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[5,8] (imports) UnusedImports: Unused import - java.util.Collection.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[6,8] (imports) UnusedImports: Unused import - java.util.ArrayList.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[8,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.CompilerControl.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[12,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.results.Result.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[18,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.Mode.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[19,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.Fork.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[20,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.Measurement.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[21,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.Threads.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[22,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.Warmup.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[23,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.annotations.BenchmarkMode.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[26,8] (imports) UnusedImports: Unused import - java.lang.reflect.Field.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[31,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.results.ScalarResult.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[32,8] (imports) UnusedImports: Unused import - org.openjdk.jmh.results.AggregationPolicy.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[35,1] (imports) RedundantImport: Redundant import from the same package - org.apache.commons.lang3.generated.HashSetvBitSetTest_jmhType.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[61,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[110] (blocks) NeedBraces: 'else' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[114,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[128,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[177] (blocks) NeedBraces: 'else' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[181,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[195,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[245] (blocks) NeedBraces: 'else' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[249,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[263] (blocks) NeedBraces: 'if' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[282,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[311] (blocks) NeedBraces: 'else' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[315,5] (javadoc) JavadocMethod: Missing a Javadoc comment.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[319] (blocks) NeedBraces: 'if' construct must use '{}'s.
+[ERROR] target/generated-test-sources/test-annotations/org/apache/commons/lang3/generated/HashSetvBitSetTest_timeExtractRemoveAll_jmhTest.java:[330] (blocks) NeedBraces: 'if' construct must use '{}'s.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:09 min
+[INFO] Finished at: 2022-08-19T21:31:33+00:00
+[INFO] Final Memory: 39M/438M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-checkstyle-plugin:2.17:check (default-cli) on project commons-lang3: You have 126 Checkstyle violations. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+travis_time:end:25206876:start=1660944622785521672,finish=1660944694734599347,duration=71949077675[0K
+[31;1mThe command "mvn test apache-rat:check clirr:check checkstyle:check findbugs:check javadoc:javadoc -Dhttps.protocols=TLSv1.2 -B" exited with 1.[0m
+
+Done. Your build exited with 1.

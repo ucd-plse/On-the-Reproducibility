@@ -1,0 +1,1534 @@
+Apache Maven 3.6.3
+Maven home: /usr/share/maven
+Java version: 1.8.0_312, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.15.0-41-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] MOLGENIS                                                           [pom]
+[INFO] test                                                               [jar]
+[INFO] util                                                               [jar]
+[INFO] i18n                                                               [jar]
+[INFO] data                                                               [jar]
+[INFO] security-core                                                      [jar]
+[INFO] settings                                                           [jar]
+[INFO] data-security                                                      [jar]
+[INFO] data-file                                                          [jar]
+[INFO] data-i18n                                                          [jar]
+[INFO] scripts-core                                                       [jar]
+[INFO] js                                                                 [jar]
+[INFO] data-validation                                                    [jar]
+[INFO] data-import                                                        [jar]
+[INFO] jobs                                                               [jar]
+[INFO] data-excel                                                         [jar]
+[INFO] data-csv                                                           [jar]
+[INFO] amazon-bucket                                                      [jar]
+[INFO] core                                                               [jar]
+[INFO] data-cache                                                         [jar]
+[INFO] data-index                                                         [jar]
+[INFO] data-platform                                                      [jar]
+[INFO] data-plugin                                                        [jar]
+[INFO] web                                                                [jar]
+[INFO] security                                                           [jar]
+[INFO] core-ui                                                            [jar]
+[INFO] apps                                                               [jar]
+[INFO] data-vcf                                                           [jar]
+[INFO] data-rest                                                          [jar]
+[INFO] genomebrowser                                                      [jar]
+[INFO] beacon                                                             [jar]
+[INFO] data-migrate                                                       [jar]
+[INFO] data-annotators                                                    [jar]
+[INFO] data-postgresql                                                    [jar]
+[INFO] bootstrap                                                          [jar]
+[INFO] dataexplorer                                                       [jar]
+[INFO] python                                                             [jar]
+[INFO] r                                                                  [jar]
+[INFO] searchall                                                          [jar]
+[INFO] data-elasticsearch                                                 [jar]
+[INFO] ontology-core                                                      [jar]
+[INFO] semantic-search                                                    [jar]
+[INFO] semantic-mapper                                                    [jar]
+[INFO] ontology                                                           [jar]
+[INFO] questionnaires                                                     [jar]
+[INFO] scripts                                                            [jar]
+[INFO] file-ingester                                                      [jar]
+[INFO] gavin                                                              [jar]
+[INFO] fair                                                               [jar]
+[INFO] settings-ui                                                        [jar]
+[INFO] swagger                                                            [jar]
+[INFO] navigator                                                          [jar]
+[INFO] metadata-manager                                                   [jar]
+[INFO] one-click-importer                                                 [jar]
+[INFO] app                                                                [war]
+[INFO] api-tests                                                          [jar]
+[INFO] data-rest-client                                                   [jar]
+[INFO] platform-integration-tests                                         [jar]
+[INFO] 
+[INFO] -----------------------< org.molgenis:molgenis >------------------------
+[INFO] Building MOLGENIS 7.0.0-SNAPSHOT                                  [1/58]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ molgenis ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ molgenis ---
+[INFO] argLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (execution-annotations) @ molgenis ---
+[INFO] Source directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/target/generated-sources/annotations added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (minify-build-helper) @ molgenis ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-generated-resources) @ molgenis ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/target/generated-resources
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (post-unit-test) @ molgenis ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] ---------------------< org.molgenis:molgenis-test >---------------------
+[INFO] Building test 7.0.0-SNAPSHOT                                      [2/58]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ molgenis-test ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ molgenis-test ---
+[INFO] argLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-test/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (execution-annotations) @ molgenis-test ---
+[INFO] Source directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-test/target/generated-sources/annotations added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (minify-build-helper) @ molgenis-test ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ molgenis-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-test/src/main/resources
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-test/target/generated-resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ molgenis-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-generated-resources) @ molgenis-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-test/target/generated-resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ molgenis-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-test/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ molgenis-test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ molgenis-test ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (post-unit-test) @ molgenis-test ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] ---------------------< org.molgenis:molgenis-util >---------------------
+[INFO] Building util 7.0.0-SNAPSHOT                                      [3/58]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ molgenis-util ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ molgenis-util ---
+[INFO] argLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-util/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (execution-annotations) @ molgenis-util ---
+[INFO] Source directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-util/target/generated-sources/annotations added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (minify-build-helper) @ molgenis-util ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ molgenis-util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-util/target/generated-resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ molgenis-util ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-generated-resources) @ molgenis-util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-util/target/generated-resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ molgenis-util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ molgenis-util ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ molgenis-util ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+17:40:09.941 [main] DEBUG org.molgenis.util.mail.MailSenderImpl - Sent message.
+17:40:09.962 [main] DEBUG org.molgenis.util.mail.MailSenderImpl - Sent messages.
+17:40:10.004 [main] DEBUG org.molgenis.util.mail.JavaMailSenderFactory - Mail properties: {}; defaults: {mail.smtp.starttls.enable=true, mail.smtp.quitwait=false, mail.smtp.auth=true}
+17:40:10.015 [main] DEBUG org.molgenis.util.mail.JavaMailSenderFactory - Mail properties: {mail.smtp.starttls.enable=false, mail.debug=true}; defaults: {mail.smtp.starttls.enable=true, mail.smtp.quitwait=false, mail.smtp.auth=true}
+17:40:10.018 [main] INFO org.molgenis.util.mail.JavaMailSenderFactory - Validating mail settings...
+17:40:10.021 [main] DEBUG org.molgenis.util.mail.JavaMailSenderFactory - Mail properties: {}; defaults: {mail.smtp.starttls.enable=true, mail.smtp.quitwait=false, mail.smtp.auth=true}
+17:40:10.088 [main] INFO org.molgenis.util.mail.JavaMailSenderFactory - Unable to ping to host
+com.sun.mail.util.MailConnectException: Couldn't connect to host, port: host, 1234; timeout -1
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1961)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:345)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:515)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.testConnection(JavaMailSenderImpl.java:396)
+	at org.molgenis.util.mail.JavaMailSenderFactory.validateConnection(JavaMailSenderFactory.java:63)
+	at org.molgenis.util.mail.JavaMailSenderFactoryTest.testValidateConnectionInvalidConnection(JavaMailSenderFactoryTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: java.net.UnknownHostException: host
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at java.net.Socket.connect(Socket.java:556)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:297)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:229)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	... 34 common frames omitted
+Tests run: 58, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.943 sec - in TestSuite
+
+Results :
+
+Tests run: 58, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (post-unit-test) @ molgenis-util ---
+[INFO] Loading execution data file /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-util/target/jacoco.exec
+[INFO] Analyzed bundle 'util' with 15 classes
+[INFO] 
+[INFO] ---------------------< org.molgenis:molgenis-i18n >---------------------
+[INFO] Building i18n 7.0.0-SNAPSHOT                                      [4/58]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ molgenis-i18n ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ molgenis-i18n ---
+[INFO] argLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-i18n/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (execution-annotations) @ molgenis-i18n ---
+[INFO] Source directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-i18n/target/generated-sources/annotations added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (minify-build-helper) @ molgenis-i18n ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ molgenis-i18n ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-i18n/src/main/resources
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-i18n/target/generated-resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ molgenis-i18n ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-generated-resources) @ molgenis-i18n ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-i18n/target/generated-resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ molgenis-i18n ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ molgenis-i18n ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ molgenis-i18n ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+17:40:13.314 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale de
+17:40:13.318 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale es
+17:40:13.319 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale it
+17:40:13.319 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale pt
+17:40:13.319 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale fr
+17:40:13.320 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale xx
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.729 sec - in TestSuite
+
+Results :
+
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (post-unit-test) @ molgenis-i18n ---
+[INFO] Loading execution data file /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-i18n/target/jacoco.exec
+[INFO] Analyzed bundle 'i18n' with 13 classes
+[INFO] 
+[INFO] ---------------------< org.molgenis:molgenis-data >---------------------
+[INFO] Building data 7.0.0-SNAPSHOT                                      [5/58]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ molgenis-data ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ molgenis-data ---
+[INFO] argLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (execution-annotations) @ molgenis-data ---
+[INFO] Source directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/target/generated-sources/annotations added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (minify-build-helper) @ molgenis-data ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ molgenis-data ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 2 resources
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/target/generated-resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ molgenis-data ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 162 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/target/classes
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/meta/model/EntityType.java:[5,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/util/EntityUtils.java:[7,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/LazyEntity.java:[5,25] org.molgenis.data.UnknownEntityException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/EntityReference.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/transaction/TransactionExceptionTranslator.java:[3,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/util/GenericDependencyResolver.java:[3,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/listeners/EntityListenersService.java:[6,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/EntityWithComputedAttributes.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/meta/model/EntityType.java:[5,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/util/EntityUtils.java:[7,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/LazyEntity.java:[5,25] org.molgenis.data.UnknownEntityException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/EntityReference.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/transaction/TransactionExceptionTranslator.java:[3,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/util/GenericDependencyResolver.java:[3,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/listeners/EntityListenersService.java:[6,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/EntityWithComputedAttributes.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/meta/model/EntityType.java:[5,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/util/EntityUtils.java:[7,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/LazyEntity.java:[5,25] org.molgenis.data.UnknownEntityException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/EntityReference.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/transaction/TransactionExceptionTranslator.java:[3,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/util/GenericDependencyResolver.java:[3,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/listeners/EntityListenersService.java:[6,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/EntityWithComputedAttributes.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/meta/model/EntityType.java:[5,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/util/EntityUtils.java:[7,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/LazyEntity.java:[5,25] org.molgenis.data.UnknownEntityException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/EntityReference.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/transaction/TransactionExceptionTranslator.java:[3,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/util/GenericDependencyResolver.java:[3,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/listeners/EntityListenersService.java:[6,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/EntityWithComputedAttributes.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/util/EntityUtils.java:[52,35] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/util/EntityUtils.java:[98,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/util/EntityUtils.java:[108,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/meta/model/EntityType.java:[554,43] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/LazyEntity.java:[173,43] org.molgenis.data.UnknownEntityException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/EntityReference.java:[188,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/EntityReference.java:[196,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/EntityReference.java:[204,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/EntityReference.java:[224,43] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/DataConverter.java:[99,35] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/QueryImpl.java:[115,35] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/QueryImpl.java:[256,55] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/transaction/TransactionExceptionTranslator.java:[17,9] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/util/GenericDependencyResolver.java:[37,43] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/listeners/EntityListenersService.java:[167,43] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/EntityWithComputedAttributes.java:[200,35] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/decorator/DynamicRepositoryDecoratorRegistryImpl.java:[68,83] unchecked method invocation: method findOne in interface org.molgenis.data.DataService is applied to given types
+  required: java.lang.String,org.molgenis.data.Query<E>,java.lang.Class<E>
+  found: java.lang.String,org.molgenis.data.Query,java.lang.Class<org.molgenis.data.decorator.meta.DecoratorConfiguration>
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/decorator/DynamicRepositoryDecoratorRegistryImpl.java:[68,109] unchecked conversion
+  required: org.molgenis.data.Query<E>
+  found:    org.molgenis.data.Query
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/meta/MetaDataServiceImpl.java:[124,35] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/meta/MetaDataServiceImpl.java:[136,35] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[216,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[227,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[237,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[248,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[256,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[264,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[270,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[284,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[292,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[300,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/decorator/meta/DynamicDecoratorPopulator.java:[52,75] unchecked cast
+  required: java.util.stream.Stream<java.lang.Object>
+  found:    java.util.stream.Stream<capture#1 of ?>
+[WARNING] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/src/main/java/org/molgenis/data/meta/EntityTypeRepositoryDecorator.java:[124,43] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-generated-resources) @ molgenis-data ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/target/generated-resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ molgenis-data ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ molgenis-data ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ molgenis-data ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+17:40:18,604 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback-test.xml] at [file:/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/target/test-classes/logback-test.xml]
+17:40:18,605 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs multiple times on the classpath.
+17:40:18,605 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs at [file:/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/target/test-classes/logback-test.xml]
+17:40:18,605 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs at [file:/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-i18n/target/test-classes/logback-test.xml]
+17:40:18,692 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+17:40:18,693 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+17:40:18,706 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+17:40:18,715 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+17:40:18,779 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.molgenis] to INFO
+17:40:18,780 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to WARN
+17:40:18,780 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+17:40:18,781 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+17:40:18,782 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@39e53bef - Registering current configuration as safe fallback point
+
+0
+[MockitoHint] AttributeRepositoryDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:59)
+[MockitoHint] 2. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:60)
+[MockitoHint] 3. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:61)
+[MockitoHint] 4. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:62)
+[MockitoHint] 5. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:64)
+[MockitoHint] 6. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:65)
+[MockitoHint] 7. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:66)
+[MockitoHint] 8. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.delete(AttributeRepositoryDecoratorTest.java:74)
+[MockitoHint] 9. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.delete(AttributeRepositoryDecoratorTest.java:76)
+[MockitoHint] 10. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.delete(AttributeRepositoryDecoratorTest.java:77)
+[MockitoHint] 11. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.delete(AttributeRepositoryDecoratorTest.java:81)
+[MockitoHint] 12. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.delete(AttributeRepositoryDecoratorTest.java:82)
+[MockitoHint] 13. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.delete(AttributeRepositoryDecoratorTest.java:83)
+[MockitoHint] 14. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.delete(AttributeRepositoryDecoratorTest.java:87)
+[MockitoHint] 15. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.delete(AttributeRepositoryDecoratorTest.java:88)
+[MockitoHint] 16. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.delete(AttributeRepositoryDecoratorTest.java:89)
+
+[MockitoHint] AttributeRepositoryDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:59)
+[MockitoHint] 2. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:60)
+[MockitoHint] 3. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:62)
+[MockitoHint] 4. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:64)
+[MockitoHint] 5. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:65)
+[MockitoHint] 6. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:66)
+[MockitoHint] 7. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.deleteCompoundAttribute(AttributeRepositoryDecoratorTest.java:101)
+[MockitoHint] 8. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.deleteCompoundAttribute(AttributeRepositoryDecoratorTest.java:102)
+[MockitoHint] 9. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.deleteCompoundAttribute(AttributeRepositoryDecoratorTest.java:105)
+[MockitoHint] 10. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.deleteCompoundAttribute(AttributeRepositoryDecoratorTest.java:106)
+[MockitoHint] 11. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.deleteCompoundAttribute(AttributeRepositoryDecoratorTest.java:107)
+[MockitoHint] 12. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.deleteCompoundAttribute(AttributeRepositoryDecoratorTest.java:109)
+[MockitoHint] 13. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.deleteCompoundAttribute(AttributeRepositoryDecoratorTest.java:110)
+
+[MockitoHint] AttributeRepositoryDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:59)
+[MockitoHint] 2. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:60)
+[MockitoHint] 3. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.updateNonSystemAbstractEntity(AttributeRepositoryDecoratorTest.java:122)
+
+17:40:21.473 [main] ERROR o.m.d.l.EntityListenersService - Repository [EntityRepo] is not registered in the entity listeners service
+17:40:23.077 [main] INFO  o.m.data.meta.MetaDataServiceImpl - Removed entity [entity]
+17:40:23.081 [main] INFO  o.m.data.meta.MetaDataServiceImpl - Removed entities [entity0,entity1]
+17:40:23.940 [main] INFO  o.m.d.populate.IdGeneratorImplTest - Generated 1000000 identifiers using strategy SEQUENTIAL_UUID in 667.5 ms
+17:40:24.021 [main] INFO  o.m.d.populate.IdGeneratorImplTest - Generated 1000 identifiers using strategy SHORT_RANDOM in 2.432 ms
+17:40:24.032 [main] INFO  o.m.d.populate.IdGeneratorImplTest - Generated 1000 identifiers using strategy SECURE_RANDOM in 9.493 ms
+17:40:24.037 [main] INFO  o.m.d.populate.IdGeneratorImplTest - Generated 1000 identifiers using strategy LONG_SECURE_RANDOM in 4.164 ms
+17:40:24.038 [main] INFO  o.m.d.populate.IdGeneratorImplTest - Generated 1000 identifiers using strategy SHORT_SECURE_RANDOM in 976.1 μs
+[MockitoHint] MapOfStringsExpressionEvaluatorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testEvaluate(MapOfStringsExpressionEvaluatorTest.java:183)
+[MockitoHint] 2. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testEvaluate(MapOfStringsExpressionEvaluatorTest.java:187)
+[MockitoHint] 3. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testEvaluate(MapOfStringsExpressionEvaluatorTest.java:188)
+
+[MockitoHint] MapOfStringsExpressionEvaluatorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksIfAttributeHasExpression(MapOfStringsExpressionEvaluatorTest.java:76)
+[MockitoHint] 2. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksIfAttributeHasExpression(MapOfStringsExpressionEvaluatorTest.java:77)
+
+[MockitoHint] MapOfStringsExpressionEvaluatorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksIfAttributeHasRefEntity(MapOfStringsExpressionEvaluatorTest.java:92)
+[MockitoHint] 2. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksIfAttributeHasRefEntity(MapOfStringsExpressionEvaluatorTest.java:93)
+
+[MockitoHint] MapOfStringsExpressionEvaluatorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksIfCalculatedAttributesAllExist(MapOfStringsExpressionEvaluatorTest.java:146)
+[MockitoHint] 2. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksIfCalculatedAttributesAllExist(MapOfStringsExpressionEvaluatorTest.java:147)
+
+[MockitoHint] MapOfStringsExpressionEvaluatorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksIfExpressionIsMap(MapOfStringsExpressionEvaluatorTest.java:109)
+[MockitoHint] 2. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksIfExpressionIsMap(MapOfStringsExpressionEvaluatorTest.java:110)
+
+[MockitoHint] MapOfStringsExpressionEvaluatorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksIfMentionedAttributesAllExist(MapOfStringsExpressionEvaluatorTest.java:164)
+[MockitoHint] 2. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksIfMentionedAttributesAllExist(MapOfStringsExpressionEvaluatorTest.java:165)
+
+[MockitoHint] MapOfStringsExpressionEvaluatorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksThatExpressionIsMapOfStrings(MapOfStringsExpressionEvaluatorTest.java:127)
+[MockitoHint] 2. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksThatExpressionIsMapOfStrings(MapOfStringsExpressionEvaluatorTest.java:128)
+
+17:40:24.491 [main] INFO  o.m.data.support.RepositoryCopier - Creating a copy of Repository repository, with id: copiedEntityTypeId, package: Package and label: copiedEntityTypeLabel
+[MockitoHint] RepositoryCopierTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.support.RepositoryCopierTest.createEntityTypeMeta(RepositoryCopierTest.java:107)
+[MockitoHint] 2. Unused -> at org.molgenis.data.support.RepositoryCopierTest.createEntityTypeMeta(RepositoryCopierTest.java:110)
+[MockitoHint] 3. Unused -> at org.molgenis.data.support.RepositoryCopierTest.createEntityTypeMeta(RepositoryCopierTest.java:112)
+
+Tests run: 729, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.01 sec - in TestSuite
+
+Results :
+
+Tests run: 729, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (post-unit-test) @ molgenis-data ---
+[INFO] Loading execution data file /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/target/jacoco.exec
+[INFO] Analyzed bundle 'data' with 165 classes
+[INFO] 
+[INFO] ----------------< org.molgenis:molgenis-security-core >-----------------
+[INFO] Building security-core 7.0.0-SNAPSHOT                             [6/58]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ molgenis-security-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ molgenis-security-core ---
+[INFO] argLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-security-core/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (execution-annotations) @ molgenis-security-core ---
+[INFO] Source directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-security-core/target/generated-sources/annotations added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (minify-build-helper) @ molgenis-security-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ molgenis-security-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-security-core/src/main/resources
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-security-core/target/generated-resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ molgenis-security-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-generated-resources) @ molgenis-security-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-security-core/target/generated-resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ molgenis-security-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ molgenis-security-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ molgenis-security-core ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.206 sec - in TestSuite
+
+Results :
+
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (post-unit-test) @ molgenis-security-core ---
+[INFO] Loading execution data file /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-security-core/target/jacoco.exec
+[INFO] Analyzed bundle 'security-core' with 6 classes
+[INFO] 
+[INFO] -------------------< org.molgenis:molgenis-settings >-------------------
+[INFO] Building settings 7.0.0-SNAPSHOT                                  [7/58]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ molgenis-settings ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ molgenis-settings ---
+[INFO] argLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-settings/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (execution-annotations) @ molgenis-settings ---
+[INFO] Source directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-settings/target/generated-sources/annotations added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (minify-build-helper) @ molgenis-settings ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ molgenis-settings ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-settings/src/main/resources
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-settings/target/generated-resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ molgenis-settings ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-generated-resources) @ molgenis-settings ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-settings/target/generated-resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ molgenis-settings ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-settings/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ molgenis-settings ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ molgenis-settings ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.molgenis.settings.mail.MailSettingsRepositoryDecoratorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.416 sec - in org.molgenis.settings.mail.MailSettingsRepositoryDecoratorTest
+
+Results :
+
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (post-unit-test) @ molgenis-settings ---
+[INFO] Loading execution data file /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-settings/target/jacoco.exec
+[INFO] Analyzed bundle 'settings' with 17 classes
+[INFO] 
+[INFO] ----------------< org.molgenis:molgenis-data-security >-----------------
+[INFO] Building data-security 7.0.0-SNAPSHOT                             [8/58]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ molgenis-data-security ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ molgenis-data-security ---
+[INFO] argLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-security/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (execution-annotations) @ molgenis-data-security ---
+[INFO] Source directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-security/target/generated-sources/annotations added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (minify-build-helper) @ molgenis-data-security ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ molgenis-data-security ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-security/src/main/resources
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-security/target/generated-resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ molgenis-data-security ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-generated-resources) @ molgenis-data-security ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-security/target/generated-resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ molgenis-data-security ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ molgenis-data-security ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ molgenis-data-security ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+17:40:33,010 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback-test.xml] at [file:/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-security/target/test-classes/logback-test.xml]
+17:40:33,010 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs multiple times on the classpath.
+17:40:33,010 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs at [file:/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-security/target/test-classes/logback-test.xml]
+17:40:33,010 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs at [file:/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/target/test-classes/logback-test.xml]
+17:40:33,114 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+17:40:33,115 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+17:40:33,130 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+17:40:33,140 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+17:40:33,220 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.molgenis] to INFO
+17:40:33,220 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to WARN
+17:40:33,220 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+17:40:33,221 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+17:40:33,223 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@3fd05b3e - Registering current configuration as safe fallback point
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+[MockitoHint] 8. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.countQueryUser(AttributeRepositorySecurityDecoratorTest.java:172)
+[MockitoHint] 9. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.countQueryUser(AttributeRepositorySecurityDecoratorTest.java:175)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+[MockitoHint] 8. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.countUser(AttributeRepositorySecurityDecoratorTest.java:127)
+[MockitoHint] 9. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.countUser(AttributeRepositorySecurityDecoratorTest.java:130)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+[MockitoHint] 8. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.delete(AttributeRepositorySecurityDecoratorTest.java:694)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+[MockitoHint] 8. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.findAllIdsFetchUser(AttributeRepositorySecurityDecoratorTest.java:645)
+[MockitoHint] 9. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.findAllIdsFetchUser(AttributeRepositorySecurityDecoratorTest.java:648)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+[MockitoHint] 8. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.findAllIdsUser(AttributeRepositorySecurityDecoratorTest.java:598)
+[MockitoHint] 9. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.findAllIdsUser(AttributeRepositorySecurityDecoratorTest.java:601)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+[MockitoHint] 8. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.findAllQueryUser(AttributeRepositorySecurityDecoratorTest.java:223)
+[MockitoHint] 9. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.findAllQueryUser(AttributeRepositorySecurityDecoratorTest.java:226)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+[MockitoHint] 8. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.findAllQueryUserOffsetLimit(AttributeRepositorySecurityDecoratorTest.java:250)
+[MockitoHint] 9. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.findAllQueryUserOffsetLimit(AttributeRepositorySecurityDecoratorTest.java:253)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+[MockitoHint] 8. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.findOneByIdFetchUserPermissionAllowed(AttributeRepositorySecurityDecoratorTest.java:539)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+[MockitoHint] 8. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.findOneByIdFetchUserPermissionDenied(AttributeRepositorySecurityDecoratorTest.java:556)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+[MockitoHint] 8. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.findOneByIdUserPermissionAllowed(AttributeRepositorySecurityDecoratorTest.java:466)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+[MockitoHint] 8. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.findOneByIdUserPermissionAllowedAttrInCompoundWithOneAttr(AttributeRepositorySecurityDecoratorTest.java:482)
+[MockitoHint] 9. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.findOneByIdUserPermissionAllowedAttrInCompoundWithOneAttr(AttributeRepositorySecurityDecoratorTest.java:485)
+[MockitoHint] 10. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.findOneByIdUserPermissionAllowedAttrInCompoundWithOneAttr(AttributeRepositorySecurityDecoratorTest.java:486)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+[MockitoHint] 8. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.findOneByIdUserPermissionDenied(AttributeRepositorySecurityDecoratorTest.java:501)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+[MockitoHint] 8. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.findOneQueryUserPermissionAllowed(AttributeRepositorySecurityDecoratorTest.java:412)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+[MockitoHint] 8. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.findOneQueryUserPermissionDenied(AttributeRepositorySecurityDecoratorTest.java:428)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:86)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 6. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+[MockitoHint] 7. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:92)
+[MockitoHint] 8. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.iteratorUser(AttributeRepositorySecurityDecoratorTest.java:302)
+[MockitoHint] 9. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.iteratorUser(AttributeRepositorySecurityDecoratorTest.java:305)
+
+[MockitoHint] AttributeRepositorySecurityDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:85)
+[MockitoHint] 2. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:87)
+[MockitoHint] 3. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:88)
+[MockitoHint] 4. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:90)
+[MockitoHint] 5. Unused -> at org.molgenis.data.security.meta.AttributeRepositorySecurityDecoratorTest.setUpBeforeMethod(AttributeRepositorySecurityDecoratorTest.java:91)
+
+[MockitoHint] SystemEntityTypeRegistryImplTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.SystemEntityTypeRegistryImplTest.testGetSystemAttributeCompound(SystemEntityTypeRegistryImplTest.java:176)
+
+[MockitoHint] SystemEntityTypeRegistryImplTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.SystemEntityTypeRegistryImplTest.testGetSystemAttributeCompoundNotExists(SystemEntityTypeRegistryImplTest.java:200)
+
+[MockitoHint] SystemEntityTypeRegistryImplTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.SystemEntityTypeRegistryImplTest.testGetSystemAttributePermittedNotExists(SystemEntityTypeRegistryImplTest.java:147)
+
+[MockitoHint] SystemEntityTypeRegistryImplTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.SystemEntityTypeRegistryImplTest.testHasSystemAttributeNotPermitted(SystemEntityTypeRegistryImplTest.java:244)
+
+[MockitoHint] SystemEntityTypeRegistryImplTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.SystemEntityTypeRegistryImplTest.testHasSystemAttributePermittedExists(SystemEntityTypeRegistryImplTest.java:215)
+
+[MockitoHint] SystemEntityTypeRegistryImplTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.SystemEntityTypeRegistryImplTest.testHasSystemAttributePermittedNotExists(SystemEntityTypeRegistryImplTest.java:229)
+
+Tests run: 207, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.066 sec - in TestSuite
+
+Results :
+
+Tests run: 207, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (post-unit-test) @ molgenis-data-security ---
+[INFO] Loading execution data file /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-security/target/jacoco.exec
+[INFO] Analyzed bundle 'data-security' with 40 classes
+[INFO] 
+[INFO] ------------------< org.molgenis:molgenis-data-file >-------------------
+[INFO] Building data-file 7.0.0-SNAPSHOT                                 [9/58]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ molgenis-data-file ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ molgenis-data-file ---
+[INFO] argLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-file/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (execution-annotations) @ molgenis-data-file ---
+[INFO] Source directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-file/target/generated-sources/annotations added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (minify-build-helper) @ molgenis-data-file ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ molgenis-data-file ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-file/src/main/resources
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-file/target/generated-resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ molgenis-data-file ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-generated-resources) @ molgenis-data-file ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-file/target/generated-resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ molgenis-data-file ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ molgenis-data-file ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ molgenis-data-file ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+17:40:40,687 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback-test.xml] at [file:/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-file/target/test-classes/logback-test.xml]
+17:40:40,688 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs multiple times on the classpath.
+17:40:40,688 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs at [file:/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-file/target/test-classes/logback-test.xml]
+17:40:40,688 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs at [file:/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/target/test-classes/logback-test.xml]
+17:40:40,766 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+17:40:40,767 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+17:40:40,778 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+17:40:40,786 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+17:40:40,843 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.molgenis] to INFO
+17:40:40,843 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to WARN
+17:40:40,843 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+17:40:40,844 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+17:40:40,845 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@69419d59 - Registering current configuration as safe fallback point
+
+[MockitoHint] FileMetaRepositoryDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.file.FileMetaRepositoryDecoratorTest.setUpBeforeMethod(FileMetaRepositoryDecoratorTest.java:40)
+[MockitoHint] 2. Unused -> at org.molgenis.data.file.FileMetaRepositoryDecoratorTest.setUpBeforeMethod(FileMetaRepositoryDecoratorTest.java:41)
+[MockitoHint] 3. Unused -> at org.molgenis.data.file.FileMetaRepositoryDecoratorTest.setUpBeforeMethod(FileMetaRepositoryDecoratorTest.java:42)
+
+[MockitoHint] FileMetaRepositoryDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.file.FileMetaRepositoryDecoratorTest.setUpBeforeMethod(FileMetaRepositoryDecoratorTest.java:40)
+[MockitoHint] 2. Unused -> at org.molgenis.data.file.FileMetaRepositoryDecoratorTest.setUpBeforeMethod(FileMetaRepositoryDecoratorTest.java:41)
+
+[MockitoHint] FileMetaRepositoryDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.file.FileMetaRepositoryDecoratorTest.setUpBeforeMethod(FileMetaRepositoryDecoratorTest.java:40)
+[MockitoHint] 2. Unused -> at org.molgenis.data.file.FileMetaRepositoryDecoratorTest.setUpBeforeMethod(FileMetaRepositoryDecoratorTest.java:41)
+
+[MockitoHint] FileMetaRepositoryDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.file.FileMetaRepositoryDecoratorTest.setUpBeforeMethod(FileMetaRepositoryDecoratorTest.java:40)
+[MockitoHint] 2. Unused -> at org.molgenis.data.file.FileMetaRepositoryDecoratorTest.setUpBeforeMethod(FileMetaRepositoryDecoratorTest.java:41)
+
+[MockitoHint] FileMetaRepositoryDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.file.FileMetaRepositoryDecoratorTest.setUpBeforeMethod(FileMetaRepositoryDecoratorTest.java:40)
+[MockitoHint] 2. Unused -> at org.molgenis.data.file.FileMetaRepositoryDecoratorTest.setUpBeforeMethod(FileMetaRepositoryDecoratorTest.java:41)
+
+[MockitoHint] FileMetaRepositoryDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.file.FileMetaRepositoryDecoratorTest.setUpBeforeMethod(FileMetaRepositoryDecoratorTest.java:42)
+[MockitoHint] 2. Unused -> at org.molgenis.data.file.FileMetaRepositoryDecoratorTest.getMockFileMeta(FileMetaRepositoryDecoratorTest.java:125)
+
+[MockitoHint] FileMetaRepositoryDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.file.FileMetaRepositoryDecoratorTest.setUpBeforeMethod(FileMetaRepositoryDecoratorTest.java:40)
+[MockitoHint] 2. Unused -> at org.molgenis.data.file.FileMetaRepositoryDecoratorTest.setUpBeforeMethod(FileMetaRepositoryDecoratorTest.java:41)
+
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.158 sec - in TestSuite
+
+Results :
+
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (post-unit-test) @ molgenis-data-file ---
+[INFO] Loading execution data file /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-file/target/jacoco.exec
+[INFO] Analyzed bundle 'data-file' with 13 classes
+[INFO] 
+[INFO] ------------------< org.molgenis:molgenis-data-i18n >-------------------
+[INFO] Building data-i18n 7.0.0-SNAPSHOT                                [10/58]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ molgenis-data-i18n ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ molgenis-data-i18n ---
+[INFO] argLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-i18n/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (execution-annotations) @ molgenis-data-i18n ---
+[INFO] Source directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-i18n/target/generated-sources/annotations added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (minify-build-helper) @ molgenis-data-i18n ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ molgenis-data-i18n ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-i18n/src/main/resources
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-i18n/target/generated-resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ molgenis-data-i18n ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-generated-resources) @ molgenis-data-i18n ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-i18n/target/generated-resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ molgenis-data-i18n ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ molgenis-data-i18n ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ molgenis-data-i18n ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+17:40:43,667 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback-test.xml] at [file:/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-i18n/target/test-classes/logback-test.xml]
+17:40:43,668 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs multiple times on the classpath.
+17:40:43,668 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs at [file:/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/target/test-classes/logback-test.xml]
+17:40:43,668 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs at [file:/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-i18n/target/test-classes/logback-test.xml]
+17:40:43,764 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+17:40:43,765 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+17:40:43,779 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+17:40:43,789 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+17:40:43,861 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.molgenis] to INFO
+17:40:43,861 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to WARN
+17:40:43,862 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+17:40:43,863 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+17:40:43,864 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@498b611e - Registering current configuration as safe fallback point
+
+17:40:44.562 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale de
+17:40:44.566 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale es
+17:40:44.567 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale it
+17:40:44.568 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale pt
+17:40:44.568 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale fr
+17:40:44.569 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale xx
+17:40:44.589 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale de
+17:40:44.589 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale es
+17:40:44.590 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale it
+17:40:44.590 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale pt
+17:40:44.590 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale fr
+17:40:44.590 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale xx
+17:40:44.591 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale de
+17:40:44.591 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale es
+17:40:44.591 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale it
+17:40:44.592 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale pt
+17:40:44.592 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale fr
+17:40:44.592 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale xx
+17:40:44.592 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale de
+17:40:44.592 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale es
+17:40:44.593 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale it
+17:40:44.593 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale pt
+17:40:44.593 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale fr
+17:40:44.593 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale xx
+17:40:44.593 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale de
+17:40:44.593 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale es
+17:40:44.593 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale it
+17:40:44.594 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale pt
+17:40:44.594 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale fr
+17:40:44.594 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale xx
+[MockitoHint] LanguageRepositoryDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.i18n.LanguageRepositoryDecoratorTest.setUpBeforeMethod(LanguageRepositoryDecoratorTest.java:37)
+
+[MockitoHint] LanguageRepositoryDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.i18n.LanguageRepositoryDecoratorTest.setUpBeforeMethod(LanguageRepositoryDecoratorTest.java:37)
+
+[MockitoHint] LanguageRepositoryDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.i18n.LanguageRepositoryDecoratorTest.setUpBeforeMethod(LanguageRepositoryDecoratorTest.java:37)
+
+[MockitoHint] LanguageRepositoryDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.i18n.LanguageRepositoryDecoratorTest.setUpBeforeMethod(LanguageRepositoryDecoratorTest.java:37)
+
+[MockitoHint] LanguageRepositoryDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.i18n.LanguageRepositoryDecoratorTest.setUpBeforeMethod(LanguageRepositoryDecoratorTest.java:37)
+[MockitoHint] 2. Unused -> at org.molgenis.data.i18n.LanguageRepositoryDecoratorTest.getMockLanguage(LanguageRepositoryDecoratorTest.java:98)
+
+[MockitoHint] LanguageRepositoryDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.i18n.LanguageRepositoryDecoratorTest.setUpBeforeMethod(LanguageRepositoryDecoratorTest.java:37)
+[MockitoHint] 2. Unused -> at org.molgenis.data.i18n.LanguageRepositoryDecoratorTest.getMockLanguage(LanguageRepositoryDecoratorTest.java:98)
+
+[MockitoHint] LanguageRepositoryDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.i18n.LanguageRepositoryDecoratorTest.setUpBeforeMethod(LanguageRepositoryDecoratorTest.java:37)
+[MockitoHint] 2. Unused -> at org.molgenis.data.i18n.LanguageRepositoryDecoratorTest.getMockLanguage(LanguageRepositoryDecoratorTest.java:98)
+
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.704 sec - in TestSuite
+
+Results :
+
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (post-unit-test) @ molgenis-data-i18n ---
+[INFO] Loading execution data file /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data-i18n/target/jacoco.exec
+[INFO] Analyzed bundle 'data-i18n' with 13 classes
+[INFO] 
+[INFO] -----------------< org.molgenis:molgenis-scripts-core >-----------------
+[INFO] Building scripts-core 7.0.0-SNAPSHOT                             [11/58]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ molgenis-scripts-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ molgenis-scripts-core ---
+[INFO] argLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-scripts-core/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (execution-annotations) @ molgenis-scripts-core ---
+[INFO] Source directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-scripts-core/target/generated-sources/annotations added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (minify-build-helper) @ molgenis-scripts-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ molgenis-scripts-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-scripts-core/src/main/resources
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-scripts-core/target/generated-resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ molgenis-scripts-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-generated-resources) @ molgenis-scripts-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-scripts-core/target/generated-resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ molgenis-scripts-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ molgenis-scripts-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ molgenis-scripts-core ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+17:40:47,809 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback-test.xml] at [file:/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-scripts-core/target/test-classes/logback-test.xml]
+17:40:47,810 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs multiple times on the classpath.
+17:40:47,810 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs at [file:/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-data/target/test-classes/logback-test.xml]
+17:40:47,810 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs at [file:/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-scripts-core/target/test-classes/logback-test.xml]
+17:40:47,910 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+17:40:47,911 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+17:40:47,926 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+17:40:47,937 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+17:40:47,987 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.molgenis] to INFO
+17:40:47,987 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to WARN
+17:40:47,987 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+17:40:47,988 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+17:40:47,990 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@6c4eccd2 - Registering current configuration as safe fallback point
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.238 sec - in TestSuite
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (post-unit-test) @ molgenis-scripts-core ---
+[INFO] Loading execution data file /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-scripts-core/target/jacoco.exec
+[INFO] Analyzed bundle 'scripts-core' with 17 classes
+[INFO] 
+[INFO] ----------------------< org.molgenis:molgenis-js >----------------------
+[INFO] Building js 7.0.0-SNAPSHOT                                       [12/58]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ molgenis-js ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ molgenis-js ---
+[INFO] argLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-js/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (execution-annotations) @ molgenis-js ---
+[INFO] Source directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-js/target/generated-sources/annotations added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (minify-build-helper) @ molgenis-js ---
+[INFO] 
+[INFO] --- minify-maven-plugin:1.7.4:minify (default-minify) @ molgenis-js ---
+[INFO] Starting CSS task:
+[ERROR] No valid CSS source files found to process.
+[INFO] Starting JavaScript task:
+[INFO] Skipping the merge step...
+[INFO] Creating the minified file [es6-shims.min.js].
+[INFO] Uncompressed size: 358 bytes.
+[INFO] Compressed size: 177 bytes minified (146 bytes gzipped).
+[INFO] Creating the minified file [script-evaluator.min.js].
+[INFO] Uncompressed size: 12817 bytes.
+[INFO] Compressed size: 3872 bytes minified (1104 bytes gzipped).
+[INFO] 
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ molgenis-js ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 3 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ molgenis-js ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-generated-resources) @ molgenis-js ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ molgenis-js ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ molgenis-js ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ molgenis-js ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 37, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.566 sec <<< FAILURE! - in TestSuite
+age(org.molgenis.js.JsMagmaScriptEvaluatorTest)  Time elapsed: 1.044 sec  <<< FAILURE!
+java.lang.AssertionError: expected [0.0] but found [-1.0]
+	at org.molgenis.js.JsMagmaScriptEvaluatorTest.age(JsMagmaScriptEvaluatorTest.java:509)
+
+
+Results :
+
+Failed tests: 
+  JsMagmaScriptEvaluatorTest.age:509 expected [0.0] but found [-1.0]
+
+Tests run: 37, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for MOLGENIS 7.0.0-SNAPSHOT:
+[INFO] 
+[INFO] MOLGENIS ........................................... SUCCESS [  1.216 s]
+[INFO] test ............................................... SUCCESS [  0.298 s]
+[INFO] util ............................................... SUCCESS [  3.258 s]
+[INFO] i18n ............................................... SUCCESS [  2.755 s]
+[INFO] data ............................................... SUCCESS [ 12.379 s]
+[INFO] security-core ...................................... SUCCESS [  3.275 s]
+[INFO] settings ........................................... SUCCESS [  2.393 s]
+[INFO] data-security ...................................... SUCCESS [  6.456 s]
+[INFO] data-file .......................................... SUCCESS [  3.224 s]
+[INFO] data-i18n .......................................... SUCCESS [  3.827 s]
+[INFO] scripts-core ....................................... SUCCESS [  3.231 s]
+[INFO] js ................................................. FAILURE [  8.922 s]
+[INFO] data-validation .................................... SKIPPED
+[INFO] data-import ........................................ SKIPPED
+[INFO] jobs ............................................... SKIPPED
+[INFO] data-excel ......................................... SKIPPED
+[INFO] data-csv ........................................... SKIPPED
+[INFO] amazon-bucket ...................................... SKIPPED
+[INFO] core ............................................... SKIPPED
+[INFO] data-cache ......................................... SKIPPED
+[INFO] data-index ......................................... SKIPPED
+[INFO] data-platform ...................................... SKIPPED
+[INFO] data-plugin ........................................ SKIPPED
+[INFO] web ................................................ SKIPPED
+[INFO] security ........................................... SKIPPED
+[INFO] core-ui ............................................ SKIPPED
+[INFO] apps ............................................... SKIPPED
+[INFO] data-vcf ........................................... SKIPPED
+[INFO] data-rest .......................................... SKIPPED
+[INFO] genomebrowser ...................................... SKIPPED
+[INFO] beacon ............................................. SKIPPED
+[INFO] data-migrate ....................................... SKIPPED
+[INFO] data-annotators .................................... SKIPPED
+[INFO] data-postgresql .................................... SKIPPED
+[INFO] bootstrap .......................................... SKIPPED
+[INFO] dataexplorer ....................................... SKIPPED
+[INFO] python ............................................. SKIPPED
+[INFO] r .................................................. SKIPPED
+[INFO] searchall .......................................... SKIPPED
+[INFO] data-elasticsearch ................................. SKIPPED
+[INFO] ontology-core ...................................... SKIPPED
+[INFO] semantic-search .................................... SKIPPED
+[INFO] semantic-mapper .................................... SKIPPED
+[INFO] ontology ........................................... SKIPPED
+[INFO] questionnaires ..................................... SKIPPED
+[INFO] scripts ............................................ SKIPPED
+[INFO] file-ingester ...................................... SKIPPED
+[INFO] gavin .............................................. SKIPPED
+[INFO] fair ............................................... SKIPPED
+[INFO] settings-ui ........................................ SKIPPED
+[INFO] swagger ............................................ SKIPPED
+[INFO] navigator .......................................... SKIPPED
+[INFO] metadata-manager ................................... SKIPPED
+[INFO] one-click-importer ................................. SKIPPED
+[INFO] app ................................................ SKIPPED
+[INFO] api-tests .......................................... SKIPPED
+[INFO] data-rest-client ................................... SKIPPED
+[INFO] platform-integration-tests ......................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  51.713 s
+[INFO] Finished at: 2022-07-25T17:40:57-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project molgenis-js: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-171/molgenis-js/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :molgenis-js
+Running the tests related to the bug Bears-171...
+The tests related to the bug Bears-171 were executed.

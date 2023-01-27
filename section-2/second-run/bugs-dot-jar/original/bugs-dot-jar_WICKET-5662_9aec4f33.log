@@ -1,0 +1,99 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Wicket Spring Integration 7.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ wicket-spring ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wicket-spring ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-5662_9aec4f332aae9ec380d09dab1c68b0cd15927644/wicket-spring/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ wicket-spring ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] >>> clirr-maven-plugin:2.6.1:check (clirr-check) > compile @ wicket-spring >>>
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ wicket-spring ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wicket-spring ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-5662_9aec4f332aae9ec380d09dab1c68b0cd15927644/wicket-spring/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ wicket-spring ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< clirr-maven-plugin:2.6.1:check (clirr-check) < compile @ wicket-spring <<<
+[INFO] 
+[INFO] --- clirr-maven-plugin:2.6.1:check (clirr-check) @ wicket-spring ---
+[INFO] Skipping execution
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:manifest (bundle-manifest) @ wicket-spring ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ wicket-spring ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ wicket-spring ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ wicket-spring ---
+[INFO] Surefire report directory: /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-5662_9aec4f332aae9ec380d09dab1c68b0cd15927644/wicket-spring/target/surefire-reports
+[INFO] Using configured provider org.apache.maven.surefire.junitcore.JUnitCoreProvider
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.wicket.spring.SpringWebApplicationFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.075 sec - in org.apache.wicket.spring.SpringWebApplicationFactoryTest
+Running org.apache.wicket.spring.SpringBeanLocatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in org.apache.wicket.spring.SpringBeanLocatorTest
+Running org.apache.wicket.spring.injection.annot.AnnotProxyFieldValueFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.176 sec - in org.apache.wicket.spring.injection.annot.AnnotProxyFieldValueFactoryTest
+Running org.apache.wicket.spring.injection.annot.SpringBeanTest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.535 sec <<< FAILURE! - in org.apache.wicket.spring.injection.annot.SpringBeanTest
+beanNotExists(org.apache.wicket.spring.injection.annot.SpringBeanTest)  Time elapsed: 0.058 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<org.apache.wicket.proxy.LazyInitProxyFactory$CGLibInterceptor@524e19c1>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:664)
+	at org.junit.Assert.assertNull(Assert.java:646)
+	at org.junit.Assert.assertNull(Assert.java:656)
+	at org.apache.wicket.spring.injection.annot.SpringBeanTest.beanNotExists(SpringBeanTest.java:103)
+
+Running org.apache.wicket.spring.injection.annot.JavaxInjectAnnotProxyFieldValueFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.wicket.spring.injection.annot.JavaxInjectAnnotProxyFieldValueFactoryTest
+Running org.apache.wicket.util.license.ApacheLicenceHeaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.154 sec - in org.apache.wicket.util.license.ApacheLicenceHeaderTest
+
+Results :
+
+Failed tests: 
+  SpringBeanTest.beanNotExists:103->Assert.assertNull:656->Assert.assertNull:646->Assert.failNotNull:664->Assert.fail:88 expected null, but was:<org.apache.wicket.proxy.LazyInitProxyFactory$CGLibInterceptor@524e19c1>
+
+Tests run: 24, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.334 s
+[INFO] Finished at: 2016-07-30T12:16:06-07:00
+[INFO] Final Memory: 25M/606M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project wicket-spring: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-5662_9aec4f332aae9ec380d09dab1c68b0cd15927644/wicket-spring/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

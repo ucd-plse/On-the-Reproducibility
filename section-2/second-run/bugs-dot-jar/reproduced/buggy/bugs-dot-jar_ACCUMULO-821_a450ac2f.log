@@ -1,0 +1,870 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] The project org.apache.accumulo:accumulo:pom:1.5.0-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Build Order:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] accumulo                                                           [pom]
+[[1;34mINFO[m] cloudtrace                                                         [jar]
+[[1;34mINFO[m] accumulo-start                                                     [jar]
+[[1;34mINFO[m] accumulo-fate                                                      [jar]
+[[1;34mINFO[m] accumulo-core                                                      [jar]
+[[1;34mINFO[m] accumulo-server                                                    [jar]
+[[1;34mINFO[m] accumulo-examples                                                  [pom]
+[[1;34mINFO[m] examples-simple                                                    [jar]
+[[1;34mINFO[m] accumulo-assemble                                                  [pom]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------< [0;36morg.apache.accumulo:accumulo[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding accumulo 1.5.0-SNAPSHOT                                   [1/9][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/1.0.1/maven-enforcer-plugin-1.0.1.pom
+Progress (1): 2.7/6.5 kBProgress (1): 5.5/6.5 kBProgress (1): 6.5 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/1.0.1/maven-enforcer-plugin-1.0.1.pom (6.5 kB at 16 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer/1.0.1/enforcer-1.0.1.pom
+Progress (1): 2.7/11 kBProgress (1): 5.5/11 kBProgress (1): 8.2/11 kBProgress (1): 11/11 kB Progress (1): 11 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer/1.0.1/enforcer-1.0.1.pom (11 kB at 420 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/1.0.1/maven-enforcer-plugin-1.0.1.jar
+Progress (1): 2.7/22 kBProgress (1): 5.5/22 kBProgress (1): 8.2/22 kBProgress (1): 11/22 kB Progress (1): 14/22 kBProgress (1): 16/22 kBProgress (1): 19/22 kBProgress (1): 21/22 kBProgress (1): 22 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/1.0.1/maven-enforcer-plugin-1.0.1.jar (22 kB at 990 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/buildnumber-maven-plugin/1.1/buildnumber-maven-plugin-1.1.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/buildnumber-maven-plugin/1.1/buildnumber-maven-plugin-1.1.pom (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/buildnumber-maven-plugin/1.1/buildnumber-maven-plugin-1.1.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/buildnumber-maven-plugin/1.1/buildnumber-maven-plugin-1.1.jar (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.3/maven-dependency-plugin-2.3.pom
+Progress (1): 2.7/11 kBProgress (1): 5.5/11 kBProgress (1): 8.2/11 kBProgress (1): 11 kB                       Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.3/maven-dependency-plugin-2.3.pom (11 kB at 131 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.3/maven-dependency-plugin-2.3.jar
+Progress (1): 4.1/132 kBProgress (1): 8.2/132 kBProgress (1): 12/132 kB Progress (1): 16/132 kBProgress (1): 20/132 kBProgress (1): 24/132 kBProgress (1): 28/132 kBProgress (1): 32/132 kBProgress (1): 36/132 kBProgress (1): 40/132 kBProgress (1): 45/132 kBProgress (1): 49/132 kBProgress (1): 53/132 kBProgress (1): 57/132 kBProgress (1): 61/132 kBProgress (1): 65/132 kBProgress (1): 69/132 kBProgress (1): 73/132 kBProgress (1): 77/132 kBProgress (1): 81/132 kBProgress (1): 85/132 kBProgress (1): 90/132 kBProgress (1): 94/132 kBProgress (1): 98/132 kBProgress (1): 102/132 kBProgress (1): 106/132 kBProgress (1): 110/132 kBProgress (1): 114/132 kBProgress (1): 118/132 kBProgress (1): 122/132 kBProgress (1): 126/132 kBProgress (1): 131/132 kBProgress (1): 132 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.3/maven-dependency-plugin-2.3.jar (132 kB at 3.3 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.4/junit-4.4.jar
+Progress (1): 4.1/161 kBProgress (1): 8.2/161 kBProgress (1): 12/161 kB Progress (1): 16/161 kBProgress (1): 20/161 kBProgress (1): 24/161 kBProgress (1): 28/161 kBProgress (1): 32/161 kBProgress (1): 36/161 kBProgress (1): 40/161 kBProgress (1): 45/161 kBProgress (1): 49/161 kBProgress (1): 53/161 kBProgress (1): 57/161 kBProgress (1): 61/161 kBProgress (1): 65/161 kBProgress (1): 69/161 kBProgress (1): 73/161 kBProgress (1): 77/161 kBProgress (1): 81/161 kBProgress (1): 85/161 kBProgress (1): 90/161 kBProgress (1): 94/161 kBProgress (1): 98/161 kBProgress (1): 102/161 kBProgress (1): 106/161 kBProgress (1): 110/161 kBProgress (1): 114/161 kBProgress (1): 118/161 kBProgress (1): 122/161 kBProgress (1): 126/161 kBProgress (1): 131/161 kBProgress (1): 135/161 kBProgress (1): 139/161 kBProgress (1): 143/161 kBProgress (1): 147/161 kBProgress (1): 151/161 kBProgress (1): 155/161 kBProgress (1): 159/161 kBProgress (1): 161 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.4/junit-4.4.jar (161 kB at 5.0 MB/s)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.1:create[m [1m(default)[m @ [36maccumulo[0;1m ---[m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-api/1.7/maven-scm-api-1.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-api/1.7/maven-scm-api-1.7.pom (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm/1.7/maven-scm-1.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm/1.7/maven-scm-1.7.pom (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-manager-plexus/1.7/maven-scm-manager-plexus-1.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-manager-plexus/1.7/maven-scm-manager-plexus-1.7.pom (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-managers/1.7/maven-scm-managers-1.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-managers/1.7/maven-scm-managers-1.7.pom (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-bazaar/1.7/maven-scm-provider-bazaar-1.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-bazaar/1.7/maven-scm-provider-bazaar-1.7.pom (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-providers/1.7/maven-scm-providers-1.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-providers/1.7/maven-scm-providers-1.7.pom (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-svnexe/1.7/maven-scm-provider-svnexe-1.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-svnexe/1.7/maven-scm-provider-svnexe-1.7.pom (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-providers-svn/1.7/maven-scm-providers-svn-1.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-providers-svn/1.7/maven-scm-providers-svn-1.7.pom (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-svn-commons/1.7/maven-scm-provider-svn-commons-1.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-svn-commons/1.7/maven-scm-provider-svn-commons-1.7.pom (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-gitexe/1.7/maven-scm-provider-gitexe-1.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-gitexe/1.7/maven-scm-provider-gitexe-1.7.pom (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-providers-git/1.7/maven-scm-providers-git-1.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-providers-git/1.7/maven-scm-providers-git-1.7.pom (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-git-commons/1.7/maven-scm-provider-git-commons-1.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-git-commons/1.7/maven-scm-provider-git-commons-1.7.pom (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-cvsexe/1.7/maven-scm-provider-cvsexe-1.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-cvsexe/1.7/maven-scm-provider-cvsexe-1.7.pom (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-providers-cvs/1.7/maven-scm-providers-cvs-1.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-providers-cvs/1.7/maven-scm-providers-cvs-1.7.pom (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-cvs-commons/1.7/maven-scm-provider-cvs-commons-1.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-cvs-commons/1.7/maven-scm-provider-cvs-commons-1.7.pom (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-starteam/1.7/maven-scm-provider-starteam-1.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-starteam/1.7/maven-scm-provider-starteam-1.7.pom (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-clearcase/1.7/maven-scm-provider-clearcase-1.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-clearcase/1.7/maven-scm-provider-clearcase-1.7.pom (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-perforce/1.7/maven-scm-provider-perforce-1.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-perforce/1.7/maven-scm-provider-perforce-1.7.pom (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-hg/1.7/maven-scm-provider-hg-1.7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-hg/1.7/maven-scm-provider-hg-1.7.pom (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-api/1.7/maven-scm-api-1.7.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-svnexe/1.7/maven-scm-provider-svnexe-1.7.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-bazaar/1.7/maven-scm-provider-bazaar-1.7.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-manager-plexus/1.7/maven-scm-manager-plexus-1.7.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-gitexe/1.7/maven-scm-provider-gitexe-1.7.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-api/1.7/maven-scm-api-1.7.jar (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-git-commons/1.7/maven-scm-provider-git-commons-1.7.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-git-commons/1.7/maven-scm-provider-git-commons-1.7.jar (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-svn-commons/1.7/maven-scm-provider-svn-commons-1.7.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-manager-plexus/1.7/maven-scm-manager-plexus-1.7.jar (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-cvsexe/1.7/maven-scm-provider-cvsexe-1.7.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-gitexe/1.7/maven-scm-provider-gitexe-1.7.jar (0 B at 0 B/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-bazaar/1.7/maven-scm-provider-bazaar-1.7.jar (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-cvs-commons/1.7/maven-scm-provider-cvs-commons-1.7.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-svnexe/1.7/maven-scm-provider-svnexe-1.7.jar (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-starteam/1.7/maven-scm-provider-starteam-1.7.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-clearcase/1.7/maven-scm-provider-clearcase-1.7.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-cvsexe/1.7/maven-scm-provider-cvsexe-1.7.jar (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-perforce/1.7/maven-scm-provider-perforce-1.7.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-svn-commons/1.7/maven-scm-provider-svn-commons-1.7.jar (0 B at 0 B/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-cvs-commons/1.7/maven-scm-provider-cvs-commons-1.7.jar (0 B at 0 B/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-starteam/1.7/maven-scm-provider-starteam-1.7.jar (0 B at 0 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-hg/1.7/maven-scm-provider-hg-1.7.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-clearcase/1.7/maven-scm-provider-clearcase-1.7.jar (0 B at 0 B/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-hg/1.7/maven-scm-provider-hg-1.7.jar (0 B at 0 B/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-perforce/1.7/maven-scm-provider-perforce-1.7.jar (0 B at 0 B/s)
+[[1;34mINFO[m] Checking for local modifications: skipped.
+[[1;34mINFO[m] Updating project files from SCM: skipped.
+[[1;34mINFO[m] Executing: /bin/sh -c cd /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo && svn --non-interactive info
+[[1;34mINFO[m] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo
+[[1;34mINFO[m] Storing buildNumber: null at timestamp: 1659176953873
+[[1;34mINFO[m] Executing: /bin/sh -c cd /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo && svn --non-interactive info
+[[1;34mINFO[m] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo
+[[1;34mINFO[m] Storing buildScmBranch: UNKNOWN_BRANCH
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo[0;1m ---[m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-api/1.0.1/enforcer-api-1.0.1.pom
+Progress (1): 2.7/3.2 kBProgress (1): 3.2 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-api/1.0.1/enforcer-api-1.0.1.pom (3.2 kB at 228 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-rules/1.0.1/enforcer-rules-1.0.1.pom
+Progress (1): 2.7/4.0 kBProgress (1): 4.0 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-rules/1.0.1/enforcer-rules-1.0.1.pom (4.0 kB at 267 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-api/1.0.1/enforcer-api-1.0.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-rules/1.0.1/enforcer-rules-1.0.1.jar
+Progress (1): 2.7/61 kBProgress (2): 2.7/61 kB | 2.7/9.8 kBProgress (2): 5.5/61 kB | 2.7/9.8 kBProgress (2): 5.5/61 kB | 5.5/9.8 kBProgress (2): 8.2/61 kB | 5.5/9.8 kBProgress (2): 8.2/61 kB | 8.2/9.8 kBProgress (2): 11/61 kB | 8.2/9.8 kB Progress (2): 11/61 kB | 9.8 kB    Progress (2): 14/61 kB | 9.8 kBProgress (2): 16/61 kB | 9.8 kBProgress (2): 19/61 kB | 9.8 kBProgress (2): 21/61 kB | 9.8 kBProgress (2): 24/61 kB | 9.8 kBProgress (2): 27/61 kB | 9.8 kBProgress (2): 30/61 kB | 9.8 kBProgress (2): 32/61 kB | 9.8 kBProgress (2): 35/61 kB | 9.8 kBProgress (2): 38/61 kB | 9.8 kBProgress (2): 40/61 kB | 9.8 kBProgress (2): 43/61 kB | 9.8 kBProgress (2): 46/61 kB | 9.8 kBProgress (2): 49/61 kB | 9.8 kBProgress (2): 51/61 kB | 9.8 kBProgress (2): 54/61 kB | 9.8 kBProgress (2): 57/61 kB | 9.8 kBProgress (2): 60/61 kB | 9.8 kB                               Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-api/1.0.1/enforcer-api-1.0.1.jar (9.8 kB at 408 kB/s)
+Progress (1): 61 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-rules/1.0.1/enforcer-rules-1.0.1.jar (61 kB at 1.9 MB/s)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.3:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo[0;1m ---[m
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0/plexus-io-2.0.jar
+Progress (1): 4.1/58 kBProgress (1): 8.2/58 kBProgress (1): 12/58 kB Progress (1): 16/58 kBProgress (1): 20/58 kBProgress (1): 24/58 kBProgress (1): 28/58 kBProgress (1): 32/58 kBProgress (1): 36/58 kBProgress (1): 40/58 kBProgress (1): 45/58 kBProgress (1): 49/58 kBProgress (1): 53/58 kBProgress (1): 57/58 kBProgress (1): 58 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0/plexus-io-2.0.jar (58 kB at 1.6 MB/s)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo/1.5.0-SNAPSHOT/accumulo-1.5.0-SNAPSHOT.pom
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/target/accumulo-1.5.0-SNAPSHOT-site.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo/1.5.0-SNAPSHOT/accumulo-1.5.0-SNAPSHOT-site.xml
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.accumulo:cloudtrace[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding cloudtrace 1.5.0-SNAPSHOT                                 [2/9][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.4.3/slf4j-api-1.4.3.pom
+Progress (1): 2.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.4.3/slf4j-api-1.4.3.pom (2.7 kB at 195 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.4.3/slf4j-parent-1.4.3.pom
+Progress (1): 4.1/7.3 kBProgress (1): 7.3 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.4.3/slf4j-parent-1.4.3.pom (7.3 kB at 520 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/hadoop/zookeeper/3.3.1/zookeeper-3.3.1.pom
+Progress (1): 2.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/hadoop/zookeeper/3.3.1/zookeeper-3.3.1.pom (2.1 kB at 15 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.4.3/slf4j-log4j12-1.4.3.pom
+Progress (1): 1.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.4.3/slf4j-log4j12-1.4.3.pom (1.7 kB at 105 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/hadoop/zookeeper/3.3.1/zookeeper-3.3.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.4.3/slf4j-log4j12-1.4.3.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.4.3/slf4j-api-1.4.3.jar
+Progress (1): 2.7/15 kBProgress (1): 5.5/15 kBProgress (1): 8.2/15 kBProgress (1): 11/15 kB Progress (1): 14/15 kBProgress (1): 15 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.4.3/slf4j-api-1.4.3.jar (15 kB at 614 kB/s)
+Progress (1): 2.7/8.6 kBProgress (1): 5.5/8.6 kBProgress (1): 8.2/8.6 kBProgress (1): 8.6 kB    Progress (2): 8.6 kB | 4.1/596 kBProgress (2): 8.6 kB | 8.2/596 kBProgress (2): 8.6 kB | 12/596 kB Progress (2): 8.6 kB | 16/596 kBProgress (2): 8.6 kB | 20/596 kBProgress (2): 8.6 kB | 24/596 kBProgress (2): 8.6 kB | 28/596 kBProgress (2): 8.6 kB | 32/596 kBProgress (2): 8.6 kB | 36/596 kBProgress (2): 8.6 kB | 40/596 kBProgress (2): 8.6 kB | 45/596 kBProgress (2): 8.6 kB | 49/596 kBProgress (2): 8.6 kB | 53/596 kBProgress (2): 8.6 kB | 57/596 kBProgress (2): 8.6 kB | 61/596 kBProgress (2): 8.6 kB | 65/596 kBProgress (2): 8.6 kB | 69/596 kBProgress (2): 8.6 kB | 73/596 kBProgress (2): 8.6 kB | 77/596 kBProgress (2): 8.6 kB | 81/596 kBProgress (2): 8.6 kB | 85/596 kBProgress (2): 8.6 kB | 90/596 kBProgress (2): 8.6 kB | 94/596 kBProgress (2): 8.6 kB | 98/596 kBProgress (2): 8.6 kB | 102/596 kBProgress (2): 8.6 kB | 106/596 kBProgress (2): 8.6 kB | 110/596 kBProgress (2): 8.6 kB | 114/596 kBProgress (2): 8.6 kB | 118/596 kBProgress (2): 8.6 kB | 122/596 kBProgress (2): 8.6 kB | 126/596 kBProgress (2): 8.6 kB | 131/596 kBProgress (2): 8.6 kB | 135/596 kBProgress (2): 8.6 kB | 139/596 kBProgress (2): 8.6 kB | 143/596 kBProgress (2): 8.6 kB | 147/596 kBProgress (2): 8.6 kB | 151/596 kBProgress (2): 8.6 kB | 155/596 kBProgress (2): 8.6 kB | 159/596 kBProgress (2): 8.6 kB | 163/596 kBProgress (2): 8.6 kB | 167/596 kBProgress (2): 8.6 kB | 171/596 kBProgress (2): 8.6 kB | 176/596 kBProgress (2): 8.6 kB | 180/596 kBProgress (2): 8.6 kB | 184/596 kBProgress (2): 8.6 kB | 188/596 kBProgress (2): 8.6 kB | 192/596 kBProgress (2): 8.6 kB | 196/596 kBProgress (2): 8.6 kB | 200/596 kBProgress (2): 8.6 kB | 204/596 kBProgress (2): 8.6 kB | 208/596 kBProgress (2): 8.6 kB | 212/596 kBProgress (2): 8.6 kB | 217/596 kBProgress (2): 8.6 kB | 221/596 kBProgress (2): 8.6 kB | 225/596 kBProgress (2): 8.6 kB | 229/596 kBProgress (2): 8.6 kB | 233/596 kBProgress (2): 8.6 kB | 237/596 kBProgress (2): 8.6 kB | 241/596 kBProgress (2): 8.6 kB | 245/596 kBProgress (2): 8.6 kB | 249/596 kBProgress (2): 8.6 kB | 253/596 kBProgress (2): 8.6 kB | 258/596 kBProgress (2): 8.6 kB | 262/596 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.4.3/slf4j-log4j12-1.4.3.jar (8.6 kB at 88 kB/s)
+Progress (1): 266/596 kBProgress (1): 270/596 kBProgress (1): 274/596 kBProgress (1): 278/596 kBProgress (1): 282/596 kBProgress (1): 286/596 kBProgress (1): 290/596 kBProgress (1): 294/596 kBProgress (1): 298/596 kBProgress (1): 303/596 kBProgress (1): 307/596 kBProgress (1): 311/596 kBProgress (1): 315/596 kBProgress (1): 319/596 kBProgress (1): 323/596 kBProgress (1): 327/596 kBProgress (1): 331/596 kBProgress (1): 335/596 kBProgress (1): 339/596 kBProgress (1): 343/596 kBProgress (1): 348/596 kBProgress (1): 352/596 kBProgress (1): 356/596 kBProgress (1): 360/596 kBProgress (1): 364/596 kBProgress (1): 368/596 kBProgress (1): 372/596 kBProgress (1): 376/596 kBProgress (1): 380/596 kBProgress (1): 384/596 kBProgress (1): 389/596 kBProgress (1): 393/596 kBProgress (1): 397/596 kBProgress (1): 401/596 kBProgress (1): 405/596 kBProgress (1): 409/596 kBProgress (1): 413/596 kBProgress (1): 417/596 kBProgress (1): 421/596 kBProgress (1): 425/596 kBProgress (1): 429/596 kBProgress (1): 434/596 kBProgress (1): 438/596 kBProgress (1): 442/596 kBProgress (1): 446/596 kBProgress (1): 450/596 kBProgress (1): 454/596 kBProgress (1): 458/596 kBProgress (1): 462/596 kBProgress (1): 466/596 kBProgress (1): 470/596 kBProgress (1): 475/596 kBProgress (1): 479/596 kBProgress (1): 483/596 kBProgress (1): 487/596 kBProgress (1): 491/596 kBProgress (1): 495/596 kBProgress (1): 499/596 kBProgress (1): 503/596 kBProgress (1): 507/596 kBProgress (1): 511/596 kBProgress (1): 515/596 kBProgress (1): 520/596 kBProgress (1): 524/596 kBProgress (1): 528/596 kBProgress (1): 532/596 kBProgress (1): 536/596 kBProgress (1): 540/596 kBProgress (1): 544/596 kBProgress (1): 548/596 kBProgress (1): 552/596 kBProgress (1): 556/596 kBProgress (1): 561/596 kBProgress (1): 565/596 kBProgress (1): 569/596 kBProgress (1): 573/596 kBProgress (1): 577/596 kBProgress (1): 581/596 kBProgress (1): 585/596 kBProgress (1): 589/596 kBProgress (1): 593/596 kBProgress (1): 596 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/hadoop/zookeeper/3.3.1/zookeeper-3.3.1.jar (596 kB at 4.6 MB/s)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.1:create[m [1m(default)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Checking for local modifications: skipped.
+[[1;34mINFO[m] Updating project files from SCM: skipped.
+[[1;34mINFO[m] Executing: /bin/sh -c cd /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/trace && svn --non-interactive info
+[[1;34mINFO[m] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/trace
+[[1;34mINFO[m] Storing buildNumber: null at timestamp: 1659176955669
+[[1;34mINFO[m] Executing: /bin/sh -c cd /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/trace && svn --non-interactive info
+[[1;34mINFO[m] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/trace
+[[1;34mINFO[m] Storing buildScmBranch: UNKNOWN_BRANCH
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36mcloudtrace[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/trace/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.3:copy-dependencies[m [1m(copy-dependencies)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Copying log4j-1.2.16.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/log4j-1.2.16.jar
+[[1;34mINFO[m] Copying libthrift-0.9.0.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/libthrift-0.9.0.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Compiling 22 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/trace/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36mcloudtrace[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/trace/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Compiling 3 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/trace/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12:test[m [1m(default-test)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.3.1:jar[m [1m(default-jar)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/cloudtrace-1.5.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/cloudtrace-1.5.0-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/cloudtrace/1.5.0-SNAPSHOT/cloudtrace-1.5.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/trace/pom.xml to /home/user/.m2/repository/org/apache/accumulo/cloudtrace/1.5.0-SNAPSHOT/cloudtrace-1.5.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36morg.apache.accumulo:accumulo-start[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding accumulo-start 1.5.0-SNAPSHOT                             [3/9][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-jci-fam/1.0/commons-jci-fam-1.0.pom
+Progress (1): 2.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-jci-fam/1.0/commons-jci-fam-1.0.pom (2.3 kB at 17 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-jci/1.0/commons-jci-1.0.pom
+Progress (1): 4.1/12 kBProgress (1): 8.2/12 kBProgress (1): 12 kB                       Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-jci/1.0/commons-jci-1.0.pom (12 kB at 158 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/2/commons-parent-2.pom
+Progress (1): 4.1/13 kBProgress (1): 8.2/13 kBProgress (1): 12/13 kB Progress (1): 13 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/2/commons-parent-2.pom (13 kB at 64 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-jci-fam/1.0/commons-jci-fam-1.0.jar
+Progress (1): 4.1/20 kBProgress (1): 8.2/20 kBProgress (1): 12/20 kB Progress (1): 16/20 kBProgress (1): 20/20 kBProgress (1): 20 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-jci-fam/1.0/commons-jci-fam-1.0.jar (20 kB at 1.4 MB/s)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.1:create[m [1m(default)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] Checking for local modifications: skipped.
+[[1;34mINFO[m] Updating project files from SCM: skipped.
+[[1;34mINFO[m] Executing: /bin/sh -c cd /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start && svn --non-interactive info
+[[1;34mINFO[m] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start
+[[1;34mINFO[m] Storing buildNumber: null at timestamp: 1659176958056
+[[1;34mINFO[m] Executing: /bin/sh -c cd /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start && svn --non-interactive info
+[[1;34mINFO[m] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start
+[[1;34mINFO[m] Storing buildScmBranch: UNKNOWN_BRANCH
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36maccumulo-start[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.3:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] Copying commons-io-1.4.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-io-1.4.jar
+[[1;34mINFO[m] Copying commons-jci-fam-1.0.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-jci-fam-1.0.jar
+[[1;34mINFO[m] Copying commons-logging-1.0.4.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-logging-1.0.4.jar
+[[1;34mINFO[m] log4j-1.2.16.jar already exists in destination.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] Compiling 5 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36maccumulo-start[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] Compiling 2 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12:test[m [1m(default-test)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.3.1:jar[m [1m(default-jar)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-start-1.5.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-start-1.5.0-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-start/1.5.0-SNAPSHOT/accumulo-start-1.5.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/start/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-start/1.5.0-SNAPSHOT/accumulo-start-1.5.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36morg.apache.accumulo:accumulo-fate[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding accumulo-fate 1.5.0-SNAPSHOT                              [4/9][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.1:create[m [1m(default)[m @ [36maccumulo-fate[0;1m ---[m
+[[1;34mINFO[m] Checking for local modifications: skipped.
+[[1;34mINFO[m] Updating project files from SCM: skipped.
+[[1;34mINFO[m] Executing: /bin/sh -c cd /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/fate && svn --non-interactive info
+[[1;34mINFO[m] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/fate
+[[1;34mINFO[m] Storing buildNumber: null at timestamp: 1659176959065
+[[1;34mINFO[m] Executing: /bin/sh -c cd /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/fate && svn --non-interactive info
+[[1;34mINFO[m] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/fate
+[[1;34mINFO[m] Storing buildScmBranch: UNKNOWN_BRANCH
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo-fate[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo-fate[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36maccumulo-fate[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/fate/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.3:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo-fate[0;1m ---[m
+[[1;34mINFO[m] Copying commons-lang-2.4.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-lang-2.4.jar
+[[1;34mINFO[m] log4j-1.2.16.jar already exists in destination.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36maccumulo-fate[0;1m ---[m
+[[1;34mINFO[m] Compiling 21 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/fate/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36maccumulo-fate[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/fate/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36maccumulo-fate[0;1m ---[m
+[[1;34mINFO[m] Compiling 2 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/fate/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12:test[m [1m(default-test)[m @ [36maccumulo-fate[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.3.1:jar[m [1m(default-jar)[m @ [36maccumulo-fate[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-fate-1.5.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo-fate[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo-fate[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-fate-1.5.0-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-fate/1.5.0-SNAPSHOT/accumulo-fate-1.5.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/fate/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-fate/1.5.0-SNAPSHOT/accumulo-fate-1.5.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36morg.apache.accumulo:accumulo-core[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding accumulo-core 1.5.0-SNAPSHOT                              [5/9][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/hadoop/hadoop-core/0.20.205.0/hadoop-core-0.20.205.0.pom
+Progress (1): 4.1/4.2 kBProgress (1): 4.2 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/hadoop/hadoop-core/0.20.205.0/hadoop-core-0.20.205.0.pom (4.2 kB at 280 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty/maven-metadata.xml
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/mortbay/jetty/jetty/maven-metadata.xml
+Progress (1): 688 B                   Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty/maven-metadata.xml (688 B at 49 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty/6.1H.22/jetty-6.1H.22.pom
+Progress (1): 4.1/6.5 kBProgress (1): 6.5 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty/6.1H.22/jetty-6.1H.22.pom (6.5 kB at 45 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/project/6.1H.22/project-6.1H.22.pom
+Progress (1): 4.1/9.0 kBProgress (1): 8.2/9.0 kBProgress (1): 9.0 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/project/6.1H.22/project-6.1H.22.pom (9.0 kB at 65 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty-util/6.1H.22/jetty-util-6.1H.22.pom
+Progress (1): 4.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty-util/6.1H.22/jetty-util-6.1H.22.pom (4.1 kB at 30 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty/6.1.17/jetty-6.1.17.pom
+Progress (1): 4.1/6.3 kBProgress (1): 6.3 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty/6.1.17/jetty-6.1.17.pom (6.3 kB at 43 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/project/6.1.17/project-6.1.17.pom
+Progress (1): 4.1/9.0 kBProgress (1): 8.2/9.0 kBProgress (1): 9.0 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/project/6.1.17/project-6.1.17.pom (9.0 kB at 60 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty-util/6.1.17/jetty-util-6.1.17.pom
+Progress (1): 3.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty-util/6.1.17/jetty-util-6.1.17.pom (3.9 kB at 26 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty/6.1.18/jetty-6.1.18.pom
+Progress (1): 4.1/6.3 kBProgress (1): 6.3 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty/6.1.18/jetty-6.1.18.pom (6.3 kB at 83 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/project/6.1.18/project-6.1.18.pom
+Progress (1): 4.1/9.1 kBProgress (1): 8.2/9.1 kBProgress (1): 9.1 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/project/6.1.18/project-6.1.18.pom (9.1 kB at 118 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty-util/6.1.18/jetty-util-6.1.18.pom
+Progress (1): 3.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty-util/6.1.18/jetty-util-6.1.18.pom (3.9 kB at 28 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty/6.1.19/jetty-6.1.19.pom
+Progress (1): 4.1/6.3 kBProgress (1): 6.3 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty/6.1.19/jetty-6.1.19.pom (6.3 kB at 43 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/project/6.1.19/project-6.1.19.pom
+Progress (1): 4.1/9.1 kBProgress (1): 8.2/9.1 kBProgress (1): 9.1 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/project/6.1.19/project-6.1.19.pom (9.1 kB at 64 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty-util/6.1.19/jetty-util-6.1.19.pom
+Progress (1): 3.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty-util/6.1.19/jetty-util-6.1.19.pom (3.9 kB at 47 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty/6.1.20/jetty-6.1.20.pom
+Progress (1): 4.1/6.3 kBProgress (1): 6.3 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty/6.1.20/jetty-6.1.20.pom (6.3 kB at 46 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/project/6.1.20/project-6.1.20.pom
+Progress (1): 4.1/9.2 kBProgress (1): 8.2/9.2 kBProgress (1): 9.2 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/project/6.1.20/project-6.1.20.pom (9.2 kB at 121 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty-util/6.1.20/jetty-util-6.1.20.pom
+Progress (1): 3.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty-util/6.1.20/jetty-util-6.1.20.pom (3.9 kB at 27 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty/6.1.21/jetty-6.1.21.pom
+Progress (1): 4.1/6.3 kBProgress (1): 6.3 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty/6.1.21/jetty-6.1.21.pom (6.3 kB at 83 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/project/6.1.21/project-6.1.21.pom
+Progress (1): 4.1/9.2 kBProgress (1): 8.2/9.2 kBProgress (1): 9.2 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/project/6.1.21/project-6.1.21.pom (9.2 kB at 66 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty-util/6.1.21/jetty-util-6.1.21.pom
+Progress (1): 3.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty-util/6.1.21/jetty-util-6.1.21.pom (3.9 kB at 28 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty/6.1.23/jetty-6.1.23.pom
+Progress (1): 4.1/6.3 kBProgress (1): 6.3 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty/6.1.23/jetty-6.1.23.pom (6.3 kB at 46 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/project/6.1.23/project-6.1.23.pom
+Progress (1): 4.1/11 kBProgress (1): 8.2/11 kBProgress (1): 11 kB                       Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/project/6.1.23/project-6.1.23.pom (11 kB at 75 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty-parent/9/jetty-parent-9.pom
+Progress (1): 2.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty-parent/9/jetty-parent-9.pom (2.9 kB at 38 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-parent/12/jetty-parent-12.pom
+Progress (1): 4.1/16 kBProgress (1): 8.2/16 kBProgress (1): 12/16 kB Progress (1): 16/16 kBProgress (1): 16 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-parent/12/jetty-parent-12.pom (16 kB at 109 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty-util/6.1.23/jetty-util-6.1.23.pom
+Progress (1): 3.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty-util/6.1.23/jetty-util-6.1.23.pom (3.9 kB at 27 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty/6.1.24/jetty-6.1.24.pom
+Progress (1): 4.1/6.3 kBProgress (1): 6.3 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty/6.1.24/jetty-6.1.24.pom (6.3 kB at 38 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/project/6.1.24/project-6.1.24.pom
+Progress (1): 4.1/9.9 kBProgress (1): 8.2/9.9 kBProgress (1): 9.9 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/project/6.1.24/project-6.1.24.pom (9.9 kB at 69 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty-util/6.1.24/jetty-util-6.1.24.pom
+Progress (1): 3.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty-util/6.1.24/jetty-util-6.1.24.pom (3.9 kB at 48 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty/6.1.26RC0/jetty-6.1.26RC0.pom
+Progress (1): 4.1/6.3 kBProgress (1): 6.3 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty/6.1.26RC0/jetty-6.1.26RC0.pom (6.3 kB at 79 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/project/6.1.26RC0/project-6.1.26RC0.pom
+Progress (1): 4.1/9.2 kBProgress (1): 8.2/9.2 kBProgress (1): 9.2 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/project/6.1.26RC0/project-6.1.26RC0.pom (9.2 kB at 62 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty-util/6.1.26RC0/jetty-util-6.1.26RC0.pom
+Progress (1): 3.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/mortbay/jetty/jetty-util/6.1.26RC0/jetty-util-6.1.26RC0.pom (3.9 kB at 29 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/hadoop/hadoop-core/0.20.205.0/hadoop-core-0.20.205.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/commons-configuration/commons-configuration/1.5/commons-configuration-1.5.jar
+Progress (1): 2.7/272 kBProgress (1): 5.5/272 kBProgress (1): 8.2/272 kBProgress (1): 11/272 kB Progress (1): 14/272 kBProgress (1): 16/272 kBProgress (1): 19/272 kBProgress (1): 21/272 kBProgress (1): 24/272 kBProgress (1): 27/272 kBProgress (1): 30/272 kBProgress (1): 32/272 kBProgress (1): 35/272 kBProgress (1): 38/272 kBProgress (1): 40/272 kBProgress (1): 43/272 kBProgress (1): 46/272 kBProgress (1): 49/272 kBProgress (1): 53/272 kBProgress (1): 57/272 kBProgress (1): 61/272 kBProgress (1): 65/272 kBProgress (1): 69/272 kBProgress (1): 73/272 kBProgress (1): 77/272 kBProgress (1): 81/272 kBProgress (1): 85/272 kBProgress (1): 90/272 kBProgress (1): 94/272 kBProgress (1): 98/272 kBProgress (1): 102/272 kBProgress (1): 106/272 kBProgress (1): 110/272 kBProgress (1): 114/272 kBProgress (1): 118/272 kBProgress (1): 122/272 kBProgress (1): 126/272 kBProgress (1): 131/272 kBProgress (2): 131/272 kB | 0/3.7 MBProgress (2): 135/272 kB | 0/3.7 MBProgress (2): 139/272 kB | 0/3.7 MBProgress (2): 143/272 kB | 0/3.7 MBProgress (2): 147/272 kB | 0/3.7 MBProgress (2): 151/272 kB | 0/3.7 MBProgress (2): 151/272 kB | 0/3.7 MBProgress (2): 155/272 kB | 0/3.7 MBProgress (2): 159/272 kB | 0/3.7 MBProgress (2): 163/272 kB | 0/3.7 MBProgress (2): 167/272 kB | 0/3.7 MBProgress (2): 171/272 kB | 0/3.7 MBProgress (2): 176/272 kB | 0/3.7 MBProgress (2): 180/272 kB | 0/3.7 MBProgress (2): 184/272 kB | 0/3.7 MBProgress (2): 188/272 kB | 0/3.7 MBProgress (2): 192/272 kB | 0/3.7 MBProgress (2): 192/272 kB | 0.1/3.7 MBProgress (2): 196/272 kB | 0.1/3.7 MBProgress (2): 200/272 kB | 0.1/3.7 MBProgress (2): 200/272 kB | 0.1/3.7 MBProgress (2): 204/272 kB | 0.1/3.7 MBProgress (2): 208/272 kB | 0.1/3.7 MBProgress (2): 212/272 kB | 0.1/3.7 MBProgress (2): 217/272 kB | 0.1/3.7 MBProgress (2): 221/272 kB | 0.1/3.7 MBProgress (2): 225/272 kB | 0.1/3.7 MBProgress (2): 229/272 kB | 0.1/3.7 MBProgress (2): 229/272 kB | 0.1/3.7 MBProgress (2): 233/272 kB | 0.1/3.7 MBProgress (2): 237/272 kB | 0.1/3.7 MBProgress (2): 237/272 kB | 0.1/3.7 MBProgress (2): 241/272 kB | 0.1/3.7 MBProgress (2): 245/272 kB | 0.1/3.7 MBProgress (2): 249/272 kB | 0.1/3.7 MBProgress (2): 249/272 kB | 0.2/3.7 MBProgress (2): 253/272 kB | 0.2/3.7 MBProgress (2): 258/272 kB | 0.2/3.7 MBProgress (2): 262/272 kB | 0.2/3.7 MBProgress (2): 262/272 kB | 0.2/3.7 MBProgress (2): 266/272 kB | 0.2/3.7 MBProgress (2): 270/272 kB | 0.2/3.7 MBProgress (2): 272 kB | 0.2/3.7 MB    Progress (2): 272 kB | 0.2/3.7 MBProgress (2): 272 kB | 0.2/3.7 MBProgress (2): 272 kB | 0.3/3.7 MBProgress (2): 272 kB | 0.3/3.7 MBProgress (2): 272 kB | 0.3/3.7 MBProgress (2): 272 kB | 0.3/3.7 MBProgress (2): 272 kB | 0.4/3.7 MBProgress (2): 272 kB | 0.4/3.7 MBProgress (2): 272 kB | 0.4/3.7 MBProgress (2): 272 kB | 0.4/3.7 MBProgress (2): 272 kB | 0.5/3.7 MBProgress (2): 272 kB | 0.5/3.7 MBProgress (2): 272 kB | 0.5/3.7 MBProgress (2): 272 kB | 0.5/3.7 MBProgress (2): 272 kB | 0.6/3.7 MBProgress (2): 272 kB | 0.6/3.7 MBProgress (2): 272 kB | 0.6/3.7 MBProgress (2): 272 kB | 0.6/3.7 MBProgress (2): 272 kB | 0.7/3.7 MBProgress (2): 272 kB | 0.7/3.7 MBProgress (2): 272 kB | 0.7/3.7 MBProgress (2): 272 kB | 0.7/3.7 MBProgress (2): 272 kB | 0.8/3.7 MBProgress (2): 272 kB | 0.8/3.7 MBProgress (2): 272 kB | 0.8/3.7 MBProgress (2): 272 kB | 0.8/3.7 MBProgress (2): 272 kB | 0.9/3.7 MBProgress (2): 272 kB | 0.9/3.7 MBProgress (2): 272 kB | 0.9/3.7 MBProgress (2): 272 kB | 0.9/3.7 MBProgress (2): 272 kB | 1.0/3.7 MBProgress (2): 272 kB | 1.0/3.7 MBProgress (2): 272 kB | 1.0/3.7 MBProgress (2): 272 kB | 1.0/3.7 MBProgress (2): 272 kB | 1.1/3.7 MBProgress (2): 272 kB | 1.1/3.7 MBProgress (2): 272 kB | 1.1/3.7 MBProgress (2): 272 kB | 1.1/3.7 MBProgress (2): 272 kB | 1.2/3.7 MBProgress (2): 272 kB | 1.2/3.7 MBProgress (2): 272 kB | 1.2/3.7 MBProgress (2): 272 kB | 1.2/3.7 MBProgress (2): 272 kB | 1.2/3.7 MBProgress (2): 272 kB | 1.3/3.7 MBProgress (2): 272 kB | 1.3/3.7 MBProgress (2): 272 kB | 1.3/3.7 MBProgress (2): 272 kB | 1.3/3.7 MBProgress (2): 272 kB | 1.4/3.7 MBProgress (2): 272 kB | 1.4/3.7 MBProgress (2): 272 kB | 1.4/3.7 MBProgress (2): 272 kB | 1.4/3.7 MBProgress (2): 272 kB | 1.5/3.7 MBProgress (2): 272 kB | 1.5/3.7 MBProgress (2): 272 kB | 1.5/3.7 MBProgress (2): 272 kB | 1.5/3.7 MBProgress (2): 272 kB | 1.6/3.7 MBProgress (2): 272 kB | 1.6/3.7 MBProgress (2): 272 kB | 1.6/3.7 MBProgress (2): 272 kB | 1.6/3.7 MBProgress (2): 272 kB | 1.7/3.7 MBProgress (2): 272 kB | 1.7/3.7 MBProgress (2): 272 kB | 1.7/3.7 MBProgress (2): 272 kB | 1.7/3.7 MB                                 Downloaded from central: https://repo.maven.apache.org/maven2/commons-configuration/commons-configuration/1.5/commons-configuration-1.5.jar (272 kB at 1.4 MB/s)
+Progress (1): 1.8/3.7 MBProgress (1): 1.8/3.7 MBProgress (1): 1.8/3.7 MBProgress (1): 1.8/3.7 MBProgress (1): 1.9/3.7 MBProgress (1): 1.9/3.7 MBProgress (1): 1.9/3.7 MBProgress (1): 1.9/3.7 MBProgress (1): 2.0/3.7 MBProgress (1): 2.0/3.7 MBProgress (1): 2.0/3.7 MBProgress (1): 2.0/3.7 MBProgress (1): 2.1/3.7 MBProgress (1): 2.1/3.7 MBProgress (1): 2.1/3.7 MBProgress (1): 2.1/3.7 MBProgress (1): 2.2/3.7 MBProgress (1): 2.2/3.7 MBProgress (1): 2.2/3.7 MBProgress (1): 2.2/3.7 MBProgress (1): 2.3/3.7 MBProgress (1): 2.3/3.7 MBProgress (1): 2.3/3.7 MBProgress (1): 2.3/3.7 MBProgress (1): 2.4/3.7 MBProgress (1): 2.4/3.7 MBProgress (1): 2.4/3.7 MBProgress (1): 2.4/3.7 MBProgress (1): 2.4/3.7 MBProgress (1): 2.5/3.7 MBProgress (1): 2.5/3.7 MBProgress (1): 2.5/3.7 MBProgress (1): 2.5/3.7 MBProgress (1): 2.6/3.7 MBProgress (1): 2.6/3.7 MBProgress (1): 2.6/3.7 MBProgress (1): 2.6/3.7 MBProgress (1): 2.7/3.7 MBProgress (1): 2.7/3.7 MBProgress (1): 2.7/3.7 MBProgress (1): 2.7/3.7 MBProgress (1): 2.8/3.7 MBProgress (1): 2.8/3.7 MBProgress (1): 2.8/3.7 MBProgress (1): 2.8/3.7 MBProgress (1): 2.9/3.7 MBProgress (1): 2.9/3.7 MBProgress (1): 2.9/3.7 MBProgress (1): 2.9/3.7 MBProgress (1): 3.0/3.7 MBProgress (1): 3.0/3.7 MBProgress (1): 3.0/3.7 MBProgress (1): 3.0/3.7 MBProgress (1): 3.1/3.7 MBProgress (1): 3.1/3.7 MBProgress (1): 3.1/3.7 MBProgress (1): 3.1/3.7 MBProgress (1): 3.2/3.7 MBProgress (1): 3.2/3.7 MBProgress (1): 3.2/3.7 MBProgress (1): 3.2/3.7 MBProgress (1): 3.3/3.7 MBProgress (1): 3.3/3.7 MBProgress (1): 3.3/3.7 MBProgress (1): 3.3/3.7 MBProgress (1): 3.4/3.7 MBProgress (1): 3.4/3.7 MBProgress (1): 3.4/3.7 MBProgress (1): 3.4/3.7 MBProgress (1): 3.5/3.7 MBProgress (1): 3.5/3.7 MBProgress (1): 3.5/3.7 MBProgress (1): 3.5/3.7 MBProgress (1): 3.6/3.7 MBProgress (1): 3.6/3.7 MBProgress (1): 3.6/3.7 MBProgress (1): 3.6/3.7 MBProgress (1): 3.7/3.7 MBProgress (1): 3.7/3.7 MBProgress (1): 3.7 MB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/hadoop/hadoop-core/0.20.205.0/hadoop-core-0.20.205.0.jar (3.7 MB at 13 MB/s)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.1:create[m [1m(default)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Checking for local modifications: skipped.
+[[1;34mINFO[m] Updating project files from SCM: skipped.
+[[1;34mINFO[m] Executing: /bin/sh -c cd /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core && svn --non-interactive info
+[[1;34mINFO[m] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core
+[[1;34mINFO[m] Storing buildNumber: null at timestamp: 1659176965180
+[[1;34mINFO[m] Executing: /bin/sh -c cd /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core && svn --non-interactive info
+[[1;34mINFO[m] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core
+[[1;34mINFO[m] Storing buildScmBranch: UNKNOWN_BRANCH
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:1.2.1:exec[m [1m(generate-core-thrift)[m @ [36maccumulo-core[0;1m ---[m
+***********************************************
+* thrift is not available                     *
+*   expecting 'thrift -version' to return 0.8 *
+***********************************************
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36maccumulo-core[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.3:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Copying commons-collections-3.2.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-collections-3.2.jar
+[[1;34mINFO[m] Copying jline-0.9.94.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/jline-0.9.94.jar
+[[1;34mINFO[m] log4j-1.2.16.jar already exists in destination.
+[[1;34mINFO[m] libthrift-0.9.0.jar already exists in destination.
+[[1;34mINFO[m] commons-logging-1.0.4.jar already exists in destination.
+[[1;34mINFO[m] commons-lang-2.4.jar already exists in destination.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Compiling 436 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36maccumulo-core[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Compiling 66 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12:test[m [1m(default-test)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.3.1:jar[m [1m(default-jar)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-core-1.5.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-core-1.5.0-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-core/1.5.0-SNAPSHOT/accumulo-core-1.5.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-core/1.5.0-SNAPSHOT/accumulo-core-1.5.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36morg.apache.accumulo:accumulo-server[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding accumulo-server 1.5.0-SNAPSHOT                            [6/9][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.1:create[m [1m(default)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] Checking for local modifications: skipped.
+[[1;34mINFO[m] Updating project files from SCM: skipped.
+[[1;34mINFO[m] Executing: /bin/sh -c cd /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/server && svn --non-interactive info
+[[1;34mINFO[m] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/server
+[[1;34mINFO[m] Storing buildNumber: null at timestamp: 1659176973260
+[[1;34mINFO[m] Executing: /bin/sh -c cd /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/server && svn --non-interactive info
+[[1;34mINFO[m] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/server
+[[1;34mINFO[m] Storing buildScmBranch: UNKNOWN_BRANCH
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36maccumulo-server[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 38 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.3:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] Copying commons-configuration-1.5.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-configuration-1.5.jar
+[[1;34mINFO[m] log4j-1.2.16.jar already exists in destination.
+[[1;34mINFO[m] commons-collections-3.2.jar already exists in destination.
+[[1;34mINFO[m] jline-0.9.94.jar already exists in destination.
+[[1;34mINFO[m] commons-io-1.4.jar already exists in destination.
+[[1;34mINFO[m] libthrift-0.9.0.jar already exists in destination.
+[[1;34mINFO[m] commons-lang-2.4.jar already exists in destination.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] Compiling 404 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/server/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36maccumulo-server[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/server/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] Compiling 22 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/server/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12:test[m [1m(default-test)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.3.1:jar[m [1m(default-jar)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-server-1.5.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-server-1.5.0-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-server/1.5.0-SNAPSHOT/accumulo-server-1.5.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/server/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-server/1.5.0-SNAPSHOT/accumulo-server-1.5.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------< [0;36morg.apache.accumulo:accumulo-examples[0;1m >----------------[m
+[[1;34mINFO[m] [1mBuilding accumulo-examples 1.5.0-SNAPSHOT                          [7/9][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.1:create[m [1m(default)[m @ [36maccumulo-examples[0;1m ---[m
+[[1;34mINFO[m] Checking for local modifications: skipped.
+[[1;34mINFO[m] Updating project files from SCM: skipped.
+[[1;34mINFO[m] Executing: /bin/sh -c cd /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples && svn --non-interactive info
+[[1;34mINFO[m] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples
+[[1;34mINFO[m] Storing buildNumber: null at timestamp: 1659176978303
+[[1;34mINFO[m] Executing: /bin/sh -c cd /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples && svn --non-interactive info
+[[1;34mINFO[m] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples
+[[1;34mINFO[m] Storing buildScmBranch: UNKNOWN_BRANCH
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo-examples[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo-examples[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.3:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo-examples[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo-examples[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo-examples[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-examples/1.5.0-SNAPSHOT/accumulo-examples-1.5.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36morg.apache.accumulo:examples-simple[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding examples-simple 1.5.0-SNAPSHOT                            [8/9][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+Downloading from java.net: https://maven.java.net/content/groups/public/org/mortbay/jetty/jetty/maven-metadata.xml
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.1:create[m [1m(default)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] Checking for local modifications: skipped.
+[[1;34mINFO[m] Updating project files from SCM: skipped.
+[[1;34mINFO[m] Executing: /bin/sh -c cd /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples/simple && svn --non-interactive info
+[[1;34mINFO[m] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples/simple
+[[1;34mINFO[m] Storing buildNumber: null at timestamp: 1659176979079
+[[1;34mINFO[m] Executing: /bin/sh -c cd /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples/simple && svn --non-interactive info
+[[1;34mINFO[m] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples/simple
+[[1;34mINFO[m] Storing buildScmBranch: UNKNOWN_BRANCH
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36mexamples-simple[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples/simple/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.3:copy-dependencies[m [1m(copy-dependencies)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] Copying log4j-1.2.16.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples/lib/log4j-1.2.16.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] Compiling 40 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples/simple/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36mexamples-simple[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples/simple/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] Compiling 5 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples/simple/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12:test[m [1m(default-test)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.3.1:jar[m [1m(default-jar)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/examples-simple-1.5.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/examples-simple-1.5.0-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/examples-simple/1.5.0-SNAPSHOT/examples-simple-1.5.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/examples/simple/pom.xml to /home/user/.m2/repository/org/apache/accumulo/examples-simple/1.5.0-SNAPSHOT/examples-simple-1.5.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------< [0;36morg.apache.accumulo:accumulo-assemble[0;1m >----------------[m
+[[1;34mINFO[m] [1mBuilding accumulo-assemble 1.5.0-SNAPSHOT                          [9/9][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.1:create[m [1m(default)[m @ [36maccumulo-assemble[0;1m ---[m
+[[1;34mINFO[m] Checking for local modifications: skipped.
+[[1;34mINFO[m] Updating project files from SCM: skipped.
+[[1;34mINFO[m] Executing: /bin/sh -c cd /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/assemble && svn --non-interactive info
+[[1;34mINFO[m] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/assemble
+[[1;34mINFO[m] Storing buildNumber: null at timestamp: 1659176981323
+[[1;34mINFO[m] Executing: /bin/sh -c cd /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/assemble && svn --non-interactive info
+[[1;34mINFO[m] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/assemble
+[[1;34mINFO[m] Storing buildScmBranch: UNKNOWN_BRANCH
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo-assemble[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo-assemble[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.3:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo-assemble[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo-assemble[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:1.2.1:exec[m [1m(config webpage)[m @ [36maccumulo-assemble[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo-assemble[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/assemble/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-assemble/1.5.0-SNAPSHOT/accumulo-assemble-1.5.0-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Summary for accumulo 1.5.0-SNAPSHOT:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] accumulo ........................................... [1;32mSUCCESS[m [  3.102 s]
+[[1;34mINFO[m] cloudtrace ......................................... [1;32mSUCCESS[m [  2.291 s]
+[[1;34mINFO[m] accumulo-start ..................................... [1;32mSUCCESS[m [  1.464 s]
+[[1;34mINFO[m] accumulo-fate ...................................... [1;32mSUCCESS[m [  1.576 s]
+[[1;34mINFO[m] accumulo-core ...................................... [1;32mSUCCESS[m [ 12.609 s]
+[[1;34mINFO[m] accumulo-server .................................... [1;32mSUCCESS[m [  5.054 s]
+[[1;34mINFO[m] accumulo-examples .................................. [1;32mSUCCESS[m [  0.062 s]
+[[1;34mINFO[m] examples-simple .................................... [1;32mSUCCESS[m [  2.955 s]
+[[1;34mINFO[m] accumulo-assemble .................................. [1;32mSUCCESS[m [  0.318 s]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  29.786 s
+[[1;34mINFO[m] Finished at: 2022-07-30T03:29:41-07:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36morg.apache.accumulo:accumulo-core[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding accumulo-core 1.5.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.1:create[m [1m(default)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Checking for local modifications: skipped.
+[[1;34mINFO[m] Updating project files from SCM: skipped.
+[[1;34mINFO[m] Executing: /bin/sh -c cd /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core && svn --non-interactive info
+[[1;34mINFO[m] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core
+[[1;34mINFO[m] Storing buildNumber: null at timestamp: 1659176984136
+[[1;34mINFO[m] Executing: /bin/sh -c cd /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core && svn --non-interactive info
+[[1;34mINFO[m] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core
+[[1;34mINFO[m] Storing buildScmBranch: UNKNOWN_BRANCH
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:1.2.1:exec[m [1m(generate-core-thrift)[m @ [36maccumulo-core[0;1m ---[m
+***********************************************
+* thrift is not available                     *
+*   expecting 'thrift -version' to return 0.8 *
+***********************************************
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36maccumulo-core[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.3:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] log4j-1.2.16.jar already exists in destination.
+[[1;34mINFO[m] commons-collections-3.2.jar already exists in destination.
+[[1;34mINFO[m] jline-0.9.94.jar already exists in destination.
+[[1;34mINFO[m] libthrift-0.9.0.jar already exists in destination.
+[[1;34mINFO[m] commons-logging-1.0.4.jar already exists in destination.
+[[1;34mINFO[m] commons-lang-2.4.jar already exists in destination.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36maccumulo-core[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12:test[m [1m(default-test)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.core.file.blockfile.cache.TestLruBlockCache
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.159 sec
+Running org.apache.accumulo.core.file.blockfile.cache.TestCachedBlockQueue
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.file.rfile.MultiLevelIndexTest
+22/07/30 03:29:47 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+22/07/30 03:29:47 INFO compress.CodecPool: Got brand-new compressor
+22/07/30 03:29:47 INFO compress.CodecPool: Got brand-new decompressor
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.781 sec
+Running org.apache.accumulo.core.file.rfile.RFileTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.589 sec
+Running org.apache.accumulo.core.file.rfile.RelativeKeyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.data.MutationTest
+10 68 14.71%
+80322031 32333435 36373839 20313233 34353637 38392031 32333435 36373839 20313233 34353637 38392031 32333435 36373839 06000000 00000001 
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+Running org.apache.accumulo.core.data.ColumnTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.data.KeyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.data.RangeTest
+Tests run: 43, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.apache.accumulo.core.data.KeyExtentTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.apache.accumulo.core.util.TestStringUtil
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.apache.accumulo.core.util.LocalityGroupUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.apache.accumulo.core.util.MetadataTableTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.util.EscapeTokenizerTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.util.AddressUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Running org.apache.accumulo.core.util.TextUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.util.MergeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.accumulo.core.util.shell.command.FormatterCommandTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.149 sec <<< FAILURE!
+Running org.apache.accumulo.core.util.shell.ShellTest
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.016 sec <<< FAILURE!
+Running org.apache.accumulo.core.util.TestVersion
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.iterators.FirstEntryInRowIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.iterators.AggregatingIteratorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
+Running org.apache.accumulo.core.iterators.system.SourceSwitchingIteratorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.apache.accumulo.core.iterators.system.TimeSettingIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.iterators.system.ColumnFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.iterators.system.ColumnFamilySkippingIteratorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.4 sec
+Running org.apache.accumulo.core.iterators.system.MultiIteratorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+Running org.apache.accumulo.core.iterators.system.DeletingIteratorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.iterators.FirstEntryInRowTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.apache.accumulo.core.iterators.IterUtilTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.apache.accumulo.core.iterators.user.RowFilterTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE!
+Running org.apache.accumulo.core.iterators.user.IndexedDocIteratorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.698 sec
+Running org.apache.accumulo.core.iterators.user.RegExFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.accumulo.core.iterators.user.CombinerTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running org.apache.accumulo.core.iterators.user.RowDeletingIteratorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.iterators.user.VersioningIteratorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.apache.accumulo.core.iterators.user.FilterTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec
+Running org.apache.accumulo.core.iterators.user.GrepIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.iterators.user.IntersectingIteratorTest
+Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.363 sec <<< FAILURE!
+Running org.apache.accumulo.core.iterators.user.LargeRowFilterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+Running org.apache.accumulo.core.iterators.user.WholeRowIteratorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.iterators.aggregation.conf.AggregatorConfigurationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.iterators.aggregation.NumSummationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.security.ColumnVisibilityTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.security.AuthorizationsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.security.VisibilityEvaluatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.client.RowIteratorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.client.mock.MockConnectorTest
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.017 sec <<< FAILURE!
+Running org.apache.accumulo.core.client.mock.MockTableOperationsTest
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.029 sec <<< FAILURE!
+Running org.apache.accumulo.core.client.mock.TestBatchScanner821
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE!
+Running org.apache.accumulo.core.client.impl.ScannerOptionsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.client.impl.TabletLocatorImplTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+Running org.apache.accumulo.core.client.ClientSideIteratorTest
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.004 sec <<< FAILURE!
+Running org.apache.accumulo.core.client.TestThrift1474
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec
+Running org.apache.accumulo.core.client.admin.FindMaxTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.004 sec <<< FAILURE!
+Running org.apache.accumulo.core.client.admin.TableOperationsHelperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.client.mapreduce.AccumuloRowInputFormatTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE!
+Running org.apache.accumulo.core.client.mapreduce.AccumuloFileOutputFormatTest
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.029 sec <<< FAILURE!
+Running org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest
+Tests run: 11, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 0.064 sec <<< FAILURE!
+Running org.apache.accumulo.core.client.mapreduce.lib.partition.RangePartitionerTest
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.006 sec <<< FAILURE!
+Running org.apache.accumulo.core.client.mapreduce.AccumuloOutputFormatTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec <<< FAILURE!
+Running org.apache.accumulo.core.conf.PropertyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+
+Results :
+
+Tests in error: 
+  test(org.apache.accumulo.core.util.shell.command.FormatterCommandTest): java.io.IOException: failure to login
+  aboutTest(org.apache.accumulo.core.util.shell.ShellTest): java.io.IOException: failure to login
+  addGetSplitsTest(org.apache.accumulo.core.util.shell.ShellTest): java.io.IOException: failure to login
+  insertDeleteScanTest(org.apache.accumulo.core.util.shell.ShellTest): java.io.IOException: failure to login
+  test1(org.apache.accumulo.core.iterators.user.RowFilterTest): java.io.IOException: failure to login
+  testWithBatchScanner(org.apache.accumulo.core.iterators.user.IntersectingIteratorTest): java.io.IOException: failure to login
+  testDeletewithBatchDeleter(org.apache.accumulo.core.client.mock.MockConnectorTest): java.io.IOException: failure to login
+  testAggregation(org.apache.accumulo.core.client.mock.MockConnectorTest): java.io.IOException: failure to login
+  testChangeAuths(org.apache.accumulo.core.client.mock.MockConnectorTest): java.io.IOException: failure to login
+  testCMod(org.apache.accumulo.core.client.mock.MockConnectorTest): java.io.IOException: failure to login
+  testMockMultiTableBatchWriter(org.apache.accumulo.core.client.mock.MockConnectorTest): java.io.IOException: failure to login
+  testUpdate(org.apache.accumulo.core.client.mock.MockConnectorTest): java.io.IOException: failure to login
+  testMockConnectorReturnsCorrectInstance(org.apache.accumulo.core.client.mock.MockConnectorTest): java.io.IOException: failure to login
+  testDelete(org.apache.accumulo.core.client.mock.MockConnectorTest): java.io.IOException: failure to login
+  testSunnyDay(org.apache.accumulo.core.client.mock.MockConnectorTest): java.io.IOException: failure to login
+  testImport(org.apache.accumulo.core.client.mock.MockTableOperationsTest): failure to login
+  testCreateUseVersions(org.apache.accumulo.core.client.mock.MockTableOperationsTest): java.io.IOException: failure to login
+  testTableNotFound(org.apache.accumulo.core.client.mock.MockTableOperationsTest): java.io.IOException: failure to login
+  testFailsWithNoTable(org.apache.accumulo.core.client.mock.MockTableOperationsTest): Unexpected exception, expected<org.apache.accumulo.core.client.TableNotFoundException> but was<java.lang.RuntimeException>
+  testFailsWithNonEmptyFailureDirectory(org.apache.accumulo.core.client.mock.MockTableOperationsTest): Unexpected exception, expected<java.io.IOException> but was<java.lang.RuntimeException>
+  test(org.apache.accumulo.core.client.mock.TestBatchScanner821): java.io.IOException: failure to login
+  testIntersect(org.apache.accumulo.core.client.ClientSideIteratorTest): java.io.IOException: failure to login
+  testVersioning(org.apache.accumulo.core.client.ClientSideIteratorTest): java.io.IOException: failure to login
+  test1(org.apache.accumulo.core.client.admin.FindMaxTest): java.io.IOException: failure to login
+  test(org.apache.accumulo.core.client.mapreduce.AccumuloRowInputFormatTest): java.io.IOException: failure to login
+  testRealWrite(org.apache.accumulo.core.client.mapreduce.AccumuloFileOutputFormatTest): Can't create object
+  testEmptyWrite(org.apache.accumulo.core.client.mapreduce.AccumuloFileOutputFormatTest): Can't create object
+  validateConfiguration(org.apache.accumulo.core.client.mapreduce.AccumuloFileOutputFormatTest): Can't create object
+  testSimple(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): java.io.IOException: failure to login
+  testSetIterator(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): Can't create object
+  testSetRanges(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): Can't create object
+  testNoMaxVersion(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): Can't create object
+  testMaxVersions(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): Can't create object
+  testMaxVersionsLessThan1(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): Unexpected exception, expected<java.io.IOException> but was<java.lang.IllegalArgumentException>
+  testAddIterator(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): Can't create object
+  testIteratorOptionEncoding(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): java.io.IOException: failure to login
+  testGetIteratorSettings(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): Can't create object
+  testSetRegex(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): Can't create object
+  testMap(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): java.io.IOException: failure to login
+  testSubBins(org.apache.accumulo.core.client.mapreduce.lib.partition.RangePartitionerTest): Can't create object
+  testNoSubBins(org.apache.accumulo.core.client.mapreduce.lib.partition.RangePartitionerTest): Can't create object
+  testMR(org.apache.accumulo.core.client.mapreduce.AccumuloOutputFormatTest): java.io.IOException: failure to login
+
+Tests run: 296, Failures: 0, Errors: 42, Skipped: 0
+
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  9.208 s
+[[1;34mINFO[m] Finished at: 2022-07-30T03:29:52-07:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-surefire-plugin:2.12:test[m [1m(default-test)[m on project [36maccumulo-core[m: [1;31mThere are test failures.[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] [1;31mPlease refer to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/core/target/surefire-reports for the individual test results.[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

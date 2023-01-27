@@ -1,0 +1,1131 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Log4j 2                                                     [pom]
+[INFO] Apache Log4j API                                                   [jar]
+[INFO] Apache Log4j Core                                                  [jar]
+[INFO] Apache Log4J Core OSGi Async                                    [bundle]
+[INFO] Apache Log4J Core OSGi JPA                                      [bundle]
+[INFO] Apache Log4J Core OSGi Net                                      [bundle]
+[INFO] Apache Log4J Core OSGi Couch                                    [bundle]
+[INFO] Apache Log4J Core OSGi Mongo                                    [bundle]
+[INFO] Apache Log4J Core OSGi                                          [bundle]
+[INFO] Apache Log4J Core OSGi Bundles                                     [pom]
+[INFO] Apache Log4j 1.x Compatibility API                                 [jar]
+[INFO] Apache Log4j SLF4J Binding                                         [jar]
+[INFO] Apache Log4j to SLF4J Adapter                                      [jar]
+[INFO] Apache Log4j Commons Logging Bridge                                [jar]
+[INFO] Apache Log4j Flume NG Bridge                                       [jar]
+[INFO] Apache Log4j Tag Library                                           [jar]
+[INFO] Apache Log4j JMX GUI                                               [jar]
+[INFO] Apache Log4j Samples                                               [pom]
+[INFO] Apache Log4j Samples: Flume - Common                               [jar]
+[INFO] Apache Log4j Samples: Flume - Remote                               [war]
+[INFO] Apache Log4j Samples: Flume - Embedded                             [war]
+[INFO] 
+[INFO] -------------------< org.apache.logging.log4j:log4j >-------------------
+[INFO] Building Apache Log4j 2 2.0RC1-SNAPSHOT                           [1/21]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j ---
+[WARNING] Ignoring project type pom - supportedProjectTypes = [jar, bundle]
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j/2.0RC1-SNAPSHOT/log4j-2.0RC1-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.apache.logging.log4j:log4j-api >-----------------
+[INFO] Building Apache Log4j API 2.0RC1-SNAPSHOT                         [2/21]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 61 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 32 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] No processor claimed any of these annotations: org.junit.AfterClass,org.junit.BeforeClass,org.junit.After,org.junit.runner.RunWith,org.junit.runners.Parameterized.Parameters,org.junit.Test,org.junit.Before
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-api ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-api ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/target/log4j-api-2.0RC1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:test-jar (default) @ log4j-api ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/target/log4j-api-2.0RC1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-api ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/target/log4j-api-2.0RC1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-api/2.0RC1-SNAPSHOT/log4j-api-2.0RC1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-api/2.0RC1-SNAPSHOT/log4j-api-2.0RC1-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/target/log4j-api-2.0RC1-SNAPSHOT-tests.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-api/2.0RC1-SNAPSHOT/log4j-api-2.0RC1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] ----------------< org.apache.logging.log4j:log4j-core >-----------------
+[INFO] Building Apache Log4j Core 2.0RC1-SNAPSHOT                        [3/21]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:cleanVersions (default) @ log4j-core ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 333 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/appender/TLSSyslogFrame.java:[22,8] Class org.apache.logging.log4j.core.appender.TLSSyslogFrame overrides equals, but neither it nor any superclass overrides hashCode method
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/appender/db/nosql/NoSQLDatabaseManager.java:[192,24] found raw type: org.apache.logging.log4j.core.appender.db.nosql.NoSQLDatabaseManager
+  missing type arguments for generic class org.apache.logging.log4j.core.appender.db.nosql.NoSQLDatabaseManager<W>
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/config/plugins/PluginManager.java:[242,44] found raw type: org.apache.logging.log4j.core.config.plugins.PluginType
+  missing type arguments for generic class org.apache.logging.log4j.core.config.plugins.PluginType<T>
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/config/plugins/ResolverUtil.java:[309,61] unchecked conversion
+  required: java.util.Collection<java.lang.String>
+  found:    java.util.Collection
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/net/TLSSocketManager.java:[55,86] found raw type: org.apache.logging.log4j.core.Layout
+  missing type arguments for generic class org.apache.logging.log4j.core.Layout<T>
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/net/TLSSocketManager.java:[56,14] unchecked method invocation: constructor <init> in class org.apache.logging.log4j.core.net.TCPSocketManager is applied to given types
+  required: java.lang.String,java.io.OutputStream,java.net.Socket,java.net.InetAddress,java.lang.String,int,int,boolean,org.apache.logging.log4j.core.Layout<? extends java.io.Serializable>
+  found: java.lang.String,java.io.OutputStream,java.net.Socket,java.net.InetAddress,java.lang.String,int,int,boolean,org.apache.logging.log4j.core.Layout
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/net/TLSSocketManager.java:[56,71] unchecked conversion
+  required: org.apache.logging.log4j.core.Layout<? extends java.io.Serializable>
+  found:    org.apache.logging.log4j.core.Layout
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/net/TLSSocketManager.java:[66,23] found raw type: org.apache.logging.log4j.core.Layout
+  missing type arguments for generic class org.apache.logging.log4j.core.Layout<T>
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/net/TLSSocketManager.java:[69,31] found raw type: org.apache.logging.log4j.core.Layout
+  missing type arguments for generic class org.apache.logging.log4j.core.Layout<T>
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/net/TLSSocketManager.java:[80,99] found raw type: org.apache.logging.log4j.core.Layout
+  missing type arguments for generic class org.apache.logging.log4j.core.Layout<T>
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/net/TLSSocketManager.java:[170,199] found raw type: org.apache.logging.log4j.core.Layout
+  missing type arguments for generic class org.apache.logging.log4j.core.Layout<T>
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/appender/RollingFileAppender.java:[84,10] redundant cast to org.apache.logging.log4j.core.appender.rolling.RollingFileManager
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/net/MulticastDNSAdvertiser.java:[101,83] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/net/MulticastDNSAdvertiser.java:[127,85] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/appender/rolling/OnStartupTriggeringPolicy.java:[63,86] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/appender/rolling/OnStartupTriggeringPolicy.java:[67,84] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/appender/RandomAccessFileAppender.java:[85,10] redundant cast to org.apache.logging.log4j.core.appender.RandomAccessFileManager
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default) > validate @ log4j-core >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default) < validate @ log4j-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default) @ log4j-core ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 130 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 235 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[24,19] sun.reflect.Reflection is internal proprietary API and may be removed in a future release
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/appender/SMTPAppenderTest.java:[178,36] redundant cast to org.apache.logging.dumbster.smtp.SmtpMessage
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[54,13] sun.reflect.Reflection is internal proprietary API and may be removed in a future release
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[54,23] getCallerClass(int) in sun.reflect.Reflection has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[63,17] sun.reflect.Reflection is internal proprietary API and may be removed in a future release
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[63,27] getCallerClass(int) in sun.reflect.Reflection has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[66,17] sun.reflect.Reflection is internal proprietary API and may be removed in a future release
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[66,27] getCallerClass(int) in sun.reflect.Reflection has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[69,17] sun.reflect.Reflection is internal proprietary API and may be removed in a future release
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[69,27] getCallerClass(int) in sun.reflect.Reflection has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[72,17] sun.reflect.Reflection is internal proprietary API and may be removed in a future release
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[72,27] getCallerClass(int) in sun.reflect.Reflection has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[75,17] sun.reflect.Reflection is internal proprietary API and may be removed in a future release
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[75,27] getCallerClass(int) in sun.reflect.Reflection has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[78,17] sun.reflect.Reflection is internal proprietary API and may be removed in a future release
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[78,27] getCallerClass(int) in sun.reflect.Reflection has been deprecated
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-core ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/log4j-core-2.0RC1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:test-jar (default) @ log4j-core ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/log4j-core-2.0RC1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-core ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/log4j-core-2.0RC1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-core/2.0RC1-SNAPSHOT/log4j-core-2.0RC1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-core/2.0RC1-SNAPSHOT/log4j-core-2.0RC1-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/log4j-core-2.0RC1-SNAPSHOT-tests.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-core/2.0RC1-SNAPSHOT/log4j-core-2.0RC1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --------< org.apache.logging.log4j.osgi:log4j-core-osgi-async >---------
+[INFO] Building Apache Log4J Core OSGi Async 2.0RC1-SNAPSHOT             [4/21]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (generate-sources) @ log4j-core-osgi-async ---
+[WARNING] Parameter tasks is deprecated, use target instead
+[INFO] Executing tasks
+
+main:
+    [mkdir] Created dir: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-async/target/classes
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:cleanVersions (default) @ log4j-core-osgi-async ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-core-osgi-async ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-core-osgi-async ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-async/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-core-osgi-async ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-core-osgi-async ---
+[WARNING] Manifest org.apache.logging.log4j.osgi:log4j-core-osgi-async:bundle:2.0RC1-SNAPSHOT : Superfluous export-package instructions: [org.apache.logging.log4j.core.async.*]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-core-osgi-async ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-async/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-core-osgi-async ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-core-osgi-async ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ log4j-core-osgi-async ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-core-osgi-async ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-async/target/log4j-core-osgi-async-2.0RC1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/osgi/log4j-core-osgi-async/2.0RC1-SNAPSHOT/log4j-core-osgi-async-2.0RC1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-async/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/osgi/log4j-core-osgi-async/2.0RC1-SNAPSHOT/log4j-core-osgi-async-2.0RC1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ log4j-core-osgi-async ---
+[INFO] Installing org/apache/logging/log4j/osgi/log4j-core-osgi-async/2.0RC1-SNAPSHOT/log4j-core-osgi-async-2.0RC1-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO] 
+[INFO] ---------< org.apache.logging.log4j.osgi:log4j-core-osgi-jpa >----------
+[INFO] Building Apache Log4J Core OSGi JPA 2.0RC1-SNAPSHOT               [5/21]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (generate-sources) @ log4j-core-osgi-jpa ---
+[WARNING] Parameter tasks is deprecated, use target instead
+[INFO] Executing tasks
+
+main:
+    [mkdir] Created dir: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-jpa/target/classes
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:cleanVersions (default) @ log4j-core-osgi-jpa ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-core-osgi-jpa ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-core-osgi-jpa ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-jpa/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-core-osgi-jpa ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-core-osgi-jpa ---
+[WARNING] Manifest org.apache.logging.log4j.osgi:log4j-core-osgi-jpa:bundle:2.0RC1-SNAPSHOT : Superfluous export-package instructions: [org.apache.logging.log4j.core.appender.db.jpa.*]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-core-osgi-jpa ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-jpa/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-core-osgi-jpa ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-core-osgi-jpa ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ log4j-core-osgi-jpa ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-core-osgi-jpa ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-jpa/target/log4j-core-osgi-jpa-2.0RC1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/osgi/log4j-core-osgi-jpa/2.0RC1-SNAPSHOT/log4j-core-osgi-jpa-2.0RC1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-jpa/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/osgi/log4j-core-osgi-jpa/2.0RC1-SNAPSHOT/log4j-core-osgi-jpa-2.0RC1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ log4j-core-osgi-jpa ---
+[INFO] Installing org/apache/logging/log4j/osgi/log4j-core-osgi-jpa/2.0RC1-SNAPSHOT/log4j-core-osgi-jpa-2.0RC1-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO] 
+[INFO] ---------< org.apache.logging.log4j.osgi:log4j-core-osgi-net >----------
+[INFO] Building Apache Log4J Core OSGi Net 2.0RC1-SNAPSHOT               [6/21]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (generate-sources) @ log4j-core-osgi-net ---
+[WARNING] Parameter tasks is deprecated, use target instead
+[INFO] Executing tasks
+
+main:
+    [mkdir] Created dir: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-net/target/classes
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:cleanVersions (default) @ log4j-core-osgi-net ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-core-osgi-net ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-core-osgi-net ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-net/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-core-osgi-net ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-core-osgi-net ---
+[WARNING] Manifest org.apache.logging.log4j.osgi:log4j-core-osgi-net:bundle:2.0RC1-SNAPSHOT : Superfluous export-package instructions: [org.apache.logging.log4j.core.net.*]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-core-osgi-net ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-net/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-core-osgi-net ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-core-osgi-net ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ log4j-core-osgi-net ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-core-osgi-net ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-net/target/log4j-core-osgi-net-2.0RC1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/osgi/log4j-core-osgi-net/2.0RC1-SNAPSHOT/log4j-core-osgi-net-2.0RC1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-net/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/osgi/log4j-core-osgi-net/2.0RC1-SNAPSHOT/log4j-core-osgi-net-2.0RC1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ log4j-core-osgi-net ---
+[INFO] Installing org/apache/logging/log4j/osgi/log4j-core-osgi-net/2.0RC1-SNAPSHOT/log4j-core-osgi-net-2.0RC1-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO] 
+[INFO] -----< org.apache.logging.log4j.osgi:log4j-core-osgi-nosql-couch >------
+[INFO] Building Apache Log4J Core OSGi Couch 2.0RC1-SNAPSHOT             [7/21]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (generate-sources) @ log4j-core-osgi-nosql-couch ---
+[WARNING] Parameter tasks is deprecated, use target instead
+[INFO] Executing tasks
+
+main:
+    [mkdir] Created dir: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-nosql-couch/target/classes
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:cleanVersions (default) @ log4j-core-osgi-nosql-couch ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-core-osgi-nosql-couch ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-core-osgi-nosql-couch ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-nosql-couch/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-core-osgi-nosql-couch ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-core-osgi-nosql-couch ---
+[WARNING] Manifest org.apache.logging.log4j.osgi:log4j-core-osgi-nosql-couch:bundle:2.0RC1-SNAPSHOT : Superfluous export-package instructions: [org.apache.logging.log4j.core.appender.db.nosql.couch.*]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-core-osgi-nosql-couch ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-nosql-couch/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-core-osgi-nosql-couch ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-core-osgi-nosql-couch ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ log4j-core-osgi-nosql-couch ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-core-osgi-nosql-couch ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-nosql-couch/target/log4j-core-osgi-nosql-couch-2.0RC1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/osgi/log4j-core-osgi-nosql-couch/2.0RC1-SNAPSHOT/log4j-core-osgi-nosql-couch-2.0RC1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-nosql-couch/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/osgi/log4j-core-osgi-nosql-couch/2.0RC1-SNAPSHOT/log4j-core-osgi-nosql-couch-2.0RC1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ log4j-core-osgi-nosql-couch ---
+[INFO] Installing org/apache/logging/log4j/osgi/log4j-core-osgi-nosql-couch/2.0RC1-SNAPSHOT/log4j-core-osgi-nosql-couch-2.0RC1-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO] 
+[INFO] -----< org.apache.logging.log4j.osgi:log4j-core-osgi-nosql-mongo >------
+[INFO] Building Apache Log4J Core OSGi Mongo 2.0RC1-SNAPSHOT             [8/21]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (generate-sources) @ log4j-core-osgi-nosql-mongo ---
+[WARNING] Parameter tasks is deprecated, use target instead
+[INFO] Executing tasks
+
+main:
+    [mkdir] Created dir: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-nosql-mongo/target/classes
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:cleanVersions (default) @ log4j-core-osgi-nosql-mongo ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-core-osgi-nosql-mongo ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-core-osgi-nosql-mongo ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-nosql-mongo/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-core-osgi-nosql-mongo ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-core-osgi-nosql-mongo ---
+[WARNING] Manifest org.apache.logging.log4j.osgi:log4j-core-osgi-nosql-mongo:bundle:2.0RC1-SNAPSHOT : Superfluous export-package instructions: [org.apache.logging.log4j.core.appender.db.nosql.mongo.*]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-core-osgi-nosql-mongo ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-nosql-mongo/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-core-osgi-nosql-mongo ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-core-osgi-nosql-mongo ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ log4j-core-osgi-nosql-mongo ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-core-osgi-nosql-mongo ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-nosql-mongo/target/log4j-core-osgi-nosql-mongo-2.0RC1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/osgi/log4j-core-osgi-nosql-mongo/2.0RC1-SNAPSHOT/log4j-core-osgi-nosql-mongo-2.0RC1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-nosql-mongo/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/osgi/log4j-core-osgi-nosql-mongo/2.0RC1-SNAPSHOT/log4j-core-osgi-nosql-mongo-2.0RC1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ log4j-core-osgi-nosql-mongo ---
+[INFO] Installing org/apache/logging/log4j/osgi/log4j-core-osgi-nosql-mongo/2.0RC1-SNAPSHOT/log4j-core-osgi-nosql-mongo-2.0RC1-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO] 
+[INFO] -------< org.apache.logging.log4j.osgi:log4j-core-osgi-reduced >--------
+[INFO] Building Apache Log4J Core OSGi 2.0RC1-SNAPSHOT                   [9/21]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (generate-sources) @ log4j-core-osgi-reduced ---
+[WARNING] Parameter tasks is deprecated, use target instead
+[INFO] Executing tasks
+
+main:
+    [mkdir] Created dir: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-reduced/target/classes
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:cleanVersions (default) @ log4j-core-osgi-reduced ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-core-osgi-reduced ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-core-osgi-reduced ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-reduced/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-core-osgi-reduced ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-core-osgi-reduced ---
+[WARNING] Manifest org.apache.logging.log4j.osgi:log4j-core-osgi-reduced:bundle:2.0RC1-SNAPSHOT : Superfluous export-package instructions: [org.apache.logging.log4j.core.appender.db.nosql, org.apache.logging.log4j.core.*]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-core-osgi-reduced ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-reduced/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-core-osgi-reduced ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-core-osgi-reduced ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ log4j-core-osgi-reduced ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-core-osgi-reduced ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-reduced/target/log4j-core-osgi-reduced-2.0RC1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/osgi/log4j-core-osgi-reduced/2.0RC1-SNAPSHOT/log4j-core-osgi-reduced-2.0RC1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/core-osgi-reduced/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/osgi/log4j-core-osgi-reduced/2.0RC1-SNAPSHOT/log4j-core-osgi-reduced-2.0RC1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ log4j-core-osgi-reduced ---
+[INFO] Installing org/apache/logging/log4j/osgi/log4j-core-osgi-reduced/2.0RC1-SNAPSHOT/log4j-core-osgi-reduced-2.0RC1-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO] 
+[INFO] --------------< org.apache.logging.log4j.osgi:log4j-osgi >--------------
+[INFO] Building Apache Log4J Core OSGi Bundles 2.0RC1-SNAPSHOT          [10/21]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-osgi ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-osgi ---
+[WARNING] Ignoring project type pom - supportedProjectTypes = [jar, bundle]
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-osgi ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-osgi/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/osgi/log4j-osgi/2.0RC1-SNAPSHOT/log4j-osgi-2.0RC1-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------------< org.apache.logging.log4j:log4j-1.2-api >---------------
+[INFO] Building Apache Log4j 1.x Compatibility API 2.0RC1-SNAPSHOT      [11/21]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-1.2-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-1.2-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-1.2-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-1.2-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 28 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-1.2-api/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-1.2-api ---
+[WARNING] Manifest org.apache.logging.log4j:log4j-1.2-api:jar:2.0RC1-SNAPSHOT : Superfluous export-package instructions: [org.apache.logging.log4j.*]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-1.2-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-1.2-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-1.2-api/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-1.2-api ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-1.2-api ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-1.2-api/target/log4j-1.2-api-2.0RC1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-1.2-api ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-1.2-api/target/log4j-1.2-api-2.0RC1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.0RC1-SNAPSHOT/log4j-1.2-api-2.0RC1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-1.2-api/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.0RC1-SNAPSHOT/log4j-1.2-api-2.0RC1-SNAPSHOT.pom
+[INFO] 
+[INFO] -------------< org.apache.logging.log4j:log4j-slf4j-impl >--------------
+[INFO] Building Apache Log4j SLF4J Binding 2.0RC1-SNAPSHOT              [12/21]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-slf4j-impl ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-slf4j-impl ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-slf4j-impl/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-slf4j-impl ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 13 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-slf4j-impl/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-slf4j-impl ---
+[WARNING] Manifest org.apache.logging.log4j:log4j-slf4j-impl:jar:2.0RC1-SNAPSHOT : Superfluous export-package instructions: [org.apache.logging.log4j.*]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-slf4j-impl ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-slf4j-impl ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-slf4j-impl/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-slf4j-impl ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-tests) @ log4j-slf4j-impl ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (test-optional) @ log4j-slf4j-impl ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-slf4j-impl ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-slf4j-impl/target/log4j-slf4j-impl-2.0RC1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-slf4j-impl ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-slf4j-impl/target/log4j-slf4j-impl-2.0RC1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.0RC1-SNAPSHOT/log4j-slf4j-impl-2.0RC1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-slf4j-impl/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.0RC1-SNAPSHOT/log4j-slf4j-impl-2.0RC1-SNAPSHOT.pom
+[INFO] 
+[INFO] --------------< org.apache.logging.log4j:log4j-to-slf4j >---------------
+[INFO] Building Apache Log4j to SLF4J Adapter 2.0RC1-SNAPSHOT           [13/21]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-to-slf4j ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-to-slf4j ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-to-slf4j ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-to-slf4j/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-to-slf4j ---
+[WARNING] Manifest org.apache.logging.log4j:log4j-to-slf4j:jar:2.0RC1-SNAPSHOT : Superfluous export-package instructions: [org.apache.logging.log4j.*]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-to-slf4j ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-to-slf4j ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-to-slf4j/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-to-slf4j ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-to-slf4j ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-to-slf4j/target/log4j-to-slf4j-2.0RC1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-to-slf4j ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-to-slf4j/target/log4j-to-slf4j-2.0RC1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.0RC1-SNAPSHOT/log4j-to-slf4j-2.0RC1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-to-slf4j/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.0RC1-SNAPSHOT/log4j-to-slf4j-2.0RC1-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.apache.logging.log4j:log4j-jcl >-----------------
+[INFO] Building Apache Log4j Commons Logging Bridge 2.0RC1-SNAPSHOT     [14/21]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-jcl ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-jcl ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-jcl ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-jcl/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-jcl ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-jcl ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-jcl ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-jcl/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-jcl ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-jcl ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-jcl/target/log4j-jcl-2.0RC1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-jcl ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-jcl/target/log4j-jcl-2.0RC1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-jcl/2.0RC1-SNAPSHOT/log4j-jcl-2.0RC1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-jcl/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-jcl/2.0RC1-SNAPSHOT/log4j-jcl-2.0RC1-SNAPSHOT.pom
+[INFO] 
+[INFO] --------------< org.apache.logging.log4j:log4j-flume-ng >---------------
+[INFO] Building Apache Log4j Flume NG Bridge 2.0RC1-SNAPSHOT            [15/21]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-flume-ng ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-flume-ng ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-flume-ng/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-flume-ng ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 11 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-flume-ng/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-flume-ng ---
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default) > validate @ log4j-flume-ng >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default) < validate @ log4j-flume-ng <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default) @ log4j-flume-ng ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-flume-ng ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-flume-ng ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-flume-ng/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-flume-ng ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-flume-ng ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-flume-ng/target/log4j-flume-ng-2.0RC1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:test-jar (default) @ log4j-flume-ng ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-flume-ng/target/log4j-flume-ng-2.0RC1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-flume-ng ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-flume-ng/target/log4j-flume-ng-2.0RC1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-flume-ng/2.0RC1-SNAPSHOT/log4j-flume-ng-2.0RC1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-flume-ng/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-flume-ng/2.0RC1-SNAPSHOT/log4j-flume-ng-2.0RC1-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-flume-ng/target/log4j-flume-ng-2.0RC1-SNAPSHOT-tests.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-flume-ng/2.0RC1-SNAPSHOT/log4j-flume-ng-2.0RC1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] ---------------< org.apache.logging.log4j:log4j-taglib >----------------
+[INFO] Building Apache Log4j Tag Library 2.0RC1-SNAPSHOT                [16/21]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-taglib ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-taglib ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-taglib ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 20 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-taglib/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-taglib ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-taglib ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-taglib ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-taglib/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-taglib ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-taglib ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-taglib/target/log4j-taglib-2.0RC1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-taglib ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-taglib/target/log4j-taglib-2.0RC1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-taglib/2.0RC1-SNAPSHOT/log4j-taglib-2.0RC1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-taglib/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-taglib/2.0RC1-SNAPSHOT/log4j-taglib-2.0RC1-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------------< org.apache.logging.log4j:log4j-jmx-gui >---------------
+[INFO] Building Apache Log4j JMX GUI 2.0RC1-SNAPSHOT                    [17/21]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-jmx-gui ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-jmx-gui ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-jmx-gui ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-jmx-gui/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-jmx-gui ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-jmx-gui ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-jmx-gui/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-jmx-gui ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-jmx-gui ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-jmx-gui ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-jmx-gui/target/log4j-jmx-gui-2.0RC1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-jmx-gui ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-jmx-gui/target/log4j-jmx-gui-2.0RC1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-jmx-gui/2.0RC1-SNAPSHOT/log4j-jmx-gui-2.0RC1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-jmx-gui/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-jmx-gui/2.0RC1-SNAPSHOT/log4j-jmx-gui-2.0RC1-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------< org.apache.logging.log4j.samples:log4j-samples >-----------
+[INFO] Building Apache Log4j Samples 2.0RC1-SNAPSHOT                    [18/21]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-samples ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-samples ---
+[WARNING] Ignoring project type pom - supportedProjectTypes = [jar, bundle]
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-samples ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/samples/log4j-samples/2.0RC1-SNAPSHOT/log4j-samples-2.0RC1-SNAPSHOT.pom
+[INFO] 
+[INFO] ----< org.apache.logging.log4j.samples:log4j-samples-flume-common >-----
+[INFO] Building Apache Log4j Samples: Flume - Common 2.0RC1-SNAPSHOT    [19/21]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-samples-flume-common ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-samples-flume-common ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-common/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-samples-flume-common ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 13 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-common/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-samples-flume-common ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-samples-flume-common ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-common/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-samples-flume-common ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-samples-flume-common ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-samples-flume-common ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-common/target/log4j-samples-flume-common-2.0RC1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-samples-flume-common ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-common/target/log4j-samples-flume-common-2.0RC1-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/samples/log4j-samples-flume-common/2.0RC1-SNAPSHOT/log4j-samples-flume-common-2.0RC1-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-common/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/samples/log4j-samples-flume-common/2.0RC1-SNAPSHOT/log4j-samples-flume-common-2.0RC1-SNAPSHOT.pom
+[INFO] 
+[INFO] ----< org.apache.logging.log4j.samples:log4j-samples-flume-remote >-----
+[INFO] Building Apache Log4j Samples: Flume - Remote 2.0RC1-SNAPSHOT    [20/21]
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-samples-flume-remote ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-samples-flume-remote ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/src/main/resources
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/src/main/webapp/WEB-INF
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-samples-flume-remote ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-samples-flume-remote ---
+[WARNING] Ignoring project type war - supportedProjectTypes = [jar, bundle]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-samples-flume-remote ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-remote/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-samples-flume-remote ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-samples-flume-remote ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-war-plugin:2.2:war (default-war) @ log4j-samples-flume-remote ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [log4j-samples-flume-remote] in [/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-remote/target/log4j-samples-flume-remote-2.0RC1-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-remote/src/main/webapp]
+[INFO] Webapp assembled in [58 msecs]
+[INFO] Building war: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-remote/target/log4j-samples-flume-remote-2.0RC1-SNAPSHOT.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ log4j-samples-flume-remote ---
+[INFO] Skipping artifact installation
+[INFO] 
+[INFO] ---< org.apache.logging.log4j.samples:log4j-samples-flume-embedded >----
+[INFO] Building Apache Log4j Samples: Flume - Embedded 2.0RC1-SNAPSHOT  [21/21]
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-samples-flume-embedded ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-samples-flume-embedded ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/src/main/resources
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/src/main/webapp/WEB-INF
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-samples-flume-embedded ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-samples-flume-embedded ---
+[WARNING] Ignoring project type war - supportedProjectTypes = [jar, bundle]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-samples-flume-embedded ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-embedded/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-samples-flume-embedded ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-samples-flume-embedded ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-war-plugin:2.2:war (default-war) @ log4j-samples-flume-embedded ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [log4j-samples-flume-embedded] in [/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-embedded/target/log4j-samples-flume-embedded-2.0RC1-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-embedded/src/main/webapp]
+[INFO] Webapp assembled in [72 msecs]
+[INFO] Building war: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-embedded/target/log4j-samples-flume-embedded-2.0RC1-SNAPSHOT.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ log4j-samples-flume-embedded ---
+[INFO] Skipping artifact installation
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Apache Log4j 2 2.0RC1-SNAPSHOT ..................... SUCCESS [  0.406 s]
+[INFO] Apache Log4j API ................................... SUCCESS [  2.974 s]
+[INFO] Apache Log4j Core .................................. SUCCESS [  3.374 s]
+[INFO] Apache Log4J Core OSGi Async ....................... SUCCESS [  1.995 s]
+[INFO] Apache Log4J Core OSGi JPA ......................... SUCCESS [  1.078 s]
+[INFO] Apache Log4J Core OSGi Net ......................... SUCCESS [  0.922 s]
+[INFO] Apache Log4J Core OSGi Couch ....................... SUCCESS [  0.918 s]
+[INFO] Apache Log4J Core OSGi Mongo ....................... SUCCESS [  1.146 s]
+[INFO] Apache Log4J Core OSGi ............................. SUCCESS [  1.420 s]
+[INFO] Apache Log4J Core OSGi Bundles ..................... SUCCESS [  0.008 s]
+[INFO] Apache Log4j 1.x Compatibility API ................. SUCCESS [  0.448 s]
+[INFO] Apache Log4j SLF4J Binding ......................... SUCCESS [  0.285 s]
+[INFO] Apache Log4j to SLF4J Adapter ...................... SUCCESS [  0.184 s]
+[INFO] Apache Log4j Commons Logging Bridge ................ SUCCESS [  0.162 s]
+[INFO] Apache Log4j Flume NG Bridge ....................... SUCCESS [  1.104 s]
+[INFO] Apache Log4j Tag Library ........................... SUCCESS [  0.219 s]
+[INFO] Apache Log4j JMX GUI ............................... SUCCESS [  0.149 s]
+[INFO] Apache Log4j Samples ............................... SUCCESS [  0.009 s]
+[INFO] Apache Log4j Samples: Flume - Common ............... SUCCESS [  0.274 s]
+[INFO] Apache Log4j Samples: Flume - Remote ............... SUCCESS [  1.059 s]
+[INFO] Apache Log4j Samples: Flume - Embedded 2.0RC1-SNAPSHOT SUCCESS [  2.003 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 20.790 s
+[INFO] Finished at: 2022-07-15T14:09:39-07:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.apache.logging.log4j:log4j-api >-----------------
+[INFO] Building Apache Log4j API 2.0RC1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-api ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 61 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ log4j-api ---
+[WARNING] The parameter forkMode is deprecated since version 2.14. Use forkCount and reuseForks instead.
+[INFO] Surefire report directory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.logging.log4j.ThreadContextTest
+Timer ThreadContextCopy stopped. Elapsed time: 0.020787023 seconds Average per iteration: 0.000000020 seconds
+Timer ThreadContextTest stopped. Elapsed time: 0.020914616 seconds
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 sec - in org.apache.logging.log4j.ThreadContextTest
+Running org.apache.logging.log4j.LevelTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in org.apache.logging.log4j.LevelTest
+Running org.apache.logging.log4j.LogManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.apache.logging.log4j.LogManagerTest
+Running org.apache.logging.log4j.ThreadContextInheritanceTest
+Timer ThreadContextCopy stopped. Elapsed time: 0.021025609 seconds Average per iteration: 0.000000021 seconds
+Timer ThreadContextTest stopped. Elapsed time: 0.021232460 seconds
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.117 sec - in org.apache.logging.log4j.ThreadContextInheritanceTest
+Running org.apache.logging.log4j.AbstractLoggerTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec - in org.apache.logging.log4j.AbstractLoggerTest
+Running org.apache.logging.log4j.EventLoggerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 sec - in org.apache.logging.log4j.EventLoggerTest
+Running org.apache.logging.log4j.spi.MutableThreadContextStackTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in org.apache.logging.log4j.spi.MutableThreadContextStackTest
+Running org.apache.logging.log4j.spi.DefaultThreadContextStackTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec - in org.apache.logging.log4j.spi.DefaultThreadContextStackTest
+Running org.apache.logging.log4j.spi.DefaultThreadContextMapTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec - in org.apache.logging.log4j.spi.DefaultThreadContextMapTest
+Running org.apache.logging.log4j.spi.LoggerStreamTest
+Tests run: 55, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec - in org.apache.logging.log4j.spi.LoggerStreamTest
+Running org.apache.logging.log4j.message.MessageFormatsPerfTest
+Timer Parameterized stopped. Elapsed time: 0.004192971 seconds Average per iteration: 0.000008385 seconds
+Timer FormattedParameterized stopped. Elapsed time: 0.013862259 seconds Average per iteration: 0.000027724 seconds
+Timer MessageFormat stopped. Elapsed time: 0.015242642 seconds Average per iteration: 0.000030485 seconds
+Timer StringFormat stopped. Elapsed time: 0.014033094 seconds Average per iteration: 0.000028066 seconds
+Parameterized is 3.35 times faster than StringFormat.
+Parameterized is 3.64 times faster than MessageFormat.
+Parameterized is 3.31 times faster than Formatted.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec - in org.apache.logging.log4j.message.MessageFormatsPerfTest
+Running org.apache.logging.log4j.message.StructuredDataMessageTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in org.apache.logging.log4j.message.StructuredDataMessageTest
+Running org.apache.logging.log4j.message.ParameterizedMessageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in org.apache.logging.log4j.message.ParameterizedMessageTest
+Running org.apache.logging.log4j.message.FormattedMessageTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec - in org.apache.logging.log4j.message.FormattedMessageTest
+Running org.apache.logging.log4j.message.StringFormattedMessageTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec - in org.apache.logging.log4j.message.StringFormattedMessageTest
+Running org.apache.logging.log4j.message.ObjectMessageTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in org.apache.logging.log4j.message.ObjectMessageTest
+Running org.apache.logging.log4j.message.ThreadDumpMessageTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.269 sec - in org.apache.logging.log4j.message.ThreadDumpMessageTest
+Running org.apache.logging.log4j.message.MessageFormatMessageTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in org.apache.logging.log4j.message.MessageFormatMessageTest
+Running org.apache.logging.log4j.message.LocalizedMessageTest
+Tests run: 4, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.149 sec <<< FAILURE! - in org.apache.logging.log4j.message.LocalizedMessageTest
+testSerializationMessageFormat(org.apache.logging.log4j.message.LocalizedMessageTest)  Time elapsed: 0.1 sec  <<< ERROR!
+org.apache.commons.lang3.SerializationException: java.io.EOFException
+	at java.io.DataInputStream.readUnsignedShort(DataInputStream.java:340)
+	at java.io.ObjectInputStream$BlockDataInputStream.readUnsignedShort(ObjectInputStream.java:3288)
+	at java.io.ObjectInputStream$BlockDataInputStream.readUTF(ObjectInputStream.java:3344)
+	at java.io.ObjectInputStream.readUTF(ObjectInputStream.java:1205)
+	at org.apache.logging.log4j.message.LocalizedMessage.readObject(LocalizedMessage.java:278)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1184)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2296)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2187)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1667)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:503)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:461)
+	at org.apache.commons.lang3.SerializationUtils.deserialize(SerializationUtils.java:209)
+	at org.apache.commons.lang3.SerializationUtils.deserialize(SerializationUtils.java:253)
+	at org.apache.logging.log4j.message.LocalizedMessageTest.roundtrip(LocalizedMessageTest.java:37)
+	at org.apache.logging.log4j.message.LocalizedMessageTest.testSerializationMessageFormat(LocalizedMessageTest.java:50)
+
+testSerializationStringFormat(org.apache.logging.log4j.message.LocalizedMessageTest)  Time elapsed: 0.002 sec  <<< ERROR!
+org.apache.commons.lang3.SerializationException: java.io.EOFException
+	at java.io.DataInputStream.readUnsignedShort(DataInputStream.java:340)
+	at java.io.ObjectInputStream$BlockDataInputStream.readUnsignedShort(ObjectInputStream.java:3288)
+	at java.io.ObjectInputStream$BlockDataInputStream.readUTF(ObjectInputStream.java:3344)
+	at java.io.ObjectInputStream.readUTF(ObjectInputStream.java:1205)
+	at org.apache.logging.log4j.message.LocalizedMessage.readObject(LocalizedMessage.java:278)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1184)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2296)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2187)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1667)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:503)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:461)
+	at org.apache.commons.lang3.SerializationUtils.deserialize(SerializationUtils.java:209)
+	at org.apache.commons.lang3.SerializationUtils.deserialize(SerializationUtils.java:253)
+	at org.apache.logging.log4j.message.LocalizedMessageTest.roundtrip(LocalizedMessageTest.java:37)
+	at org.apache.logging.log4j.message.LocalizedMessageTest.testSerializationStringFormat(LocalizedMessageTest.java:58)
+
+Running org.apache.logging.log4j.message.MapMessageTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in org.apache.logging.log4j.message.MapMessageTest
+Running org.apache.logging.log4j.osgi.felix.FelixLoadApiBundleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.331 sec - in org.apache.logging.log4j.osgi.felix.FelixLoadApiBundleTest
+Running org.apache.logging.log4j.osgi.equinox.EquinoxLoadApiBundleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.534 sec - in org.apache.logging.log4j.osgi.equinox.EquinoxLoadApiBundleTest
+Running org.apache.logging.log4j.NoopThreadContextTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec - in org.apache.logging.log4j.NoopThreadContextTest
+Running org.apache.logging.log4j.LoggerTest
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 sec - in org.apache.logging.log4j.LoggerTest
+
+Results :
+
+Tests in error: 
+  LocalizedMessageTest.testSerializationMessageFormat:50->roundtrip:37 » Serialization
+  LocalizedMessageTest.testSerializationStringFormat:58->roundtrip:37 » Serialization
+
+Tests run: 214, Failures: 0, Errors: 2, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.817 s
+[INFO] Finished at: 2022-07-15T14:09:52-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.16:test (default-test) on project log4j-api: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

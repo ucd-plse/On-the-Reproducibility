@@ -1,0 +1,91 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak MicroKernel 0.11-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ oak-mk ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ oak-mk ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-1122_5286861dc589ba14b2d919745cf6ad1fd635d3bc/oak-mk/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ oak-mk ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-scr-plugin:1.9.0:scr (generate-scr-scrdescriptor) @ oak-mk ---
+[INFO] Writing 1 Service Component Descriptors to /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-1122_5286861dc589ba14b2d919745cf6ad1fd635d3bc/oak-mk/target/scr-plugin-generated/OSGI-INF/org.apache.jackrabbit.mk.osgi.MicroKernelService.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ oak-mk ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ oak-mk ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ oak-mk ---
+[INFO] Surefire report directory: /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-1122_5286861dc589ba14b2d919745cf6ad1fd635d3bc/oak-mk/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.jackrabbit.mk.MicroKernelImplTest
+Tests run: 23, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.843 sec <<< FAILURE!
+Running org.apache.jackrabbit.mk.concurrent.ConcurrentCacheTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.005 sec
+Running org.apache.jackrabbit.mk.concurrent.ConcurrentTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.023 sec
+Running org.apache.jackrabbit.mk.concurrent.ConcurrentBlobTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.023 sec
+Running org.apache.jackrabbit.mk.json.JsopTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.apache.jackrabbit.mk.json.JsopStreamTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.jackrabbit.mk.store.DefaultRevisionStoreTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.139 sec
+Running org.apache.jackrabbit.mk.persistence.GCPersistenceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.382 sec
+Running org.apache.jackrabbit.mk.blobs.FileBlobStoreTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.636 sec
+Running org.apache.jackrabbit.mk.blobs.DbBlobStoreTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 sec
+Running org.apache.jackrabbit.mk.blobs.MemoryBlobStoreTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec
+Running org.apache.jackrabbit.mk.util.MicroKernelInputStreamTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.apache.jackrabbit.mk.util.StringUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.jackrabbit.mk.util.NameFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.jackrabbit.mk.util.IOUtilsTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.965 sec
+Running org.apache.jackrabbit.mk.model.IdTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+
+Results :
+
+Failed tests:   emptyCommit(org.apache.jackrabbit.mk.MicroKernelImplTest): empty branch commit must return current head of branch revision expected:<000000000000000[3]> but was:<000000000000000[1]>
+
+Tests run: 100, Failures: 1, Errors: 0, Skipped: 3
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.678 s
+[INFO] Finished at: 2016-07-29T14:08:47-07:00
+[INFO] Final Memory: 17M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.9:test (default-test) on project oak-mk: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-1122_5286861dc589ba14b2d919745cf6ad1fd635d3bc/oak-mk/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

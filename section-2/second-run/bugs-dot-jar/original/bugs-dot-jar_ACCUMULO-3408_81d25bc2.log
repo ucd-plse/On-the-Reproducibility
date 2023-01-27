@@ -1,0 +1,86 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Monitor Server 1.6.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.3.0:verify (verify-sorted-pom) @ accumulo-monitor ---
+[INFO] Verifying file /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-3408_81d25bc24b55b4418c0296de81cdf213ef7e8eac/server/monitor/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-mvn) @ accumulo-monitor ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo-monitor ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.10:check (check-licenses) @ accumulo-monitor ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/main/resources/web/flot/**/*.js
+[INFO] 52 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 48 licence.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ accumulo-monitor ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-monitor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 35 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ accumulo-monitor ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-monitor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ accumulo-monitor ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ accumulo-monitor ---
+[INFO] Surefire report directory: /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-3408_81d25bc24b55b4418c0296de81cdf213ef7e8eac/server/monitor/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.monitor.servlets.trace.SummaryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 sec - in org.apache.accumulo.monitor.servlets.trace.SummaryTest
+Running org.apache.accumulo.monitor.ZooKeeperStatusTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.apache.accumulo.monitor.ZooKeeperStatusTest
+Running org.apache.accumulo.monitor.util.celltypes.PreciseNumberTypeTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec <<< FAILURE! - in org.apache.accumulo.monitor.util.celltypes.PreciseNumberTypeTest
+test(org.apache.accumulo.monitor.util.celltypes.PreciseNumberTypeTest)  Time elapsed: 0.022 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<1[,000]> but was:<1[.00K]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.accumulo.monitor.util.celltypes.PreciseNumberTypeTest.test(PreciseNumberTypeTest.java:29)
+
+Running org.apache.accumulo.monitor.ShowTraceLinkTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec - in org.apache.accumulo.monitor.ShowTraceLinkTypeTest
+
+Results :
+
+Failed tests: 
+  PreciseNumberTypeTest.test:29 expected:<1[,000]> but was:<1[.00K]>
+
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9.349 s
+[INFO] Finished at: 2016-08-09T19:42:07-07:00
+[INFO] Final Memory: 20M/280M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.16:test (default-test) on project accumulo-monitor: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-3408_81d25bc24b55b4418c0296de81cdf213ef7e8eac/server/monitor/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

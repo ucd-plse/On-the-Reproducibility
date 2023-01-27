@@ -1,0 +1,68 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Artifact 2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ maven-artifact ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ maven-artifact ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ maven-artifact ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-1895_806eaeb0170299b14d620376d831fb4a9a2be9c8/maven-artifact/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ maven-artifact ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ maven-artifact ---
+[INFO] Surefire report directory: /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-1895_806eaeb0170299b14d620376d831fb4a9a2be9c8/maven-artifact/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.maven.artifact.DefaultArtifactTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.apache.maven.artifact.factory.DefaultArtifactFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 sec
+Running org.apache.maven.artifact.resolver.DefaultArtifactCollectorTest
+Tests run: 25, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.283 sec <<< FAILURE!
+testScopeUpdate(org.apache.maven.artifact.resolver.DefaultArtifactCollectorTest)  Time elapsed: 0.013 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: Check version expected:<1...> but was:<2...>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at org.apache.maven.artifact.resolver.DefaultArtifactCollectorTest.checkScopeUpdate(DefaultArtifactCollectorTest.java:616)
+	at org.apache.maven.artifact.resolver.DefaultArtifactCollectorTest.checkScopeUpdateDirect(DefaultArtifactCollectorTest.java:585)
+	at org.apache.maven.artifact.resolver.DefaultArtifactCollectorTest.checkScopeUpdate(DefaultArtifactCollectorTest.java:550)
+	at org.apache.maven.artifact.resolver.DefaultArtifactCollectorTest.testScopeUpdate(DefaultArtifactCollectorTest.java:513)
+
+Running org.apache.maven.artifact.versioning.DefaultArtifactVersionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.maven.artifact.versioning.VersionRangeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+
+Results :
+
+Failed tests:   testScopeUpdate(org.apache.maven.artifact.resolver.DefaultArtifactCollectorTest): Check version expected:<1...> but was:<2...>
+
+Tests run: 39, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.651 s
+[INFO] Finished at: 2016-07-13T22:15:41-07:00
+[INFO] Final Memory: 21M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project maven-artifact: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-1895_806eaeb0170299b14d620376d831fb4a9a2be9c8/maven-artifact/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

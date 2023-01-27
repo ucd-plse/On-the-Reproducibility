@@ -1,0 +1,153 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Log4j API 2.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-api ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ log4j-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-964_16ad8763f378a3c4cc5ca82e5d0fbf10cc601b52/log4j-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ log4j-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 67 source files to /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-964_16ad8763f378a3c4cc5ca82e5d0fbf10cc601b52/log4j-api/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.3:manifest (default) @ log4j-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ log4j-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ log4j-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log4j-api ---
+[INFO] Surefire report directory: /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-964_16ad8763f378a3c4cc5ca82e5d0fbf10cc601b52/log4j-api/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.log4j.util.StringsTest
+Running org.apache.logging.log4j.message.ParameterizedMessageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in org.apache.log4j.util.StringsTest
+Running org.apache.logging.log4j.message.FormattedMessageTest
+Running org.apache.logging.log4j.message.StructuredDataMessageTest
+Running org.apache.logging.log4j.message.ObjectMessageTest
+Running org.apache.logging.log4j.message.StringFormattedMessageTest
+Running org.apache.logging.log4j.message.LocalizedMessageTest
+Running org.apache.logging.log4j.osgi.felix.FelixLoadApiBundleTest
+Running org.apache.logging.log4j.message.MapMessageTest
+Running org.apache.logging.log4j.message.ThreadDumpMessageTest
+Running org.apache.logging.log4j.message.MessageFormatsPerfTest
+Running org.apache.logging.log4j.message.MessageFormatMessageTest
+Running org.apache.logging.log4j.message.MessageFormatMessageSerializationTest
+Running org.apache.logging.log4j.LevelTest
+Running org.apache.logging.log4j.EventLoggerTest
+Running org.apache.logging.log4j.osgi.equinox.EquinoxLoadApiBundleTest
+Running org.apache.logging.log4j.ThreadContextTest
+Running org.apache.logging.log4j.LogManagerTest
+Running org.apache.logging.log4j.ThreadContextInheritanceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.apache.logging.log4j.message.MessageFormatMessageTest
+Running org.apache.logging.log4j.simple.SimpleLoggerTest
+Running org.apache.logging.log4j.spi.MutableThreadContextStackTest
+Running org.apache.logging.log4j.util.ReflectionUtilTest
+Running org.apache.logging.log4j.LoggerTest
+Running org.apache.logging.log4j.spi.DefaultThreadContextMapTest
+Running org.apache.logging.log4j.MarkerTest
+Running org.apache.logging.log4j.spi.DefaultThreadContextStackTest
+Running org.apache.logging.log4j.AbstractLoggerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.apache.logging.log4j.MarkerTest
+Running org.apache.logging.log4j.NoopThreadContextTest
+Running org.apache.logging.log4j.status.StatusLoggerSerializationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 sec - in org.apache.logging.log4j.message.StructuredDataMessageTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 sec - in org.apache.logging.log4j.message.MessageFormatMessageSerializationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.176 sec - in org.apache.logging.log4j.LevelTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.211 sec - in org.apache.logging.log4j.message.FormattedMessageTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.217 sec - in org.apache.logging.log4j.message.ParameterizedMessageTest
+Timer Parameterized stopped. Elapsed time: 0.023358976 seconds Average per iteration: 0.000046717 seconds
+Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.21 sec <<< FAILURE! - in org.apache.logging.log4j.message.StringFormattedMessageTest
+testSerialization(org.apache.logging.log4j.message.StringFormattedMessageTest)  Time elapsed: 0.062 sec  <<< ERROR!
+java.io.EOFException: null
+	at java.io.DataInputStream.readUnsignedShort(DataInputStream.java:340)
+	at java.io.ObjectInputStream$BlockDataInputStream.readUnsignedShort(ObjectInputStream.java:2834)
+	at java.io.ObjectInputStream$BlockDataInputStream.readUTF(ObjectInputStream.java:2890)
+	at java.io.ObjectInputStream.readUTF(ObjectInputStream.java:1075)
+	at org.apache.logging.log4j.message.StringFormattedMessage.readObject(StringFormattedMessage.java:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1058)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:1907)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1806)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at org.apache.logging.log4j.message.StringFormattedMessageTest.testSerialization(StringFormattedMessageTest.java:106)
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.101 sec - in org.apache.logging.log4j.status.StatusLoggerSerializationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.217 sec - in org.apache.logging.log4j.EventLoggerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.225 sec - in org.apache.logging.log4j.message.MapMessageTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 sec - in org.apache.logging.log4j.spi.DefaultThreadContextMapTest
+Timer FormattedParameterized stopped. Elapsed time: 0.058184005 seconds Average per iteration: 0.000116368 seconds
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.279 sec - in org.apache.logging.log4j.message.ObjectMessageTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.242 sec - in org.apache.logging.log4j.simple.SimpleLoggerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.261 sec - in org.apache.logging.log4j.LogManagerTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 sec - in org.apache.logging.log4j.spi.DefaultThreadContextStackTest
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.197 sec - in org.apache.logging.log4j.spi.MutableThreadContextStackTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 sec - in org.apache.logging.log4j.AbstractLoggerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.195 sec - in org.apache.logging.log4j.NoopThreadContextTest
+Timer MessageFormat stopped. Elapsed time: 0.048759832 seconds Average per iteration: 0.000097519 seconds
+Timer ThreadContextCopy stopped. Elapsed time: 0.044144789 seconds Average per iteration: 0.000000044 seconds
+Timer ThreadContextTest stopped. Elapsed time: 0.044441266 seconds
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.224 sec - in org.apache.logging.log4j.util.ReflectionUtilTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.311 sec - in org.apache.logging.log4j.ThreadContextTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.345 sec - in org.apache.logging.log4j.message.ThreadDumpMessageTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.357 sec - in org.apache.logging.log4j.message.LocalizedMessageTest
+Timer ThreadContextCopy stopped. Elapsed time: 0.025253421 seconds Average per iteration: 0.000000025 seconds
+Timer ThreadContextTest stopped. Elapsed time: 0.025514418 seconds
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.344 sec - in org.apache.logging.log4j.ThreadContextInheritanceTest
+Timer StringFormat stopped. Elapsed time: 0.048212835 seconds Average per iteration: 0.000096425 seconds
+Parameterized is 2.06 times faster than StringFormat.
+Parameterized is 2.09 times faster than MessageFormat.
+Parameterized is 2.49 times faster than Formatted.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.363 sec - in org.apache.logging.log4j.message.MessageFormatsPerfTest
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.288 sec - in org.apache.logging.log4j.LoggerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.444 sec - in org.apache.logging.log4j.osgi.felix.FelixLoadApiBundleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.788 sec - in org.apache.logging.log4j.osgi.equinox.EquinoxLoadApiBundleTest
+
+Results :
+
+Tests in error: 
+  StringFormattedMessageTest.testSerialization:106 » EOF
+
+Tests run: 225, Failures: 0, Errors: 1, Skipped: 3
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.839 s
+[INFO] Finished at: 2016-07-16T11:17:36-07:00
+[INFO] Final Memory: 19M/939M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project log4j-api: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/log4j2/log4j29/dataset/logging-log4j2/LOG4J2-964_16ad8763f378a3c4cc5ca82e5d0fbf10cc601b52/log4j-api/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,133 @@
+travis_time:start:2de4dd28[0Ktravis_time:end:2de4dd28:start=1659297748762314912,finish=1659297748918758296,duration=156443384,event=no_world_writable_dirs[0Ktravis_time:start:08f41ace[0Ktravis_time:end:08f41ace:start=1659297748925163422,finish=1659297748929265138,duration=4101716,event=check_unsupported[0Ktravis_time:start:12195db0[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: java
+Build group: stable
+Build dist: precise
+Build id: ''
+Job id: ''
+Runtime kernel version: 4.15.0-109-generic
+[34m[1mBuild image provisioning date and time[0m
+Thu Feb  5 15:09:33 UTC 2015
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 12.04.5 LTS
+Release:	12.04
+Codename:	precise
+[34m[1mLinux Version[0m
+3.13.0-29-generic
+[34m[1mCookbooks Version[0m
+a68419e https://github.com/travis-ci/travis-cookbooks/tree/a68419e
+[34m[1mGCC version[0m
+gcc (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
+Copyright (C) 2011 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mLLVM version[0m
+clang version 3.4 (tags/RELEASE_34/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+[34m[1mPre-installed Ruby versions[0m
+ruby-1.9.3-p551
+[34m[1mPre-installed Node.js versions[0m
+v0.10.36
+[34m[1mPre-installed Go versions[0m
+1.4.1
+[34m[1mRedis version[0m
+redis-server 2.8.19
+[34m[1mriak version[0m
+2.0.2
+[34m[1mMongoDB version[0m
+MongoDB 2.4.12
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mNeo4j version[0m
+1.9.4
+[34m[1mRabbitMQ Version[0m
+3.4.3
+[34m[1mElasticSearch version[0m
+1.4.0
+[34m[1mInstalled Sphinx versions[0m
+2.0.10
+2.1.9
+2.2.6
+[34m[1mDefault Sphinx version[0m
+2.2.6
+[34m[1mInstalled Firefox version[0m
+firefox 31.0esr
+[34m[1mPhantomJS version[0m
+1.9.8
+[34m[1mant -version[0m
+Apache Ant(TM) version 1.8.2 compiled on December 3 2011
+[34m[1mmvn -version[0m
+Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T17:29:23+00:00)
+Maven home: /usr/local/maven
+Java version: 1.7.0_76, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-7-oracle/jre
+Default locale: en_US, platform encoding: ANSI_X3.4-1968
+OS name: "linux", version: "3.13.0-29-generic", arch: "amd64", family: "unix"
+travis_fold:end:system_info[0K
+travis_time:end:12195db0:start=1659297748934492520,finish=1659297748943164353,duration=8671833,event=show_system_info[0Ktravis_time:start:04e6ec8b[0Ktravis_time:end:04e6ec8b:start=1659297748948951062,finish=1659297748967811585,duration=18860523,event=rm_riak_source[0Ktravis_time:start:054f09cf[0Ktravis_time:end:054f09cf:start=1659297748973704532,finish=1659297748984352024,duration=10647492,event=fix_rwky_redis[0Ktravis_time:start:194a7cb8[0K[31;1mTimeout waiting for network availability.[0m
+travis_time:end:194a7cb8:start=1659297748990528795,finish=1659297769667332141,duration=20676803346,event=wait_for_network[0Ktravis_time:start:0977cf82[0Ktravis_time:end:0977cf82:start=1659297769673049597,finish=1659297914991391871,duration=145318342274,event=update_apt_keys[0Ktravis_time:start:00b6b873[0Ktravis_time:end:00b6b873:start=1659297914998424345,finish=1659297915061603770,duration=63179425,event=fix_hhvm_source[0Ktravis_time:start:0d159054[0Ktravis_time:end:0d159054:start=1659297915068302017,finish=1659297915074186177,duration=5884160,event=update_mongo_arch[0Ktravis_time:start:15016c26[0Ktravis_time:end:15016c26:start=1659297915080748088,finish=1659297915123727279,duration=42979191,event=fix_sudo_enabled_trusty[0Ktravis_time:start:191fcbfe[0Ktravis_time:end:191fcbfe:start=1659297915129429025,finish=1659297915142313265,duration=12884240,event=clean_up_path[0Ktravis_time:start:25e81c60[0Ktravis_time:end:25e81c60:start=1659297915148112174,finish=1659297915163819095,duration=15706921,event=fix_resolv_conf[0Ktravis_time:start:0da617ec[0Ktravis_time:end:0da617ec:start=1659297915169028887,finish=1659297915183319010,duration=14290123,event=fix_etc_hosts[0Ktravis_time:start:0012b706[0Ktravis_time:end:0012b706:start=1659297915189881166,finish=1659297915219930213,duration=30049047,event=fix_mvn_settings_xml[0Ktravis_time:start:0f01442f[0Ktravis_time:end:0f01442f:start=1659297915224933147,finish=1659297915240346638,duration=15413491,event=no_ipv6_localhost[0Ktravis_time:start:167efc2e[0Ktravis_time:end:167efc2e:start=1659297915245456300,finish=1659297915271409325,duration=25953025,event=fix_etc_mavenrc[0Ktravis_time:start:0c4cc5ef[0Ktravis_time:end:0c4cc5ef:start=1659297915278808928,finish=1659297915285568624,duration=6759696,event=fix_wwdr_certificate[0Ktravis_time:start:31c24000[0Ktravis_time:end:31c24000:start=1659297915292058726,finish=1659297915327651374,duration=35592648,event=put_localhost_first[0Ktravis_time:start:2d36bf7c[0Ktravis_time:end:2d36bf7c:start=1659297915333128835,finish=1659297915337226697,duration=4097862,event=home_paths[0Ktravis_time:start:14423db2[0Ktravis_time:end:14423db2:start=1659297915343459897,finish=1659297915371573581,duration=28113684,event=disable_initramfs[0Ktravis_time:start:1e204c57[0Ktravis_time:end:1e204c57:start=1659297915377625709,finish=1659297915398466975,duration=20841266,event=disable_ssh_roaming[0Ktravis_time:start:0ed6b579[0Ktravis_time:end:0ed6b579:start=1659297915404085727,finish=1659297915408665584,duration=4579857,event=debug_tools[0Ktravis_time:start:00a93c1a[0Ktravis_time:end:00a93c1a:start=1659297915414613329,finish=1659297915420541822,duration=5928493,event=uninstall_oclint[0Ktravis_time:start:218fc397[0Ktravis_time:end:218fc397:start=1659297915426533774,finish=1659297915432501555,duration=5967781,event=rvm_use[0Ktravis_time:start:18417f6c[0Ktravis_time:end:18417f6c:start=1659297915438423256,finish=1659297915454994470,duration=16571214,event=rm_etc_boto_cfg[0Ktravis_time:start:0aa32956[0Ktravis_time:end:0aa32956:start=1659297915460519302,finish=1659297915464782235,duration=4262933,event=rm_oraclejdk8_symlink[0Ktravis_time:start:0a0d7e8c[0Ktravis_time:end:0a0d7e8c:start=1659297915470080650,finish=1659297915517753288,duration=47672638,event=enable_i386[0Ktravis_time:start:0e9f0ecb[0Ktravis_time:end:0e9f0ecb:start=1659297915524067533,finish=1659297915531126582,duration=7059049,event=update_rubygems[0Ktravis_time:start:06018f3c[0Ktravis_time:end:06018f3c:start=1659297915537283697,finish=1659297915545602157,duration=8318460,event=ensure_path_components[0Ktravis_time:start:05bae7b4[0Ktravis_time:end:05bae7b4:start=1659297915551713930,finish=1659297915556161296,duration=4447366,event=redefine_curl[0Ktravis_time:start:059192e3[0Ktravis_time:end:059192e3:start=1659297915562532557,finish=1659297915567352270,duration=4819713,event=nonblock_pipe[0Ktravis_time:start:127aa786[0Ktravis_time:end:127aa786:start=1659297915573975638,finish=1659297918718827588,duration=3144851950,event=apt_get_update[0Ktravis_time:start:08afa4a5[0Ktravis_time:end:08afa4a5:start=1659297918724212351,finish=1659297918731766634,duration=7554283,event=deprecate_xcode_64[0Ktravis_time:start:0285e210[0Ktravis_time:end:0285e210:start=1659297918736380138,finish=1659297918743266449,duration=6886311,event=update_heroku[0Ktravis_time:start:149349ab[0Ktravis_time:end:149349ab:start=1659297918748738217,finish=1659297918753276547,duration=4538330,event=shell_session_update[0Ktravis_time:start:07705803[0Ktravis_fold:start:docker_mtu[0Ktee: /etc/docker/daemon.json: No such file or directory
+docker: unrecognized service
+travis_fold:end:docker_mtu[0Ktravis_time:end:07705803:start=1659297918759271287,finish=1659297918801769896,duration=42498609,event=set_docker_mtu[0Ktravis_time:start:05b1f784[0Ktravis_time:end:05b1f784:start=1659297918807741549,finish=1659297918822183185,duration=14441636,event=resolvconf[0K
+travis_fold:start:install_jdk[0K[33;1mInstalling openjdk6[0m
+$ jdk_switcher use "openjdk6"
+Switching to OpenJDK6 (java-1.6.0-openjdk-amd64), JAVA_HOME will be set to /usr/lib/jvm/java-6-openjdk-amd64
+travis_fold:end:install_jdk[0Ktravis_time:start:0f4986c0[0Ktravis_time:end:0f4986c0:start=1659297918843518940,finish=1659297918849101796,duration=5582856,event=fix_ps4[0Ktravis_time:start:1f2178f8[0K
+$ cd failed/Scout24/deadcode4j
+
+travis_time:end:1f2178f8:start=1659297918857513459,finish=1659297918863270535,duration=5757076,event=checkout[0Ktravis_time:start:2a506ec1[0K
+[33;1mSetting environment variables from .travis.yml[0m
+$ export MVN_VERSION=3.2.5
+
+travis_time:end:2a506ec1:start=1659297918868738525,finish=1659297918962198901,duration=93460376,event=env[0Ktravis_fold:start:cache.1[0KSetting up build cache
+$ export CASHER_DIR=${TRAVIS_HOME}/.casher
+travis_time:start:15446a72[0K$ Installing caching utilities
+
+[31;1mThe command "eval curl -sf  -o $CASHER_DIR/bin/casher https:///files/casher " failed. Retrying, 2 of 3.[0m
+
+
+[31;1mThe command "eval curl -sf  -o $CASHER_DIR/bin/casher https:///files/casher " failed. Retrying, 3 of 3.[0m
+
+
+[31;1mThe command "eval curl -sf  -o $CASHER_DIR/bin/casher https:///files/casher " failed 3 times.[0m
+
+travis_time:end:15446a72:start=1659297927554883332,finish=1659297930636667848,duration=3081784516,event=setup_casher[0Ktravis_time:start:08e34484[0K$ Installing caching utilities from the Travis CI server (https:///files/casher) failed, failing over to using GitHub (https://raw.githubusercontent.com/travis-ci/casher/bash/bin/casher)
+travis_time:end:08e34484:start=1659297930643882165,finish=1659297930893550371,duration=249668206,event=setup_casher[0Ktravis_time:start:089dffd4[0Ktravis_time:end:089dffd4:start=1659297930901624229,finish=1659297930906861878,duration=5237649,event=setup_casher[0Ktravis_time:start:0fe54245[0KYAML safe loading is not available. Please upgrade psych to a version that supports safe loading (>= 2.0).
+attempting to download cache archive[0m
+[31;1mcould not download cache[0m
+travis_time:end:0fe54245:start=1659297930914225323,finish=1659297932444511281,duration=1530285958,event=setup_casher[0Ktravis_time:start:1fe80280[0Ktravis_time:end:1fe80280:start=1659297932452658154,finish=1659297932459232109,duration=6573955,event=setup_casher[0Ktravis_time:start:0ac78d6d[0KYAML safe loading is not available. Please upgrade psych to a version that supports safe loading (>= 2.0).
+adding /home/travis/.m2/repository to cache[0m
+travis_time:end:0ac78d6d:start=1659297932466208805,finish=1659297933953356920,duration=1487148115,event=setup_casher[0Ktravis_fold:end:cache.1[0K
+$ java -Xmx32m -version
+java version "1.6.0_34"
+OpenJDK Runtime Environment (IcedTea6 1.13.6) (6b34-1.13.6-1ubuntu0.12.04.1)
+OpenJDK 64-Bit Server VM (build 23.25-b01, mixed mode)
+$ javac -J-Xmx32m -version
+javac 1.6.0_34
+travis_fold:start:before_install.1[0Ktravis_time:start:20062707[0K$ MVN_URL=https://archive.apache.org/dist/maven/maven-3/$MVN_VERSION/binaries/apache-maven-$MVN_VERSION-bin.tar.gz
+travis_time:end:20062707:start=1659297934738983688,finish=1659297934744900986,duration=5917298,event=before_install[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:0bf52c51[0K$ wget -q -O /tmp/maven.tar.gz $MVN_URL
+travis_time:end:0bf52c51:start=1659297934752952471,finish=1659297937177844957,duration=2424892486,event=before_install[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:before_install.3[0Ktravis_time:start:12d38c02[0K$ tar xzf /tmp/maven.tar.gz
+travis_time:end:12d38c02:start=1659297937185718585,finish=1659297937307296251,duration=121577666,event=before_install[0Ktravis_fold:end:before_install.3[0Ktravis_fold:start:before_install.4[0Ktravis_time:start:137c64b1[0K$ export M2_HOME=`pwd`/apache-maven-$MVN_VERSION
+travis_time:end:137c64b1:start=1659297937313740115,finish=1659297937320345241,duration=6605126,event=before_install[0Ktravis_fold:end:before_install.4[0Ktravis_fold:start:before_install.5[0Ktravis_time:start:0e2e2808[0K$ export PATH=$M2_HOME/bin:$PATH
+travis_time:end:0e2e2808:start=1659297937327570465,finish=1659297937332270982,duration=4700517,event=before_install[0Ktravis_fold:end:before_install.5[0Ktravis_fold:start:before_install.6[0Ktravis_time:start:02bedfe0[0K$ export MAVEN_SKIP_RC=true
+travis_time:end:02bedfe0:start=1659297937338950611,finish=1659297937343501840,duration=4551229,event=before_install[0Ktravis_fold:end:before_install.6[0Ktravis_fold:start:install.1[0Ktravis_time:start:010a7cbd[0K$ mvn -B -U clean verify org.apache.maven.plugins:maven-war-plugin:2.4:help -Dinvoker.skip=true -Dmaven.main.skip=true -Dmaven.plugin.skip=true -Dmaven.test.skip=true -PenableCoverage,travis
+[INFO] Scanning for projects...
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.4/maven-war-plugin-2.4.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.595 s
+[INFO] Finished at: 2022-07-31T20:05:39+00:00
+[INFO] Final Memory: 15M/1962M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Plugin org.apache.maven.plugins:maven-war-plugin:2.4 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-war-plugin:jar:2.4: Could not transfer artifact org.apache.maven.plugins:maven-war-plugin:pom:2.4 from/to central (https://repo.maven.apache.org/maven2): Received fatal alert: protocol_version -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginResolutionException
+travis_time:end:010a7cbd:start=1659297937350879916,finish=1659297939361032306,duration=2010152390,event=install[0K[31;1mThe command "mvn -B -U clean verify org.apache.maven.plugins:maven-war-plugin:2.4:help -Dinvoker.skip=true -Dmaven.main.skip=true -Dmaven.plugin.skip=true -Dmaven.test.skip=true -PenableCoverage,travis" failed and exited with 1 during .[0m
+
+Your build has been stopped.

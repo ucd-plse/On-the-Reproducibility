@@ -1,0 +1,110 @@
+Checking out fd9c0157 to /tmp/test_d4j_3291096_1660808270/test_trigger/Tez_ OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Copy generated Ant build file.............................................. OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff fd9c0157:1ae62421..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: Tez_common-1b................................... OK
+Running ant (compile)...................................................... FAIL
+Executed command:  cd /tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common && /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/major/bin/ant -f /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml -Dd4j.home=/On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs -Dd4j.dir.projects=/On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/projects -Dbasedir=/tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common -Dbuild.compiler=javac1.8  compile 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [mkdir] Created dir: /tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common/target/classes
+    [javac] /tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common/maven-build.xml:222: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+BUILD FAILED
+/tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common/maven-build.xml:222: srcdir "/tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common/src/main/java" does not exist!
+
+Total time: 0 seconds
+Cannot compile sources! at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-compile line 82.
+Compilation failed in require at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: compile: Tez_common-1b
+Running ant (compile.tests)................................................ FAIL
+Executed command:  cd /tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common && /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/major/bin/ant -f /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml -Dd4j.home=/On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs -Dd4j.dir.projects=/On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/projects -Dbasedir=/tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common -Dbuild.compiler=javac1.8  compile.tests 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [javac] /tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common/maven-build.xml:222: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+BUILD FAILED
+/tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common/maven-build.xml:222: srcdir "/tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common/src/main/java" does not exist!
+
+Total time: 0 seconds
+Cannot compile test suite! at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-test line 130.
+Compilation failed in require at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: run relevant tests: Tez_common-1b
+cat: /tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common/failing_tests: No such file or directory
+grep: /tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common/failing_tests: No such file or directory
+Error: verify number of triggering tests: Tez_common-1b (expected: 1, actual: 0)
+grep: /tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common/failing_tests: No such file or directory
+Error: expected triggering test org.apache.tez.common.TestTezUtils::testBitSetToByteArray did not fail
+Check out program version: Tez_common-1f................................... OK
+Running ant (compile)...................................................... FAIL
+Executed command:  cd /tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common && /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/major/bin/ant -f /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml -Dd4j.home=/On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs -Dd4j.dir.projects=/On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/projects -Dbasedir=/tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common -Dbuild.compiler=javac1.8  compile 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [mkdir] Created dir: /tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common/target/classes
+    [javac] /tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common/maven-build.xml:222: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+BUILD FAILED
+/tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common/maven-build.xml:222: srcdir "/tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common/src/main/java" does not exist!
+
+Total time: 0 seconds
+Cannot compile sources! at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-compile line 82.
+Compilation failed in require at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: compile: Tez_common-1f
+Running ant (compile.tests)................................................ FAIL
+Executed command:  cd /tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common && /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/major/bin/ant -f /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml -Dd4j.home=/On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs -Dd4j.dir.projects=/On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/projects -Dbasedir=/tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common -Dbuild.compiler=javac1.8  compile.tests 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [javac] /tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common/maven-build.xml:222: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+BUILD FAILED
+/tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common/maven-build.xml:222: srcdir "/tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common/src/main/java" does not exist!
+
+Total time: 0 seconds
+Cannot compile test suite! at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-test line 130.
+Compilation failed in require at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: run relevant tests: Tez_common-1f
+cat: /tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common/failing_tests: No such file or directory
+grep: /tmp/test_d4j_3291096_1660808270/test_trigger/Tez_common/failing_tests: No such file or directory
+================================================================================
+The following errors occurred:
+Error: compile: Tez_common-1b
+Error: run relevant tests: Tez_common-1b
+Error: verify number of triggering tests: Tez_common-1b (expected: 1, actual: 0)
+Error: expected triggering test org.apache.tez.common.TestTezUtils::testBitSetToByteArray did not fail
+Error: compile: Tez_common-1f
+Error: run relevant tests: Tez_common-1f
+================================================================================
+FAILED

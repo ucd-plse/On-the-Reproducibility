@@ -1,0 +1,634 @@
+travis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: java
+Build id: ''
+Job id: ''
+[34m[1mBuild image provisioning date and time[0m
+Fri Dec 12 23:29:11 UTC 2014
+[34m[1mlsb_release -a[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 12.04.5 LTS
+Release:	12.04
+Codename:	precise
+[34m[1mCookbooks Version[0m
+540230e https://github.com/travis-ci/travis-cookbooks/tree/540230e
+[34m[1mGCC version[0m
+gcc (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
+Copyright (C) 2011 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mLLVM version[0m
+clang version 3.4 (tags/RELEASE_34/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+[34m[1mPre-installed Ruby versions[0m
+ruby-1.9.3-p551
+[34m[1mPre-installed Node.js versions[0m
+v0.10.33
+[34m[1mPre-installed Go versions[0m
+go1.4
+[34m[1mRedis version[0m
+redis-server 2.8.18
+[34m[1mriak version[0m
+1.4.12
+[34m[1mMongoDB version[0m
+MongoDB 2.4.12
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mNeo4j version[0m
+1.9.4
+[34m[1mCassandra version[0m
+2.0.9
+[34m[1mRabbitMQ Version[0m
+3.4.2
+[34m[1mElasticSearch version[0m
+1.4.0
+[34m[1mInstalled Sphinx versions[0m
+2.0.10
+2.1.9
+2.2.4
+[34m[1mDefault Sphinx version[0m
+2.1.9
+[34m[1mInstalled Firefox version[0m
+firefox 31.0esr
+[34m[1mPhantomJS version[0m
+1.9.8
+[34m[1mant -version[0m
+Apache Ant(TM) version 1.8.2 compiled on December 3 2011
+[34m[1mmvn -version[0m
+Apache Maven 3.2.3 (33f8c3e1027c3ddde99d3cdebad2656a31e8fdf4; 2014-08-11T20:58:10+00:00)
+Maven home: /usr/local/maven
+Java version: 1.7.0_72, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-7-oracle/jre
+Default locale: en_US, platform encoding: ANSI_X3.4-1968
+OS name: "linux", version: "3.13.0-29-generic", arch: "amd64", family: "unix"
+[34m[1mgradle -version[0m
+
+------------------------------------------------------------
+Gradle 2.2.1
+------------------------------------------------------------
+
+Build time:   2014-11-24 09:45:35 UTC
+Build number: none
+Revision:     6fcb59c06f43a4e6b1bcb401f7686a8601a1fb4a
+
+Groovy:       2.3.6
+Ant:          Apache Ant(TM) version 1.9.3 compiled on December 23 2013
+JVM:          1.7.0_72 (Oracle Corporation 24.72-b04)
+OS:           Linux 3.13.0-29-generic amd64
+
+[34m[1mlein1 version[0m
+Using JLine for console I/O; install rlwrap for optimum experience.
+Leiningen 1.7.1 on Java 1.7.0_72 Java HotSpot(TM) 64-Bit Server VM
+[34m[1mlein2 version[0m
+Leiningen 2.5.0 on Java 1.7.0_72 Java HotSpot(TM) 64-Bit Server VM
+[34m[1mlein version[0m
+Leiningen 2.5.0 on Java 1.7.0_72 Java HotSpot(TM) 64-Bit Server VM
+travis_fold:end:system_info[0K
+W: Failed to fetch http://apt.basho.com/dists/precise/Release.gpg  Could not resolve 'apt.basho.com'
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/main/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/restricted/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/universe/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/multiverse/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/main/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/restricted/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/universe/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/multiverse/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/main/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/restricted/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/universe/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/multiverse/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/main/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/restricted/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/universe/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/multiverse/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/main/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/restricted/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/universe/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/multiverse/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/main/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/restricted/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/universe/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/multiverse/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/main/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/universe/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/multiverse/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/main/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/universe/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/multiverse/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/main/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/universe/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/multiverse/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/main/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/restricted/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/universe/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/multiverse/source/Sources  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/main/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/restricted/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/universe/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/multiverse/binary-amd64/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/main/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/restricted/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/universe/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/multiverse/binary-i386/Packages  404  Not Found [IP: 91.189.91.39 80]
+
+W: Failed to fetch http://apt.postgresql.org/pub/repos/apt/dists/precise-pgdg/main/binary-amd64/Packages  404  Not Found [IP: 217.196.149.55 80]
+
+W: Failed to fetch http://apt.postgresql.org/pub/repos/apt/dists/precise-pgdg/main/binary-i386/Packages  404  Not Found [IP: 217.196.149.55 80]
+
+W: Failed to fetch http://ppa.launchpad.net/rwky/ppa/ubuntu/dists/precise/main/binary-amd64/Packages  403  Forbidden
+
+W: Failed to fetch http://ppa.launchpad.net/rwky/ppa/ubuntu/dists/precise/main/binary-i386/Packages  403  Forbidden
+
+W: Failed to fetch http://ppa.launchpad.net/travis-ci/zero-mq/ubuntu/dists/precise/main/binary-amd64/Packages  403  Forbidden
+
+W: Failed to fetch http://ppa.launchpad.net/travis-ci/zero-mq/ubuntu/dists/precise/main/binary-i386/Packages  403  Forbidden
+
+W: Failed to fetch http://downloads-distro.mongodb.org/repo/debian-sysvinit/dists/dist/10gen/binary-amd64/Packages  Undetermined Error [IP: 54.175.147.155 80]
+
+W: Failed to fetch http://downloads-distro.mongodb.org/repo/debian-sysvinit/dists/dist/10gen/binary-i386/Packages  Undetermined Error [IP: 54.175.147.155 80]
+
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+sed: cannot rename /etc/hosts: Device or resource busy
+sed: cannot rename /etc/hosts: Device or resource busy
+$ jdk_switcher use oraclejdk8
+Switching to Oracle JDK8 (java-8-oracle), JAVA_HOME will be set to /usr/lib/jvm/java-8-oracle
+$ cd failed/puniverse/quasar
+
+[33;1mSetting environment variables from .travis.yml[0m
+$ export GH_OAUTH_TOKEN=[secure]
+$ export DOCS_BRANCH="0.6.2"
+$ export GEN_APIDOCS="gradle javadoc"
+
+$ export TERM=dumb
+$ java -Xmx32m -version
+java version "1.8.0_25"
+Java(TM) SE Runtime Environment (build 1.8.0_25-b17)
+Java HotSpot(TM) 64-Bit Server VM (build 25.25-b02, mixed mode)
+$ javac -J-Xmx32m -version
+javac 1.8.0_25
+travis_fold:start:install[0Ktravis_time:start:035dfde0[0K$ gradle -q assemble
+sonatype username or password not set
+sonatype username or password not set
+sonatype username or password not set
+sonatype username or password not set
+warning: [options] bootstrap class path not set in conjunction with -source 1.7
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/common/util/ProcessUtil.java:19: warning: VMManagement is internal proprietary API and may be removed in a future release
+import sun.management.VMManagement;
+                     ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/common/util/UtilUnsafe.java:16: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/concurrent/forkjoin/ParkableForkJoinTask.java:26: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/concurrent/util/ConcurrentSkipListSet.java:11: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/concurrent/util/OwnedSynchronizer2.java:19: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/concurrent/util/ThreadAccess.java:25: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/RunnableFiberTask.java:27: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/AbstractFuture.java:24: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoader.java:34: warning: Resource is internal proprietary API and may be removed in a future release
+import sun.misc.Resource;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoader.java:35: warning: URLClassPath is internal proprietary API and may be removed in a future release
+import sun.misc.URLClassPath;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoaderHelper.java:33: warning: Resource is internal proprietary API and may be removed in a future release
+import sun.misc.Resource;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoaderHelper.java:34: warning: URLClassPath is internal proprietary API and may be removed in a future release
+import sun.misc.URLClassPath;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/OwnedSynchronizer.java:18: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/channels/Selector.java:31: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/queues/CircularBuffer.java:17: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/concurrent/AbstractQueuedLongSynchronizer.java:43: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/concurrent/AbstractQueuedSynchronizer.java:45: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/queues/ArrayQueue.java:17: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/queues/BoxQueue.java:17: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/queues/SingleConsumerArrayQueue.java:21: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/queues/SingleConsumerLinkedArrayQueue.java:20: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/queues/SingleConsumerLinkedQueue.java:20: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+warning: Supported source version 'RELEASE_6' from annotation processor 'org.kohsuke.metainf_services.AnnotationProcessorImpl' less than -source '1.7'
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/common/util/ProcessUtil.java:19: warning: VMManagement is internal proprietary API and may be removed in a future release
+import sun.management.VMManagement;
+                     ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/common/util/UtilUnsafe.java:16: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/concurrent/forkjoin/ParkableForkJoinTask.java:26: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/concurrent/util/ConcurrentSkipListSet.java:11: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/concurrent/util/OwnedSynchronizer2.java:19: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/concurrent/util/ThreadAccess.java:25: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/RunnableFiberTask.java:27: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/AbstractFuture.java:24: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoader.java:34: warning: Resource is internal proprietary API and may be removed in a future release
+import sun.misc.Resource;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoader.java:35: warning: URLClassPath is internal proprietary API and may be removed in a future release
+import sun.misc.URLClassPath;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoaderHelper.java:33: warning: Resource is internal proprietary API and may be removed in a future release
+import sun.misc.Resource;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoaderHelper.java:34: warning: URLClassPath is internal proprietary API and may be removed in a future release
+import sun.misc.URLClassPath;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/OwnedSynchronizer.java:18: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/channels/Selector.java:31: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/queues/CircularBuffer.java:17: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/concurrent/AbstractQueuedLongSynchronizer.java:43: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/concurrent/AbstractQueuedSynchronizer.java:45: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/queues/ArrayQueue.java:17: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/queues/BoxQueue.java:17: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/queues/SingleConsumerArrayQueue.java:21: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/queues/SingleConsumerLinkedArrayQueue.java:20: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/queues/SingleConsumerLinkedQueue.java:20: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/common/util/ProcessUtil.java:19: warning: VMManagement is internal proprietary API and may be removed in a future release
+import sun.management.VMManagement;
+                     ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/common/util/UtilUnsafe.java:16: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/concurrent/forkjoin/ParkableForkJoinTask.java:26: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/concurrent/util/ConcurrentSkipListSet.java:11: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/concurrent/util/OwnedSynchronizer2.java:19: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/concurrent/util/ThreadAccess.java:25: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/RunnableFiberTask.java:27: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/AbstractFuture.java:24: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoader.java:34: warning: Resource is internal proprietary API and may be removed in a future release
+import sun.misc.Resource;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoader.java:35: warning: URLClassPath is internal proprietary API and may be removed in a future release
+import sun.misc.URLClassPath;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoaderHelper.java:33: warning: Resource is internal proprietary API and may be removed in a future release
+import sun.misc.Resource;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoaderHelper.java:34: warning: URLClassPath is internal proprietary API and may be removed in a future release
+import sun.misc.URLClassPath;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/OwnedSynchronizer.java:18: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/channels/Selector.java:31: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/queues/CircularBuffer.java:17: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/concurrent/AbstractQueuedLongSynchronizer.java:43: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/concurrent/AbstractQueuedSynchronizer.java:45: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/queues/ArrayQueue.java:17: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/queues/BoxQueue.java:17: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/queues/SingleConsumerArrayQueue.java:21: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/queues/SingleConsumerLinkedArrayQueue.java:20: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/queues/SingleConsumerLinkedQueue.java:20: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/common/util/ProcessUtil.java:27: warning: VMManagement is internal proprietary API and may be removed in a future release
+            VMManagement vmManagement = (VMManagement) jvmField.get(runtimeMXBean);
+            ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/common/util/ProcessUtil.java:27: warning: VMManagement is internal proprietary API and may be removed in a future release
+            VMManagement vmManagement = (VMManagement) jvmField.get(runtimeMXBean);
+                                         ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/common/util/UtilUnsafe.java:30: warning: Unsafe is internal proprietary API and may be removed in a future release
+    public static Unsafe getUnsafe1() {
+                  ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/common/util/UtilUnsafe.java:33: warning: Unsafe is internal proprietary API and may be removed in a future release
+            return Unsafe.getUnsafe();
+                   ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/common/util/UtilUnsafe.java:35: warning: Unsafe is internal proprietary API and may be removed in a future release
+            Field f = Unsafe.class.getDeclaredField("theUnsafe");
+                      ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/common/util/UtilUnsafe.java:37: warning: Unsafe is internal proprietary API and may be removed in a future release
+            return (Unsafe) f.get(UtilUnsafe.class);
+                    ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/common/util/UtilUnsafe.java:43: warning: Unsafe is internal proprietary API and may be removed in a future release
+    public static Unsafe getUnsafe() {
+                  ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/common/util/UtilUnsafe.java:45: warning: Unsafe is internal proprietary API and may be removed in a future release
+            return Unsafe.getUnsafe();
+                   ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/common/util/UtilUnsafe.java:48: warning: Unsafe is internal proprietary API and may be removed in a future release
+                return java.security.AccessController.doPrivileged(new java.security.PrivilegedExceptionAction<Unsafe>() {
+                                                                                                               ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/common/util/UtilUnsafe.java:50: warning: Unsafe is internal proprietary API and may be removed in a future release
+                    public Unsafe run() throws Exception {
+                           ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/common/util/UtilUnsafe.java:51: warning: Unsafe is internal proprietary API and may be removed in a future release
+                        final Class<sun.misc.Unsafe> k = sun.misc.Unsafe.class;
+                                            ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/common/util/UtilUnsafe.java:51: warning: Unsafe is internal proprietary API and may be removed in a future release
+                        final Class<sun.misc.Unsafe> k = sun.misc.Unsafe.class;
+                                                                 ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/concurrent/forkjoin/ParkableForkJoinTask.java:342: warning: Unsafe is internal proprietary API and may be removed in a future release
+    private static final Unsafe UNSAFE = UtilUnsafe.getUnsafe();
+                         ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/concurrent/util/ConcurrentSkipListPriorityQueue.java:422: warning: Unsafe is internal proprietary API and may be removed in a future release
+        private static final sun.misc.Unsafe UNSAFE;
+                                     ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/concurrent/util/ConcurrentSkipListPriorityQueue.java:503: warning: Unsafe is internal proprietary API and may be removed in a future release
+        private static final sun.misc.Unsafe UNSAFE;
+                                     ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/concurrent/util/ConcurrentSkipListPriorityQueue.java:1566: warning: Unsafe is internal proprietary API and may be removed in a future release
+    private static final sun.misc.Unsafe UNSAFE;
+                                 ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/concurrent/util/OwnedSynchronizer2.java:102: warning: Unsafe is internal proprietary API and may be removed in a future release
+    private static final Unsafe UNSAFE = UtilUnsafe.getUnsafe();
+                         ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/concurrent/util/ThreadAccess.java:32: warning: Unsafe is internal proprietary API and may be removed in a future release
+    private static final Unsafe UNSAFE = UtilUnsafe.getUnsafe();
+                         ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/Fiber.java:1698: warning: Unsafe is internal proprietary API and may be removed in a future release
+    private static final sun.misc.Unsafe UNSAFE = UtilUnsafe.getUnsafe();
+                                 ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/RunnableFiberTask.java:320: warning: Unsafe is internal proprietary API and may be removed in a future release
+    private static final Unsafe UNSAFE = UtilUnsafe.getUnsafe();
+                         ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/strands/AbstractFuture.java:147: warning: Unsafe is internal proprietary API and may be removed in a future release
+    private static final Unsafe UNSAFE = UtilUnsafe.getUnsafe();
+                         ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoader.java:87: warning: Resource is internal proprietary API and may be removed in a future release
+                            Resource res = ucp().getResource(path, false);
+                            ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoader.java:124: warning: Resource is internal proprietary API and may be removed in a future release
+    private Resource instrument(final String className, final Resource res) {
+            ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoader.java:124: warning: Resource is internal proprietary API and may be removed in a future release
+    private Resource instrument(final String className, final Resource res) {
+                                                              ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoader.java:125: warning: Resource is internal proprietary API and may be removed in a future release
+        return new Resource() {
+                   ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoader.java:208: warning: Resource is internal proprietary API and may be removed in a future release
+            defineClassMethod = URLClassLoader.class.getDeclaredMethod("defineClass", String.class, Resource.class);
+                                                                                                    ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoader.java:217: warning: Resource is internal proprietary API and may be removed in a future release
+    private Class defineClass(String name, Resource res) throws IOException {
+                                           ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoader.java:229: warning: URLClassPath is internal proprietary API and may be removed in a future release
+    private URLClassPath ucp() {
+            ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoader.java:231: warning: URLClassPath is internal proprietary API and may be removed in a future release
+            return (URLClassPath) ucpField.get(this);
+                    ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoaderHelper.java:79: warning: Resource is internal proprietary API and may be removed in a future release
+                            Resource res = ucp().getResource(path, false);
+                            ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoaderHelper.java:114: warning: Resource is internal proprietary API and may be removed in a future release
+    private Resource instrument(final String className, final Resource res) {
+            ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoaderHelper.java:114: warning: Resource is internal proprietary API and may be removed in a future release
+    private Resource instrument(final String className, final Resource res) {
+                                                              ^
+/home/travis/build/failed/puniverse/quasar/quasar-core/src/main/java/co/paralleluniverse/fibers/instrument/QuasarURLClassLoaderHelper.java:115: warning: Resource is internal proprietary API and may be removed in a future release
+        return new Resource() {
+                   ^
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+100 warnings
+[ant:instrumentation] ERROR: Unable to instrument class co/paralleluniverse/strands/channels/Channels$1
+co.paralleluniverse.fibers.instrument.UnableToInstrumentException: Unable to instrument co/paralleluniverse/strands/channels/Channels$1#run()Ljava/lang/Void; because of catch for SuspendExecution
+	at co.paralleluniverse.fibers.instrument.InstrumentMethod.accept(InstrumentMethod.java:253)
+	at co.paralleluniverse.fibers.instrument.InstrumentClass.visitEnd(InstrumentClass.java:241)
+	at org.objectweb.asm.ClassReader.accept(Unknown Source)
+	at org.objectweb.asm.ClassReader.accept(Unknown Source)
+	at co.paralleluniverse.fibers.instrument.QuasarInstrumentor.instrumentClass(QuasarInstrumentor.java:107)
+	at co.paralleluniverse.fibers.instrument.QuasarInstrumentor.instrumentClass(QuasarInstrumentor.java:88)
+	at co.paralleluniverse.fibers.instrument.InstrumentationTask.instrumentClass(InstrumentationTask.java:190)
+	at co.paralleluniverse.fibers.instrument.InstrumentationTask.execute(InstrumentationTask.java:177)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at groovy.util.AntBuilder.performTask(AntBuilder.java:319)
+	at groovy.util.AntBuilder.nodeCompleted(AntBuilder.java:264)
+	at org.gradle.api.internal.project.ant.BasicAntBuilder.nodeCompleted(BasicAntBuilder.java:77)
+	at groovy.util.BuilderSupport.doInvokeMethod(BuilderSupport.java:147)
+	at groovy.util.AntBuilder.doInvokeMethod(AntBuilder.java:203)
+	at org.gradle.api.internal.project.ant.BasicAntBuilder.doInvokeMethod(BasicAntBuilder.java:92)
+	at groovy.util.BuilderSupport.invokeMethod(BuilderSupport.java:64)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:120)
+	at build_e8lcg9853moba2y7b7vg4kepw$_run_closure1_closure13_closure34.doCall(/home/travis/build/failed/puniverse/quasar/build.gradle:125)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:278)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at groovy.lang.Closure.call(Closure.java:439)
+	at org.gradle.api.internal.AbstractTask$ClosureTaskAction.execute(AbstractTask.java:548)
+	at org.gradle.api.internal.AbstractTask$ClosureTaskAction.execute(AbstractTask.java:529)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/travis/build/failed/puniverse/quasar/build.gradle' line: 125
+
+* What went wrong:
+Execution failed for task ':quasar-core:compileJava'.
+> Unable to instrument co/paralleluniverse/strands/channels/Channels$1#run()Ljava/lang/Void; because of catch for SuspendExecution
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+travis_time:end:035dfde0:start=1659183699871644400,finish=1659183734636848503,duration=34765204103[0K
+[31;1mThe command "gradle -q assemble" failed and exited with 1 during .[0m
+
+Your build has been stopped.

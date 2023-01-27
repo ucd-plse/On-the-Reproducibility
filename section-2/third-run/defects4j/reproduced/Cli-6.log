@@ -1,0 +1,35 @@
+Checking out 6f972cf5 to /tmp/test_d4j_20563_1660702396/test_trigger/Cli... OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff 6f972cf5:3880640e..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: Cli-6b.......................................... OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+Failing tests: 0
+Error: verify number of triggering tests: Cli-6b (expected: 3, actual: 0)
+Error: expected triggering test org.apache.commons.cli.BugsTest::test19383 did not fail
+Error: expected triggering test org.apache.commons.cli.TestHelpFormatter::testPrintUsage did not fail
+Error: expected triggering test org.apache.commons.cli.TestHelpFormatter::testAutomaticUsage did not fail
+Check out program version: Cli-6f.......................................... OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+Failing tests: 0
+================================================================================
+The following errors occurred:
+Error: verify number of triggering tests: Cli-6b (expected: 3, actual: 0)
+Error: expected triggering test org.apache.commons.cli.BugsTest::test19383 did not fail
+Error: expected triggering test org.apache.commons.cli.TestHelpFormatter::testPrintUsage did not fail
+Error: expected triggering test org.apache.commons.cli.TestHelpFormatter::testAutomaticUsage did not fail
+================================================================================
+FAILED

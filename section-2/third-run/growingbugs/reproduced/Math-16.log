@@ -1,0 +1,43 @@
+Checking out 76f15417 to /tmp/test_d4j_3311752_1660808554/test_trigger/Math FAIL
+Executed command: git clone /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/project_repos/commons-math.git /tmp/test_d4j_3311752_1660808554/test_trigger/Math 2>&1 && cd /tmp/test_d4j_3311752_1660808554/test_trigger/Math && git checkout 76f154179b8dc6940355d7fe7db468314ca39e84 2>&1
+Cloning into '/tmp/test_d4j_3311752_1660808554/test_trigger/Math'...
+done.
+fatal: reference is not a tree: 76f154179b8dc6940355d7fe7db468314ca39e84
+Cannot checkout program version! at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-checkout line 102.
+Compilation failed in require at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: checkout: Math-16b
+Cannot open config file (/tmp/test_d4j_3311752_1660808554/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_3311752_1660808554/test_trigger/Math is not a valid working directory!
+Error: compile: Math-16b
+Cannot open config file (/tmp/test_d4j_3311752_1660808554/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_3311752_1660808554/test_trigger/Math is not a valid working directory!
+Error: run relevant tests: Math-16b
+cat: /tmp/test_d4j_3311752_1660808554/test_trigger/Math/failing_tests: No such file or directory
+grep: /tmp/test_d4j_3311752_1660808554/test_trigger/Math/failing_tests: No such file or directory
+Error: verify number of triggering tests: Math-16b (expected: 1, actual: 0)
+grep: /tmp/test_d4j_3311752_1660808554/test_trigger/Math/failing_tests: No such file or directory
+Error: expected triggering test org.apache.commons.math3.stat.inference.MannWhitneyUTestTest::testBigDataSetOverflow did not fail
+Cannot open config file (/tmp/test_d4j_3311752_1660808554/test_trigger/Math/.defects4j.config): No such file or directory
+Directory exists but is not a previously used working directory: /tmp/test_d4j_3311752_1660808554/test_trigger/Math at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/core/Vcs.pm line 285.
+Compilation failed in require at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: checkout: Math-16f
+Cannot open config file (/tmp/test_d4j_3311752_1660808554/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_3311752_1660808554/test_trigger/Math is not a valid working directory!
+Error: compile: Math-16f
+Cannot open config file (/tmp/test_d4j_3311752_1660808554/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_3311752_1660808554/test_trigger/Math is not a valid working directory!
+Error: run relevant tests: Math-16f
+cat: /tmp/test_d4j_3311752_1660808554/test_trigger/Math/failing_tests: No such file or directory
+grep: /tmp/test_d4j_3311752_1660808554/test_trigger/Math/failing_tests: No such file or directory
+================================================================================
+The following errors occurred:
+Error: checkout: Math-16b
+Error: compile: Math-16b
+Error: run relevant tests: Math-16b
+Error: verify number of triggering tests: Math-16b (expected: 1, actual: 0)
+Error: expected triggering test org.apache.commons.math3.stat.inference.MannWhitneyUTestTest::testBigDataSetOverflow did not fail
+Error: checkout: Math-16f
+Error: compile: Math-16f
+Error: run relevant tests: Math-16f
+================================================================================
+FAILED

@@ -1,0 +1,102 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GC Server 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-gc ---
+[INFO] Verifying file /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-2520_a64151e6362034fac0c5f243c7b04d924f096df0/server/gc/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-gc ---
+[INFO] 
+[INFO] --- mavanagaiata:0.6.1:commit (git-commit) @ accumulo-gc ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ accumulo-gc ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-gc ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-gc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-2520_a64151e6362034fac0c5f243c7b04d924f096df0/server/gc/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-gc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-gc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-2520_a64151e6362034fac0c5f243c7b04d924f096df0/server/gc/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-gc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-gc ---
+[INFO] Surefire report directory: /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-2520_a64151e6362034fac0c5f243c7b04d924f096df0/server/gc/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.gc.GarbageCollectionTest
+Tests run: 14, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.137 sec <<< FAILURE!
+testBadDeletes(org.apache.accumulo.gc.GarbageCollectionTest)  Time elapsed: 0.004 sec  <<< ERROR!
+java.lang.IllegalArgumentException: /
+	at org.apache.accumulo.gc.GarbageCollectionAlgorithm.makeRelative(GarbageCollectionAlgorithm.java:104)
+	at org.apache.accumulo.gc.GarbageCollectionAlgorithm.makeRelative(GarbageCollectionAlgorithm.java:115)
+	at org.apache.accumulo.gc.GarbageCollectionAlgorithm.collect(GarbageCollectionAlgorithm.java:279)
+	at org.apache.accumulo.gc.GarbageCollectionTest.testBadDeletes(GarbageCollectionTest.java:468)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+
+Results :
+
+Tests in error: 
+  testBadDeletes(org.apache.accumulo.gc.GarbageCollectionTest): /
+
+Tests run: 14, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.065 s
+[INFO] Finished at: 2016-08-09T19:58:01-07:00
+[INFO] Final Memory: 19M/304M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project accumulo-gc: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /local/rsaha/FLAIR-temp/dataset-fla/dataset/accumulo/versions/ACCUMULO-2520_a64151e6362034fac0c5f243c7b04d924f096df0/server/gc/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,114 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Project Builder 2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ maven-project ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ maven-project ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ maven-project ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 65 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ maven-project ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ maven-project ---
+[INFO] Surefire report directory: /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-2221_cc859f5cfb0950cdb307c52884e7a3e0764f2ff6/maven-project/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.maven.project.TestProjectBuilder
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.maven.project.TestArtifactResolver
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.maven.project.interpolation.RegexBasedModelInterpolatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec
+Running org.apache.maven.project.artifact.MavenMetadataSourceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.223 sec
+Running org.apache.maven.project.injection.TestProfileInjector
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.maven.project.injection.DefaultModelDefaultsInjectorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.maven.project.injection.DefaultProfileInjectorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.maven.project.ProjectSorterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.maven.project.ProjectClasspathTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec
+Running org.apache.maven.project.validation.DefaultModelValidatorTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.221 sec
+Running org.apache.maven.project.canonical.CanonicalProjectBuilderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running org.apache.maven.project.ModelUtilsTest
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE!
+testShouldMergeOnePluginWithInheritExecutionWithoutDuplicatingPluginInList(org.apache.maven.project.ModelUtilsTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<1> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at junit.framework.Assert.assertEquals(Assert.java:207)
+	at org.apache.maven.project.ModelUtilsTest.testShouldMergeOnePluginWithInheritExecutionWithoutDuplicatingPluginInList(ModelUtilsTest.java:109)
+
+testShouldMergePluginWithDifferentExecutionFromParentWithoutDuplicatingPluginInList(org.apache.maven.project.ModelUtilsTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<1> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at junit.framework.Assert.assertEquals(Assert.java:207)
+	at org.apache.maven.project.ModelUtilsTest.testShouldMergePluginWithDifferentExecutionFromParentWithoutDuplicatingPluginInList(ModelUtilsTest.java:149)
+
+Running org.apache.maven.project.ProjectBaseDirectoryAlignmentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running org.apache.maven.project.inheritance.t03.ProjectInheritanceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.apache.maven.project.inheritance.DefaultModelInheritanceAssemblerTest
+Resulting path is: '/file-management'
+Resulting path is: 'http://maven.apache.org/shared/file-management'
+Resulting path is: 'http://maven.apache.org/shared/file-management'
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.apache.maven.project.inheritance.t00.ProjectInheritanceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running org.apache.maven.project.inheritance.t02.ProjectInheritanceTest
+Local repository is at: /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-2221_cc859f5cfb0950cdb307c52884e7a3e0764f2ff6/maven-project/src/test/resources/inheritance-repo/t02
+Location of project-4's POM: /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-2221_cc859f5cfb0950cdb307c52884e7a3e0764f2ff6/maven-project/src/test/resources/inheritance-repo/t02/p0/p1/p2/p3/p4/pom.xml
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Running org.apache.maven.project.inheritance.t01.ProjectInheritanceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running org.apache.maven.project.MavenProjectTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
+Running org.apache.maven.profiles.DefaultProfileManagerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
+
+Results :
+
+Failed tests:   testShouldMergeOnePluginWithInheritExecutionWithoutDuplicatingPluginInList(org.apache.maven.project.ModelUtilsTest): expected:<1> but was:<2>
+  testShouldMergePluginWithDifferentExecutionFromParentWithoutDuplicatingPluginInList(org.apache.maven.project.ModelUtilsTest): expected:<1> but was:<2>
+
+Tests run: 93, Failures: 2, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.194 s
+[INFO] Finished at: 2016-07-13T22:13:29-07:00
+[INFO] Final Memory: 21M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project maven-project: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-2221_cc859f5cfb0950cdb307c52884e7a3e0764f2ff6/maven-project/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

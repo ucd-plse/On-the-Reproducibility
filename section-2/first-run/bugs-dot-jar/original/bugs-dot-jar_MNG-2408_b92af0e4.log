@@ -1,0 +1,87 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Artifact Manager 2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ maven-artifact-manager ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ maven-artifact-manager ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ maven-artifact-manager ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ maven-artifact-manager ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ maven-artifact-manager ---
+[INFO] Surefire report directory: /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-2408_b92af0e49fded18b67a3a3cd9492ef79b022c6b1/maven-artifact-manager/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.maven.artifact.repository.metadata.AbstractRepositoryMetadataTest
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec <<< FAILURE!
+testUpdateRepositoryMetadata_ShouldNotStoreIfMainVersionIsLATEST(org.apache.maven.artifact.repository.metadata.AbstractRepositoryMetadataTest)  Time elapsed: 0.058 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertFalse(Assert.java:34)
+	at junit.framework.Assert.assertFalse(Assert.java:41)
+	at org.apache.maven.artifact.testutils.TestFileManager.assertFileExistence(TestFileManager.java:139)
+	at org.apache.maven.artifact.repository.metadata.AbstractRepositoryMetadataTest.testUpdateRepositoryMetadata_ShouldNotStoreIfMainVersionIsLATEST(AbstractRepositoryMetadataTest.java:49)
+
+testUpdateRepositoryMetadata_ShouldNotStoreIfMainVersionIsRELEASE(org.apache.maven.artifact.repository.metadata.AbstractRepositoryMetadataTest)  Time elapsed: 0.02 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertFalse(Assert.java:34)
+	at junit.framework.Assert.assertFalse(Assert.java:41)
+	at org.apache.maven.artifact.testutils.TestFileManager.assertFileExistence(TestFileManager.java:139)
+	at org.apache.maven.artifact.repository.metadata.AbstractRepositoryMetadataTest.testUpdateRepositoryMetadata_ShouldNotStoreIfMainVersionIsRELEASE(AbstractRepositoryMetadataTest.java:76)
+
+Running org.apache.maven.artifact.deployer.ArtifactDeployerTest
+[INFO] Retrieving previous metadata from test
+[INFO] Uploading repository metadata for: 'artifact org.apache.maven:artifact'
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.191 sec
+Running org.apache.maven.artifact.resolver.ArtifactResolverTest
+[WARNING] *** CHECKSUM FAILED - Error retrieving checksum file for org.apache.maven/jars/b-1.0.jar - IGNORING
+[WARNING] *** CHECKSUM FAILED - Error retrieving checksum file for org.apache.maven/jars/j-1.0.jar - IGNORING
+[WARNING] *** CHECKSUM FAILED - Error retrieving checksum file for org.apache.maven/jars/i-1.0.jar - IGNORING
+[WARNING] Unable to get resource from repository test (file:///home/ylyu/parallel/maven/maven9/dataset/mng/MNG-2408_b92af0e49fded18b67a3a3cd9492ef79b022c6b1/maven-artifact-manager/target/test-classes/repositories/resolver/remote-repository)
+[WARNING] *** CHECKSUM FAILED - Error retrieving checksum file for org.apache.maven/jars/l-1.0.jar - IGNORING
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec
+Running org.apache.maven.artifact.manager.DefaultWagonManagerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+Running org.apache.maven.artifact.installer.ArtifactInstallerTest
+[INFO] Installing /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-2408_b92af0e49fded18b67a3a3cd9492ef79b022c6b1/maven-artifact-manager/src/test/resources/artifact-install/artifact-1.0.jar to /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-2408_b92af0e49fded18b67a3a3cd9492ef79b022c6b1/maven-artifact-manager/target/test-classes/repositories/installer/local-repository/org.apache.maven/jars/artifact-1.0.jar
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+
+Results :
+
+Failed tests:   testUpdateRepositoryMetadata_ShouldNotStoreIfMainVersionIsLATEST(org.apache.maven.artifact.repository.metadata.AbstractRepositoryMetadataTest)
+  testUpdateRepositoryMetadata_ShouldNotStoreIfMainVersionIsRELEASE(org.apache.maven.artifact.repository.metadata.AbstractRepositoryMetadataTest)
+
+Tests run: 13, Failures: 2, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.650 s
+[INFO] Finished at: 2016-07-13T22:12:24-07:00
+[INFO] Final Memory: 21M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project maven-artifact-manager: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/maven/maven9/dataset/mng/MNG-2408_b92af0e49fded18b67a3a3cd9492ef79b022c6b1/maven-artifact-manager/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

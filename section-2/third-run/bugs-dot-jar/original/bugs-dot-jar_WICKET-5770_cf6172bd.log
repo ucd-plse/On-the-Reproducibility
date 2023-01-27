@@ -1,0 +1,109 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Wicket Request 7.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ wicket-request ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wicket-request ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] skip non existing resourceDirectory /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-5770_cf6172bd5acceac19f4322dcf7ce2ec7aef76a38/wicket-request/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ wicket-request ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] >>> clirr-maven-plugin:2.6.1:check (clirr-check) > compile @ wicket-request >>>
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ wicket-request ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wicket-request ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] skip non existing resourceDirectory /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-5770_cf6172bd5acceac19f4322dcf7ce2ec7aef76a38/wicket-request/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ wicket-request ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< clirr-maven-plugin:2.6.1:check (clirr-check) < compile @ wicket-request <<<
+[INFO] 
+[INFO] --- clirr-maven-plugin:2.6.1:check (clirr-check) @ wicket-request ---
+[INFO] Skipping execution
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.0:manifest (bundle-manifest) @ wicket-request ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ wicket-request ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ wicket-request ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ wicket-request ---
+[INFO] Surefire report directory: /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-5770_cf6172bd5acceac19f4322dcf7ce2ec7aef76a38/wicket-request/target/surefire-reports
+[INFO] Using configured provider org.apache.maven.surefire.junitcore.JUnitCoreProvider
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.wicket.request.HttpHeaderCollectionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in org.apache.wicket.request.HttpHeaderCollectionTest
+Running org.apache.wicket.request.util.license.ApacheLicenceHeaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec - in org.apache.wicket.request.util.license.ApacheLicenceHeaderTest
+Running org.apache.wicket.request.UrlTest
+Tests run: 72, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.apache.wicket.request.UrlTest
+Running org.apache.wicket.request.http.handler.RedirectRequestHandlerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec - in org.apache.wicket.request.http.handler.RedirectRequestHandlerTest
+Running org.apache.wicket.request.UrlUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.wicket.request.UrlUtilsTest
+Running org.apache.wicket.request.mapper.CompoundRequestMapperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.wicket.request.mapper.CompoundRequestMapperTest
+Running org.apache.wicket.request.mapper.parameter.PageParametersEncoderTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.007 sec <<< FAILURE! - in org.apache.wicket.request.mapper.parameter.PageParametersEncoderTest
+decodeParameters(org.apache.wicket.request.mapper.parameter.PageParametersEncoderTest)  Time elapsed: 0.007 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Argument 'name' may not be null or empty.
+	at org.apache.wicket.util.lang.Args.notEmpty(Args.java:64)
+	at org.apache.wicket.request.mapper.parameter.PageParameters.add(PageParameters.java:290)
+	at org.apache.wicket.request.mapper.parameter.PageParameters.add(PageParameters.java:284)
+	at org.apache.wicket.request.mapper.parameter.PageParametersEncoder.decodePageParameters(PageParametersEncoder.java:50)
+	at org.apache.wicket.request.mapper.parameter.PageParametersEncoderTest.decodeParameters(PageParametersEncoderTest.java:42)
+
+Running org.apache.wicket.request.mapper.parameter.PageParametersTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.wicket.request.mapper.parameter.PageParametersTest
+Running org.apache.wicket.request.mapper.parameter.UrlPathPageParametersEncoderTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.wicket.request.mapper.parameter.UrlPathPageParametersEncoderTest
+Running org.apache.wicket.request.parameter.CombinedRequestParametersAdapterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.wicket.request.parameter.CombinedRequestParametersAdapterTest
+
+Results :
+
+
+Tests in error: 
+  PageParametersEncoderTest.decodeParameters:42 » IllegalArgument Argument 'name...
+
+
+Tests run: 105, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.860 s
+[INFO] Finished at: 2016-07-30T11:08:31-07:00
+[INFO] Final Memory: 24M/606M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18:test (default-test) on project wicket-request: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/dataset/wicket3/dataset/wicket/WICKET-5770_cf6172bd5acceac19f4322dcf7ce2ec7aef76a38/wicket-request/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

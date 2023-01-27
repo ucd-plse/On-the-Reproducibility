@@ -1,0 +1,549 @@
+travis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: java
+Build id: ''
+Job id: ''
+[34m[1mBuild image provisioning date and time[0m
+Fri Dec 12 23:29:11 UTC 2014
+[34m[1mlsb_release -a[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 12.04.5 LTS
+Release:	12.04
+Codename:	precise
+[34m[1mCookbooks Version[0m
+540230e https://github.com/travis-ci/travis-cookbooks/tree/540230e
+[34m[1mGCC version[0m
+gcc (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
+Copyright (C) 2011 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mLLVM version[0m
+clang version 3.4 (tags/RELEASE_34/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+[34m[1mPre-installed Ruby versions[0m
+ruby-1.9.3-p551
+[34m[1mPre-installed Node.js versions[0m
+v0.10.33
+[34m[1mPre-installed Go versions[0m
+go1.4
+[34m[1mRedis version[0m
+redis-server 2.8.18
+[34m[1mriak version[0m
+1.4.12
+[34m[1mMongoDB version[0m
+MongoDB 2.4.12
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mNeo4j version[0m
+1.9.4
+[34m[1mCassandra version[0m
+2.0.9
+[34m[1mRabbitMQ Version[0m
+3.4.2
+[34m[1mElasticSearch version[0m
+1.4.0
+[34m[1mInstalled Sphinx versions[0m
+2.0.10
+2.1.9
+2.2.4
+[34m[1mDefault Sphinx version[0m
+2.1.9
+[34m[1mInstalled Firefox version[0m
+firefox 31.0esr
+[34m[1mPhantomJS version[0m
+1.9.8
+[34m[1mant -version[0m
+Apache Ant(TM) version 1.8.2 compiled on December 3 2011
+[34m[1mmvn -version[0m
+Apache Maven 3.2.3 (33f8c3e1027c3ddde99d3cdebad2656a31e8fdf4; 2014-08-11T20:58:10+00:00)
+Maven home: /usr/local/maven
+Java version: 1.7.0_72, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-7-oracle/jre
+Default locale: en_US, platform encoding: ANSI_X3.4-1968
+OS name: "linux", version: "3.13.0-29-generic", arch: "amd64", family: "unix"
+[34m[1mgradle -version[0m
+
+------------------------------------------------------------
+Gradle 2.2.1
+------------------------------------------------------------
+
+Build time:   2014-11-24 09:45:35 UTC
+Build number: none
+Revision:     6fcb59c06f43a4e6b1bcb401f7686a8601a1fb4a
+
+Groovy:       2.3.6
+Ant:          Apache Ant(TM) version 1.9.3 compiled on December 23 2013
+JVM:          1.7.0_72 (Oracle Corporation 24.72-b04)
+OS:           Linux 3.13.0-29-generic amd64
+
+[34m[1mlein1 version[0m
+Using JLine for console I/O; install rlwrap for optimum experience.
+Leiningen 1.7.1 on Java 1.7.0_72 Java HotSpot(TM) 64-Bit Server VM
+[34m[1mlein2 version[0m
+Leiningen 2.5.0 on Java 1.7.0_72 Java HotSpot(TM) 64-Bit Server VM
+[34m[1mlein version[0m
+Leiningen 2.5.0 on Java 1.7.0_72 Java HotSpot(TM) 64-Bit Server VM
+travis_fold:end:system_info[0K
+grep: /etc/apt/sources.list.d/*: No such file or directory
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/main/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/restricted/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/universe/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/multiverse/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/main/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/restricted/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/universe/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/multiverse/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/main/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/restricted/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/universe/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/multiverse/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/main/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/universe/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/multiverse/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/main/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/universe/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/multiverse/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/main/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/universe/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/multiverse/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/main/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/restricted/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/universe/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/multiverse/source/Sources  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/main/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/restricted/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/universe/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/multiverse/binary-amd64/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/main/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/restricted/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/universe/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/multiverse/binary-i386/Packages  404  Not Found [IP: 91.189.91.38 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/main/source/Sources  404  Not Found [IP: 185.125.190.36 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/restricted/source/Sources  404  Not Found [IP: 185.125.190.36 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/universe/source/Sources  404  Not Found [IP: 185.125.190.36 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/multiverse/source/Sources  404  Not Found [IP: 185.125.190.36 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/main/binary-amd64/Packages  404  Not Found [IP: 185.125.190.36 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/restricted/binary-amd64/Packages  404  Not Found [IP: 185.125.190.36 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/universe/binary-amd64/Packages  404  Not Found [IP: 185.125.190.36 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/multiverse/binary-amd64/Packages  404  Not Found [IP: 185.125.190.36 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/main/binary-i386/Packages  404  Not Found [IP: 185.125.190.36 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/restricted/binary-i386/Packages  404  Not Found [IP: 185.125.190.36 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/universe/binary-i386/Packages  404  Not Found [IP: 185.125.190.36 80]
+
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/multiverse/binary-i386/Packages  404  Not Found [IP: 185.125.190.36 80]
+
+E: Some index files failed to download. They have been ignored, or old ones used instead.
+sed: cannot rename /etc/hosts: Device or resource busy
+sed: cannot rename /etc/hosts: Device or resource busy
+$ jdk_switcher use oraclejdk7
+Switching to Oracle JDK7 (java-7-oracle), JAVA_HOME will be set to /usr/lib/jvm/java-7-oracle
+$ cd failed/square/javapoet
+travis_fold:start:cache.1[0KSetting up build cache
+$ export CASHER_DIR=$HOME/.casher
+travis_time:start:07209ba3[0K$ Installing caching utilities
+
+travis_time:end:07209ba3:start=1659278910453913618,finish=1659278910735310836,duration=281397218[0Ktravis_time:start:31b0b076[0K
+travis_time:end:31b0b076:start=1659278910749129010,finish=1659278910758146672,duration=9017662[0Ktravis_time:start:0fb6d9b5[0K/home/travis/.casher/bin/casher:213:in `cache_archive_name': undefined method `[]' for nil:NilClass (NoMethodError)
+	from /home/travis/.casher/bin/casher:65:in `block in fetch'
+	from /home/travis/.casher/bin/casher:64:in `each'
+	from /home/travis/.casher/bin/casher:64:in `fetch'
+	from /home/travis/.casher/bin/casher:53:in `block in run'
+	from /home/travis/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/timeout.rb:69:in `timeout'
+	from /home/travis/.casher/bin/casher:53:in `run'
+	from /home/travis/.casher/bin/casher:263:in `<main>'
+[32;1mattempting to download cache archive[0m
+
+travis_time:end:0fb6d9b5:start=1659278910768118656,finish=1659278911586293030,duration=818174374[0Ktravis_time:start:00ffa1f4[0K
+travis_time:end:00ffa1f4:start=1659278911596922791,finish=1659278911606123814,duration=9201023[0Ktravis_time:start:0a1366a0[0K[32;1madding /home/travis/.m2 to cache[0m
+
+travis_time:end:0a1366a0:start=1659278911616207126,finish=1659278912415492335,duration=799285209[0Ktravis_fold:end:cache.1[0K$ java -Xmx32m -version
+java version "1.7.0_72"
+Java(TM) SE Runtime Environment (build 1.7.0_72-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 24.72-b04, mixed mode)
+$ javac -J-Xmx32m -version
+javac 1.7.0_72
+travis_fold:start:install[0Ktravis_time:start:1dde2b1c[0K$ mvn install -Dhttps.protocols=TLSv1.2 -Dhttps.protocols=TLSv1.2 -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+Apache Maven 3.2.3 (33f8c3e1027c3ddde99d3cdebad2656a31e8fdf4; 2014-08-11T20:58:10+00:00)
+Maven home: /usr/local/maven
+Java version: 1.7.0_72, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-7-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.15.0-109-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom (5 KB at 27.5 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+[INFO] Downloading: https://repository.apache.org/releases/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JavaWriter 3.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/1.0/maven-enforcer-plugin-1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/1.0/maven-enforcer-plugin-1.0.pom (7 KB at 83.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer/1.0/enforcer-1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer/1.0/enforcer-1.0.pom (12 KB at 362.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/17/maven-parent-17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/17/maven-parent-17.pom (25 KB at 715.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/7/apache-7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/7/apache-7.pom (15 KB at 741.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/1.0/maven-enforcer-plugin-1.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/1.0/maven-enforcer-plugin-1.0.jar (22 KB at 1053.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.pom (8 KB at 396.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/23/maven-plugins-23.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/23/maven-plugins-23.pom (9 KB at 408.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/22/maven-parent-22.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/22/maven-parent-22.pom (30 KB at 1262.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/11/apache-11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/11/apache-11.pom (15 KB at 628.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.jar (29 KB at 1310.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.0/maven-compiler-plugin-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.0/maven-compiler-plugin-3.0.pom (10 KB at 440.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.0/maven-compiler-plugin-3.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.0/maven-compiler-plugin-3.0.jar (41 KB at 1395.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.12.4/maven-surefire-plugin-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.12.4/maven-surefire-plugin-2.12.4.pom (11 KB at 465.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.12.4/surefire-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.12.4/surefire-2.12.4.pom (14 KB at 612.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.12.4/maven-surefire-plugin-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.12.4/maven-surefire-plugin-2.12.4.jar (30 KB at 1293.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.pom (6 KB at 299.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom (13 KB at 636.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/21/maven-parent-21.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/21/maven-parent-21.pom (26 KB at 1119.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/10/apache-10.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/10/apache-10.pom (15 KB at 802.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.jar (34 KB at 1582.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-checkstyle-plugin/2.13/maven-checkstyle-plugin-2.13.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-checkstyle-plugin/2.13/maven-checkstyle-plugin-2.13.pom (13 KB at 616.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/25/maven-plugins-25.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/25/maven-plugins-25.pom (10 KB at 548.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/24/maven-parent-24.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/24/maven-parent-24.pom (37 KB at 1441.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/14/apache-14.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/14/apache-14.pom (15 KB at 754.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-checkstyle-plugin/2.13/maven-checkstyle-plugin-2.13.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-checkstyle-plugin/2.13/maven-checkstyle-plugin-2.13.jar (112 KB at 3103.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.pom (7 KB at 296.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.jar (27 KB at 1253.3 KB/sec)
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom (6 KB at 212.8 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/guava/guava/18.0/guava-18.0.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/guava/guava/18.0/guava-18.0.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom (8 KB at 250.2 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/truth/truth/1.0/truth-1.0.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/truth/truth/1.0/truth-1.0.pom (7 KB at 232.2 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/truth/truth/1.0/truth-1.0.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/truth/truth/1.0/truth-1.0.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/truth/truth-parent/1.0/truth-parent-1.0.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/truth/truth-parent/1.0/truth-parent-1.0.pom (16 KB at 464.5 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/truth/truth-parent/1.0/truth-parent-1.0.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/truth/truth-parent/1.0/truth-parent-1.0.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/guava/guava/27.0.1-android/guava-27.0.1-android.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/guava/guava/27.0.1-android/guava-27.0.1-android.pom (9 KB at 279.3 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/guava/guava/27.0.1-android/guava-27.0.1-android.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/guava/guava/27.0.1-android/guava-27.0.1-android.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/guava/guava-parent/27.0.1-android/guava-parent-27.0.1-android.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/guava/guava-parent/27.0.1-android/guava-parent-27.0.1-android.pom (10 KB at 355.1 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/guava/guava-parent/27.0.1-android/guava-parent-27.0.1-android.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/guava/guava-parent/27.0.1-android/guava-parent-27.0.1-android.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom (7 KB at 221.2 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+[INFO] Downloading: https://repository.apache.org/releases/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.pom (3 KB at 98.2 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/guava/guava-parent/26.0-android/guava-parent-26.0-android.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/guava/guava-parent/26.0-android/guava-parent-26.0-android.pom (10 KB at 342.8 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/guava/guava-parent/26.0-android/guava-parent-26.0-android.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/guava/guava-parent/26.0-android/guava-parent-26.0-android.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.pom (3 KB at 89.0 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom (5 KB at 110.1 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/checkerframework/checker-compat-qual/2.5.2/checker-compat-qual-2.5.2.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/checkerframework/checker-compat-qual/2.5.2/checker-compat-qual-2.5.2.pom (3 KB at 103.2 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/checkerframework/checker-compat-qual/2.5.2/checker-compat-qual-2.5.2.pom
+[INFO] Downloading: https://repository.apache.org/releases/org/checkerframework/checker-compat-qual/2.5.2/checker-compat-qual-2.5.2.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.2.0/error_prone_annotations-2.2.0.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.2.0/error_prone_annotations-2.2.0.pom (2 KB at 67.0 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/errorprone/error_prone_annotations/2.2.0/error_prone_annotations-2.2.0.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/errorprone/error_prone_annotations/2.2.0/error_prone_annotations-2.2.0.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/errorprone/error_prone_parent/2.2.0/error_prone_parent-2.2.0.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/errorprone/error_prone_parent/2.2.0/error_prone_parent-2.2.0.pom (5 KB at 198.9 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/errorprone/error_prone_parent/2.2.0/error_prone_parent-2.2.0.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/errorprone/error_prone_parent/2.2.0/error_prone_parent-2.2.0.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom (3 KB at 107.9 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.pom (3 KB at 104.7 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.pom
+[INFO] Downloading: https://repository.apache.org/releases/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-parent/1.17/animal-sniffer-parent-1.17.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-parent/1.17/animal-sniffer-parent-1.17.pom (9 KB at 300.2 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/codehaus/mojo/animal-sniffer-parent/1.17/animal-sniffer-parent-1.17.pom
+[INFO] Downloading: https://repository.apache.org/releases/org/codehaus/mojo/animal-sniffer-parent/1.17/animal-sniffer-parent-1.17.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/codehaus/mojo/mojo-parent/40/mojo-parent-40.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/codehaus/mojo/mojo-parent/40/mojo-parent-40.pom (33 KB at 1059.1 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/codehaus/mojo/mojo-parent/40/mojo-parent-40.pom
+[INFO] Downloading: https://repository.apache.org/releases/org/codehaus/mojo/mojo-parent/40/mojo-parent-40.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.pom (3 KB at 103.2 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.pom
+[INFO] Downloading: https://repository.apache.org/releases/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.pom (24 KB at 770.8 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/junit/junit/4.12/junit-4.12.pom
+[INFO] Downloading: https://repository.apache.org/releases/junit/junit/4.12/junit-4.12.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom (766 B at 29.9 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
+[INFO] Downloading: https://repository.apache.org/releases/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom (2 KB at 80.2 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+[INFO] Downloading: https://repository.apache.org/releases/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/googlecode/java-diff-utils/diffutils/1.3.0/diffutils-1.3.0.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/googlecode/java-diff-utils/diffutils/1.3.0/diffutils-1.3.0.pom (3 KB at 108.5 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/googlecode/java-diff-utils/diffutils/1.3.0/diffutils-1.3.0.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/googlecode/java-diff-utils/diffutils/1.3.0/diffutils-1.3.0.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/auto/value/auto-value-annotations/1.6.3/auto-value-annotations-1.6.3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/auto/value/auto-value-annotations/1.6.3/auto-value-annotations-1.6.3.pom (3 KB at 96.7 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/auto/value/auto-value-annotations/1.6.3/auto-value-annotations-1.6.3.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/auto/value/auto-value-annotations/1.6.3/auto-value-annotations-1.6.3.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/auto/value/auto-value-parent/1.6.3/auto-value-parent-1.6.3.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/auto/value/auto-value-parent/1.6.3/auto-value-parent-1.6.3.pom (2 KB at 68.7 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/auto/value/auto-value-parent/1.6.3/auto-value-parent-1.6.3.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/auto/value/auto-value-parent/1.6.3/auto-value-parent-1.6.3.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/auto/auto-parent/7/auto-parent-7.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/auto/auto-parent/7/auto-parent-7.pom (7 KB at 236.5 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/auto/auto-parent/7/auto-parent-7.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/auto/auto-parent/7/auto-parent-7.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.3.1/error_prone_annotations-2.3.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.3.1/error_prone_annotations-2.3.1.pom (2 KB at 69.7 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/errorprone/error_prone_annotations/2.3.1/error_prone_annotations-2.3.1.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/errorprone/error_prone_annotations/2.3.1/error_prone_annotations-2.3.1.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/errorprone/error_prone_parent/2.3.1/error_prone_parent-2.3.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/errorprone/error_prone_parent/2.3.1/error_prone_parent-2.3.1.pom (5 KB at 193.4 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/errorprone/error_prone_parent/2.3.1/error_prone_parent-2.3.1.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/errorprone/error_prone_parent/2.3.1/error_prone_parent-2.3.1.pom
+[INFO] Downloading: https://nexus.codehaus.org/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/maven-metadata.xml
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/maven-metadata.xml
+[INFO] Downloading: https://repository.apache.org/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/maven-metadata.xml
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/maven-metadata.xml
+[WARNING] Could not transfer metadata com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from/to sonatype-snapshots (https://oss.sonatype.org/content/repositories/snapshots/): Received fatal alert: handshake_failure
+[WARNING] Could not transfer metadata com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from/to codehaus-snapshots (https://nexus.codehaus.org/snapshots/): nexus.codehaus.org
+[WARNING] Could not transfer metadata com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from/to sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots): Received fatal alert: handshake_failure
+[WARNING] Failure to transfer com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from https://oss.sonatype.org/content/repositories/snapshots/ was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-snapshots has elapsed or updates are forced. Original error: Could not transfer metadata com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from/to sonatype-snapshots (https://oss.sonatype.org/content/repositories/snapshots/): Received fatal alert: handshake_failure
+[WARNING] Failure to transfer com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from https://nexus.codehaus.org/snapshots/ was cached in the local repository, resolution will not be reattempted until the update interval of codehaus-snapshots has elapsed or updates are forced. Original error: Could not transfer metadata com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from/to codehaus-snapshots (https://nexus.codehaus.org/snapshots/): nexus.codehaus.org
+[WARNING] Failure to transfer com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced. Original error: Could not transfer metadata com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from/to sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots): Received fatal alert: handshake_failure
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/compile-testing-1.0-SNAPSHOT.pom
+[INFO] Downloading: https://repository.apache.org/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/compile-testing-1.0-SNAPSHOT.pom
+[INFO] Downloading: https://nexus.codehaus.org/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/compile-testing-1.0-SNAPSHOT.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/jimfs/jimfs/1.0/jimfs-1.0.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/jimfs/jimfs/1.0/jimfs-1.0.pom (5 KB at 134.8 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/jimfs/jimfs/1.0/jimfs-1.0.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/jimfs/jimfs/1.0/jimfs-1.0.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/jimfs/jimfs-parent/1.0/jimfs-parent-1.0.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/jimfs/jimfs-parent/1.0/jimfs-parent-1.0.pom (6 KB at 213.6 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/jimfs/jimfs-parent/1.0/jimfs-parent-1.0.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/jimfs/jimfs-parent/1.0/jimfs-parent-1.0.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom (6 KB at 229.2 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/guava/guava/16.0.1/guava-16.0.1.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/guava/guava/16.0.1/guava-16.0.1.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/com/google/guava/guava-parent/16.0.1/guava-parent-16.0.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/com/google/guava/guava-parent/16.0.1/guava-parent-16.0.1.pom (8 KB at 286.6 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/com/google/guava/guava-parent/16.0.1/guava-parent-16.0.1.pom
+[INFO] Downloading: https://repository.apache.org/releases/com/google/guava/guava-parent/16.0.1/guava-parent-16.0.1.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/mockito/mockito-core/1.10.16/mockito-core-1.10.16.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/mockito/mockito-core/1.10.16/mockito-core-1.10.16.pom (2 KB at 51.4 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/mockito/mockito-core/1.10.16/mockito-core-1.10.16.pom
+[INFO] Downloading: https://repository.apache.org/releases/org/mockito/mockito-core/1.10.16/mockito-core-1.10.16.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom (481 B at 18.8 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+[INFO] Downloading: https://repository.apache.org/releases/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom (6 KB at 229.6 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+[INFO] Downloading: https://repository.apache.org/releases/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/objenesis/objenesis/2.1/objenesis-2.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/objenesis/objenesis/2.1/objenesis-2.1.pom (3 KB at 99.1 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/objenesis/objenesis/2.1/objenesis-2.1.pom
+[INFO] Downloading: https://repository.apache.org/releases/org/objenesis/objenesis/2.1/objenesis-2.1.pom
+[INFO] Downloading: http://insecure.repo1.maven.org/maven2/org/objenesis/objenesis-parent/2.1/objenesis-parent-2.1.pom
+[INFO] Downloaded: http://insecure.repo1.maven.org/maven2/org/objenesis/objenesis-parent/2.1/objenesis-parent-2.1.pom (17 KB at 582.7 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/objenesis/objenesis-parent/2.1/objenesis-parent-2.1.pom
+[INFO] Downloading: https://repository.apache.org/releases/org/objenesis/objenesis-parent/2.1/objenesis-parent-2.1.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 33.842 s
+[INFO] Finished at: 2022-07-31T14:49:07+00:00
+[INFO] Final Memory: 11M/491M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project javawriter: Could not resolve dependencies for project com.squareup:javawriter:jar:3.0.0-SNAPSHOT: Failed to collect dependencies at com.google.testing.compile:compile-testing:jar:1.0-SNAPSHOT: Failed to read artifact descriptor for com.google.testing.compile:compile-testing:jar:1.0-SNAPSHOT: Could not transfer artifact com.google.testing.compile:compile-testing:pom:1.0-SNAPSHOT from/to sonatype-snapshots (https://oss.sonatype.org/content/repositories/snapshots/): Received fatal alert: handshake_failure -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+
+[31;1mThe command "eval mvn install -Dhttps.protocols=TLSv1.2 -Dhttps.protocols=TLSv1.2 -DskipTests=true -Dmaven.javadoc.skip=true -B -V " failed. Retrying, 2 of 3.[0m
+
+Apache Maven 3.2.3 (33f8c3e1027c3ddde99d3cdebad2656a31e8fdf4; 2014-08-11T20:58:10+00:00)
+Maven home: /usr/local/maven
+Java version: 1.7.0_72, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-7-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.15.0-109-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JavaWriter 3.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: https://nexus.codehaus.org/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/maven-metadata.xml
+[INFO] Downloading: https://repository.apache.org/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/maven-metadata.xml
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/maven-metadata.xml
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/maven-metadata.xml
+[WARNING] Could not transfer metadata com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from/to sonatype-snapshots (https://oss.sonatype.org/content/repositories/snapshots/): Received fatal alert: handshake_failure
+[WARNING] Could not transfer metadata com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from/to codehaus-snapshots (https://nexus.codehaus.org/snapshots/): nexus.codehaus.org
+[WARNING] Could not transfer metadata com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from/to sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots): Received fatal alert: handshake_failure
+[WARNING] Failure to transfer com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from https://oss.sonatype.org/content/repositories/snapshots/ was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-snapshots has elapsed or updates are forced. Original error: Could not transfer metadata com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from/to sonatype-snapshots (https://oss.sonatype.org/content/repositories/snapshots/): Received fatal alert: handshake_failure
+[WARNING] Failure to transfer com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from https://nexus.codehaus.org/snapshots/ was cached in the local repository, resolution will not be reattempted until the update interval of codehaus-snapshots has elapsed or updates are forced. Original error: Could not transfer metadata com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from/to codehaus-snapshots (https://nexus.codehaus.org/snapshots/): nexus.codehaus.org
+[WARNING] Failure to transfer com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced. Original error: Could not transfer metadata com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from/to sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots): Received fatal alert: handshake_failure
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/compile-testing-1.0-SNAPSHOT.pom
+[INFO] Downloading: https://repository.apache.org/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/compile-testing-1.0-SNAPSHOT.pom
+[INFO] Downloading: https://nexus.codehaus.org/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/compile-testing-1.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.750 s
+[INFO] Finished at: 2022-07-31T14:49:12+00:00
+[INFO] Final Memory: 10M/491M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project javawriter: Could not resolve dependencies for project com.squareup:javawriter:jar:3.0.0-SNAPSHOT: Failed to collect dependencies at com.google.testing.compile:compile-testing:jar:1.0-SNAPSHOT: Failed to read artifact descriptor for com.google.testing.compile:compile-testing:jar:1.0-SNAPSHOT: Could not transfer artifact com.google.testing.compile:compile-testing:pom:1.0-SNAPSHOT from/to sonatype-snapshots (https://oss.sonatype.org/content/repositories/snapshots/): Received fatal alert: handshake_failure -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+
+[31;1mThe command "eval mvn install -Dhttps.protocols=TLSv1.2 -Dhttps.protocols=TLSv1.2 -DskipTests=true -Dmaven.javadoc.skip=true -B -V " failed. Retrying, 3 of 3.[0m
+
+Apache Maven 3.2.3 (33f8c3e1027c3ddde99d3cdebad2656a31e8fdf4; 2014-08-11T20:58:10+00:00)
+Maven home: /usr/local/maven
+Java version: 1.7.0_72, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-7-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.15.0-109-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JavaWriter 3.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: https://nexus.codehaus.org/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/maven-metadata.xml
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/maven-metadata.xml
+[INFO] Downloading: https://repository.apache.org/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/maven-metadata.xml
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/maven-metadata.xml
+[WARNING] Could not transfer metadata com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from/to sonatype-snapshots (https://oss.sonatype.org/content/repositories/snapshots/): Received fatal alert: handshake_failure
+[WARNING] Could not transfer metadata com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from/to codehaus-snapshots (https://nexus.codehaus.org/snapshots/): nexus.codehaus.org
+[WARNING] Could not transfer metadata com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from/to sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots): Received fatal alert: handshake_failure
+[WARNING] Failure to transfer com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from https://oss.sonatype.org/content/repositories/snapshots/ was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-snapshots has elapsed or updates are forced. Original error: Could not transfer metadata com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from/to sonatype-snapshots (https://oss.sonatype.org/content/repositories/snapshots/): Received fatal alert: handshake_failure
+[WARNING] Failure to transfer com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from https://nexus.codehaus.org/snapshots/ was cached in the local repository, resolution will not be reattempted until the update interval of codehaus-snapshots has elapsed or updates are forced. Original error: Could not transfer metadata com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from/to codehaus-snapshots (https://nexus.codehaus.org/snapshots/): nexus.codehaus.org
+[WARNING] Failure to transfer com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced. Original error: Could not transfer metadata com.google.testing.compile:compile-testing:1.0-SNAPSHOT/maven-metadata.xml from/to sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots): Received fatal alert: handshake_failure
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/compile-testing-1.0-SNAPSHOT.pom
+[INFO] Downloading: https://repository.apache.org/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/compile-testing-1.0-SNAPSHOT.pom
+[INFO] Downloading: https://nexus.codehaus.org/snapshots/com/google/testing/compile/compile-testing/1.0-SNAPSHOT/compile-testing-1.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.765 s
+[INFO] Finished at: 2022-07-31T14:49:18+00:00
+[INFO] Final Memory: 11M/491M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project javawriter: Could not resolve dependencies for project com.squareup:javawriter:jar:3.0.0-SNAPSHOT: Failed to collect dependencies at com.google.testing.compile:compile-testing:jar:1.0-SNAPSHOT: Failed to read artifact descriptor for com.google.testing.compile:compile-testing:jar:1.0-SNAPSHOT: Could not transfer artifact com.google.testing.compile:compile-testing:pom:1.0-SNAPSHOT from/to sonatype-snapshots (https://oss.sonatype.org/content/repositories/snapshots/): Received fatal alert: handshake_failure -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+
+[31;1mThe command "eval mvn install -Dhttps.protocols=TLSv1.2 -Dhttps.protocols=TLSv1.2 -DskipTests=true -Dmaven.javadoc.skip=true -B -V " failed 3 times.[0m
+
+
+travis_time:end:1dde2b1c:start=1659278912614562753,finish=1659278959398308586,duration=46783745833[0K
+[31;1mThe command "mvn install -Dhttps.protocols=TLSv1.2 -Dhttps.protocols=TLSv1.2 -DskipTests=true -Dmaven.javadoc.skip=true -B -V" failed and exited with 1 during .[0m
+
+Your build has been stopped.

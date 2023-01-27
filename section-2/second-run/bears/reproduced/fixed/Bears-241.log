@@ -1,0 +1,1141 @@
+Apache Maven 3.6.3
+Maven home: /usr/share/maven
+Java version: 1.8.0_312, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.15.0-41-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] ci-droid-tasks-consumer Service                                    [pom]
+[INFO] ci-droid-tasks-consumer-services                                   [jar]
+[INFO] ci-droid-tasks-consumer-infrastructure                             [jar]
+[INFO] CI droid tasks consumer autoconfigure                              [jar]
+[INFO] CI droid starter                                                   [jar]
+[INFO] 
+[INFO] --< com.societegenerale.ci-droid.tasks-consumer:ci-droid-tasks-consumer-parent >--
+[INFO] Building ci-droid-tasks-consumer Service 1.0.6-SNAPSHOT            [1/5]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ ci-droid-tasks-consumer-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-tests) @ ci-droid-tasks-consumer-parent ---
+[INFO] surefireArgLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-241/target/jacoco.exec
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (report) @ ci-droid-tasks-consumer-parent ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --< com.societegenerale.ci-droid.tasks-consumer:ci-droid-tasks-consumer-services >--
+[INFO] Building ci-droid-tasks-consumer-services 1.0.6-SNAPSHOT           [2/5]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ ci-droid-tasks-consumer-services ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-tests) @ ci-droid-tasks-consumer-services ---
+[INFO] surefireArgLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-241/ci-droid-tasks-consumer-services/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ci-droid-tasks-consumer-services ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-241/ci-droid-tasks-consumer-services/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ ci-droid-tasks-consumer-services ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ci-droid-tasks-consumer-services ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ ci-droid-tasks-consumer-services ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ ci-droid-tasks-consumer-services ---
+[INFO] Surefire report directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-241/ci-droid-tasks-consumer-services/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.societegenerale.cidroid.tasks.consumer.services.ActionNotificationServiceTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.702 sec - in com.societegenerale.cidroid.tasks.consumer.services.ActionNotificationServiceTest
+Running com.societegenerale.cidroid.tasks.consumer.services.GitHubContentBase64codecTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec - in com.societegenerale.cidroid.tasks.consumer.services.GitHubContentBase64codecTest
+Running com.societegenerale.cidroid.tasks.consumer.services.actionHandlers.RebaseHandlerTest
+21:11:08.025 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.actionHandlers.RebaseHandler - PR 1347 on repo public-repo is made from a forked repo - not trying to rebase it
+21:11:08.067 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.actionHandlers.RebaseHandler - adding an INFO comment on PR 1347
+21:11:08.119 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.actionHandlers.RebaseHandler - adding a warn comment on PR 1347
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.701 sec - in com.societegenerale.cidroid.tasks.consumer.services.actionHandlers.RebaseHandlerTest
+Running com.societegenerale.cidroid.tasks.consumer.services.actionHandlers.NotificationsHandlerTest
+21:11:08.181 [main] INFO TECHNICAL - 
+21:11:08.181 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.actionHandlers.NotificationsHandler - notifying that PR #1347 is not mergeable..
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in com.societegenerale.cidroid.tasks.consumer.services.actionHandlers.NotificationsHandlerTest
+Running com.societegenerale.cidroid.tasks.consumer.services.actionHandlers.BestPracticeNotifierHandlerTest
+21:11:08.293 [main] WARN com.societegenerale.cidroid.tasks.consumer.services.actionHandlers.BestPracticeNotifierHandler - best practice located at http://someUrl/liquibaseBestPractices.md doesn't seem to exist..
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.125 sec - in com.societegenerale.cidroid.tasks.consumer.services.actionHandlers.BestPracticeNotifierHandlerTest
+Running com.societegenerale.cidroid.tasks.consumer.services.PushOnDefaultBranchServiceTest
+21:11:08.349 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.PushEventOnDefaultBranchService - 1 open PRs found on repo baxterthehacker/public-repo
+21:11:08.353 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.PushEventOnDefaultBranchService - PR status :
+	- PR #1347 : NOT_MERGEABLE
+
+21:11:08.353 [main] INFO TECHNICAL - 
+21:11:08.369 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.PushEventOnDefaultBranchService - 1 open PRs found on repo baxterthehacker/public-repo
+21:11:08.369 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.PushEventOnDefaultBranchService - PR status :
+	- PR #1347 : NOT_MERGEABLE
+
+21:11:08.370 [main] INFO TECHNICAL - 
+21:11:08.382 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.PushEventOnDefaultBranchService - 1 open PRs found on repo baxterthehacker/public-repo
+21:11:08.383 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.PushEventOnDefaultBranchService - PR status :
+	- PR #1347 : NOT_MERGEABLE
+
+21:11:08.383 [main] INFO TECHNICAL - 
+submitted task to update PR merge status shortly...
+about to sleep...
+21:11:08.402 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.PushEventOnDefaultBranchService - 1 open PRs found on repo baxterthehacker/public-repo
+21:11:08.403 [main] DEBUG com.societegenerale.cidroid.tasks.consumer.services.PushEventOnDefaultBranchService - these PRs don't have a mergeable status yet :
+	 - 1347
+waiting for 300ms before trying again for the 1th time...
+21:11:08.704 [main] DEBUG com.societegenerale.cidroid.tasks.consumer.services.PushEventOnDefaultBranchService - these PRs don't have a mergeable status yet :
+	 - 1347
+waiting for 300ms before trying again for the 2th time...
+21:11:09.005 [main] DEBUG com.societegenerale.cidroid.tasks.consumer.services.PushEventOnDefaultBranchService - these PRs don't have a mergeable status yet :
+	 - 1347
+waiting for 300ms before trying again for the 3th time...
+done sleeping !
+21:11:09.306 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.PushEventOnDefaultBranchService - PR status :
+	- PR #1347 : NOT_MERGEABLE
+
+21:11:09.307 [main] INFO TECHNICAL - 
+21:11:09.521 [main] WARN com.societegenerale.cidroid.tasks.consumer.services.PushEventOnDefaultBranchService - received an event from branch that is not default, ie someOtherBranch - how is it possible ? 
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.209 sec - in com.societegenerale.cidroid.tasks.consumer.services.PushOnDefaultBranchServiceTest
+Running com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformServiceTest
+21:11:09.715 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformService - someFile.txt updated on repo repoFullName, on branch master. old SHA1: sha . new SHA1: sha
+21:11:09.717 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformService - someFile.txt created on repo repoFullName, on branch master. SHA1: sha
+21:11:09.721 [main] WARN com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformService - branch myPrBranch already exists
+21:11:09.722 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformService - someFile.txt updated on repo repoFullName, on branch myPrBranch. old SHA1: sha . new SHA1: sha
+21:11:09.725 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformService - someFile.txt NOT updated on repo repoFullName, on branch master, as it doesnt exist
+21:11:09.728 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformService - someFile.txt NOT updated on repo repoFullName, on branch myPrBranch, as new content is same as existing content
+21:11:09.734 [main] WARN com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformService - problem while computing the new content
+com.societegenerale.cidroid.api.IssueProvidingContentException: throwing exception as configured...
+	at com.societegenerale.cidroid.tasks.consumer.services.TestActionToPerform.provideContent(TestActionToPerform.java:25)
+	at com.societegenerale.cidroid.api.actionToReplicate.ActionToReplicate.provideContent(ActionToReplicate.java:28)
+	at com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformService.updateRemoteResource(ActionToPerformService.java:117)
+	at com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformService.perform(ActionToPerformService.java:39)
+	at com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformServiceTest.dontDoAnythingIfProblemWhileComputingContent(ActionToPerformServiceTest.java:297)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+21:11:09.737 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformService - someFile.txt created on repo repoFullName, on branch myPrBranch. SHA1: sha
+21:11:09.741 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformService - someFile.txt NOT updated on repo repoFullName, on branch myPrBranch, as it doesnt exist
+21:11:09.742 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformService - someFile.txt created on repo repoFullName, on branch master. SHA1: sha
+21:11:09.745 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformService - someFile.txt updated on repo repoFullName, on branch myPrBranch. old SHA1: sha . new SHA1: sha
+21:11:09.749 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformService - someFile.txt created on repo repoFullName, on branch myPrBranch. SHA1: sha
+21:11:09.751 [main] INFO com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformService - someFile.txt NOT updated on repo repoFullName, on branch master, as new content is same as existing content
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.228 sec - in com.societegenerale.cidroid.tasks.consumer.services.ActionToPerformServiceTest
+Running com.societegenerale.cidroid.tasks.consumer.services.model.github.PullRequestCommentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.societegenerale.cidroid.tasks.consumer.services.model.github.PullRequestCommentTest
+Running com.societegenerale.cidroid.tasks.consumer.services.model.github.UpdatedResourceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.societegenerale.cidroid.tasks.consumer.services.model.github.UpdatedResourceTest
+Running com.societegenerale.cidroid.tasks.consumer.services.PullRequestEventServiceTest
+21:11:09.796 [main] INFO TECHNICAL - 
+21:11:09.798 [main] DEBUG com.societegenerale.cidroid.tasks.consumer.services.PullRequestEventService - not processing pullRequest event of type assigned
+21:11:09.801 [main] INFO TECHNICAL - 
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in com.societegenerale.cidroid.tasks.consumer.services.PullRequestEventServiceTest
+
+Results :
+
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (report) @ ci-droid-tasks-consumer-services ---
+[INFO] Loading execution data file /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-241/ci-droid-tasks-consumer-services/target/jacoco.exec
+[INFO] Analyzed bundle 'ci-droid-tasks-consumer-services' with 22 classes
+[INFO] 
+[INFO] --< com.societegenerale.ci-droid.tasks-consumer:ci-droid-tasks-consumer-infrastructure >--
+[INFO] Building ci-droid-tasks-consumer-infrastructure 1.0.6-SNAPSHOT     [3/5]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ ci-droid-tasks-consumer-infrastructure ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-tests) @ ci-droid-tasks-consumer-infrastructure ---
+[INFO] surefireArgLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-241/ci-droid-tasks-consumer-infrastructure/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ci-droid-tasks-consumer-infrastructure ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-241/ci-droid-tasks-consumer-infrastructure/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ ci-droid-tasks-consumer-infrastructure ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ci-droid-tasks-consumer-infrastructure ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 16 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ ci-droid-tasks-consumer-infrastructure ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ ci-droid-tasks-consumer-infrastructure ---
+[INFO] Surefire report directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-241/ci-droid-tasks-consumer-infrastructure/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.societegenerale.cidroid.tasks.consumer.infrastructure.ActionToPerformCommandTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.814 sec - in com.societegenerale.cidroid.tasks.consumer.infrastructure.ActionToPerformCommandTest
+Running com.societegenerale.cidroid.tasks.consumer.infrastructure.ActionToPerformListenerLIVETest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in com.societegenerale.cidroid.tasks.consumer.infrastructure.ActionToPerformListenerLIVETest
+Running com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaserTest
+21:11:14.052 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - rebasing PR #2...
+21:11:14.065 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - pulling repo vincent-ci-droid-local-tests in existing location /tmp...
+21:11:14.066 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - opened existing repo...
+21:11:14.068 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : REBASING
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.069 [main] WARN com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Git repo state is REBASING
+21:11:14.069 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - trying to abort the rebase that is apparently in progress..
+21:11:14.069 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - aborting result : OK
+21:11:14.070 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - switching to default branch and pulling latest changes...
+21:11:14.070 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - local repo pointing to commit Mock for ObjectId, hashCode: 0
+21:11:14.071 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - pull from master : OK
+21:11:14.072 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : REBASING
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.072 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - switching to branch testBestPractices...
+21:11:14.073 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Created local with ref: null
+21:11:14.074 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : REBASING
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.074 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Checkout local branch : testBestPractices
+21:11:14.075 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : REBASING
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.076 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - no commits are late in branch testBestPractices, compared to master
+21:11:14.076 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitWrapper - These commits are in branch remotes/origin/testBestPractices but not in default branch :
+
+21:11:14.076 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitWrapper - These commits are in branch testBestPractices but not in default branch :
+
+21:11:14.076 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - nb of commits:
+	- in master, to rebase : 0
+	- in remote branch : 0
+	- in local branch : 0
+21:11:14.119 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - rebasing PR #2...
+21:11:14.119 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - pulling repo vincent-ci-droid-local-tests in existing location /tmp...
+21:11:14.120 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - opened existing repo...
+21:11:14.121 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: [anAddedFile.txt]
+Changed: []
+Conflicting: [aConflictingFile.txt]
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.121 [main] WARN com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - conflicts in local repo - trying to fix them one by one...
+21:11:14.122 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - cleaning up directory..
+21:11:14.122 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - trying to remove conflicted files from workspace..
+21:11:14.122 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - 	 resetting aConflictingFile.txt
+21:11:14.123 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - trying to remove uncommitted files from workspace..
+21:11:14.123 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - 	 resetting anAddedFile.txt
+21:11:14.123 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - reverting modified files to latest known state..
+21:11:14.123 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Git repo status following file cleanup for PR #2
+21:11:14.124 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: [anAddedFile.txt]
+Changed: []
+Conflicting: [aConflictingFile.txt]
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.125 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - switching to default branch and pulling latest changes...
+21:11:14.125 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - local repo pointing to commit Mock for ObjectId, hashCode: 0
+21:11:14.125 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - pull from master : OK
+21:11:14.127 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: [anAddedFile.txt]
+Changed: []
+Conflicting: [aConflictingFile.txt]
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.127 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - switching to branch testBestPractices...
+21:11:14.127 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Created local with ref: null
+21:11:14.128 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: [anAddedFile.txt]
+Changed: []
+Conflicting: [aConflictingFile.txt]
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.128 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Checkout local branch : testBestPractices
+21:11:14.130 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: [anAddedFile.txt]
+Changed: []
+Conflicting: [aConflictingFile.txt]
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.130 [main] WARN com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - there are some conflicted files in branch for PR #2 - not even trying to rebase
+21:11:14.131 [main] INFO TECHNICAL - 
+21:11:14.148 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - rebasing PR #2...
+21:11:14.148 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - pulling repo vincent-ci-droid-local-tests in existing location /tmp...
+21:11:14.149 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - opened existing repo...
+21:11:14.149 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: [aModifiedFile.txt]
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.150 [main] WARN com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - conflicts in local repo - trying to fix them one by one...
+21:11:14.150 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - cleaning up directory..
+21:11:14.150 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - trying to remove conflicted files from workspace..
+21:11:14.151 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - trying to remove uncommitted files from workspace..
+21:11:14.151 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - reverting modified files to latest known state..
+21:11:14.152 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - 	 reverting aModifiedFile.txt
+21:11:14.152 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Git repo status following file cleanup for PR #2
+21:11:14.153 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: [aModifiedFile.txt]
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.153 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - switching to default branch and pulling latest changes...
+21:11:14.153 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - local repo pointing to commit Mock for ObjectId, hashCode: 0
+21:11:14.153 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - pull from master : OK
+21:11:14.154 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: [aModifiedFile.txt]
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.154 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - switching to branch testBestPractices...
+21:11:14.154 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Created local with ref: null
+21:11:14.154 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: [aModifiedFile.txt]
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.155 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Checkout local branch : testBestPractices
+21:11:14.155 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: [aModifiedFile.txt]
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.156 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - no commits are late in branch testBestPractices, compared to master
+21:11:14.156 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitWrapper - These commits are in branch remotes/origin/testBestPractices but not in default branch :
+
+21:11:14.156 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitWrapper - These commits are in branch testBestPractices but not in default branch :
+
+21:11:14.156 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - nb of commits:
+	- in master, to rebase : 0
+	- in remote branch : 0
+	- in local branch : 0
+21:11:14.172 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - rebasing PR #2...
+21:11:14.173 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - pulling repo vincent-ci-droid-local-tests in existing location /tmp...
+21:11:14.173 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - opened existing repo...
+21:11:14.173 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.173 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - switching to default branch and pulling latest changes...
+21:11:14.174 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - local repo pointing to commit Mock for ObjectId, hashCode: 0
+21:11:14.174 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - pull from master : OK
+21:11:14.174 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.174 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - switching to branch testBestPractices...
+21:11:14.174 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Created local with ref: null
+21:11:14.175 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.175 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Checkout local branch : testBestPractices
+21:11:14.175 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.175 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - no commits are late in branch testBestPractices, compared to master
+21:11:14.176 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitWrapper - These commits are in branch remotes/origin/testBestPractices but not in default branch :
+
+21:11:14.176 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitWrapper - These commits are in branch testBestPractices but not in default branch :
+
+21:11:14.176 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - nb of commits:
+	- in master, to rebase : 0
+	- in remote branch : 0
+	- in local branch : 0
+21:11:14.233 [main] DEBUG org.eclipse.jgit.util.FS - readpipe [git, --version],/usr/bin
+21:11:14.244 [main] DEBUG org.eclipse.jgit.util.FS - readpipe may return 'git version 2.25.1'
+21:11:14.244 [main] DEBUG org.eclipse.jgit.util.FS - remaining output:
+
+21:11:14.244 [main] DEBUG org.eclipse.jgit.util.FS - readpipe [git, config, --system, --edit],/usr/bin
+21:11:14.249 [main] DEBUG org.eclipse.jgit.util.FS - readpipe may return '/etc/gitconfig'
+21:11:14.250 [main] DEBUG org.eclipse.jgit.util.FS - remaining output:
+
+21:11:14.447 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - rebasing PR #2...
+21:11:14.447 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - cloning repo vincent-ci-droid-local-tests in /tmp/vincent-ci-droid-local-tests...
+21:11:14.448 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.448 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - switching to branch testBestPractices...
+21:11:14.448 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Created local with ref: null
+21:11:14.448 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.448 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Checkout local branch : testBestPractices
+21:11:14.449 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.449 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitWrapper - These commits are in base branch, but not in branch testBestPractices :
+commit time: 2022-07-25T21:11:14.000-0700 - 2250cae5792e9213706794c714039b0979a2252e - committed testFile1.txt
+
+21:11:14.450 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitWrapper - These commits are in branch remotes/origin/testBestPractices but not in default branch :
+
+21:11:14.450 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitWrapper - These commits are in branch testBestPractices but not in default branch :
+
+21:11:14.450 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - nb of commits:
+	- in master, to rebase : 1
+	- in remote branch : 0
+	- in local branch : 0
+21:11:14.450 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - rebasing branch testBestPractices on master for PR #2, as 1 commit(s) are not in branch..
+21:11:14.451 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Successful rebase - detailed status : OK
+21:11:14.451 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitWrapper - These commits are in branch testBestPractices but not in default branch :
+
+21:11:14.451 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - now trying to force push on PR branch..
+21:11:14.451 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitWrapper - These commits are in branch remotes/origin/testBestPractices but not in default branch :
+
+21:11:14.454 [main] INFO TECHNICAL - 
+21:11:14.483 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - rebasing PR #2...
+21:11:14.483 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - cloning repo vincent-ci-droid-local-tests in /tmp/vincent-ci-droid-local-tests...
+21:11:14.483 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: [aConflictingFile.txt]
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.483 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - switching to branch testBestPractices...
+21:11:14.484 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Created local with ref: null
+21:11:14.484 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: [aConflictingFile.txt]
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.484 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Checkout local branch : testBestPractices
+21:11:14.484 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: [aConflictingFile.txt]
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.484 [main] WARN com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - there are some conflicted files in branch for PR #2 - not even trying to rebase
+21:11:14.484 [main] INFO TECHNICAL - 
+21:11:14.495 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - rebasing PR #2...
+21:11:14.495 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - cloning repo vincent-ci-droid-local-tests in /tmp/vincent-ci-droid-local-tests...
+21:11:14.496 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.496 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - switching to branch testBestPractices...
+21:11:14.496 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Created local with ref: null
+21:11:14.496 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.496 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Checkout local branch : testBestPractices
+21:11:14.497 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.497 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - no commits are late in branch testBestPractices, compared to master
+21:11:14.497 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitWrapper - These commits are in branch remotes/origin/testBestPractices but not in default branch :
+
+21:11:14.498 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitWrapper - These commits are in branch testBestPractices but not in default branch :
+
+21:11:14.498 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - nb of commits:
+	- in master, to rebase : 0
+	- in remote branch : 0
+	- in local branch : 0
+21:11:14.511 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - rebasing PR #2...
+21:11:14.511 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - pulling repo vincent-ci-droid-local-tests in existing location /tmp...
+21:11:14.511 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - opened existing repo...
+21:11:14.511 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.512 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - switching to default branch and pulling latest changes...
+21:11:14.512 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - local repo pointing to commit Mock for ObjectId, hashCode: 0
+21:11:14.512 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - pull from master : OK
+21:11:14.512 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.512 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - switching to branch testBestPractices...
+21:11:14.513 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.513 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Checkout local branch : testBestPractices
+21:11:14.513 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.513 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - no commits are late in branch testBestPractices, compared to master
+21:11:14.513 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitWrapper - These commits are in branch remotes/origin/testBestPractices but not in default branch :
+
+21:11:14.513 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitWrapper - These commits are in branch testBestPractices but not in default branch :
+
+21:11:14.514 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - nb of commits:
+	- in master, to rebase : 0
+	- in remote branch : 0
+	- in local branch : 0
+21:11:14.526 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - rebasing PR #2...
+21:11:14.526 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - cloning repo vincent-ci-droid-local-tests in /tmp/vincent-ci-droid-local-tests...
+21:11:14.526 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.527 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - switching to branch testBestPractices...
+21:11:14.527 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Created local with ref: null
+21:11:14.527 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.527 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - Checkout local branch : testBestPractices
+21:11:14.527 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - GIT STATUS
+currently on branch : null
+repo state : SAFE
+Added: []
+Changed: []
+Conflicting: []
+ConflictingStageState: {}
+IgnoredNotInIndex: []
+Missing: []
+Modified: []
+Removed: []
+Untracked: []
+UntrackedFolders: []
+GIT BRANCHES
+
+
+Now including remote branches:
+
+21:11:14.527 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - no commits are late in branch testBestPractices, compared to master
+21:11:14.528 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitWrapper - These commits are in branch remotes/origin/testBestPractices but not in default branch :
+
+21:11:14.528 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitWrapper - These commits are in branch testBestPractices but not in default branch :
+
+21:11:14.528 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaser - nb of commits:
+	- in master, to rebase : 0
+	- in remote branch : 0
+	- in local branch : 0
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.151 sec - in com.societegenerale.cidroid.tasks.consumer.infrastructure.GitRebaserTest
+Running com.societegenerale.cidroid.tasks.consumer.infrastructure.ActionToPerformListenerTest
+21:11:14.573 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.ActionToPerformListener - received an action to perform ActionToPerformCommand(gitLogin=someUserName, email=someEmail@someDomain.com, commitMessage=null, updateAction={@class=com.societegenerale.cidroid.extensions.actionToReplicate.OverwriteStaticFileAction, staticContent=some new content}, gitHubInteractionType=AbstractGitHubInteraction(), resourcesToUpdate=[ResourceToUpdate(repoFullName=null, filePathOnRepo=someRepo/jenkinsFile, branchName=master, placeHolderValue=null)])
+21:11:14.587 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.ActionToPerformListener - received an action to perform ActionToPerformCommand(gitLogin=someUserName, email=someEmail@someDomain.com, commitMessage=null, updateAction={@class=com.societegenerale.cidroid.extensions.actionToReplicate.OverwriteStaticFileAction, staticContent=some new content}, gitHubInteractionType=AbstractGitHubInteraction(), resourcesToUpdate=[ResourceToUpdate(repoFullName=null, filePathOnRepo=someRepo/jenkinsFile, branchName=master, placeHolderValue=null)])
+21:11:14.590 [main] ERROR com.societegenerale.cidroid.tasks.consumer.infrastructure.ActionToPerformListener - can't map the received command to a known action type
+com.societegenerale.cidroid.tasks.consumer.infrastructure.UnknownActionTypeException: unknown action type com.societegenerale.cidroid.extensions.actionToReplicate.OverwriteStaticFileAction: please check it has been registered correctly
+	at com.societegenerale.cidroid.tasks.consumer.infrastructure.ActionToPerformListener.onActionToPerform(ActionToPerformListener.java:53)
+	at com.societegenerale.cidroid.tasks.consumer.infrastructure.ActionToPerformListenerTest.shouldFailSilentlyIfNoMatchingTypeRegistered(ActionToPerformListenerTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in com.societegenerale.cidroid.tasks.consumer.infrastructure.ActionToPerformListenerTest
+Running com.societegenerale.cidroid.tasks.consumer.infrastructure.RebaseHandlerLIVETest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in com.societegenerale.cidroid.tasks.consumer.infrastructure.RebaseHandlerLIVETest
+Running com.societegenerale.cidroid.tasks.consumer.infrastructure.PushEventTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.societegenerale.cidroid.tasks.consumer.infrastructure.PushEventTest
+Running com.societegenerale.cidroid.tasks.consumer.infrastructure.PullRequestTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.societegenerale.cidroid.tasks.consumer.infrastructure.PullRequestTest
+Running com.societegenerale.cidroid.tasks.consumer.infrastructure.GithubEventListenerLIVETest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in com.societegenerale.cidroid.tasks.consumer.infrastructure.GithubEventListenerLIVETest
+Running com.societegenerale.cidroid.tasks.consumer.infrastructure.GithubEventListenerTest
+21:11:14.637 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GithubEventListener - received pullRequest event of type opened for repo baxterthehacker/public-repo
+21:11:14.640 [main] INFO com.societegenerale.cidroid.tasks.consumer.infrastructure.GithubEventListener - received event on branch refs/heads/master for repo baxterthehacker/public-repo
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in com.societegenerale.cidroid.tasks.consumer.infrastructure.GithubEventListenerTest
+Running com.societegenerale.cidroid.tasks.consumer.infrastructure.notifiers.EMailNotifierTest
+21:11:14.690 [main] DEBUG com.icegreen.greenmail.util.GreenMail - Started services, performing check if all up
+21:11:14.690 [smtp:127.0.0.1:3025] DEBUG com.icegreen.greenmail.smtp.SmtpServer - Started smtp:127.0.0.1:3025
+21:11:14.785 [smtp:127.0.0.1:3025] DEBUG com.icegreen.greenmail.smtp.SmtpServer - Handling new client connection smtp:127.0.0.1:3025<-/127.0.0.1:60870
+21:11:14.836 [smtp:127.0.0.1:3025<-/127.0.0.1:60870] INFO com.icegreen.greenmail.smtp.SmtpManager - Created user login test_login@myDomain.com for address test_login@myDomain.com with password test_login@myDomain.com because it didn't exist before.
+21:11:14.880 [main] DEBUG com.icegreen.greenmail.util.GreenMail - Stopping GreenMail ...
+21:11:14.880 [main] DEBUG com.icegreen.greenmail.util.GreenMail - Stopping service smtp:127.0.0.1:3025
+21:11:14.880 [main] DEBUG com.icegreen.greenmail.smtp.SmtpServer - Stopping smtp:127.0.0.1:3025
+21:11:14.880 [main] DEBUG com.icegreen.greenmail.smtp.SmtpServer - Stopped smtp:127.0.0.1:3025
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.239 sec - in com.societegenerale.cidroid.tasks.consumer.infrastructure.notifiers.EMailNotifierTest
+Running com.societegenerale.cidroid.tasks.consumer.infrastructure.notifiers.HttpNotifierTest
+Dev mode. Start with -DPROD_MODE=true to run in production mode.
+Server started on port 9901
+21:11:15.371 [main] DEBUG org.springframework.web.client.RestTemplate - Created POST request for "http://localhost:9901/notify"
+21:11:15.372 [main] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [text/plain, application/json, application/*+json, */*]
+21:11:15.393 [main] DEBUG org.springframework.web.client.RestTemplate - Writing [HttpNotifier.NotificationBody(userEmail=toto@socgen.com, message=message content, timestamp=2022-07-25T21:11:15.329)] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@36c7c2e5]
+Reloading configuration...
+21:11:15.612 [main] DEBUG org.springframework.web.client.RestTemplate - POST request for "http://localhost:9901/notify" resulted in 201 (Created)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.738 sec - in com.societegenerale.cidroid.tasks.consumer.infrastructure.notifiers.HttpNotifierTest
+Running com.societegenerale.cidroid.tasks.consumer.infrastructure.FeignRemoteGitHubLIVETest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in com.societegenerale.cidroid.tasks.consumer.infrastructure.FeignRemoteGitHubLIVETest
+Running com.societegenerale.cidroid.tasks.consumer.infrastructure.RebaserLIVETest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in com.societegenerale.cidroid.tasks.consumer.infrastructure.RebaserLIVETest
+
+Results :
+
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 5
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (report) @ ci-droid-tasks-consumer-infrastructure ---
+[INFO] Loading execution data file /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-241/ci-droid-tasks-consumer-infrastructure/target/jacoco.exec
+[INFO] Analyzed bundle 'ci-droid-tasks-consumer-infrastructure' with 19 classes
+[INFO] 
+[INFO] --< com.societegenerale.ci-droid.tasks-consumer:ci-droid-tasks-consumer-autoconfigure >--
+[INFO] Building CI droid tasks consumer autoconfigure 1.0.6-SNAPSHOT      [4/5]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ ci-droid-tasks-consumer-autoconfigure ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-tests) @ ci-droid-tasks-consumer-autoconfigure ---
+[INFO] surefireArgLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-241/ci-droid-tasks-consumer-autoconfigure/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ci-droid-tasks-consumer-autoconfigure ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ ci-droid-tasks-consumer-autoconfigure ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ci-droid-tasks-consumer-autoconfigure ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ ci-droid-tasks-consumer-autoconfigure ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ ci-droid-tasks-consumer-autoconfigure ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (report) @ ci-droid-tasks-consumer-autoconfigure ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --< com.societegenerale.ci-droid.tasks-consumer:ci-droid-tasks-consumer-starter >--
+[INFO] Building CI droid starter 1.0.6-SNAPSHOT                           [5/5]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ ci-droid-tasks-consumer-starter ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-tests) @ ci-droid-tasks-consumer-starter ---
+[INFO] surefireArgLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-241/ci-droid-tasks-consumer-starter/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ci-droid-tasks-consumer-starter ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ ci-droid-tasks-consumer-starter ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ci-droid-tasks-consumer-starter ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-241/ci-droid-tasks-consumer-starter/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ ci-droid-tasks-consumer-starter ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ ci-droid-tasks-consumer-starter ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (report) @ ci-droid-tasks-consumer-starter ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for ci-droid-tasks-consumer Service 1.0.6-SNAPSHOT:
+[INFO] 
+[INFO] ci-droid-tasks-consumer Service .................... SUCCESS [  0.759 s]
+[INFO] ci-droid-tasks-consumer-services ................... SUCCESS [  4.878 s]
+[INFO] ci-droid-tasks-consumer-infrastructure ............. SUCCESS [  6.006 s]
+[INFO] CI droid tasks consumer autoconfigure .............. SUCCESS [  0.068 s]
+[INFO] CI droid starter ................................... SUCCESS [  0.042 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.020 s
+[INFO] Finished at: 2022-07-25T21:11:16-07:00
+[INFO] ------------------------------------------------------------------------
+Running the tests related to the bug Bears-241...
+The tests related to the bug Bears-241 were executed.

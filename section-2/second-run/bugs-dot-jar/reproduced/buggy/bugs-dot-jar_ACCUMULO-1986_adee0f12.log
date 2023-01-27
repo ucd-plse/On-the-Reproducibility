@@ -1,0 +1,992 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.accumulo:accumulo-core:jar:1.4.5-SNAPSHOT
+[[1;33mWARNING[m] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.accumulo:cloudtrace:jar -> duplicate declaration of version (?) @ line 153, column 17
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.accumulo:accumulo-server:jar:1.4.5-SNAPSHOT
+[[1;33mWARNING[m] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.mortbay.jetty:jetty:jar -> duplicate declaration of version (?) @ line 107, column 17
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.accumulo:accumulo:pom:1.4.5-SNAPSHOT
+[[1;33mWARNING[m] The expression ${artifactId} is deprecated. Please use ${project.artifactId} instead.
+[[1;33mWARNING[m] The expression ${artifactId} is deprecated. Please use ${project.artifactId} instead.
+[[1;33mWARNING[m] The expression ${artifactId} is deprecated. Please use ${project.artifactId} instead.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Build Order:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] accumulo                                                           [pom]
+[[1;34mINFO[m] cloudtrace                                                         [jar]
+[[1;34mINFO[m] accumulo-start                                                     [jar]
+[[1;34mINFO[m] accumulo-core                                                      [jar]
+[[1;34mINFO[m] accumulo-server                                                    [jar]
+[[1;34mINFO[m] accumulo-examples                                                  [pom]
+[[1;34mINFO[m] examples-simple                                                    [jar]
+[[1;34mINFO[m] accumulo-minicluster                                               [jar]
+[[1;34mINFO[m] Proxy                                                              [jar]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------< [0;36morg.apache.accumulo:accumulo[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding accumulo 1.4.5-SNAPSHOT                                   [1/9][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/1.2/exec-maven-plugin-1.2.pom
+Progress (1): 2.7/6.9 kBProgress (1): 5.5/6.9 kBProgress (1): 6.9 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/1.2/exec-maven-plugin-1.2.pom (6.9 kB at 14 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/24/mojo-parent-24.pom
+Progress (1): 2.7/23 kBProgress (1): 5.5/23 kBProgress (1): 8.2/23 kBProgress (1): 11/23 kB Progress (1): 14/23 kBProgress (1): 16/23 kBProgress (1): 19/23 kBProgress (1): 21/23 kBProgress (1): 23 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/24/mojo-parent-24.pom (23 kB at 683 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/1.2/exec-maven-plugin-1.2.jar
+Progress (1): 2.7/37 kBProgress (1): 5.5/37 kBProgress (1): 8.2/37 kBProgress (1): 11/37 kB Progress (1): 14/37 kBProgress (1): 16/37 kBProgress (1): 19/37 kBProgress (1): 22/37 kBProgress (1): 25/37 kBProgress (1): 27/37 kBProgress (1): 30/37 kBProgress (1): 33/37 kBProgress (1): 37 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/1.2/exec-maven-plugin-1.2.jar (37 kB at 1.7 MB/s)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:1.2:exec[m [1m(user-manual)[m @ [36maccumulo[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo/1.4.5-SNAPSHOT/accumulo-1.4.5-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.accumulo:cloudtrace[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding cloudtrace 1.4.5-SNAPSHOT                                 [2/9][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/thrift/libthrift/0.6.1/libthrift-0.6.1.pom
+Progress (1): 3.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/thrift/libthrift/0.6.1/libthrift-0.6.1.pom (3.4 kB at 226 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/thrift/libthrift/0.6.1/libthrift-0.6.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/zookeeper/zookeeper/3.3.1/zookeeper-3.3.1.jar
+Progress (1): 4.1/296 kBProgress (1): 8.2/296 kBProgress (1): 12/296 kB Progress (1): 16/296 kBProgress (1): 20/296 kBProgress (1): 24/296 kBProgress (1): 28/296 kBProgress (1): 32/296 kBProgress (1): 36/296 kBProgress (1): 40/296 kBProgress (1): 45/296 kBProgress (1): 49/296 kBProgress (1): 53/296 kBProgress (1): 57/296 kBProgress (1): 61/296 kBProgress (1): 65/296 kBProgress (1): 69/296 kBProgress (1): 73/296 kBProgress (1): 77/296 kBProgress (1): 81/296 kBProgress (1): 85/296 kBProgress (1): 90/296 kBProgress (1): 94/296 kBProgress (1): 98/296 kBProgress (1): 102/296 kBProgress (1): 106/296 kBProgress (1): 110/296 kBProgress (1): 114/296 kBProgress (1): 118/296 kBProgress (1): 122/296 kBProgress (1): 126/296 kBProgress (1): 131/296 kBProgress (1): 135/296 kBProgress (1): 139/296 kBProgress (1): 143/296 kBProgress (1): 147/296 kBProgress (1): 151/296 kBProgress (1): 155/296 kBProgress (1): 159/296 kBProgress (1): 163/296 kBProgress (1): 167/296 kBProgress (1): 171/296 kBProgress (1): 176/296 kBProgress (1): 180/296 kBProgress (1): 184/296 kBProgress (1): 188/296 kBProgress (1): 192/296 kBProgress (1): 196/296 kBProgress (1): 200/296 kBProgress (1): 204/296 kBProgress (1): 208/296 kBProgress (1): 212/296 kBProgress (1): 217/296 kBProgress (1): 221/296 kBProgress (2): 221/296 kB | 2.7/596 kBProgress (2): 225/296 kB | 2.7/596 kBProgress (2): 229/296 kB | 2.7/596 kBProgress (2): 229/296 kB | 5.5/596 kBProgress (2): 229/296 kB | 8.2/596 kBProgress (2): 233/296 kB | 8.2/596 kBProgress (2): 237/296 kB | 8.2/596 kBProgress (2): 237/296 kB | 11/596 kB Progress (2): 241/296 kB | 11/596 kBProgress (2): 245/296 kB | 11/596 kBProgress (2): 245/296 kB | 14/596 kBProgress (2): 249/296 kB | 14/596 kBProgress (2): 249/296 kB | 16/596 kBProgress (2): 253/296 kB | 16/596 kBProgress (2): 253/296 kB | 19/596 kBProgress (2): 258/296 kB | 19/596 kBProgress (2): 258/296 kB | 21/596 kBProgress (2): 262/296 kB | 21/596 kBProgress (2): 262/296 kB | 24/596 kBProgress (2): 262/296 kB | 27/596 kBProgress (2): 266/296 kB | 27/596 kBProgress (2): 266/296 kB | 30/596 kBProgress (2): 270/296 kB | 30/596 kBProgress (2): 270/296 kB | 32/596 kBProgress (2): 274/296 kB | 32/596 kBProgress (2): 278/296 kB | 32/596 kBProgress (2): 278/296 kB | 35/596 kBProgress (2): 278/296 kB | 38/596 kBProgress (2): 282/296 kB | 38/596 kBProgress (2): 282/296 kB | 40/596 kBProgress (2): 286/296 kB | 40/596 kBProgress (2): 286/296 kB | 43/596 kBProgress (2): 290/296 kB | 43/596 kBProgress (2): 294/296 kB | 43/596 kBProgress (2): 294/296 kB | 46/596 kBProgress (2): 296 kB | 46/596 kB    Progress (2): 296 kB | 49/596 kBProgress (2): 296 kB | 53/596 kBProgress (2): 296 kB | 57/596 kBProgress (2): 296 kB | 61/596 kBProgress (2): 296 kB | 65/596 kBProgress (2): 296 kB | 69/596 kBProgress (2): 296 kB | 73/596 kBProgress (2): 296 kB | 77/596 kBProgress (2): 296 kB | 81/596 kBProgress (2): 296 kB | 85/596 kBProgress (2): 296 kB | 90/596 kBProgress (2): 296 kB | 94/596 kBProgress (2): 296 kB | 98/596 kBProgress (2): 296 kB | 102/596 kBProgress (2): 296 kB | 106/596 kBProgress (2): 296 kB | 110/596 kBProgress (2): 296 kB | 114/596 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/thrift/libthrift/0.6.1/libthrift-0.6.1.jar (296 kB at 5.0 MB/s)
+Progress (1): 118/596 kBProgress (1): 122/596 kBProgress (1): 126/596 kBProgress (1): 131/596 kBProgress (1): 135/596 kBProgress (1): 139/596 kBProgress (1): 143/596 kBProgress (1): 147/596 kBProgress (1): 151/596 kBProgress (1): 155/596 kBProgress (1): 159/596 kBProgress (1): 163/596 kBProgress (1): 167/596 kBProgress (1): 171/596 kBProgress (1): 176/596 kBProgress (1): 180/596 kBProgress (1): 184/596 kBProgress (1): 188/596 kBProgress (1): 192/596 kBProgress (1): 196/596 kBProgress (1): 200/596 kBProgress (1): 204/596 kBProgress (1): 208/596 kBProgress (1): 212/596 kBProgress (1): 217/596 kBProgress (1): 221/596 kBProgress (1): 225/596 kBProgress (1): 229/596 kBProgress (1): 233/596 kBProgress (1): 237/596 kBProgress (1): 241/596 kBProgress (1): 245/596 kBProgress (1): 249/596 kBProgress (1): 253/596 kBProgress (1): 257/596 kBProgress (1): 262/596 kBProgress (1): 266/596 kBProgress (1): 270/596 kBProgress (1): 274/596 kBProgress (1): 278/596 kBProgress (1): 282/596 kBProgress (1): 286/596 kBProgress (1): 290/596 kBProgress (1): 294/596 kBProgress (1): 298/596 kBProgress (1): 303/596 kBProgress (1): 307/596 kBProgress (1): 311/596 kBProgress (1): 315/596 kBProgress (1): 319/596 kBProgress (1): 323/596 kBProgress (1): 327/596 kBProgress (1): 331/596 kBProgress (1): 335/596 kBProgress (1): 339/596 kBProgress (1): 343/596 kBProgress (1): 348/596 kBProgress (1): 352/596 kBProgress (1): 356/596 kBProgress (1): 360/596 kBProgress (1): 364/596 kBProgress (1): 368/596 kBProgress (1): 372/596 kBProgress (1): 376/596 kBProgress (1): 380/596 kBProgress (1): 384/596 kBProgress (1): 389/596 kBProgress (1): 393/596 kBProgress (1): 397/596 kBProgress (1): 401/596 kBProgress (1): 405/596 kBProgress (1): 409/596 kBProgress (1): 413/596 kBProgress (1): 417/596 kBProgress (1): 421/596 kBProgress (1): 425/596 kBProgress (1): 429/596 kBProgress (1): 434/596 kBProgress (1): 438/596 kBProgress (1): 442/596 kBProgress (1): 446/596 kBProgress (1): 450/596 kBProgress (1): 454/596 kBProgress (1): 458/596 kBProgress (1): 462/596 kBProgress (1): 466/596 kBProgress (1): 470/596 kBProgress (1): 475/596 kBProgress (1): 479/596 kBProgress (1): 483/596 kBProgress (1): 487/596 kBProgress (1): 491/596 kBProgress (1): 495/596 kBProgress (1): 499/596 kBProgress (1): 503/596 kBProgress (1): 507/596 kBProgress (1): 511/596 kBProgress (1): 515/596 kBProgress (1): 520/596 kBProgress (1): 524/596 kBProgress (1): 528/596 kBProgress (1): 532/596 kBProgress (1): 536/596 kBProgress (1): 540/596 kBProgress (1): 544/596 kBProgress (1): 548/596 kBProgress (1): 552/596 kBProgress (1): 556/596 kBProgress (1): 561/596 kBProgress (1): 565/596 kBProgress (1): 569/596 kBProgress (1): 573/596 kBProgress (1): 577/596 kBProgress (1): 581/596 kBProgress (1): 585/596 kBProgress (1): 589/596 kBProgress (1): 593/596 kBProgress (1): 596 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/zookeeper/zookeeper/3.3.1/zookeeper-3.3.1.jar (596 kB at 5.9 MB/s)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:1.2:exec[m [1m(generate-thrift)[m @ [36mcloudtrace[0;1m ---[m
+****************************************************
+*** thrift is not available
+***   expecting 'thrift -version' to return 0.6
+*** generated code will not be updated
+****************************************************
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36mcloudtrace[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/trace/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(copy-dependencies)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Copying libthrift-0.6.1.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/libthrift-0.6.1.jar
+[[1;34mINFO[m] Copying log4j-1.2.16.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/log4j-1.2.16.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Compiling 22 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/trace/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36mcloudtrace[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/trace/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Compiling 3 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/trace/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.9:test[m [1m(default-test)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.3.1:jar[m [1m(default-jar)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/cloudtrace-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/cloudtrace-1.4.5-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/cloudtrace/1.4.5-SNAPSHOT/cloudtrace-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/trace/pom.xml to /home/user/.m2/repository/org/apache/accumulo/cloudtrace/1.4.5-SNAPSHOT/cloudtrace-1.4.5-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36morg.apache.accumulo:accumulo-start[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding accumulo-start 1.4.5-SNAPSHOT                             [3/9][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-jci-core/1.0/commons-jci-core-1.0.pom
+Progress (1): 3.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-jci-core/1.0/commons-jci-core-1.0.pom (3.1 kB at 21 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-jci-core/1.0/commons-jci-core-1.0.jar
+Progress (1): 4.1/32 kBProgress (1): 8.2/32 kBProgress (1): 12/32 kB Progress (1): 16/32 kBProgress (1): 20/32 kBProgress (1): 24/32 kBProgress (1): 28/32 kBProgress (1): 32 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-jci-core/1.0/commons-jci-core-1.0.jar (32 kB at 202 kB/s)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36maccumulo-start[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/start/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] Copying commons-jci-core-1.0.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-jci-core-1.0.jar
+[[1;34mINFO[m] Copying commons-logging-api-1.0.4.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-logging-api-1.0.4.jar
+[[1;34mINFO[m] Copying commons-io-2.1.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-io-2.1.jar
+[[1;34mINFO[m] Copying commons-jci-fam-1.0.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-jci-fam-1.0.jar
+[[1;34mINFO[m] Copying commons-logging-1.0.4.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-logging-1.0.4.jar
+[[1;34mINFO[m] log4j-1.2.16.jar already exists in destination.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] Compiling 5 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/start/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36maccumulo-start[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] Compiling 2 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/start/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.9:test[m [1m(default-test)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.3.1:jar[m [1m(default-jar)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-start-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-start-1.4.5-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-start/1.4.5-SNAPSHOT/accumulo-start-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/start/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-start/1.4.5-SNAPSHOT/accumulo-start-1.4.5-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36morg.apache.accumulo:accumulo-core[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding accumulo-core 1.4.5-SNAPSHOT                              [4/9][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:1.1.1:exec[m [1m(generate-core-thrift)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] ****************************************************
+[[1;34mINFO[m] *** thrift is not available
+[[1;34mINFO[m] ***   expecting 'thrift -version' to return 0.6
+[[1;34mINFO[m] *** generated code will not be updated
+[[1;34mINFO[m] ****************************************************
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36maccumulo-core[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/core/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Copying commons-collections-3.2.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-collections-3.2.jar
+[[1;34mINFO[m] Copying jline-0.9.94.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/jline-0.9.94.jar
+[[1;34mINFO[m] Copying commons-lang-2.4.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-lang-2.4.jar
+[[1;34mINFO[m] libthrift-0.6.1.jar already exists in destination.
+[[1;34mINFO[m] log4j-1.2.16.jar already exists in destination.
+[[1;34mINFO[m] commons-logging-1.0.4.jar already exists in destination.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Compiling 440 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/core/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:1.1.1:exec[m [1m(generate-documentation)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] HADOOP_HOME is not set
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36maccumulo-core[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Compiling 68 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/core/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.9:test[m [1m(default-test)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.3.1:jar[m [1m(default-jar)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-core-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-core-1.4.5-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-core/1.4.5-SNAPSHOT/accumulo-core-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/core/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-core/1.4.5-SNAPSHOT/accumulo-core-1.4.5-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36morg.apache.accumulo:accumulo-server[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding accumulo-server 1.4.5-SNAPSHOT                            [5/9][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36maccumulo-server[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 39 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] Copying commons-configuration-1.5.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-configuration-1.5.jar
+[[1;34mINFO[m] libthrift-0.6.1.jar already exists in destination.
+[[1;34mINFO[m] log4j-1.2.16.jar already exists in destination.
+[[1;34mINFO[m] commons-io-2.1.jar already exists in destination.
+[[1;34mINFO[m] jline-0.9.94.jar already exists in destination.
+[[1;34mINFO[m] commons-lang-2.4.jar already exists in destination.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] Compiling 420 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/server/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36maccumulo-server[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] Compiling 28 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/server/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.9:test[m [1m(default-test)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.3.1:jar[m [1m(default-jar)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-server-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-server-1.4.5-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-server/1.4.5-SNAPSHOT/accumulo-server-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/server/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-server/1.4.5-SNAPSHOT/accumulo-server-1.4.5-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------< [0;36morg.apache.accumulo:accumulo-examples[0;1m >----------------[m
+[[1;34mINFO[m] [1mBuilding accumulo-examples 1.4.5-SNAPSHOT                          [6/9][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo-examples[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo-examples[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo-examples[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo-examples[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo-examples[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/examples/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-examples/1.4.5-SNAPSHOT/accumulo-examples-1.4.5-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36morg.apache.accumulo:examples-simple[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding examples-simple 1.4.5-SNAPSHOT                            [7/9][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36mexamples-simple[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/examples/simple/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(copy-dependencies)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] Copying log4j-1.2.16.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/lib/log4j-1.2.16.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] Compiling 40 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/examples/simple/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36mexamples-simple[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/examples/simple/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] Compiling 5 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/examples/simple/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.9:test[m [1m(default-test)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.3.1:jar[m [1m(default-jar)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/examples-simple-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/examples-simple-1.4.5-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/examples-simple/1.4.5-SNAPSHOT/examples-simple-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/examples/simple/pom.xml to /home/user/.m2/repository/org/apache/accumulo/examples-simple/1.4.5-SNAPSHOT/examples-simple-1.4.5-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------< [0;36morg.apache.accumulo:accumulo-minicluster[0;1m >--------------[m
+[[1;34mINFO[m] [1mBuilding accumulo-minicluster 1.4.5-SNAPSHOT                       [8/9][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo-minicluster[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo-minicluster[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36maccumulo-minicluster[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/minicluster/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo-minicluster[0;1m ---[m
+[[1;34mINFO[m] Copying guava-14.0.1.jar to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/guava-14.0.1.jar
+[[1;34mINFO[m] log4j-1.2.16.jar already exists in destination.
+[[1;34mINFO[m] commons-io-2.1.jar already exists in destination.
+[[1;34mINFO[m] jline-0.9.94.jar already exists in destination.
+[[1;34mINFO[m] commons-configuration-1.5.jar already exists in destination.
+[[1;34mINFO[m] commons-lang-2.4.jar already exists in destination.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36maccumulo-minicluster[0;1m ---[m
+[[1;34mINFO[m] Compiling 2 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/minicluster/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36maccumulo-minicluster[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/minicluster/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36maccumulo-minicluster[0;1m ---[m
+[[1;34mINFO[m] Compiling 2 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/minicluster/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.9:test[m [1m(default-test)[m @ [36maccumulo-minicluster[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.3.1:jar[m [1m(default-jar)[m @ [36maccumulo-minicluster[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-minicluster-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo-minicluster[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo-minicluster[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-minicluster-1.4.5-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-minicluster/1.4.5-SNAPSHOT/accumulo-minicluster-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/minicluster/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-minicluster/1.4.5-SNAPSHOT/accumulo-minicluster-1.4.5-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36morg.apache.accumulo:accumulo-proxy[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding Proxy 1.4.5-SNAPSHOT                                      [9/9][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo-proxy[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:1.2:exec[m [1m(generate-thrift)[m @ [36maccumulo-proxy[0;1m ---[m
+****************************************************
+*** thrift is not available
+***   expecting 'thrift -version' to return 0.6
+*** generated code will not be updated
+****************************************************
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo-proxy[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36maccumulo-proxy[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/proxy/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo-proxy[0;1m ---[m
+[[1;34mINFO[m] libthrift-0.6.1.jar already exists in destination.
+[[1;34mINFO[m] guava-14.0.1.jar already exists in destination.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36maccumulo-proxy[0;1m ---[m
+[[1;34mINFO[m] Compiling 38 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/proxy/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36maccumulo-proxy[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36maccumulo-proxy[0;1m ---[m
+[[1;34mINFO[m] Compiling 5 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/proxy/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.9:test[m [1m(default-test)[m @ [36maccumulo-proxy[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.3.1:jar[m [1m(default-jar)[m @ [36maccumulo-proxy[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-proxy-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo-proxy[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo-proxy[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-proxy-1.4.5-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-proxy/1.4.5-SNAPSHOT/accumulo-proxy-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/proxy/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-proxy/1.4.5-SNAPSHOT/accumulo-proxy-1.4.5-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Summary for accumulo 1.4.5-SNAPSHOT:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] accumulo ........................................... [1;32mSUCCESS[m [  2.289 s]
+[[1;34mINFO[m] cloudtrace ......................................... [1;32mSUCCESS[m [  2.056 s]
+[[1;34mINFO[m] accumulo-start ..................................... [1;32mSUCCESS[m [  1.495 s]
+[[1;34mINFO[m] accumulo-core ...................................... [1;32mSUCCESS[m [  7.852 s]
+[[1;34mINFO[m] accumulo-server .................................... [1;32mSUCCESS[m [  5.137 s]
+[[1;34mINFO[m] accumulo-examples .................................. [1;32mSUCCESS[m [  0.020 s]
+[[1;34mINFO[m] examples-simple .................................... [1;32mSUCCESS[m [  1.936 s]
+[[1;34mINFO[m] accumulo-minicluster ............................... [1;32mSUCCESS[m [  1.352 s]
+[[1;34mINFO[m] Proxy .............................................. [1;32mSUCCESS[m [  4.316 s]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  26.714 s
+[[1;34mINFO[m] Finished at: 2022-07-30T04:58:47-07:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[mMissing pdflatex command. Please install.
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.accumulo:accumulo-core:jar:1.4.5-SNAPSHOT
+[[1;33mWARNING[m] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.accumulo:cloudtrace:jar -> duplicate declaration of version (?) @ line 153, column 17
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.accumulo:accumulo-server:jar:1.4.5-SNAPSHOT
+[[1;33mWARNING[m] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.mortbay.jetty:jetty:jar -> duplicate declaration of version (?) @ line 107, column 17
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.accumulo:accumulo:pom:1.4.5-SNAPSHOT
+[[1;33mWARNING[m] The expression ${artifactId} is deprecated. Please use ${project.artifactId} instead.
+[[1;33mWARNING[m] The expression ${artifactId} is deprecated. Please use ${project.artifactId} instead.
+[[1;33mWARNING[m] The expression ${artifactId} is deprecated. Please use ${project.artifactId} instead.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36morg.apache.accumulo:accumulo-core[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding accumulo-core 1.4.5-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:1.1.1:exec[m [1m(generate-core-thrift)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] ****************************************************
+[[1;34mINFO[m] *** thrift is not available
+[[1;34mINFO[m] ***   expecting 'thrift -version' to return 0.6
+[[1;34mINFO[m] *** generated code will not be updated
+[[1;34mINFO[m] ****************************************************
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36maccumulo-core[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/core/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] libthrift-0.6.1.jar already exists in destination.
+[[1;34mINFO[m] log4j-1.2.16.jar already exists in destination.
+[[1;34mINFO[m] commons-collections-3.2.jar already exists in destination.
+[[1;34mINFO[m] jline-0.9.94.jar already exists in destination.
+[[1;34mINFO[m] commons-logging-1.0.4.jar already exists in destination.
+[[1;34mINFO[m] commons-lang-2.4.jar already exists in destination.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:1.1.1:exec[m [1m(generate-documentation)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] HADOOP_HOME is not set
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36maccumulo-core[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.9:test[m [1m(default-test)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.core.file.FileOperationsTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.245 sec <<< FAILURE!
+Running org.apache.accumulo.core.file.blockfile.cache.TestLruBlockCache
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.043 sec
+Running org.apache.accumulo.core.file.blockfile.cache.TestCachedBlockQueue
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.accumulo.core.file.rfile.MultiLevelIndexTest
+22/07/30 04:58:52 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+22/07/30 04:58:52 INFO compress.CodecPool: Got brand-new compressor
+22/07/30 04:58:52 INFO compress.CodecPool: Got brand-new decompressor
+22/07/30 04:58:52 INFO compress.CodecPool: Got brand-new decompressor
+22/07/30 04:58:52 INFO compress.CodecPool: Got brand-new decompressor
+22/07/30 04:58:52 INFO compress.CodecPool: Got brand-new decompressor
+22/07/30 04:58:52 INFO compress.CodecPool: Got brand-new decompressor
+22/07/30 04:58:53 INFO compress.CodecPool: Got brand-new decompressor
+22/07/30 04:58:53 INFO compress.CodecPool: Got brand-new decompressor
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.763 sec
+Running org.apache.accumulo.core.file.rfile.RFileTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.769 sec
+Running org.apache.accumulo.core.data.MutationTest
+Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec <<< FAILURE!
+Running org.apache.accumulo.core.data.ColumnTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.data.KeyTest
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE!
+Running org.apache.accumulo.core.data.MapFileTest
+22/07/30 04:58:56 ERROR data.MapFileTest: java.io.IOException: failure to login
+java.io.IOException: failure to login
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:433)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:395)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1418)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1319)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:226)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:109)
+	at org.apache.accumulo.core.data.MapFileTest.testMapFileSeek(MapFileTest.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+Caused by: javax.security.auth.login.LoginException: java.lang.IllegalArgumentException: Illegal principal name user
+	at org.apache.hadoop.security.User.<init>(User.java:46)
+	at org.apache.hadoop.security.User.<init>(User.java:39)
+	at org.apache.hadoop.security.UserGroupInformation$HadoopLoginModule.commit(UserGroupInformation.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at javax.security.auth.login.LoginContext.invoke(LoginContext.java:755)
+	at javax.security.auth.login.LoginContext.access$000(LoginContext.java:195)
+	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:682)
+	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:680)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:680)
+	at javax.security.auth.login.LoginContext.login(LoginContext.java:588)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:414)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:395)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1418)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1319)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:226)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:109)
+	at org.apache.accumulo.core.data.MapFileTest.testMapFileSeek(MapFileTest.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+Caused by: org.apache.hadoop.security.KerberosName$NoMatchingRule: No rules applied to user
+	at org.apache.hadoop.security.KerberosName.getShortName(KerberosName.java:386)
+	at org.apache.hadoop.security.User.<init>(User.java:44)
+	... 45 more
+
+	at javax.security.auth.login.LoginContext.invoke(LoginContext.java:856)
+	at javax.security.auth.login.LoginContext.access$000(LoginContext.java:195)
+	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:682)
+	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:680)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:680)
+	at javax.security.auth.login.LoginContext.login(LoginContext.java:588)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:414)
+	... 31 more
+java.io.IOException: failure to login
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:433)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:395)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1418)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1319)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:226)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:109)
+	at org.apache.accumulo.core.data.MapFileTest.testMapFileFix(MapFileTest.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+Caused by: javax.security.auth.login.LoginException: java.lang.IllegalArgumentException: Illegal principal name user
+	at org.apache.hadoop.security.User.<init>(User.java:46)
+	at org.apache.hadoop.security.User.<init>(User.java:39)
+	at org.apache.hadoop.security.UserGroupInformation$HadoopLoginModule.commit(UserGroupInformation.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at javax.security.auth.login.LoginContext.invoke(LoginContext.java:755)
+	at javax.security.auth.login.LoginContext.access$000(LoginContext.java:195)
+	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:682)
+	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:680)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:680)
+	at javax.security.auth.login.LoginContext.login(LoginContext.java:588)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:414)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:395)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1418)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1319)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:226)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:109)
+	at org.apache.accumulo.core.data.MapFileTest.testMapFileFix(MapFileTest.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+Caused by: org.apache.hadoop.security.KerberosName$NoMatchingRule: No rules applied to user
+	at org.apache.hadoop.security.KerberosName.getShortName(KerberosName.java:386)
+	at org.apache.hadoop.security.User.<init>(User.java:44)
+	... 45 more
+
+	at javax.security.auth.login.LoginContext.invoke(LoginContext.java:856)
+	at javax.security.auth.login.LoginContext.access$000(LoginContext.java:195)
+	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:682)
+	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:680)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:680)
+	at javax.security.auth.login.LoginContext.login(LoginContext.java:588)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:414)
+	... 31 more
+java.io.IOException: failure to login
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:433)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:395)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1418)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1319)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:226)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:109)
+	at org.apache.accumulo.core.data.MapFileTest.testMapFileIndexing(MapFileTest.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+Caused by: javax.security.auth.login.LoginException: java.lang.IllegalArgumentException: Illegal principal name user
+	at org.apache.hadoop.security.User.<init>(User.java:46)
+	at org.apache.hadoop.security.User.<init>(User.java:39)
+	at org.apache.hadoop.security.UserGroupInformation$HadoopLoginModule.commit(UserGroupInformation.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at javax.security.auth.login.LoginContext.invoke(LoginContext.java:755)
+	at javax.security.auth.login.LoginContext.access$000(LoginContext.java:195)
+	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:682)
+	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:680)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:680)
+	at javax.security.auth.login.LoginContext.login(LoginContext.java:588)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:414)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:395)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1418)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1319)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:226)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:109)
+	at org.apache.accumulo.core.data.MapFileTest.testMapFileIndexing(MapFileTest.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:104)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+Caused by: org.apache.hadoop.security.KerberosName$NoMatchingRule: No rules applied to user
+	at org.apache.hadoop.security.KerberosName.getShortName(KerberosName.java:386)
+	at org.apache.hadoop.security.User.<init>(User.java:44)
+	... 45 more
+
+	at javax.security.auth.login.LoginContext.invoke(LoginContext.java:856)
+	at javax.security.auth.login.LoginContext.access$000(LoginContext.java:195)
+	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:682)
+	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:680)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:680)
+	at javax.security.auth.login.LoginContext.login(LoginContext.java:588)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:414)
+	... 31 more
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec <<< FAILURE!
+Running org.apache.accumulo.core.data.RangeTest
+Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running org.apache.accumulo.core.data.KeyExtentTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.apache.accumulo.core.util.TestStringUtil
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.util.LocalityGroupUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.apache.accumulo.core.util.MetadataTableTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.util.EscapeTokenizerTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.util.AddressUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.apache.accumulo.core.util.TextUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.util.MergeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.accumulo.core.util.TestVersion
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.iterators.FirstEntryInRowIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.accumulo.core.iterators.RegExIteratorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
+Running org.apache.accumulo.core.iterators.AggregatingIteratorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.apache.accumulo.core.iterators.FilteringIteratorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Running org.apache.accumulo.core.iterators.system.SourceSwitchingIteratorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.iterators.system.TimeSettingIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.iterators.system.ColumnFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.iterators.system.ColumnFamilySkippingIteratorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.508 sec
+Running org.apache.accumulo.core.iterators.system.MultiIteratorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec
+Running org.apache.accumulo.core.iterators.system.VisibilityFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.iterators.system.DeletingIteratorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.iterators.FirstEntryInRowTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.apache.accumulo.core.iterators.IterUtilTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.apache.accumulo.core.iterators.user.RowFilterTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.005 sec <<< FAILURE!
+Running org.apache.accumulo.core.iterators.user.IndexedDocIteratorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.379 sec
+Running org.apache.accumulo.core.iterators.user.RegExFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.iterators.user.CombinerTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running org.apache.accumulo.core.iterators.user.RowDeletingIteratorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.iterators.user.VersioningIteratorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.accumulo.core.iterators.user.FilterTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+Running org.apache.accumulo.core.iterators.user.ColumnSliceFilterTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.accumulo.core.iterators.user.GrepIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.iterators.user.IntersectingIteratorTest
+Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.443 sec <<< FAILURE!
+Running org.apache.accumulo.core.iterators.user.LargeRowFilterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+Running org.apache.accumulo.core.iterators.user.WholeRowIteratorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.accumulo.core.iterators.aggregation.conf.AggregatorConfigurationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.iterators.aggregation.NumSummationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.iterators.filter.ColumnFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.security.ColumnVisibilityTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.accumulo.core.security.AuthorizationsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.security.VisibilityEvaluatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.client.RowIteratorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.core.client.IteratorSettingTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.client.mock.MockConnectorTest
+Tests run: 10, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 0.026 sec <<< FAILURE!
+Running org.apache.accumulo.core.client.mock.MockTableOperationsTest
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.019 sec <<< FAILURE!
+Running org.apache.accumulo.core.client.impl.ScannerOptionsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.core.client.impl.TabletLocatorImplTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
+Running org.apache.accumulo.core.client.ClientSideIteratorTest
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.005 sec <<< FAILURE!
+Running org.apache.accumulo.core.client.admin.FindMaxTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE!
+Running org.apache.accumulo.core.client.admin.TableOperationsHelperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.core.client.mapreduce.AccumuloRowInputFormatTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE!
+Running org.apache.accumulo.core.client.mapreduce.AccumuloFileOutputFormatTest
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.039 sec <<< FAILURE!
+Running org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest
+Tests run: 16, Failures: 0, Errors: 16, Skipped: 0, Time elapsed: 0.087 sec <<< FAILURE!
+Running org.apache.accumulo.core.client.mapreduce.lib.partition.RangePartitionerTest
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE!
+Running org.apache.accumulo.core.client.mapreduce.AccumuloOutputFormatTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec <<< FAILURE!
+Running org.apache.accumulo.core.client.mapreduce.RangeInputSplitTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.accumulo.core.conf.PropertyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+
+Results :
+
+Failed tests:   testThrift_Invalid(org.apache.accumulo.core.data.MutationTest): Expected exception: java.lang.IllegalArgumentException
+  testThrift_Invalid(org.apache.accumulo.core.data.KeyTest): Expected exception: java.lang.IllegalArgumentException
+  testMapFileSeek(org.apache.accumulo.core.data.MapFileTest)
+
+Tests in error: 
+  handlesFilenamesWithMoreThanOneDot(org.apache.accumulo.core.file.FileOperationsTest): File does not exist: target/test.file.rf
+  test1(org.apache.accumulo.core.iterators.user.RowFilterTest): java.io.IOException: failure to login
+  testWithBatchScanner(org.apache.accumulo.core.iterators.user.IntersectingIteratorTest): java.io.IOException: failure to login
+  testDeletewithBatchDeleter(org.apache.accumulo.core.client.mock.MockConnectorTest): java.io.IOException: failure to login
+  testMockConnectorReturnsCorrectInstance(org.apache.accumulo.core.client.mock.MockConnectorTest): java.io.IOException: failure to login
+  testCMod(org.apache.accumulo.core.client.mock.MockConnectorTest): java.io.IOException: failure to login
+  testBadMutations(org.apache.accumulo.core.client.mock.MockConnectorTest): java.io.IOException: failure to login
+  testSunnyDay(org.apache.accumulo.core.client.mock.MockConnectorTest): java.io.IOException: failure to login
+  testAggregation(org.apache.accumulo.core.client.mock.MockConnectorTest): java.io.IOException: failure to login
+  testDelete(org.apache.accumulo.core.client.mock.MockConnectorTest): java.io.IOException: failure to login
+  testUpdate(org.apache.accumulo.core.client.mock.MockConnectorTest): java.io.IOException: failure to login
+  testMockMultiTableBatchWriter(org.apache.accumulo.core.client.mock.MockConnectorTest): java.io.IOException: failure to login
+  testChangeAuths(org.apache.accumulo.core.client.mock.MockConnectorTest): java.io.IOException: failure to login
+  testImport(org.apache.accumulo.core.client.mock.MockTableOperationsTest): failure to login
+  testTableNotFound(org.apache.accumulo.core.client.mock.MockTableOperationsTest): java.io.IOException: failure to login
+  testFailsWithNonEmptyFailureDirectory(org.apache.accumulo.core.client.mock.MockTableOperationsTest): Unexpected exception, expected<java.io.IOException> but was<java.lang.RuntimeException>
+  testFailsWithNoTable(org.apache.accumulo.core.client.mock.MockTableOperationsTest): Unexpected exception, expected<org.apache.accumulo.core.client.TableNotFoundException> but was<java.lang.RuntimeException>
+  testCreateUseVersions(org.apache.accumulo.core.client.mock.MockTableOperationsTest): java.io.IOException: failure to login
+  testVersioning(org.apache.accumulo.core.client.ClientSideIteratorTest): java.io.IOException: failure to login
+  testIntersect(org.apache.accumulo.core.client.ClientSideIteratorTest): java.io.IOException: failure to login
+  test1(org.apache.accumulo.core.client.admin.FindMaxTest): java.io.IOException: failure to login
+  test(org.apache.accumulo.core.client.mapreduce.AccumuloRowInputFormatTest): java.io.IOException: failure to login
+  testEmptyWrite(org.apache.accumulo.core.client.mapreduce.AccumuloFileOutputFormatTest): Can't create object
+  testSet(org.apache.accumulo.core.client.mapreduce.AccumuloFileOutputFormatTest): Can't create object
+  testUnset(org.apache.accumulo.core.client.mapreduce.AccumuloFileOutputFormatTest): Can't create object
+  testRealWrite(org.apache.accumulo.core.client.mapreduce.AccumuloFileOutputFormatTest): Can't create object
+  testSetIterator(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): Can't create object
+  testMap(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): java.io.IOException: failure to login
+  testRegex(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): java.io.IOException: failure to login
+  testMaxVersions(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): Can't create object
+  testAddIterator(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): Can't create object
+  testNoMaxVersion(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): Can't create object
+  testSetIteratorOption(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): Can't create object
+  testCorrectRangeInputSplits(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): Can't create object
+  testPartialFailedInputSplitDelegationToConfiguration(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): Unexpected exception, expected<java.io.IOException> but was<java.lang.RuntimeException>
+  testMaxVersionsLessThan1(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): Unexpected exception, expected<java.io.IOException> but was<java.lang.IllegalArgumentException>
+  testGetIteratorOption(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): Can't create object
+  testIteratorOptionEncoding(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): java.io.IOException: failure to login
+  testSimple(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): java.io.IOException: failure to login
+  testPartialInputSplitDelegationToConfiguration(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): java.io.IOException: failure to login
+  testSetRegex(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): Can't create object
+  testGetIteratorSettings(org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest): Can't create object
+  testNoSubBins(org.apache.accumulo.core.client.mapreduce.lib.partition.RangePartitionerTest): Can't create object
+  testSubBins(org.apache.accumulo.core.client.mapreduce.lib.partition.RangePartitionerTest): Can't create object
+  testMR(org.apache.accumulo.core.client.mapreduce.AccumuloOutputFormatTest): java.io.IOException: failure to login
+
+Tests run: 341, Failures: 3, Errors: 45, Skipped: 0
+
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  9.753 s
+[[1;34mINFO[m] Finished at: 2022-07-30T04:58:58-07:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-surefire-plugin:2.9:test[m [1m(default-test)[m on project [36maccumulo-core[m: [1;31mThere are test failures.[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] [1;31mPlease refer to /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/core/target/surefire-reports for the individual test results.[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

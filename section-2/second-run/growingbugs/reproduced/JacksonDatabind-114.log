@@ -1,0 +1,93 @@
+Checking out 37cf6f24 to /tmp/test_d4j_2665023_1658736002/test_trigger/Jack OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Copy generated Ant build file.............................................. OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Cannot read modified classes, perhaps they have not been created yet? at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/core/Project.pm line 1158.
+readline() on closed filehandle IN at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/core/Project.pm line 1159.
+Use of uninitialized value $mod_classes in scalar chomp at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/core/Project.pm line 1161.
+Set of modified classes is empty! at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/core/Project.pm line 1162.
+Cannot read loaded classes, perhaps they have not been created yet? at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/core/Project.pm line 1176.
+readline() on closed filehandle IN at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/core/Project.pm line 1178.
+Use of uninitialized value $rel_classes in scalar chomp at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/core/Project.pm line 1180.
+Set of loaded classes is empty! at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/core/Project.pm line 1181.
+Use of uninitialized value $newconf{"d4j.classes.modified"} in concatenation (.) or string at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/core/Utils.pm line 331.
+Use of uninitialized value $newconf{"d4j.classes.relevant"} in concatenation (.) or string at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/core/Utils.pm line 331.
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff 37cf6f24:4ec01ea0..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: JacksonDatabind-114b............................ OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ FAIL
+Executed command:  cd /tmp/test_d4j_2665023_1658736002/test_trigger/JacksonDatabind && /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/major/bin/ant -f /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml -Dd4j.home=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs -Dd4j.dir.projects=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects -Dbasedir=/tmp/test_d4j_2665023_1658736002/test_trigger/JacksonDatabind -Dbuild.compiler=javac1.8 -DOUTFILE=/tmp/test_d4j_2665023_1658736002/test_trigger/JacksonDatabind/failing_tests -Dd4j.relevant.tests.only=true run.dev.tests 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [javac] /tmp/test_d4j_2665023_1658736002/test_trigger/JacksonDatabind/maven-build.xml:88: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile.tests:
+    [javac] /tmp/test_d4j_2665023_1658736002/test_trigger/JacksonDatabind/maven-build.xml:116: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+update.all.tests:
+
+BUILD FAILED
+/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml:363: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/JacksonDatabind/relevant_tests/114 doesn't exist
+
+Total time: 0 seconds
+Cannot run tests! at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-test line 131.
+Compilation failed in require at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: run relevant tests: JacksonDatabind-114b
+cat: /tmp/test_d4j_2665023_1658736002/test_trigger/JacksonDatabind/failing_tests: No such file or directory
+grep: /tmp/test_d4j_2665023_1658736002/test_trigger/JacksonDatabind/failing_tests: No such file or directory
+Error: verify number of triggering tests: JacksonDatabind-114b (expected: 1, actual: 0)
+grep: /tmp/test_d4j_2665023_1658736002/test_trigger/JacksonDatabind/failing_tests: No such file or directory
+Error: expected triggering test com.fasterxml.jackson.databind.node.TestObjectNode::testEmptyNodeAsValue did not fail
+Check out program version: JacksonDatabind-114f............................ OK
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ FAIL
+Executed command:  cd /tmp/test_d4j_2665023_1658736002/test_trigger/JacksonDatabind && /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/major/bin/ant -f /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml -Dd4j.home=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs -Dd4j.dir.projects=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects -Dbasedir=/tmp/test_d4j_2665023_1658736002/test_trigger/JacksonDatabind -Dbuild.compiler=javac1.8 -DOUTFILE=/tmp/test_d4j_2665023_1658736002/test_trigger/JacksonDatabind/failing_tests -Dd4j.relevant.tests.only=true run.dev.tests 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [javac] /tmp/test_d4j_2665023_1658736002/test_trigger/JacksonDatabind/maven-build.xml:88: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile.tests:
+    [javac] /tmp/test_d4j_2665023_1658736002/test_trigger/JacksonDatabind/maven-build.xml:116: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+update.all.tests:
+
+BUILD FAILED
+/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml:363: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/JacksonDatabind/relevant_tests/114 doesn't exist
+
+Total time: 0 seconds
+Cannot run tests! at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-test line 131.
+Compilation failed in require at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: run relevant tests: JacksonDatabind-114f
+cat: /tmp/test_d4j_2665023_1658736002/test_trigger/JacksonDatabind/failing_tests: No such file or directory
+grep: /tmp/test_d4j_2665023_1658736002/test_trigger/JacksonDatabind/failing_tests: No such file or directory
+================================================================================
+The following errors occurred:
+Error: run relevant tests: JacksonDatabind-114b
+Error: verify number of triggering tests: JacksonDatabind-114b (expected: 1, actual: 0)
+Error: expected triggering test com.fasterxml.jackson.databind.node.TestObjectNode::testEmptyNodeAsValue did not fail
+Error: run relevant tests: JacksonDatabind-114f
+================================================================================
+FAILED

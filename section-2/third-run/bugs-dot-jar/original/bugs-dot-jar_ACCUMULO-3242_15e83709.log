@@ -1,0 +1,102 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Fate 1.6.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.3.0:verify (verify-sorted-pom) @ accumulo-fate ---
+[INFO] Verifying file /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-3242_15e83709a4338da619392c99ee83bb016ff1c9c4/fate/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-mvn) @ accumulo-fate ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo-fate ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.10:check (check-licenses) @ accumulo-fate ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] No excludes explicitly specified.
+[INFO] 43 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 43 licence.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ accumulo-fate ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-fate ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-3242_15e83709a4338da619392c99ee83bb016ff1c9c4/fate/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ accumulo-fate ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-fate ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ accumulo-fate ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ accumulo-fate ---
+[INFO] Surefire report directory: /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-3242_15e83709a4338da619392c99ee83bb016ff1c9c4/fate/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.fate.util.AddressUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.228 sec - in org.apache.accumulo.fate.util.AddressUtilTest
+Running org.apache.accumulo.fate.ReadOnlyStoreTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.226 sec - in org.apache.accumulo.fate.ReadOnlyStoreTest
+Running org.apache.accumulo.fate.AgeOffStoreTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.287 sec - in org.apache.accumulo.fate.AgeOffStoreTest
+Running org.apache.accumulo.fate.zookeeper.RetryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.452 sec - in org.apache.accumulo.fate.zookeeper.RetryTest
+Running org.apache.accumulo.fate.zookeeper.ZooSessionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.264 sec - in org.apache.accumulo.fate.zookeeper.ZooSessionTest
+Running org.apache.accumulo.fate.zookeeper.ZooKeeperConnectionInfoTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec <<< FAILURE! - in org.apache.accumulo.fate.zookeeper.ZooKeeperConnectionInfoTest
+testEquality(org.apache.accumulo.fate.zookeeper.ZooKeeperConnectionInfoTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<org.apache.accumulo.fate.zookeeper.ZooUtil$ZooKeeperConnectionInfo@528ef256> but was:<org.apache.accumulo.fate.zookeeper.ZooUtil$ZooKeeperConnectionInfo@26c81672>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.accumulo.fate.zookeeper.ZooKeeperConnectionInfoTest.testEquality(ZooKeeperConnectionInfoTest.java:27)
+
+Running org.apache.accumulo.fate.zookeeper.DistributedReadWriteLockTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.288 sec - in org.apache.accumulo.fate.zookeeper.DistributedReadWriteLockTest
+Running org.apache.accumulo.fate.zookeeper.ZooCacheTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.362 sec - in org.apache.accumulo.fate.zookeeper.ZooCacheTest
+Running org.apache.accumulo.fate.zookeeper.ZooCacheFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.25 sec - in org.apache.accumulo.fate.zookeeper.ZooCacheFactoryTest
+Running org.apache.accumulo.fate.zookeeper.TransactionWatcherTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.191 sec - in org.apache.accumulo.fate.zookeeper.TransactionWatcherTest
+Running org.apache.accumulo.fate.zookeeper.ZooReaderWriterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.689 sec - in org.apache.accumulo.fate.zookeeper.ZooReaderWriterTest
+
+Results :
+
+Failed tests: 
+  ZooKeeperConnectionInfoTest.testEquality:27 expected:<org.apache.accumulo.fate.zookeeper.ZooUtil$ZooKeeperConnectionInfo@528ef256> but was:<org.apache.accumulo.fate.zookeeper.ZooUtil$ZooKeeperConnectionInfo@26c81672>
+
+Tests run: 49, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 31.615 s
+[INFO] Finished at: 2016-07-26T09:20:01-07:00
+[INFO] Final Memory: 22M/606M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.16:test (default-test) on project accumulo-fate: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-3242_15e83709a4338da619392c99ee83bb016ff1c9c4/fate/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

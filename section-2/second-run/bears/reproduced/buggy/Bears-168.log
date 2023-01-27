@@ -1,0 +1,144 @@
+Apache Maven 3.6.3
+Maven home: /usr/share/maven
+Java version: 1.8.0_312, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.15.0-41-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for io.enmasse:amqp-utils:jar:0.17-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.activemq:artemis-amqp-protocol:jar -> duplicate declaration of version ${artemis.version} @ line 66, column 17
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] enmasse                                                            [pom]
+[INFO] address-model-lib                                                  [jar]
+[INFO] k8s-api                                                            [jar]
+[INFO] k8s-api-testutil                                                   [jar]
+[INFO] amqp-utils                                                         [jar]
+[INFO] discovery-lib                                                      [jar]
+[INFO] topic-forwarder                                                    [jar]
+[INFO] mqtt-gateway                                                       [jar]
+[INFO] mqtt-lwt                                                           [jar]
+[INFO] standard-controller                                                [jar]
+[INFO] address-controller                                                 [jar]
+[INFO] keycloak                                                           [pom]
+[INFO] sasl-plugin                                                        [jar]
+[INFO] keycloak-controller                                                [jar]
+[INFO] systemtests                                                        [jar]
+[INFO] artemis                                                            [pom]
+[INFO] amqp-connector                                                     [jar]
+[INFO] sasl-delegation                                                    [jar]
+[INFO] shutdown-hook                                                      [jar]
+[INFO] jmx_exporter                                                       [jar]
+[INFO] 
+[INFO] -------------------------< io.enmasse:enmasse >-------------------------
+[INFO] Building enmasse 0.17-SNAPSHOT                                    [1/20]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ enmasse ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ enmasse ---
+[INFO] surefireArgLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-168/target/jacoco.exec
+[INFO] 
+[INFO] --------------------< io.enmasse:address-model-lib >--------------------
+[INFO] Building address-model-lib 0.17-SNAPSHOT                          [2/20]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ address-model-lib ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ address-model-lib ---
+[INFO] surefireArgLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-168/address-model-lib/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ address-model-lib ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-168/address-model-lib/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ address-model-lib ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ address-model-lib ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-168/address-model-lib/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ address-model-lib ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ address-model-lib ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.enmasse.address.model.v1.address.KubeUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s - in io.enmasse.address.model.v1.address.KubeUtilTest
+[INFO] Running io.enmasse.address.model.v1.address.AddressTest
+myaddr1-73cb6b25-0792-30dc-bb27-331e9d91d247
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.enmasse.address.model.v1.address.AddressTest
+[INFO] Running io.enmasse.address.model.v1.address.SerializationTest
+[ERROR] Tests run: 16, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.22 s <<< FAILURE! - in io.enmasse.address.model.v1.address.SerializationTest
+[ERROR] testDeserializeAddressSpaceMissingDefaults(io.enmasse.address.model.v1.address.SerializationTest)  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<io.enmasse.address.model.v1.DeserializeException> but was<java.lang.NullPointerException>
+	at io.enmasse.address.model.v1.address.SerializationTest.testDeserializeAddressSpaceMissingDefaults(SerializationTest.java:138)
+
+[ERROR] testDeserializeAddressMissingDefaults(io.enmasse.address.model.v1.address.SerializationTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<io.enmasse.address.model.v1.DeserializeException> but was<java.lang.NullPointerException>
+	at io.enmasse.address.model.v1.address.SerializationTest.testDeserializeAddressMissingDefaults(SerializationTest.java:144)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   SerializationTest.testDeserializeAddressMissingDefaults »  Unexpected exceptio...
+[ERROR]   SerializationTest.testDeserializeAddressSpaceMissingDefaults »  Unexpected exc...
+[INFO] 
+[ERROR] Tests run: 20, Failures: 0, Errors: 2, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for enmasse 0.17-SNAPSHOT:
+[INFO] 
+[INFO] enmasse ............................................ SUCCESS [  0.946 s]
+[INFO] address-model-lib .................................. FAILURE [  1.578 s]
+[INFO] k8s-api ............................................ SKIPPED
+[INFO] k8s-api-testutil ................................... SKIPPED
+[INFO] amqp-utils ......................................... SKIPPED
+[INFO] discovery-lib ...................................... SKIPPED
+[INFO] topic-forwarder .................................... SKIPPED
+[INFO] mqtt-gateway ....................................... SKIPPED
+[INFO] mqtt-lwt ........................................... SKIPPED
+[INFO] standard-controller ................................ SKIPPED
+[INFO] address-controller ................................. SKIPPED
+[INFO] keycloak ........................................... SKIPPED
+[INFO] sasl-plugin ........................................ SKIPPED
+[INFO] keycloak-controller ................................ SKIPPED
+[INFO] systemtests ........................................ SKIPPED
+[INFO] artemis ............................................ SKIPPED
+[INFO] amqp-connector ..................................... SKIPPED
+[INFO] sasl-delegation .................................... SKIPPED
+[INFO] shutdown-hook ...................................... SKIPPED
+[INFO] jmx_exporter ....................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.772 s
+[INFO] Finished at: 2022-07-25T16:49:22-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project address-model-lib: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-168/address-model-lib/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :address-model-lib
+Running the tests related to the bug Bears-168...
+The tests related to the bug Bears-168 were executed.

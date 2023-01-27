@@ -1,0 +1,148 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Lucene 1.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (pre-unit-test) @ oak-lucene ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ oak-lucene ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ oak-lucene ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ oak-lucene ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-scr-plugin:1.16.0:scr (generate-scr-scrdescriptor) @ oak-lucene ---
+[INFO] Generating 1 MetaType Descriptors in /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-3442_17032c50d956ca0c09da24702ece39ddb69f3b94/oak-lucene/target/classes/OSGI-INF/metatype/org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService.xml
+[INFO] Writing 1 Service Component Descriptors to /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-3442_17032c50d956ca0c09da24702ece39ddb69f3b94/oak-lucene/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.lucene.score.impl.ScorerProviderFactoryImpl.xml
+[INFO] Writing 1 Service Component Descriptors to /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-3442_17032c50d956ca0c09da24702ece39ddb69f3b94/oak-lucene/target/classes/OSGI-INF/org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ oak-lucene ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ oak-lucene ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ oak-lucene ---
+[INFO] Surefire report directory: /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-3442_17032c50d956ca0c09da24702ece39ddb69f3b94/oak-lucene/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexQueryTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 12.635 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.AggregateTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexLookupTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.IndexDefinitionTest
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.225 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.OakDirectoryTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.143 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.168 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexSuggestionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.239 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndexTest
+Tests run: 61, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.554 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.NodeStateAnalyzerFactoryTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneBlobCacheTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.217 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexEditorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.395 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.IndexCopierTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexExclusionQueryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.207 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexAggregationTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.89 sec
+Running org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexTest
+Tests run: 19, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.158 sec <<< FAILURE!
+indexNodeLockHandling(org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexTest)  Time elapsed: 0.03 sec  <<< ERROR!
+java.lang.IllegalMonitorStateException: attempt to unlock read lock, not locked by current thread
+	at java.util.concurrent.locks.ReentrantReadWriteLock$Sync.unmatchedUnlockException(ReentrantReadWriteLock.java:447)
+	at java.util.concurrent.locks.ReentrantReadWriteLock$Sync.tryReleaseShared(ReentrantReadWriteLock.java:431)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.releaseShared(AbstractQueuedSynchronizer.java:1340)
+	at java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock.unlock(ReentrantReadWriteLock.java:883)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.IndexNode.release(IndexNode.java:121)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex.getPlans(LucenePropertyIndex.java:222)
+	at org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexTest.indexNodeLockHandling(LuceneIndexTest.java:866)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running org.apache.jackrabbit.oak.plugins.index.lucene.IndexPlannerTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 sec
+Running org.apache.jackrabbit.oak.jcr.query.QueryFulltextTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.763 sec
+Running org.apache.jackrabbit.oak.jcr.query.TextExtractionQueryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.263 sec
+Running org.apache.jackrabbit.oak.jcr.query.SuggestTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.966 sec
+Running org.apache.jackrabbit.oak.jcr.query.SpellcheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.884 sec
+Running org.apache.jackrabbit.oak.jcr.query.MultiSessionQueryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.192 sec
+Running org.apache.jackrabbit.oak.jcr.query.ResultSizeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.817 sec
+
+Results :
+
+Tests in error: 
+  indexNodeLockHandling(org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexTest): attempt to unlock read lock, not locked by current thread
+
+Tests run: 262, Failures: 0, Errors: 1, Skipped: 4
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 41.039 s
+[INFO] Finished at: 2016-07-28T16:28:28-07:00
+[INFO] Final Memory: 25M/964M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project oak-lucene: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/oak/oak9/dataset/oak/OAK-3442_17032c50d956ca0c09da24702ece39ddb69f3b94/oak-lucene/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

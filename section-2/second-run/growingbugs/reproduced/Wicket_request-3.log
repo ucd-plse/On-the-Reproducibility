@@ -1,0 +1,184 @@
+Checking out 2fcb3417 to /tmp/test_d4j_3407939_1658746891/test_trigger/Wick OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Copy generated Ant build file.............................................. OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff 2fcb3417:ff4ebd89..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: Wicket_request-3b............................... OK
+Running ant (compile)...................................................... FAIL
+Executed command:  cd /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request && /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/major/bin/ant -f /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml -Dd4j.home=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs -Dd4j.dir.projects=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects -Dbasedir=/tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request -Dbuild.compiler=javac1.8  compile 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [mkdir] Created dir: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/target/classes
+    [javac] /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/maven-build.xml:86: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+BUILD FAILED
+/tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/maven-build.xml:86: srcdir "/tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/src/main/java" does not exist!
+
+Total time: 0 seconds
+Cannot compile sources! at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-compile line 82.
+Compilation failed in require at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: compile: Wicket_request-3b
+Running ant (compile.tests)................................................ FAIL
+Executed command:  cd /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request && /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/major/bin/ant -f /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml -Dd4j.home=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs -Dd4j.dir.projects=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects -Dbasedir=/tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request -Dbuild.compiler=javac1.8  compile.tests 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [javac] /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/maven-build.xml:86: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+BUILD FAILED
+/tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/maven-build.xml:86: srcdir "/tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/src/main/java" does not exist!
+
+Total time: 0 seconds
+Cannot compile test suite! at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-test line 130.
+Compilation failed in require at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: run relevant tests: Wicket_request-3b
+cat: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: verify number of triggering tests: Wicket_request-3b (expected: 26, actual: 0)
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::resolveRelative1 did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::resolveRelative2 did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::resolveRelative3 did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::resolveRelative4 did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::parseAbsoluteUrl did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::resolveRelative_DotFollowedByEmptySegment1 did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::resolveRelative_DotFollowedByEmptySegment2 did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::wicket_5114_allowtoStringFullWhenContainingTwoDots did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::removeLeadingSegments1 did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::removeLeadingSegments2 did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::parseHttpSlashSlashColon did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::resolveRelative_NoSegmentsInBase did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::resolveRelative_EmptyTrailingSegmentInBase did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::resolveRelative_NoSegmentsInBase2 did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::resolveRelative_EmptyTrailingSegmentInBase2 did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::render1 did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::render2 did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::render3 did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::render4 did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::render5 did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::prependLeadingSegments1 did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::prependLeadingSegments2 did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::prependLeadingSegments3 did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.UrlTest::prependLeadingSegments4 did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.mapper.parameter.UrlPathPageParametersEncoderTest::encodeNamedParameters did not fail
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+Error: expected triggering test org.apache.wicket.request.mapper.parameter.UrlPathPageParametersEncoderTest::encodeNamedParametersWithSpecialChars did not fail
+Check out program version: Wicket_request-3f............................... OK
+Running ant (compile)...................................................... FAIL
+Executed command:  cd /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request && /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/major/bin/ant -f /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml -Dd4j.home=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs -Dd4j.dir.projects=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects -Dbasedir=/tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request -Dbuild.compiler=javac1.8  compile 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [mkdir] Created dir: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/target/classes
+    [javac] /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/maven-build.xml:86: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+BUILD FAILED
+/tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/maven-build.xml:86: srcdir "/tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/src/main/java" does not exist!
+
+Total time: 0 seconds
+Cannot compile sources! at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-compile line 82.
+Compilation failed in require at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: compile: Wicket_request-3f
+Running ant (compile.tests)................................................ FAIL
+Executed command:  cd /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request && /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/major/bin/ant -f /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml -Dd4j.home=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs -Dd4j.dir.projects=/home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects -Dbasedir=/tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request -Dbuild.compiler=javac1.8  compile.tests 2>&1
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Buildfile: /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/projects/defects4j.build.xml
+
+test-offline:
+
+get-deps:
+
+compile:
+    [javac] /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/maven-build.xml:86: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+BUILD FAILED
+/tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/maven-build.xml:86: srcdir "/tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/src/main/java" does not exist!
+
+Total time: 0 seconds
+Cannot compile test suite! at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-test line 130.
+Compilation failed in require at /home/user/Workspace/reproducibility/Reproducibility-Scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: run relevant tests: Wicket_request-3f
+cat: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+grep: /tmp/test_d4j_3407939_1658746891/test_trigger/Wicket_request/failing_tests: No such file or directory
+================================================================================
+The following errors occurred:
+Error: compile: Wicket_request-3b
+Error: run relevant tests: Wicket_request-3b
+Error: verify number of triggering tests: Wicket_request-3b (expected: 26, actual: 0)
+Error: expected triggering test org.apache.wicket.request.UrlTest::resolveRelative1 did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::resolveRelative2 did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::resolveRelative3 did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::resolveRelative4 did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::parseAbsoluteUrl did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::resolveRelative_DotFollowedByEmptySegment1 did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::resolveRelative_DotFollowedByEmptySegment2 did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::wicket_5114_allowtoStringFullWhenContainingTwoDots did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::removeLeadingSegments1 did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::removeLeadingSegments2 did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::parseHttpSlashSlashColon did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::resolveRelative_NoSegmentsInBase did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::resolveRelative_EmptyTrailingSegmentInBase did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::resolveRelative_NoSegmentsInBase2 did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::resolveRelative_EmptyTrailingSegmentInBase2 did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::render1 did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::render2 did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::render3 did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::render4 did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::render5 did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::prependLeadingSegments1 did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::prependLeadingSegments2 did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::prependLeadingSegments3 did not fail
+Error: expected triggering test org.apache.wicket.request.UrlTest::prependLeadingSegments4 did not fail
+Error: expected triggering test org.apache.wicket.request.mapper.parameter.UrlPathPageParametersEncoderTest::encodeNamedParameters did not fail
+Error: expected triggering test org.apache.wicket.request.mapper.parameter.UrlPathPageParametersEncoderTest::encodeNamedParametersWithSpecialChars did not fail
+Error: compile: Wicket_request-3f
+Error: run relevant tests: Wicket_request-3f
+================================================================================
+FAILED

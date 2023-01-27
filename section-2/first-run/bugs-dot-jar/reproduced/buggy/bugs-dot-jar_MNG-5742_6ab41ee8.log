@@ -1,0 +1,1071 @@
+[INFO] Scanning for projects...
+[WARNING] The project org.apache.maven:maven:pom:3.2.6-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Maven                                                       [pom]
+[INFO] Maven Model                                                        [jar]
+[INFO] Maven Artifact                                                     [jar]
+[INFO] Maven Plugin API                                                   [jar]
+[INFO] Maven Builder Support                                              [jar]
+[INFO] Maven Model Builder                                                [jar]
+[INFO] Maven Settings                                                     [jar]
+[INFO] Maven Settings Builder                                             [jar]
+[INFO] Maven Repository Metadata Model                                    [jar]
+[INFO] Maven Aether Provider                                              [jar]
+[INFO] Maven Core                                                         [jar]
+[INFO] Maven Compat                                                       [jar]
+[INFO] Maven Embedder                                                     [jar]
+[INFO] Apache Maven Distribution                                          [pom]
+[INFO] 
+[INFO] -----------------------< org.apache.maven:maven >-----------------------
+[INFO] Building Apache Maven 3.2.6-SNAPSHOT                              [1/14]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-bytecode-version) @ maven ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (ban-known-bad-maven-versions) @ maven ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (rat-check) @ maven ---
+[INFO] 64 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/test/resources*/**
+[INFO] Exclude: src/test/projects/**
+[INFO] Exclude: src/test/remote-repo/**
+[INFO] Exclude: **/*.odg
+[INFO] Exclude: bootstrap/**
+[INFO] Exclude: README.bootstrap.txt
+[INFO] Exclude: .repository/**
+[INFO] Exclude: .maven/spy.log
+[INFO] 15 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 4 unknown: 4 generated: 0 approved: 7 licence.
+[INFO] 
+[INFO] --------------------< org.apache.maven:maven-model >--------------------
+[INFO] Building Maven Model 3.2.6-SNAPSHOT                               [2/14]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-bytecode-version) @ maven-model ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (ban-known-bad-maven-versions) @ maven-model ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (rat-check) @ maven-model ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/test/resources*/**
+[INFO] Exclude: src/test/projects/**
+[INFO] Exclude: src/test/remote-repo/**
+[INFO] Exclude: **/*.odg
+[INFO] Exclude: bootstrap/**
+[INFO] Exclude: README.bootstrap.txt
+[INFO] Exclude: .repository/**
+[INFO] Exclude: .maven/spy.log
+[INFO] 46 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 46 licence.
+[INFO] 
+[INFO] --- modello-maven-plugin:1.8.1:java (standard) @ maven-model ---
+[INFO] outputDirectory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-model/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/maven.mdo
+[INFO] Generating current version: 4.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.8.1:xpp3-reader (standard) @ maven-model ---
+[INFO] outputDirectory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-model/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/maven.mdo
+[INFO] Generating current version: 4.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.8.1:xpp3-extended-reader (standard) @ maven-model ---
+[INFO] outputDirectory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-model/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/maven.mdo
+[INFO] Generating current version: 4.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.8.1:xpp3-writer (standard) @ maven-model ---
+[INFO] outputDirectory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-model/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/maven.mdo
+[INFO] Generating current version: 4.0.0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ maven-model ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ maven-model ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-model/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ maven-model ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 53 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-model/target/classes
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-model/target/generated-sources/modello/org/apache/maven/model/Exclusion.java: Some input files use unchecked or unsafe operations.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-model/target/generated-sources/modello/org/apache/maven/model/Exclusion.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.13:check (check-java-1.6-compat) @ maven-model ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ maven-model ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-model/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ maven-model ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 37 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-model/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ maven-model ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:jar (default-jar) @ maven-model ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-model/target/maven-model-3.2.6-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.4:attach-descriptor (attach-descriptor) @ maven-model ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (checkstyle-check) @ maven-model ---
+[INFO] 
+[INFO] There are 1 checkstyle errors.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ maven-model ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-model/target/maven-model-3.2.6-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/maven/maven-model/3.2.6-SNAPSHOT/maven-model-3.2.6-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-model/pom.xml to /home/user/.m2/repository/org/apache/maven/maven-model/3.2.6-SNAPSHOT/maven-model-3.2.6-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------------< org.apache.maven:maven-artifact >-------------------
+[INFO] Building Maven Artifact 3.2.6-SNAPSHOT                            [3/14]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-bytecode-version) @ maven-artifact ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (ban-known-bad-maven-versions) @ maven-artifact ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (rat-check) @ maven-artifact ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/test/resources*/**
+[INFO] Exclude: src/test/projects/**
+[INFO] Exclude: src/test/remote-repo/**
+[INFO] Exclude: **/*.odg
+[INFO] Exclude: bootstrap/**
+[INFO] Exclude: README.bootstrap.txt
+[INFO] Exclude: .repository/**
+[INFO] Exclude: .maven/spy.log
+[INFO] 33 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 33 licence.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ maven-artifact ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ maven-artifact ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-artifact/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ maven-artifact ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 27 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-artifact/target/classes
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-artifact/src/main/java/org/apache/maven/artifact/repository/ArtifactRepository.java: Some input files use or override a deprecated API.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-artifact/src/main/java/org/apache/maven/artifact/repository/ArtifactRepository.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.13:check (check-java-1.6-compat) @ maven-artifact ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] --- plexus-component-metadata:1.5.5:generate-metadata (default) @ maven-artifact ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ maven-artifact ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-artifact/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ maven-artifact ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-artifact/target/test-classes
+[INFO] 
+[INFO] --- plexus-component-metadata:1.5.5:generate-test-metadata (default) @ maven-artifact ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ maven-artifact ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:jar (default-jar) @ maven-artifact ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-artifact/target/maven-artifact-3.2.6-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.4:attach-descriptor (attach-descriptor) @ maven-artifact ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (checkstyle-check) @ maven-artifact ---
+[INFO] 
+[INFO] There are 10 checkstyle errors.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ maven-artifact ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-artifact/target/maven-artifact-3.2.6-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/maven/maven-artifact/3.2.6-SNAPSHOT/maven-artifact-3.2.6-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-artifact/pom.xml to /home/user/.m2/repository/org/apache/maven/maven-artifact/3.2.6-SNAPSHOT/maven-artifact-3.2.6-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.apache.maven:maven-plugin-api >------------------
+[INFO] Building Maven Plugin API 3.2.6-SNAPSHOT                          [4/14]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-bytecode-version) @ maven-plugin-api ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (ban-known-bad-maven-versions) @ maven-plugin-api ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (rat-check) @ maven-plugin-api ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/test/resources*/**
+[INFO] Exclude: src/test/projects/**
+[INFO] Exclude: src/test/remote-repo/**
+[INFO] Exclude: **/*.odg
+[INFO] Exclude: bootstrap/**
+[INFO] Exclude: README.bootstrap.txt
+[INFO] Exclude: .repository/**
+[INFO] Exclude: .maven/spy.log
+[INFO] 26 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 26 licence.
+[INFO] 
+[INFO] --- modello-maven-plugin:1.8.1:java (standard) @ maven-plugin-api ---
+[INFO] outputDirectory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-plugin-api/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/lifecycle.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.8.1:xpp3-reader (standard) @ maven-plugin-api ---
+[INFO] outputDirectory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-plugin-api/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/lifecycle.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.8.1:xpp3-writer (standard) @ maven-plugin-api ---
+[INFO] outputDirectory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-plugin-api/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/lifecycle.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ maven-plugin-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ maven-plugin-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-plugin-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ maven-plugin-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 25 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-plugin-api/target/classes
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-plugin-api/target/generated-sources/modello/org/apache/maven/plugin/lifecycle/io/xpp3/LifecycleMappingsXpp3Reader.java: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-plugin-api/target/generated-sources/modello/org/apache/maven/plugin/lifecycle/io/xpp3/LifecycleMappingsXpp3Reader.java uses unchecked or unsafe operations.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-plugin-api/target/generated-sources/modello/org/apache/maven/plugin/lifecycle/io/xpp3/LifecycleMappingsXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.13:check (check-java-1.6-compat) @ maven-plugin-api ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ maven-plugin-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ maven-plugin-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-plugin-api/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ maven-plugin-api ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:jar (default-jar) @ maven-plugin-api ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-plugin-api/target/maven-plugin-api-3.2.6-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.4:attach-descriptor (attach-descriptor) @ maven-plugin-api ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (checkstyle-check) @ maven-plugin-api ---
+[INFO] 
+[INFO] There are 5 checkstyle errors.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ maven-plugin-api ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-plugin-api/target/maven-plugin-api-3.2.6-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/maven/maven-plugin-api/3.2.6-SNAPSHOT/maven-plugin-api-3.2.6-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-plugin-api/pom.xml to /home/user/.m2/repository/org/apache/maven/maven-plugin-api/3.2.6-SNAPSHOT/maven-plugin-api-3.2.6-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------------< org.apache.maven:maven-builder-support >---------------
+[INFO] Building Maven Builder Support 3.2.6-SNAPSHOT                     [5/14]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-bytecode-version) @ maven-builder-support ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (ban-known-bad-maven-versions) @ maven-builder-support ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (rat-check) @ maven-builder-support ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/test/resources*/**
+[INFO] Exclude: src/test/projects/**
+[INFO] Exclude: src/test/remote-repo/**
+[INFO] Exclude: **/*.odg
+[INFO] Exclude: bootstrap/**
+[INFO] Exclude: README.bootstrap.txt
+[INFO] Exclude: .repository/**
+[INFO] Exclude: .maven/spy.log
+[INFO] 13 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 13 licence.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ maven-builder-support ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ maven-builder-support ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-builder-support/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ maven-builder-support ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-builder-support/target/classes
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.13:check (check-java-1.6-compat) @ maven-builder-support ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ maven-builder-support ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-builder-support/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ maven-builder-support ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-builder-support/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ maven-builder-support ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:jar (default-jar) @ maven-builder-support ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-builder-support/target/maven-builder-support-3.2.6-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.4:attach-descriptor (attach-descriptor) @ maven-builder-support ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (checkstyle-check) @ maven-builder-support ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ maven-builder-support ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-builder-support/target/maven-builder-support-3.2.6-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/maven/maven-builder-support/3.2.6-SNAPSHOT/maven-builder-support-3.2.6-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-builder-support/pom.xml to /home/user/.m2/repository/org/apache/maven/maven-builder-support/3.2.6-SNAPSHOT/maven-builder-support-3.2.6-SNAPSHOT.pom
+[INFO] 
+[INFO] ----------------< org.apache.maven:maven-model-builder >----------------
+[INFO] Building Maven Model Builder 3.2.6-SNAPSHOT                       [6/14]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-bytecode-version) @ maven-model-builder ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (ban-known-bad-maven-versions) @ maven-model-builder ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (rat-check) @ maven-model-builder ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/test/resources*/**
+[INFO] Exclude: src/test/projects/**
+[INFO] Exclude: src/test/remote-repo/**
+[INFO] Exclude: **/*.odg
+[INFO] Exclude: bootstrap/**
+[INFO] Exclude: README.bootstrap.txt
+[INFO] Exclude: .repository/**
+[INFO] Exclude: .maven/spy.log
+[INFO] 108 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 108 licence.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ maven-model-builder ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ maven-model-builder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ maven-model-builder ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 90 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-model-builder/target/classes
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-model-builder/src/main/java/org/apache/maven/model/resolution/ModelResolver.java: Some input files use or override a deprecated API.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-model-builder/src/main/java/org/apache/maven/model/resolution/ModelResolver.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.13:check (check-java-1.6-compat) @ maven-model-builder ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] --- plexus-component-metadata:1.5.5:generate-metadata (default) @ maven-model-builder ---
+[INFO] Discovered 26 component descriptors(s)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ maven-model-builder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 52 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ maven-model-builder ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-model-builder/target/test-classes
+[INFO] 
+[INFO] --- plexus-component-metadata:1.5.5:generate-test-metadata (default) @ maven-model-builder ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ maven-model-builder ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:jar (default-jar) @ maven-model-builder ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-model-builder/target/maven-model-builder-3.2.6-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.4:attach-descriptor (attach-descriptor) @ maven-model-builder ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (checkstyle-check) @ maven-model-builder ---
+[INFO] 
+[INFO] There are 60 checkstyle errors.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ maven-model-builder ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-model-builder/target/maven-model-builder-3.2.6-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/maven/maven-model-builder/3.2.6-SNAPSHOT/maven-model-builder-3.2.6-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-model-builder/pom.xml to /home/user/.m2/repository/org/apache/maven/maven-model-builder/3.2.6-SNAPSHOT/maven-model-builder-3.2.6-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------------< org.apache.maven:maven-settings >-------------------
+[INFO] Building Maven Settings 3.2.6-SNAPSHOT                            [7/14]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-bytecode-version) @ maven-settings ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (ban-known-bad-maven-versions) @ maven-settings ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (rat-check) @ maven-settings ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/test/resources*/**
+[INFO] Exclude: src/test/projects/**
+[INFO] Exclude: src/test/remote-repo/**
+[INFO] Exclude: **/*.odg
+[INFO] Exclude: bootstrap/**
+[INFO] Exclude: README.bootstrap.txt
+[INFO] Exclude: .repository/**
+[INFO] Exclude: .maven/spy.log
+[INFO] 5 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 5 licence.
+[INFO] 
+[INFO] --- modello-maven-plugin:1.8.1:java (standard) @ maven-settings ---
+[INFO] outputDirectory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-settings/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/settings.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.8.1:xpp3-reader (standard) @ maven-settings ---
+[INFO] outputDirectory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-settings/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/settings.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.8.1:xpp3-writer (standard) @ maven-settings ---
+[INFO] outputDirectory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-settings/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/settings.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ maven-settings ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ maven-settings ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-settings/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ maven-settings ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-settings/target/classes
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-settings/target/generated-sources/modello/org/apache/maven/settings/io/xpp3/SettingsXpp3Reader.java: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-settings/target/generated-sources/modello/org/apache/maven/settings/io/xpp3/SettingsXpp3Reader.java uses unchecked or unsafe operations.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-settings/target/generated-sources/modello/org/apache/maven/settings/io/xpp3/SettingsXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.13:check (check-java-1.6-compat) @ maven-settings ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ maven-settings ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-settings/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ maven-settings ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ maven-settings ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:jar (default-jar) @ maven-settings ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-settings/target/maven-settings-3.2.6-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.4:attach-descriptor (attach-descriptor) @ maven-settings ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (checkstyle-check) @ maven-settings ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ maven-settings ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-settings/target/maven-settings-3.2.6-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/maven/maven-settings/3.2.6-SNAPSHOT/maven-settings-3.2.6-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-settings/pom.xml to /home/user/.m2/repository/org/apache/maven/maven-settings/3.2.6-SNAPSHOT/maven-settings-3.2.6-SNAPSHOT.pom
+[INFO] 
+[INFO] --------------< org.apache.maven:maven-settings-builder >---------------
+[INFO] Building Maven Settings Builder 3.2.6-SNAPSHOT                    [8/14]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-bytecode-version) @ maven-settings-builder ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (ban-known-bad-maven-versions) @ maven-settings-builder ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (rat-check) @ maven-settings-builder ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/test/resources*/**
+[INFO] Exclude: src/test/projects/**
+[INFO] Exclude: src/test/remote-repo/**
+[INFO] Exclude: **/*.odg
+[INFO] Exclude: bootstrap/**
+[INFO] Exclude: README.bootstrap.txt
+[INFO] Exclude: .repository/**
+[INFO] Exclude: .maven/spy.log
+[INFO] 34 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 34 licence.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ maven-settings-builder ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ maven-settings-builder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-settings-builder/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ maven-settings-builder ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 30 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-settings-builder/target/classes
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-settings-builder/src/main/java/org/apache/maven/settings/building/SettingsBuildingRequest.java: Some input files use or override a deprecated API.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-settings-builder/src/main/java/org/apache/maven/settings/building/SettingsBuildingRequest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.13:check (check-java-1.6-compat) @ maven-settings-builder ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] --- plexus-component-metadata:1.5.5:generate-metadata (default) @ maven-settings-builder ---
+[INFO] Discovered 5 component descriptors(s)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ maven-settings-builder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ maven-settings-builder ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-settings-builder/target/test-classes
+[INFO] 
+[INFO] --- plexus-component-metadata:1.5.5:generate-test-metadata (default) @ maven-settings-builder ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ maven-settings-builder ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:jar (default-jar) @ maven-settings-builder ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-settings-builder/target/maven-settings-builder-3.2.6-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.4:attach-descriptor (attach-descriptor) @ maven-settings-builder ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (checkstyle-check) @ maven-settings-builder ---
+[INFO] 
+[INFO] There are 3 checkstyle errors.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ maven-settings-builder ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-settings-builder/target/maven-settings-builder-3.2.6-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/maven/maven-settings-builder/3.2.6-SNAPSHOT/maven-settings-builder-3.2.6-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-settings-builder/pom.xml to /home/user/.m2/repository/org/apache/maven/maven-settings-builder/3.2.6-SNAPSHOT/maven-settings-builder-3.2.6-SNAPSHOT.pom
+[INFO] 
+[INFO] -------------< org.apache.maven:maven-repository-metadata >-------------
+[INFO] Building Maven Repository Metadata Model 3.2.6-SNAPSHOT           [9/14]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-bytecode-version) @ maven-repository-metadata ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (ban-known-bad-maven-versions) @ maven-repository-metadata ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (rat-check) @ maven-repository-metadata ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/test/resources*/**
+[INFO] Exclude: src/test/projects/**
+[INFO] Exclude: src/test/remote-repo/**
+[INFO] Exclude: **/*.odg
+[INFO] Exclude: bootstrap/**
+[INFO] Exclude: README.bootstrap.txt
+[INFO] Exclude: .repository/**
+[INFO] Exclude: .maven/spy.log
+[INFO] 4 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 4 licence.
+[INFO] 
+[INFO] --- modello-maven-plugin:1.8.1:java (standard) @ maven-repository-metadata ---
+[INFO] outputDirectory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-repository-metadata/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/metadata.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.8.1:xpp3-reader (standard) @ maven-repository-metadata ---
+[INFO] outputDirectory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-repository-metadata/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/metadata.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.8.1:xpp3-writer (standard) @ maven-repository-metadata ---
+[INFO] outputDirectory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-repository-metadata/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/metadata.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ maven-repository-metadata ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ maven-repository-metadata ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-repository-metadata/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ maven-repository-metadata ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-repository-metadata/target/classes
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-repository-metadata/target/generated-sources/modello/org/apache/maven/artifact/repository/metadata/io/xpp3/MetadataXpp3Reader.java: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-repository-metadata/target/generated-sources/modello/org/apache/maven/artifact/repository/metadata/io/xpp3/MetadataXpp3Reader.java uses unchecked or unsafe operations.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-repository-metadata/target/generated-sources/modello/org/apache/maven/artifact/repository/metadata/io/xpp3/MetadataXpp3Reader.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.13:check (check-java-1.6-compat) @ maven-repository-metadata ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ maven-repository-metadata ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-repository-metadata/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ maven-repository-metadata ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ maven-repository-metadata ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:jar (default-jar) @ maven-repository-metadata ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-repository-metadata/target/maven-repository-metadata-3.2.6-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.4:attach-descriptor (attach-descriptor) @ maven-repository-metadata ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (checkstyle-check) @ maven-repository-metadata ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ maven-repository-metadata ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-repository-metadata/target/maven-repository-metadata-3.2.6-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/maven/maven-repository-metadata/3.2.6-SNAPSHOT/maven-repository-metadata-3.2.6-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-repository-metadata/pom.xml to /home/user/.m2/repository/org/apache/maven/maven-repository-metadata/3.2.6-SNAPSHOT/maven-repository-metadata-3.2.6-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------------< org.apache.maven:maven-aether-provider >---------------
+[INFO] Building Maven Aether Provider 3.2.6-SNAPSHOT                    [10/14]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-bytecode-version) @ maven-aether-provider ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (ban-known-bad-maven-versions) @ maven-aether-provider ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (rat-check) @ maven-aether-provider ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/test/resources*/**
+[INFO] Exclude: src/test/projects/**
+[INFO] Exclude: src/test/remote-repo/**
+[INFO] Exclude: **/*.odg
+[INFO] Exclude: bootstrap/**
+[INFO] Exclude: README.bootstrap.txt
+[INFO] Exclude: .repository/**
+[INFO] Exclude: .maven/spy.log
+[INFO] 31 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 31 licence.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ maven-aether-provider ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ maven-aether-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-aether-provider/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ maven-aether-provider ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 21 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-aether-provider/target/classes
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-aether-provider/src/main/java/org/apache/maven/repository/internal/MavenAetherModule.java: Some input files use or override a deprecated API.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-aether-provider/src/main/java/org/apache/maven/repository/internal/MavenAetherModule.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.13:check (check-java-1.6-compat) @ maven-aether-provider ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] --- plexus-component-metadata:1.5.5:generate-metadata (default) @ maven-aether-provider ---
+[INFO] Discovered 5 component descriptors(s)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ maven-aether-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 13 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ maven-aether-provider ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-aether-provider/target/test-classes
+[INFO] 
+[INFO] --- plexus-component-metadata:1.5.5:generate-test-metadata (default) @ maven-aether-provider ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ maven-aether-provider ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:jar (default-jar) @ maven-aether-provider ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-aether-provider/target/maven-aether-provider-3.2.6-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.4:attach-descriptor (attach-descriptor) @ maven-aether-provider ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (checkstyle-check) @ maven-aether-provider ---
+[INFO] 
+[INFO] There are 2 checkstyle errors.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ maven-aether-provider ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-aether-provider/target/maven-aether-provider-3.2.6-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/maven/maven-aether-provider/3.2.6-SNAPSHOT/maven-aether-provider-3.2.6-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-aether-provider/pom.xml to /home/user/.m2/repository/org/apache/maven/maven-aether-provider/3.2.6-SNAPSHOT/maven-aether-provider-3.2.6-SNAPSHOT.pom
+[INFO] 
+[INFO] --------------------< org.apache.maven:maven-core >---------------------
+[INFO] Building Maven Core 3.2.6-SNAPSHOT                               [11/14]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-bytecode-version) @ maven-core ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (ban-known-bad-maven-versions) @ maven-core ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (rat-check) @ maven-core ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/test/resources*/**
+[INFO] Exclude: src/test/projects/**
+[INFO] Exclude: src/test/remote-repo/**
+[INFO] Exclude: **/*.odg
+[INFO] Exclude: lifecycle-executor.txt
+[INFO] Exclude: plugin-manager.txt
+[INFO] Exclude: project-builder.txt
+[INFO] Exclude: src/site/resources/design/**
+[INFO] Exclude: bootstrap/**
+[INFO] Exclude: README.bootstrap.txt
+[INFO] Exclude: .repository/**
+[INFO] Exclude: .maven/spy.log
+[INFO] 430 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 430 licence.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create-timestamp (create-noncanonicalrev) @ maven-core ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (create-buildnumber) @ maven-core ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-core && git rev-parse --verify HEAD
+[INFO] Working directory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-core
+[INFO] Storing buildNumber: 9f80c71273bb283858f3b011b92f840e7347a89c at timestamp: 1657898213007
+[INFO] Executing: /bin/sh -c cd /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-core && git rev-parse --verify HEAD
+[INFO] Working directory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-core
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- modello-maven-plugin:1.8.1:java (standard) @ maven-core ---
+[INFO] outputDirectory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-core/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/toolchains.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.8.1:xpp3-reader (standard) @ maven-core ---
+[INFO] outputDirectory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-core/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/toolchains.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.8.1:xpp3-writer (standard) @ maven-core ---
+[INFO] outputDirectory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-core/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/toolchains.mdo
+[INFO] Generating current version: 1.1.0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ maven-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ maven-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 17 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ maven-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 328 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-core/target/classes
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-core/src/main/java/org/apache/maven/artifact/resolver/ArtifactResolutionRequest.java: Some input files use or override a deprecated API.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-core/src/main/java/org/apache/maven/artifact/resolver/ArtifactResolutionRequest.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-core/src/main/java/org/apache/maven/execution/ReactorManager.java: Some input files use unchecked or unsafe operations.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-core/src/main/java/org/apache/maven/execution/ReactorManager.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.13:check (check-java-1.6-compat) @ maven-core ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] --- plexus-component-metadata:1.5.5:generate-metadata (default) @ maven-core ---
+[INFO] Discovered 58 component descriptors(s)
+[INFO] 
+[INFO] --- sisu-maven-plugin:1.1:main-index (default) @ maven-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ maven-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 220 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ maven-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 76 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-core/target/test-classes
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-core/src/test/java/org/apache/maven/toolchain/DefaultToolchainTest.java: Some input files use or override a deprecated API.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-core/src/test/java/org/apache/maven/toolchain/DefaultToolchainTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- plexus-component-metadata:1.5.5:generate-test-metadata (default) @ maven-core ---
+[INFO] Discovered 4 component descriptors(s)
+[INFO] 
+[INFO] --- sisu-maven-plugin:1.1:test-index (default) @ maven-core ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ maven-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:jar (default-jar) @ maven-core ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-core/target/maven-core-3.2.6-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.4:attach-descriptor (attach-descriptor) @ maven-core ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (checkstyle-check) @ maven-core ---
+[INFO] 
+[INFO] There are 183 checkstyle errors.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ maven-core ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-core/target/maven-core-3.2.6-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/maven/maven-core/3.2.6-SNAPSHOT/maven-core-3.2.6-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-core/pom.xml to /home/user/.m2/repository/org/apache/maven/maven-core/3.2.6-SNAPSHOT/maven-core-3.2.6-SNAPSHOT.pom
+[INFO] 
+[INFO] -------------------< org.apache.maven:maven-compat >--------------------
+[INFO] Building Maven Compat 3.2.6-SNAPSHOT                             [12/14]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-bytecode-version) @ maven-compat ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (ban-known-bad-maven-versions) @ maven-compat ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (rat-check) @ maven-compat ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/test/resources*/**
+[INFO] Exclude: src/test/projects/**
+[INFO] Exclude: src/test/remote-repo/**
+[INFO] Exclude: **/*.odg
+[INFO] Exclude: bootstrap/**
+[INFO] Exclude: README.bootstrap.txt
+[INFO] Exclude: .repository/**
+[INFO] Exclude: .maven/spy.log
+[INFO] 211 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 210 licence.
+[INFO] 
+[INFO] --- modello-maven-plugin:1.8.1:java (standard) @ maven-compat ---
+[INFO] outputDirectory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-compat/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/profiles.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] Working on model: src/main/mdo/paramdoc.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.8.1:xpp3-reader (standard) @ maven-compat ---
+[INFO] outputDirectory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-compat/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/profiles.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] Working on model: src/main/mdo/paramdoc.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- modello-maven-plugin:1.8.1:xpp3-writer (standard) @ maven-compat ---
+[INFO] outputDirectory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-compat/target/generated-sources/modello
+[INFO] Working on model: src/main/mdo/profiles.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] Working on model: src/main/mdo/paramdoc.mdo
+[INFO] Generating current version: 1.0.0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ maven-compat ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ maven-compat ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ maven-compat ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 146 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-compat/target/classes
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-compat/src/main/java/org/apache/maven/repository/legacy/WagonManager.java: Some input files use or override a deprecated API.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-compat/src/main/java/org/apache/maven/repository/legacy/WagonManager.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-compat/src/main/java/org/apache/maven/repository/legacy/resolver/DefaultLegacyArtifactCollector.java: Some input files use unchecked or unsafe operations.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-compat/src/main/java/org/apache/maven/repository/legacy/resolver/DefaultLegacyArtifactCollector.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.13:check (check-java-1.6-compat) @ maven-compat ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] --- plexus-component-metadata:1.5.5:generate-metadata (default) @ maven-compat ---
+[INFO] Discovered 34 component descriptors(s)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ maven-compat ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 156 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ maven-compat ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 71 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-compat/target/test-classes
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-compat/src/test/java/org/apache/maven/repository/metadata/TestMetadataSource.java: Some input files use or override a deprecated API.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-compat/src/test/java/org/apache/maven/repository/metadata/TestMetadataSource.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-compat/src/test/java/org/apache/maven/repository/metadata/TestMetadataSource.java: Some input files use unchecked or unsafe operations.
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-compat/src/test/java/org/apache/maven/repository/metadata/TestMetadataSource.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- plexus-component-metadata:1.5.5:generate-test-metadata (default) @ maven-compat ---
+[INFO] Discovered 12 component descriptors(s)
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ maven-compat ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:jar (default-jar) @ maven-compat ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-compat/target/maven-compat-3.2.6-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.4:attach-descriptor (attach-descriptor) @ maven-compat ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (checkstyle-check) @ maven-compat ---
+[INFO] 
+[INFO] There are 103 checkstyle errors.
+[ERROR] ProfileActivator.java[27:5] (modifier) RedundantModifier: Redundant 'final' modifier.
+[ERROR] ProjectUtils.java[49] (sizes) LineLength: Line is longer than 120 characters (found 122).
+[ERROR] ProjectUtils.java[65] (sizes) LineLength: Line is longer than 120 characters (found 124).
+[ERROR] DefaultPathTranslator.java[128:26] (naming) LocalVariableName: Name 'BASEDIR_EXPRESSION' must match pattern '^[a-z][a-zA-Z0-9]*$'.
+[ERROR] StringSearchModelInterpolator.java[50:49] (naming) ConstantName: Name 'fieldsByClass' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.
+[ERROR] StringSearchModelInterpolator.java[51:49] (naming) ConstantName: Name 'fieldIsPrimitiveByClass' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.
+[ERROR] AbstractStringBasedModelInterpolator.java[282] (sizes) LineLength: Line is longer than 120 characters (found 122).
+[ERROR] AbstractStringBasedModelInterpolator.java[283] (sizes) LineLength: Line is longer than 120 characters (found 133).
+[ERROR] AbstractStringBasedModelInterpolator.java[285] (sizes) LineLength: Line is longer than 120 characters (found 124).
+[ERROR] DefaultModelInheritanceAssembler.java[23:8] (imports) UnusedImports: Unused import - java.util.Collection.
+[ERROR] DefaultModelInheritanceAssembler.java[24:8] (imports) UnusedImports: Unused import - java.util.Iterator.
+[ERROR] ExpressionDocumenter.java[57:26] (naming) LocalVariableName: Name 'EXPRESSION_ROOT' must match pattern '^[a-z][a-zA-Z0-9]*$'.
+[ERROR] DebugResolutionListener.java[117] (sizes) LineLength: Line is longer than 120 characters (found 124).
+[ERROR] DebugResolutionListener.java[118] (sizes) LineLength: Line is longer than 120 characters (found 124).
+[ERROR] DefaultArtifactResolver.java[126] (sizes) LineLength: Line is longer than 120 characters (found 121).
+[ERROR] DefaultArtifactResolver.java[179] (sizes) LineLength: Line is longer than 120 characters (found 122).
+[ERROR] DefaultArtifactResolver.java[184] (sizes) LineLength: Line is longer than 120 characters (found 134).
+[ERROR] DefaultArtifactResolver.java[189] (sizes) LineLength: Line is longer than 120 characters (found 130).
+[ERROR] DefaultArtifactResolver.java[492] (sizes) LineLength: Line is longer than 120 characters (found 137).
+[ERROR] DefaultArtifactResolver.java[542] (sizes) LineLength: Line is longer than 120 characters (found 125).
+[ERROR] DefaultArtifactResolver.java[585] (sizes) LineLength: Line is longer than 120 characters (found 126).
+[ERROR] DefaultArtifactRepositoryFactory.java[84] (sizes) LineLength: Line is longer than 120 characters (found 121).
+[ERROR] FlatRepositoryLayout.java[30] (sizes) LineLength: Line is longer than 120 characters (found 156).
+[ERROR] ArtifactRepositoryFactory.java[39] (sizes) LineLength: Line is longer than 120 characters (found 122).
+[ERROR] ArtifactRepositoryFactory.java[50] (sizes) LineLength: Line is longer than 120 characters (found 121).
+[ERROR] MetadataResolutionResult.java[121:65] (whitespace) GenericWhitespace: '>' is followed by whitespace.
+[ERROR] MetadataResolutionResult.java[151:60] (whitespace) GenericWhitespace: '>' is followed by whitespace.
+[ERROR] MetadataResolutionResult.java[188:72] (whitespace) GenericWhitespace: '>' is followed by whitespace.
+[ERROR] MetadataResolutionResult.java[220:96] (whitespace) GenericWhitespace: '>' is followed by whitespace.
+[ERROR] MetadataGraphEdge.java[83:5] (coding) EqualsHashCode: Definition of 'equals()' without corresponding definition of 'hashCode()'.
+[ERROR] MetadataGraphEdge.java[91] (sizes) LineLength: Line is longer than 120 characters (found 128).
+[ERROR] MetadataGraph.java[107] (sizes) LineLength: Line is longer than 120 characters (found 133).
+[ERROR] MetadataGraphTransformationException.java[29:1] (whitespace) FileTabCharacter: Line contains a tab character.
+[ERROR] DefaultWagonManager.java[240:11] (whitespace) WhitespaceAround: 'if' is not followed by whitespace.
+[ERROR] DefaultWagonManager.java[409] (sizes) LineLength: Line is longer than 120 characters (found 121).
+[ERROR] DefaultWagonManager.java[410] (sizes) LineLength: Line is longer than 120 characters (found 122).
+[ERROR] DefaultWagonManager.java[633:26] (naming) LocalVariableName: Name 'aCHECKSUM_IDS' must match pattern '^[a-z][a-zA-Z0-9]*$'.
+[ERROR] LegacyRepositorySystem.java[357] (sizes) LineLength: Line is longer than 120 characters (found 122).
+[ERROR] WagonManager.java[48] (sizes) LineLength: Line is longer than 120 characters (found 122).
+[ERROR] WagonManager.java[74] (sizes) LineLength: Line is longer than 120 characters (found 121).
+[ERROR] DefaultLegacyArtifactCollector.java[221] (sizes) LineLength: Line is longer than 120 characters (found 121).
+[ERROR] DefaultLegacyArtifactCollector.java[317] (sizes) LineLength: Line is longer than 120 characters (found 123).
+[ERROR] DefaultLegacyArtifactCollector.java[326] (sizes) LineLength: Line is longer than 120 characters (found 125).
+[ERROR] DefaultLegacyArtifactCollector.java[366] (sizes) LineLength: Line is longer than 120 characters (found 149).
+[ERROR] DefaultLegacyArtifactCollector.java[367] (sizes) LineLength: Line is longer than 120 characters (found 121).
+[ERROR] DefaultLegacyArtifactCollector.java[512] (sizes) LineLength: Line is longer than 120 characters (found 165).
+[ERROR] ArtifactRepositoryFactory.java[40] (sizes) LineLength: Line is longer than 120 characters (found 122).
+[ERROR] ArtifactRepositoryFactory.java[51] (sizes) LineLength: Line is longer than 120 characters (found 121).
+[WARNING] checkstyle:check violations detected but failOnViolation set to false
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ maven-compat ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-compat/target/maven-compat-3.2.6-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/maven/maven-compat/3.2.6-SNAPSHOT/maven-compat-3.2.6-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-compat/pom.xml to /home/user/.m2/repository/org/apache/maven/maven-compat/3.2.6-SNAPSHOT/maven-compat-3.2.6-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------------< org.apache.maven:maven-embedder >-------------------
+[INFO] Building Maven Embedder 3.2.6-SNAPSHOT                           [13/14]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-bytecode-version) @ maven-embedder ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (ban-known-bad-maven-versions) @ maven-embedder ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (rat-check) @ maven-embedder ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/test/resources*/**
+[INFO] Exclude: src/test/projects/**
+[INFO] Exclude: src/test/remote-repo/**
+[INFO] Exclude: **/*.odg
+[INFO] Exclude: src/main/resources/META-INF/MANIFEST.MF
+[INFO] Exclude: src/test/*-projects/**
+[INFO] Exclude: src/test/*-project/**
+[INFO] Exclude: src/test/plugin-version-references/**
+[INFO] Exclude: bootstrap/**
+[INFO] Exclude: README.bootstrap.txt
+[INFO] Exclude: .repository/**
+[INFO] Exclude: .maven/spy.log
+[INFO] 36 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 36 licence.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ maven-embedder ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ maven-embedder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ maven-embedder ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 22 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-embedder/target/classes
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.13:check (check-java-1.6-compat) @ maven-embedder ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] --- plexus-component-metadata:1.5.5:generate-metadata (default) @ maven-embedder ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ maven-embedder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ maven-embedder ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-embedder/target/test-classes
+[INFO] 
+[INFO] --- plexus-component-metadata:1.5.5:generate-test-metadata (default) @ maven-embedder ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ maven-embedder ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:jar (default-jar) @ maven-embedder ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-embedder/target/maven-embedder-3.2.6-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.4:attach-descriptor (attach-descriptor) @ maven-embedder ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (checkstyle-check) @ maven-embedder ---
+[INFO] 
+[INFO] There are 8 checkstyle errors.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ maven-embedder ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-embedder/target/maven-embedder-3.2.6-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/maven/maven-embedder/3.2.6-SNAPSHOT/maven-embedder-3.2.6-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/maven-embedder/pom.xml to /home/user/.m2/repository/org/apache/maven/maven-embedder/3.2.6-SNAPSHOT/maven-embedder-3.2.6-SNAPSHOT.pom
+[INFO] 
+[INFO] -------------------< org.apache.maven:apache-maven >--------------------
+[INFO] Building Apache Maven Distribution 3.2.6-SNAPSHOT                [14/14]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-bytecode-version) @ apache-maven ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (ban-known-bad-maven-versions) @ apache-maven ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (rat-check) @ apache-maven ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/test/resources*/**
+[INFO] Exclude: src/test/projects/**
+[INFO] Exclude: src/test/remote-repo/**
+[INFO] Exclude: **/*.odg
+[INFO] Exclude: src/bin/m2.conf
+[INFO] Exclude: bootstrap/**
+[INFO] Exclude: README.bootstrap.txt
+[INFO] Exclude: .repository/**
+[INFO] Exclude: .maven/spy.log
+[INFO] 16 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 14 licence.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ apache-maven ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Apache Maven 3.2.6-SNAPSHOT ........................ FAILURE [  1.112 s]
+[INFO] Maven Model ........................................ SUCCESS [  4.364 s]
+[INFO] Maven Artifact ..................................... SUCCESS [  1.162 s]
+[INFO] Maven Plugin API ................................... SUCCESS [  1.065 s]
+[INFO] Maven Builder Support .............................. SUCCESS [  0.484 s]
+[INFO] Maven Model Builder ................................ SUCCESS [  1.712 s]
+[INFO] Maven Settings ..................................... SUCCESS [  0.598 s]
+[INFO] Maven Settings Builder ............................. SUCCESS [  0.777 s]
+[INFO] Maven Repository Metadata Model .................... SUCCESS [  0.451 s]
+[INFO] Maven Aether Provider .............................. SUCCESS [  1.051 s]
+[INFO] Maven Core ......................................... SUCCESS [  4.566 s]
+[INFO] Maven Compat ....................................... SUCCESS [  2.208 s]
+[INFO] Maven Embedder ..................................... SUCCESS [  1.253 s]
+[INFO] Apache Maven Distribution 3.2.6-SNAPSHOT ........... FAILURE [  3.271 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 24.370 s
+[INFO] Finished at: 2022-07-15T08:17:03-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.rat:apache-rat-plugin:0.11:check (rat-check) on project maven: Too many files with unapproved license: 4 See RAT report in: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/maven/target/rat.txt -> [Help 1]
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-remote-resources-plugin:1.5:process (default) on project apache-maven: Error rendering velocity resource.: Invocation of method 'getResourceAsFile' in  class org.codehaus.plexus.resource.DefaultResourceManager threw exception org.codehaus.plexus.resource.loader.ResourceNotFoundException: Could not find resource 'http://jsoup.com/license'. at remote-resources[line 40, column 26] -> [Help 2]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Build failures were ignored.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< org.apache.maven:maven-core >---------------------
+[INFO] Building Maven Core 3.2.6-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/maven/maven/3.2.6-SNAPSHOT/maven-metadata.xml
+Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/apache/maven/maven/3.2.6-SNAPSHOT/maven-3.2.6-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.588 s
+[INFO] Finished at: 2022-07-15T08:17:06-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project maven-core: Could not resolve dependencies for project org.apache.maven:maven-core:jar:3.2.6-SNAPSHOT: Failed to collect dependencies at org.apache.maven:maven-model:jar:3.2.6-SNAPSHOT: Failed to read artifact descriptor for org.apache.maven:maven-model:jar:3.2.6-SNAPSHOT: Could not find artifact org.apache.maven:maven:pom:3.2.6-SNAPSHOT in apache.snapshots (http://repository.apache.org/snapshots) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException

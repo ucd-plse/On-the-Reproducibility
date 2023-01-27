@@ -1,0 +1,122 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Server 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.1:create (default) @ accumulo-server ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-1044_ea2f9856855530f8a3381fe5ccba78d89b8d9f73/server && svn --non-interactive info
+[INFO] Working directory: /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-1044_ea2f9856855530f8a3381fe5ccba78d89b8d9f73/server
+[INFO] Storing buildNumber: null at timestamp: 1469582177770
+[INFO] Executing: /bin/sh -c cd /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-1044_ea2f9856855530f8a3381fe5ccba78d89b8d9f73/server && svn --non-interactive info
+[INFO] Working directory: /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-1044_ea2f9856855530f8a3381fe5ccba78d89b8d9f73/server
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-server ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (default) @ accumulo-server ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ accumulo-server ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 38 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ accumulo-server ---
+[INFO] commons-collections-3.2.jar already exists in destination.
+[INFO] commons-lang-2.4.jar already exists in destination.
+[INFO] commons-io-1.4.jar already exists in destination.
+[INFO] libthrift-0.9.0.jar already exists in destination.
+[INFO] gson-2.2.2.jar already exists in destination.
+[INFO] log4j-1.2.16.jar already exists in destination.
+[INFO] commons-configuration-1.5.jar already exists in destination.
+[INFO] jline-0.9.94.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ accumulo-server ---
+[INFO] Compiling 1 source file to /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-1044_ea2f9856855530f8a3381fe5ccba78d89b8d9f73/server/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ accumulo-server ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ accumulo-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ accumulo-server ---
+[INFO] Surefire report directory: /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-1044_ea2f9856855530f8a3381fe5ccba78d89b8d9f73/server/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.server.tabletserver.InMemoryMapTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.157 sec
+Running org.apache.accumulo.server.tabletserver.log.MultiReaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.279 sec
+Running org.apache.accumulo.server.tabletserver.log.SortedLogRecoveryTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.582 sec
+Running org.apache.accumulo.server.monitor.ShowTraceLinkTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.server.monitor.ZooKeeperStatusTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.server.gc.TestConfirmDeletes
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 sec
+Running org.apache.accumulo.server.data.ServerMutationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.server.security.handler.ZKAuthenticatorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.apache.accumulo.server.util.TabletIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.server.util.CloneTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec
+Running org.apache.accumulo.server.util.DefaultMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.accumulo.server.util.time.BaseRelativeTimeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.server.master.balancer.ChaoticLoadBalancerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.server.master.balancer.TableLoadBalancerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.151 sec
+Running org.apache.accumulo.server.master.balancer.DefaultLoadBalancerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec
+Running org.apache.accumulo.server.master.state.MergeInfoTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.accumulo.server.master.state.RootTabletStateStoreTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+Running org.apache.accumulo.server.master.DefaultMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.accumulo.server.master.TestMergeState
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec
+Running org.apache.accumulo.server.constraints.MetadataConstraintsTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec <<< FAILURE!
+Running org.apache.accumulo.server.client.BulkImporterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 sec
+Running org.apache.accumulo.server.logger.LogFileTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+
+Results :
+
+Failed tests:   testCheck(org.apache.accumulo.server.constraints.MetadataConstraintsTest)
+
+Tests run: 64, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.844 s
+[INFO] Finished at: 2016-07-26T18:16:24-07:00
+[INFO] Final Memory: 31M/606M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (default-test) on project accumulo-server: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-1044_ea2f9856855530f8a3381fe5ccba78d89b8d9f73/server/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

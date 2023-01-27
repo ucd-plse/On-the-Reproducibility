@@ -1,0 +1,196 @@
+Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fe; 2018-06-17T11:33:14-07:00)
+Maven home: /usr/local/apache-maven
+Java version: 1.8.0_312, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.15.0-173-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for edu.colostate.cs.cs414.warewolves:warewolves-chad:jar:1.0
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 27, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ---------< edu.colostate.cs.cs414.warewolves:warewolves-chad >----------
+[INFO] Building Chad 1.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ warewolves-chad ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-204/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ warewolves-chad ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ warewolves-chad ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-204/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ warewolves-chad ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.21.0:test (default-test) @ warewolves-chad ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running client.presenter.controller.messages.MovePieceMessageTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in client.presenter.controller.messages.MovePieceMessageTest
+[INFO] Running client.presenter.controller.messages.ViewValidMovesResponseTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in client.presenter.controller.messages.ViewValidMovesResponseTest
+[INFO] Running client.presenter.controller.messages.RegisterResponseMessageTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in client.presenter.controller.messages.RegisterResponseMessageTest
+[INFO] Running client.presenter.controller.messages.LoginResponseMessageTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in client.presenter.controller.messages.LoginResponseMessageTest
+[INFO] Running client.presenter.controller.messages.MovePieceResponseTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in client.presenter.controller.messages.MovePieceResponseTest
+[INFO] Running client.presenter.controller.messages.RegisterMessageTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in client.presenter.controller.messages.RegisterMessageTest
+[INFO] Running client.presenter.controller.messages.UnregisterResponseMessageTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in client.presenter.controller.messages.UnregisterResponseMessageTest
+[INFO] Running client.presenter.controller.messages.MenuMessageTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s - in client.presenter.controller.messages.MenuMessageTest
+[INFO] Running client.presenter.controller.messages.LoginMessageTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in client.presenter.controller.messages.LoginMessageTest
+[INFO] Running client.presenter.controller.messages.UnregisterMessageTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in client.presenter.controller.messages.UnregisterMessageTest
+[INFO] Running client.presenter.controller.messages.ViewValidMovesTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in client.presenter.controller.messages.ViewValidMovesTest
+[INFO] Running client.presenter.controller.messages.MenuMessageResponseTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in client.presenter.controller.messages.MenuMessageResponseTest
+[INFO] Running client.presenter.controller.util.ViewMessageFactoryTest
+[ERROR] Tests run: 22, Failures: 10, Errors: 0, Skipped: 0, Time elapsed: 0.047 s <<< FAILURE! - in client.presenter.controller.util.ViewMessageFactoryTest
+[ERROR] createRegisterResponse  Time elapsed: 0.014 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <client.presenter.controller.messages.RegisterResponseMessage@3ffcd140> but was: <client.presenter.controller.messages.RegisterResponseMessage@23bb8443>
+	at client.presenter.controller.util.ViewMessageFactoryTest.testResponseEquals(ViewMessageFactoryTest.java:182)
+	at client.presenter.controller.util.ViewMessageFactoryTest.createRegisterResponse(ViewMessageFactoryTest.java:49)
+
+[ERROR] createViewValidMovesResponse  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <client.presenter.controller.messages.ViewValidMovesResponse@3d3fcdb0> but was: <client.presenter.controller.messages.ViewValidMovesResponse@641147d0>
+	at client.presenter.controller.util.ViewMessageFactoryTest.testResponseEquals(ViewMessageFactoryTest.java:182)
+	at client.presenter.controller.util.ViewMessageFactoryTest.createViewValidMovesResponse(ViewMessageFactoryTest.java:106)
+
+[ERROR] createLoginResponse  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <client.presenter.controller.messages.LoginResponseMessage@6e38921c> but was: <client.presenter.controller.messages.LoginResponseMessage@64d7f7e0>
+	at client.presenter.controller.util.ViewMessageFactoryTest.testResponseEquals(ViewMessageFactoryTest.java:182)
+	at client.presenter.controller.util.ViewMessageFactoryTest.createLoginResponse(ViewMessageFactoryTest.java:89)
+
+[ERROR] createUnregisterResponse  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <client.presenter.controller.messages.UnregisterResponseMessage@27c6e487> but was: <client.presenter.controller.messages.UnregisterResponseMessage@49070868>
+	at client.presenter.controller.util.ViewMessageFactoryTest.testResponseEquals(ViewMessageFactoryTest.java:182)
+	at client.presenter.controller.util.ViewMessageFactoryTest.createUnregisterResponse(ViewMessageFactoryTest.java:69)
+
+[ERROR] testMenuMessageResponse{MenuMessageTypes}[1]  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <client.presenter.controller.messages.MenuMessageResponse@38364841> but was: <client.presenter.controller.messages.MenuMessageResponse@28c4711c>
+	at client.presenter.controller.util.ViewMessageFactoryTest.testResponseEquals(ViewMessageFactoryTest.java:182)
+	at client.presenter.controller.util.ViewMessageFactoryTest.testMenuMessageResponse(ViewMessageFactoryTest.java:146)
+
+[ERROR] testMenuMessageResponse{MenuMessageTypes}[2]  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <client.presenter.controller.messages.MenuMessageResponse@59717824> but was: <client.presenter.controller.messages.MenuMessageResponse@146044d7>
+	at client.presenter.controller.util.ViewMessageFactoryTest.testResponseEquals(ViewMessageFactoryTest.java:182)
+	at client.presenter.controller.util.ViewMessageFactoryTest.testMenuMessageResponse(ViewMessageFactoryTest.java:146)
+
+[ERROR] testMenuMessageResponse{MenuMessageTypes}[3]  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <client.presenter.controller.messages.MenuMessageResponse@1e9e725a> but was: <client.presenter.controller.messages.MenuMessageResponse@15d9bc04>
+	at client.presenter.controller.util.ViewMessageFactoryTest.testResponseEquals(ViewMessageFactoryTest.java:182)
+	at client.presenter.controller.util.ViewMessageFactoryTest.testMenuMessageResponse(ViewMessageFactoryTest.java:146)
+
+[ERROR] testMenuMessageResponse{MenuMessageTypes}[4]  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <client.presenter.controller.messages.MenuMessageResponse@473b46c3> but was: <client.presenter.controller.messages.MenuMessageResponse@516be40f>
+	at client.presenter.controller.util.ViewMessageFactoryTest.testResponseEquals(ViewMessageFactoryTest.java:182)
+	at client.presenter.controller.util.ViewMessageFactoryTest.testMenuMessageResponse(ViewMessageFactoryTest.java:146)
+
+[ERROR] testMenuMessageResponse{MenuMessageTypes}[5]  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <client.presenter.controller.messages.MenuMessageResponse@3c0a50da> but was: <client.presenter.controller.messages.MenuMessageResponse@646be2c3>
+	at client.presenter.controller.util.ViewMessageFactoryTest.testResponseEquals(ViewMessageFactoryTest.java:182)
+	at client.presenter.controller.util.ViewMessageFactoryTest.testMenuMessageResponse(ViewMessageFactoryTest.java:146)
+
+[ERROR] testMenuMessageResponse{MenuMessageTypes}[6]  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <client.presenter.controller.messages.MenuMessageResponse@797badd3> but was: <client.presenter.controller.messages.MenuMessageResponse@77be656f>
+	at client.presenter.controller.util.ViewMessageFactoryTest.testResponseEquals(ViewMessageFactoryTest.java:182)
+	at client.presenter.controller.util.ViewMessageFactoryTest.testMenuMessageResponse(ViewMessageFactoryTest.java:146)
+
+[INFO] Running client.presenter.controller.util.HashPasswordsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in client.presenter.controller.util.HashPasswordsTest
+[INFO] Running client.presenter.network.messages.LogoutTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in client.presenter.network.messages.LogoutTest
+[INFO] Running client.presenter.network.messages.InviteRequestTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in client.presenter.network.messages.InviteRequestTest
+[INFO] Running client.presenter.network.messages.LoginResponseTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in client.presenter.network.messages.LoginResponseTest
+[INFO] Running client.presenter.network.messages.LoginTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in client.presenter.network.messages.LoginTest
+[INFO] Running client.presenter.network.messages.RegisterResponseTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in client.presenter.network.messages.RegisterResponseTest
+[INFO] Running client.presenter.network.messages.ActiveGameRequestTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in client.presenter.network.messages.ActiveGameRequestTest
+[INFO] Running client.presenter.network.messages.MoveTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in client.presenter.network.messages.MoveTest
+[INFO] Running client.presenter.network.messages.GameRequestTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in client.presenter.network.messages.GameRequestTest
+[INFO] Running client.presenter.network.messages.InviteResponseTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in client.presenter.network.messages.InviteResponseTest
+[INFO] Running client.presenter.network.messages.InboxResponseTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in client.presenter.network.messages.InboxResponseTest
+[INFO] Running client.presenter.network.messages.UnregisterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in client.presenter.network.messages.UnregisterTest
+[INFO] Running client.presenter.network.messages.RegisterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in client.presenter.network.messages.RegisterTest
+[INFO] Running client.presenter.network.messages.InboxRequestTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in client.presenter.network.messages.InboxRequestTest
+[INFO] Running client.presenter.network.messages.ResignTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in client.presenter.network.messages.ResignTest
+[INFO] Running client.presenter.network.messages.GameInfoTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in client.presenter.network.messages.GameInfoTest
+[INFO] Running client.presenter.network.messages.ActiveGameResponseTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in client.presenter.network.messages.ActiveGameResponseTest
+[INFO] Running client.game.GameTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in client.game.GameTest
+[INFO] Running client.game.GameBoardTest
+[INFO] Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 s - in client.game.GameBoardTest
+[INFO] Running client.game.pieces.KingTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in client.game.pieces.KingTest
+[INFO] Running client.game.pieces.QueenTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in client.game.pieces.QueenTest
+[INFO] Running client.game.pieces.RookTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in client.game.pieces.RookTest
+[INFO] Running client.game.PointTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in client.game.PointTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   ViewMessageFactoryTest.createLoginResponse:89->testResponseEquals:182 expected: <client.presenter.controller.messages.LoginResponseMessage@6e38921c> but was: <client.presenter.controller.messages.LoginResponseMessage@64d7f7e0>
+[ERROR]   ViewMessageFactoryTest.createRegisterResponse:49->testResponseEquals:182 expected: <client.presenter.controller.messages.RegisterResponseMessage@3ffcd140> but was: <client.presenter.controller.messages.RegisterResponseMessage@23bb8443>
+[ERROR]   ViewMessageFactoryTest.createUnregisterResponse:69->testResponseEquals:182 expected: <client.presenter.controller.messages.UnregisterResponseMessage@27c6e487> but was: <client.presenter.controller.messages.UnregisterResponseMessage@49070868>
+[ERROR]   ViewMessageFactoryTest.createViewValidMovesResponse:106->testResponseEquals:182 expected: <client.presenter.controller.messages.ViewValidMovesResponse@3d3fcdb0> but was: <client.presenter.controller.messages.ViewValidMovesResponse@641147d0>
+[ERROR]   ViewMessageFactoryTest.testMenuMessageResponse:146->testResponseEquals:182 expected: <client.presenter.controller.messages.MenuMessageResponse@38364841> but was: <client.presenter.controller.messages.MenuMessageResponse@28c4711c>
+[ERROR]   ViewMessageFactoryTest.testMenuMessageResponse:146->testResponseEquals:182 expected: <client.presenter.controller.messages.MenuMessageResponse@59717824> but was: <client.presenter.controller.messages.MenuMessageResponse@146044d7>
+[ERROR]   ViewMessageFactoryTest.testMenuMessageResponse:146->testResponseEquals:182 expected: <client.presenter.controller.messages.MenuMessageResponse@1e9e725a> but was: <client.presenter.controller.messages.MenuMessageResponse@15d9bc04>
+[ERROR]   ViewMessageFactoryTest.testMenuMessageResponse:146->testResponseEquals:182 expected: <client.presenter.controller.messages.MenuMessageResponse@473b46c3> but was: <client.presenter.controller.messages.MenuMessageResponse@516be40f>
+[ERROR]   ViewMessageFactoryTest.testMenuMessageResponse:146->testResponseEquals:182 expected: <client.presenter.controller.messages.MenuMessageResponse@3c0a50da> but was: <client.presenter.controller.messages.MenuMessageResponse@646be2c3>
+[ERROR]   ViewMessageFactoryTest.testMenuMessageResponse:146->testResponseEquals:182 expected: <client.presenter.controller.messages.MenuMessageResponse@797badd3> but was: <client.presenter.controller.messages.MenuMessageResponse@77be656f>
+[INFO] 
+[ERROR] Tests run: 202, Failures: 10, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.609 s
+[INFO] Finished at: 2022-07-14T17:40:01-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.21.0:test (default-test) on project warewolves-chad: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-204/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Running the tests related to the bug Bears-204...
+The tests related to the bug Bears-204 were executed.

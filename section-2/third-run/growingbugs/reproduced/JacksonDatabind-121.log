@@ -1,0 +1,43 @@
+Checking out c7ff8f69 to /tmp/test_d4j_2671177_1660796255/test_trigger/Jack FAIL
+Executed command: git clone /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/project_repos/jackson-databind.git /tmp/test_d4j_2671177_1660796255/test_trigger/JacksonDatabind 2>&1 && cd /tmp/test_d4j_2671177_1660796255/test_trigger/JacksonDatabind && git checkout c7ff8f6974759302037d6ebb815d14ca89ec6549 2>&1
+Cloning into '/tmp/test_d4j_2671177_1660796255/test_trigger/JacksonDatabind'...
+done.
+fatal: reference is not a tree: c7ff8f6974759302037d6ebb815d14ca89ec6549
+Cannot checkout program version! at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-checkout line 102.
+Compilation failed in require at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: checkout: JacksonDatabind-121b
+Cannot open config file (/tmp/test_d4j_2671177_1660796255/test_trigger/JacksonDatabind/.defects4j.config): No such file or directory
+/tmp/test_d4j_2671177_1660796255/test_trigger/JacksonDatabind is not a valid working directory!
+Error: compile: JacksonDatabind-121b
+Cannot open config file (/tmp/test_d4j_2671177_1660796255/test_trigger/JacksonDatabind/.defects4j.config): No such file or directory
+/tmp/test_d4j_2671177_1660796255/test_trigger/JacksonDatabind is not a valid working directory!
+Error: run relevant tests: JacksonDatabind-121b
+cat: /tmp/test_d4j_2671177_1660796255/test_trigger/JacksonDatabind/failing_tests: No such file or directory
+grep: /tmp/test_d4j_2671177_1660796255/test_trigger/JacksonDatabind/failing_tests: No such file or directory
+Error: verify number of triggering tests: JacksonDatabind-121b (expected: 1, actual: 0)
+grep: /tmp/test_d4j_2671177_1660796255/test_trigger/JacksonDatabind/failing_tests: No such file or directory
+Error: expected triggering test com.fasterxml.jackson.databind.ser.jdk.NumberSerTest::testNumbersAsStringNonEmpty did not fail
+Cannot open config file (/tmp/test_d4j_2671177_1660796255/test_trigger/JacksonDatabind/.defects4j.config): No such file or directory
+Directory exists but is not a previously used working directory: /tmp/test_d4j_2671177_1660796255/test_trigger/JacksonDatabind at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/core/Vcs.pm line 285.
+Compilation failed in require at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: checkout: JacksonDatabind-121f
+Cannot open config file (/tmp/test_d4j_2671177_1660796255/test_trigger/JacksonDatabind/.defects4j.config): No such file or directory
+/tmp/test_d4j_2671177_1660796255/test_trigger/JacksonDatabind is not a valid working directory!
+Error: compile: JacksonDatabind-121f
+Cannot open config file (/tmp/test_d4j_2671177_1660796255/test_trigger/JacksonDatabind/.defects4j.config): No such file or directory
+/tmp/test_d4j_2671177_1660796255/test_trigger/JacksonDatabind is not a valid working directory!
+Error: run relevant tests: JacksonDatabind-121f
+cat: /tmp/test_d4j_2671177_1660796255/test_trigger/JacksonDatabind/failing_tests: No such file or directory
+grep: /tmp/test_d4j_2671177_1660796255/test_trigger/JacksonDatabind/failing_tests: No such file or directory
+================================================================================
+The following errors occurred:
+Error: checkout: JacksonDatabind-121b
+Error: compile: JacksonDatabind-121b
+Error: run relevant tests: JacksonDatabind-121b
+Error: verify number of triggering tests: JacksonDatabind-121b (expected: 1, actual: 0)
+Error: expected triggering test com.fasterxml.jackson.databind.ser.jdk.NumberSerTest::testNumbersAsStringNonEmpty did not fail
+Error: checkout: JacksonDatabind-121f
+Error: compile: JacksonDatabind-121f
+Error: run relevant tests: JacksonDatabind-121f
+================================================================================
+FAILED

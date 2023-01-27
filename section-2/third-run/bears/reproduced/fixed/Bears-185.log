@@ -1,0 +1,395 @@
+Apache Maven 3.6.3
+Maven home: /usr/share/maven
+Java version: 1.8.0_342, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.15.0-41-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< org.springframework.data:spring-data-jpa >--------------
+[INFO] Building Spring Data JPA 2.0.4.BUILD-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.0:prepare-agent (jacoco-initialize) @ spring-data-jpa ---
+[INFO] argLine set to -javaagent:/home/user/.m2/repository/org/jacoco/org.jacoco.agent/0.8.0/org.jacoco.agent-0.8.0-runtime.jar=destfile=/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/target/jacoco.exec
+[INFO] 
+[INFO] --- apt-maven-plugin:1.1.3:process (sources) @ spring-data-jpa ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-data-jpa ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.1.61:compile (compile) @ spring-data-jpa ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (java-compile) @ spring-data-jpa ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 110 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/target/classes
+[INFO] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/src/main/java/org/springframework/data/jpa/provider/HibernateUtils.java: Some input files use or override a deprecated API.
+[INFO] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/src/main/java/org/springframework/data/jpa/provider/HibernateUtils.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- aspectj-maven-plugin:1.8:compile (default) @ spring-data-jpa ---
+[INFO] Showing AJC message detail for messages of types: [error, warning, fail]
+[WARNING] You aren't using a compiler supported by lombok, so lombok will not work and has been disabled.
+Your processor is: org.aspectj.org.eclipse.jdt.internal.compiler.apt.dispatch.BatchProcessingEnvImpl
+Lombok supports: sun/apple javac 1.6, ECJ
+	<unknown source file>:<no line information>
+
+[INFO] 
+[INFO] --- apt-maven-plugin:1.1.3:test-process (test-sources) @ spring-data-jpa ---
+[ERROR] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/target/generated-test-sources/test-annotations/org/springframework/data/jpa/domain/sample/QAuditableUser.java:25: error: cannot find symbol
+    public final org.springframework.data.jpa.domain.QAbstractAuditable _super = new org.springframework.data.jpa.domain.QAbstractAuditable(this);
+                                                    ^
+  symbol:   class QAbstractAuditable
+  location: package org.springframework.data.jpa.domain
+/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/target/generated-test-sources/test-annotations/org/springframework/data/jpa/domain/sample/QAuditableRole.java:25: error: cannot find symbol
+    public final org.springframework.data.jpa.domain.QAbstractAuditable _super = new org.springframework.data.jpa.domain.QAbstractAuditable(this);
+                                                    ^
+  symbol:   class QAbstractAuditable
+  location: package org.springframework.data.jpa.domain
+/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/target/generated-test-sources/test-annotations/org/springframework/data/jpa/domain/sample/QCustomAbstractPersistable.java:22: error: cannot find symbol
+    public final org.springframework.data.jpa.domain.QAbstractPersistable _super = new org.springframework.data.jpa.domain.QAbstractPersistable(this);
+                                                    ^
+  symbol:   class QAbstractPersistable
+  location: package org.springframework.data.jpa.domain
+/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/target/generated-test-sources/test-annotations/org/springframework/data/jpa/domain/sample/QAccount.java:22: error: cannot find symbol
+    public final org.springframework.data.jpa.domain.QAbstractPersistable _super = new org.springframework.data.jpa.domain.QAbstractPersistable(this);
+                                                    ^
+  symbol:   class QAbstractPersistable
+  location: package org.springframework.data.jpa.domain
+/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/target/generated-test-sources/test-annotations/org/springframework/data/jpa/domain/sample/CustomAbstractPersistable_.java:8: error: cannot find symbol
+public abstract class CustomAbstractPersistable_ extends org.springframework.data.jpa.domain.AbstractPersistable_ {
+                                                                                            ^
+  symbol:   class AbstractPersistable_
+  location: package org.springframework.data.jpa.domain
+/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/target/generated-test-sources/test-annotations/org/springframework/data/jpa/domain/sample/Account_.java:8: error: cannot find symbol
+public abstract class Account_ extends org.springframework.data.jpa.domain.AbstractPersistable_ {
+                                                                          ^
+  symbol:   class AbstractPersistable_
+  location: package org.springframework.data.jpa.domain
+/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/target/generated-test-sources/test-annotations/org/springframework/data/jpa/domain/sample/AuditableUser_.java:10: error: cannot find symbol
+public abstract class AuditableUser_ extends org.springframework.data.jpa.domain.AbstractAuditable_ {
+                                                                                ^
+  symbol:   class AbstractAuditable_
+  location: package org.springframework.data.jpa.domain
+/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/target/generated-test-sources/test-annotations/org/springframework/data/jpa/domain/sample/AuditableRole_.java:9: error: cannot find symbol
+public abstract class AuditableRole_ extends org.springframework.data.jpa.domain.AbstractAuditable_ {
+                                                                                ^
+  symbol:   class AbstractAuditable_
+  location: package org.springframework.data.jpa.domain
+8 errors
+
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-data-jpa ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 34 resources
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.1.61:test-compile (test-compile) @ spring-data-jpa ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (java-test-compile) @ spring-data-jpa ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 247 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/target/test-classes
+[INFO] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/src/test/java/org/springframework/data/jpa/domain/SpecificationsUnitTests.java: Some input files use or override a deprecated API.
+[INFO] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/src/test/java/org/springframework/data/jpa/domain/SpecificationsUnitTests.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/src/test/java/org/springframework/data/jpa/repository/config/AbstractAuditingViaJavaConfigRepositoriesTests.java: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/src/test/java/org/springframework/data/jpa/repository/config/AbstractAuditingViaJavaConfigRepositoriesTests.java uses unchecked or unsafe operations.
+[INFO] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/src/test/java/org/springframework/data/jpa/repository/config/AbstractAuditingViaJavaConfigRepositoriesTests.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ spring-data-jpa ---
+[INFO] Surefire report directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (unit-tests) @ spring-data-jpa ---
+[INFO] Surefire report directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.data.jpa.convert.QueryByExamplePredicateBuilderUnitTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.939 sec
+Running org.springframework.data.jpa.convert.threeten.Jsr310JpaConvertersUnitTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec
+Running org.springframework.data.jpa.domain.support.AuditingBeanFactoryPostProcessorUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.543 sec
+Running org.springframework.data.jpa.domain.support.AnnotationAuditingBeanFactoryPostProcessorUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.171 sec
+Running org.springframework.data.jpa.domain.support.AuditingNamespaceUnitTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 sec
+Running org.springframework.data.jpa.domain.SpecificationUnitTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.299 sec
+Running org.springframework.data.jpa.domain.SpecificationsUnitTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec
+Running org.springframework.data.jpa.support.ClasspathScanningPersistenceUnitPostProcessorUnitTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.141 sec
+Running org.springframework.data.jpa.support.MergingPersistenceUnitManagerUnitTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+Running org.springframework.data.jpa.provider.PersistenceProviderUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.338 sec
+Running org.springframework.data.jpa.util.JpaMetamodelUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Running org.springframework.data.jpa.repository.cdi.JpaRepositoryExtensionUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+Running org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBeanUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.204 sec
+Running org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformationUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec
+Running org.springframework.data.jpa.repository.support.CrudMethodMetadataPopulatingMethodInterceptorUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec
+Running org.springframework.data.jpa.repository.support.SimpleJpaRepositoryUnitTests
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 sec
+Running org.springframework.data.jpa.repository.support.EntityManagerFactoryRefUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 sec
+Running org.springframework.data.jpa.repository.support.DefaultJpaContextUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.springframework.data.jpa.repository.support.JpaRepositoryFactoryUnitTests
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.329 sec
+Running org.springframework.data.jpa.repository.support.JpaEntityInformationSupportUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.springframework.data.jpa.repository.support.JpaPersistableEntityInformationUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.springframework.data.jpa.repository.support.EntityManagerBeanDefinitionRegistratPostProcessorUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running org.springframework.data.jpa.repository.query.StringQueryUnitTests
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.559 sec
+Running org.springframework.data.jpa.repository.query.JpaParametersUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.springframework.data.jpa.repository.query.JpaQueryExecutionUnitTests
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 sec
+Running org.springframework.data.jpa.repository.query.StoredProcedureAttributesUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.springframework.data.jpa.repository.query.LikeBindingUnitTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.springframework.data.jpa.repository.query.NamedOrIndexedQueryParameterSetterUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec
+Running org.springframework.data.jpa.repository.query.StoredProcedureAttributeSourceUnitTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec
+Running org.springframework.data.jpa.repository.query.ParameterMetadataProviderUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec
+Running org.springframework.data.jpa.repository.query.JpaQueryMethodUnitTests
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 sec
+Running org.springframework.data.jpa.repository.query.JpaQueryLookupStrategyUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
+Running org.springframework.data.jpa.repository.query.ParameterBindingParserUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec
+Running org.springframework.data.jpa.repository.query.ExpressionBasedStringQueryUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec
+Running org.springframework.data.jpa.repository.query.Jpa21UtilsUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running org.springframework.data.jpa.repository.query.NamedQueryUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running org.springframework.data.jpa.repository.query.SimpleJpaQueryUnitTests
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec
+Running org.springframework.data.jpa.repository.query.QueryUtilsUnitTests
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running org.springframework.data.jpa.repository.query.QueryParameterSetterFactoryUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 sec
+Running org.springframework.data.jpa.repository.query.ParameterBinderUnitTests
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+Running org.springframework.data.jpa.repository.query.TupleConverterUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec
+Running org.springframework.data.jpa.repository.query.QuotationMapUnitTests
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.springframework.data.jpa.repository.CrudMethodMetadataUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec
+Running org.springframework.data.jpa.repository.config.JpaRepositoriesRegistrarUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec
+Running org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtensionUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec
+Running org.springframework.data.jpa.repository.config.JpaAuditingRegistrarUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+Running org.springframework.data.jpa.mapping.JpaMetamodelMappingContextUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+Running org.springframework.data.jpa.mapping.JpaPersistentPropertyImplUnitTests
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec
+
+Results :
+
+Tests run: 308, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration-tests) @ spring-data-jpa ---
+[INFO] Surefire report directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.data.jpa.convert.threetenbp.ThreeTenBackPortJpaConvertersIntegrationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.988 sec
+Running org.springframework.data.jpa.convert.threeten.Jsr310JpaConvertersIntegrationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.76 sec
+Running org.springframework.data.jpa.domain.support.AuditingEntityListenerTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.617 sec
+Running org.springframework.data.jpa.domain.JpaSortTests
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.42 sec
+Running org.springframework.data.jpa.provider.PersistenceProviderIntegrationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.795 sec
+Running org.springframework.data.jpa.repository.cdi.CdiExtensionIntegrationTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.967 sec
+Running org.springframework.data.jpa.repository.SimpleJpaParameterBindingTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.86 sec
+Running org.springframework.data.jpa.repository.RepositoryWithCompositeKeyTests
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.234 sec
+Running org.springframework.data.jpa.repository.support.QuerydslIntegrationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.springframework.data.jpa.repository.support.XmlConfigDefaultTransactionDisablingIntegrationTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.02 sec
+Running org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformationIntegrationTests
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.095 sec
+Running org.springframework.data.jpa.repository.support.EntityManagerBeanDefinitionRegistrarPostProcessorIntegrationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.282 sec
+Running org.springframework.data.jpa.repository.support.JavaConfigDefaultTransactionDisablingIntegrationTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.887 sec
+Running org.springframework.data.jpa.repository.support.JpaRepositoryTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+Running org.springframework.data.jpa.repository.support.EntityManagerFactoryRefTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.915 sec
+Running org.springframework.data.jpa.repository.support.DefaultJpaContextIntegrationTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.1 sec
+Running org.springframework.data.jpa.repository.support.QuerydslRepositorySupportIntegrationTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.269 sec
+Running org.springframework.data.jpa.repository.support.TransactionalRepositoryTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.771 sec
+Running org.springframework.data.jpa.repository.support.MailMessageRepositoryIntegrationTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+Running org.springframework.data.jpa.repository.support.QuerydslRepositorySupportTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec
+Running org.springframework.data.jpa.repository.support.QuerydslJpaRepositoryTests
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.276 sec
+Running org.springframework.data.jpa.repository.AbstractPersistableIntegrationTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.708 sec
+Running org.springframework.data.jpa.repository.RedeclaringRepositoryMethodsTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.springframework.data.jpa.repository.query.ParameterMetadataProviderIntegrationTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.springframework.data.jpa.repository.query.ParameterExpressionProviderTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.springframework.data.jpa.repository.query.PartTreeJpaQueryIntegrationTests
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Running org.springframework.data.jpa.repository.query.AbstractStringBasedJpaQueryIntegrationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.177 sec
+Running org.springframework.data.jpa.repository.query.AbstractJpaQueryTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 sec
+Running org.springframework.data.jpa.repository.query.Jpa21UtilsTests
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running org.springframework.data.jpa.repository.query.JpaCountQueryCreatorIntegrationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.springframework.data.jpa.repository.query.QueryUtilsIntegrationTests
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 sec
+Running org.springframework.data.jpa.repository.projections.ProjectionsIntegrationTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.195 sec
+Running org.springframework.data.jpa.repository.MappedTypeRepositoryIntegrationTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+Running org.springframework.data.jpa.repository.StoredProcedureIntegrationTests
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.555 sec
+Running org.springframework.data.jpa.repository.RepositoryWithIdClassKeyTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.717 sec
+Running org.springframework.data.jpa.repository.RoleRepositoryIntegrationTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running org.springframework.data.jpa.repository.ParentRepositoryIntegrationTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.8 sec
+Running org.springframework.data.jpa.repository.UserRepositoryStoredProcedureTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.009 sec
+Running org.springframework.data.jpa.repository.UserRepositoryFinderTests
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.216 sec
+Running org.springframework.data.jpa.repository.JavaConfigUserRepositoryTests
+Tests run: 178, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 4.906 sec
+Running org.springframework.data.jpa.repository.ORMInfrastructureTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.springframework.data.jpa.repository.CustomAbstractPersistableIntegrationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.springframework.data.jpa.repository.SPR8954Tests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.springframework.data.jpa.repository.NamespaceUserRepositoryTests
+Tests run: 178, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.974 sec
+Running org.springframework.data.jpa.repository.UserRepositoryTests
+Tests run: 177, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.843 sec
+Running org.springframework.data.jpa.repository.EntityGraphRepositoryMethodsIntegrationTests
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.487 sec
+Running org.springframework.data.jpa.repository.config.AllowNestedRepositoriesRepositoryConfigTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.76 sec
+Running org.springframework.data.jpa.repository.config.CustomRepositoryFactoryConfigTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.571 sec
+Running org.springframework.data.jpa.repository.config.ExplicitAuditingViaJavaConfigRepositoriesTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.622 sec
+Running org.springframework.data.jpa.repository.config.RepositoryAutoConfigTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.springframework.data.jpa.repository.config.JpaRepositoriesRegistrarIntegrationTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.36 sec
+Running org.springframework.data.jpa.repository.config.RepositoriesJavaConfigTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.641 sec
+Running org.springframework.data.jpa.repository.config.DefaultAuditingViaJavaConfigRepositoriesTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.402 sec
+Running org.springframework.data.jpa.repository.config.QueryLookupStrategyTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.397 sec
+Running org.springframework.data.jpa.repository.config.JpaRepositoryConfigDefinitionParserTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.095 sec
+Running org.springframework.data.jpa.repository.config.NestedRepositoriesJavaConfigTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.554 sec
+Running org.springframework.data.jpa.repository.config.TypeFilterConfigTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.656 sec
+Running org.springframework.data.jpa.repository.config.AuditingBeanDefinitionParserTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec
+Running org.springframework.data.jpa.repository.config.RepositoryConfigTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.springframework.data.jpa.infrastructure.HibernateMetamodelIntegrationTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.026 sec
+Running org.springframework.data.jpa.mapping.JpaMetamodelMappingContextIntegrationTests
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.416 sec
+
+Results :
+
+Tests run: 791, Failures: 0, Errors: 0, Skipped: 15
+
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (eclipselink-tests) @ spring-data-jpa ---
+[INFO] Surefire report directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-185/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.data.jpa.repository.support.EclipseLinkJpaRepositoryTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.004 sec
+Running org.springframework.data.jpa.repository.support.EclipseLinkJpaMetamodelEntityInformationIntegrationTests
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.066 sec
+Running org.springframework.data.jpa.repository.support.EclipseLinkProxyIdAccessorTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.825 sec
+Running org.springframework.data.jpa.repository.query.EclipseLinkQueryUtilsIntegrationTests
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.936 sec
+Running org.springframework.data.jpa.repository.query.EclipseLinkParameterMetadataProviderIntegrationTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Running org.springframework.data.jpa.repository.query.EclipseLinkJpa21UtilsTests
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.716 sec
+Running org.springframework.data.jpa.repository.EclipseLinkParentRepositoryIntegrationTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.833 sec
+Running org.springframework.data.jpa.repository.EclipseLinkNamespaceUserRepositoryTests
+Tests run: 178, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 3.832 sec
+Running org.springframework.data.jpa.repository.EclipseLinkEntityGraphRepositoryMethodsIntegrationTests
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 8, Time elapsed: 0.643 sec
+Running org.springframework.data.jpa.repository.EclipseLinkStoredProcedureIntegrationTests
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.336 sec
+Running org.springframework.data.jpa.repository.EclipseLinkRepositoryWithCompositeKeyIntegrationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.642 sec
+Running org.springframework.data.jpa.repository.EclipseLinkUserRepositoryFinderTests
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 sec
+Running org.springframework.data.jpa.infrastructure.EclipseLinkMetamodelIntegrationTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.003 sec
+
+Results :
+
+Tests run: 263, Failures: 0, Errors: 0, Skipped: 19
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:31 min
+[INFO] Finished at: 2022-08-22T19:22:32-07:00
+[INFO] ------------------------------------------------------------------------
+Running the tests related to the bug Bears-185...
+The tests related to the bug Bears-185 were executed.

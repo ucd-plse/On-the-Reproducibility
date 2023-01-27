@@ -1,0 +1,147 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] flink-contrib
+[INFO] flink-storm-compatibility
+[INFO] flink-storm-compatibility-core
+[INFO] flink-storm-compatibility-examples
+[INFO] flink-streaming-contrib
+[INFO] flink-tweet-inputformat
+[INFO] flink-operator-stats
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building flink-contrib 0.10-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ flink-contrib-parent ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven) @ flink-contrib-parent ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ flink-contrib-parent ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building flink-storm-compatibility 0.10-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ flink-storm-compatibility-parent ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven) @ flink-storm-compatibility-parent ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ flink-storm-compatibility-parent ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building flink-storm-compatibility-core 0.10-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ flink-storm-compatibility-core ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven) @ flink-storm-compatibility-core ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ flink-storm-compatibility-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ flink-storm-compatibility-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /space/parallel/flink/flink9/dataset/flink/FLINK-2658_ce68cbd91621b1a58cb34b33ab27762c6525cfa0/flink-contrib/flink-storm-compatibility/flink-storm-compatibility-core/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ flink-storm-compatibility-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ flink-storm-compatibility-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ flink-storm-compatibility-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ flink-storm-compatibility-core ---
+[INFO] Surefire report directory: /space/parallel/flink/flink9/dataset/flink/FLINK-2658_ce68cbd91621b1a58cb34b33ab27762c6525cfa0/flink-contrib/flink-storm-compatibility/flink-storm-compatibility-core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.flink.stormcompatibility.wrappers.StormSpoutWrapperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.728 sec - in org.apache.flink.stormcompatibility.wrappers.StormSpoutWrapperTest
+Running org.apache.flink.stormcompatibility.wrappers.StormBoltCollectorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec - in org.apache.flink.stormcompatibility.wrappers.StormBoltCollectorTest
+Running org.apache.flink.stormcompatibility.wrappers.StormTupleTest
+Tests run: 59, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in org.apache.flink.stormcompatibility.wrappers.StormTupleTest
+Running org.apache.flink.stormcompatibility.wrappers.StormOutputFieldsDeclarerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.flink.stormcompatibility.wrappers.StormOutputFieldsDeclarerTest
+Running org.apache.flink.stormcompatibility.wrappers.FlinkStormStreamSelectorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.flink.stormcompatibility.wrappers.FlinkStormStreamSelectorTest
+Running org.apache.flink.stormcompatibility.wrappers.StormSpoutCollectorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.flink.stormcompatibility.wrappers.StormSpoutCollectorTest
+Running org.apache.flink.stormcompatibility.wrappers.FiniteStormSpoutWrapperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.523 sec - in org.apache.flink.stormcompatibility.wrappers.FiniteStormSpoutWrapperTest
+Running org.apache.flink.stormcompatibility.wrappers.StormFiniteSpoutWrapperTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.667 sec - in org.apache.flink.stormcompatibility.wrappers.StormFiniteSpoutWrapperTest
+Running org.apache.flink.stormcompatibility.wrappers.StormWrapperSetupHelperTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.894 sec - in org.apache.flink.stormcompatibility.wrappers.StormWrapperSetupHelperTest
+Running org.apache.flink.stormcompatibility.wrappers.StormBoltWrapperTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.277 sec - in org.apache.flink.stormcompatibility.wrappers.StormBoltWrapperTest
+Running org.apache.flink.stormcompatibility.api.FlinkTopologyBuilderTest
+Tests run: 5, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.198 sec <<< FAILURE! - in org.apache.flink.stormcompatibility.api.FlinkTopologyBuilderTest
+testFieldsGroupingOnMultipleBoltOutputStreams(org.apache.flink.stormcompatibility.api.FlinkTopologyBuilderTest)  Time elapsed: 0.189 sec  <<< ERROR!
+org.apache.flink.api.common.InvalidProgramException: Specifying keys via field positions is only valid for tuple data types. Type: PojoType<org.apache.flink.stormcompatibility.util.SplitStreamType, fields = [streamId: String, value: GenericType<java.lang.Object>]>
+	at org.apache.flink.api.java.operators.Keys$ExpressionKeys.<init>(Keys.java:209)
+	at org.apache.flink.api.java.operators.Keys$ExpressionKeys.<init>(Keys.java:203)
+	at org.apache.flink.streaming.api.datastream.DataStream.groupBy(DataStream.java:285)
+	at org.apache.flink.stormcompatibility.api.FlinkTopologyBuilder.createTopology(FlinkTopologyBuilder.java:197)
+	at org.apache.flink.stormcompatibility.api.FlinkTopologyBuilderTest.testFieldsGroupingOnMultipleBoltOutputStreams(FlinkTopologyBuilderTest.java:73)
+
+testFieldsGroupingOnMultipleSpoutOutputStreams(org.apache.flink.stormcompatibility.api.FlinkTopologyBuilderTest)  Time elapsed: 0.002 sec  <<< ERROR!
+org.apache.flink.api.common.InvalidProgramException: Specifying keys via field positions is only valid for tuple data types. Type: PojoType<org.apache.flink.stormcompatibility.util.SplitStreamType, fields = [streamId: String, value: GenericType<java.lang.Object>]>
+	at org.apache.flink.api.java.operators.Keys$ExpressionKeys.<init>(Keys.java:209)
+	at org.apache.flink.api.java.operators.Keys$ExpressionKeys.<init>(Keys.java:203)
+	at org.apache.flink.streaming.api.datastream.DataStream.groupBy(DataStream.java:285)
+	at org.apache.flink.stormcompatibility.api.FlinkTopologyBuilder.createTopology(FlinkTopologyBuilder.java:197)
+	at org.apache.flink.stormcompatibility.api.FlinkTopologyBuilderTest.testFieldsGroupingOnMultipleSpoutOutputStreams(FlinkTopologyBuilderTest.java:61)
+
+Running org.apache.flink.stormcompatibility.api.FlinkTopologyContextTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.apache.flink.stormcompatibility.api.FlinkTopologyContextTest
+Running org.apache.flink.stormcompatibility.api.FlinkOutputFieldsDeclarerTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.apache.flink.stormcompatibility.api.FlinkOutputFieldsDeclarerTest
+Running org.apache.flink.stormcompatibility.api.FlinkTopologyTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.flink.stormcompatibility.api.FlinkTopologyTest
+
+Results :
+
+Tests in error: 
+  FlinkTopologyBuilderTest.testFieldsGroupingOnMultipleBoltOutputStreams:73 » InvalidProgram
+  FlinkTopologyBuilderTest.testFieldsGroupingOnMultipleSpoutOutputStreams:61 » InvalidProgram
+
+Tests run: 125, Failures: 0, Errors: 2, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] flink-contrib ...................................... SUCCESS [  2.766 s]
+[INFO] flink-storm-compatibility .......................... SUCCESS [  0.210 s]
+[INFO] flink-storm-compatibility-core ..................... FAILURE [ 11.549 s]
+[INFO] flink-storm-compatibility-examples ................. SKIPPED
+[INFO] flink-streaming-contrib ............................ SKIPPED
+[INFO] flink-tweet-inputformat ............................ SKIPPED
+[INFO] flink-operator-stats ............................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 15.066 s
+[INFO] Finished at: 2016-07-14T23:31:17-07:00
+[INFO] Final Memory: 32M/2476M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project flink-storm-compatibility-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /space/parallel/flink/flink9/dataset/flink/FLINK-2658_ce68cbd91621b1a58cb34b33ab27762c6525cfa0/flink-contrib/flink-storm-compatibility/flink-storm-compatibility-core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :flink-storm-compatibility-core

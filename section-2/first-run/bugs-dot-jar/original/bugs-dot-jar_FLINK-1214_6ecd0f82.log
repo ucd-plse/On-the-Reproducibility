@@ -1,0 +1,124 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building flink-compiler 0.8-incubating-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.12.1:check (validate) @ flink-compiler ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven) @ flink-compiler ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ flink-compiler ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ flink-compiler ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /space/parallel/flink/flink9/dataset/flink/FLINK-1214_6ecd0f8264ab5cfb6101046a415c996993b682e5/flink-compiler/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ flink-compiler ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ flink-compiler ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ flink-compiler ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ flink-compiler ---
+[INFO] Surefire report directory: /space/parallel/flink/flink9/dataset/flink/FLINK-1214_6ecd0f8264ab5cfb6101046a415c996993b682e5/flink-compiler/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.flink.compiler.java.ReduceCompilationTest
+Running org.apache.flink.compiler.UnionReplacementTest
+Running org.apache.flink.compiler.java.GroupReduceCompilationTest
+Running org.apache.flink.compiler.BranchingPlansCompilerTest
+Running org.apache.flink.compiler.AdditionalOperatorsTest
+Running org.apache.flink.compiler.FeedbackPropertiesMatchTest
+Running org.apache.flink.compiler.java.JoinTranslationTest
+Running org.apache.flink.compiler.java.IterationCompilerTest
+Running org.apache.flink.compiler.java.DeltaIterationDependenciesTest
+Running org.apache.flink.compiler.java.WorksetIterationsJavaApiCompilerTest
+Running org.apache.flink.compiler.plandump.NumberFormattingTest
+Running org.apache.flink.compiler.WorksetIterationsRecordApiCompilerTest
+Running org.apache.flink.compiler.costs.DefaultCostEstimatorTest
+Running org.apache.flink.compiler.HardPlansCompilationTest
+Running org.apache.flink.compiler.plan.ChannelTest
+Running org.apache.flink.compiler.CoGroupSolutionSetFirstTest
+Running org.apache.flink.compiler.UnionPropertyPropagationTest
+Running org.apache.flink.compiler.PartitionPushdownTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.448 sec - in org.apache.flink.compiler.costs.DefaultCostEstimatorTest
+Running org.apache.flink.compiler.WorksetIterationCornerCasesTest
+Running org.apache.flink.compiler.GroupOrderTest
+Running org.apache.flink.compiler.IterationsCompilerTest
+Running org.apache.flink.compiler.BroadcastVariablePipelinebreakerTest
+Running org.apache.flink.compiler.DOPChangeTest
+Running org.apache.flink.compiler.PipelineBreakerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.736 sec - in org.apache.flink.compiler.plandump.NumberFormattingTest
+Running org.apache.flink.compiler.CachedMatchStrategyCompilerTest
+Running org.apache.flink.compiler.ReduceAllTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.246 sec - in org.apache.flink.compiler.AdditionalOperatorsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.701 sec - in org.apache.flink.compiler.plan.ChannelTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.464 sec - in org.apache.flink.compiler.WorksetIterationCornerCasesTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.292 sec - in org.apache.flink.compiler.FeedbackPropertiesMatchTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.199 sec - in org.apache.flink.compiler.java.DeltaIterationDependenciesTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.686 sec - in org.apache.flink.compiler.java.ReduceCompilationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.792 sec - in org.apache.flink.compiler.java.GroupReduceCompilationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.817 sec - in org.apache.flink.compiler.UnionReplacementTest
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.374 sec <<< FAILURE! - in org.apache.flink.compiler.PartitionPushdownTest
+testPartitioningNotPushedDown(org.apache.flink.compiler.PartitionPushdownTest)  Time elapsed: 1.675 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<PARTITION_HASH> but was:<FORWARD>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.flink.compiler.PartitionPushdownTest.testPartitioningNotPushedDown(PartitionPushdownTest.java:59)
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.921 sec - in org.apache.flink.compiler.java.JoinTranslationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.175 sec - in org.apache.flink.compiler.PipelineBreakerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.782 sec - in org.apache.flink.compiler.HardPlansCompilationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.308 sec - in org.apache.flink.compiler.BroadcastVariablePipelinebreakerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.257 sec - in org.apache.flink.compiler.CachedMatchStrategyCompilerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.421 sec - in org.apache.flink.compiler.GroupOrderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.097 sec - in org.apache.flink.compiler.java.WorksetIterationsJavaApiCompilerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.133 sec - in org.apache.flink.compiler.ReduceAllTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.49 sec - in org.apache.flink.compiler.DOPChangeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.27 sec - in org.apache.flink.compiler.java.IterationCompilerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.95 sec - in org.apache.flink.compiler.CoGroupSolutionSetFirstTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.962 sec - in org.apache.flink.compiler.UnionPropertyPropagationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.328 sec - in org.apache.flink.compiler.WorksetIterationsRecordApiCompilerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.835 sec - in org.apache.flink.compiler.IterationsCompilerTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.122 sec - in org.apache.flink.compiler.BranchingPlansCompilerTest
+
+Results :
+
+Failed tests: 
+  PartitionPushdownTest.testPartitioningNotPushedDown:59 expected:<PARTITION_HASH> but was:<FORWARD>
+
+Tests run: 96, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.580 s
+[INFO] Finished at: 2016-07-15T08:52:16-07:00
+[INFO] Final Memory: 27M/2476M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project flink-compiler: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /space/parallel/flink/flink9/dataset/flink/FLINK-1214_6ecd0f8264ab5cfb6101046a415c996993b682e5/flink-compiler/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

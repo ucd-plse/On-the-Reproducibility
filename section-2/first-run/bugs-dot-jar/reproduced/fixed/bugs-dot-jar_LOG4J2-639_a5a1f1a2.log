@@ -1,0 +1,1772 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Log4j 2                                                     [pom]
+[INFO] Apache Log4j API                                                   [jar]
+[INFO] Apache Log4j Core                                                  [jar]
+[INFO] Apache Log4j 1.x Compatibility API                              [bundle]
+[INFO] Apache Log4j SLF4J Binding                                         [jar]
+[INFO] Apache Log4j to SLF4J Adapter                                      [jar]
+[INFO] Apache Log4j Commons Logging Bridge                                [jar]
+[INFO] Apache Log4j Flume NG Bridge                                       [jar]
+[INFO] Apache Log4j Tag Library                                           [jar]
+[INFO] Apache Log4j JMX GUI                                               [jar]
+[INFO] Apache Log4j Samples                                               [pom]
+[INFO] Apache Log4j Samples: Flume - Common                               [jar]
+[INFO] Apache Log4j Samples: Flume - Remote                               [war]
+[INFO] Apache Log4j Samples: Flume - Embedded                             [war]
+[INFO] Apache Log4j 2 BOM                                                 [pom]
+[INFO] Apache Log4j NoSQL Plugins                                         [jar]
+[INFO] Apache Log4j Web                                                   [jar]
+[INFO] 
+[INFO] -------------------< org.apache.logging.log4j:log4j >-------------------
+[INFO] Building Apache Log4j 2 2.0-rc2-SNAPSHOT                          [1/17]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j/2.0-rc2-SNAPSHOT/log4j-2.0-rc2-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.apache.logging.log4j:log4j-api >-----------------
+[INFO] Building Apache Log4j API 2.0-rc2-SNAPSHOT                        [2/17]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-api ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 62 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/src/main/java/org/apache/logging/log4j/MarkerManager.java:[222,23] getParent() in org.apache.logging.log4j.Marker has been deprecated
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:manifest (default) @ log4j-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 34 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] No processor claimed any of these annotations: org.junit.Test,org.junit.AfterClass,org.junit.Rule,org.junit.BeforeClass,org.junit.Before
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log4j-api ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-api ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/target/log4j-api-2.0-rc2-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:test-jar (default) @ log4j-api ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/target/log4j-api-2.0-rc2-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-api ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/target/log4j-api-2.0-rc2-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-api/2.0-rc2-SNAPSHOT/log4j-api-2.0-rc2-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-api/2.0-rc2-SNAPSHOT/log4j-api-2.0-rc2-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-api/target/log4j-api-2.0-rc2-SNAPSHOT-tests.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-api/2.0-rc2-SNAPSHOT/log4j-api-2.0-rc2-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] ----------------< org.apache.logging.log4j:log4j-core >-----------------
+[INFO] Building Apache Log4j Core 2.0-rc2-SNAPSHOT                       [3/17]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 359 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/appender/TLSSyslogFrame.java:[24,8] Class org.apache.logging.log4j.core.appender.TLSSyslogFrame overrides equals, but neither it nor any superclass overrides hashCode method
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/impl/ThrowableProxy.java:[615,54] getSuppressed(java.lang.Throwable) in org.apache.logging.log4j.core.util.Throwables has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/AbstractLogEvent.java:[40,19] getContextMap(java.lang.String) in org.apache.logging.log4j.core.LogEvent has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/jackson/ListOfMapEntrySerializer.java:[34,61] found raw type: java.util.Map
+  missing type arguments for generic class java.util.Map<K,V>
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/jackson/ListOfMapEntrySerializer.java:[41,33] found raw type: java.util.Map
+  missing type arguments for generic class java.util.Map<K,V>
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/jackson/ListOfMapEntrySerializer.java:[42,65] unchecked conversion
+  required: java.util.Set<java.util.Map.Entry<java.lang.String,java.lang.String>>
+  found:    java.util.Set
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/jackson/MarkerMixIn.java:[72,28] getParent() in org.apache.logging.log4j.Marker has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/config/plugins/util/PluginManager.java:[182,66] found raw type: org.apache.logging.log4j.core.config.plugins.util.PluginType
+  missing type arguments for generic class org.apache.logging.log4j.core.config.plugins.util.PluginType<T>
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/util/BundleResourceLoader.java:[48,35] unchecked conversion
+  required: java.util.Enumeration<java.net.URL>
+  found:    java.util.Enumeration
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/async/RingBufferLogEvent.java:[194,19] getContextMap(java.lang.String) in org.apache.logging.log4j.core.LogEvent has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/async/AsyncLogger.java:[126,35] unchecked generic array creation for varargs parameter of type com.lmax.disruptor.EventHandler<org.apache.logging.log4j.core.async.RingBufferLogEvent>[]
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/impl/Log4jLogEvent.java:[310,19] getContextMap(java.lang.String) in org.apache.logging.log4j.core.LogEvent has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/appender/db/jpa/BasicLogEventEntity.java:[217,19] getContextMap(java.lang.String) in org.apache.logging.log4j.core.LogEvent has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/appender/db/jpa/BasicLogEventEntity.java:[218,38] getContextMap(java.lang.String) in org.apache.logging.log4j.core.LogEvent has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/config/xml/XMLConfiguration.java:[163,38] addPackage(java.lang.String) in org.apache.logging.log4j.core.config.plugins.util.PluginManager has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/config/json/JSONConfiguration.java:[93,38] addPackage(java.lang.String) in org.apache.logging.log4j.core.config.plugins.util.PluginManager has been deprecated
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (process-plugins) @ log4j-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 359 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] No processor claimed any of these annotations: com.fasterxml.jackson.annotation.JsonProperty,com.fasterxml.jackson.annotation.JsonPropertyOrder,com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty,javax.persistence.MappedSuperclass,javax.persistence.Converter,com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement,com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper,javax.annotation.processing.SupportedAnnotationTypes,org.apache.logging.log4j.core.config.Order,javax.annotation.processing.SupportedSourceVersion,com.fasterxml.jackson.annotation.JsonValue,com.fasterxml.jackson.databind.annotation.JsonSerialize,com.fasterxml.jackson.annotation.JsonIgnore,com.fasterxml.jackson.annotation.JsonRootName,javax.persistence.Basic,com.fasterxml.jackson.annotation.JsonFilter,javax.persistence.Inheritance,javax.persistence.Transient,com.fasterxml.jackson.annotation.JsonCreator,com.fasterxml.jackson.databind.annotation.JsonDeserialize,org.apache.logging.log4j.core.pattern.ConverterKeys,javax.persistence.Convert,com.fasterxml.jackson.annotation.JsonIgnoreProperties
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:manifest (default) @ log4j-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 138 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 244 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[28,19] sun.reflect.Reflection is internal proprietary API and may be removed in a future release
+[WARNING] CAL10NAnnotationProcessor 0.8.1 initialized
+[WARNING] Supported source version 'RELEASE_5' from annotation processor 'ch.qos.cal10n.verifier.processor.CAL10NAnnotationProcessor' less than -source '1.6'
+[WARNING] No processor claimed any of these annotations: com.fasterxml.jackson.annotation.JsonProperty,org.junit.BeforeClass,org.junit.runner.RunWith,org.junit.runners.Parameterized.Parameters,javax.persistence.Table,org.junit.After,org.junit.ClassRule,org.junit.Before,javax.persistence.Id,javax.persistence.Entity,org.junit.AfterClass,org.junit.Test,javax.persistence.Basic,javax.persistence.Column,org.junit.Rule,org.junit.Ignore,javax.persistence.GeneratedValue,javax.persistence.Temporal,javax.persistence.Transient,com.fasterxml.jackson.databind.annotation.JsonDeserialize,javax.persistence.Convert
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[28,19] sun.reflect.Reflection is internal proprietary API and may be removed in a future release
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[28,19] sun.reflect.Reflection is internal proprietary API and may be removed in a future release
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/appender/db/jpa/TestBaseEntity.java:[146,19] getContextMap(java.lang.String) in org.apache.logging.log4j.core.LogEvent has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/appender/db/jpa/TestBaseEntity.java:[147,38] getContextMap(java.lang.String) in org.apache.logging.log4j.core.LogEvent has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[55,13] sun.reflect.Reflection is internal proprietary API and may be removed in a future release
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[65,17] sun.reflect.Reflection is internal proprietary API and may be removed in a future release
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[68,17] sun.reflect.Reflection is internal proprietary API and may be removed in a future release
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[71,17] sun.reflect.Reflection is internal proprietary API and may be removed in a future release
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[74,17] sun.reflect.Reflection is internal proprietary API and may be removed in a future release
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[77,17] sun.reflect.Reflection is internal proprietary API and may be removed in a future release
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ReflectionComparison.java:[80,17] sun.reflect.Reflection is internal proprietary API and may be removed in a future release
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/layout/LogEventFixtures.java:[57,19] addSuppressed(java.lang.Throwable,java.lang.Throwable) in org.apache.logging.log4j.core.util.Throwables has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/layout/LogEventFixtures.java:[58,19] addSuppressed(java.lang.Throwable,java.lang.Throwable) in org.apache.logging.log4j.core.util.Throwables has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/test/java/org/apache/logging/log4j/core/LookupTest.java:[66,9] found raw type: org.apache.logging.log4j.core.Layout
+  missing type arguments for generic class org.apache.logging.log4j.core.Layout<T>
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log4j-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-core ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/log4j-core-2.0-rc2-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:test-jar (default) @ log4j-core ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/log4j-core-2.0-rc2-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-core ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/log4j-core-2.0-rc2-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-core/2.0-rc2-SNAPSHOT/log4j-core-2.0-rc2-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-core/2.0-rc2-SNAPSHOT/log4j-core-2.0-rc2-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/log4j-core-2.0-rc2-SNAPSHOT-tests.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-core/2.0-rc2-SNAPSHOT/log4j-core-2.0-rc2-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] ---------------< org.apache.logging.log4j:log4j-1.2-api >---------------
+[INFO] Building Apache Log4j 1.x Compatibility API 2.0-rc2-SNAPSHOT      [4/17]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-1.2-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-1.2-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-1.2-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-1.2-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 28 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-1.2-api/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:manifest (default) @ log4j-1.2-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-1.2-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-1.2-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-1.2-api/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] No processor claimed any of these annotations: org.junit.AfterClass,org.junit.BeforeClass,org.junit.Ignore,org.junit.After,org.junit.Test,org.junit.Before
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log4j-1.2-api ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:bundle (default-bundle) @ log4j-1.2-api ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-1.2-api ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-1.2-api/target/log4j-1.2-api-2.0-rc2-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.0-rc2-SNAPSHOT/log4j-1.2-api-2.0-rc2-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-1.2-api/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.0-rc2-SNAPSHOT/log4j-1.2-api-2.0-rc2-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:install (default-install) @ log4j-1.2-api ---
+[INFO] Installing org/apache/logging/log4j/log4j-1.2-api/2.0-rc2-SNAPSHOT/log4j-1.2-api-2.0-rc2-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO] 
+[INFO] -------------< org.apache.logging.log4j:log4j-slf4j-impl >--------------
+[INFO] Building Apache Log4j SLF4J Binding 2.0-rc2-SNAPSHOT              [5/17]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-slf4j-impl ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-slf4j-impl ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-slf4j-impl/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-slf4j-impl ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-slf4j-impl/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] CAL10NAnnotationProcessor 0.8.1 initialized
+[WARNING] Supported source version 'RELEASE_5' from annotation processor 'ch.qos.cal10n.verifier.processor.CAL10NAnnotationProcessor' less than -source '1.6'
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-slf4j-impl/src/main/java/org/apache/logging/slf4j/Log4jMarker.java:[75,21] iterator() in org.apache.logging.slf4j.Log4jMarker implements iterator() in org.slf4j.Marker
+  return type requires unchecked conversion from java.util.Iterator to java.util.Iterator<org.slf4j.Marker>
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-slf4j-impl/src/main/java/org/apache/logging/slf4j/Log4jMarker.java:[69,20] hasChildren() in org.slf4j.Marker has been deprecated
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:manifest (default) @ log4j-slf4j-impl ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-slf4j-impl ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-slf4j-impl ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-slf4j-impl/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] CAL10NAnnotationProcessor 0.8.1 initialized
+[WARNING] Supported source version 'RELEASE_5' from annotation processor 'ch.qos.cal10n.verifier.processor.CAL10NAnnotationProcessor' less than -source '1.6'
+[WARNING] No processor claimed any of these annotations: org.junit.Test,org.junit.AfterClass,org.junit.BeforeClass,org.junit.Before
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log4j-slf4j-impl ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-tests) @ log4j-slf4j-impl ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (test-optional) @ log4j-slf4j-impl ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-slf4j-impl ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-slf4j-impl/target/log4j-slf4j-impl-2.0-rc2-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-slf4j-impl ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-slf4j-impl/target/log4j-slf4j-impl-2.0-rc2-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.0-rc2-SNAPSHOT/log4j-slf4j-impl-2.0-rc2-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-slf4j-impl/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.0-rc2-SNAPSHOT/log4j-slf4j-impl-2.0-rc2-SNAPSHOT.pom
+[INFO] 
+[INFO] --------------< org.apache.logging.log4j:log4j-to-slf4j >---------------
+[INFO] Building Apache Log4j to SLF4J Adapter 2.0-rc2-SNAPSHOT           [6/17]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-to-slf4j ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-to-slf4j ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-to-slf4j ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-to-slf4j/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-to-slf4j/src/main/java/org/apache/logging/slf4j/SLF4JLogger.java:[96,37] getParent() in org.apache.logging.log4j.Marker has been deprecated
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:manifest (default) @ log4j-to-slf4j ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-to-slf4j ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-to-slf4j ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-to-slf4j/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log4j-to-slf4j ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-to-slf4j ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-to-slf4j/target/log4j-to-slf4j-2.0-rc2-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-to-slf4j ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-to-slf4j/target/log4j-to-slf4j-2.0-rc2-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.0-rc2-SNAPSHOT/log4j-to-slf4j-2.0-rc2-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-to-slf4j/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.0-rc2-SNAPSHOT/log4j-to-slf4j-2.0-rc2-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.apache.logging.log4j:log4j-jcl >-----------------
+[INFO] Building Apache Log4j Commons Logging Bridge 2.0-rc2-SNAPSHOT     [7/17]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-jcl ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-jcl ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-jcl ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-jcl/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:manifest (default) @ log4j-jcl ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-jcl ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-jcl ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-jcl/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] No processor claimed any of these annotations: org.junit.BeforeClass,org.junit.AfterClass,org.junit.Test
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log4j-jcl ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-jcl ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-jcl/target/log4j-jcl-2.0-rc2-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-jcl ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-jcl/target/log4j-jcl-2.0-rc2-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-jcl/2.0-rc2-SNAPSHOT/log4j-jcl-2.0-rc2-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-jcl/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-jcl/2.0-rc2-SNAPSHOT/log4j-jcl-2.0-rc2-SNAPSHOT.pom
+[INFO] 
+[INFO] --------------< org.apache.logging.log4j:log4j-flume-ng >---------------
+[INFO] Building Apache Log4j Flume NG Bridge 2.0-rc2-SNAPSHOT            [8/17]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-flume-ng ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-flume-ng ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-flume-ng/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-flume-ng ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 11 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-flume-ng/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-flume-ng/src/main/java/org/apache/logging/log4j/flume/appender/FlumeEvent.java:[305,19] getContextMap(java.lang.String) in org.apache.logging.log4j.core.LogEvent has been deprecated
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:manifest (default) @ log4j-flume-ng ---
+[WARNING] Manifest org.apache.logging.log4j:log4j-flume-ng:jar:2.0-rc2-SNAPSHOT : Export org.apache.logging.log4j.flume.appender,  has 1,  private references [org.apache.logging.log4j.core.config.plugins], 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-flume-ng ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-flume-ng ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-flume-ng/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] No processor claimed any of these annotations: org.junit.AfterClass,org.junit.BeforeClass,org.junit.After,org.junit.Test,org.junit.Before
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log4j-flume-ng ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-flume-ng ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-flume-ng/target/log4j-flume-ng-2.0-rc2-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:test-jar (default) @ log4j-flume-ng ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-flume-ng/target/log4j-flume-ng-2.0-rc2-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-flume-ng ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-flume-ng/target/log4j-flume-ng-2.0-rc2-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-flume-ng/2.0-rc2-SNAPSHOT/log4j-flume-ng-2.0-rc2-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-flume-ng/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-flume-ng/2.0-rc2-SNAPSHOT/log4j-flume-ng-2.0-rc2-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-flume-ng/target/log4j-flume-ng-2.0-rc2-SNAPSHOT-tests.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-flume-ng/2.0-rc2-SNAPSHOT/log4j-flume-ng-2.0-rc2-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] ---------------< org.apache.logging.log4j:log4j-taglib >----------------
+[INFO] Building Apache Log4j Tag Library 2.0-rc2-SNAPSHOT                [9/17]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-taglib ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-taglib ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-taglib ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 20 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-taglib/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:manifest (default) @ log4j-taglib ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-taglib ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-taglib ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-taglib/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] No processor claimed any of these annotations: org.junit.Test,org.junit.AfterClass,org.junit.BeforeClass,org.junit.Before
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log4j-taglib ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-taglib ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-taglib/target/log4j-taglib-2.0-rc2-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-taglib ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-taglib/target/log4j-taglib-2.0-rc2-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-taglib/2.0-rc2-SNAPSHOT/log4j-taglib-2.0-rc2-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-taglib/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-taglib/2.0-rc2-SNAPSHOT/log4j-taglib-2.0-rc2-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------------< org.apache.logging.log4j:log4j-jmx-gui >---------------
+[INFO] Building Apache Log4j JMX GUI 2.0-rc2-SNAPSHOT                   [10/17]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-jmx-gui ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-jmx-gui ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-jmx-gui ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-jmx-gui/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:manifest (default) @ log4j-jmx-gui ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-jmx-gui ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-jmx-gui/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-jmx-gui ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log4j-jmx-gui ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-jmx-gui ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-jmx-gui/target/log4j-jmx-gui-2.0-rc2-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-jmx-gui ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-jmx-gui/target/log4j-jmx-gui-2.0-rc2-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-jmx-gui/2.0-rc2-SNAPSHOT/log4j-jmx-gui-2.0-rc2-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-jmx-gui/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-jmx-gui/2.0-rc2-SNAPSHOT/log4j-jmx-gui-2.0-rc2-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------< org.apache.logging.log4j.samples:log4j-samples >-----------
+[INFO] Building Apache Log4j Samples 2.0-rc2-SNAPSHOT                   [11/17]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-samples ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-samples ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/samples/log4j-samples/2.0-rc2-SNAPSHOT/log4j-samples-2.0-rc2-SNAPSHOT.pom
+[INFO] 
+[INFO] ----< org.apache.logging.log4j.samples:log4j-samples-flume-common >-----
+[INFO] Building Apache Log4j Samples: Flume - Common 2.0-rc2-SNAPSHOT   [12/17]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-samples-flume-common ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-samples-flume-common ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-common/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-samples-flume-common ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 13 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-common/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] No processor claimed any of these annotations: org.springframework.web.bind.annotation.RequestParam,org.apache.logging.log4j.samples.dto.Constraint,org.springframework.web.bind.annotation.RequestMapping,org.springframework.stereotype.Controller
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:manifest (default) @ log4j-samples-flume-common ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-samples-flume-common ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-common/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-samples-flume-common ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log4j-samples-flume-common ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-samples-flume-common ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-common/target/log4j-samples-flume-common-2.0-rc2-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-samples-flume-common ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-common/target/log4j-samples-flume-common-2.0-rc2-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/samples/log4j-samples-flume-common/2.0-rc2-SNAPSHOT/log4j-samples-flume-common-2.0-rc2-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-common/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/samples/log4j-samples-flume-common/2.0-rc2-SNAPSHOT/log4j-samples-flume-common-2.0-rc2-SNAPSHOT.pom
+[INFO] 
+[INFO] ----< org.apache.logging.log4j.samples:log4j-samples-flume-remote >-----
+[INFO] Building Apache Log4j Samples: Flume - Remote 2.0-rc2-SNAPSHOT   [13/17]
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-samples-flume-remote ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-samples-flume-remote ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/src/main/resources
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/src/main/webapp/WEB-INF
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-samples-flume-remote ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:manifest (default) @ log4j-samples-flume-remote ---
+[WARNING] Ignoring project type war - supportedProjectTypes = [jar, bundle]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-samples-flume-remote ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-remote/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-samples-flume-remote ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log4j-samples-flume-remote ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-war-plugin:2.2:war (default-war) @ log4j-samples-flume-remote ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [log4j-samples-flume-remote] in [/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-remote/target/log4j-samples-flume-remote-2.0-rc2-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-remote/src/main/webapp]
+[INFO] Webapp assembled in [60 msecs]
+[INFO] Building war: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-remote/target/log4j-samples-flume-remote-2.0-rc2-SNAPSHOT.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ log4j-samples-flume-remote ---
+[INFO] Skipping artifact installation
+[INFO] 
+[INFO] ---< org.apache.logging.log4j.samples:log4j-samples-flume-embedded >----
+[INFO] Building Apache Log4j Samples: Flume - Embedded 2.0-rc2-SNAPSHOT [14/17]
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-samples-flume-embedded ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-samples-flume-embedded ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/src/main/resources
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/src/main/webapp/WEB-INF
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-samples-flume-embedded ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:manifest (default) @ log4j-samples-flume-embedded ---
+[WARNING] Ignoring project type war - supportedProjectTypes = [jar, bundle]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-samples-flume-embedded ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-embedded/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-samples-flume-embedded ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log4j-samples-flume-embedded ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-war-plugin:2.2:war (default-war) @ log4j-samples-flume-embedded ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [log4j-samples-flume-embedded] in [/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-embedded/target/log4j-samples-flume-embedded-2.0-rc2-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-embedded/src/main/webapp]
+[INFO] Webapp assembled in [72 msecs]
+[INFO] Building war: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-samples/flume-embedded/target/log4j-samples-flume-embedded-2.0-rc2-SNAPSHOT.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ log4j-samples-flume-embedded ---
+[INFO] Skipping artifact installation
+[INFO] 
+[INFO] -----------------< org.apache.logging.log4j:log4j-bom >-----------------
+[INFO] Building Apache Log4j 2 BOM 2.0-rc2-SNAPSHOT                     [15/17]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-bom ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-bom ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-bom/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-bom/2.0-rc2-SNAPSHOT/log4j-bom-2.0-rc2-SNAPSHOT.pom
+[INFO] 
+[INFO] ----------------< org.apache.logging.log4j:log4j-nosql >----------------
+[INFO] Building Apache Log4j NoSQL Plugins 2.0-rc2-SNAPSHOT             [16/17]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-nosql ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-nosql ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-nosql/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-nosql ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 14 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-nosql/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-nosql/src/main/java/org/apache/logging/log4j/nosql/appender/NoSQLDatabaseManager.java:[93,26] getParent() in org.apache.logging.log4j.Marker has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-nosql/src/main/java/org/apache/logging/log4j/nosql/appender/NoSQLDatabaseManager.java:[94,32] getParent() in org.apache.logging.log4j.Marker has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-nosql/src/main/java/org/apache/logging/log4j/nosql/appender/NoSQLDatabaseManager.java:[212,24] found raw type: org.apache.logging.log4j.nosql.appender.NoSQLDatabaseManager
+  missing type arguments for generic class org.apache.logging.log4j.nosql.appender.NoSQLDatabaseManager<W>
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:manifest (default) @ log4j-nosql ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-nosql ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-nosql/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-nosql ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-nosql/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] No processor claimed any of these annotations: org.junit.Test,org.junit.Before,org.junit.After
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-nosql/src/test/java/org/apache/logging/log4j/nosql/appender/NoSQLDatabaseManagerTest.java:[470,42] getMarker(java.lang.String,org.apache.logging.log4j.Marker) in org.apache.logging.log4j.MarkerManager has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-nosql/src/test/java/org/apache/logging/log4j/nosql/appender/NoSQLDatabaseManagerTest.java:[469,34] getMarker(java.lang.String,org.apache.logging.log4j.Marker) in org.apache.logging.log4j.MarkerManager has been deprecated
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log4j-nosql ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-nosql ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-nosql/target/log4j-nosql-2.0-rc2-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-nosql ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-nosql/target/log4j-nosql-2.0-rc2-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-nosql/2.0-rc2-SNAPSHOT/log4j-nosql-2.0-rc2-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-nosql/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-nosql/2.0-rc2-SNAPSHOT/log4j-nosql-2.0-rc2-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.apache.logging.log4j:log4j-web >-----------------
+[INFO] Building Apache Log4j Web 2.0-rc2-SNAPSHOT                       [17/17]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-web ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-web ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-web ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-web/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:manifest (default) @ log4j-web ---
+[WARNING] Manifest org.apache.logging.log4j:log4j-web:jar:2.0-rc2-SNAPSHOT : Export org.apache.logging.log4j.web,  has 1,  private references [org.apache.logging.log4j.core.config.plugins], 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-web ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-web/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-web ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-web/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] No processor claimed any of these annotations: org.junit.Test,org.junit.Before,org.junit.After
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log4j-web ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-web ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-web/target/log4j-web-2.0-rc2-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-web ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-web/target/log4j-web-2.0-rc2-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-web/2.0-rc2-SNAPSHOT/log4j-web-2.0-rc2-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-web/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-web/2.0-rc2-SNAPSHOT/log4j-web-2.0-rc2-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Apache Log4j 2 2.0-rc2-SNAPSHOT .................... SUCCESS [  0.284 s]
+[INFO] Apache Log4j API ................................... SUCCESS [  3.057 s]
+[INFO] Apache Log4j Core .................................. SUCCESS [  3.701 s]
+[INFO] Apache Log4j 1.x Compatibility API ................. SUCCESS [  1.578 s]
+[INFO] Apache Log4j SLF4J Binding ......................... SUCCESS [  0.267 s]
+[INFO] Apache Log4j to SLF4J Adapter ...................... SUCCESS [  0.188 s]
+[INFO] Apache Log4j Commons Logging Bridge ................ SUCCESS [  0.186 s]
+[INFO] Apache Log4j Flume NG Bridge ....................... SUCCESS [  1.404 s]
+[INFO] Apache Log4j Tag Library ........................... SUCCESS [  0.253 s]
+[INFO] Apache Log4j JMX GUI ............................... SUCCESS [  0.227 s]
+[INFO] Apache Log4j Samples ............................... SUCCESS [  0.044 s]
+[INFO] Apache Log4j Samples: Flume - Common ............... SUCCESS [  0.253 s]
+[INFO] Apache Log4j Samples: Flume - Remote ............... SUCCESS [  1.052 s]
+[INFO] Apache Log4j Samples: Flume - Embedded ............. SUCCESS [  2.216 s]
+[INFO] Apache Log4j 2 BOM ................................. SUCCESS [  0.010 s]
+[INFO] Apache Log4j NoSQL Plugins ......................... SUCCESS [  0.366 s]
+[INFO] Apache Log4j Web 2.0-rc2-SNAPSHOT .................. SUCCESS [  0.245 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 15.976 s
+[INFO] Finished at: 2022-07-15T19:43:39-07:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< org.apache.logging.log4j:log4j-core >-----------------
+[INFO] Building Apache Log4j Core 2.0-rc2-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-core ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ log4j-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 359 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/appender/TLSSyslogFrame.java:[24,8] Class org.apache.logging.log4j.core.appender.TLSSyslogFrame overrides equals, but neither it nor any superclass overrides hashCode method
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/impl/ThrowableProxy.java:[615,54] getSuppressed(java.lang.Throwable) in org.apache.logging.log4j.core.util.Throwables has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/AbstractLogEvent.java:[40,19] getContextMap(java.lang.String) in org.apache.logging.log4j.core.LogEvent has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/jackson/ListOfMapEntrySerializer.java:[34,61] found raw type: java.util.Map
+  missing type arguments for generic class java.util.Map<K,V>
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/jackson/ListOfMapEntrySerializer.java:[41,33] found raw type: java.util.Map
+  missing type arguments for generic class java.util.Map<K,V>
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/jackson/ListOfMapEntrySerializer.java:[42,65] unchecked conversion
+  required: java.util.Set<java.util.Map.Entry<java.lang.String,java.lang.String>>
+  found:    java.util.Set
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/jackson/MarkerMixIn.java:[72,28] getParent() in org.apache.logging.log4j.Marker has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/config/plugins/util/PluginManager.java:[182,66] found raw type: org.apache.logging.log4j.core.config.plugins.util.PluginType
+  missing type arguments for generic class org.apache.logging.log4j.core.config.plugins.util.PluginType<T>
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/util/BundleResourceLoader.java:[48,35] unchecked conversion
+  required: java.util.Enumeration<java.net.URL>
+  found:    java.util.Enumeration
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/async/RingBufferLogEvent.java:[194,19] getContextMap(java.lang.String) in org.apache.logging.log4j.core.LogEvent has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/async/AsyncLogger.java:[126,35] unchecked generic array creation for varargs parameter of type com.lmax.disruptor.EventHandler<org.apache.logging.log4j.core.async.RingBufferLogEvent>[]
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/impl/Log4jLogEvent.java:[310,19] getContextMap(java.lang.String) in org.apache.logging.log4j.core.LogEvent has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/appender/db/jpa/BasicLogEventEntity.java:[217,19] getContextMap(java.lang.String) in org.apache.logging.log4j.core.LogEvent has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/appender/db/jpa/BasicLogEventEntity.java:[218,38] getContextMap(java.lang.String) in org.apache.logging.log4j.core.LogEvent has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/config/xml/XMLConfiguration.java:[163,38] addPackage(java.lang.String) in org.apache.logging.log4j.core.config.plugins.util.PluginManager has been deprecated
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/src/main/java/org/apache/logging/log4j/core/config/json/JSONConfiguration.java:[93,38] addPackage(java.lang.String) in org.apache.logging.log4j.core.config.plugins.util.PluginManager has been deprecated
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (process-plugins) @ log4j-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 359 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] No processor claimed any of these annotations: com.fasterxml.jackson.annotation.JsonProperty,com.fasterxml.jackson.annotation.JsonPropertyOrder,com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty,javax.persistence.MappedSuperclass,javax.persistence.Converter,com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement,com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper,javax.annotation.processing.SupportedAnnotationTypes,org.apache.logging.log4j.core.config.Order,javax.annotation.processing.SupportedSourceVersion,com.fasterxml.jackson.annotation.JsonValue,com.fasterxml.jackson.databind.annotation.JsonSerialize,com.fasterxml.jackson.annotation.JsonIgnore,com.fasterxml.jackson.annotation.JsonRootName,javax.persistence.Basic,com.fasterxml.jackson.annotation.JsonFilter,javax.persistence.Inheritance,javax.persistence.Transient,com.fasterxml.jackson.annotation.JsonCreator,com.fasterxml.jackson.databind.annotation.JsonDeserialize,org.apache.logging.log4j.core.pattern.ConverterKeys,javax.persistence.Convert,com.fasterxml.jackson.annotation.JsonIgnoreProperties
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[WARNING] Signature attribute introduced in version 49.0 class files is ignored in version 48.0 class files
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:manifest (default) @ log4j-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 138 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ log4j-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log4j-core ---
+[INFO] Surefire report directory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.ShutdownDisabledTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.397 sec - in org.apache.logging.log4j.core.ShutdownDisabledTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.filter.ThreadContextMapFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec - in org.apache.logging.log4j.core.filter.ThreadContextMapFilterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.filter.DynamicThresholdFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.448 sec - in org.apache.logging.log4j.core.filter.DynamicThresholdFilterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.filter.MapFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.436 sec - in org.apache.logging.log4j.core.filter.MapFilterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.filter.RegexFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 sec - in org.apache.logging.log4j.core.filter.RegexFilterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.filter.BurstFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.288 sec - in org.apache.logging.log4j.core.filter.BurstFilterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.filter.ThresholdFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec - in org.apache.logging.log4j.core.filter.ThresholdFilterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.filter.StructuredDataFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.413 sec - in org.apache.logging.log4j.core.filter.StructuredDataFilterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.filter.TimeFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 sec - in org.apache.logging.log4j.core.filter.TimeFilterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.filter.MarkerFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec - in org.apache.logging.log4j.core.filter.MarkerFilterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.LogEventFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.461 sec - in org.apache.logging.log4j.core.LogEventFactoryTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.LevelTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.507 sec - in org.apache.logging.log4j.core.LevelTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.ThreadedTest
+Counter = 100
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.737 sec - in org.apache.logging.log4j.core.ThreadedTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.config.TestConfiguratorError
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec - in org.apache.logging.log4j.core.config.TestConfiguratorError
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.config.xml.XMLConfigurationPropsTest
+2022-07-15 19:44:00,843 ERROR Invalid status level specified: ${sys:log4j.level}. Defaulting to ERROR.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.47 sec - in org.apache.logging.log4j.core.config.xml.XMLConfigurationPropsTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.config.xml.XMLLoggerPropsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.429 sec - in org.apache.logging.log4j.core.config.xml.XMLLoggerPropsTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.config.CustomConfigurationTest
+2022-07-15 19:44:02,102 INFO Not in a ServletContext environment, thus not loading WebLookup plugin.
+2022-07-15 19:44:02,114 WARN The bufferSize is set to 4000 but bufferedIO is not true: false
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.437 sec - in org.apache.logging.log4j.core.config.CustomConfigurationTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.config.TestConfigurator
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.203 sec - in org.apache.logging.log4j.core.config.TestConfigurator
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.config.AdvertiserTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.509 sec - in org.apache.logging.log4j.core.config.AdvertiserTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.config.plugins.processor.PluginProcessorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec - in org.apache.logging.log4j.core.config.plugins.processor.PluginProcessorTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.config.plugins.util.ResolverUtilTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.074 sec - in org.apache.logging.log4j.core.config.plugins.util.ResolverUtilTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.config.MissingRootLoggerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.44 sec - in org.apache.logging.log4j.core.config.MissingRootLoggerTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.config.FileOutputTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.48 sec - in org.apache.logging.log4j.core.config.FileOutputTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.config.ConfigurationTest
+2022-07-15 19:44:06,956 WARN The bufferSize is set to 8192 but bufferedIO is not true: false
+2022-07-15 19:44:06,970 WARN The bufferSize is set to 8192 but bufferedIO is not true: false
+2022-07-15 19:44:06,983 WARN The bufferSize is set to 8192 but bufferedIO is not true: false
+2022-07-15 19:44:07,019 WARN The bufferSize is set to 8192 but bufferedIO is not true: false
+2022-07-15 19:44:07,035 WARN The bufferSize is set to 8192 but bufferedIO is not true: false
+2022-07-15 19:44:07,050 WARN The bufferSize is set to 8192 but bufferedIO is not true: false
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.684 sec - in org.apache.logging.log4j.core.config.ConfigurationTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.pattern.ThrowablePatternConverterTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 sec - in org.apache.logging.log4j.core.pattern.ThrowablePatternConverterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.pattern.RootThrowablePatternConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 sec - in org.apache.logging.log4j.core.pattern.RootThrowablePatternConverterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.pattern.RootThrowableTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.448 sec - in org.apache.logging.log4j.core.pattern.RootThrowableTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.pattern.MarkerPatternConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec - in org.apache.logging.log4j.core.pattern.MarkerPatternConverterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.pattern.LevelPatternConverterTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec - in org.apache.logging.log4j.core.pattern.LevelPatternConverterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.pattern.EncodingPatternConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.37 sec - in org.apache.logging.log4j.core.pattern.EncodingPatternConverterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.pattern.StyleConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.428 sec - in org.apache.logging.log4j.core.pattern.StyleConverterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.pattern.PatternParserTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.41 sec - in org.apache.logging.log4j.core.pattern.PatternParserTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.pattern.ThrowableTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.471 sec - in org.apache.logging.log4j.core.pattern.ThrowableTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.pattern.CallerInformationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.471 sec - in org.apache.logging.log4j.core.pattern.CallerInformationTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.pattern.RegexReplacementConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.368 sec - in org.apache.logging.log4j.core.pattern.RegexReplacementConverterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.pattern.ExtendedThrowablePatternConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 sec - in org.apache.logging.log4j.core.pattern.ExtendedThrowablePatternConverterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.pattern.ExtendedThrowableTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.468 sec - in org.apache.logging.log4j.core.pattern.ExtendedThrowableTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.pattern.NameAbbreviatorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in org.apache.logging.log4j.core.pattern.NameAbbreviatorTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.pattern.MapPatternConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec - in org.apache.logging.log4j.core.pattern.MapPatternConverterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.pattern.RegexReplacementTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.412 sec - in org.apache.logging.log4j.core.pattern.RegexReplacementTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.pattern.MessagePatternConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.177 sec - in org.apache.logging.log4j.core.pattern.MessagePatternConverterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.LogEventTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 sec - in org.apache.logging.log4j.core.LogEventTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.LookupTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.422 sec - in org.apache.logging.log4j.core.LookupTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.FileConfigTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.523 sec - in org.apache.logging.log4j.core.FileConfigTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.StrictXMLConfigTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.48 sec - in org.apache.logging.log4j.core.StrictXMLConfigTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.AppenderRefLevelJsonTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.464 sec - in org.apache.logging.log4j.core.AppenderRefLevelJsonTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.LoggerDateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.425 sec - in org.apache.logging.log4j.core.LoggerDateTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.util.CachedClockTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 sec - in org.apache.logging.log4j.core.util.CachedClockTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.util.FileUtilsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec - in org.apache.logging.log4j.core.util.FileUtilsTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.util.UUIDTest
+Elapsed for 2000 UUIDS = 641835470 Average = 320917 ns
+Elapsed for 200 UUIDS = 29204 Average = 146 ns
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 sec - in org.apache.logging.log4j.core.util.UUIDTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.util.CharsetsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec - in org.apache.logging.log4j.core.util.CharsetsTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.util.SystemClockTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 sec - in org.apache.logging.log4j.core.util.SystemClockTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.util.ClockFactoryTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec - in org.apache.logging.log4j.core.util.ClockFactoryTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.ThreadedPerfTest
+Timer DebugDisabled stopped. Elapsed time: 0.002034366 seconds Average per iteration: 0.000000000 seconds
+Timer DebugLogger stopped. Elapsed time: 0.001585583 seconds Average per iteration: 0.000000000 seconds
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.412 sec - in org.apache.logging.log4j.core.ThreadedPerfTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.layout.JSONLayoutTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.609 sec - in org.apache.logging.log4j.core.layout.JSONLayoutTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.layout.SyslogLayoutTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.388 sec - in org.apache.logging.log4j.core.layout.SyslogLayoutTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.layout.SerializedLayoutTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.434 sec - in org.apache.logging.log4j.core.layout.SerializedLayoutTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.layout.HTMLLayoutTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.402 sec - in org.apache.logging.log4j.core.layout.HTMLLayoutTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.layout.RFC5424LayoutTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.413 sec - in org.apache.logging.log4j.core.layout.RFC5424LayoutTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.layout.XMLLayoutTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.699 sec - in org.apache.logging.log4j.core.layout.XMLLayoutTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.layout.PatternLayoutTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.393 sec - in org.apache.logging.log4j.core.layout.PatternLayoutTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.AppenderRefLevelTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.481 sec - in org.apache.logging.log4j.core.AppenderRefLevelTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.BasicLoggingTest
+19:44:29.515 [main] ERROR org.apache.logging.log4j.core.BasicLoggingTest - Test message
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.424 sec - in org.apache.logging.log4j.core.BasicLoggingTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.lookup.StrSubstitutorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 sec - in org.apache.logging.log4j.core.lookup.StrSubstitutorTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.lookup.ContextMapLookupTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec - in org.apache.logging.log4j.core.lookup.ContextMapLookupTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.lookup.EnvironmentLookupTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in org.apache.logging.log4j.core.lookup.EnvironmentLookupTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.lookup.JndiLookupTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 sec - in org.apache.logging.log4j.core.lookup.JndiLookupTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.lookup.StructuredDataLookupTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec - in org.apache.logging.log4j.core.lookup.StructuredDataLookupTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.lookup.InterpolatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.291 sec - in org.apache.logging.log4j.core.lookup.InterpolatorTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.lookup.SystemPropertiesLookupTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in org.apache.logging.log4j.core.lookup.SystemPropertiesLookupTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.lookup.DateLookupTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec - in org.apache.logging.log4j.core.lookup.DateLookupTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.lookup.ResourceBundleLookupTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in org.apache.logging.log4j.core.lookup.ResourceBundleLookupTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.SimplePerfTest
+Timer Setup stopped. Elapsed time: 0.085330968 seconds Average per iteration: 0.000000008 seconds
+Timer DebugDisabled stopped. Elapsed time: 0.031394846 seconds Average per iteration: 0.000000003 seconds
+Timer DebugLogger stopped. Elapsed time: 0.034102151 seconds Average per iteration: 0.000000003 seconds
+Timer DebugDisabled stopped. Elapsed time: 0.035139976 seconds Average per iteration: 0.000000003 seconds
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.773 sec - in org.apache.logging.log4j.core.SimplePerfTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.jackson.JacksonIssue429MyNamesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.22 sec - in org.apache.logging.log4j.core.jackson.JacksonIssue429MyNamesTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.jackson.StackTraceElementMixInTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.355 sec - in org.apache.logging.log4j.core.jackson.StackTraceElementMixInTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.jackson.LevelMixInTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.28 sec - in org.apache.logging.log4j.core.jackson.LevelMixInTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.jackson.JacksonIssue429Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.226 sec - in org.apache.logging.log4j.core.jackson.JacksonIssue429Test
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.jmx.ServerTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 sec - in org.apache.logging.log4j.core.jmx.ServerTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.AsyncAppenderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.652 sec - in org.apache.logging.log4j.core.appender.AsyncAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.XmlCompactFileAppenderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.672 sec - in org.apache.logging.log4j.core.appender.XmlCompactFileAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.SyslogAppenderTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.586 sec - in org.apache.logging.log4j.core.appender.SyslogAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.routing.JSONRoutingAppender2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.468 sec - in org.apache.logging.log4j.core.appender.routing.JSONRoutingAppender2Test
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.routing.RoutingDefaultAppenderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.475 sec - in org.apache.logging.log4j.core.appender.routing.RoutingDefaultAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.routing.JSONRoutingAppenderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.476 sec - in org.apache.logging.log4j.core.appender.routing.JSONRoutingAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.routing.RoutingAppenderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.477 sec - in org.apache.logging.log4j.core.appender.routing.RoutingAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.routing.RoutingAppenderWithJndiTest
+Context [Test ] This is a message from unknown context
+Context [Test ] This is a message from Application1
+Context [Test ] This is a message from Application2
+Context [Test ] This is another message from Application2
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.526 sec - in org.apache.logging.log4j.core.appender.routing.RoutingAppenderWithJndiTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.db.jpa.converter.ContextMapAttributeConverterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in org.apache.logging.log4j.core.appender.db.jpa.converter.ContextMapAttributeConverterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.db.jpa.converter.ContextMapJsonAttributeConverterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.221 sec - in org.apache.logging.log4j.core.appender.db.jpa.converter.ContextMapJsonAttributeConverterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.db.jpa.converter.MarkerAttributeConverterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in org.apache.logging.log4j.core.appender.db.jpa.converter.MarkerAttributeConverterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.db.jpa.converter.ContextStackAttributeConverterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec - in org.apache.logging.log4j.core.appender.db.jpa.converter.ContextStackAttributeConverterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.db.jpa.converter.ContextStackJsonAttributeConverterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.234 sec - in org.apache.logging.log4j.core.appender.db.jpa.converter.ContextStackJsonAttributeConverterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.db.jpa.converter.MessageAttributeConverterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec - in org.apache.logging.log4j.core.appender.db.jpa.converter.MessageAttributeConverterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.db.jpa.converter.StackTraceElementAttributeConverterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in org.apache.logging.log4j.core.appender.db.jpa.converter.StackTraceElementAttributeConverterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.db.jpa.converter.ThrowableAttributeConverterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec - in org.apache.logging.log4j.core.appender.db.jpa.converter.ThrowableAttributeConverterTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.db.jpa.JpaH2AppenderTest
+[EL Info]: 2022-07-15 19:44:45.445--ServerSession(1263668904)--EclipseLink, version: Eclipse Persistence Services - 2.5.1.v20130918-f2b9fc5
+[EL Info]: connection: 2022-07-15 19:44:45.544--ServerSession(1263668904)--file:/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/test-classes/_h2JpaAppenderTestUnit login successful
+[EL Info]: connection: 2022-07-15 19:44:45.6--ServerSession(1263668904)--file:/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/test-classes/_h2JpaAppenderTestUnit logout successful
+[EL Info]: 2022-07-15 19:44:45.707--ServerSession(967576586)--EclipseLink, version: Eclipse Persistence Services - 2.5.1.v20130918-f2b9fc5
+[EL Info]: connection: 2022-07-15 19:44:45.711--ServerSession(967576586)--file:/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/test-classes/_h2JpaAppenderTestUnit login successful
+Starting a performance test for JPA Appender for h2.
+Wrote 10,000 log events in 1836687674 nanoseconds (1836 milliseconds) for h2.
+[EL Info]: connection: 2022-07-15 19:44:47.596--ServerSession(967576586)--file:/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/test-classes/_h2JpaAppenderTestUnit logout successful
+[EL Info]: 2022-07-15 19:44:47.702--ServerSession(886037892)--EclipseLink, version: Eclipse Persistence Services - 2.5.1.v20130918-f2b9fc5
+[EL Info]: connection: 2022-07-15 19:44:47.705--ServerSession(886037892)--file:/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/test-classes/_h2JpaAppenderTestUnit login successful
+[EL Info]: connection: 2022-07-15 19:44:47.711--ServerSession(886037892)--file:/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/test-classes/_h2JpaAppenderTestUnit logout successful
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.588 sec - in org.apache.logging.log4j.core.appender.db.jpa.JpaH2AppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.db.jpa.JpaHyperSqlAppenderTest
+[EL Info]: 2022-07-15 19:44:49.331--ServerSession(704106237)--EclipseLink, version: Eclipse Persistence Services - 2.5.1.v20130918-f2b9fc5
+[EL Info]: connection: 2022-07-15 19:44:49.412--ServerSession(704106237)--file:/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/test-classes/_hyperSqlJpaAppenderTestUnit login successful
+[EL Info]: connection: 2022-07-15 19:44:49.462--ServerSession(704106237)--file:/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/test-classes/_hyperSqlJpaAppenderTestUnit logout successful
+[EL Info]: 2022-07-15 19:44:49.588--ServerSession(61681175)--EclipseLink, version: Eclipse Persistence Services - 2.5.1.v20130918-f2b9fc5
+[EL Info]: connection: 2022-07-15 19:44:49.592--ServerSession(61681175)--file:/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/test-classes/_hyperSqlJpaAppenderTestUnit login successful
+Starting a performance test for JPA Appender for hsqldb.
+Wrote 10,000 log events in 2409187334 nanoseconds (2409 milliseconds) for hsqldb.
+[EL Info]: connection: 2022-07-15 19:44:52.054--ServerSession(61681175)--file:/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/test-classes/_hyperSqlJpaAppenderTestUnit logout successful
+[EL Info]: 2022-07-15 19:44:52.154--ServerSession(1282990092)--EclipseLink, version: Eclipse Persistence Services - 2.5.1.v20130918-f2b9fc5
+[EL Info]: connection: 2022-07-15 19:44:52.158--ServerSession(1282990092)--file:/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/test-classes/_hyperSqlJpaAppenderTestUnit login successful
+[EL Info]: connection: 2022-07-15 19:44:52.167--ServerSession(1282990092)--file:/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j-core/target/test-classes/_hyperSqlJpaAppenderTestUnit logout successful
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.24 sec - in org.apache.logging.log4j.core.appender.db.jpa.JpaHyperSqlAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.db.jdbc.JdbcHyperSqlAppenderTest
+Starting a performance test for JDBC Appender for hsqldb.
+Wrote 1,000 log events in 737408066 nanoseconds (737 milliseconds) for hsqldb.
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.672 sec - in org.apache.logging.log4j.core.appender.db.jdbc.JdbcHyperSqlAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.db.jdbc.JdbcH2AppenderTest
+Starting a performance test for JDBC Appender for h2.
+Wrote 1,000 log events in 248228055 nanoseconds (248 milliseconds) for h2.
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.01 sec - in org.apache.logging.log4j.core.appender.db.jdbc.JdbcH2AppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.db.jdbc.DataSourceConnectionSourceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.559 sec - in org.apache.logging.log4j.core.appender.db.jdbc.DataSourceConnectionSourceTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSourceTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.464 sec - in org.apache.logging.log4j.core.appender.db.jdbc.FactoryMethodConnectionSourceTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.db.jdbc.ColumnConfigTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.18 sec - in org.apache.logging.log4j.core.appender.db.jdbc.ColumnConfigTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppenderTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.205 sec - in org.apache.logging.log4j.core.appender.db.AbstractDatabaseAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.db.AbstractDatabaseManagerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.19 sec - in org.apache.logging.log4j.core.appender.db.AbstractDatabaseManagerTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.TLSSyslogAppenderTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.447 sec - in org.apache.logging.log4j.core.appender.TLSSyslogAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.ConsoleAppenderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.15 sec - in org.apache.logging.log4j.core.appender.ConsoleAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.XmlCompactFileAsyncAppenderValidationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.022 sec - in org.apache.logging.log4j.core.appender.XmlCompactFileAsyncAppenderValidationTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.OutputStreamAppenderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.186 sec - in org.apache.logging.log4j.core.appender.OutputStreamAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.SMTPAppenderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.492 sec - in org.apache.logging.log4j.core.appender.SMTPAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.XmlCompactFileAppenderValidationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.025 sec - in org.apache.logging.log4j.core.appender.XmlCompactFileAppenderValidationTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.XmlRandomAccessFileAppenderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.054 sec - in org.apache.logging.log4j.core.appender.XmlRandomAccessFileAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.SocketAppenderTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.828 sec - in org.apache.logging.log4j.core.appender.SocketAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.RandomAccessFileManagerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 sec - in org.apache.logging.log4j.core.appender.RandomAccessFileManagerTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.FailoverAppenderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.56 sec - in org.apache.logging.log4j.core.appender.FailoverAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.AsyncAppenderNoLocationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.518 sec - in org.apache.logging.log4j.core.appender.AsyncAppenderNoLocationTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.XmlFileAppenderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.665 sec - in org.apache.logging.log4j.core.appender.XmlFileAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.FileAppenderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 3.323 sec - in org.apache.logging.log4j.core.appender.FileAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.TLSSyslogFrameTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in org.apache.logging.log4j.core.appender.TLSSyslogFrameTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.JSONCompleteFileAppenderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.556 sec - in org.apache.logging.log4j.core.appender.JSONCompleteFileAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.rolling.action.FileRenameActionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 sec - in org.apache.logging.log4j.core.appender.rolling.action.FileRenameActionTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.rolling.RollingAppenderUncompressedTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.48 sec - in org.apache.logging.log4j.core.appender.rolling.RollingAppenderUncompressedTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.rolling.RollingAppenderTimeAndSizeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.5 sec - in org.apache.logging.log4j.core.appender.rolling.RollingAppenderTimeAndSizeTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.rolling.RollingAppenderSizeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.533 sec - in org.apache.logging.log4j.core.appender.rolling.RollingAppenderSizeTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.rolling.OnStartupTriggeringPolicyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 sec - in org.apache.logging.log4j.core.appender.rolling.OnStartupTriggeringPolicyTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.rolling.RollingFileAppenderAccessTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.388 sec - in org.apache.logging.log4j.core.appender.rolling.RollingFileAppenderAccessTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.rolling.PatternProcessorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 sec - in org.apache.logging.log4j.core.appender.rolling.PatternProcessorTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.rolling.RollingRandomAccessFileManagerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.168 sec - in org.apache.logging.log4j.core.appender.rolling.RollingRandomAccessFileManagerTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.rolling.RollingAppenderTimeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.984 sec - in org.apache.logging.log4j.core.appender.rolling.RollingAppenderTimeTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.rewrite.RewriteAppenderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.486 sec - in org.apache.logging.log4j.core.appender.rewrite.RewriteAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.rewrite.MapRewritePolicyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 sec - in org.apache.logging.log4j.core.appender.rewrite.MapRewritePolicyTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.XmlCompleteFileAppenderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.66 sec - in org.apache.logging.log4j.core.appender.XmlCompleteFileAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.appender.RollingRandomAccessFileAppenderRolloverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.586 sec - in org.apache.logging.log4j.core.appender.RollingRandomAccessFileAppenderRolloverTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.LateConfigTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.426 sec - in org.apache.logging.log4j.core.LateConfigTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.LoggerUpdateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.464 sec - in org.apache.logging.log4j.core.LoggerUpdateTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.osgi.felix.FelixLoadCoreBundleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.022 sec - in org.apache.logging.log4j.core.osgi.felix.FelixLoadCoreBundleTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.osgi.equinox.EquinoxLoadCoreBundleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.023 sec - in org.apache.logging.log4j.core.osgi.equinox.EquinoxLoadCoreBundleTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.CollectionLoggingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.473 sec - in org.apache.logging.log4j.core.CollectionLoggingTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.impl.ThrowableProxyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.287 sec - in org.apache.logging.log4j.core.impl.ThrowableProxyTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.impl.ThrowableFormatOptionsTest
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 sec - in org.apache.logging.log4j.core.impl.ThrowableFormatOptionsTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.impl.Log4jLogEventTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 sec - in org.apache.logging.log4j.core.impl.Log4jLogEventTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.async.AsyncLoggerThreadNameStrategyTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec - in org.apache.logging.log4j.core.async.AsyncLoggerThreadNameStrategyTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.async.AsyncLoggerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.537 sec - in org.apache.logging.log4j.core.async.AsyncLoggerTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.async.RingBufferLogEventTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.183 sec - in org.apache.logging.log4j.core.async.RingBufferLogEventTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.async.AsyncLoggerConfigUseAfterShutdownTest
+2022-07-15 19:45:26,698 FATAL Ignoring log event after log4j was shut down
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.489 sec - in org.apache.logging.log4j.core.async.AsyncLoggerConfigUseAfterShutdownTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.async.AsyncLoggerContextTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.405 sec - in org.apache.logging.log4j.core.async.AsyncLoggerContextTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.async.AsyncLoggerConfigTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.5 sec - in org.apache.logging.log4j.core.async.AsyncLoggerConfigTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.async.AsyncLoggerContextSelectorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.173 sec - in org.apache.logging.log4j.core.async.AsyncLoggerContextSelectorTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.async.AsyncLoggerUseAfterShutdownTest
+2022-07-15 19:45:29,089 FATAL Ignoring log event after log4j was shut down
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.504 sec - in org.apache.logging.log4j.core.async.AsyncLoggerUseAfterShutdownTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.async.AsyncLoggerLocationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.547 sec - in org.apache.logging.log4j.core.async.AsyncLoggerLocationTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.net.server.UdpSerializedSocketServerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.586 sec - in org.apache.logging.log4j.core.net.server.UdpSerializedSocketServerTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.net.server.TcpXmlSocketServerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.918 sec - in org.apache.logging.log4j.core.net.server.TcpXmlSocketServerTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.net.server.TcpSerializedSocketServerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.661 sec - in org.apache.logging.log4j.core.net.server.TcpSerializedSocketServerTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.net.server.TcpJsonSocketServerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.842 sec - in org.apache.logging.log4j.core.net.server.TcpJsonSocketServerTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.net.server.UdpJsonSocketServerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.783 sec - in org.apache.logging.log4j.core.net.server.UdpJsonSocketServerTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.net.server.UdpXmlSocketServerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.859 sec - in org.apache.logging.log4j.core.net.server.UdpXmlSocketServerTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.net.SocketReconnectTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.209 sec - in org.apache.logging.log4j.core.net.SocketReconnectTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.net.jms.JMSQueueTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.588 sec - in org.apache.logging.log4j.core.net.jms.JMSQueueTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.net.jms.JMSTopicTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.632 sec - in org.apache.logging.log4j.core.net.jms.JMSTopicTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.net.jms.JMSQueueFailoverTest
+2022-07-15 19:45:39,603 ERROR An exception occurred processing Appender Log4j2Queue org.apache.logging.log4j.core.appender.AppenderLoggingException: javax.naming.NameNotFoundException: Name Log4j2Queue not found. 
+	at org.apache.logging.log4j.core.appender.jms.JMSQueueAppender.append(JMSQueueAppender.java:58)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:97)
+	at org.apache.logging.log4j.core.appender.rewrite.RewriteAppender.append(RewriteAppender.java:88)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:97)
+	at org.apache.logging.log4j.core.appender.FailoverAppender.callAppender(FailoverAppender.java:116)
+	at org.apache.logging.log4j.core.appender.FailoverAppender.append(FailoverAppender.java:108)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:97)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:429)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:408)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:368)
+	at org.apache.logging.log4j.core.Logger.logMessage(Logger.java:103)
+	at org.apache.logging.log4j.spi.AbstractLoggerProvider.logMessage(AbstractLoggerProvider.java:1336)
+	at org.apache.logging.log4j.spi.AbstractLoggerProvider.logIfEnabled(AbstractLoggerProvider.java:1325)
+	at org.apache.logging.log4j.spi.AbstractLoggerProvider.debug(AbstractLoggerProvider.java:319)
+	at org.apache.logging.log4j.core.net.jms.JMSQueueFailoverTest.testFailover(JMSQueueFailoverTest.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: javax.naming.NameNotFoundException: Name Log4j2Queue not found. 
+	at org.mockejb.jndi.MockContext.lookup(MockContext.java:543)
+	at org.mockejb.jndi.MockContext$$FastClassByCGLIB$$8f78c5.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at org.mockejb.interceptor.InterceptorInvoker$CglibMethodInvoker.intercept(InterceptorInvoker.java:95)
+	at org.mockejb.interceptor.InvocationContext.proceed(InvocationContext.java:177)
+	at org.mockejb.interceptor.InterceptorInvoker.invoke(InterceptorInvoker.java:53)
+	at org.mockejb.interceptor.InterceptableProxy.intercept(InterceptableProxy.java:58)
+	at $javax.naming.Context$$EnhancerByCGLIB$$73308050.lookup(<generated>)
+	at javax.naming.InitialContext.lookup(InitialContext.java:417)
+	at org.apache.logging.log4j.core.net.jms.AbstractJMSManager.lookup(AbstractJMSManager.java:78)
+	at org.apache.logging.log4j.core.net.jms.JMSQueueManager.connect(JMSQueueManager.java:183)
+	at org.apache.logging.log4j.core.net.jms.JMSQueueManager.send(JMSQueueManager.java:106)
+	at org.apache.logging.log4j.core.appender.jms.JMSQueueAppender.append(JMSQueueAppender.java:56)
+	... 40 more
+
+2022-07-15 19:45:39,607 ERROR An exception occurred processing Appender Rewrite org.apache.logging.log4j.core.appender.AppenderLoggingException: javax.naming.NameNotFoundException: Name Log4j2Queue not found. 
+	at org.apache.logging.log4j.core.appender.jms.JMSQueueAppender.append(JMSQueueAppender.java:58)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:97)
+	at org.apache.logging.log4j.core.appender.rewrite.RewriteAppender.append(RewriteAppender.java:88)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:97)
+	at org.apache.logging.log4j.core.appender.FailoverAppender.callAppender(FailoverAppender.java:116)
+	at org.apache.logging.log4j.core.appender.FailoverAppender.append(FailoverAppender.java:108)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:97)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:429)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:408)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:368)
+	at org.apache.logging.log4j.core.Logger.logMessage(Logger.java:103)
+	at org.apache.logging.log4j.spi.AbstractLoggerProvider.logMessage(AbstractLoggerProvider.java:1336)
+	at org.apache.logging.log4j.spi.AbstractLoggerProvider.logIfEnabled(AbstractLoggerProvider.java:1325)
+	at org.apache.logging.log4j.spi.AbstractLoggerProvider.debug(AbstractLoggerProvider.java:319)
+	at org.apache.logging.log4j.core.net.jms.JMSQueueFailoverTest.testFailover(JMSQueueFailoverTest.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: javax.naming.NameNotFoundException: Name Log4j2Queue not found. 
+	at org.mockejb.jndi.MockContext.lookup(MockContext.java:543)
+	at org.mockejb.jndi.MockContext$$FastClassByCGLIB$$8f78c5.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at org.mockejb.interceptor.InterceptorInvoker$CglibMethodInvoker.intercept(InterceptorInvoker.java:95)
+	at org.mockejb.interceptor.InvocationContext.proceed(InvocationContext.java:177)
+	at org.mockejb.interceptor.InterceptorInvoker.invoke(InterceptorInvoker.java:53)
+	at org.mockejb.interceptor.InterceptableProxy.intercept(InterceptableProxy.java:58)
+	at $javax.naming.Context$$EnhancerByCGLIB$$73308050.lookup(<generated>)
+	at javax.naming.InitialContext.lookup(InitialContext.java:417)
+	at org.apache.logging.log4j.core.net.jms.AbstractJMSManager.lookup(AbstractJMSManager.java:78)
+	at org.apache.logging.log4j.core.net.jms.JMSQueueManager.connect(JMSQueueManager.java:183)
+	at org.apache.logging.log4j.core.net.jms.JMSQueueManager.send(JMSQueueManager.java:106)
+	at org.apache.logging.log4j.core.appender.jms.JMSQueueAppender.append(JMSQueueAppender.java:56)
+	... 40 more
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.58 sec - in org.apache.logging.log4j.core.net.jms.JMSQueueFailoverTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.net.jms.JMSTopicFailoverTest
+2022-07-15 19:45:40,406 ERROR An exception occurred processing Appender Log4j2Topic org.apache.logging.log4j.core.appender.AppenderLoggingException: javax.naming.NameNotFoundException: Name Log4j2Topic not found. 
+	at org.apache.logging.log4j.core.appender.jms.JMSTopicAppender.append(JMSTopicAppender.java:58)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:97)
+	at org.apache.logging.log4j.core.appender.rewrite.RewriteAppender.append(RewriteAppender.java:88)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:97)
+	at org.apache.logging.log4j.core.appender.FailoverAppender.callAppender(FailoverAppender.java:116)
+	at org.apache.logging.log4j.core.appender.FailoverAppender.append(FailoverAppender.java:108)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:97)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:429)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:408)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:368)
+	at org.apache.logging.log4j.core.Logger.logMessage(Logger.java:103)
+	at org.apache.logging.log4j.spi.AbstractLoggerProvider.logMessage(AbstractLoggerProvider.java:1336)
+	at org.apache.logging.log4j.spi.AbstractLoggerProvider.logIfEnabled(AbstractLoggerProvider.java:1325)
+	at org.apache.logging.log4j.spi.AbstractLoggerProvider.debug(AbstractLoggerProvider.java:319)
+	at org.apache.logging.log4j.core.net.jms.JMSTopicFailoverTest.testFailover(JMSTopicFailoverTest.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: javax.naming.NameNotFoundException: Name Log4j2Topic not found. 
+	at org.mockejb.jndi.MockContext.lookup(MockContext.java:543)
+	at org.mockejb.jndi.MockContext$$FastClassByCGLIB$$8f78c5.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at org.mockejb.interceptor.InterceptorInvoker$CglibMethodInvoker.intercept(InterceptorInvoker.java:95)
+	at org.mockejb.interceptor.InvocationContext.proceed(InvocationContext.java:177)
+	at org.mockejb.interceptor.InterceptorInvoker.invoke(InterceptorInvoker.java:53)
+	at org.mockejb.interceptor.InterceptableProxy.intercept(InterceptableProxy.java:58)
+	at $javax.naming.Context$$EnhancerByCGLIB$$73308050.lookup(<generated>)
+	at javax.naming.InitialContext.lookup(InitialContext.java:417)
+	at org.apache.logging.log4j.core.net.jms.AbstractJMSManager.lookup(AbstractJMSManager.java:78)
+	at org.apache.logging.log4j.core.net.jms.JMSTopicManager.connect(JMSTopicManager.java:183)
+	at org.apache.logging.log4j.core.net.jms.JMSTopicManager.send(JMSTopicManager.java:106)
+	at org.apache.logging.log4j.core.appender.jms.JMSTopicAppender.append(JMSTopicAppender.java:56)
+	... 40 more
+
+2022-07-15 19:45:40,410 ERROR An exception occurred processing Appender Rewrite org.apache.logging.log4j.core.appender.AppenderLoggingException: javax.naming.NameNotFoundException: Name Log4j2Topic not found. 
+	at org.apache.logging.log4j.core.appender.jms.JMSTopicAppender.append(JMSTopicAppender.java:58)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:97)
+	at org.apache.logging.log4j.core.appender.rewrite.RewriteAppender.append(RewriteAppender.java:88)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:97)
+	at org.apache.logging.log4j.core.appender.FailoverAppender.callAppender(FailoverAppender.java:116)
+	at org.apache.logging.log4j.core.appender.FailoverAppender.append(FailoverAppender.java:108)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:97)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:429)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:408)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:368)
+	at org.apache.logging.log4j.core.Logger.logMessage(Logger.java:103)
+	at org.apache.logging.log4j.spi.AbstractLoggerProvider.logMessage(AbstractLoggerProvider.java:1336)
+	at org.apache.logging.log4j.spi.AbstractLoggerProvider.logIfEnabled(AbstractLoggerProvider.java:1325)
+	at org.apache.logging.log4j.spi.AbstractLoggerProvider.debug(AbstractLoggerProvider.java:319)
+	at org.apache.logging.log4j.core.net.jms.JMSTopicFailoverTest.testFailover(JMSTopicFailoverTest.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: javax.naming.NameNotFoundException: Name Log4j2Topic not found. 
+	at org.mockejb.jndi.MockContext.lookup(MockContext.java:543)
+	at org.mockejb.jndi.MockContext$$FastClassByCGLIB$$8f78c5.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at org.mockejb.interceptor.InterceptorInvoker$CglibMethodInvoker.intercept(InterceptorInvoker.java:95)
+	at org.mockejb.interceptor.InvocationContext.proceed(InvocationContext.java:177)
+	at org.mockejb.interceptor.InterceptorInvoker.invoke(InterceptorInvoker.java:53)
+	at org.mockejb.interceptor.InterceptableProxy.intercept(InterceptableProxy.java:58)
+	at $javax.naming.Context$$EnhancerByCGLIB$$73308050.lookup(<generated>)
+	at javax.naming.InitialContext.lookup(InitialContext.java:417)
+	at org.apache.logging.log4j.core.net.jms.AbstractJMSManager.lookup(AbstractJMSManager.java:78)
+	at org.apache.logging.log4j.core.net.jms.JMSTopicManager.connect(JMSTopicManager.java:183)
+	at org.apache.logging.log4j.core.net.jms.JMSTopicManager.send(JMSTopicManager.java:106)
+	at org.apache.logging.log4j.core.appender.jms.JMSTopicAppender.append(JMSTopicAppender.java:56)
+	... 40 more
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.6 sec - in org.apache.logging.log4j.core.net.jms.JMSTopicFailoverTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.net.jms.JMSQueueAppenderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.536 sec - in org.apache.logging.log4j.core.net.jms.JMSQueueAppenderTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.net.SocketMessageLossTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.451 sec - in org.apache.logging.log4j.core.net.SocketMessageLossTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.net.ssl.KeyStoreConfigurationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 sec - in org.apache.logging.log4j.core.net.ssl.KeyStoreConfigurationTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.net.ssl.SSLConfigurationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.523 sec - in org.apache.logging.log4j.core.net.ssl.SSLConfigurationTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.net.ssl.StoreConfigurationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.024 sec - in org.apache.logging.log4j.core.net.ssl.StoreConfigurationTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.net.ssl.TrustStoreConfigurationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.117 sec - in org.apache.logging.log4j.core.net.ssl.TrustStoreConfigurationTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.net.PriorityTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in org.apache.logging.log4j.core.net.PriorityTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.net.SocketTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.459 sec - in org.apache.logging.log4j.core.net.SocketTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.HostNameTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.529 sec - in org.apache.logging.log4j.core.HostNameTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.LoggerTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.574 sec - in org.apache.logging.log4j.core.LoggerTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.core.ExtendedLevelTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.438 sec - in org.apache.logging.log4j.core.ExtendedLevelTest
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.logging.log4j.MarkerMixInTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.292 sec - in org.apache.logging.log4j.MarkerMixInTest
+
+Results :
+
+Tests run: 565, Failures: 0, Errors: 0, Skipped: 23
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:09 min
+[INFO] Finished at: 2022-07-15T19:45:50-07:00
+[INFO] ------------------------------------------------------------------------ERROR StatusLogger LogManager returned an instance of org.apache.logging.log4j.simple.SimpleLoggerContextFactory which does not implement org.apache.logging.log4j.core.impl.Log4jContextFactory. Unable to initialize Log4j
+ERROR StatusLogger LogManager returned an instance of org.apache.logging.log4j.simple.SimpleLoggerContextFactory which does not implement org.apache.logging.log4j.core.impl.Log4jContextFactory. Unable to initialize Log4j
+ERROR StatusLogger TCPSocketManager (TCP:localhost:5560) java.net.ConnectException: Connection refused (Connection refused)
+ERROR StatusLogger TCPSocketManager (TCP:localhost:5560) java.net.ConnectException: Connection refused (Connection refused)
+ERROR StatusLogger TCPSocketManager (TCP:localhost:5560) java.net.ConnectException: Connection refused (Connection refused)
+ERROR StatusLogger Charset INeedMoreSupport is not supported for layout, using UTF-8
+log4j:WARN No appenders could be found for logger (org.mockejb.jndi.MockContext).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+log4j:WARN No appenders could be found for logger (org.mockejb.jndi.MockContext).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+log4j:WARN No appenders could be found for logger (org.mockejb.jndi.MockContext).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+ERROR StatusLogger Attributes entityClassName and persistenceUnitName are required for JPA Appender.
+ERROR StatusLogger Entity class [org.apache.logging.log4j.core.appender.db.jpa.JpaHyperSqlAppenderTest$BadConstructorEntity1] does not have a no-arg constructor. The JPA provider will reject it.
+ERROR StatusLogger Entity class [org.apache.logging.log4j.core.appender.db.jpa.JpaHyperSqlAppenderTest$BadConstructorEntity2] does not have a constructor with a single argument of type LogEvent.
+ERROR StatusLogger Attributes entityClassName and persistenceUnitName are required for JPA Appender.
+ERROR StatusLogger Could not load entity class [com.foo.Bar]. java.lang.ClassNotFoundException: com.foo.Bar
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at org.apache.logging.log4j.core.util.Loader.loadClassWithDefaultClassLoader(Loader.java:259)
+	at org.apache.logging.log4j.core.util.Loader.loadClass(Loader.java:254)
+	at org.apache.logging.log4j.core.appender.db.jpa.JPAAppender.createAppender(JPAAppender.java:88)
+	at org.apache.logging.log4j.core.appender.db.jpa.JpaHyperSqlAppenderTest.testBadEntityClassName(JpaHyperSqlAppenderTest.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+ERROR StatusLogger Entity class [java.lang.Object] does not extend AbstractLogEventWrapperEntity.
+log4j:WARN No appenders could be found for logger (org.mockejb.jndi.MockContext).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+log4j:WARN No appenders could be found for logger (org.mockejb.jndi.MockContext).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+log4j:WARN No appenders could be found for logger (org.mockejb.jndi.MockContext).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+ERROR StatusLogger The pattern, literal, and isEventTimestamp attributes are mutually exclusive.
+ERROR StatusLogger The pattern, literal, and isEventTimestamp attributes are mutually exclusive.
+ERROR StatusLogger The column config is not valid because it does not contain a column name.
+ERROR StatusLogger The pattern, literal, and isEventTimestamp attributes are mutually exclusive.
+ERROR StatusLogger To configure a column you must specify a pattern or literal or set isEventDate to true.
+ERROR StatusLogger To configure a column you must specify a pattern or literal or set isEventDate to true.
+ERROR StatusLogger To configure a column you must specify a pattern or literal or set isEventDate to true.
+ERROR StatusLogger TCPSocketManager (TCP:localhost:8300) java.net.ConnectException: Connection refused (Connection refused)
+ERROR StatusLogger TCPSocketManager (TCP:localhost:8301) java.net.ConnectException: Connection refused (Connection refused)
+ERROR StatusLogger Unable to write to stream TCP:localhost:8301 for appender Test
+ERROR StatusLogger An exception occurred processing Appender Test org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to TCP:localhost:8301 socket not available
+	at org.apache.logging.log4j.core.net.TCPSocketManager.write(TCPSocketManager.java:120)
+	at org.apache.logging.log4j.core.appender.OutputStreamManager.write(OutputStreamManager.java:127)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.append(AbstractOutputStreamAppender.java:120)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:97)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:429)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:408)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:368)
+	at org.apache.logging.log4j.core.Logger.logMessage(Logger.java:103)
+	at org.apache.logging.log4j.spi.AbstractLoggerProvider.logMessage(AbstractLoggerProvider.java:1336)
+	at org.apache.logging.log4j.spi.AbstractLoggerProvider.logIfEnabled(AbstractLoggerProvider.java:1325)
+	at org.apache.logging.log4j.spi.AbstractLoggerProvider.debug(AbstractLoggerProvider.java:319)
+	at org.apache.logging.log4j.core.appender.SocketAppenderTest.testTcpAppenderNoWait(SocketAppenderTest.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+log4j:WARN No appenders could be found for logger (org.mockejb.jndi.MockContext).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+log4j:WARN No appenders could be found for logger (org.mockejb.jndi.MockContext).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+log4j:WARN No appenders could be found for logger (org.mockejb.jndi.MockContext).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+log4j:WARN No appenders could be found for logger (org.mockejb.jndi.MockContext).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+log4j:WARN No appenders could be found for logger (org.mockejb.jndi.MockContext).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Initializing server
+ERROR StatusLogger Something is wrong with the format of the keystore or the given password
+ERROR StatusLogger Something is wrong with the format of the keystore or the given password
+ERROR StatusLogger The key cannot be recovered (e.g. the given password is wrong)
+ERROR StatusLogger Something is wrong with the format of the truststore or the given password: Keystore was tampered with, or password was incorrect
+ERROR StatusLogger Something is wrong with the format of the truststore or the given password: The location is null
+Initializing logger
+ERROR StatusLogger TCPSocketManager (TCP:localhost:5514) java.net.ConnectException: Connection refused (Connection refused)

@@ -1,0 +1,621 @@
+Apache Maven 3.6.3
+Maven home: /usr/share/maven
+Java version: 1.8.0_342, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.15.0-41-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO] --- tiles-maven-plugin: Injecting 2 tiles as intermediary parent artifact's...
+[INFO] Mixed 'io.github.hexagonframework.data:spring-data-ebean:1.4.1.RELEASE' with tile 'org.avaje.tile:java-compile:1.1' as it's new parent.
+[INFO] Mixed 'org.avaje.tile:java-compile:1.1' with tile 'io.ebean.tile:enhancement:5.5' as it's new parent.
+[INFO] Mixed 'io.ebean.tile:enhancement:5.5' with original parent '(no parent)' as it's  new top level parent.
+[INFO] 
+[INFO] 
+[INFO] ---------< io.github.hexagonframework.data:spring-data-ebean >----------
+[INFO] Building Spring Data Ebean 1.4.1.RELEASE
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-data-ebean ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ spring-data-ebean ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 50 source files to /On-the-Reproducibility/section-2/reproducibility-scanner/reproducer/workspace/Bears-213/target/classes
+[INFO] 
+[INFO] --- ebean-maven-plugin:11.11.1:enhance (io.ebean.tile:enhancement:5.5::main) @ spring-data-ebean ---
+[INFO] classLoaderClass=class java.net.FactoryURLClassLoader  packages=java.net.FactoryURLClassLoader@3833897c
+[INFO] classSource=/On-the-Reproducibility/section-2/reproducibility-scanner/reproducer/workspace/Bears-213/target/classes  transformArgs=debug=0  packages=
+[INFO] Enhanced /On-the-Reproducibility/section-2/reproducibility-scanner/reproducer/workspace/Bears-213/target/classes/org/springframework/data/ebean/domain/AbstractEntity.class
+[INFO] Enhanced /On-the-Reproducibility/section-2/reproducibility-scanner/reproducer/workspace/Bears-213/target/classes/org/springframework/data/ebean/domain/AbstractAggregateRoot.class
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-data-ebean ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ spring-data-ebean ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ebean-maven-plugin:11.11.1:testEnhance (io.ebean.tile:enhancement:5.5::test) @ spring-data-ebean ---
+[INFO] classLoaderClass=class java.net.FactoryURLClassLoader  packages=java.net.FactoryURLClassLoader@553d828a
+[INFO] classSource=/On-the-Reproducibility/section-2/reproducibility-scanner/reproducer/workspace/Bears-213/target/test-classes  transformArgs=debug=0  packages=
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ spring-data-ebean ---
+[INFO] Surefire report directory: /On-the-Reproducibility/section-2/reproducibility-scanner/reproducer/workspace/Bears-213/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.data.ebean.querychannel.EbeanQueryChannelServiceIntegrationTest
+13:07:44.409 [main] INFO  i.e.config.properties.LoadContext - loaded properties from [application.properties]
+13:07:44.450 [main] INFO  io.ebean.EbeanVersion - ebean version: 11.15.5
+13:07:44.475 [main] WARN  io.ebean.internal.DefaultContainer - DataSource [db] has autoCommit defaulting to true!
+13:07:44.488 [main] INFO  io.ebean.internal.DefaultContainer - DatabasePlatform name:db platform:h2
+13:07:44.884 [main] TRACE io.ebean.TXN - txn[1001] Begin
+13:07:44.886 [main] INFO  io.ebean.DDL - Executing db-drop-all.sql - 14 statements
+13:07:44.892 [main] DEBUG io.ebean.TXN - txn[1001] Commit
+13:07:44.895 [main] TRACE io.ebean.TXN - txn[1002] Begin
+13:07:44.896 [main] INFO  io.ebean.DDL - Executing db-create-all.sql - 14 statements
+13:07:44.975 [main] DEBUG io.ebean.TXN - txn[1002] Commit
+13:07:45.401 [main] DEBUG io.ebean.SQL - txn[s1545666472] delete from user; --bind() rows:0
+13:07:45.401 [main] DEBUG io.ebean.TXN - txn[s1545666472] Commit
+13:07:45.418 [main] DEBUG io.ebean.SQL - txn[s665512315] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,testquerychannel@163.com,[LOB],null,test,2022-08-18T13:07:45.413,test,2022-08-18T13:07:45.413,QueryChannel,Test,null,null,null,null,null)
+13:07:45.425 [main] DEBUG io.ebean.SUM - txn[s665512315] Inserted [User] [1]
+13:07:45.426 [main] DEBUG io.ebean.TXN - txn[s665512315] Commit
+13:07:45.435 [main] DEBUG io.ebean.SQL - txn[1003] select first_name, last_name, email_address from user where email_address = ?; --bind(testquerychannel@163.com)
+13:07:45.446 [main] DEBUG io.ebean.SQL - txn[s1651689839] delete from user; --bind() rows:1
+13:07:45.446 [main] DEBUG io.ebean.TXN - txn[s1651689839] Commit
+13:07:45.448 [main] DEBUG io.ebean.SQL - txn[s1015659282] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,testquerychannel@163.com,[LOB],null,test,2022-08-18T13:07:45.447,test,2022-08-18T13:07:45.447,QueryChannel,Test,null,null,null,null,null)
+13:07:45.448 [main] DEBUG io.ebean.SUM - txn[s1015659282] Inserted [User] [2]
+13:07:45.449 [main] DEBUG io.ebean.TXN - txn[s1015659282] Commit
+13:07:45.455 [main] DEBUG io.ebean.SQL - txn[1004] select first_name, last_name, email_address from user where last_name= ?; --bind(Test)
+13:07:45.456 [main] DEBUG io.ebean.SUM - txn[1004] FindMany type[UserInfo] origin[MJcoa.A.A] exeMicros[1354] rows[1] predicates[] bind[Test]
+13:07:45.458 [main] DEBUG io.ebean.SQL - txn[1005] select first_name as firstName, last_name as lastName, email_address as emailAddress from user where last_name= ?; --bind(Test)
+13:07:45.458 [main] DEBUG io.ebean.SUM - txn[1005] FindMany type[UserInfo] origin[MJcoa.A.A] exeMicros[595] rows[1] predicates[] bind[Test]
+13:07:45.459 [main] DEBUG io.ebean.SQL - txn[1006] select first_name, last_name, email_address from user where last_name= ?; --bind(Test)
+13:07:45.459 [main] DEBUG io.ebean.SUM - txn[1006] FindMany type[UserInfo] origin[MJcoa.A.A] exeMicros[500] rows[1] predicates[] bind[Test]
+13:07:45.461 [main] DEBUG io.ebean.SQL - txn[s1499825229] delete from user; --bind() rows:1
+13:07:45.462 [main] DEBUG io.ebean.TXN - txn[s1499825229] Commit
+13:07:45.463 [main] DEBUG io.ebean.SQL - txn[s1285072597] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,testquerychannel@163.com,[LOB],null,test,2022-08-18T13:07:45.463,test,2022-08-18T13:07:45.463,QueryChannel,Test,null,null,null,null,null)
+13:07:45.464 [main] DEBUG io.ebean.SUM - txn[s1285072597] Inserted [User] [3]
+13:07:45.465 [main] DEBUG io.ebean.TXN - txn[s1285072597] Commit
+13:07:45.466 [main] DEBUG io.ebean.SQL - txn[1007] \n                 select first_name,\n                 last_name,\n                 email_address\n                 from user\n                 where email_address = ?\n             ; --bind(testquerychannel@163.com)
+13:07:45.468 [main] DEBUG io.ebean.SQL - txn[s1832657711] delete from user; --bind() rows:1
+13:07:45.469 [main] DEBUG io.ebean.TXN - txn[s1832657711] Commit
+13:07:45.470 [main] DEBUG io.ebean.SQL - txn[s1598047636] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,testquerychannel@163.com,[LOB],null,test,2022-08-18T13:07:45.470,test,2022-08-18T13:07:45.470,QueryChannel,Test,null,null,null,null,null)
+13:07:45.471 [main] DEBUG io.ebean.SUM - txn[s1598047636] Inserted [User] [4]
+13:07:45.471 [main] DEBUG io.ebean.TXN - txn[s1598047636] Commit
+13:07:45.478 [main] DEBUG io.ebean.SQL - txn[1008] select first_name, last_name, email_address from user  where lower(email_address) like ? escape'|'  and age >= ?  and age <= ?; --bind(%testquerychannel@163.com%,1,30)
+13:07:45.479 [main] DEBUG io.ebean.SUM - txn[1008] FindMany type[UserInfo] origin[MJcoa.A.A] exeMicros[1932] rows[1] predicates[lower(email_address) like ? escape'|'  and age >= ?  and age <= ? ] bind[%testquerychannel@163.com%,1,30]
+13:07:45.481 [main] DEBUG io.ebean.SQL - txn[s628164202] delete from user; --bind() rows:1
+13:07:45.481 [main] DEBUG io.ebean.TXN - txn[s628164202] Commit
+13:07:45.483 [main] DEBUG io.ebean.SQL - txn[s1736150547] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,testquerychannel@163.com,[LOB],null,test,2022-08-18T13:07:45.482,test,2022-08-18T13:07:45.482,QueryChannel,Test,null,null,null,null,null)
+13:07:45.484 [main] DEBUG io.ebean.SUM - txn[s1736150547] Inserted [User] [5]
+13:07:45.484 [main] DEBUG io.ebean.TXN - txn[s1736150547] Commit
+13:07:45.487 [main] DEBUG io.ebean.SQL - txn[1009] select t0.id, t0.email_address, t0.first_name, t0.last_name, t0.age from user t0 where lower(t0.email_address) like ? escape'|'  and t0.age >= ?  and t0.age <= ? ; --bind(%testquerychannel@163.com%,1,30)
+13:07:45.490 [main] DEBUG io.ebean.SUM - txn[1009] FindMany type[User] origin[BgN1-0.A.A] exeMicros[3577] rows[1] predicates[lower(t0.email_address) like ? escape'|'  and t0.age >= ?  and t0.age <= ? ] bind[%testquerychannel@163.com%,1,30]
+13:07:45.492 [main] DEBUG io.ebean.SQL - txn[1010] select t0.email_address, t0.first_name, t0.last_name, t0.age from user t0 where lower(t0.email_address) like ? escape'|'  and t0.age >= ?  and t0.age <= ? ; --bind(%testquerychannel@163.com%,1,30)
+13:07:45.498 [main] DEBUG io.ebean.SQL - txn[s973219190] delete from user; --bind() rows:1
+13:07:45.499 [main] DEBUG io.ebean.TXN - txn[s973219190] Commit
+13:07:45.500 [main] DEBUG io.ebean.SQL - txn[s836621476] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,testquerychannel@163.com,[LOB],null,test,2022-08-18T13:07:45.499,test,2022-08-18T13:07:45.499,QueryChannel,Test,null,null,null,null,null)
+13:07:45.501 [main] DEBUG io.ebean.SUM - txn[s836621476] Inserted [User] [6]
+13:07:45.501 [main] DEBUG io.ebean.TXN - txn[s836621476] Commit
+13:07:45.502 [main] DEBUG io.ebean.SQL - txn[1011] select first_name, last_name, email_address from user  where email_address = ?; --bind(testquerychannel@163.com)
+13:07:45.503 [main] DEBUG io.ebean.SUM - txn[1011] FindMany type[UserInfo] origin[MJcoa.A.A] exeMicros[514] rows[1] predicates[email_address = ? ] bind[testquerychannel@163.com]
+13:07:45.504 [main] DEBUG io.ebean.SQL - txn[s482032955] delete from user; --bind() rows:1
+13:07:45.505 [main] DEBUG io.ebean.TXN - txn[s482032955] Commit
+13:07:45.506 [main] DEBUG io.ebean.SQL - txn[s832066800] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,testquerychannel@163.com,[LOB],null,test,2022-08-18T13:07:45.505,test,2022-08-18T13:07:45.505,QueryChannel,Test,null,null,null,null,null)
+13:07:45.507 [main] DEBUG io.ebean.SUM - txn[s832066800] Inserted [User] [7]
+13:07:45.508 [main] DEBUG io.ebean.TXN - txn[s832066800] Commit
+13:07:45.509 [main] DEBUG io.ebean.SQL - txn[1012] select first_name, last_name, email_address from user                 where email_address = ?  order by id desc; --bind(testquerychannel@163.com)
+13:07:45.509 [main] DEBUG io.ebean.SUM - txn[1012] FindMany type[UserInfo] origin[MJcoa.A.A] exeMicros[604] rows[1] predicates[] bind[testquerychannel@163.com]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.328 sec
+Running org.springframework.data.ebean.repository.UserRepositoryIntegrationTest
+13:07:45.521 [main] DEBUG io.ebean.SQL - txn[s516934601] delete from user; --bind() rows:1
+13:07:45.521 [main] DEBUG io.ebean.TXN - txn[s516934601] Commit
+13:07:45.523 [main] DEBUG io.ebean.SQL - txn[s893320639] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.522,test,2022-08-18T13:07:45.522,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.524 [main] DEBUG io.ebean.SUM - txn[s893320639] Inserted [User] [8]
+13:07:45.524 [main] DEBUG io.ebean.TXN - txn[s893320639] Commit
+13:07:45.525 [main] DEBUG io.ebean.SQL - txn[s147089688] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,findOneByProperty_fetchPath@163.com,[LOB],null,test,2022-08-18T13:07:45.524,test,2022-08-18T13:07:45.524,findOneByProperty_fetchPath,findOneByProperty_fetchPath,null,null,null,null,null)
+13:07:45.526 [main] DEBUG io.ebean.SUM - txn[s147089688] Inserted [User] [9]
+13:07:45.526 [main] DEBUG io.ebean.TXN - txn[s147089688] Commit
+13:07:45.528 [main] DEBUG io.ebean.SQL - txn[s604602011] select t0.id, t0.email_address from user t0 where t0.id = ?  ; --bind(9, )
+13:07:45.529 [main] DEBUG io.ebean.SUM - txn[s604602011] FindBean type[User] origin[BgN1-z.A.A] exeMicros[629] rows[1] bind[9, ]
+13:07:45.529 [main] DEBUG io.ebean.TXN - txn[s604602011] Commit
+13:07:45.531 [main] DEBUG io.ebean.SQL - txn[s356476647] delete from user; --bind() rows:2
+13:07:45.531 [main] DEBUG io.ebean.TXN - txn[s356476647] Commit
+13:07:45.533 [main] DEBUG io.ebean.SQL - txn[s1449987177] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.532,test,2022-08-18T13:07:45.532,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.533 [main] DEBUG io.ebean.SUM - txn[s1449987177] Inserted [User] [10]
+13:07:45.534 [main] DEBUG io.ebean.TXN - txn[s1449987177] Commit
+13:07:45.537 [main] DEBUG io.ebean.SQL - txn[s1985869725] update user set age=?, last_modified_by=?, last_modified_date=? where id=?; --bind(32,test,2022-08-18T13:07:45.535,1)
+13:07:45.537 [main] DEBUG io.ebean.SUM - txn[s1985869725] Updated [User] [1]
+13:07:45.537 [main] DEBUG io.ebean.SQL - txn[s1985869725] update user set age=?, last_modified_by=?, last_modified_date=? where id=?; --bind(32,test,2022-08-18T13:07:45.537,2)
+13:07:45.537 [main] DEBUG io.ebean.SUM - txn[s1985869725] Updated [User] [2]
+13:07:45.538 [main] DEBUG io.ebean.SQL - txn[s1985869725] update user set age=?, last_modified_by=?, last_modified_date=? where id=?; --bind(32,test,2022-08-18T13:07:45.538,3)
+13:07:45.538 [main] DEBUG io.ebean.SUM - txn[s1985869725] Updated [User] [3]
+13:07:45.538 [main] DEBUG io.ebean.TXN - txn[s1985869725] Commit
+13:07:45.543 [main] DEBUG io.ebean.SQL - txn[s939391749] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where t0.id in (?, ?, ? ) ; --bind(Array[3]={1,2,3})
+13:07:45.543 [main] DEBUG io.ebean.SUM - txn[s939391749] FindMany type[User] origin[BgN1-0.A.A] exeMicros[2754] rows[0] predicates[t0.id in (?, ?, ? ) ] bind[Array[3]={1,2,3}]
+13:07:45.544 [main] DEBUG io.ebean.TXN - txn[s939391749] Commit
+13:07:45.545 [main] DEBUG io.ebean.SQL - txn[s513279161] delete from user; --bind() rows:1
+13:07:45.546 [main] DEBUG io.ebean.TXN - txn[s513279161] Commit
+13:07:45.547 [main] DEBUG io.ebean.SQL - txn[s1374432753] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.546,test,2022-08-18T13:07:45.546,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.548 [main] DEBUG io.ebean.SUM - txn[s1374432753] Inserted [User] [11]
+13:07:45.548 [main] DEBUG io.ebean.TXN - txn[s1374432753] Commit
+13:07:45.549 [main] DEBUG io.ebean.SQL - txn[s2141932519] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,findAll_example_sort@163.com,[LOB],null,test,2022-08-18T13:07:45.549,test,2022-08-18T13:07:45.549,findAll_example_sort,findAll_example_sort,null,null,null,null,null)
+13:07:45.550 [main] DEBUG io.ebean.SUM - txn[s2141932519] Inserted [User] [12]
+13:07:45.550 [main] DEBUG io.ebean.TXN - txn[s2141932519] Commit
+13:07:45.559 [main] DEBUG io.ebean.SQL - txn[s1231036290] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where (t0.id = ?  and lower(t0.first_name) like ? escape'|'  and lower(t0.last_name) like ? escape'|'  and t0.active = ?  and lower(t0.email_address) like ? escape'|'  and lower(t0.created_by) like ? escape'|'  and t0.created_date = ?  and lower(t0.last_modified_by) like ? escape'|'  and t0.last_modified_date = ? )  order by t0.id desc; --bind(12,%findall|_example|_sort%,%findall|_example|_sort%,true,%findall|_example|_sort%,%test%,2022-08-18T13:07:45.549,%test%,2022-08-18T13:07:45.549)
+13:07:45.561 [main] DEBUG io.ebean.SUM - txn[s1231036290] FindMany type[User] origin[BgN1-0.A.A] exeMicros[3669] rows[1] predicates[(t0.id = ?  and lower(t0.first_name) like ? escape'|'  and lower(t0.last_name) like ? escape'|'  and t0.active = ?  and lower(t0.email_address) like ? escape'|'  and lower(t0.created_by) like ? escape'|'  and t0.created_date = ?  and lower(t0.last_modified_by) like ? escape'|'  and t0.last_modified_date = ? ) ] bind[12,%findall|_example|_sort%,%findall|_example|_sort%,true,%findall|_example|_sort%,%test%,2022-08-18T13:07:45.549,%test%,2022-08-18T13:07:45.549]
+13:07:45.561 [main] DEBUG io.ebean.TXN - txn[s1231036290] Commit
+13:07:45.563 [main] DEBUG io.ebean.SQL - txn[s1968298538] delete from user; --bind() rows:2
+13:07:45.564 [main] DEBUG io.ebean.TXN - txn[s1968298538] Commit
+13:07:45.565 [main] DEBUG io.ebean.SQL - txn[s101601906] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.564,test,2022-08-18T13:07:45.564,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.565 [main] DEBUG io.ebean.SUM - txn[s101601906] Inserted [User] [13]
+13:07:45.566 [main] DEBUG io.ebean.TXN - txn[s101601906] Commit
+13:07:45.567 [main] DEBUG io.ebean.SQL - txn[s389247924] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,findOne_example@163.com,[LOB],null,test,2022-08-18T13:07:45.566,test,2022-08-18T13:07:45.566,findOne_example,findOne_example,null,null,null,null,null)
+13:07:45.567 [main] DEBUG io.ebean.SUM - txn[s389247924] Inserted [User] [14]
+13:07:45.568 [main] DEBUG io.ebean.TXN - txn[s389247924] Commit
+13:07:45.570 [main] DEBUG io.ebean.SQL - txn[s1586779822] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where (lower(t0.first_name) like ? escape'|'  and lower(t0.last_name) like ? escape'|'  and t0.active = ?  and lower(t0.email_address) like ? escape'|' ) ; --bind(%example%,%example%,true,%example%)
+13:07:45.571 [main] DEBUG io.ebean.SUM - txn[s1586779822] FindMany type[User] origin[BgN1-0.A.A] exeMicros[1508] rows[1] predicates[(lower(t0.first_name) like ? escape'|'  and lower(t0.last_name) like ? escape'|'  and t0.active = ?  and lower(t0.email_address) like ? escape'|' ) ] bind[%example%,%example%,true,%example%]
+13:07:45.571 [main] DEBUG io.ebean.TXN - txn[s1586779822] Commit
+13:07:45.573 [main] DEBUG io.ebean.SQL - txn[s2084920982] delete from user; --bind() rows:2
+13:07:45.573 [main] DEBUG io.ebean.TXN - txn[s2084920982] Commit
+13:07:45.575 [main] DEBUG io.ebean.SQL - txn[s559559860] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.574,test,2022-08-18T13:07:45.574,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.575 [main] DEBUG io.ebean.SUM - txn[s559559860] Inserted [User] [15]
+13:07:45.576 [main] DEBUG io.ebean.TXN - txn[s559559860] Commit
+13:07:45.579 [main] DEBUG io.ebean.SQL - txn[s1802029863] delete from user; --bind() rows:1
+13:07:45.580 [main] DEBUG io.ebean.TXN - txn[s1802029863] Commit
+13:07:45.581 [main] DEBUG io.ebean.SQL - txn[s499951827] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.581,test,2022-08-18T13:07:45.581,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.582 [main] DEBUG io.ebean.SUM - txn[s499951827] Inserted [User] [16]
+13:07:45.583 [main] DEBUG io.ebean.TXN - txn[s499951827] Commit
+13:07:45.584 [main] DEBUG io.ebean.SQL - txn[s1847559273] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,findOneByProperty@163.com,[LOB],null,test,2022-08-18T13:07:45.583,test,2022-08-18T13:07:45.583,findOneByProperty,findOneByProperty,null,null,null,null,null)
+13:07:45.585 [main] DEBUG io.ebean.SUM - txn[s1847559273] Inserted [User] [17]
+13:07:45.585 [main] DEBUG io.ebean.TXN - txn[s1847559273] Commit
+13:07:45.588 [main] DEBUG io.ebean.SQL - txn[s209845522] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where (t0.id = ?  and lower(t0.first_name) like ? escape'|'  and lower(t0.last_name) like ? escape'|'  and t0.active = ?  and lower(t0.email_address) like ? escape'|'  and lower(t0.created_by) like ? escape'|'  and t0.created_date = ?  and lower(t0.last_modified_by) like ? escape'|'  and t0.last_modified_date = ? ) ; --bind(17,%findonebyproperty%,%findonebyproperty%,true,%findonebyproperty%,%test%,2022-08-18T13:07:45.583,%test%,2022-08-18T13:07:45.583)
+13:07:45.589 [main] DEBUG io.ebean.SUM - txn[s209845522] FindMany type[User] origin[BgN1-0.A.A] exeMicros[1956] rows[1] predicates[(t0.id = ?  and lower(t0.first_name) like ? escape'|'  and lower(t0.last_name) like ? escape'|'  and t0.active = ?  and lower(t0.email_address) like ? escape'|'  and lower(t0.created_by) like ? escape'|'  and t0.created_date = ?  and lower(t0.last_modified_by) like ? escape'|'  and t0.last_modified_date = ? ) ] bind[17,%findonebyproperty%,%findonebyproperty%,true,%findonebyproperty%,%test%,2022-08-18T13:07:45.583,%test%,2022-08-18T13:07:45.583]
+13:07:45.589 [main] DEBUG io.ebean.TXN - txn[s209845522] Commit
+13:07:45.591 [main] DEBUG io.ebean.SQL - txn[s837719796] delete from user; --bind() rows:2
+13:07:45.591 [main] DEBUG io.ebean.TXN - txn[s837719796] Commit
+13:07:45.592 [main] DEBUG io.ebean.SQL - txn[s352083264] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.592,test,2022-08-18T13:07:45.592,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.593 [main] DEBUG io.ebean.SUM - txn[s352083264] Inserted [User] [18]
+13:07:45.593 [main] DEBUG io.ebean.TXN - txn[s352083264] Commit
+13:07:45.593 [main] DEBUG io.ebean.SQL - txn[s32206364] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,findOneByProperty@163.com,[LOB],null,test,2022-08-18T13:07:45.593,test,2022-08-18T13:07:45.593,findOneByProperty,findOneByProperty,null,null,null,null,null)
+13:07:45.594 [main] DEBUG io.ebean.SUM - txn[s32206364] Inserted [User] [19]
+13:07:45.594 [main] DEBUG io.ebean.TXN - txn[s32206364] Commit
+13:07:45.596 [main] DEBUG io.ebean.SQL - txn[s1596997325] select t0.id, t0.first_name, t0.last_name from user t0 where t0.id = ? ; --bind(19)
+13:07:45.596 [main] DEBUG io.ebean.SUM - txn[s1596997325] FindMany type[User] origin[BgN1-0.A.A] exeMicros[458] rows[1] predicates[t0.id = ? ] bind[19]
+13:07:45.596 [main] DEBUG io.ebean.TXN - txn[s1596997325] Commit
+13:07:45.598 [main] DEBUG io.ebean.SQL - txn[s696591495] delete from user; --bind() rows:2
+13:07:45.598 [main] DEBUG io.ebean.TXN - txn[s696591495] Commit
+13:07:45.599 [main] DEBUG io.ebean.SQL - txn[s648972298] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.599,test,2022-08-18T13:07:45.599,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.600 [main] DEBUG io.ebean.SUM - txn[s648972298] Inserted [User] [20]
+13:07:45.600 [main] DEBUG io.ebean.TXN - txn[s648972298] Commit
+13:07:45.602 [main] DEBUG io.ebean.SQL - txn[s62803825] delete from user where id=?; --bind(1)
+13:07:45.602 [main] DEBUG io.ebean.SUM - txn[s62803825] Deleted [User] [1]
+13:07:45.603 [main] DEBUG io.ebean.TXN - txn[s62803825] Commit
+13:07:45.604 [main] DEBUG io.ebean.SQL - txn[s62915435] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where t0.id = ?  ; --bind(1, )
+13:07:45.604 [main] DEBUG io.ebean.SUM - txn[s62915435] FindBean type[User] origin[BgN1-z.A.A] exeMicros[417] rows[0] bind[1, ]
+13:07:45.604 [main] DEBUG io.ebean.TXN - txn[s62915435] Commit
+13:07:45.606 [main] DEBUG io.ebean.SQL - txn[s1697441364] delete from user; --bind() rows:1
+13:07:45.607 [main] DEBUG io.ebean.TXN - txn[s1697441364] Commit
+13:07:45.607 [main] DEBUG io.ebean.SQL - txn[s365864880] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.607,test,2022-08-18T13:07:45.607,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.608 [main] DEBUG io.ebean.SUM - txn[s365864880] Inserted [User] [21]
+13:07:45.608 [main] DEBUG io.ebean.TXN - txn[s365864880] Commit
+13:07:45.609 [main] DEBUG io.ebean.SQL - txn[s2122256138] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,findAll_fetchPath_example_sort@163.com,[LOB],null,test,2022-08-18T13:07:45.609,test,2022-08-18T13:07:45.609,findAll_fetchPath_example_sort,findAll_fetchPath_example_sort,null,null,null,null,null)
+13:07:45.609 [main] DEBUG io.ebean.SUM - txn[s2122256138] Inserted [User] [22]
+13:07:45.610 [main] DEBUG io.ebean.TXN - txn[s2122256138] Commit
+13:07:45.612 [main] DEBUG io.ebean.SQL - txn[s1676428380] select t0.id, t0.first_name, t0.last_name from user t0 where (t0.id = ?  and lower(t0.first_name) like ? escape'|'  and lower(t0.last_name) like ? escape'|'  and t0.active = ?  and lower(t0.email_address) like ? escape'|'  and lower(t0.created_by) like ? escape'|'  and t0.created_date = ?  and lower(t0.last_modified_by) like ? escape'|'  and t0.last_modified_date = ? )  order by t0.last_name desc; --bind(22,%findall|_fetchpath|_example|_sort%,%findall|_fetchpath|_example|_sort%,true,%findall|_fetchpath|_example|_sort%,%test%,2022-08-18T13:07:45.609,%test%,2022-08-18T13:07:45.609)
+13:07:45.613 [main] DEBUG io.ebean.SUM - txn[s1676428380] FindMany type[User] origin[BgN1-0.A.A] exeMicros[1505] rows[1] predicates[(t0.id = ?  and lower(t0.first_name) like ? escape'|'  and lower(t0.last_name) like ? escape'|'  and t0.active = ?  and lower(t0.email_address) like ? escape'|'  and lower(t0.created_by) like ? escape'|'  and t0.created_date = ?  and lower(t0.last_modified_by) like ? escape'|'  and t0.last_modified_date = ? ) ] bind[22,%findall|_fetchpath|_example|_sort%,%findall|_fetchpath|_example|_sort%,true,%findall|_fetchpath|_example|_sort%,%test%,2022-08-18T13:07:45.609,%test%,2022-08-18T13:07:45.609]
+13:07:45.613 [main] DEBUG io.ebean.TXN - txn[s1676428380] Commit
+13:07:45.615 [main] DEBUG io.ebean.SQL - txn[s2050247525] delete from user; --bind() rows:2
+13:07:45.615 [main] DEBUG io.ebean.TXN - txn[s2050247525] Commit
+13:07:45.616 [main] DEBUG io.ebean.SQL - txn[s277164482] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.616,test,2022-08-18T13:07:45.616,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.617 [main] DEBUG io.ebean.SUM - txn[s277164482] Inserted [User] [23]
+13:07:45.617 [main] DEBUG io.ebean.TXN - txn[s277164482] Commit
+13:07:45.624 [main] DEBUG io.ebean.SQL - txn[1013] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where t0.email_address = ?  order by t0.id limit 20; --bind(yuanxuegui@163.com)
+13:07:45.625 [main] DEBUG io.ebean.SUM - txn[1013] FindMany type[User] origin[BgN1-0.A.A] exeMicros[1267] rows[1] predicates[t0.email_address = ? ] bind[yuanxuegui@163.com]
+13:07:45.631 [main] DEBUG io.ebean.SQL - txn[s708350323] delete from user; --bind() rows:1
+13:07:45.631 [main] DEBUG io.ebean.TXN - txn[s708350323] Commit
+13:07:45.632 [main] DEBUG io.ebean.SQL - txn[s394424498] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.632,test,2022-08-18T13:07:45.632,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.633 [main] DEBUG io.ebean.SUM - txn[s394424498] Inserted [User] [24]
+13:07:45.633 [main] DEBUG io.ebean.TXN - txn[s394424498] Commit
+13:07:45.634 [main] DEBUG io.ebean.SQL - txn[s278753868] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0; --bind()
+13:07:45.635 [main] DEBUG io.ebean.SUM - txn[s278753868] FindMany type[User] origin[BgN1-0.A.A] exeMicros[712] rows[1] predicates[] bind[]
+13:07:45.635 [main] DEBUG io.ebean.TXN - txn[s278753868] Commit
+13:07:45.636 [main] DEBUG io.ebean.SQL - txn[s1846508205] delete from user; --bind() rows:1
+13:07:45.637 [main] DEBUG io.ebean.TXN - txn[s1846508205] Commit
+13:07:45.637 [main] DEBUG io.ebean.SQL - txn[s1122118227] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.637,test,2022-08-18T13:07:45.637,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.638 [main] DEBUG io.ebean.SUM - txn[s1122118227] Inserted [User] [25]
+13:07:45.638 [main] DEBUG io.ebean.TXN - txn[s1122118227] Commit
+13:07:45.639 [main] DEBUG io.ebean.SQL - txn[s161118423] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,update@163.com,[LOB],null,test,2022-08-18T13:07:45.639,test,2022-08-18T13:07:45.639,update,update,null,null,null,null,null)
+13:07:45.640 [main] DEBUG io.ebean.SUM - txn[s161118423] Inserted [User] [26]
+13:07:45.640 [main] DEBUG io.ebean.TXN - txn[s161118423] Commit
+13:07:45.641 [main] DEBUG io.ebean.SQL - txn[s706915627] update user set age=?, last_modified_by=?, last_modified_date=? where id=?; --bind(31,test,2022-08-18T13:07:45.641,26)
+13:07:45.642 [main] DEBUG io.ebean.SUM - txn[s706915627] Updated [User] [26]
+13:07:45.642 [main] DEBUG io.ebean.TXN - txn[s706915627] Commit
+13:07:45.643 [main] DEBUG io.ebean.SQL - txn[s2086945474] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where t0.id = ?  ; --bind(26, )
+13:07:45.644 [main] DEBUG io.ebean.SUM - txn[s2086945474] FindBean type[User] origin[BgN1-z.A.A] exeMicros[675] rows[1] bind[26, ]
+13:07:45.644 [main] DEBUG io.ebean.TXN - txn[s2086945474] Commit
+13:07:45.645 [main] DEBUG io.ebean.SQL - txn[s424209001] delete from user; --bind() rows:2
+13:07:45.646 [main] DEBUG io.ebean.TXN - txn[s424209001] Commit
+13:07:45.646 [main] DEBUG io.ebean.SQL - txn[s1859153769] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.646,test,2022-08-18T13:07:45.646,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.647 [main] DEBUG io.ebean.SUM - txn[s1859153769] Inserted [User] [27]
+13:07:45.647 [main] DEBUG io.ebean.TXN - txn[s1859153769] Commit
+13:07:45.648 [main] DEBUG io.ebean.SQL - txn[s957387062] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,findById@163.com,[LOB],null,test,2022-08-18T13:07:45.648,test,2022-08-18T13:07:45.648,findById,findById,null,null,null,null,null)
+13:07:45.649 [main] DEBUG io.ebean.SUM - txn[s957387062] Inserted [User] [28]
+13:07:45.649 [main] DEBUG io.ebean.TXN - txn[s957387062] Commit
+13:07:45.650 [main] DEBUG io.ebean.SQL - txn[s1516536489] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where t0.id = ?  ; --bind(28, )
+13:07:45.651 [main] DEBUG io.ebean.SUM - txn[s1516536489] FindBean type[User] origin[BgN1-z.A.A] exeMicros[707] rows[1] bind[28, ]
+13:07:45.651 [main] DEBUG io.ebean.TXN - txn[s1516536489] Commit
+13:07:45.653 [main] DEBUG io.ebean.SQL - txn[s1953290071] delete from user; --bind() rows:2
+13:07:45.653 [main] DEBUG io.ebean.TXN - txn[s1953290071] Commit
+13:07:45.654 [main] DEBUG io.ebean.SQL - txn[s2008666311] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.653,test,2022-08-18T13:07:45.653,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.654 [main] DEBUG io.ebean.SUM - txn[s2008666311] Inserted [User] [29]
+13:07:45.654 [main] DEBUG io.ebean.TXN - txn[s2008666311] Commit
+13:07:45.655 [main] DEBUG io.ebean.SQL - txn[s737756161] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,findAll_fetchPath_ids@163.com,[LOB],null,test,2022-08-18T13:07:45.655,test,2022-08-18T13:07:45.655,findAll_fetchPath_ids,findAll_fetchPath_ids,null,null,null,null,null)
+13:07:45.655 [main] DEBUG io.ebean.SUM - txn[s737756161] Inserted [User] [30]
+13:07:45.655 [main] DEBUG io.ebean.TXN - txn[s737756161] Commit
+13:07:45.659 [main] DEBUG io.ebean.SQL - txn[s2000563893] select t0.id, t0.first_name, t0.last_name from user t0 order by t0.id desc; --bind()
+13:07:45.659 [main] DEBUG io.ebean.SUM - txn[s2000563893] FindMany type[User] origin[BgN1-0.A.A] exeMicros[689] rows[2] predicates[] bind[]
+13:07:45.659 [main] DEBUG io.ebean.TXN - txn[s2000563893] Commit
+13:07:45.661 [main] DEBUG io.ebean.SQL - txn[s997918120] delete from user; --bind() rows:2
+13:07:45.661 [main] DEBUG io.ebean.TXN - txn[s997918120] Commit
+13:07:45.662 [main] DEBUG io.ebean.SQL - txn[s1536478396] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.662,test,2022-08-18T13:07:45.662,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.662 [main] DEBUG io.ebean.SUM - txn[s1536478396] Inserted [User] [31]
+13:07:45.663 [main] DEBUG io.ebean.TXN - txn[s1536478396] Commit
+13:07:45.667 [main] DEBUG io.ebean.SQL - txn[s1527906606] delete from user; --bind() rows:1
+13:07:45.667 [main] DEBUG io.ebean.TXN - txn[s1527906606] Commit
+13:07:45.668 [main] DEBUG io.ebean.SQL - txn[s2096194236] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.668,test,2022-08-18T13:07:45.668,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.669 [main] DEBUG io.ebean.SUM - txn[s2096194236] Inserted [User] [32]
+13:07:45.669 [main] DEBUG io.ebean.TXN - txn[s2096194236] Commit
+13:07:45.670 [main] DEBUG io.ebean.SQL - txn[s350413251] update user set email_address=?, last_modified_by=?, last_modified_date=? where id=?; --bind(yuanxuegui@126.com,test,2022-08-18T13:07:45.670,32)
+13:07:45.670 [main] DEBUG io.ebean.SUM - txn[s350413251] Updated [User] [32]
+13:07:45.673 [main] DEBUG io.ebean.SQL - txn[s350413251] delete from user_role where user_id = ?
+13:07:45.674 [main] DEBUG io.ebean.SUM - txn[s350413251] DeleteSql table[user_role] rows[0] bind[32]
+UserEmailChangedEvent:Entity of type org.springframework.data.ebean.sample.domain.User with id: 32
+13:07:45.676 [main] DEBUG io.ebean.TXN - txn[s350413251] Commit
+13:07:45.679 [main] DEBUG io.ebean.SQL - txn[s1585841343] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where t0.email_address = ? ; --bind(yuanxuegui@126.com)
+13:07:45.679 [main] DEBUG io.ebean.SUM - txn[s1585841343] FindMany type[User] origin[BgN1-0.A.A] exeMicros[864] rows[1] predicates[t0.email_address = ? ] bind[yuanxuegui@126.com]
+13:07:45.679 [main] DEBUG io.ebean.TXN - txn[s1585841343] Commit
+13:07:45.681 [main] DEBUG io.ebean.SQL - txn[s1688917723] delete from user; --bind() rows:1
+13:07:45.681 [main] DEBUG io.ebean.TXN - txn[s1688917723] Commit
+13:07:45.682 [main] DEBUG io.ebean.SQL - txn[s1724399560] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.682,test,2022-08-18T13:07:45.682,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.683 [main] DEBUG io.ebean.SUM - txn[s1724399560] Inserted [User] [33]
+13:07:45.683 [main] DEBUG io.ebean.TXN - txn[s1724399560] Commit
+13:07:45.684 [main] DEBUG io.ebean.SQL - txn[s673367807] delete from user; --bind() rows:1
+13:07:45.684 [main] DEBUG io.ebean.TXN - txn[s673367807] Commit
+13:07:45.686 [main] DEBUG io.ebean.SQL - txn[s1077316166] select count(*) from user t0; --bind()
+13:07:45.686 [main] DEBUG io.ebean.SUM - txn[s1077316166] FindCount exeMicros[260] rows[0] type[org.springframework.data.ebean.sample.domain.User] predicates[] bind[]
+13:07:45.689 [main] DEBUG io.ebean.TXN - txn[s1077316166] Commit
+13:07:45.690 [main] DEBUG io.ebean.SQL - txn[s1519100796] delete from user; --bind() rows:0
+13:07:45.690 [main] DEBUG io.ebean.TXN - txn[s1519100796] Commit
+13:07:45.691 [main] DEBUG io.ebean.SQL - txn[s851033362] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.691,test,2022-08-18T13:07:45.691,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.692 [main] DEBUG io.ebean.SUM - txn[s851033362] Inserted [User] [34]
+13:07:45.692 [main] DEBUG io.ebean.TXN - txn[s851033362] Commit
+13:07:45.693 [main] DEBUG io.ebean.SQL - txn[s2121645869] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,findOneByProperty@163.com,[LOB],null,test,2022-08-18T13:07:45.692,test,2022-08-18T13:07:45.692,findOneByProperty,findOneByProperty,null,null,null,null,null)
+13:07:45.693 [main] DEBUG io.ebean.SUM - txn[s2121645869] Inserted [User] [35]
+13:07:45.693 [main] DEBUG io.ebean.TXN - txn[s2121645869] Commit
+13:07:45.695 [main] DEBUG io.ebean.SQL - txn[s1929661663] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where t0.id = ? ; --bind(35)
+13:07:45.695 [main] DEBUG io.ebean.SUM - txn[s1929661663] FindMany type[User] origin[BgN1-0.A.A] exeMicros[712] rows[1] predicates[t0.id = ? ] bind[35]
+13:07:45.695 [main] DEBUG io.ebean.TXN - txn[s1929661663] Commit
+13:07:45.697 [main] DEBUG io.ebean.SQL - txn[s161672347] delete from user; --bind() rows:2
+13:07:45.698 [main] DEBUG io.ebean.TXN - txn[s161672347] Commit
+13:07:45.698 [main] DEBUG io.ebean.SQL - txn[s822409149] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.698,test,2022-08-18T13:07:45.698,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.699 [main] DEBUG io.ebean.SUM - txn[s822409149] Inserted [User] [36]
+13:07:45.699 [main] DEBUG io.ebean.TXN - txn[s822409149] Commit
+13:07:45.700 [main] DEBUG io.ebean.SQL - txn[s1787083839] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,findAll_fetchPath_pageable@163.com,[LOB],null,test,2022-08-18T13:07:45.699,test,2022-08-18T13:07:45.699,findAll_fetchPath_pageable,findAll_fetchPath_pageable,null,null,null,null,null)
+13:07:45.700 [main] DEBUG io.ebean.SUM - txn[s1787083839] Inserted [User] [37]
+13:07:45.700 [main] DEBUG io.ebean.TXN - txn[s1787083839] Commit
+13:07:45.702 [main] DEBUG io.ebean.SQL - txn[s582819897] select t0.id, t0.first_name, t0.last_name from user t0 order by t0.id desc limit 20; --bind()
+13:07:45.702 [main] DEBUG io.ebean.SUM - txn[s582819897] FindMany type[User] origin[BgN1-0.A.A] exeMicros[588] rows[2] predicates[] bind[]
+13:07:45.703 [main] DEBUG io.ebean.SQL - txn[s582819897] select count(*) from user t0; --bind()
+13:07:45.703 [main] DEBUG io.ebean.SUM - txn[s582819897] FindCount exeMicros[158] rows[2] type[org.springframework.data.ebean.sample.domain.User] predicates[] bind[]
+13:07:45.703 [main] DEBUG io.ebean.TXN - txn[s582819897] Commit
+13:07:45.704 [main] DEBUG io.ebean.SQL - txn[s1847410999] delete from user; --bind() rows:2
+13:07:45.704 [main] DEBUG io.ebean.TXN - txn[s1847410999] Commit
+13:07:45.705 [main] DEBUG io.ebean.SQL - txn[s1471633238] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.705,test,2022-08-18T13:07:45.705,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.706 [main] DEBUG io.ebean.SUM - txn[s1471633238] Inserted [User] [38]
+13:07:45.706 [main] DEBUG io.ebean.TXN - txn[s1471633238] Commit
+13:07:45.706 [main] DEBUG io.ebean.SQL - txn[s1159694255] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,findAllById@163.com,[LOB],null,test,2022-08-18T13:07:45.706,test,2022-08-18T13:07:45.706,findAllById,findAllById,null,null,null,null,null)
+13:07:45.707 [main] DEBUG io.ebean.SUM - txn[s1159694255] Inserted [User] [39]
+13:07:45.707 [main] DEBUG io.ebean.TXN - txn[s1159694255] Commit
+13:07:45.708 [main] DEBUG io.ebean.SQL - txn[s775741122] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where t0.id in (? ) ; --bind(Array[1]={39})
+13:07:45.708 [main] DEBUG io.ebean.SUM - txn[s775741122] FindMany type[User] origin[BgN1-0.A.A] exeMicros[751] rows[1] predicates[t0.id in (? ) ] bind[Array[1]={39}]
+13:07:45.709 [main] DEBUG io.ebean.TXN - txn[s775741122] Commit
+13:07:45.710 [main] DEBUG io.ebean.SQL - txn[s525527919] delete from user; --bind() rows:2
+13:07:45.710 [main] DEBUG io.ebean.TXN - txn[s525527919] Commit
+13:07:45.711 [main] DEBUG io.ebean.SQL - txn[s1740797856] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.711,test,2022-08-18T13:07:45.711,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.711 [main] DEBUG io.ebean.SUM - txn[s1740797856] Inserted [User] [40]
+13:07:45.712 [main] DEBUG io.ebean.TXN - txn[s1740797856] Commit
+13:07:45.712 [main] DEBUG io.ebean.SQL - txn[s1498705150] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0; --bind()
+13:07:45.713 [main] DEBUG io.ebean.SUM - txn[s1498705150] FindMany type[User] origin[BgN1-0.A.A] exeMicros[545] rows[1] predicates[] bind[]
+13:07:45.713 [main] DEBUG io.ebean.TXN - txn[s1498705150] Commit
+Entity of type org.springframework.data.ebean.sample.domain.User with id: 40
+13:07:45.722 [main] DEBUG io.ebean.SQL - txn[1014] select t0.id, t0.first_name, t0.last_name, t0.country, t0.city, t0.street_name, t0.street_no, t1.id, t1.first_name, t1.last_name from user t0 left join user t1 on t1.id = t0.manager_id  where t0.last_name = ?  order by t0.id desc; --bind(Yuan)
+13:07:45.722 [main] DEBUG io.ebean.SUM - txn[1014] FindMany type[User] origin[BgN1-0.A.A] exeMicros[1547] rows[1] predicates[t0.last_name = ? ] bind[Yuan]
+13:07:45.725 [main] DEBUG io.ebean.SQL - txn[1015] select * from user where last_name = ? order by id desc; --bind()
+13:07:45.725 [main] DEBUG io.ebean.SUM - txn[1015] FindMany type[User] origin[BgN1-0.A.A] exeMicros[383] rows[1] predicates[] bind[]
+13:07:45.725 [main] DEBUG io.ebean.TXN - txn[1015] Commit
+13:07:45.728 [main] DEBUG io.ebean.SQL - txn[1016] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where t0.email_address = ?  order by t0.id desc; --bind(yuanxuegui@163.com)
+13:07:45.728 [main] DEBUG io.ebean.SUM - txn[1016] FindMany type[User] origin[BgN1-0.A.A] exeMicros[702] rows[1] predicates[t0.email_address = ? ] bind[yuanxuegui@163.com]
+13:07:45.730 [main] DEBUG io.ebean.SQL - txn[1017] select * from user where email_address = ? order by id desc; --bind()
+13:07:45.730 [main] DEBUG io.ebean.SUM - txn[1017] FindMany type[User] origin[BgN1-0.A.A] exeMicros[268] rows[1] predicates[] bind[]
+13:07:45.730 [main] DEBUG io.ebean.TXN - txn[1017] Commit
+13:07:45.731 [main] DEBUG io.ebean.SQL - txn[1018] update user set email_address = ? where email_address = ?
+13:07:45.732 [main] DEBUG io.ebean.SUM - txn[1018] UpdateSql table[user] rows[1] bind[yuanxuegui@126.com, yuanxuegui@163.com]
+13:07:45.732 [main] DEBUG io.ebean.TXN - txn[1018] Commit
+13:07:45.734 [main] DEBUG io.ebean.SQL - txn[1019] select t0.id, t0.first_name, t0.last_name, t0.country, t0.city, t0.street_name, t0.street_no, t1.id, t1.first_name, t1.last_name from user t0 left join user t1 on t1.id = t0.manager_id  where t0.last_name = ?  order by t0.id desc; --bind(Yuan)
+13:07:45.735 [main] DEBUG io.ebean.SUM - txn[1019] FindMany type[User] origin[BgN1-0.A.A] exeMicros[594] rows[1] predicates[t0.last_name = ? ] bind[Yuan]
+13:07:45.736 [main] DEBUG io.ebean.SQL - txn[1020] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where t0.id = ?  ; --bind(40, )
+13:07:45.736 [main] DEBUG io.ebean.SUM - txn[1020] FindMany mode[+lazy] type[User] origin[BgN1-0.A.A] lazyLoadProp[emailAddress] load[path:null batch:1] exeMicros[635] rows[1] predicates[] bind[40, ]
+13:07:45.737 [main] DEBUG io.ebean.SQL - txn[1021] delete from user where email_address = ?
+13:07:45.738 [main] DEBUG io.ebean.SUM - txn[1021] DeleteSql table[user] rows[1] bind[yuanxuegui@126.com]
+13:07:45.738 [main] DEBUG io.ebean.TXN - txn[1021] Commit
+13:07:45.739 [main] DEBUG io.ebean.SQL - txn[1022] select * from user where email_address = ? order by id desc; --bind(yuanxuegui@126.com)
+13:07:45.739 [main] DEBUG io.ebean.SUM - txn[1022] FindMany type[User] origin[BgN1-0.A.A] exeMicros[413] rows[0] predicates[] bind[yuanxuegui@126.com]
+13:07:45.740 [main] DEBUG io.ebean.SQL - txn[s1558460059] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.739,test,2022-08-18T13:07:45.739,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.740 [main] DEBUG io.ebean.SUM - txn[s1558460059] Inserted [User] [41]
+13:07:45.740 [main] DEBUG io.ebean.TXN - txn[s1558460059] Commit
+13:07:45.741 [main] ERROR i.e.server.query.SqlTreeBuilder - property [lastName] not found on org.springframework.data.ebean.sample.domain.User for query - excluding it.
+13:07:45.742 [main] DEBUG io.ebean.SQL - txn[1023] select t0.id, t0.first_name, t0.last_name, t0.country, t0.city, t0.street_name, t0.street_no, t1.id, t1.id from user t0 left join user t1 on t1.id = t0.manager_id  where t0.last_name = ?  order by t0.id desc; --bind(Yuan)
+13:07:45.743 [main] DEBUG io.ebean.SUM - txn[1023] FindMany type[User] origin[BgN1-0.A.A] exeMicros[1183] rows[1] predicates[t0.last_name = ? ] bind[Yuan]
+13:07:45.744 [main] DEBUG io.ebean.SQL - txn[1024] select * from user where email_address = ? order by id desc; --bind(yuanxuegui@163.com)
+13:07:45.744 [main] DEBUG io.ebean.SUM - txn[1024] FindMany type[User] origin[BgN1-0.A.A] exeMicros[854] rows[1] predicates[] bind[yuanxuegui@163.com]
+13:07:45.747 [main] DEBUG io.ebean.SQL - txn[1025] delete from user where email_address = ?
+13:07:45.748 [main] DEBUG io.ebean.SUM - txn[1025] Delete table[user] rows[1] bind[yuanxuegui@163.com]
+13:07:45.748 [main] DEBUG io.ebean.TXN - txn[1025] Commit
+13:07:45.749 [main] DEBUG io.ebean.SQL - txn[1026] select * from user where email_address = ? order by id desc; --bind(yuanxuegui@163.com)
+13:07:45.749 [main] DEBUG io.ebean.SUM - txn[1026] FindMany type[User] origin[BgN1-0.A.A] exeMicros[440] rows[0] predicates[] bind[yuanxuegui@163.com]
+13:07:45.751 [main] DEBUG io.ebean.SQL - txn[s727236] delete from user; --bind() rows:0
+13:07:45.751 [main] DEBUG io.ebean.TXN - txn[s727236] Commit
+13:07:45.752 [main] DEBUG io.ebean.SQL - txn[s366828226] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.751,test,2022-08-18T13:07:45.751,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.752 [main] DEBUG io.ebean.SUM - txn[s366828226] Inserted [User] [42]
+13:07:45.752 [main] DEBUG io.ebean.TXN - txn[s366828226] Commit
+13:07:45.755 [main] DEBUG io.ebean.SQL - txn[s668301868] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 order by t0.id desc limit 20; --bind()
+13:07:45.755 [main] DEBUG io.ebean.SUM - txn[s668301868] FindMany type[User] origin[BgN1-0.A.A] exeMicros[672] rows[1] predicates[] bind[]
+13:07:45.756 [main] DEBUG io.ebean.SQL - txn[s668301868] select count(*) from user t0; --bind()
+13:07:45.756 [main] DEBUG io.ebean.SUM - txn[s668301868] FindCount exeMicros[122] rows[1] type[org.springframework.data.ebean.sample.domain.User] predicates[] bind[]
+13:07:45.756 [main] DEBUG io.ebean.TXN - txn[s668301868] Commit
+13:07:45.757 [main] DEBUG io.ebean.SQL - txn[s1487185741] delete from user; --bind() rows:1
+13:07:45.758 [main] DEBUG io.ebean.TXN - txn[s1487185741] Commit
+13:07:45.759 [main] DEBUG io.ebean.SQL - txn[s889753223] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.759,test,2022-08-18T13:07:45.759,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.759 [main] DEBUG io.ebean.SUM - txn[s889753223] Inserted [User] [43]
+13:07:45.759 [main] DEBUG io.ebean.TXN - txn[s889753223] Commit
+13:07:45.761 [main] DEBUG io.ebean.SQL - txn[s1331946439] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,test@163.com,[LOB],null,test,2022-08-18T13:07:45.760,test,2022-08-18T13:07:45.760,test,test,null,null,null,null,null)
+13:07:45.761 [main] DEBUG io.ebean.SUM - txn[s1331946439] Inserted [User] [44]
+13:07:45.761 [main] DEBUG io.ebean.TXN - txn[s1331946439] Commit
+13:07:45.763 [main] DEBUG io.ebean.SQL - txn[s305651902] delete from user; --bind() rows:2
+13:07:45.763 [main] DEBUG io.ebean.TXN - txn[s305651902] Commit
+13:07:45.764 [main] DEBUG io.ebean.SQL - txn[s508873523] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.763,test,2022-08-18T13:07:45.763,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.764 [main] DEBUG io.ebean.SUM - txn[s508873523] Inserted [User] [45]
+13:07:45.765 [main] DEBUG io.ebean.TXN - txn[s508873523] Commit
+13:07:45.765 [main] DEBUG io.ebean.SQL - txn[s1682031750] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,count_example@163.com,[LOB],null,test,2022-08-18T13:07:45.765,test,2022-08-18T13:07:45.765,count_example,count_example,null,null,null,null,null)
+13:07:45.766 [main] DEBUG io.ebean.SUM - txn[s1682031750] Inserted [User] [46]
+13:07:45.766 [main] DEBUG io.ebean.TXN - txn[s1682031750] Commit
+13:07:45.770 [main] DEBUG io.ebean.SQL - txn[s834842620] select count(*) from user t0 where (lower(t0.first_name) like ? escape'|'  and lower(t0.last_name) like ? escape'|'  and t0.active = ?  and lower(t0.email_address) like ? escape'|' ) ; --bind(%count|_example%,%count|_example%,true,%count|_example%)
+13:07:45.770 [main] DEBUG io.ebean.SUM - txn[s834842620] FindCount exeMicros[3451] rows[1] type[org.springframework.data.ebean.sample.domain.User] predicates[(lower(t0.first_name) like ? escape'|'  and lower(t0.last_name) like ? escape'|'  and t0.active = ?  and lower(t0.email_address) like ? escape'|' ) ] bind[%count|_example%,%count|_example%,true,%count|_example%]
+13:07:45.771 [main] DEBUG io.ebean.TXN - txn[s834842620] Commit
+13:07:45.772 [main] DEBUG io.ebean.SQL - txn[s809968973] delete from user; --bind() rows:2
+13:07:45.772 [main] DEBUG io.ebean.TXN - txn[s809968973] Commit
+13:07:45.773 [main] DEBUG io.ebean.SQL - txn[s1726519676] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.773,test,2022-08-18T13:07:45.773,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.774 [main] DEBUG io.ebean.SUM - txn[s1726519676] Inserted [User] [47]
+13:07:45.774 [main] DEBUG io.ebean.TXN - txn[s1726519676] Commit
+13:07:45.774 [main] DEBUG io.ebean.SQL - txn[s1700078557] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,findOne_example@163.com,[LOB],null,test,2022-08-18T13:07:45.774,test,2022-08-18T13:07:45.774,findOne_example,findOne_example,null,null,null,null,null)
+13:07:45.775 [main] DEBUG io.ebean.SUM - txn[s1700078557] Inserted [User] [48]
+13:07:45.775 [main] DEBUG io.ebean.TXN - txn[s1700078557] Commit
+13:07:45.776 [main] DEBUG io.ebean.SQL - txn[s311788384] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where (lower(t0.first_name) like ? escape'|'  and lower(t0.last_name) like ? escape'|'  and t0.active = ?  and lower(t0.email_address) like ? escape'|' ) ; --bind(%example%,%example%,true,%example%)
+13:07:45.776 [main] DEBUG io.ebean.SUM - txn[s311788384] FindMany type[User] origin[BgN1-0.A.A] exeMicros[900] rows[1] predicates[(lower(t0.first_name) like ? escape'|'  and lower(t0.last_name) like ? escape'|'  and t0.active = ?  and lower(t0.email_address) like ? escape'|' ) ] bind[%example%,%example%,true,%example%]
+13:07:45.777 [main] DEBUG io.ebean.TXN - txn[s311788384] Commit
+13:07:45.778 [main] DEBUG io.ebean.SQL - txn[s564555077] delete from user; --bind() rows:2
+13:07:45.778 [main] DEBUG io.ebean.TXN - txn[s564555077] Commit
+13:07:45.778 [main] DEBUG io.ebean.SQL - txn[s1948835427] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.778,test,2022-08-18T13:07:45.778,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.779 [main] DEBUG io.ebean.SUM - txn[s1948835427] Inserted [User] [49]
+13:07:45.779 [main] DEBUG io.ebean.TXN - txn[s1948835427] Commit
+13:07:45.781 [main] DEBUG io.ebean.SUM - txn[s543409470] BatchControl flush [User:100 d:3]
+13:07:45.781 [main] DEBUG io.ebean.SQL - txn[s543409470] delete from user where id=?; --bind(1)
+13:07:45.781 [main] DEBUG io.ebean.SQL - txn[s543409470] delete from user where id=?; --bind(2)
+13:07:45.782 [main] DEBUG io.ebean.SQL - txn[s543409470] delete from user where id=?; --bind(3)
+13:07:45.782 [main] DEBUG io.ebean.SUM - txn[s543409470] Deleted [User] [1]
+13:07:45.782 [main] DEBUG io.ebean.SUM - txn[s543409470] Deleted [User] [2]
+13:07:45.782 [main] DEBUG io.ebean.SUM - txn[s543409470] Deleted [User] [3]
+13:07:45.782 [main] DEBUG io.ebean.TXN - txn[s543409470] Commit
+13:07:45.783 [main] DEBUG io.ebean.SQL - txn[s895705623] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where t0.id in (?, ?, ? ) ; --bind(Array[3]={1,2,3})
+13:07:45.783 [main] DEBUG io.ebean.SUM - txn[s895705623] FindMany type[User] origin[BgN1-0.A.A] exeMicros[384] rows[0] predicates[t0.id in (?, ?, ? ) ] bind[Array[3]={1,2,3}]
+13:07:45.783 [main] DEBUG io.ebean.TXN - txn[s895705623] Commit
+13:07:45.784 [main] DEBUG io.ebean.SQL - txn[s946884592] delete from user; --bind() rows:1
+13:07:45.785 [main] DEBUG io.ebean.TXN - txn[s946884592] Commit
+13:07:45.785 [main] DEBUG io.ebean.SQL - txn[s208301085] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.785,test,2022-08-18T13:07:45.785,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.786 [main] DEBUG io.ebean.SUM - txn[s208301085] Inserted [User] [50]
+13:07:45.786 [main] DEBUG io.ebean.TXN - txn[s208301085] Commit
+13:07:45.788 [main] DEBUG io.ebean.SQL - txn[s1372668833] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where (t0.first_name like ? escape''  and t0.last_name like ? escape''  and t0.active = ?  and t0.email_address like ? escape'' )  order by t0.id desc limit 20; --bind(X,Y,true,y)
+13:07:45.788 [main] DEBUG io.ebean.SUM - txn[s1372668833] FindMany type[User] origin[BgN1-0.A.A] exeMicros[799] rows[0] predicates[(t0.first_name like ? escape''  and t0.last_name like ? escape''  and t0.active = ?  and t0.email_address like ? escape'' ) ] bind[X,Y,true,y]
+13:07:45.789 [main] DEBUG io.ebean.SQL - txn[s1372668833] select count(*) from user t0 where (t0.first_name like ? escape''  and t0.last_name like ? escape''  and t0.active = ?  and t0.email_address like ? escape'' ) ; --bind(X,Y,true,y)
+13:07:45.789 [main] DEBUG io.ebean.SUM - txn[s1372668833] FindCount exeMicros[363] rows[0] type[org.springframework.data.ebean.sample.domain.User] predicates[(t0.first_name like ? escape''  and t0.last_name like ? escape''  and t0.active = ?  and t0.email_address like ? escape'' ) ] bind[X,Y,true,y]
+13:07:45.789 [main] DEBUG io.ebean.TXN - txn[s1372668833] Commit
+13:07:45.790 [main] DEBUG io.ebean.SQL - txn[s899376395] delete from user; --bind() rows:1
+13:07:45.791 [main] DEBUG io.ebean.TXN - txn[s899376395] Commit
+13:07:45.792 [main] DEBUG io.ebean.SQL - txn[s421163163] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.791,test,2022-08-18T13:07:45.791,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.792 [main] DEBUG io.ebean.SUM - txn[s421163163] Inserted [User] [51]
+13:07:45.792 [main] DEBUG io.ebean.TXN - txn[s421163163] Commit
+13:07:45.793 [main] DEBUG io.ebean.SQL - txn[s745465688] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,existsById@163.com,[LOB],null,test,2022-08-18T13:07:45.793,test,2022-08-18T13:07:45.793,existsById,existsById,null,null,null,null,null)
+13:07:45.793 [main] DEBUG io.ebean.SUM - txn[s745465688] Inserted [User] [52]
+13:07:45.794 [main] DEBUG io.ebean.TXN - txn[s745465688] Commit
+13:07:45.795 [main] DEBUG io.ebean.SQL - txn[s540811471] select count(*) from user t0 where t0.id = ?  ; --bind(52, )
+13:07:45.795 [main] DEBUG io.ebean.SUM - txn[s540811471] FindCount exeMicros[255] rows[1] type[org.springframework.data.ebean.sample.domain.User] predicates[] bind[52, ]
+13:07:45.796 [main] DEBUG io.ebean.TXN - txn[s540811471] Commit
+13:07:45.798 [main] DEBUG io.ebean.SQL - txn[s1678889928] delete from user; --bind() rows:2
+13:07:45.798 [main] DEBUG io.ebean.TXN - txn[s1678889928] Commit
+13:07:45.799 [main] DEBUG io.ebean.SQL - txn[s1634411546] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.799,test,2022-08-18T13:07:45.799,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.800 [main] DEBUG io.ebean.SUM - txn[s1634411546] Inserted [User] [53]
+13:07:45.800 [main] DEBUG io.ebean.TXN - txn[s1634411546] Commit
+13:07:45.801 [main] DEBUG io.ebean.SQL - txn[s1145165159] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,findAll_fetchPath_ids@163.com,[LOB],null,test,2022-08-18T13:07:45.800,test,2022-08-18T13:07:45.800,findAll_fetchPath_ids,findAll_fetchPath_ids,null,null,null,null,null)
+13:07:45.801 [main] DEBUG io.ebean.SUM - txn[s1145165159] Inserted [User] [54]
+13:07:45.801 [main] DEBUG io.ebean.TXN - txn[s1145165159] Commit
+13:07:45.803 [main] DEBUG io.ebean.SQL - txn[s1206678562] select t0.id, t0.first_name, t0.last_name from user t0 where t0.id in (? ) ; --bind(Array[1]={54})
+13:07:45.803 [main] DEBUG io.ebean.SUM - txn[s1206678562] FindMany type[User] origin[BgN1-0.A.A] exeMicros[353] rows[1] predicates[t0.id in (? ) ] bind[Array[1]={54}]
+13:07:45.803 [main] DEBUG io.ebean.TXN - txn[s1206678562] Commit
+13:07:45.804 [main] DEBUG io.ebean.SQL - txn[s255839577] delete from user; --bind() rows:2
+13:07:45.804 [main] DEBUG io.ebean.TXN - txn[s255839577] Commit
+13:07:45.805 [main] DEBUG io.ebean.SQL - txn[s2003305136] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.805,test,2022-08-18T13:07:45.805,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.806 [main] DEBUG io.ebean.SUM - txn[s2003305136] Inserted [User] [55]
+13:07:45.806 [main] DEBUG io.ebean.TXN - txn[s2003305136] Commit
+13:07:45.806 [main] DEBUG io.ebean.SQL - txn[s1860754643] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,find@163.com,[LOB],null,test,2022-08-18T13:07:45.806,test,2022-08-18T13:07:45.806,find,find,null,null,null,null,null)
+13:07:45.807 [main] DEBUG io.ebean.SUM - txn[s1860754643] Inserted [User] [56]
+13:07:45.807 [main] DEBUG io.ebean.TXN - txn[s1860754643] Commit
+13:07:45.808 [main] DEBUG io.ebean.SQL - txn[s1020632821] select t0.id, t0.email_address from user t0 where t0.id = ?  ; --bind(56, )
+13:07:45.808 [main] DEBUG io.ebean.SUM - txn[s1020632821] FindBean type[User] origin[BgN1-z.A.A] exeMicros[345] rows[1] bind[56, ]
+13:07:45.808 [main] DEBUG io.ebean.TXN - txn[s1020632821] Commit
+13:07:45.809 [main] DEBUG io.ebean.SQL - txn[s482987954] delete from user; --bind() rows:2
+13:07:45.810 [main] DEBUG io.ebean.TXN - txn[s482987954] Commit
+13:07:45.810 [main] DEBUG io.ebean.SQL - txn[s348084146] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.810,test,2022-08-18T13:07:45.810,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.811 [main] DEBUG io.ebean.SUM - txn[s348084146] Inserted [User] [57]
+13:07:45.811 [main] DEBUG io.ebean.TXN - txn[s348084146] Commit
+13:07:45.811 [main] DEBUG io.ebean.SQL - txn[s393481646] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,findOneByProperty@163.com,[LOB],null,test,2022-08-18T13:07:45.811,test,2022-08-18T13:07:45.811,findOneByProperty,findOneByProperty,null,null,null,null,null)
+13:07:45.812 [main] DEBUG io.ebean.SUM - txn[s393481646] Inserted [User] [58]
+13:07:45.813 [main] DEBUG io.ebean.TXN - txn[s393481646] Commit
+13:07:45.814 [main] DEBUG io.ebean.SQL - txn[s1013620810] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where t0.id = ?  ; --bind(58, )
+13:07:45.814 [main] DEBUG io.ebean.SUM - txn[s1013620810] FindBean type[User] origin[BgN1-z.A.A] exeMicros[458] rows[1] bind[58, ]
+13:07:45.814 [main] DEBUG io.ebean.TXN - txn[s1013620810] Commit
+13:07:45.815 [main] DEBUG io.ebean.SQL - txn[s1552076111] delete from user; --bind() rows:2
+13:07:45.815 [main] DEBUG io.ebean.TXN - txn[s1552076111] Commit
+13:07:45.816 [main] DEBUG io.ebean.SQL - txn[s2049121789] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.816,test,2022-08-18T13:07:45.816,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.816 [main] DEBUG io.ebean.SUM - txn[s2049121789] Inserted [User] [59]
+13:07:45.816 [main] DEBUG io.ebean.TXN - txn[s2049121789] Commit
+13:07:45.817 [main] DEBUG io.ebean.SQL - txn[s727818265] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,findAll_fetchPath_example@163.com,[LOB],null,test,2022-08-18T13:07:45.817,test,2022-08-18T13:07:45.817,findAll_fetchPath_example,findAll_fetchPath_example,null,null,null,null,null)
+13:07:45.817 [main] DEBUG io.ebean.SUM - txn[s727818265] Inserted [User] [60]
+13:07:45.817 [main] DEBUG io.ebean.TXN - txn[s727818265] Commit
+13:07:45.820 [main] DEBUG io.ebean.SQL - txn[s1876259196] select t0.id, t0.first_name, t0.last_name from user t0 where (t0.id = ?  and lower(t0.first_name) like ? escape'|'  and lower(t0.last_name) like ? escape'|'  and t0.active = ?  and lower(t0.email_address) like ? escape'|'  and lower(t0.created_by) like ? escape'|'  and t0.created_date = ?  and lower(t0.last_modified_by) like ? escape'|'  and t0.last_modified_date = ? ) ; --bind(60,%findall|_fetchpath|_example%,%findall|_fetchpath|_example%,true,%findall|_fetchpath|_example%,%test%,2022-08-18T13:07:45.817,%test%,2022-08-18T13:07:45.817)
+13:07:45.820 [main] DEBUG io.ebean.SUM - txn[s1876259196] FindMany type[User] origin[BgN1-0.A.A] exeMicros[973] rows[1] predicates[(t0.id = ?  and lower(t0.first_name) like ? escape'|'  and lower(t0.last_name) like ? escape'|'  and t0.active = ?  and lower(t0.email_address) like ? escape'|'  and lower(t0.created_by) like ? escape'|'  and t0.created_date = ?  and lower(t0.last_modified_by) like ? escape'|'  and t0.last_modified_date = ? ) ] bind[60,%findall|_fetchpath|_example%,%findall|_fetchpath|_example%,true,%findall|_fetchpath|_example%,%test%,2022-08-18T13:07:45.817,%test%,2022-08-18T13:07:45.817]
+13:07:45.820 [main] DEBUG io.ebean.TXN - txn[s1876259196] Commit
+13:07:45.821 [main] DEBUG io.ebean.SQL - txn[s397822273] delete from user; --bind() rows:2
+13:07:45.822 [main] DEBUG io.ebean.TXN - txn[s397822273] Commit
+13:07:45.822 [main] DEBUG io.ebean.SQL - txn[s648303898] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.822,test,2022-08-18T13:07:45.822,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.823 [main] DEBUG io.ebean.SUM - txn[s648303898] Inserted [User] [61]
+13:07:45.824 [main] DEBUG io.ebean.TXN - txn[s648303898] Commit
+13:07:45.825 [main] DEBUG io.ebean.SQL - txn[1027] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where t0.email_address = ?  order by t0.id desc; --bind(yuanxuegui@163.com)
+13:07:45.825 [main] DEBUG io.ebean.SUM - txn[1027] FindMany type[User] origin[BgN1-0.A.A] exeMicros[674] rows[1] predicates[t0.email_address = ? ] bind[yuanxuegui@163.com]
+13:07:45.827 [main] DEBUG io.ebean.SQL - txn[s1022251996] delete from user; --bind() rows:1
+13:07:45.827 [main] DEBUG io.ebean.TXN - txn[s1022251996] Commit
+13:07:45.828 [main] DEBUG io.ebean.SQL - txn[s1775897362] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.827,test,2022-08-18T13:07:45.827,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.828 [main] DEBUG io.ebean.SUM - txn[s1775897362] Inserted [User] [62]
+13:07:45.828 [main] DEBUG io.ebean.TXN - txn[s1775897362] Commit
+13:07:45.830 [main] DEBUG io.ebean.SQL - txn[s527247308] select t0.id, t0.first_name, t0.last_name from user t0 where (t0.first_name like ? escape''  and t0.last_name like ? escape''  and t0.active = ?  and t0.email_address like ? escape'' )  order by t0.id desc limit 20; --bind(X,Y,true,y)
+13:07:45.830 [main] DEBUG io.ebean.SUM - txn[s527247308] FindMany type[User] origin[BgN1-0.A.A] exeMicros[706] rows[0] predicates[(t0.first_name like ? escape''  and t0.last_name like ? escape''  and t0.active = ?  and t0.email_address like ? escape'' ) ] bind[X,Y,true,y]
+13:07:45.831 [main] DEBUG io.ebean.SQL - txn[s527247308] select count(*) from user t0 where (t0.first_name like ? escape''  and t0.last_name like ? escape''  and t0.active = ?  and t0.email_address like ? escape'' ) ; --bind(X,Y,true,y)
+13:07:45.832 [main] DEBUG io.ebean.SUM - txn[s527247308] FindCount exeMicros[855] rows[0] type[org.springframework.data.ebean.sample.domain.User] predicates[(t0.first_name like ? escape''  and t0.last_name like ? escape''  and t0.active = ?  and t0.email_address like ? escape'' ) ] bind[X,Y,true,y]
+13:07:45.832 [main] DEBUG io.ebean.TXN - txn[s527247308] Commit
+13:07:45.833 [main] DEBUG io.ebean.SQL - txn[s1350377659] delete from user; --bind() rows:1
+13:07:45.833 [main] DEBUG io.ebean.TXN - txn[s1350377659] Commit
+13:07:45.834 [main] DEBUG io.ebean.SQL - txn[s990226843] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.833,test,2022-08-18T13:07:45.833,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.834 [main] DEBUG io.ebean.SUM - txn[s990226843] Inserted [User] [63]
+13:07:45.834 [main] DEBUG io.ebean.TXN - txn[s990226843] Commit
+13:07:45.841 [main] DEBUG io.ebean.SQL - txn[1028] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where (t0.email_address = ?  and t0.last_name = ? ) ; --bind(yuanxuegui@163.com,Yuan)
+13:07:45.841 [main] DEBUG io.ebean.SUM - txn[1028] FindMany type[User] origin[BgN1-0.A.A] exeMicros[746] rows[1] predicates[(t0.email_address = ?  and t0.last_name = ? ) ] bind[yuanxuegui@163.com,Yuan]
+13:07:45.843 [main] DEBUG io.ebean.SQL - txn[s1016090398] delete from user; --bind() rows:1
+13:07:45.843 [main] DEBUG io.ebean.TXN - txn[s1016090398] Commit
+13:07:45.844 [main] DEBUG io.ebean.SQL - txn[s1769128714] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.843,test,2022-08-18T13:07:45.843,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.844 [main] DEBUG io.ebean.SUM - txn[s1769128714] Inserted [User] [64]
+13:07:45.844 [main] DEBUG io.ebean.TXN - txn[s1769128714] Commit
+13:07:45.846 [main] DEBUG io.ebean.SUM - txn[s1063723524] -- Deleting intersection table entries: org.springframework.data.ebean.sample.domain.User.colleagues
+13:07:45.846 [main] DEBUG io.ebean.SQL - txn[s1063723524] delete from user_user where user_id=? 
+13:07:45.846 [main] DEBUG io.ebean.SUM - txn[s1063723524] DeleteSql table[user_user] rows[0] bind[1]
+13:07:45.846 [main] DEBUG io.ebean.SUM - txn[s1063723524] -- Deleting intersection table entries: org.springframework.data.ebean.sample.domain.User.roles
+13:07:45.846 [main] DEBUG io.ebean.SQL - txn[s1063723524] delete from user_role where user_id=? 
+13:07:45.846 [main] DEBUG io.ebean.SUM - txn[s1063723524] DeleteSql table[user_role] rows[0] bind[1]
+13:07:45.846 [main] DEBUG io.ebean.SUM - txn[s1063723524] -- Deleting User Id: 1
+13:07:45.848 [main] DEBUG io.ebean.SQL - txn[s1063723524] delete from user where id = ? 
+13:07:45.848 [main] DEBUG io.ebean.SUM - txn[s1063723524] DeleteSql table[user] rows[0] bind[1]
+13:07:45.848 [main] DEBUG io.ebean.TXN - txn[s1063723524] Commit
+13:07:45.849 [main] DEBUG io.ebean.SQL - txn[s871989809] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where t0.id = ?  ; --bind(1, )
+13:07:45.849 [main] DEBUG io.ebean.SUM - txn[s871989809] FindBean type[User] origin[BgN1-z.A.A] exeMicros[292] rows[0] bind[1, ]
+13:07:45.849 [main] DEBUG io.ebean.TXN - txn[s871989809] Commit
+13:07:45.850 [main] DEBUG io.ebean.SQL - txn[s185639533] update user set email_address=?, last_modified_by=?, last_modified_date=? where id=?; --bind(yuanxuegui@126.com,test,2022-08-18T13:07:45.849,64)
+13:07:45.850 [main] DEBUG io.ebean.SUM - txn[s185639533] Updated [User] [64]
+13:07:45.850 [main] DEBUG io.ebean.SQL - txn[s185639533] delete from user_role where user_id = ?
+13:07:45.850 [main] DEBUG io.ebean.SUM - txn[s185639533] DeleteSql table[user_role] rows[0] bind[64]
+UserEmailChangedEvent:Entity of type org.springframework.data.ebean.sample.domain.User with id: 64
+13:07:45.851 [main] DEBUG io.ebean.TXN - txn[s185639533] Commit
+13:07:45.851 [main] DEBUG io.ebean.SQL - txn[s826690115] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 where t0.email_address = ? ; --bind(yuanxuegui@126.com)
+13:07:45.852 [main] DEBUG io.ebean.SUM - txn[s826690115] FindMany type[User] origin[BgN1-0.A.A] exeMicros[526] rows[1] predicates[t0.email_address = ? ] bind[yuanxuegui@126.com]
+13:07:45.852 [main] DEBUG io.ebean.TXN - txn[s826690115] Commit
+13:07:45.852 [main] DEBUG io.ebean.SUM - txn[s197195067] -- Deleting intersection table entries: org.springframework.data.ebean.sample.domain.User.colleagues
+13:07:45.852 [main] DEBUG io.ebean.SQL - txn[s197195067] delete from user_user where user_id=? 
+13:07:45.853 [main] DEBUG io.ebean.SUM - txn[s197195067] DeleteSql table[user_user] rows[0] bind[64]
+13:07:45.853 [main] DEBUG io.ebean.SUM - txn[s197195067] -- Deleting intersection table entries: org.springframework.data.ebean.sample.domain.User.roles
+13:07:45.853 [main] DEBUG io.ebean.SQL - txn[s197195067] delete from user_role where user_id=? 
+13:07:45.853 [main] DEBUG io.ebean.SUM - txn[s197195067] DeleteSql table[user_role] rows[0] bind[64]
+13:07:45.853 [main] DEBUG io.ebean.SUM - txn[s197195067] -- Deleting User Id: 64
+13:07:45.853 [main] DEBUG io.ebean.SQL - txn[s197195067] delete from user where id = ? 
+13:07:45.853 [main] DEBUG io.ebean.SUM - txn[s197195067] DeleteSql table[user] rows[1] bind[64]
+13:07:45.853 [main] DEBUG io.ebean.TXN - txn[s197195067] Commit
+13:07:45.854 [main] DEBUG io.ebean.SQL - txn[s1839182545] delete from user; --bind() rows:0
+13:07:45.855 [main] DEBUG io.ebean.TXN - txn[s1839182545] Commit
+13:07:45.855 [main] DEBUG io.ebean.SQL - txn[s92575452] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.855,test,2022-08-18T13:07:45.855,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.856 [main] DEBUG io.ebean.SUM - txn[s92575452] Inserted [User] [65]
+13:07:45.856 [main] DEBUG io.ebean.TXN - txn[s92575452] Commit
+13:07:45.856 [main] DEBUG io.ebean.SQL - txn[s34757331] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,findAllByProperty_fetchPath_sort@163.com,[LOB],null,test,2022-08-18T13:07:45.856,test,2022-08-18T13:07:45.856,findAllByProperty_fetchPath_sort,findAllByProperty_fetchPath_sort,null,null,null,null,null)
+13:07:45.857 [main] DEBUG io.ebean.SUM - txn[s34757331] Inserted [User] [66]
+13:07:45.857 [main] DEBUG io.ebean.TXN - txn[s34757331] Commit
+13:07:45.858 [main] DEBUG io.ebean.SQL - txn[s887230059] select t0.id, t0.first_name, t0.last_name from user t0 where t0.id = ?  order by t0.id desc; --bind(66)
+13:07:45.859 [main] DEBUG io.ebean.SUM - txn[s887230059] FindMany type[User] origin[BgN1-0.A.A] exeMicros[522] rows[1] predicates[t0.id = ? ] bind[66]
+13:07:45.859 [main] DEBUG io.ebean.TXN - txn[s887230059] Commit
+13:07:45.860 [main] DEBUG io.ebean.SQL - txn[s1857562888] delete from user; --bind() rows:2
+13:07:45.860 [main] DEBUG io.ebean.TXN - txn[s1857562888] Commit
+13:07:45.861 [main] DEBUG io.ebean.SQL - txn[s791499503] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.860,test,2022-08-18T13:07:45.860,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.861 [main] DEBUG io.ebean.SUM - txn[s791499503] Inserted [User] [67]
+13:07:45.861 [main] DEBUG io.ebean.TXN - txn[s791499503] Commit
+13:07:45.862 [main] DEBUG io.ebean.SUM - txn[s231191650] BatchControl flush [User:100 i:3]
+13:07:45.863 [main] DEBUG io.ebean.SQL - txn[s231191650] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,test0@163.com,[LOB],null,test,2022-08-18T13:07:45.862,test,2022-08-18T13:07:45.862,test,test0,null,null,null,null,null)
+13:07:45.863 [main] DEBUG io.ebean.SQL - txn[s231191650] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,test1@163.com,[LOB],null,test,2022-08-18T13:07:45.862,test,2022-08-18T13:07:45.862,test,test1,null,null,null,null,null)
+13:07:45.863 [main] DEBUG io.ebean.SQL - txn[s231191650] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,test2@163.com,[LOB],null,test,2022-08-18T13:07:45.862,test,2022-08-18T13:07:45.862,test,test2,null,null,null,null,null)
+13:07:45.866 [main] DEBUG io.ebean.SUM - txn[s231191650] Inserted [User] [68]
+13:07:45.866 [main] DEBUG io.ebean.SUM - txn[s231191650] Inserted [User] [69]
+13:07:45.866 [main] DEBUG io.ebean.SUM - txn[s231191650] Inserted [User] [70]
+13:07:45.866 [main] DEBUG io.ebean.TXN - txn[s231191650] Commit
+13:07:45.867 [main] DEBUG io.ebean.SQL - txn[s1457075858] delete from user; --bind() rows:4
+13:07:45.868 [main] DEBUG io.ebean.TXN - txn[s1457075858] Commit
+13:07:45.868 [main] DEBUG io.ebean.SQL - txn[s956365425] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.868,test,2022-08-18T13:07:45.868,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.869 [main] DEBUG io.ebean.SUM - txn[s956365425] Inserted [User] [71]
+13:07:45.869 [main] DEBUG io.ebean.TXN - txn[s956365425] Commit
+13:07:45.869 [main] DEBUG io.ebean.SQL - txn[s1544562778] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,findAll_sort@163.com,[LOB],null,test,2022-08-18T13:07:45.869,test,2022-08-18T13:07:45.869,findAll_sort,findAll_sort,null,null,null,null,null)
+13:07:45.870 [main] DEBUG io.ebean.SUM - txn[s1544562778] Inserted [User] [72]
+13:07:45.870 [main] DEBUG io.ebean.TXN - txn[s1544562778] Commit
+13:07:45.871 [main] DEBUG io.ebean.SQL - txn[s1689717017] select t0.id, t0.first_name, t0.last_name, t0.age, t0.active, t0.email_address, t0.manager_id, t0.country, t0.city, t0.street_name, t0.street_no, t0.date_of_birth, t0.created_by, t0.created_date, t0.last_modified_by, t0.last_modified_date from user t0 order by t0.id desc; --bind()
+13:07:45.872 [main] DEBUG io.ebean.SUM - txn[s1689717017] FindMany type[User] origin[BgN1-0.A.A] exeMicros[718] rows[2] predicates[] bind[]
+13:07:45.872 [main] DEBUG io.ebean.TXN - txn[s1689717017] Commit
+13:07:45.873 [main] DEBUG io.ebean.SQL - txn[s1856643544] delete from user; --bind() rows:2
+13:07:45.873 [main] DEBUG io.ebean.TXN - txn[s1856643544] Commit
+13:07:45.874 [main] DEBUG io.ebean.SQL - txn[s2081952435] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.874,test,2022-08-18T13:07:45.874,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.874 [main] DEBUG io.ebean.SUM - txn[s2081952435] Inserted [User] [73]
+13:07:45.874 [main] DEBUG io.ebean.TXN - txn[s2081952435] Commit
+13:07:45.875 [main] DEBUG io.ebean.SQL - txn[s1269826537] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,findAll_fetchPath@163.com,[LOB],null,test,2022-08-18T13:07:45.875,test,2022-08-18T13:07:45.875,findAll_fetchPath,findAll_fetchPath,null,null,null,null,null)
+13:07:45.875 [main] DEBUG io.ebean.SUM - txn[s1269826537] Inserted [User] [74]
+13:07:45.876 [main] DEBUG io.ebean.TXN - txn[s1269826537] Commit
+13:07:45.877 [main] DEBUG io.ebean.SQL - txn[s1812200214] select t0.id, t0.first_name, t0.last_name from user t0; --bind()
+13:07:45.877 [main] DEBUG io.ebean.SUM - txn[s1812200214] FindMany type[User] origin[BgN1-0.A.A] exeMicros[323] rows[2] predicates[] bind[]
+13:07:45.877 [main] DEBUG io.ebean.TXN - txn[s1812200214] Commit
+13:07:45.879 [main] DEBUG io.ebean.SQL - txn[s1850301256] delete from user; --bind() rows:2
+13:07:45.879 [main] DEBUG io.ebean.TXN - txn[s1850301256] Commit
+13:07:45.879 [main] DEBUG io.ebean.SQL - txn[s1872417052] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(29,true,yuanxuegui@163.com,[LOB],null,test,2022-08-18T13:07:45.879,test,2022-08-18T13:07:45.879,Xuegui,Yuan,null,null,null,null,null)
+13:07:45.880 [main] DEBUG io.ebean.SUM - txn[s1872417052] Inserted [User] [75]
+13:07:45.880 [main] DEBUG io.ebean.TXN - txn[s1872417052] Commit
+13:07:45.880 [main] DEBUG io.ebean.SQL - txn[s123629835] insert into user (age, active, email_address, binary_data, date_of_birth, created_by, created_date, last_modified_by, last_modified_date, first_name, last_name, country, city, street_name, street_no, manager_id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); --bind(0,true,exists_example@163.com,[LOB],null,test,2022-08-18T13:07:45.880,test,2022-08-18T13:07:45.880,exists_example,exists_example,null,null,null,null,null)
+13:07:45.880 [main] DEBUG io.ebean.SUM - txn[s123629835] Inserted [User] [76]
+13:07:45.881 [main] DEBUG io.ebean.TXN - txn[s123629835] Commit
+13:07:45.882 [main] DEBUG io.ebean.SQL - txn[s1468192631] select count(*) from user t0 where (lower(t0.first_name) like ? escape'|'  and lower(t0.last_name) like ? escape'|'  and t0.active = ?  and lower(t0.email_address) like ? escape'|' ) ; --bind(%exists|_example%,%exists|_example%,true,%exists|_example%)
+13:07:45.882 [main] DEBUG io.ebean.SUM - txn[s1468192631] FindCount exeMicros[453] rows[1] type[org.springframework.data.ebean.sample.domain.User] predicates[] bind[%exists|_example%,%exists|_example%,true,%exists|_example%]
+13:07:45.882 [main] DEBUG io.ebean.TXN - txn[s1468192631] Commit
+Tests run: 41, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.359 sec
+
+Results :
+
+Tests run: 48, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.502 s
+[INFO] Finished at: 2022-08-18T13:07:46-07:00
+[INFO] ------------------------------------------------------------------------
+Running the tests related to the bug Bears-213...
+The tests related to the bug Bears-213 were executed.

@@ -1,0 +1,43 @@
+Checking out 328513f3 to /tmp/test_d4j_3312604_1660808568/test_trigger/Math FAIL
+Executed command: git clone /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/project_repos/commons-math.git /tmp/test_d4j_3312604_1660808568/test_trigger/Math 2>&1 && cd /tmp/test_d4j_3312604_1660808568/test_trigger/Math && git checkout 328513f3adbcb683aebda8f1b38a0cb14d33de4e 2>&1
+Cloning into '/tmp/test_d4j_3312604_1660808568/test_trigger/Math'...
+done.
+fatal: reference is not a tree: 328513f3adbcb683aebda8f1b38a0cb14d33de4e
+Cannot checkout program version! at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/bin/d4j/d4j-checkout line 102.
+Compilation failed in require at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: checkout: Math-32b
+Cannot open config file (/tmp/test_d4j_3312604_1660808568/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_3312604_1660808568/test_trigger/Math is not a valid working directory!
+Error: compile: Math-32b
+Cannot open config file (/tmp/test_d4j_3312604_1660808568/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_3312604_1660808568/test_trigger/Math is not a valid working directory!
+Error: run relevant tests: Math-32b
+cat: /tmp/test_d4j_3312604_1660808568/test_trigger/Math/failing_tests: No such file or directory
+grep: /tmp/test_d4j_3312604_1660808568/test_trigger/Math/failing_tests: No such file or directory
+Error: verify number of triggering tests: Math-32b (expected: 1, actual: 0)
+grep: /tmp/test_d4j_3312604_1660808568/test_trigger/Math/failing_tests: No such file or directory
+Error: expected triggering test org.apache.commons.math.util.MathUtilsTest::testRoundDouble did not fail
+Cannot open config file (/tmp/test_d4j_3312604_1660808568/test_trigger/Math/.defects4j.config): No such file or directory
+Directory exists but is not a previously used working directory: /tmp/test_d4j_3312604_1660808568/test_trigger/Math at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/core/Vcs.pm line 285.
+Compilation failed in require at /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/framework/bin/defects4j line 195.
+Error: checkout: Math-32f
+Cannot open config file (/tmp/test_d4j_3312604_1660808568/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_3312604_1660808568/test_trigger/Math is not a valid working directory!
+Error: compile: Math-32f
+Cannot open config file (/tmp/test_d4j_3312604_1660808568/test_trigger/Math/.defects4j.config): No such file or directory
+/tmp/test_d4j_3312604_1660808568/test_trigger/Math is not a valid working directory!
+Error: run relevant tests: Math-32f
+cat: /tmp/test_d4j_3312604_1660808568/test_trigger/Math/failing_tests: No such file or directory
+grep: /tmp/test_d4j_3312604_1660808568/test_trigger/Math/failing_tests: No such file or directory
+================================================================================
+The following errors occurred:
+Error: checkout: Math-32b
+Error: compile: Math-32b
+Error: run relevant tests: Math-32b
+Error: verify number of triggering tests: Math-32b (expected: 1, actual: 0)
+Error: expected triggering test org.apache.commons.math.util.MathUtilsTest::testRoundDouble did not fail
+Error: checkout: Math-32f
+Error: compile: Math-32f
+Error: run relevant tests: Math-32f
+================================================================================
+FAILED

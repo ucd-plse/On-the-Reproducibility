@@ -1,0 +1,213 @@
+travis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: java
+Build group: stable
+Build dist: precise
+Build id: ''
+Job id: ''
+[34m[1mBuild image provisioning date and time[0m
+Thu Feb  5 15:09:33 UTC 2015
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 12.04.5 LTS
+Release:	12.04
+Codename:	precise
+[34m[1mLinux Version[0m
+3.13.0-29-generic
+[34m[1mCookbooks Version[0m
+a68419e https://github.com/travis-ci/travis-cookbooks/tree/a68419e
+[34m[1mGCC version[0m
+gcc (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
+Copyright (C) 2011 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mLLVM version[0m
+clang version 3.4 (tags/RELEASE_34/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+[34m[1mPre-installed Ruby versions[0m
+ruby-1.9.3-p551
+[34m[1mPre-installed Node.js versions[0m
+v0.10.36
+[34m[1mPre-installed Go versions[0m
+1.4.1
+[34m[1mRedis version[0m
+redis-server 2.8.19
+[34m[1mriak version[0m
+2.0.2
+[34m[1mMongoDB version[0m
+MongoDB 2.4.12
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mNeo4j version[0m
+1.9.4
+[34m[1mRabbitMQ Version[0m
+3.4.3
+[34m[1mElasticSearch version[0m
+1.4.0
+[34m[1mInstalled Sphinx versions[0m
+2.0.10
+2.1.9
+2.2.6
+[34m[1mDefault Sphinx version[0m
+2.2.6
+[34m[1mInstalled Firefox version[0m
+firefox 31.0esr
+[34m[1mPhantomJS version[0m
+1.9.8
+[34m[1mant -version[0m
+Apache Ant(TM) version 1.8.2 compiled on December 3 2011
+[34m[1mmvn -version[0m
+Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T17:29:23+00:00)
+Maven home: /usr/local/maven
+Java version: 1.7.0_76, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-7-oracle/jre
+Default locale: en_US, platform encoding: ANSI_X3.4-1968
+OS name: "linux", version: "3.13.0-29-generic", arch: "amd64", family: "unix"
+travis_fold:end:system_info[0K
+W: Failed to fetch http://apt.postgresql.org/pub/repos/apt/dists/precise-pgdg/main/binary-amd64/Packages  404  Not Found [IP: 147.75.85.69 80]
+
+W: Failed to fetch http://apt.postgresql.org/pub/repos/apt/dists/precise-pgdg/main/binary-i386/Packages  404  Not Found [IP: 147.75.85.69 80]
+
+W: Failed to fetch http://ppa.launchpad.net/rwky/ppa/ubuntu/dists/precise/main/binary-amd64/Packages  403  Forbidden
+
+W: Failed to fetch http://ppa.launchpad.net/rwky/ppa/ubuntu/dists/precise/main/binary-i386/Packages  403  Forbidden
+
+W: Failed to fetch http://ppa.launchpad.net/travis-ci/zero-mq/ubuntu/dists/precise/main/binary-amd64/Packages  403  Forbidden
+
+W: Failed to fetch http://ppa.launchpad.net/travis-ci/zero-mq/ubuntu/dists/precise/main/binary-i386/Packages  403  Forbidden
+
+W: Failed to fetch http://downloads-distro.mongodb.org/repo/debian-sysvinit/dists/dist/10gen/binary-amd64/Packages  Undetermined Error [IP: 52.206.222.245 80]
+
+W: Failed to fetch http://downloads-distro.mongodb.org/repo/debian-sysvinit/dists/dist/10gen/binary-i386/Packages  Undetermined Error [IP: 52.206.222.245 80]
+
+E: Some index files failed to download. They have been ignored, or old ones used instead.
+sed: cannot rename /etc/hosts: Device or resource busy
+sed: cannot rename /etc/hosts: Device or resource busy
+$ jdk_switcher use oraclejdk7
+Switching to Oracle JDK7 (java-7-oracle), JAVA_HOME will be set to /usr/lib/jvm/java-7-oracle
+$ cd passed/raphw/byte-buddy
+travis_fold:start:apt[0K[33;1mInstalling APT Packages (BETA)[0m
+$ export DEBIAN_FRONTEND=noninteractive
+travis_time:start:0066ed7e[0K$ sudo -E apt-get -yq update &>> ~/apt-get-update.log
+
+travis_time:end:0066ed7e:start=1659289255741929408,finish=1659289339567504555,duration=83825575147[0Ktravis_fold:start:apt-get.diagnostics[0K[31;1mapt-get install failed[0m
+$ cat ~/apt-get-update.log
+Hit http://ppa.launchpad.net precise Release.gpg
+Ign http://apt.postgresql.org precise-pgdg Release.gpg
+Hit http://old-releases.ubuntu.com precise Release.gpg
+Hit http://old-releases.ubuntu.com precise-updates Release.gpg
+Hit http://old-releases.ubuntu.com precise-backports Release.gpg
+Hit http://old-releases.ubuntu.com precise-security Release.gpg
+Hit http://old-releases.ubuntu.com precise Release
+Hit http://old-releases.ubuntu.com precise-updates Release
+Hit http://old-releases.ubuntu.com precise-backports Release
+Hit http://old-releases.ubuntu.com precise-security Release
+Hit http://ppa.launchpad.net precise Release.gpg
+Ign http://apt.postgresql.org precise-pgdg Release
+Get:1 http://old-releases.ubuntu.com precise/main Sources [1,175 kB]
+Get:2 http://old-releases.ubuntu.com precise/restricted Sources [5,306 B]
+Get:3 http://old-releases.ubuntu.com precise/universe Sources [6,239 kB]
+Get:4 http://old-releases.ubuntu.com precise/multiverse Sources [188 kB]
+Ign http://ppa.launchpad.net precise Release.gpg
+Get:5 http://old-releases.ubuntu.com precise/main amd64 Packages [1,640 kB]
+Get:6 http://old-releases.ubuntu.com precise/restricted amd64 Packages [9,098 B]
+Get:7 http://old-releases.ubuntu.com precise/universe amd64 Packages [6,167 kB]
+Get:8 http://old-releases.ubuntu.com precise/multiverse amd64 Packages [152 kB]
+Get:9 http://old-releases.ubuntu.com precise/main i386 Packages [1,641 kB]
+Get:10 http://old-releases.ubuntu.com precise/restricted i386 Packages [9,108 B]
+Ign http://ppa.launchpad.net precise Release.gpg
+Get:11 http://old-releases.ubuntu.com precise/universe i386 Packages [6,180 kB]
+Get:12 http://old-releases.ubuntu.com precise/multiverse i386 Packages [155 kB]
+Get:13 http://old-releases.ubuntu.com precise-updates/main Sources [988 kB]
+Get:14 http://old-releases.ubuntu.com precise-updates/restricted Sources [14.6 kB]
+Get:15 http://old-releases.ubuntu.com precise-updates/universe Sources [254 kB]
+Get:16 http://old-releases.ubuntu.com precise-updates/multiverse Sources [16.1 kB]
+Get:17 http://old-releases.ubuntu.com precise-updates/main amd64 Packages [1,390 kB]
+Get:18 http://old-releases.ubuntu.com precise-updates/restricted amd64 Packages [25.0 kB]
+Get:19 http://old-releases.ubuntu.com precise-updates/universe amd64 Packages [516 kB]
+Get:20 http://old-releases.ubuntu.com precise-updates/multiverse amd64 Packages [26.3 kB]
+Get:21 http://old-releases.ubuntu.com precise-updates/main i386 Packages [1,397 kB]
+Get:22 http://old-releases.ubuntu.com precise-updates/restricted i386 Packages [25.0 kB]
+Get:23 http://old-releases.ubuntu.com precise-updates/universe i386 Packages [532 kB]
+Get:24 http://old-releases.ubuntu.com precise-updates/multiverse i386 Packages [26.3 kB]
+Get:25 http://old-releases.ubuntu.com precise-backports/main Sources [6,032 B]
+Get:26 http://old-releases.ubuntu.com precise-backports/restricted Sources [40 B]
+Get:27 http://old-releases.ubuntu.com precise-backports/universe Sources [52.2 kB]
+Get:28 http://old-releases.ubuntu.com precise-backports/multiverse Sources [5,869 B]
+Hit http://ppa.launchpad.net precise Release.gpg
+Get:29 http://old-releases.ubuntu.com precise-backports/main amd64 Packages [6,680 B]
+Get:30 http://old-releases.ubuntu.com precise-backports/restricted amd64 Packages [40 B]
+Get:31 http://old-releases.ubuntu.com precise-backports/universe amd64 Packages [57.3 kB]
+Get:32 http://old-releases.ubuntu.com precise-backports/multiverse amd64 Packages [5,442 B]
+Get:33 http://old-releases.ubuntu.com precise-backports/main i386 Packages [6,681 B]
+Get:34 http://old-releases.ubuntu.com precise-backports/restricted i386 Packages [40 B]
+Get:35 http://old-releases.ubuntu.com precise-backports/universe i386 Packages [57.2 kB]
+Get:36 http://old-releases.ubuntu.com precise-backports/multiverse i386 Packages [5,423 B]
+Get:37 http://old-releases.ubuntu.com precise-security/main Sources [300 kB]
+Get:38 http://old-releases.ubuntu.com precise-security/restricted Sources [7,160 B]
+Get:39 http://old-releases.ubuntu.com precise-security/universe Sources [104 kB]
+Get:40 http://old-releases.ubuntu.com precise-security/multiverse Sources [4,150 B]
+Hit http://ppa.launchpad.net precise Release.gpg
+Get:41 http://old-releases.ubuntu.com precise-security/main amd64 Packages [734 kB]
+Get:42 http://old-releases.ubuntu.com precise-security/restricted amd64 Packages [17.6 kB]
+Get:43 http://old-releases.ubuntu.com precise-security/universe amd64 Packages [268 kB]
+Get:44 http://old-releases.ubuntu.com precise-security/multiverse amd64 Packages [4,042 B]
+Get:45 http://old-releases.ubuntu.com precise-security/main i386 Packages [740 kB]
+Get:46 http://old-releases.ubuntu.com precise-security/restricted i386 Packages [17.6 kB]
+Get:47 http://old-releases.ubuntu.com precise-security/universe i386 Packages [284 kB]
+Get:48 http://old-releases.ubuntu.com precise-security/multiverse i386 Packages [4,281 B]
+Hit http://ppa.launchpad.net precise Release
+Err http://apt.postgresql.org precise-pgdg/main amd64 Packages
+  404  Not Found [IP: 87.238.57.227 80]
+Hit http://ppa.launchpad.net precise Release
+Err http://apt.postgresql.org precise-pgdg/main i386 Packages
+  404  Not Found [IP: 87.238.57.227 80]
+Ign http://ppa.launchpad.net precise Release
+Ign http://ppa.launchpad.net precise Release
+Hit http://ppa.launchpad.net precise Release
+Hit http://ppa.launchpad.net precise Release
+Get:49 http://ppa.launchpad.net precise/main amd64 Packages [978 B]
+Get:50 http://ppa.launchpad.net precise/main i386 Packages [978 B]
+Get:51 http://ppa.launchpad.net precise/main amd64 Packages [3,527 B]
+Get:52 http://ppa.launchpad.net precise/main i386 Packages [3,526 B]
+Get:53 http://ppa.launchpad.net precise/main amd64 Packages [20 B]
+Get:54 http://ppa.launchpad.net precise/main i386 Packages [20 B]
+Get:55 http://ppa.launchpad.net precise/main amd64 Packages [20 B]
+Get:56 http://ppa.launchpad.net precise/main i386 Packages [20 B]
+Err http://ppa.launchpad.net precise/main amd64 Packages
+  403  Forbidden
+Err http://ppa.launchpad.net precise/main i386 Packages
+  403  Forbidden
+Err http://ppa.launchpad.net precise/main amd64 Packages
+  403  Forbidden
+Err http://ppa.launchpad.net precise/main i386 Packages
+  403  Forbidden
+Ign http://downloads-distro.mongodb.org dist Release.gpg
+Ign http://downloads-distro.mongodb.org dist Release
+Err http://downloads-distro.mongodb.org dist/10gen amd64 Packages
+  Undetermined Error [IP: 52.21.89.200 80]
+Err http://downloads-distro.mongodb.org dist/10gen i386 Packages
+  Undetermined Error [IP: 52.21.89.200 80]
+Fetched 56 B in 1min 23s (0 B/s)
+W: Failed to fetch http://apt.postgresql.org/pub/repos/apt/dists/precise-pgdg/main/binary-amd64/Packages  404  Not Found [IP: 87.238.57.227 80]
+
+W: Failed to fetch http://apt.postgresql.org/pub/repos/apt/dists/precise-pgdg/main/binary-i386/Packages  404  Not Found [IP: 87.238.57.227 80]
+
+W: Failed to fetch http://ppa.launchpad.net/rwky/ppa/ubuntu/dists/precise/main/binary-amd64/Packages  403  Forbidden
+
+W: Failed to fetch http://ppa.launchpad.net/rwky/ppa/ubuntu/dists/precise/main/binary-i386/Packages  403  Forbidden
+
+W: Failed to fetch http://ppa.launchpad.net/travis-ci/zero-mq/ubuntu/dists/precise/main/binary-amd64/Packages  403  Forbidden
+
+W: Failed to fetch http://ppa.launchpad.net/travis-ci/zero-mq/ubuntu/dists/precise/main/binary-i386/Packages  403  Forbidden
+
+W: Failed to fetch http://downloads-distro.mongodb.org/repo/debian-sysvinit/dists/dist/10gen/binary-amd64/Packages  Undetermined Error [IP: 52.21.89.200 80]
+
+W: Failed to fetch http://downloads-distro.mongodb.org/repo/debian-sysvinit/dists/dist/10gen/binary-i386/Packages  Undetermined Error [IP: 52.21.89.200 80]
+
+E: Some index files failed to download. They have been ignored, or old ones used instead.
+travis_fold:end:apt-get.diagnostics[0K
+[31;1mThe command "cat ~/apt-get-update.log" failed and exited with 100 during .[0m
+
+Your build has been stopped.

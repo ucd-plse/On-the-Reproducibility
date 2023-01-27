@@ -1,0 +1,510 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.accumulo:accumulo-core:jar:1.4.5-SNAPSHOT
+[[1;33mWARNING[m] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.accumulo:cloudtrace:jar -> duplicate declaration of version (?) @ line 174, column 17
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.accumulo:accumulo-server:jar:1.4.5-SNAPSHOT
+[[1;33mWARNING[m] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.mortbay.jetty:jetty:jar -> duplicate declaration of version (?) @ line 107, column 17
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.accumulo:accumulo:pom:1.4.5-SNAPSHOT
+[[1;33mWARNING[m] The expression ${artifactId} is deprecated. Please use ${project.artifactId} instead.
+[[1;33mWARNING[m] The expression ${artifactId} is deprecated. Please use ${project.artifactId} instead.
+[[1;33mWARNING[m] The expression ${artifactId} is deprecated. Please use ${project.artifactId} instead.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Build Order:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] accumulo                                                           [pom]
+[[1;34mINFO[m] cloudtrace                                                         [jar]
+[[1;34mINFO[m] accumulo-start                                                     [jar]
+[[1;34mINFO[m] accumulo-core                                                      [jar]
+[[1;34mINFO[m] accumulo-server                                                    [jar]
+[[1;34mINFO[m] accumulo-examples                                                  [pom]
+[[1;34mINFO[m] examples-simple                                                    [jar]
+[[1;34mINFO[m] accumulo-minicluster                                               [jar]
+[[1;34mINFO[m] Proxy                                                              [jar]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------< [0;36morg.apache.accumulo:accumulo[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding accumulo 1.4.5-SNAPSHOT                                   [1/9][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmavanagaiata:0.6.1:commit[m [1m(git-commit)[m @ [36maccumulo[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:1.2:exec[m [1m(user-manual)[m @ [36maccumulo[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo/1.4.5-SNAPSHOT/accumulo-1.4.5-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.accumulo:cloudtrace[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding cloudtrace 1.4.5-SNAPSHOT                                 [2/9][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmavanagaiata:0.6.1:commit[m [1m(git-commit)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:1.2:exec[m [1m(generate-thrift)[m @ [36mcloudtrace[0;1m ---[m
+****************************************************
+*** thrift is not available
+***   expecting 'thrift -version' to return 0.6
+*** generated code will not be updated
+****************************************************
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36mcloudtrace[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/trace/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(copy-dependencies)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Copying libthrift-0.6.1.jar to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/libthrift-0.6.1.jar
+[[1;34mINFO[m] Copying log4j-1.2.16.jar to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/log4j-1.2.16.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Compiling 22 source files to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/trace/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36mcloudtrace[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/trace/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Compiling 3 source files to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/trace/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.9:test[m [1m(default-test)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.3.1:jar[m [1m(default-jar)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/cloudtrace-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/cloudtrace-1.4.5-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/cloudtrace/1.4.5-SNAPSHOT/cloudtrace-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/trace/pom.xml to /home/user/.m2/repository/org/apache/accumulo/cloudtrace/1.4.5-SNAPSHOT/cloudtrace-1.4.5-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36morg.apache.accumulo:accumulo-start[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding accumulo-start 1.4.5-SNAPSHOT                             [3/9][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmavanagaiata:0.6.1:commit[m [1m(git-commit)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36maccumulo-start[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/start/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] Copying commons-jci-core-1.0.jar to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-jci-core-1.0.jar
+[[1;34mINFO[m] Copying commons-logging-api-1.0.4.jar to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-logging-api-1.0.4.jar
+[[1;34mINFO[m] Copying commons-io-2.1.jar to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-io-2.1.jar
+[[1;34mINFO[m] Copying commons-jci-fam-1.0.jar to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-jci-fam-1.0.jar
+[[1;34mINFO[m] Copying commons-logging-1.0.4.jar to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-logging-1.0.4.jar
+[[1;34mINFO[m] log4j-1.2.16.jar already exists in destination.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] Compiling 5 source files to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/start/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36maccumulo-start[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] Compiling 2 source files to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/start/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.9:test[m [1m(default-test)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.3.1:jar[m [1m(default-jar)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-start-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo-start[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-start-1.4.5-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-start/1.4.5-SNAPSHOT/accumulo-start-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/start/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-start/1.4.5-SNAPSHOT/accumulo-start-1.4.5-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36morg.apache.accumulo:accumulo-core[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding accumulo-core 1.4.5-SNAPSHOT                              [4/9][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmavanagaiata:0.6.1:commit[m [1m(git-commit)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:1.1.1:exec[m [1m(generate-core-thrift)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] ****************************************************
+[[1;34mINFO[m] *** thrift is not available
+[[1;34mINFO[m] ***   expecting 'thrift -version' to return 0.6
+[[1;34mINFO[m] *** generated code will not be updated
+[[1;34mINFO[m] ****************************************************
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36maccumulo-core[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/core/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Copying commons-collections-3.2.jar to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-collections-3.2.jar
+[[1;34mINFO[m] Copying jline-0.9.94.jar to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/jline-0.9.94.jar
+[[1;34mINFO[m] Copying commons-lang-2.4.jar to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-lang-2.4.jar
+[[1;34mINFO[m] libthrift-0.6.1.jar already exists in destination.
+[[1;34mINFO[m] log4j-1.2.16.jar already exists in destination.
+[[1;34mINFO[m] commons-logging-1.0.4.jar already exists in destination.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Compiling 441 source files to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/core/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:1.1.1:exec[m [1m(generate-documentation)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] HADOOP_HOME is not set
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36maccumulo-core[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Compiling 69 source files to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/core/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.9:test[m [1m(default-test)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.3.1:jar[m [1m(default-jar)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-core-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo-core[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-core-1.4.5-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-core/1.4.5-SNAPSHOT/accumulo-core-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/core/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-core/1.4.5-SNAPSHOT/accumulo-core-1.4.5-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36morg.apache.accumulo:accumulo-server[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding accumulo-server 1.4.5-SNAPSHOT                            [5/9][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmavanagaiata:0.6.1:commit[m [1m(git-commit)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36maccumulo-server[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 39 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] Copying commons-configuration-1.5.jar to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/commons-configuration-1.5.jar
+[[1;34mINFO[m] libthrift-0.6.1.jar already exists in destination.
+[[1;34mINFO[m] log4j-1.2.16.jar already exists in destination.
+[[1;34mINFO[m] commons-io-2.1.jar already exists in destination.
+[[1;34mINFO[m] jline-0.9.94.jar already exists in destination.
+[[1;34mINFO[m] commons-lang-2.4.jar already exists in destination.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] Compiling 421 source files to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/server/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36maccumulo-server[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] Compiling 28 source files to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/server/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.9:test[m [1m(default-test)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.3.1:jar[m [1m(default-jar)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-server-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo-server[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-server-1.4.5-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-server/1.4.5-SNAPSHOT/accumulo-server-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/server/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-server/1.4.5-SNAPSHOT/accumulo-server-1.4.5-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------< [0;36morg.apache.accumulo:accumulo-examples[0;1m >----------------[m
+[[1;34mINFO[m] [1mBuilding accumulo-examples 1.4.5-SNAPSHOT                          [6/9][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo-examples[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmavanagaiata:0.6.1:commit[m [1m(git-commit)[m @ [36maccumulo-examples[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo-examples[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo-examples[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo-examples[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo-examples[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/examples/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-examples/1.4.5-SNAPSHOT/accumulo-examples-1.4.5-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36morg.apache.accumulo:examples-simple[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding examples-simple 1.4.5-SNAPSHOT                            [7/9][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmavanagaiata:0.6.1:commit[m [1m(git-commit)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36mexamples-simple[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/examples/simple/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(copy-dependencies)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] Copying log4j-1.2.16.jar to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/lib/log4j-1.2.16.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] Compiling 40 source files to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/examples/simple/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36mexamples-simple[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/examples/simple/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] Compiling 5 source files to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/examples/simple/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.9:test[m [1m(default-test)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.3.1:jar[m [1m(default-jar)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/examples-simple-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36mexamples-simple[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/examples-simple-1.4.5-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/examples-simple/1.4.5-SNAPSHOT/examples-simple-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/examples/simple/pom.xml to /home/user/.m2/repository/org/apache/accumulo/examples-simple/1.4.5-SNAPSHOT/examples-simple-1.4.5-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------< [0;36morg.apache.accumulo:accumulo-minicluster[0;1m >--------------[m
+[[1;34mINFO[m] [1mBuilding accumulo-minicluster 1.4.5-SNAPSHOT                       [8/9][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo-minicluster[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmavanagaiata:0.6.1:commit[m [1m(git-commit)[m @ [36maccumulo-minicluster[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo-minicluster[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36maccumulo-minicluster[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/minicluster/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo-minicluster[0;1m ---[m
+[[1;34mINFO[m] Copying guava-14.0.1.jar to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/guava-14.0.1.jar
+[[1;34mINFO[m] log4j-1.2.16.jar already exists in destination.
+[[1;34mINFO[m] commons-io-2.1.jar already exists in destination.
+[[1;34mINFO[m] jline-0.9.94.jar already exists in destination.
+[[1;34mINFO[m] commons-configuration-1.5.jar already exists in destination.
+[[1;34mINFO[m] commons-lang-2.4.jar already exists in destination.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36maccumulo-minicluster[0;1m ---[m
+[[1;34mINFO[m] Compiling 2 source files to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/minicluster/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36maccumulo-minicluster[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/minicluster/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36maccumulo-minicluster[0;1m ---[m
+[[1;34mINFO[m] Compiling 2 source files to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/minicluster/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.9:test[m [1m(default-test)[m @ [36maccumulo-minicluster[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.3.1:jar[m [1m(default-jar)[m @ [36maccumulo-minicluster[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-minicluster-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo-minicluster[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo-minicluster[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-minicluster-1.4.5-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-minicluster/1.4.5-SNAPSHOT/accumulo-minicluster-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/minicluster/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-minicluster/1.4.5-SNAPSHOT/accumulo-minicluster-1.4.5-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36morg.apache.accumulo:accumulo-proxy[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding Proxy 1.4.5-SNAPSHOT                                      [9/9][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36maccumulo-proxy[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmavanagaiata:0.6.1:commit[m [1m(git-commit)[m @ [36maccumulo-proxy[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:1.2:exec[m [1m(generate-thrift)[m @ [36maccumulo-proxy[0;1m ---[m
+****************************************************
+*** thrift is not available
+***   expecting 'thrift -version' to return 0.6
+*** generated code will not be updated
+****************************************************
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36maccumulo-proxy[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36maccumulo-proxy[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/proxy/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(copy-dependencies)[m @ [36maccumulo-proxy[0;1m ---[m
+[[1;34mINFO[m] libthrift-0.6.1.jar already exists in destination.
+[[1;34mINFO[m] guava-14.0.1.jar already exists in destination.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36maccumulo-proxy[0;1m ---[m
+[[1;34mINFO[m] Compiling 38 source files to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/proxy/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36maccumulo-proxy[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36maccumulo-proxy[0;1m ---[m
+[[1;34mINFO[m] Compiling 5 source files to /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/proxy/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.9:test[m [1m(default-test)[m @ [36maccumulo-proxy[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.3.1:jar[m [1m(default-jar)[m @ [36maccumulo-proxy[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-proxy-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36maccumulo-proxy[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.3.1:install[m [1m(default-install)[m @ [36maccumulo-proxy[0;1m ---[m
+[[1;34mINFO[m] Installing /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/lib/accumulo-proxy-1.4.5-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/accumulo/accumulo-proxy/1.4.5-SNAPSHOT/accumulo-proxy-1.4.5-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/proxy/pom.xml to /home/user/.m2/repository/org/apache/accumulo/accumulo-proxy/1.4.5-SNAPSHOT/accumulo-proxy-1.4.5-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Summary for accumulo 1.4.5-SNAPSHOT:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] accumulo ........................................... [1;32mSUCCESS[m [  1.843 s]
+[[1;34mINFO[m] cloudtrace ......................................... [1;32mSUCCESS[m [  1.827 s]
+[[1;34mINFO[m] accumulo-start ..................................... [1;32mSUCCESS[m [  1.012 s]
+[[1;34mINFO[m] accumulo-core ...................................... [1;32mSUCCESS[m [  6.277 s]
+[[1;34mINFO[m] accumulo-server .................................... [1;32mSUCCESS[m [  4.360 s]
+[[1;34mINFO[m] accumulo-examples .................................. [1;32mSUCCESS[m [  0.070 s]
+[[1;34mINFO[m] examples-simple .................................... [1;32mSUCCESS[m [  1.846 s]
+[[1;34mINFO[m] accumulo-minicluster ............................... [1;32mSUCCESS[m [  1.129 s]
+[[1;34mINFO[m] Proxy .............................................. [1;32mSUCCESS[m [  4.366 s]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  22.912 s
+[[1;34mINFO[m] Finished at: 2022-08-22T19:06:17-07:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[mMissing pdflatex command. Please install.
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.accumulo:accumulo-core:jar:1.4.5-SNAPSHOT
+[[1;33mWARNING[m] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.accumulo:cloudtrace:jar -> duplicate declaration of version (?) @ line 174, column 17
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.accumulo:accumulo-server:jar:1.4.5-SNAPSHOT
+[[1;33mWARNING[m] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.mortbay.jetty:jetty:jar -> duplicate declaration of version (?) @ line 107, column 17
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.accumulo:accumulo:pom:1.4.5-SNAPSHOT
+[[1;33mWARNING[m] The expression ${artifactId} is deprecated. Please use ${project.artifactId} instead.
+[[1;33mWARNING[m] The expression ${artifactId} is deprecated. Please use ${project.artifactId} instead.
+[[1;33mWARNING[m] The expression ${artifactId} is deprecated. Please use ${project.artifactId} instead.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.accumulo:cloudtrace[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding cloudtrace 1.4.5-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.0.1:enforce[m [1m(enforce-mvn)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmavanagaiata:0.6.1:commit[m [1m(git-commit)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:1.2:exec[m [1m(generate-thrift)[m @ [36mcloudtrace[0;1m ---[m
+****************************************************
+*** thrift is not available
+***   expecting 'thrift -version' to return 0.6
+*** generated code will not be updated
+****************************************************
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.2.1:process[m [1m(default)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36mcloudtrace[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/trace/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(copy-dependencies)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] libthrift-0.6.1.jar already exists in destination.
+[[1;34mINFO[m] log4j-1.2.16.jar already exists in destination.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36mcloudtrace[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/trace/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.9:test[m [1m(default-test)[m @ [36mcloudtrace[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /home/user/Reproducibility-Scanner/benchmarks/bugs-dot-jar/accumulo/src/trace/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.cloudtrace.instrument.PerformanceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+Running org.apache.accumulo.cloudtrace.instrument.TracerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.265 sec
+Running org.apache.accumulo.cloudtrace.instrument.CountSamplerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  2.950 s
+[[1;34mINFO[m] Finished at: 2022-08-22T19:06:22-07:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

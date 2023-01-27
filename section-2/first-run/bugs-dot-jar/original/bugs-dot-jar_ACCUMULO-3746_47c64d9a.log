@@ -1,0 +1,415 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Core 1.7.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.4.0:verify (verify-sorted-pom) @ accumulo-core ---
+[INFO] Verifying file /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-3746_47c64d9a0e161f4083749e05dcbd015ab9e5d2a4/core/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-mvn) @ accumulo-core ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.1:commit (git-commit) @ accumulo-core ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (check-licenses) @ accumulo-core ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/test/resources/shelltest.txt
+[INFO] Exclude: src/test/resources/org/apache/accumulo/core/file/rfile/ver_3.rf
+[INFO] Exclude: src/test/resources/org/apache/accumulo/core/file/rfile/ver_4.rf
+[INFO] Exclude: src/test/resources/org/apache/accumulo/core/file/rfile/ver_6.rf
+[INFO] Exclude: src/test/resources/site-cfg.jceks
+[INFO] Exclude: src/test/resources/accumulo.jceks
+[INFO] Exclude: src/test/resources/empty.jceks
+[INFO] Exclude: src/test/resources/passwords.jceks
+[INFO] 735 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 735 licence.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:copy-resources (prepare-filtered-java-source) @ accumulo-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.9.1:add-source (add-filtered-java-source) @ accumulo-core ---
+[INFO] Source directory: /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-3746_47c64d9a0e161f4083749e05dcbd015ab9e5d2a4/core/target/filtered-java-src added.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ accumulo-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ accumulo-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 547 source files to /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-3746_47c64d9a0e161f4083749e05dcbd015ab9e5d2a4/core/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-3746_47c64d9a0e161f4083749e05dcbd015ab9e5d2a4/core/src/test/filtered-resources
+[INFO] Copying 14 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ accumulo-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ accumulo-core ---
+[INFO] Surefire report directory: /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-3746_47c64d9a0e161f4083749e05dcbd015ab9e5d2a4/core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.core.iterators.AggregatingIteratorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.279 sec - in org.apache.accumulo.core.iterators.AggregatingIteratorTest
+Running org.apache.accumulo.core.iterators.FirstEntryInRowIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in org.apache.accumulo.core.iterators.FirstEntryInRowIteratorTest
+Running org.apache.accumulo.core.iterators.FirstEntryInRowTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.397 sec - in org.apache.accumulo.core.iterators.FirstEntryInRowTest
+Running org.apache.accumulo.core.iterators.system.ColumnFamilySkippingIteratorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.681 sec - in org.apache.accumulo.core.iterators.system.ColumnFamilySkippingIteratorTest
+Running org.apache.accumulo.core.iterators.system.SourceSwitchingIteratorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 sec - in org.apache.accumulo.core.iterators.system.SourceSwitchingIteratorTest
+Running org.apache.accumulo.core.iterators.system.TimeSettingIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.193 sec - in org.apache.accumulo.core.iterators.system.TimeSettingIteratorTest
+Running org.apache.accumulo.core.iterators.system.DeletingIteratorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 sec - in org.apache.accumulo.core.iterators.system.DeletingIteratorTest
+Running org.apache.accumulo.core.iterators.system.VisibilityFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.216 sec - in org.apache.accumulo.core.iterators.system.VisibilityFilterTest
+Running org.apache.accumulo.core.iterators.system.ColumnFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.16 sec - in org.apache.accumulo.core.iterators.system.ColumnFilterTest
+Running org.apache.accumulo.core.iterators.system.MultiIteratorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.978 sec - in org.apache.accumulo.core.iterators.system.MultiIteratorTest
+Running org.apache.accumulo.core.iterators.IteratorUtilTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.559 sec - in org.apache.accumulo.core.iterators.IteratorUtilTest
+Running org.apache.accumulo.core.iterators.aggregation.NumSummationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 sec - in org.apache.accumulo.core.iterators.aggregation.NumSummationTest
+Running org.apache.accumulo.core.iterators.aggregation.conf.AggregatorConfigurationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec - in org.apache.accumulo.core.iterators.aggregation.conf.AggregatorConfigurationTest
+Running org.apache.accumulo.core.iterators.user.RowFilterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.438 sec - in org.apache.accumulo.core.iterators.user.RowFilterTest
+Running org.apache.accumulo.core.iterators.user.LargeRowFilterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.676 sec - in org.apache.accumulo.core.iterators.user.LargeRowFilterTest
+Running org.apache.accumulo.core.iterators.user.FilterTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.07 sec - in org.apache.accumulo.core.iterators.user.FilterTest
+Running org.apache.accumulo.core.iterators.user.VersioningIteratorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.291 sec - in org.apache.accumulo.core.iterators.user.VersioningIteratorTest
+Running org.apache.accumulo.core.iterators.user.IntersectingIteratorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.609 sec - in org.apache.accumulo.core.iterators.user.IntersectingIteratorTest
+Running org.apache.accumulo.core.iterators.user.ColumnSliceFilterTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.427 sec - in org.apache.accumulo.core.iterators.user.ColumnSliceFilterTest
+Running org.apache.accumulo.core.iterators.user.RowDeletingIteratorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec - in org.apache.accumulo.core.iterators.user.RowDeletingIteratorTest
+Running org.apache.accumulo.core.iterators.user.WholeRowIteratorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.accumulo.core.iterators.user.WholeRowIteratorTest
+Running org.apache.accumulo.core.iterators.user.RegExFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.334 sec - in org.apache.accumulo.core.iterators.user.RegExFilterTest
+Running org.apache.accumulo.core.iterators.user.IndexedDocIteratorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.664 sec - in org.apache.accumulo.core.iterators.user.IndexedDocIteratorTest
+Running org.apache.accumulo.core.iterators.user.GrepIteratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 sec - in org.apache.accumulo.core.iterators.user.GrepIteratorTest
+Running org.apache.accumulo.core.iterators.user.WholeColumnFamilyIteratorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 sec - in org.apache.accumulo.core.iterators.user.WholeColumnFamilyIteratorTest
+Running org.apache.accumulo.core.iterators.user.VisibilityFilterTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.876 sec - in org.apache.accumulo.core.iterators.user.VisibilityFilterTest
+Running org.apache.accumulo.core.iterators.user.BigDecimalCombinerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.361 sec - in org.apache.accumulo.core.iterators.user.BigDecimalCombinerTest
+Running org.apache.accumulo.core.iterators.user.TransformingIteratorTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.636 sec - in org.apache.accumulo.core.iterators.user.TransformingIteratorTest
+Running org.apache.accumulo.core.iterators.user.CombinerTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.819 sec - in org.apache.accumulo.core.iterators.user.CombinerTest
+Running org.apache.accumulo.core.metadata.MetadataServicerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.274 sec - in org.apache.accumulo.core.metadata.MetadataServicerTest
+Running org.apache.accumulo.core.data.MutationTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.38 sec - in org.apache.accumulo.core.data.MutationTest
+Running org.apache.accumulo.core.data.KeyTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.191 sec - in org.apache.accumulo.core.data.KeyTest
+Running org.apache.accumulo.core.data.ArrayByteSequenceTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 sec - in org.apache.accumulo.core.data.ArrayByteSequenceTest
+Running org.apache.accumulo.core.data.ByteSequenceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 sec - in org.apache.accumulo.core.data.ByteSequenceTest
+Running org.apache.accumulo.core.data.ConditionTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.141 sec - in org.apache.accumulo.core.data.ConditionTest
+Running org.apache.accumulo.core.data.ColumnTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.175 sec - in org.apache.accumulo.core.data.ColumnTest
+Running org.apache.accumulo.core.data.ConditionalMutationTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 sec - in org.apache.accumulo.core.data.ConditionalMutationTest
+Running org.apache.accumulo.core.data.ValueTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.465 sec - in org.apache.accumulo.core.data.ValueTest
+Running org.apache.accumulo.core.data.KeyExtentTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.186 sec - in org.apache.accumulo.core.data.KeyExtentTest
+Running org.apache.accumulo.core.data.RangeTest
+Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.243 sec - in org.apache.accumulo.core.data.RangeTest
+Running org.apache.accumulo.core.data.ConstraintViolationSummaryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 sec - in org.apache.accumulo.core.data.ConstraintViolationSummaryTest
+Running org.apache.accumulo.core.security.AuthorizationsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.173 sec - in org.apache.accumulo.core.security.AuthorizationsTest
+Running org.apache.accumulo.core.security.VisibilityConstraintTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.243 sec - in org.apache.accumulo.core.security.VisibilityConstraintTest
+Running org.apache.accumulo.core.security.NamespacePermissionsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 sec - in org.apache.accumulo.core.security.NamespacePermissionsTest
+Running org.apache.accumulo.core.security.CredentialsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.403 sec - in org.apache.accumulo.core.security.CredentialsTest
+Running org.apache.accumulo.core.security.ColumnVisibilityTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.185 sec - in org.apache.accumulo.core.security.ColumnVisibilityTest
+Running org.apache.accumulo.core.security.AuthenticationTokenIdentifierTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.472 sec - in org.apache.accumulo.core.security.AuthenticationTokenIdentifierTest
+Running org.apache.accumulo.core.security.AuthenticationTokenTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.164 sec - in org.apache.accumulo.core.security.AuthenticationTokenTest
+Running org.apache.accumulo.core.security.VisibilityEvaluatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.143 sec - in org.apache.accumulo.core.security.VisibilityEvaluatorTest
+Running org.apache.accumulo.core.security.crypto.CryptoTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.668 sec - in org.apache.accumulo.core.security.crypto.CryptoTest
+Running org.apache.accumulo.core.security.crypto.BlockedIOStreamTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.393 sec - in org.apache.accumulo.core.security.crypto.BlockedIOStreamTest
+Running org.apache.accumulo.core.util.PreAllocatedArrayTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.185 sec - in org.apache.accumulo.core.util.PreAllocatedArrayTest
+Running org.apache.accumulo.core.util.PairTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.171 sec - in org.apache.accumulo.core.util.PairTest
+Running org.apache.accumulo.core.util.LocalityGroupUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.282 sec - in org.apache.accumulo.core.util.LocalityGroupUtilTest
+Running org.apache.accumulo.core.util.MergeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.241 sec - in org.apache.accumulo.core.util.MergeTest
+Running org.apache.accumulo.core.util.AsyncSocketAppenderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.58 sec - in org.apache.accumulo.core.util.AsyncSocketAppenderTest
+Running org.apache.accumulo.core.util.format.DefaultFormatterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in org.apache.accumulo.core.util.format.DefaultFormatterTest
+Running org.apache.accumulo.core.util.format.ShardedTableDistributionFormatterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.182 sec - in org.apache.accumulo.core.util.format.ShardedTableDistributionFormatterTest
+Running org.apache.accumulo.core.util.format.HexFormatterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec - in org.apache.accumulo.core.util.format.HexFormatterTest
+Running org.apache.accumulo.core.util.format.FormatterFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.221 sec - in org.apache.accumulo.core.util.format.FormatterFactoryTest
+Running org.apache.accumulo.core.util.format.StatisticsDisplayFormatterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 sec - in org.apache.accumulo.core.util.format.StatisticsDisplayFormatterTest
+Running org.apache.accumulo.core.util.format.DateStringFormatterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.2 sec - in org.apache.accumulo.core.util.format.DateStringFormatterTest
+Running org.apache.accumulo.core.util.TextUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec - in org.apache.accumulo.core.util.TextUtilTest
+Running org.apache.accumulo.core.util.ValidatorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 sec - in org.apache.accumulo.core.util.ValidatorTest
+Running org.apache.accumulo.core.util.TestVersion
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec - in org.apache.accumulo.core.util.TestVersion
+Running org.apache.accumulo.core.util.PartitionerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.184 sec - in org.apache.accumulo.core.util.PartitionerTest
+Running org.apache.accumulo.core.util.StatTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 sec - in org.apache.accumulo.core.util.StatTest
+Running org.apache.accumulo.core.util.NumUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 sec - in org.apache.accumulo.core.util.NumUtilTest
+Running org.apache.accumulo.core.util.ThriftMessageUtilTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 sec - in org.apache.accumulo.core.util.ThriftMessageUtilTest
+Running org.apache.accumulo.core.rpc.SaslConnectionParamsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.335 sec - in org.apache.accumulo.core.rpc.SaslConnectionParamsTest
+Running org.apache.accumulo.core.rpc.SaslClientDigestCallbackHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.243 sec - in org.apache.accumulo.core.rpc.SaslClientDigestCallbackHandlerTest
+Running org.apache.accumulo.core.replication.ReplicationSchemaTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.339 sec - in org.apache.accumulo.core.replication.ReplicationSchemaTest
+Running org.apache.accumulo.core.replication.ReplicationConfigurationUtilTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.313 sec - in org.apache.accumulo.core.replication.ReplicationConfigurationUtilTest
+Running org.apache.accumulo.core.replication.ReplicationTargetTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 sec - in org.apache.accumulo.core.replication.ReplicationTargetTest
+Running org.apache.accumulo.core.volume.VolumeImplTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.744 sec - in org.apache.accumulo.core.volume.VolumeImplTest
+Running org.apache.accumulo.core.volume.NonConfiguredVolumeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.8 sec - in org.apache.accumulo.core.volume.NonConfiguredVolumeTest
+Running org.apache.accumulo.core.file.BloomFilterLayerLookupTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.429 sec - in org.apache.accumulo.core.file.BloomFilterLayerLookupTest
+Running org.apache.accumulo.core.file.FileOperationsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.75 sec - in org.apache.accumulo.core.file.FileOperationsTest
+Running org.apache.accumulo.core.file.blockfile.cache.TestCachedBlockQueue
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.22 sec - in org.apache.accumulo.core.file.blockfile.cache.TestCachedBlockQueue
+Running org.apache.accumulo.core.file.blockfile.cache.TestLruBlockCache
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.405 sec - in org.apache.accumulo.core.file.blockfile.cache.TestLruBlockCache
+Running org.apache.accumulo.core.file.rfile.MultiLevelIndexTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.436 sec - in org.apache.accumulo.core.file.rfile.MultiLevelIndexTest
+Running org.apache.accumulo.core.file.rfile.RFileTest
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.177 sec - in org.apache.accumulo.core.file.rfile.RFileTest
+Running org.apache.accumulo.core.file.rfile.BlockIndexTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.663 sec - in org.apache.accumulo.core.file.rfile.BlockIndexTest
+Running org.apache.accumulo.core.file.rfile.RelativeKeyTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.391 sec - in org.apache.accumulo.core.file.rfile.RelativeKeyTest
+Running org.apache.accumulo.core.file.rfile.RFileMetricsTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.101 sec - in org.apache.accumulo.core.file.rfile.RFileMetricsTest
+Running org.apache.accumulo.core.trace.PerformanceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.17 sec - in org.apache.accumulo.core.trace.PerformanceTest
+Running org.apache.accumulo.core.constraints.DefaultKeySizeConstraintTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.497 sec - in org.apache.accumulo.core.constraints.DefaultKeySizeConstraintTest
+Running org.apache.accumulo.core.conf.SiteConfigurationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.167 sec - in org.apache.accumulo.core.conf.SiteConfigurationTest
+Running org.apache.accumulo.core.conf.PropertyTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.557 sec - in org.apache.accumulo.core.conf.PropertyTest
+Running org.apache.accumulo.core.conf.PropertyTypeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 sec - in org.apache.accumulo.core.conf.PropertyTypeTest
+Running org.apache.accumulo.core.conf.CredentialProviderFactoryShimTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.281 sec - in org.apache.accumulo.core.conf.CredentialProviderFactoryShimTest
+Running org.apache.accumulo.core.conf.DefaultConfigurationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.407 sec - in org.apache.accumulo.core.conf.DefaultConfigurationTest
+Running org.apache.accumulo.core.conf.ConfigSanityCheckTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.311 sec - in org.apache.accumulo.core.conf.ConfigSanityCheckTest
+Running org.apache.accumulo.core.conf.ObservableConfigurationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.291 sec - in org.apache.accumulo.core.conf.ObservableConfigurationTest
+Running org.apache.accumulo.core.conf.AccumuloConfigurationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.517 sec - in org.apache.accumulo.core.conf.AccumuloConfigurationTest
+Running org.apache.accumulo.core.cli.TestClientOpts
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.873 sec - in org.apache.accumulo.core.cli.TestClientOpts
+Running org.apache.accumulo.core.cli.ClientOnDefaultTableTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.392 sec - in org.apache.accumulo.core.cli.ClientOnDefaultTableTest
+Running org.apache.accumulo.core.cli.TestHelp
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 sec - in org.apache.accumulo.core.cli.TestHelp
+Running org.apache.accumulo.core.client.BatchWriterConfigTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.376 sec - in org.apache.accumulo.core.client.BatchWriterConfigTest
+Running org.apache.accumulo.core.client.ClientConfigurationTest
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.445 sec <<< FAILURE! - in org.apache.accumulo.core.client.ClientConfigurationTest
+testGetAllPropertiesWithPrefix(org.apache.accumulo.core.client.ClientConfigurationTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<2> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at org.apache.accumulo.core.client.ClientConfigurationTest.testGetAllPropertiesWithPrefix(ClientConfigurationTest.java:135)
+
+Running org.apache.accumulo.core.client.RowIteratorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 sec - in org.apache.accumulo.core.client.RowIteratorTest
+Running org.apache.accumulo.core.client.impl.TabletLocatorImplTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.646 sec - in org.apache.accumulo.core.client.impl.TabletLocatorImplTest
+Running org.apache.accumulo.core.client.impl.ClientContextTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 sec - in org.apache.accumulo.core.client.impl.ClientContextTest
+Running org.apache.accumulo.core.client.impl.ScannerOptionsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.152 sec - in org.apache.accumulo.core.client.impl.ScannerOptionsTest
+Running org.apache.accumulo.core.client.impl.DelegationTokenConfigSerializerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 sec - in org.apache.accumulo.core.client.impl.DelegationTokenConfigSerializerTest
+Running org.apache.accumulo.core.client.impl.RootTabletLocatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.568 sec - in org.apache.accumulo.core.client.impl.RootTabletLocatorTest
+Running org.apache.accumulo.core.client.impl.ZookeeperLockCheckerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.53 sec - in org.apache.accumulo.core.client.impl.ZookeeperLockCheckerTest
+Running org.apache.accumulo.core.client.impl.TableOperationsImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.73 sec - in org.apache.accumulo.core.client.impl.TableOperationsImplTest
+Running org.apache.accumulo.core.client.impl.ThriftTransportKeyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.287 sec - in org.apache.accumulo.core.client.impl.ThriftTransportKeyTest
+Running org.apache.accumulo.core.client.impl.TabletServerBatchReaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.35 sec - in org.apache.accumulo.core.client.impl.TabletServerBatchReaderTest
+Running org.apache.accumulo.core.client.impl.TableOperationsHelperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.208 sec - in org.apache.accumulo.core.client.impl.TableOperationsHelperTest
+Running org.apache.accumulo.core.client.impl.ScannerImplTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.347 sec - in org.apache.accumulo.core.client.impl.ScannerImplTest
+Running org.apache.accumulo.core.client.mapred.AccumuloRowInputFormatTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.82 sec - in org.apache.accumulo.core.client.mapred.AccumuloRowInputFormatTest
+Running org.apache.accumulo.core.client.mapred.AccumuloInputFormatTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.286 sec - in org.apache.accumulo.core.client.mapred.AccumuloInputFormatTest
+Running org.apache.accumulo.core.client.mapred.RangeInputSplitTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.208 sec - in org.apache.accumulo.core.client.mapred.RangeInputSplitTest
+Running org.apache.accumulo.core.client.mapred.AccumuloMultiTableInputFormatTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.931 sec - in org.apache.accumulo.core.client.mapred.AccumuloMultiTableInputFormatTest
+Running org.apache.accumulo.core.client.mapred.AccumuloOutputFormatTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.656 sec - in org.apache.accumulo.core.client.mapred.AccumuloOutputFormatTest
+Running org.apache.accumulo.core.client.mapred.AccumuloFileOutputFormatTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.988 sec - in org.apache.accumulo.core.client.mapred.AccumuloFileOutputFormatTest
+Running org.apache.accumulo.core.client.mapred.TokenFileTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.486 sec - in org.apache.accumulo.core.client.mapred.TokenFileTest
+Running org.apache.accumulo.core.client.mapreduce.impl.BatchInputSplitTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.249 sec - in org.apache.accumulo.core.client.mapreduce.impl.BatchInputSplitTest
+Running org.apache.accumulo.core.client.mapreduce.InputTableConfigTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec - in org.apache.accumulo.core.client.mapreduce.InputTableConfigTest
+Running org.apache.accumulo.core.client.mapreduce.AccumuloRowInputFormatTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.843 sec - in org.apache.accumulo.core.client.mapreduce.AccumuloRowInputFormatTest
+Running org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.571 sec - in org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest
+Running org.apache.accumulo.core.client.mapreduce.RangeInputSplitTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 sec - in org.apache.accumulo.core.client.mapreduce.RangeInputSplitTest
+Running org.apache.accumulo.core.client.mapreduce.AccumuloMultiTableInputFormatTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.829 sec - in org.apache.accumulo.core.client.mapreduce.AccumuloMultiTableInputFormatTest
+Running org.apache.accumulo.core.client.mapreduce.lib.impl.ConfiguratorBaseTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.818 sec - in org.apache.accumulo.core.client.mapreduce.lib.impl.ConfiguratorBaseTest
+Running org.apache.accumulo.core.client.mapreduce.lib.partition.RangePartitionerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.661 sec - in org.apache.accumulo.core.client.mapreduce.lib.partition.RangePartitionerTest
+Running org.apache.accumulo.core.client.mapreduce.AccumuloOutputFormatTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.79 sec - in org.apache.accumulo.core.client.mapreduce.AccumuloOutputFormatTest
+Running org.apache.accumulo.core.client.mapreduce.AccumuloFileOutputFormatTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.279 sec - in org.apache.accumulo.core.client.mapreduce.AccumuloFileOutputFormatTest
+Running org.apache.accumulo.core.client.mapreduce.TokenFileTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.55 sec - in org.apache.accumulo.core.client.mapreduce.TokenFileTest
+Running org.apache.accumulo.core.client.ClientSideIteratorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.533 sec - in org.apache.accumulo.core.client.ClientSideIteratorTest
+Running org.apache.accumulo.core.client.security.SecurityErrorCodeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.172 sec - in org.apache.accumulo.core.client.security.SecurityErrorCodeTest
+Running org.apache.accumulo.core.client.security.tokens.CredentialProviderTokenTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.509 sec - in org.apache.accumulo.core.client.security.tokens.CredentialProviderTokenTest
+Running org.apache.accumulo.core.client.security.tokens.PasswordTokenTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.15 sec - in org.apache.accumulo.core.client.security.tokens.PasswordTokenTest
+Running org.apache.accumulo.core.client.security.tokens.DelegationTokenImplTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.316 sec - in org.apache.accumulo.core.client.security.tokens.DelegationTokenImplTest
+Running org.apache.accumulo.core.client.TestThrift1474
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.489 sec - in org.apache.accumulo.core.client.TestThrift1474
+Running org.apache.accumulo.core.client.lexicoder.impl.ByteUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.171 sec - in org.apache.accumulo.core.client.lexicoder.impl.ByteUtilsTest
+Running org.apache.accumulo.core.client.lexicoder.LongLexicoderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.143 sec - in org.apache.accumulo.core.client.lexicoder.LongLexicoderTest
+Running org.apache.accumulo.core.client.lexicoder.ULongLexicoderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.164 sec - in org.apache.accumulo.core.client.lexicoder.ULongLexicoderTest
+Running org.apache.accumulo.core.client.lexicoder.UIntegerLexicoderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.172 sec - in org.apache.accumulo.core.client.lexicoder.UIntegerLexicoderTest
+Running org.apache.accumulo.core.client.lexicoder.StringLexicoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.117 sec - in org.apache.accumulo.core.client.lexicoder.StringLexicoderTest
+Running org.apache.accumulo.core.client.lexicoder.TextLexicoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.17 sec - in org.apache.accumulo.core.client.lexicoder.TextLexicoderTest
+Running org.apache.accumulo.core.client.lexicoder.DoubleLexicoderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.167 sec - in org.apache.accumulo.core.client.lexicoder.DoubleLexicoderTest
+Running org.apache.accumulo.core.client.lexicoder.BytesLexicoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.167 sec - in org.apache.accumulo.core.client.lexicoder.BytesLexicoderTest
+Running org.apache.accumulo.core.client.lexicoder.ListLexicoderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 sec - in org.apache.accumulo.core.client.lexicoder.ListLexicoderTest
+Running org.apache.accumulo.core.client.lexicoder.ReverseLexicoderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.188 sec - in org.apache.accumulo.core.client.lexicoder.ReverseLexicoderTest
+Running org.apache.accumulo.core.client.lexicoder.DateLexicoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 sec - in org.apache.accumulo.core.client.lexicoder.DateLexicoderTest
+Running org.apache.accumulo.core.client.lexicoder.UUIDLexicoderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.193 sec - in org.apache.accumulo.core.client.lexicoder.UUIDLexicoderTest
+Running org.apache.accumulo.core.client.lexicoder.BigIntegerLexicoderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 sec - in org.apache.accumulo.core.client.lexicoder.BigIntegerLexicoderTest
+Running org.apache.accumulo.core.client.lexicoder.PairLexicoderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 sec - in org.apache.accumulo.core.client.lexicoder.PairLexicoderTest
+Running org.apache.accumulo.core.client.lexicoder.IntegerLexicoderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.167 sec - in org.apache.accumulo.core.client.lexicoder.IntegerLexicoderTest
+Running org.apache.accumulo.core.client.mock.MockTableOperationsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.504 sec - in org.apache.accumulo.core.client.mock.MockTableOperationsTest
+Running org.apache.accumulo.core.client.mock.MockNamespacesTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.471 sec - in org.apache.accumulo.core.client.mock.MockNamespacesTest
+Running org.apache.accumulo.core.client.mock.TestBatchScanner821
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.316 sec - in org.apache.accumulo.core.client.mock.TestBatchScanner821
+Running org.apache.accumulo.core.client.mock.MockConnectorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.319 sec - in org.apache.accumulo.core.client.mock.MockConnectorTest
+Running org.apache.accumulo.core.client.IteratorSettingTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.18 sec - in org.apache.accumulo.core.client.IteratorSettingTest
+Running org.apache.accumulo.core.client.ZooKeeperInstanceTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.918 sec - in org.apache.accumulo.core.client.ZooKeeperInstanceTest
+Running org.apache.accumulo.core.client.admin.FindMaxTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.045 sec - in org.apache.accumulo.core.client.admin.FindMaxTest
+Running org.apache.accumulo.core.client.admin.DelegationTokenConfigTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.176 sec - in org.apache.accumulo.core.client.admin.DelegationTokenConfigTest
+
+Results :
+
+Failed tests: 
+  ClientConfigurationTest.testGetAllPropertiesWithPrefix:135 expected:<2> but was:<0>
+
+Tests run: 786, Failures: 1, Errors: 0, Skipped: 2
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 04:57 min
+[INFO] Finished at: 2016-07-26T03:03:36-07:00
+[INFO] Final Memory: 60M/2909M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project accumulo-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/ylyu/parallel/accumulo/accumulo9/dataset/accumulo/ACCUMULO-3746_47c64d9a0e161f4083749e05dcbd015ab9e5d2a4/core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

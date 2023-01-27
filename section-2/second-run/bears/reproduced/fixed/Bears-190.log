@@ -1,0 +1,119 @@
+Apache Maven 3.6.3
+Maven home: /usr/share/maven
+Java version: 1.8.0_312, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.15.0-41-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for io.cassandrareaper:cassandra-reaper:jar:1.1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-javadoc-plugin is missing. @ line 217, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Cassandra Reaper project                                           [pom]
+[INFO] Cassandra Reaper server                                            [jar]
+[INFO] 
+[INFO] --------------< io.cassandrareaper:cassandra-reaper-pom >---------------
+[INFO] Building Cassandra Reaper project 1.1.0-SNAPSHOT                   [1/2]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] ----------------< io.cassandrareaper:cassandra-reaper >-----------------
+[INFO] Building Cassandra Reaper server 1.1.0-SNAPSHOT                    [2/2]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ cassandra-reaper ---
+[INFO] ShortRevision tag detected. The value is '7'.
+[INFO] Executing: /bin/sh -c cd '/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-190/src/server' && 'git' 'rev-parse' '--verify' '--short=7' 'HEAD'
+[INFO] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-190/src/server
+[INFO] Storing buildNumber: null at timestamp: 1658799203963
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: not a git repository: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-190/../../.git/modules/benchmarks/bears-benchmark
+
+[INFO] ShortRevision tag detected. The value is '7'.
+[INFO] Executing: /bin/sh -c cd '/home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-190/src/server' && 'git' 'rev-parse' '--verify' '--short=7' 'HEAD'
+[INFO] Working directory: /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-190/src/server
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ cassandra-reaper ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cassandra-reaper ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 39 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cassandra-reaper ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (default) @ cassandra-reaper ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cassandra-reaper ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cassandra-reaper ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ cassandra-reaper ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.cassandrareaper.AssertionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in io.cassandrareaper.AssertionTest
+Running io.cassandrareaper.core.ClusterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.cassandrareaper.core.ClusterTest
+Running io.cassandrareaper.ReaperApplicationConfigurationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.707 sec - in io.cassandrareaper.ReaperApplicationConfigurationTest
+Running io.cassandrareaper.service.RepairRunnerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.534 sec - in io.cassandrareaper.service.RepairRunnerTest
+Running io.cassandrareaper.service.RepairRunServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 sec - in io.cassandrareaper.service.RepairRunServiceTest
+Running io.cassandrareaper.service.RepairManagerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.337 sec - in io.cassandrareaper.service.RepairManagerTest
+Running io.cassandrareaper.service.SegmentRunnerTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.228 sec - in io.cassandrareaper.service.SegmentRunnerTest
+Running io.cassandrareaper.service.SegmentGeneratorTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in io.cassandrareaper.service.SegmentGeneratorTest
+Running io.cassandrareaper.service.AutoSchedulingManagerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in io.cassandrareaper.service.AutoSchedulingManagerTest
+Running io.cassandrareaper.service.HeartTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.839 sec - in io.cassandrareaper.service.HeartTest
+Running io.cassandrareaper.service.ClusterRepairSchedulerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in io.cassandrareaper.service.ClusterRepairSchedulerTest
+Running io.cassandrareaper.service.RingRangeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.cassandrareaper.service.RingRangeTest
+Running io.cassandrareaper.jmx.JmxProxyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.cassandrareaper.jmx.JmxProxyTest
+Running io.cassandrareaper.resources.RepairRunResourceTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.552 sec - in io.cassandrareaper.resources.RepairRunResourceTest
+Running io.cassandrareaper.resources.view.NodesStatusTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in io.cassandrareaper.resources.view.NodesStatusTest
+Running io.cassandrareaper.resources.view.RepairRunStatusTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in io.cassandrareaper.resources.view.RepairRunStatusTest
+Running io.cassandrareaper.resources.view.RepairScheduleStatusTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.22 sec - in io.cassandrareaper.resources.view.RepairScheduleStatusTest
+Running io.cassandrareaper.resources.ClusterResourceTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in io.cassandrareaper.resources.ClusterResourceTest
+
+Results :
+
+Tests run: 85, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Cassandra Reaper project 1.1.0-SNAPSHOT:
+[INFO] 
+[INFO] Cassandra Reaper project ........................... SUCCESS [  0.002 s]
+[INFO] Cassandra Reaper server ............................ SUCCESS [ 34.272 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  34.404 s
+[INFO] Finished at: 2022-07-25T18:33:56-07:00
+[INFO] ------------------------------------------------------------------------
+Running the tests related to the bug Bears-190...
+The tests related to the bug Bears-190 were executed.

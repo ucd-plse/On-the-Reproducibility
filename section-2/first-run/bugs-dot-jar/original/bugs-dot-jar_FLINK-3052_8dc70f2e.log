@@ -1,0 +1,222 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building flink-optimizer 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ flink-optimizer ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven) @ flink-optimizer ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ flink-optimizer ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ flink-optimizer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /space/parallel/flink/flink9/dataset/flink/FLINK-3052_8dc70f2e770ac1c355869f5e0b5e23379b1ed76f/flink-optimizer/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ flink-optimizer ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 134 source files to /space/parallel/flink/flink9/dataset/flink/FLINK-3052_8dc70f2e770ac1c355869f5e0b5e23379b1ed76f/flink-optimizer/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ flink-optimizer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ flink-optimizer ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ flink-optimizer ---
+[INFO] Surefire report directory: /space/parallel/flink/flink9/dataset/flink/FLINK-3052_8dc70f2e770ac1c355869f5e0b5e23379b1ed76f/flink-optimizer/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.flink.optimizer.UnionReplacementTest
+Running org.apache.flink.optimizer.ReduceAllTest
+Running org.apache.flink.optimizer.operators.JoinOnConflictingPartitioningsTest
+Running org.apache.flink.optimizer.operators.CoGroupGlobalPropertiesCompatibilityTest
+Running org.apache.flink.optimizer.custompartition.BinaryCustomPartitioningCompatibilityTest
+Running org.apache.flink.optimizer.DisjointDataFlowsTest
+Running org.apache.flink.optimizer.custompartition.JoinCustomPartitioningTest
+Running org.apache.flink.optimizer.FeedbackPropertiesMatchTest
+Running org.apache.flink.optimizer.dag.MapPartitionNodeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.447 sec - in org.apache.flink.optimizer.operators.CoGroupGlobalPropertiesCompatibilityTest
+Running org.apache.flink.optimizer.dataproperties.RequestedLocalPropertiesFilteringTest
+Running org.apache.flink.optimizer.BranchingPlansCompilerTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.22 sec - in org.apache.flink.optimizer.dataproperties.RequestedLocalPropertiesFilteringTest
+Running org.apache.flink.optimizer.dataproperties.GlobalPropertiesPushdownTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.apache.flink.optimizer.dataproperties.GlobalPropertiesPushdownTest
+Running org.apache.flink.optimizer.DistinctCompilationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.022 sec - in org.apache.flink.optimizer.UnionReplacementTest
+Running org.apache.flink.optimizer.java.GroupReduceCompilationTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.658 sec - in org.apache.flink.optimizer.FeedbackPropertiesMatchTest
+Running org.apache.flink.optimizer.operators.JoinGlobalPropertiesCompatibilityTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.apache.flink.optimizer.operators.JoinGlobalPropertiesCompatibilityTest
+Running org.apache.flink.optimizer.operators.CoGroupOnConflictingPartitioningsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.126 sec - in org.apache.flink.optimizer.operators.JoinOnConflictingPartitioningsTest
+Running org.apache.flink.optimizer.dataproperties.GlobalPropertiesFilteringTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.964 sec - in org.apache.flink.optimizer.DisjointDataFlowsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.278 sec - in org.apache.flink.optimizer.java.GroupReduceCompilationTest
+Running org.apache.flink.optimizer.java.IterationCompilerTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec - in org.apache.flink.optimizer.dataproperties.GlobalPropertiesFilteringTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.432 sec - in org.apache.flink.optimizer.DistinctCompilationTest
+Running org.apache.flink.optimizer.programs.ConnectedComponentsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 sec - in org.apache.flink.optimizer.java.IterationCompilerTest
+Running org.apache.flink.optimizer.java.PartitionOperatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.395 sec - in org.apache.flink.optimizer.ReduceAllTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.apache.flink.optimizer.java.PartitionOperatorTest
+Running org.apache.flink.optimizer.java.DistinctAndGroupingOptimizerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.apache.flink.optimizer.java.DistinctAndGroupingOptimizerTest
+Running org.apache.flink.optimizer.java.WorksetIterationsJavaApiCompilerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.46 sec - in org.apache.flink.optimizer.operators.CoGroupOnConflictingPartitioningsTest
+Running org.apache.flink.optimizer.dag.GroupReduceNodeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.196 sec - in org.apache.flink.optimizer.dag.MapPartitionNodeTest
+Running org.apache.flink.optimizer.dataproperties.LocalPropertiesFilteringTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.625 sec - in org.apache.flink.optimizer.custompartition.BinaryCustomPartitioningCompatibilityTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.434 sec - in org.apache.flink.optimizer.java.WorksetIterationsJavaApiCompilerTest
+Running org.apache.flink.optimizer.java.OpenIterationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in org.apache.flink.optimizer.java.OpenIterationTest
+Running org.apache.flink.optimizer.java.DeltaIterationDependenciesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.apache.flink.optimizer.java.DeltaIterationDependenciesTest
+Running org.apache.flink.optimizer.plandump.NumberFormattingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.flink.optimizer.plandump.NumberFormattingTest
+Running org.apache.flink.optimizer.WorksetIterationsRecordApiCompilerTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.399 sec - in org.apache.flink.optimizer.dataproperties.LocalPropertiesFilteringTest
+Running org.apache.flink.optimizer.dataproperties.GlobalPropertiesMatchingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in org.apache.flink.optimizer.dataproperties.GlobalPropertiesMatchingTest
+Running org.apache.flink.optimizer.dataproperties.RequestedGlobalPropertiesFilteringTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.541 sec - in org.apache.flink.optimizer.dag.GroupReduceNodeTest
+Running org.apache.flink.optimizer.IterationsCompilerTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in org.apache.flink.optimizer.dataproperties.RequestedGlobalPropertiesFilteringTest
+Running org.apache.flink.optimizer.ReplicatingDataSourceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.531 sec - in org.apache.flink.optimizer.WorksetIterationsRecordApiCompilerTest
+Running org.apache.flink.optimizer.NestedIterationsTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.007 sec - in org.apache.flink.optimizer.custompartition.JoinCustomPartitioningTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.223 sec - in org.apache.flink.optimizer.programs.ConnectedComponentsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.208 sec - in org.apache.flink.optimizer.NestedIterationsTest
+Running org.apache.flink.optimizer.plan.ChannelTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.apache.flink.optimizer.plan.ChannelTest
+Running org.apache.flink.optimizer.UnionPropertyPropagationTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.509 sec - in org.apache.flink.optimizer.ReplicatingDataSourceTest
+Running org.apache.flink.optimizer.PipelineBreakerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec - in org.apache.flink.optimizer.UnionPropertyPropagationTest
+Running org.apache.flink.optimizer.WorksetIterationCornerCasesTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.036 sec - in org.apache.flink.optimizer.BranchingPlansCompilerTest
+Running org.apache.flink.optimizer.SortPartialReuseTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in org.apache.flink.optimizer.WorksetIterationCornerCasesTest
+Running org.apache.flink.optimizer.dag.GroupCombineNodeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec - in org.apache.flink.optimizer.PipelineBreakerTest
+Running org.apache.flink.optimizer.CachedMatchStrategyCompilerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec - in org.apache.flink.optimizer.SortPartialReuseTest
+Running org.apache.flink.optimizer.AdditionalOperatorsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.apache.flink.optimizer.AdditionalOperatorsTest
+Running org.apache.flink.optimizer.SemanticPropertiesAPIToPlanTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.117 sec - in org.apache.flink.optimizer.SemanticPropertiesAPIToPlanTest
+Running org.apache.flink.optimizer.java.ReduceCompilationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in org.apache.flink.optimizer.java.ReduceCompilationTest
+Running org.apache.flink.optimizer.java.JoinTranslationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in org.apache.flink.optimizer.java.JoinTranslationTest
+Running org.apache.flink.optimizer.plantranslate.TempInIterationsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.283 sec - in org.apache.flink.optimizer.CachedMatchStrategyCompilerTest
+Running org.apache.flink.optimizer.PropertyDataSourceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.apache.flink.optimizer.plantranslate.TempInIterationsTest
+Running org.apache.flink.optimizer.costs.DefaultCostEstimatorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.flink.optimizer.costs.DefaultCostEstimatorTest
+Running org.apache.flink.optimizer.HardPlansCompilationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.apache.flink.optimizer.HardPlansCompilationTest
+Running org.apache.flink.optimizer.CoGroupSolutionSetFirstTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.apache.flink.optimizer.CoGroupSolutionSetFirstTest
+Running org.apache.flink.optimizer.PartitionPushdownTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec - in org.apache.flink.optimizer.PropertyDataSourceTest
+Running org.apache.flink.optimizer.custompartition.GroupingTupleTranslationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in org.apache.flink.optimizer.PartitionPushdownTest
+Running org.apache.flink.optimizer.PartitioningReusageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.417 sec - in org.apache.flink.optimizer.dag.GroupCombineNodeTest
+Running org.apache.flink.optimizer.dag.CoGroupNodeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.apache.flink.optimizer.dag.CoGroupNodeTest
+Running org.apache.flink.optimizer.BroadcastVariablePipelinebreakerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec - in org.apache.flink.optimizer.custompartition.GroupingTupleTranslationTest
+Running org.apache.flink.optimizer.custompartition.CustomPartitioningGlobalOptimizationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.apache.flink.optimizer.BroadcastVariablePipelinebreakerTest
+Running org.apache.flink.optimizer.dataexchange.DataExchangeModeClosedBranchingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.apache.flink.optimizer.custompartition.CustomPartitioningGlobalOptimizationTest
+Running org.apache.flink.optimizer.custompartition.GroupingPojoTranslationTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.apache.flink.optimizer.custompartition.GroupingPojoTranslationTest
+Running org.apache.flink.optimizer.custompartition.CustomPartitioningTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.apache.flink.optimizer.custompartition.CustomPartitioningTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec - in org.apache.flink.optimizer.dataexchange.DataExchangeModeClosedBranchingTest
+Running org.apache.flink.optimizer.dataexchange.PipelineBreakingTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in org.apache.flink.optimizer.dataexchange.PipelineBreakingTest
+Running org.apache.flink.optimizer.ParallelismChangeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.apache.flink.optimizer.ParallelismChangeTest
+Running org.apache.flink.optimizer.custompartition.CoGroupCustomPartitioningTest
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.252 sec - in org.apache.flink.optimizer.PartitioningReusageTest
+Running org.apache.flink.optimizer.GroupOrderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.apache.flink.optimizer.GroupOrderTest
+Running org.apache.flink.optimizer.UnionBetweenDynamicAndStaticPathTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.apache.flink.optimizer.UnionBetweenDynamicAndStaticPathTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in org.apache.flink.optimizer.custompartition.CoGroupCustomPartitioningTest
+Tests run: 9, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 2.155 sec <<< FAILURE! - in org.apache.flink.optimizer.IterationsCompilerTest
+testBulkIterationWithPartialSolutionProperties(org.apache.flink.optimizer.IterationsCompilerTest)  Time elapsed: 0.044 sec  <<< ERROR!
+org.apache.flink.optimizer.CompilerException: No plan meeting the requirements could be created @ Bulk Iteration (Bulk Iteration) (1:null). Most likely reason: Too restrictive plan hints.
+	at org.apache.flink.optimizer.dag.SingleInputNode.getAlternativePlans(SingleInputNode.java:368)
+	at org.apache.flink.optimizer.dag.DataSinkNode.getAlternativePlans(DataSinkNode.java:204)
+	at org.apache.flink.optimizer.Optimizer.compile(Optimizer.java:495)
+	at org.apache.flink.optimizer.Optimizer.compile(Optimizer.java:397)
+	at org.apache.flink.optimizer.util.CompilerTestBase.compileNoStats(CompilerTestBase.java:94)
+	at org.apache.flink.optimizer.IterationsCompilerTest.testBulkIterationWithPartialSolutionProperties(IterationsCompilerTest.java:432)
+
+testIterationPushingWorkOut(org.apache.flink.optimizer.IterationsCompilerTest)  Time elapsed: 0.17 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<FORWARD> but was:<PARTITION_HASH>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.flink.optimizer.IterationsCompilerTest.testIterationPushingWorkOut(IterationsCompilerTest.java:247)
+
+testTwoIterationsDirectlyChained(org.apache.flink.optimizer.IterationsCompilerTest)  Time elapsed: 0.204 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<FORWARD> but was:<PARTITION_HASH>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.flink.optimizer.IterationsCompilerTest.testTwoIterationsDirectlyChained(IterationsCompilerTest.java:160)
+
+Running org.apache.flink.optimizer.dataexchange.DataExchangeModeForwardTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.apache.flink.optimizer.dataexchange.DataExchangeModeForwardTest
+Running org.apache.flink.optimizer.dataexchange.DataExchangeModeOpenBranchingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.apache.flink.optimizer.dataexchange.DataExchangeModeOpenBranchingTest
+Running org.apache.flink.optimizer.dataexchange.UnionClosedBranchingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in org.apache.flink.optimizer.dataexchange.UnionClosedBranchingTest
+Running org.apache.flink.optimizer.custompartition.GroupingKeySelectorTranslationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.apache.flink.optimizer.custompartition.GroupingKeySelectorTranslationTest
+
+Results :
+
+Failed tests: 
+  IterationsCompilerTest.testIterationPushingWorkOut:247 expected:<FORWARD> but was:<PARTITION_HASH>
+  IterationsCompilerTest.testTwoIterationsDirectlyChained:160 expected:<FORWARD> but was:<PARTITION_HASH>
+Tests in error: 
+  IterationsCompilerTest.testBulkIterationWithPartialSolutionProperties:432->CompilerTestBase.compileNoStats:94 » Compiler
+
+Tests run: 335, Failures: 2, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 16.527 s
+[INFO] Finished at: 2016-07-14T17:13:04-07:00
+[INFO] Final Memory: 42M/2476M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project flink-optimizer: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /space/parallel/flink/flink9/dataset/flink/FLINK-3052_8dc70f2e770ac1c355869f5e0b5e23379b1ed76f/flink-optimizer/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

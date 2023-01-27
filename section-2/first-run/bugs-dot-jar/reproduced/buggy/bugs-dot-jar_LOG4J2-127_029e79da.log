@@ -1,0 +1,632 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Log4j 2                                                     [pom]
+[INFO] Apache Log4j API                                                   [jar]
+[INFO] Apache Log4J Core                                                  [jar]
+[INFO] Apache Log4j 1.x Compatibility API                                 [jar]
+[INFO] Apache Log4j SLF4J Binding                                         [jar]
+[INFO] Apache Log4j Commons Logging Bridge                                [jar]
+[INFO] Apache Log4j Flume NG Bridge                                       [jar]
+[INFO] Log4j Web Adapters                                                 [jar]
+[INFO] log4j-samples                                                      [pom]
+[INFO] flume-common                                                       [jar]
+[INFO] flume-remote                                                       [war]
+[INFO] flume-embedded                                                     [war]
+[INFO] 
+[INFO] -------------------< org.apache.logging.log4j:log4j >-------------------
+[INFO] Building Apache Log4j 2 2.0-beta4-SNAPSHOT                        [1/12]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j ---
+[WARNING] Ignoring project type pom - supportedProjectTypes = [jar, bundle]
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j/2.0-beta4-SNAPSHOT/log4j-2.0-beta4-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.apache.logging.log4j:log4j-api >-----------------
+[INFO] Building Apache Log4j API 2.0-beta4-SNAPSHOT                      [2/12]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ log4j-api ---
+[INFO] Compiling 41 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/api/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ log4j-api ---
+[INFO] Compiling 16 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/api/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ log4j-api ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-api ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/api/target/log4j-api-2.0-beta4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-api ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/api/target/log4j-api-2.0-beta4-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-api/2.0-beta4-SNAPSHOT/log4j-api-2.0-beta4-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/api/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-api/2.0-beta4-SNAPSHOT/log4j-api-2.0-beta4-SNAPSHOT.pom
+[INFO] 
+[INFO] ----------------< org.apache.logging.log4j:log4j-core >-----------------
+[INFO] Building Apache Log4J Core 2.0-beta4-SNAPSHOT                     [3/12]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ log4j-core ---
+[INFO] Compiling 214 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/core/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-core ---
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default) > validate @ log4j-core >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default) < validate @ log4j-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default) @ log4j-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 54 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ log4j-core ---
+[INFO] Compiling 105 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/core/target/test-classes
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/core/src/test/java/org/apache/logging/log4j/ReflectionComparison.java:[25,18] Reflection is internal proprietary API and may be removed in a future release
+[WARNING] /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/core/src/test/java/org/apache/logging/log4j/ReflectionComparison.java:[83,12] Reflection is internal proprietary API and may be removed in a future release
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ log4j-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-core ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/core/target/log4j-core-2.0-beta4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:test-jar (default) @ log4j-core ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/core/target/log4j-core-2.0-beta4-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-core ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/core/target/log4j-core-2.0-beta4-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-core/2.0-beta4-SNAPSHOT/log4j-core-2.0-beta4-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/core/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/log4j-core/2.0-beta4-SNAPSHOT/log4j-core-2.0-beta4-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/core/target/log4j-core-2.0-beta4-SNAPSHOT-tests.jar to /home/user/.m2/repository/org/apache/logging/log4j/log4j-core/2.0-beta4-SNAPSHOT/log4j-core-2.0-beta4-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] ----------< org.apache.logging.log4j.adapters:log4j-1.2-api >-----------
+[INFO] Building Apache Log4j 1.x Compatibility API 2.0-beta4-SNAPSHOT    [4/12]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-1.2-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-1.2-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j12-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ log4j-1.2-api ---
+[INFO] Compiling 24 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j12-api/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-1.2-api ---
+[WARNING] Manifest org.apache.logging.log4j.adapters:log4j-1.2-api:jar:2.0-beta4-SNAPSHOT : Superfluous export-package instructions: [org.apache.logging.log4j.*]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-1.2-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ log4j-1.2-api ---
+[INFO] Compiling 6 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j12-api/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ log4j-1.2-api ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-1.2-api ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j12-api/target/log4j-1.2-api-2.0-beta4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-1.2-api ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j12-api/target/log4j-1.2-api-2.0-beta4-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/adapters/log4j-1.2-api/2.0-beta4-SNAPSHOT/log4j-1.2-api-2.0-beta4-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/log4j12-api/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/adapters/log4j-1.2-api/2.0-beta4-SNAPSHOT/log4j-1.2-api-2.0-beta4-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------< org.apache.logging.log4j.adapters:log4j-slf4j-impl >---------
+[INFO] Building Apache Log4j SLF4J Binding 2.0-beta4-SNAPSHOT            [5/12]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-slf4j-impl ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-slf4j-impl ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/slf4j-impl/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ log4j-slf4j-impl ---
+[INFO] Compiling 12 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/slf4j-impl/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-slf4j-impl ---
+[WARNING] Manifest org.apache.logging.log4j.adapters:log4j-slf4j-impl:jar:2.0-beta4-SNAPSHOT : Superfluous export-package instructions: [org.apache.logging.log4j.*]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-slf4j-impl ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ log4j-slf4j-impl ---
+[INFO] Compiling 2 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/slf4j-impl/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ log4j-slf4j-impl ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-slf4j-impl ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/slf4j-impl/target/log4j-slf4j-impl-2.0-beta4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-slf4j-impl ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/slf4j-impl/target/log4j-slf4j-impl-2.0-beta4-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/adapters/log4j-slf4j-impl/2.0-beta4-SNAPSHOT/log4j-slf4j-impl-2.0-beta4-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/slf4j-impl/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/adapters/log4j-slf4j-impl/2.0-beta4-SNAPSHOT/log4j-slf4j-impl-2.0-beta4-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------< org.apache.logging.log4j.adapters:log4j-jcl >-------------
+[INFO] Building Apache Log4j Commons Logging Bridge 2.0-beta4-SNAPSHOT   [6/12]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-jcl ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-jcl ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ log4j-jcl ---
+[INFO] Compiling 3 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/jcl-bridge/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-jcl ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-jcl ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ log4j-jcl ---
+[INFO] Compiling 1 source file to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/jcl-bridge/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ log4j-jcl ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-jcl ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/jcl-bridge/target/log4j-jcl-2.0-beta4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-jcl ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/jcl-bridge/target/log4j-jcl-2.0-beta4-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/adapters/log4j-jcl/2.0-beta4-SNAPSHOT/log4j-jcl-2.0-beta4-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/jcl-bridge/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/adapters/log4j-jcl/2.0-beta4-SNAPSHOT/log4j-jcl-2.0-beta4-SNAPSHOT.pom
+[INFO] 
+[INFO] ----------< org.apache.logging.log4j.adapters:log4j-flume-ng >----------
+[INFO] Building Apache Log4j Flume NG Bridge 2.0-beta4-SNAPSHOT          [7/12]
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.3/jackson-mapper-asl-1.9.3.pom
+Progress (1): 1.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.3/jackson-mapper-asl-1.9.3.pom (1.2 kB at 4.3 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.3/jackson-core-asl-1.9.3.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.3/jackson-mapper-asl-1.9.3.jar
+Progress (1): 1.4/228 kBProgress (1): 2.7/228 kBProgress (1): 4.1/228 kBProgress (1): 5.5/228 kBProgress (1): 6.9/228 kBProgress (1): 8.2/228 kBProgress (1): 9.6/228 kBProgress (1): 11/228 kB Progress (1): 12/228 kBProgress (1): 14/228 kBProgress (1): 15/228 kBProgress (1): 16/228 kBProgress (1): 17/228 kBProgress (1): 19/228 kBProgress (1): 20/228 kBProgress (1): 21/228 kBProgress (1): 23/228 kBProgress (1): 24/228 kBProgress (1): 25/228 kBProgress (1): 27/228 kBProgress (1): 28/228 kBProgress (1): 30/228 kBProgress (1): 31/228 kBProgress (1): 32/228 kBProgress (1): 34/228 kBProgress (1): 35/228 kBProgress (1): 36/228 kBProgress (1): 38/228 kBProgress (1): 39/228 kBProgress (1): 40/228 kBProgress (1): 42/228 kBProgress (1): 43/228 kBProgress (1): 45/228 kBProgress (1): 46/228 kBProgress (1): 47/228 kBProgress (1): 49/228 kBProgress (1): 53/228 kBProgress (1): 57/228 kBProgress (1): 61/228 kBProgress (1): 65/228 kBProgress (1): 69/228 kBProgress (1): 73/228 kBProgress (1): 77/228 kBProgress (1): 81/228 kBProgress (1): 85/228 kBProgress (1): 90/228 kBProgress (1): 94/228 kBProgress (1): 98/228 kBProgress (1): 102/228 kBProgress (1): 106/228 kBProgress (1): 110/228 kBProgress (1): 114/228 kBProgress (1): 118/228 kBProgress (2): 118/228 kB | 1.4/773 kBProgress (2): 122/228 kB | 1.4/773 kBProgress (2): 122/228 kB | 2.7/773 kBProgress (2): 126/228 kB | 2.7/773 kBProgress (2): 126/228 kB | 4.1/773 kBProgress (2): 131/228 kB | 4.1/773 kBProgress (2): 131/228 kB | 5.5/773 kBProgress (2): 131/228 kB | 6.9/773 kBProgress (2): 135/228 kB | 6.9/773 kBProgress (2): 135/228 kB | 8.2/773 kBProgress (2): 139/228 kB | 8.2/773 kBProgress (2): 143/228 kB | 8.2/773 kBProgress (2): 143/228 kB | 9.6/773 kBProgress (2): 147/228 kB | 9.6/773 kBProgress (2): 147/228 kB | 11/773 kB Progress (2): 147/228 kB | 12/773 kBProgress (2): 151/228 kB | 12/773 kBProgress (2): 151/228 kB | 14/773 kBProgress (2): 155/228 kB | 14/773 kBProgress (2): 155/228 kB | 15/773 kBProgress (2): 159/228 kB | 15/773 kBProgress (2): 159/228 kB | 16/773 kBProgress (2): 163/228 kB | 16/773 kBProgress (2): 163/228 kB | 17/773 kBProgress (2): 163/228 kB | 19/773 kBProgress (2): 167/228 kB | 19/773 kBProgress (2): 167/228 kB | 20/773 kBProgress (2): 171/228 kB | 20/773 kBProgress (2): 171/228 kB | 21/773 kBProgress (2): 176/228 kB | 21/773 kBProgress (2): 176/228 kB | 23/773 kBProgress (2): 180/228 kB | 23/773 kBProgress (2): 180/228 kB | 24/773 kBProgress (2): 180/228 kB | 25/773 kBProgress (2): 184/228 kB | 25/773 kBProgress (2): 184/228 kB | 27/773 kBProgress (2): 188/228 kB | 27/773 kBProgress (2): 188/228 kB | 28/773 kBProgress (2): 192/228 kB | 28/773 kBProgress (2): 192/228 kB | 30/773 kBProgress (2): 196/228 kB | 30/773 kBProgress (2): 196/228 kB | 31/773 kBProgress (2): 200/228 kB | 31/773 kBProgress (2): 200/228 kB | 32/773 kBProgress (2): 204/228 kB | 32/773 kBProgress (2): 204/228 kB | 34/773 kBProgress (2): 208/228 kB | 34/773 kBProgress (2): 208/228 kB | 35/773 kBProgress (2): 212/228 kB | 35/773 kBProgress (2): 212/228 kB | 36/773 kBProgress (2): 212/228 kB | 38/773 kBProgress (2): 217/228 kB | 38/773 kBProgress (2): 217/228 kB | 39/773 kBProgress (2): 221/228 kB | 39/773 kBProgress (2): 221/228 kB | 40/773 kBProgress (2): 225/228 kB | 40/773 kBProgress (2): 225/228 kB | 42/773 kBProgress (2): 228 kB | 42/773 kB    Progress (2): 228 kB | 43/773 kBProgress (2): 228 kB | 45/773 kBProgress (2): 228 kB | 46/773 kBProgress (2): 228 kB | 47/773 kBProgress (2): 228 kB | 49/773 kBProgress (2): 228 kB | 53/773 kBProgress (2): 228 kB | 57/773 kBProgress (2): 228 kB | 61/773 kBProgress (2): 228 kB | 65/773 kBProgress (2): 228 kB | 69/773 kBProgress (2): 228 kB | 73/773 kBProgress (2): 228 kB | 77/773 kBProgress (2): 228 kB | 81/773 kBProgress (2): 228 kB | 85/773 kB                                Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.3/jackson-core-asl-1.9.3.jar (228 kB at 3.0 MB/s)
+Progress (1): 90/773 kBProgress (1): 94/773 kBProgress (1): 98/773 kBProgress (1): 102/773 kBProgress (1): 106/773 kBProgress (1): 110/773 kBProgress (1): 114/773 kBProgress (1): 118/773 kBProgress (1): 122/773 kBProgress (1): 126/773 kBProgress (1): 131/773 kBProgress (1): 135/773 kBProgress (1): 139/773 kBProgress (1): 143/773 kBProgress (1): 147/773 kBProgress (1): 151/773 kBProgress (1): 155/773 kBProgress (1): 159/773 kBProgress (1): 163/773 kBProgress (1): 167/773 kBProgress (1): 171/773 kBProgress (1): 176/773 kBProgress (1): 180/773 kBProgress (1): 184/773 kBProgress (1): 188/773 kBProgress (1): 192/773 kBProgress (1): 196/773 kBProgress (1): 200/773 kBProgress (1): 204/773 kBProgress (1): 208/773 kBProgress (1): 212/773 kBProgress (1): 217/773 kBProgress (1): 221/773 kBProgress (1): 225/773 kBProgress (1): 229/773 kBProgress (1): 233/773 kBProgress (1): 237/773 kBProgress (1): 241/773 kBProgress (1): 245/773 kBProgress (1): 249/773 kBProgress (1): 253/773 kBProgress (1): 258/773 kBProgress (1): 262/773 kBProgress (1): 266/773 kBProgress (1): 270/773 kBProgress (1): 274/773 kBProgress (1): 278/773 kBProgress (1): 282/773 kBProgress (1): 286/773 kBProgress (1): 290/773 kBProgress (1): 294/773 kBProgress (1): 298/773 kBProgress (1): 303/773 kBProgress (1): 307/773 kBProgress (1): 311/773 kBProgress (1): 315/773 kBProgress (1): 319/773 kBProgress (1): 323/773 kBProgress (1): 327/773 kBProgress (1): 331/773 kBProgress (1): 335/773 kBProgress (1): 339/773 kBProgress (1): 343/773 kBProgress (1): 348/773 kBProgress (1): 352/773 kBProgress (1): 356/773 kBProgress (1): 360/773 kBProgress (1): 364/773 kBProgress (1): 368/773 kBProgress (1): 372/773 kBProgress (1): 376/773 kBProgress (1): 380/773 kBProgress (1): 384/773 kBProgress (1): 389/773 kBProgress (1): 393/773 kBProgress (1): 397/773 kBProgress (1): 401/773 kBProgress (1): 405/773 kBProgress (1): 409/773 kBProgress (1): 413/773 kBProgress (1): 417/773 kBProgress (1): 421/773 kBProgress (1): 425/773 kBProgress (1): 430/773 kBProgress (1): 434/773 kBProgress (1): 438/773 kBProgress (1): 442/773 kBProgress (1): 446/773 kBProgress (1): 450/773 kBProgress (1): 454/773 kBProgress (1): 458/773 kBProgress (1): 462/773 kBProgress (1): 466/773 kBProgress (1): 470/773 kBProgress (1): 475/773 kBProgress (1): 479/773 kBProgress (1): 483/773 kBProgress (1): 487/773 kBProgress (1): 491/773 kBProgress (1): 495/773 kBProgress (1): 499/773 kBProgress (1): 503/773 kBProgress (1): 507/773 kBProgress (1): 511/773 kBProgress (1): 515/773 kBProgress (1): 520/773 kBProgress (1): 524/773 kBProgress (1): 528/773 kBProgress (1): 532/773 kBProgress (1): 536/773 kBProgress (1): 540/773 kBProgress (1): 544/773 kBProgress (1): 548/773 kBProgress (1): 552/773 kBProgress (1): 556/773 kBProgress (1): 561/773 kBProgress (1): 565/773 kBProgress (1): 569/773 kBProgress (1): 573/773 kBProgress (1): 577/773 kBProgress (1): 581/773 kBProgress (1): 585/773 kBProgress (1): 589/773 kBProgress (1): 593/773 kBProgress (1): 597/773 kBProgress (1): 601/773 kBProgress (1): 606/773 kBProgress (1): 610/773 kBProgress (1): 614/773 kBProgress (1): 618/773 kBProgress (1): 622/773 kBProgress (1): 626/773 kBProgress (1): 630/773 kBProgress (1): 634/773 kBProgress (1): 638/773 kBProgress (1): 642/773 kBProgress (1): 647/773 kBProgress (1): 651/773 kBProgress (1): 655/773 kBProgress (1): 659/773 kBProgress (1): 663/773 kBProgress (1): 667/773 kBProgress (1): 671/773 kBProgress (1): 675/773 kBProgress (1): 679/773 kBProgress (1): 683/773 kBProgress (1): 688/773 kBProgress (1): 692/773 kBProgress (1): 696/773 kBProgress (1): 700/773 kBProgress (1): 704/773 kBProgress (1): 708/773 kBProgress (1): 712/773 kBProgress (1): 716/773 kBProgress (1): 720/773 kBProgress (1): 724/773 kBProgress (1): 728/773 kBProgress (1): 733/773 kBProgress (1): 737/773 kBProgress (1): 741/773 kBProgress (1): 745/773 kBProgress (1): 749/773 kBProgress (1): 753/773 kBProgress (1): 757/773 kBProgress (1): 761/773 kBProgress (1): 765/773 kBProgress (1): 769/773 kBProgress (1): 773 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.3/jackson-mapper-asl-1.9.3.jar (773 kB at 5.4 MB/s)
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-flume-ng ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-flume-ng ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/flume-ng/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ log4j-flume-ng ---
+[INFO] Compiling 11 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/flume-ng/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-flume-ng ---
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default) > validate @ log4j-flume-ng >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default) < validate @ log4j-flume-ng <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default) @ log4j-flume-ng ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-flume-ng ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ log4j-flume-ng ---
+[INFO] Compiling 3 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/flume-ng/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ log4j-flume-ng ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-flume-ng ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/flume-ng/target/log4j-flume-ng-2.0-beta4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:test-jar (default) @ log4j-flume-ng ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/flume-ng/target/log4j-flume-ng-2.0-beta4-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-flume-ng ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/flume-ng/target/log4j-flume-ng-2.0-beta4-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/adapters/log4j-flume-ng/2.0-beta4-SNAPSHOT/log4j-flume-ng-2.0-beta4-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/flume-ng/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/adapters/log4j-flume-ng/2.0-beta4-SNAPSHOT/log4j-flume-ng-2.0-beta4-SNAPSHOT.pom
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/flume-ng/target/log4j-flume-ng-2.0-beta4-SNAPSHOT-tests.jar to /home/user/.m2/repository/org/apache/logging/log4j/adapters/log4j-flume-ng/2.0-beta4-SNAPSHOT/log4j-flume-ng-2.0-beta4-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] ------------< org.apache.logging.log4j.adapters:log4j-web >-------------
+[INFO] Building Log4j Web Adapters 2.0-beta4-SNAPSHOT                    [8/12]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-web ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-web ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/web/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ log4j-web ---
+[INFO] Compiling 3 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/web/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-web ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-web ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ log4j-web ---
+[INFO] Compiling 1 source file to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/web/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ log4j-web ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ log4j-web ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/web/target/log4j-web-2.0-beta4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-web ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/web/target/log4j-web-2.0-beta4-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/adapters/log4j-web/2.0-beta4-SNAPSHOT/log4j-web-2.0-beta4-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/web/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/adapters/log4j-web/2.0-beta4-SNAPSHOT/log4j-web-2.0-beta4-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------< org.apache.logging.log4j.samples:log4j-samples >-----------
+[INFO] Building log4j-samples 2.0-beta4-SNAPSHOT                         [9/12]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-samples ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-samples ---
+[WARNING] Ignoring project type pom - supportedProjectTypes = [jar, bundle]
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ log4j-samples ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/samples/log4j-samples/2.0-beta4-SNAPSHOT/log4j-samples-2.0-beta4-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------< org.apache.logging.log4j.samples:flume-common >------------
+[INFO] Building flume-common 2.0-beta4-SNAPSHOT                         [10/12]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ flume-common ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ flume-common ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/flume-common/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ flume-common ---
+[INFO] Compiling 12 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/flume-common/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ flume-common ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ flume-common ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/flume-common/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ flume-common ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ flume-common ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ flume-common ---
+[INFO] Building jar: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/flume-common/target/flume-common-2.0-beta4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ flume-common ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/flume-common/target/flume-common-2.0-beta4-SNAPSHOT.jar to /home/user/.m2/repository/org/apache/logging/log4j/samples/flume-common/2.0-beta4-SNAPSHOT/flume-common-2.0-beta4-SNAPSHOT.jar
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/flume-common/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/samples/flume-common/2.0-beta4-SNAPSHOT/flume-common-2.0-beta4-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------< org.apache.logging.log4j.samples:flume-remote >------------
+[INFO] Building flume-remote 2.0-beta4-SNAPSHOT                         [11/12]
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ flume-remote ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ flume-remote ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 1 resource to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/flume-remote/target
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ flume-remote ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ flume-remote ---
+[WARNING] Ignoring project type war - supportedProjectTypes = [jar, bundle]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ flume-remote ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/flume-remote/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ flume-remote ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ flume-remote ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-war-plugin:2.2:war (default-war) @ flume-remote ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [flume-remote] in [/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/flume-remote/target/flume-remote-2.0-beta4-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/flume-remote/src/main/webapp]
+[INFO] Webapp assembled in [54 msecs]
+[INFO] Building war: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/flume-remote/target/flume-remote-2.0-beta4-SNAPSHOT.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ flume-remote ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/flume-remote/target/flume-remote-2.0-beta4-SNAPSHOT.war to /home/user/.m2/repository/org/apache/logging/log4j/samples/flume-remote/2.0-beta4-SNAPSHOT/flume-remote-2.0-beta4-SNAPSHOT.war
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/flume-remote/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/samples/flume-remote/2.0-beta4-SNAPSHOT/flume-remote-2.0-beta4-SNAPSHOT.pom
+[INFO] 
+[INFO] ----------< org.apache.logging.log4j.samples:flume-embedded >-----------
+[INFO] Building flume-embedded 2.0-beta4-SNAPSHOT                       [12/12]
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ flume-embedded ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ flume-embedded ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 1 resource to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/flume-embedded/target
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ flume-embedded ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ flume-embedded ---
+[WARNING] Ignoring project type war - supportedProjectTypes = [jar, bundle]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ flume-embedded ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/flume-embedded/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ flume-embedded ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ flume-embedded ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-war-plugin:2.2:war (default-war) @ flume-embedded ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [flume-embedded] in [/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/flume-embedded/target/flume-embedded-2.0-beta4-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/flume-embedded/src/main/webapp]
+[INFO] Webapp assembled in [66 msecs]
+[INFO] Building war: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/flume-embedded/target/flume-embedded-2.0-beta4-SNAPSHOT.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ flume-embedded ---
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/flume-embedded/target/flume-embedded-2.0-beta4-SNAPSHOT.war to /home/user/.m2/repository/org/apache/logging/log4j/samples/flume-embedded/2.0-beta4-SNAPSHOT/flume-embedded-2.0-beta4-SNAPSHOT.war
+[INFO] Installing /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/samples/flume-embedded/pom.xml to /home/user/.m2/repository/org/apache/logging/log4j/samples/flume-embedded/2.0-beta4-SNAPSHOT/flume-embedded-2.0-beta4-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Apache Log4j 2 2.0-beta4-SNAPSHOT .................. SUCCESS [  0.699 s]
+[INFO] Apache Log4j API ................................... SUCCESS [  2.461 s]
+[INFO] Apache Log4J Core .................................. SUCCESS [  3.757 s]
+[INFO] Apache Log4j 1.x Compatibility API ................. SUCCESS [  1.515 s]
+[INFO] Apache Log4j SLF4J Binding ......................... SUCCESS [  0.949 s]
+[INFO] Apache Log4j Commons Logging Bridge ................ SUCCESS [  0.760 s]
+[INFO] Apache Log4j Flume NG Bridge ....................... SUCCESS [  2.810 s]
+[INFO] Log4j Web Adapters ................................. SUCCESS [  1.085 s]
+[INFO] log4j-samples ...................................... SUCCESS [  0.014 s]
+[INFO] flume-common ....................................... SUCCESS [  0.778 s]
+[INFO] flume-remote ....................................... SUCCESS [  0.936 s]
+[INFO] flume-embedded 2.0-beta4-SNAPSHOT .................. SUCCESS [  1.971 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 17.998 s
+[INFO] Finished at: 2022-07-12T21:44:28-07:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.apache.logging.log4j:log4j-api >-----------------
+[INFO] Building Apache Log4j API 2.0-beta4-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ log4j-api ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ log4j-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ log4j-api ---
+[INFO] Compiling 4 source files to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/api/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ log4j-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ log4j-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ log4j-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ log4j-api ---
+[INFO] Surefire report directory: /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/api/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.logging.log4j.ThreadContextTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+Running org.apache.logging.log4j.LevelTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+Running org.apache.logging.log4j.AbstractLoggerTest
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec <<< FAILURE!
+testError(org.apache.logging.log4j.AbstractLoggerTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: Incorrect marker. Expected TEST, actual is null
+	at org.junit.Assert.fail(Assert.java:71)
+	at org.apache.logging.log4j.AbstractLoggerTest.log(AbstractLoggerTest.java:330)
+	at org.apache.logging.log4j.spi.AbstractLogger.error(AbstractLogger.java:1160)
+	at org.apache.logging.log4j.AbstractLoggerTest.testError(AbstractLoggerTest.java:280)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.internal.runners.TestMethodRunner.executeMethodBody(TestMethodRunner.java:99)
+	at org.junit.internal.runners.TestMethodRunner.runUnprotected(TestMethodRunner.java:81)
+	at org.junit.internal.runners.BeforeAndAfterRunner.runProtected(BeforeAndAfterRunner.java:34)
+	at org.junit.internal.runners.TestMethodRunner.runMethod(TestMethodRunner.java:75)
+	at org.junit.internal.runners.TestMethodRunner.run(TestMethodRunner.java:45)
+	at org.junit.internal.runners.TestClassMethodsRunner.invokeTestMethod(TestClassMethodsRunner.java:66)
+	at org.junit.internal.runners.TestClassMethodsRunner.run(TestClassMethodsRunner.java:35)
+	at org.junit.internal.runners.TestClassRunner$1.runUnprotected(TestClassRunner.java:42)
+	at org.junit.internal.runners.BeforeAndAfterRunner.runProtected(BeforeAndAfterRunner.java:34)
+	at org.junit.internal.runners.TestClassRunner.run(TestClassRunner.java:52)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testFatal(org.apache.logging.log4j.AbstractLoggerTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: Incorrect marker. Expected TEST, actual is null
+	at org.junit.Assert.fail(Assert.java:71)
+	at org.apache.logging.log4j.AbstractLoggerTest.log(AbstractLoggerTest.java:330)
+	at org.apache.logging.log4j.spi.AbstractLogger.fatal(AbstractLogger.java:1357)
+	at org.apache.logging.log4j.AbstractLoggerTest.testFatal(AbstractLoggerTest.java:322)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.internal.runners.TestMethodRunner.executeMethodBody(TestMethodRunner.java:99)
+	at org.junit.internal.runners.TestMethodRunner.runUnprotected(TestMethodRunner.java:81)
+	at org.junit.internal.runners.BeforeAndAfterRunner.runProtected(BeforeAndAfterRunner.java:34)
+	at org.junit.internal.runners.TestMethodRunner.runMethod(TestMethodRunner.java:75)
+	at org.junit.internal.runners.TestMethodRunner.run(TestMethodRunner.java:45)
+	at org.junit.internal.runners.TestClassMethodsRunner.invokeTestMethod(TestClassMethodsRunner.java:66)
+	at org.junit.internal.runners.TestClassMethodsRunner.run(TestClassMethodsRunner.java:35)
+	at org.junit.internal.runners.TestClassRunner$1.runUnprotected(TestClassRunner.java:42)
+	at org.junit.internal.runners.BeforeAndAfterRunner.runProtected(BeforeAndAfterRunner.java:34)
+	at org.junit.internal.runners.TestClassRunner.run(TestClassRunner.java:52)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running org.apache.logging.log4j.EventLoggerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec
+Running org.apache.logging.log4j.message.StructuredDataMessageTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+Running org.apache.logging.log4j.message.ParameterizedMessageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+Running org.apache.logging.log4j.message.StringFormattedMessageTest
+Timer StringFormat stopped. Elapsed time: 0.021458804 seconds Average per iteration: 0.000042917 seconds
+Timer Parameterized stopped. Elapsed time: 0.004414406 seconds Average per iteration: 0.000008828 seconds
+Parameterized is 4.86 times faster than StringFormat.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec
+Running org.apache.logging.log4j.message.ObjectMessageTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+Running org.apache.logging.log4j.message.ThreadDumpMessageTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.25 sec
+Running org.apache.logging.log4j.message.MapMessageTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Running org.apache.logging.log4j.NoopThreadContextTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+Running org.apache.logging.log4j.LoggerTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec
+
+Results :
+
+Failed tests:   testError(org.apache.logging.log4j.AbstractLoggerTest): Incorrect marker. Expected TEST, actual is null
+  testFatal(org.apache.logging.log4j.AbstractLoggerTest): Incorrect marker. Expected TEST, actual is null
+
+Tests run: 47, Failures: 2, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.840 s
+[INFO] Finished at: 2022-07-12T21:44:35-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project log4j-api: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /data-depot/user/Workspace/Reproducibility/Reproducibility-Scanner/benchmarks/bugs-dot-jar/logging-log4j2/api/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

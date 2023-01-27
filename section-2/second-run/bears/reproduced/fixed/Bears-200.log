@@ -1,0 +1,747 @@
+Apache Maven 3.6.3
+Maven home: /usr/share/maven
+Java version: 1.8.0_312, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.15.0-41-generic", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.axonframework:axon-integrationtests:jar:4.0.1-SNAPSHOT
+[WARNING] 'dependencies.dependency.systemPath' for com.oracle:ojdbc7:jar should not point at files within the project directory, ${project.basedir}/src/test/binary/ojdbc7.jar will be unresolvable by dependent projects @ line 138, column 25
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.release: ubuntu
+[INFO] os.detected.release.version: 20.04
+[INFO] os.detected.release.like.ubuntu: true
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Axon Framework                                                     [pom]
+[INFO] Axon Framework Messaging                                        [bundle]
+[INFO] Axon Framework Modelling                                        [bundle]
+[INFO] Axon Event Sourcing                                             [bundle]
+[INFO] Axon Disruptor                                                  [bundle]
+[INFO] Axon Configuration                                              [bundle]
+[INFO] Axon Framework Test Fixtures                                       [jar]
+[INFO] Axon Framework Connector for AxonServer                            [jar]
+[INFO] Axon Framework Metrics                                          [bundle]
+[INFO] Axon Framework Spring Support                                   [bundle]
+[INFO] Axon Framework Spring Boot Support                                 [jar]
+[INFO] Spring Boot Starter module for Axon Framework                      [jar]
+[INFO] Axon Integration tests                                             [jar]
+[INFO] Axon Legacy Components                                             [jar]
+[INFO] 
+[INFO] -----------------------< org.axonframework:axon >-----------------------
+[INFO] Building Axon Framework 4.0.1-SNAPSHOT                            [1/14]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] ------------------< org.axonframework:axon-messaging >------------------
+[INFO] Building Axon Framework Messaging 4.0.1-SNAPSHOT                  [2/14]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ axon-messaging ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ axon-messaging ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ axon-messaging ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 395 source files to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-200/messaging/target/classes
+[INFO] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-200/messaging/src/main/java/org/axonframework/commandhandling/gateway/AbstractCommandGateway.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-200/messaging/src/main/java/org/axonframework/commandhandling/gateway/AbstractCommandGateway.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (default) @ axon-messaging ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ axon-messaging ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ axon-messaging ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ axon-messaging ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.axonframework.commandhandling.gateway.DefaultCommandGatewayTest
+2022-07-25 19:07:36,641 [main] WARN  DefaultCommandGateway           - Command 'java.lang.String' resulted in java.lang.RuntimeException(java.lang.RuntimeException)
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.707 sec - in org.axonframework.commandhandling.gateway.DefaultCommandGatewayTest
+Running org.axonframework.commandhandling.gateway.CommandGatewayFactoryTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.186 sec - in org.axonframework.commandhandling.gateway.CommandGatewayFactoryTest
+Running org.axonframework.commandhandling.SimpleCommandBusTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec - in org.axonframework.commandhandling.SimpleCommandBusTest
+Running org.axonframework.commandhandling.callbacks.FutureCallbackTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.axonframework.commandhandling.callbacks.FutureCallbackTest
+Running org.axonframework.commandhandling.AsynchronousCommandBusTest
+2022-07-25 19:07:36,977 [main] INFO  LoggingCallback                 - Command executed successfully: java.lang.Object
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec - in org.axonframework.commandhandling.AsynchronousCommandBusTest
+Running org.axonframework.commandhandling.GenericCommandMessageTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.commandhandling.GenericCommandMessageTest
+Running org.axonframework.commandhandling.AnnotationCommandHandlerAdapterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.175 sec - in org.axonframework.commandhandling.AnnotationCommandHandlerAdapterTest
+Running org.axonframework.commandhandling.CurrentUnitOfWorkParameterResolverFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 sec - in org.axonframework.commandhandling.CurrentUnitOfWorkParameterResolverFactoryTest
+Running org.axonframework.commandhandling.distributed.AnnotationRoutingStrategyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.axonframework.commandhandling.distributed.AnnotationRoutingStrategyTest
+Running org.axonframework.commandhandling.distributed.CommandCallbackRepositoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.commandhandling.distributed.CommandCallbackRepositoryTest
+Running org.axonframework.commandhandling.distributed.commandfilter.CommandFilterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.axonframework.commandhandling.distributed.commandfilter.CommandFilterTest
+Running org.axonframework.commandhandling.distributed.DistributedCommandBusTest
+2022-07-25 19:07:37,411 [main] WARN  LoggingCallback                 - Command resulted in exception: java.lang.String
+java.lang.Exception: Failing
+	at org.axonframework.commandhandling.distributed.DistributedCommandBusTest$StubCommandBusConnector.send(DistributedCommandBusTest.java:197)
+	at org.axonframework.commandhandling.distributed.DistributedCommandBusTest$StubCommandBusConnector$MockitoMock$1861212274.send$accessor$vGnU1vfO(Unknown Source)
+	at org.axonframework.commandhandling.distributed.DistributedCommandBusTest$StubCommandBusConnector$MockitoMock$1861212274$auxiliary$MS7qR5k2.call(Unknown Source)
+	at org.mockito.internal.invocation.RealMethod$FromCallable$1.call(RealMethod.java:40)
+	at org.mockito.internal.invocation.RealMethod$FromBehavior.invoke(RealMethod.java:62)
+	at org.mockito.internal.creation.bytebuddy.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:129)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:43)
+	at org.mockito.Answers.answer(Answers.java:100)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:97)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:35)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:65)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:51)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:135)
+	at org.axonframework.commandhandling.distributed.DistributedCommandBusTest$StubCommandBusConnector$MockitoMock$1861212274.send(Unknown Source)
+	at org.axonframework.commandhandling.distributed.DistributedCommandBus.dispatch(DistributedCommandBus.java:141)
+	at org.axonframework.commandhandling.distributed.DistributedCommandBus.dispatch(DistributedCommandBus.java:124)
+	at org.axonframework.commandhandling.distributed.DistributedCommandBusTest.testDispatchFailingCommandWithoutCallbackWithMessageMonitor(DistributedCommandBusTest.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:79)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:85)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:39)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+	at org.mockito.runners.MockitoJUnitRunner.run(MockitoJUnitRunner.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2022-07-25 19:07:37,416 [main] INFO  LoggingCallback                 - Command executed successfully: java.lang.String
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec - in org.axonframework.commandhandling.distributed.DistributedCommandBusTest
+Running org.axonframework.commandhandling.distributed.ConsistentHashTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.axonframework.commandhandling.distributed.ConsistentHashTest
+Running org.axonframework.commandhandling.distributed.ReplyMessageSerializationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.472 sec - in org.axonframework.commandhandling.distributed.ReplyMessageSerializationTest
+Running org.axonframework.deadline.quartz.DeadlineJobDataBinderTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 sec - in org.axonframework.deadline.quartz.DeadlineJobDataBinderTest
+Running org.axonframework.messaging.annotation.MultiParameterResolverFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.axonframework.messaging.annotation.MultiParameterResolverFactoryTest
+Running org.axonframework.messaging.annotation.SimpleResourceParameterResolverFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.messaging.annotation.SimpleResourceParameterResolverFactoryTest
+Running org.axonframework.messaging.annotation.MessageIdentifierParameterResolverFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.messaging.annotation.MessageIdentifierParameterResolverFactoryTest
+Running org.axonframework.messaging.annotation.HandlerComparatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.axonframework.messaging.annotation.HandlerComparatorTest
+Running org.axonframework.messaging.unitofwork.UnitOfWorkNestingTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.axonframework.messaging.unitofwork.UnitOfWorkNestingTest
+Running org.axonframework.messaging.unitofwork.RollbackConfigurationTypeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.messaging.unitofwork.RollbackConfigurationTypeTest
+Running org.axonframework.messaging.unitofwork.BatchingUnitOfWorkTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.axonframework.messaging.unitofwork.BatchingUnitOfWorkTest
+Running org.axonframework.messaging.unitofwork.CurrentUnitOfWorkTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.messaging.unitofwork.CurrentUnitOfWorkTest
+Running org.axonframework.messaging.unitofwork.AbstractUnitOfWorkTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec - in org.axonframework.messaging.unitofwork.AbstractUnitOfWorkTest
+Running org.axonframework.messaging.unitofwork.ExecutionResultTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.messaging.unitofwork.ExecutionResultTest
+Running org.axonframework.messaging.GenericMessageTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.messaging.GenericMessageTest
+Running org.axonframework.messaging.HeadersTests
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.axonframework.messaging.HeadersTests
+Running org.axonframework.messaging.DefaultInterceptorChainTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.messaging.DefaultInterceptorChainTest
+Running org.axonframework.messaging.MetaDataTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.messaging.MetaDataTest
+Running org.axonframework.messaging.responsetypes.ResponseTypesJacksonSerializationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.axonframework.messaging.responsetypes.ResponseTypesJacksonSerializationTest
+Running org.axonframework.messaging.responsetypes.InstanceResponseTypeTest
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.axonframework.messaging.responsetypes.InstanceResponseTypeTest
+Running org.axonframework.messaging.responsetypes.MultipleInstancesResponseTypeTest
+2022-07-25 19:07:38,237 [main] INFO  MultipleInstancesResponseType   - The given response is an Iterable without any contents, hence we cannot verify if the contained type is assignable to the expected type.
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.axonframework.messaging.responsetypes.MultipleInstancesResponseTypeTest
+Running org.axonframework.messaging.GenericResultMessageTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.messaging.GenericResultMessageTest
+Running org.axonframework.messaging.interceptors.BeanValidationInterceptorTest
+2022-07-25 19:07:38,275 [main] INFO  Version                         - HV000001: Hibernate Validator 5.2.4.Final
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.235 sec - in org.axonframework.messaging.interceptors.BeanValidationInterceptorTest
+Running org.axonframework.messaging.interceptors.CorrelationDataInterceptorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.axonframework.messaging.interceptors.CorrelationDataInterceptorTest
+Running org.axonframework.messaging.interceptors.LoggingInterceptorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec - in org.axonframework.messaging.interceptors.LoggingInterceptorTest
+Running org.axonframework.messaging.interceptors.TransactionManagingInterceptorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in org.axonframework.messaging.interceptors.TransactionManagingInterceptorTest
+Running org.axonframework.messaging.correlation.SimpleCorrelationDataProviderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.messaging.correlation.SimpleCorrelationDataProviderTest
+Running org.axonframework.messaging.correlation.MetaDataValueTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.axonframework.messaging.correlation.MetaDataValueTest
+Running org.axonframework.monitoring.MultiMessageMonitorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.axonframework.monitoring.MultiMessageMonitorTest
+Running org.axonframework.queryhandling.annotation.AnnotationQueryHandlerAdapterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.axonframework.queryhandling.annotation.AnnotationQueryHandlerAdapterTest
+Running org.axonframework.queryhandling.SimpleQueryBusTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec - in org.axonframework.queryhandling.SimpleQueryBusTest
+Running org.axonframework.queryhandling.SubscriptionQueryTest
+2022-07-25 19:07:38,866 [main] ERROR SimpleQueryBus                  - An error happened while trying to report an initial result. Query: GenericQueryMessage{payload={axonFrameworkCR}, metadata={}, messageIdentifier='87334c3a-3377-4ff5-92ca-30699deb3114', queryName='failingQuery', expectedResponseType='InstanceResponseType{class java.lang.String}'}
+java.lang.RuntimeException: oops
+	at org.axonframework.queryhandling.SubscriptionQueryTest$ChatQueryHandler.<init>(SubscriptionQueryTest.java:786)
+	at org.axonframework.queryhandling.SubscriptionQueryTest$ChatQueryHandler.<init>(SubscriptionQueryTest.java:783)
+	at org.axonframework.queryhandling.SubscriptionQueryTest.<init>(SubscriptionQueryTest.java:57)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:217)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:266)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2022-07-25 19:07:38,895 [main] INFO  SimpleQueryUpdateEmitter        - An error occurred while trying to emit an update to a query 'chatMessages'. The subscription will be cancelled. Exception summary: reactor.core.Exceptions$ErrorCallbackNotImplemented: java.lang.IllegalStateException: oops
+2022-07-25 19:07:38,921 [main] ERROR SimpleQueryUpdateEmitter        - An error happened while trying to inform update handler about the error. Query: GenericQueryMessage{payload={axonFrameworkCR}, metadata={}, messageIdentifier='e69da5f8-2c22-4a70-b7e9-5bbd3c7e8779', queryName='chatMessages', expectedResponseType='MultipleInstancesResponseType{class java.lang.String}'}
+2022-07-25 19:07:38,923 [main] ERROR SimpleQueryUpdateEmitter        - An error happened while trying to inform update handler about the error. Query: GenericQueryMessage{payload={axonFrameworkCR}, metadata={}, messageIdentifier='7549c136-025b-4ba9-b1a3-8d362fb12b90', queryName='chatMessages', expectedResponseType='MultipleInstancesResponseType{class java.lang.String}'}
+2022-07-25 19:07:39,450 [main] ERROR SimpleQueryBus                  - An error happened while trying to report an initial result. Query: GenericQueryMessage{payload={axonFrameworkCR}, metadata={}, messageIdentifier='96f142f9-e6aa-4e64-a709-0230c7d458fa', queryName='failingQuery', expectedResponseType='InstanceResponseType{class java.lang.String}'}
+java.lang.RuntimeException: oops
+	at org.axonframework.queryhandling.SubscriptionQueryTest$ChatQueryHandler.<init>(SubscriptionQueryTest.java:786)
+	at org.axonframework.queryhandling.SubscriptionQueryTest$ChatQueryHandler.<init>(SubscriptionQueryTest.java:783)
+	at org.axonframework.queryhandling.SubscriptionQueryTest.<init>(SubscriptionQueryTest.java:57)
+	at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:217)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:266)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2022-07-25 19:07:39,453 [main] ERROR SimpleQueryBus                  - An error happened while trying to report an initial result. Query: GenericQueryMessage{payload={axonFrameworkCR}, metadata={}, messageIdentifier='1519a452-a413-47f7-8249-547da1f6781c', queryName='failingQuery', expectedResponseType='InstanceResponseType{class java.lang.String}'}
+java.lang.RuntimeException: oops
+	at org.axonframework.queryhandling.SubscriptionQueryTest$ChatQueryHandler.<init>(SubscriptionQueryTest.java:786)
+	at org.axonframework.queryhandling.SubscriptionQueryTest$ChatQueryHandler.<init>(SubscriptionQueryTest.java:783)
+	at org.axonframework.queryhandling.SubscriptionQueryTest.<init>(SubscriptionQueryTest.java:57)
+	at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:217)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:266)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.709 sec - in org.axonframework.queryhandling.SubscriptionQueryTest
+Running org.axonframework.queryhandling.DefaultQueryGatewayTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.axonframework.queryhandling.DefaultQueryGatewayTest
+Running org.axonframework.queryhandling.FutureAsResponseTypeToQueryHandlersTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.012 sec - in org.axonframework.queryhandling.FutureAsResponseTypeToQueryHandlersTest
+Running org.axonframework.serialization.LazyDeserializingObjectTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.axonframework.serialization.LazyDeserializingObjectTest
+Running org.axonframework.serialization.xml.Dom4JToByteArrayConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.axonframework.serialization.xml.Dom4JToByteArrayConverterTest
+Running org.axonframework.serialization.xml.InputStreamToDom4jConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.axonframework.serialization.xml.InputStreamToDom4jConverterTest
+Running org.axonframework.serialization.xml.XomToStringConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.axonframework.serialization.xml.XomToStringConverterTest
+Running org.axonframework.serialization.xml.InputStreamToXomConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in org.axonframework.serialization.xml.InputStreamToXomConverterTest
+Running org.axonframework.serialization.xml.XStreamSerializerTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec - in org.axonframework.serialization.xml.XStreamSerializerTest
+Running org.axonframework.serialization.SerialVersionUIDRevisionResolverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.serialization.SerialVersionUIDRevisionResolverTest
+Running org.axonframework.serialization.AnnotationRevisionResolverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.serialization.AnnotationRevisionResolverTest
+Running org.axonframework.serialization.ChainedConverterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.axonframework.serialization.ChainedConverterTest
+Running org.axonframework.serialization.SerializationAwareTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.axonframework.serialization.SerializationAwareTest
+Running org.axonframework.serialization.json.JsonNodeToByteArrayConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.axonframework.serialization.json.JsonNodeToByteArrayConverterTest
+Running org.axonframework.serialization.json.JacksonSerializerTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.47 sec - in org.axonframework.serialization.json.JacksonSerializerTest
+Running org.axonframework.serialization.json.ByteArrayToJsonNodeConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.serialization.json.ByteArrayToJsonNodeConverterTest
+Running org.axonframework.serialization.json.MetaDataDeserializerTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec - in org.axonframework.serialization.json.MetaDataDeserializerTest
+Running org.axonframework.serialization.upcasting.event.AbstractContextAwareEventMultiUpcasterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.axonframework.serialization.upcasting.event.AbstractContextAwareEventMultiUpcasterTest
+Running org.axonframework.serialization.upcasting.event.AbstractSingleEventUpcasterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in org.axonframework.serialization.upcasting.event.AbstractSingleEventUpcasterTest
+Running org.axonframework.serialization.upcasting.event.EventUpcasterChainTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.axonframework.serialization.upcasting.event.EventUpcasterChainTest
+Running org.axonframework.serialization.upcasting.event.AbstractContextAwareSingleEventUpcasterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.axonframework.serialization.upcasting.event.AbstractContextAwareSingleEventUpcasterTest
+Running org.axonframework.serialization.upcasting.event.AbstractEventMultiUpcasterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec - in org.axonframework.serialization.upcasting.event.AbstractEventMultiUpcasterTest
+Running org.axonframework.serialization.upcasting.GenericUpcasterChainTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.axonframework.serialization.upcasting.GenericUpcasterChainTest
+Running org.axonframework.serialization.MavenArtifactRevisionResolverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.serialization.MavenArtifactRevisionResolverTest
+Running org.axonframework.serialization.converters.InputStreamToByteArrayConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.serialization.converters.InputStreamToByteArrayConverterTest
+Running org.axonframework.serialization.converters.ByteArrayToStringConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.serialization.converters.ByteArrayToStringConverterTest
+Running org.axonframework.serialization.converters.StringToByteArrayConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.serialization.converters.StringToByteArrayConverterTest
+Running org.axonframework.serialization.JavaSerializerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.serialization.JavaSerializerTest
+Running org.axonframework.serialization.SerializedMessageTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.axonframework.serialization.SerializedMessageTest
+Running org.axonframework.serialization.SerializedMetaDataValueTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.serialization.SerializedMetaDataValueTest
+Running org.axonframework.serialization.FixedValueRevisionResolverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.serialization.FixedValueRevisionResolverTest
+Running org.axonframework.eventhandling.AnnotatedParameterResolverFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.eventhandling.AnnotatedParameterResolverFactoryTest
+Running org.axonframework.eventhandling.GapAwareTrackingTokenTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.032 sec - in org.axonframework.eventhandling.GapAwareTrackingTokenTest
+Running org.axonframework.eventhandling.SegmentTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.286 sec - in org.axonframework.eventhandling.SegmentTest
+Running org.axonframework.eventhandling.TrackingTokenSerializationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in org.axonframework.eventhandling.TrackingTokenSerializationTest
+Running org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest
+2022-07-25 19:07:47,854 [main] INFO  AbstractContextLoader           - Could not detect default resource locations for test class [org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest]: no resource found for suffixes {-context.xml}.
+2022-07-25 19:07:47,858 [main] INFO  ctDelegatingSmartContextLoader  - AnnotationConfigContextLoader detected default configuration classes for context configuration [ContextConfigurationAttributes@5cce40d7 declaringClass = 'org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2022-07-25 19:07:47,868 [main] INFO  DefaultTestContextBootstrapper  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2022-07-25 19:07:47,876 [main] INFO  DefaultTestContextBootstrapper  - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@11bfffb3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6a7a1a0d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1c6e3ff9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@76e6c070, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@184afb78]
+2022-07-25 19:07:48,147 [main] INFO  Dialect                         - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2022-07-25 19:07:48,244 [main] INFO  LogHelper                       - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-07-25 19:07:48,296 [main] INFO  Version                         - HHH000412: Hibernate Core {5.1.0.Final}
+2022-07-25 19:07:48,298 [main] INFO  Environment                     - HHH000206: hibernate.properties not found
+2022-07-25 19:07:48,299 [main] INFO  Environment                     - HHH000021: Bytecode provider name : javassist
+2022-07-25 19:07:48,333 [main] INFO  Version                         - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2022-07-25 19:07:48,457 [main] WARN  connections                     - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-07-25 19:07:48,458 [main] INFO  connections                     - HHH10001005: using driver [null] at URL [jdbc:hsqldb:mem:testdb]
+2022-07-25 19:07:48,458 [main] INFO  connections                     - HHH10001001: Connection properties: {}
+2022-07-25 19:07:48,458 [main] INFO  connections                     - HHH10001003: Autocommit mode: false
+2022-07-25 19:07:48,460 [main] INFO  rManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+Hibernate: drop table TokenEntry if exists
+Hibernate: create table TokenEntry (processorName varchar(255) not null, segment integer not null, owner varchar(255), timestamp varchar(255) not null, token blob(10000), tokenType varchar(255), primary key (processorName, segment))
+2022-07-25 19:07:49,122 [main] INFO  SchemaCreatorImpl               - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@191b44ca'
+2022-07-25 19:07:49,154 [main] INFO  tainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 19:07:49,307 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@6da9541c testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@2157889c, testMethod = testStealToken@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@65e92505 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@bb21063]; rollback [true]
+Hibernate: select tokenentry0_.processorName as processo1_0_0_, tokenentry0_.segment as segment2_0_0_, tokenentry0_.owner as owner3_0_0_, tokenentry0_.timestamp as timestam4_0_0_, tokenentry0_.token as token5_0_0_, tokenentry0_.tokenType as tokenTyp6_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? and tokenentry0_.segment=? for update
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: select processorName from TokenEntry where processorName =? and segment =? for update
+2022-07-25 19:07:49,369 [main] INFO  ueryTranslatorFactoryInitiator  - HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: update TokenEntry set owner=?, timestamp=?, token=?, tokenType=? where processorName=? and segment=?
+Hibernate: update TokenEntry set owner=null where owner=? and processorName=? and segment=?
+2022-07-25 19:07:49,461 [main] WARN  JpaTokenStore                   - Releasing claim of token stealing/0 failed. It was not owned by local
+Hibernate: select processorName from TokenEntry where processorName =? and segment =? for update
+2022-07-25 19:07:49,465 [main] INFO  TransactionContext              - Rolled back transaction for test: [DefaultTestContext@6da9541c testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@2157889c, testMethod = testStealToken@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@65e92505 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]
+Hibernate: select tokenentry0_.processorName as processo1_0_0_, tokenentry0_.segment as segment2_0_0_, tokenentry0_.owner as owner3_0_0_, tokenentry0_.timestamp as timestam4_0_0_, tokenentry0_.token as token5_0_0_, tokenentry0_.tokenType as tokenTyp6_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? and tokenentry0_.segment=? for update
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: select processorName from TokenEntry where processorName =? and segment =? for update
+Hibernate: update TokenEntry set owner=?, timestamp=?, token=?, tokenType=? where processorName=? and segment=?
+Hibernate: select tokenentry0_.processorName as processo1_0_0_, tokenentry0_.segment as segment2_0_0_, tokenentry0_.owner as owner3_0_0_, tokenentry0_.timestamp as timestam4_0_0_, tokenentry0_.token as token5_0_0_, tokenentry0_.tokenType as tokenTyp6_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? and tokenentry0_.segment=? for update
+Hibernate: update TokenEntry set owner=?, timestamp=?, token=?, tokenType=? where processorName=? and segment=?
+Hibernate: select tokenentry0_.processorName as processo1_0_0_, tokenentry0_.segment as segment2_0_0_, tokenentry0_.owner as owner3_0_0_, tokenentry0_.timestamp as timestam4_0_0_, tokenentry0_.token as token5_0_0_, tokenentry0_.tokenType as tokenTyp6_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? and tokenentry0_.segment=? for update
+Hibernate: update TokenEntry set owner=?, timestamp=?, token=?, tokenType=? where processorName=? and segment=?
+2022-07-25 19:07:49,498 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@6da9541c testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@11174bf, testMethod = testInitializeTokensWhileAlreadyPresent@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@65e92505 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@bb21063]; rollback [true]
+Hibernate: select tokenentry0_.processorName as processo1_0_0_, tokenentry0_.segment as segment2_0_0_, tokenentry0_.owner as owner3_0_0_, tokenentry0_.timestamp as timestam4_0_0_, tokenentry0_.token as token5_0_0_, tokenentry0_.tokenType as tokenTyp6_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? and tokenentry0_.segment=? for update
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: select tokenentry0_.segment as col_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? order by tokenentry0_.segment ASC
+2022-07-25 19:07:49,515 [main] INFO  TransactionContext              - Rolled back transaction for test: [DefaultTestContext@6da9541c testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@11174bf, testMethod = testInitializeTokensWhileAlreadyPresent@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@65e92505 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]
+2022-07-25 19:07:49,517 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@6da9541c testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@237aba92, testMethod = testStealingFromOtherThreadFailsWithRowLock@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@65e92505 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@bb21063]; rollback [true]
+Hibernate: select tokenentry0_.processorName as processo1_0_0_, tokenentry0_.segment as segment2_0_0_, tokenentry0_.owner as owner3_0_0_, tokenentry0_.timestamp as timestam4_0_0_, tokenentry0_.token as token5_0_0_, tokenentry0_.tokenType as tokenTyp6_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? and tokenentry0_.segment=? for update
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: select tokenentry0_.processorName as processo1_0_0_, tokenentry0_.segment as segment2_0_0_, tokenentry0_.owner as owner3_0_0_, tokenentry0_.timestamp as timestam4_0_0_, tokenentry0_.token as token5_0_0_, tokenentry0_.tokenType as tokenTyp6_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? and tokenentry0_.segment=? for update
+2022-07-25 19:07:49,772 [main] INFO  TransactionContext              - Rolled back transaction for test: [DefaultTestContext@6da9541c testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@237aba92, testMethod = testStealingFromOtherThreadFailsWithRowLock@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@65e92505 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+2022-07-25 19:07:49,776 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@6da9541c testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@39840986, testMethod = testInitializeTokens@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@65e92505 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@bb21063]; rollback [true]
+Hibernate: select tokenentry0_.segment as col_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? order by tokenentry0_.segment ASC
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: select tokenentry0_.segment as col_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? order by tokenentry0_.segment ASC
+2022-07-25 19:07:49,788 [main] INFO  TransactionContext              - Rolled back transaction for test: [DefaultTestContext@6da9541c testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@39840986, testMethod = testInitializeTokens@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@65e92505 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]
+2022-07-25 19:07:49,791 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@6da9541c testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@4bf89d3d, testMethod = testQuerySegments@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@65e92505 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@bb21063]; rollback [true]
+Hibernate: select tokenentry0_.processorName as processo1_0_0_, tokenentry0_.segment as segment2_0_0_, tokenentry0_.owner as owner3_0_0_, tokenentry0_.timestamp as timestam4_0_0_, tokenentry0_.token as token5_0_0_, tokenentry0_.tokenType as tokenTyp6_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? and tokenentry0_.segment=? for update
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: select tokenentry0_.processorName as processo1_0_0_, tokenentry0_.segment as segment2_0_0_, tokenentry0_.owner as owner3_0_0_, tokenentry0_.timestamp as timestam4_0_0_, tokenentry0_.token as token5_0_0_, tokenentry0_.tokenType as tokenTyp6_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? and tokenentry0_.segment=? for update
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: select tokenentry0_.processorName as processo1_0_0_, tokenentry0_.segment as segment2_0_0_, tokenentry0_.owner as owner3_0_0_, tokenentry0_.timestamp as timestam4_0_0_, tokenentry0_.token as token5_0_0_, tokenentry0_.tokenType as tokenTyp6_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? and tokenentry0_.segment=? for update
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: update TokenEntry set owner=?, timestamp=?, token=?, tokenType=? where processorName=? and segment=?
+Hibernate: select tokenentry0_.processorName as processo1_0_0_, tokenentry0_.segment as segment2_0_0_, tokenentry0_.owner as owner3_0_0_, tokenentry0_.timestamp as timestam4_0_0_, tokenentry0_.token as token5_0_0_, tokenentry0_.tokenType as tokenTyp6_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? and tokenentry0_.segment=? for update
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: update TokenEntry set owner=?, timestamp=?, token=?, tokenType=? where processorName=? and segment=?
+Hibernate: update TokenEntry set owner=?, timestamp=?, token=?, tokenType=? where processorName=? and segment=?
+Hibernate: select tokenentry0_.segment as col_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? order by tokenentry0_.segment ASC
+Hibernate: select tokenentry0_.segment as col_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? order by tokenentry0_.segment ASC
+Hibernate: select tokenentry0_.segment as col_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? order by tokenentry0_.segment ASC
+2022-07-25 19:07:49,815 [main] INFO  TransactionContext              - Rolled back transaction for test: [DefaultTestContext@6da9541c testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@4bf89d3d, testMethod = testQuerySegments@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@65e92505 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]
+2022-07-25 19:07:49,817 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@6da9541c testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@731fae, testMethod = testClaimTokenConcurrently@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@65e92505 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@bb21063]; rollback [true]
+Hibernate: select tokenentry0_.processorName as processo1_0_0_, tokenentry0_.segment as segment2_0_0_, tokenentry0_.owner as owner3_0_0_, tokenentry0_.timestamp as timestam4_0_0_, tokenentry0_.token as token5_0_0_, tokenentry0_.tokenType as tokenTyp6_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? and tokenentry0_.segment=? for update
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: select processorName from TokenEntry where processorName =? and segment =? for update
+2022-07-25 19:07:49,822 [main] INFO  TransactionContext              - Rolled back transaction for test: [DefaultTestContext@6da9541c testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@731fae, testMethod = testClaimTokenConcurrently@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@65e92505 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]
+2022-07-25 19:07:49,824 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@6da9541c testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@2b06681c, testMethod = testExtendingLostClaimFails@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@65e92505 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@bb21063]; rollback [true]
+Hibernate: select tokenentry0_.processorName as processo1_0_0_, tokenentry0_.segment as segment2_0_0_, tokenentry0_.owner as owner3_0_0_, tokenentry0_.timestamp as timestam4_0_0_, tokenentry0_.token as token5_0_0_, tokenentry0_.tokenType as tokenTyp6_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? and tokenentry0_.segment=? for update
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: update TokenEntry set timestamp=? where processorName=? and segment=? and owner=?
+2022-07-25 19:07:49,832 [main] WARN  SqlExceptionHelper              - SQL Warning Code: -1100, SQLState: 02000
+2022-07-25 19:07:49,832 [main] WARN  SqlExceptionHelper              - no data
+2022-07-25 19:07:49,832 [main] INFO  TransactionContext              - Rolled back transaction for test: [DefaultTestContext@6da9541c testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@2b06681c, testMethod = testExtendingLostClaimFails@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@65e92505 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]
+2022-07-25 19:07:49,834 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@6da9541c testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@2d23a5be, testMethod = testUpdateNullToken@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@65e92505 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@bb21063]; rollback [true]
+Hibernate: select tokenentry0_.processorName as processo1_0_0_, tokenentry0_.segment as segment2_0_0_, tokenentry0_.owner as owner3_0_0_, tokenentry0_.timestamp as timestam4_0_0_, tokenentry0_.token as token5_0_0_, tokenentry0_.tokenType as tokenTyp6_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? and tokenentry0_.segment=? for update
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: update TokenEntry set owner=?, timestamp=?, token=?, tokenType=? where processorName=? and segment=?
+Hibernate: select tokenentry0_.processorName as processo1_0_, tokenentry0_.segment as segment2_0_, tokenentry0_.owner as owner3_0_, tokenentry0_.timestamp as timestam4_0_, tokenentry0_.token as token5_0_, tokenentry0_.tokenType as tokenTyp6_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=?
+2022-07-25 19:07:49,846 [main] INFO  TransactionContext              - Rolled back transaction for test: [DefaultTestContext@6da9541c testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@2d23a5be, testMethod = testUpdateNullToken@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@65e92505 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]
+2022-07-25 19:07:49,847 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@6da9541c testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@2f2dc407, testMethod = testInitializeTokensAtGivenPosition@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@65e92505 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@bb21063]; rollback [true]
+Hibernate: select tokenentry0_.segment as col_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? order by tokenentry0_.segment ASC
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: select tokenentry0_.segment as col_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? order by tokenentry0_.segment ASC
+Hibernate: select processorName from TokenEntry where processorName =? and segment =? for update
+Hibernate: select processorName from TokenEntry where processorName =? and segment =? for update
+Hibernate: select processorName from TokenEntry where processorName =? and segment =? for update
+Hibernate: select processorName from TokenEntry where processorName =? and segment =? for update
+Hibernate: select processorName from TokenEntry where processorName =? and segment =? for update
+Hibernate: select processorName from TokenEntry where processorName =? and segment =? for update
+Hibernate: select processorName from TokenEntry where processorName =? and segment =? for update
+2022-07-25 19:07:49,874 [main] INFO  TransactionContext              - Rolled back transaction for test: [DefaultTestContext@6da9541c testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@2f2dc407, testMethod = testInitializeTokensAtGivenPosition@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@65e92505 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]
+2022-07-25 19:07:49,875 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@6da9541c testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@36cdcae0, testMethod = testClaimAndUpdateToken@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@65e92505 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@bb21063]; rollback [true]
+Hibernate: select tokenentry0_.processorName as processo1_0_0_, tokenentry0_.segment as segment2_0_0_, tokenentry0_.owner as owner3_0_0_, tokenentry0_.timestamp as timestam4_0_0_, tokenentry0_.token as token5_0_0_, tokenentry0_.tokenType as tokenTyp6_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? and tokenentry0_.segment=? for update
+Hibernate: insert into TokenEntry (owner, timestamp, token, tokenType, processorName, segment) values (?, ?, ?, ?, ?, ?)
+Hibernate: select processorName from TokenEntry where processorName =? and segment =? for update
+Hibernate: update TokenEntry set owner=?, timestamp=?, token=?, tokenType=? where processorName=? and segment=?
+Hibernate: select tokenentry0_.processorName as processo1_0_, tokenentry0_.segment as segment2_0_, tokenentry0_.owner as owner3_0_, tokenentry0_.timestamp as timestam4_0_, tokenentry0_.token as token5_0_, tokenentry0_.tokenType as tokenTyp6_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=?
+Hibernate: update TokenEntry set owner=null where owner=? and processorName=? and segment=?
+Hibernate: select tokenentry0_.processorName as processo1_0_0_, tokenentry0_.segment as segment2_0_0_, tokenentry0_.owner as owner3_0_0_, tokenentry0_.timestamp as timestam4_0_0_, tokenentry0_.token as token5_0_0_, tokenentry0_.tokenType as tokenTyp6_0_0_ from TokenEntry tokenentry0_ where tokenentry0_.processorName=? and tokenentry0_.segment=?
+2022-07-25 19:07:49,883 [main] INFO  TransactionContext              - Rolled back transaction for test: [DefaultTestContext@6da9541c testClass = JpaTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest@36cdcae0, testMethod = testClaimAndUpdateToken@JpaTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@65e92505 testClass = JpaTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.087 sec - in org.axonframework.eventhandling.tokenstore.jpa.JpaTokenStoreTest
+Running org.axonframework.eventhandling.tokenstore.inmemory.InMemoryTokenStoreTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.eventhandling.tokenstore.inmemory.InMemoryTokenStoreTest
+Running org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest
+2022-07-25 19:07:49,893 [main] INFO  AbstractContextLoader           - Could not detect default resource locations for test class [org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest]: no resource found for suffixes {-context.xml}.
+2022-07-25 19:07:49,893 [main] INFO  ctDelegatingSmartContextLoader  - AnnotationConfigContextLoader detected default configuration classes for context configuration [ContextConfigurationAttributes@1fb30e5d declaringClass = 'org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest', classes = '{class org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest$Context}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2022-07-25 19:07:49,894 [main] INFO  DefaultTestContextBootstrapper  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2022-07-25 19:07:49,894 [main] INFO  DefaultTestContextBootstrapper  - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@56a72887, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3c8dea0b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4b9beefe, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4cddc036, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@23d12a3a]
+2022-07-25 19:07:49,950 [main] WARN  JdbcTokenStore                  - Releasing claim of token stealing/0 failed. It was owned by another node.
+2022-07-25 19:07:49,968 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@5bcfdaf3 testClass = JdbcTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest@38347345, testMethod = testInitializeTokensWhileAlreadyPresent@JdbcTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4b9b5da5 testClass = JdbcTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@7c200e57]; rollback [true]
+2022-07-25 19:07:49,975 [main] INFO  TransactionContext              - Rolled back transaction for test: [DefaultTestContext@5bcfdaf3 testClass = JdbcTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest@38347345, testMethod = testInitializeTokensWhileAlreadyPresent@JdbcTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4b9b5da5 testClass = JdbcTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]
+2022-07-25 19:07:49,984 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@5bcfdaf3 testClass = JdbcTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest@48bab2c6, testMethod = testInitializeTokens@JdbcTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4b9b5da5 testClass = JdbcTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@7c200e57]; rollback [true]
+2022-07-25 19:07:49,990 [main] INFO  TransactionContext              - Rolled back transaction for test: [DefaultTestContext@5bcfdaf3 testClass = JdbcTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest@48bab2c6, testMethod = testInitializeTokens@JdbcTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4b9b5da5 testClass = JdbcTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]
+2022-07-25 19:07:49,991 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@5bcfdaf3 testClass = JdbcTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest@5cc669d, testMethod = testQuerySegments@JdbcTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4b9b5da5 testClass = JdbcTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@7c200e57]; rollback [true]
+2022-07-25 19:07:50,004 [main] INFO  TransactionContext              - Rolled back transaction for test: [DefaultTestContext@5bcfdaf3 testClass = JdbcTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest@5cc669d, testMethod = testQuerySegments@JdbcTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4b9b5da5 testClass = JdbcTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]
+2022-07-25 19:07:50,023 [main] INFO  TransactionContext              - Began transaction (1) for test context [DefaultTestContext@5bcfdaf3 testClass = JdbcTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest@da67c46, testMethod = testInitializeTokensAtGivenPosition@JdbcTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4b9b5da5 testClass = JdbcTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@7c200e57]; rollback [true]
+2022-07-25 19:07:50,044 [main] INFO  TransactionContext              - Rolled back transaction for test: [DefaultTestContext@5bcfdaf3 testClass = JdbcTokenStoreTest, testInstance = org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest@da67c46, testMethod = testInitializeTokensAtGivenPosition@JdbcTokenStoreTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4b9b5da5 testClass = JdbcTokenStoreTest, locations = '{}', classes = '{class org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 sec - in org.axonframework.eventhandling.tokenstore.jdbc.JdbcTokenStoreTest
+Running org.axonframework.eventhandling.ReplayTokenTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.axonframework.eventhandling.ReplayTokenTest
+Running org.axonframework.eventhandling.DirectEventProcessingStrategyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.axonframework.eventhandling.DirectEventProcessingStrategyTest
+Running org.axonframework.eventhandling.ConcludesBatchParameterResolverFactoryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.axonframework.eventhandling.ConcludesBatchParameterResolverFactoryTest
+Running org.axonframework.eventhandling.SimpleEventHandlerInvokerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.axonframework.eventhandling.SimpleEventHandlerInvokerTest
+Running org.axonframework.eventhandling.replay.ReplayParameterResolverFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.axonframework.eventhandling.replay.ReplayParameterResolverFactoryTest
+Running org.axonframework.eventhandling.replay.ReplayAwareMessageHandlerWrapperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.eventhandling.replay.ReplayAwareMessageHandlerWrapperTest
+Running org.axonframework.eventhandling.SimpleEventBusTest
+2022-07-25 19:07:50,112 [main] INFO  AbstractEventBus                - EventProcessor [Mock for Consumer, hashCode: 747827348] not added. It was already subscribed
+2022-07-25 19:07:50,112 [main] INFO  AbstractEventBus                - EventListener Mock for Consumer, hashCode: 473637407 not removed. It was already unsubscribed
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.axonframework.eventhandling.SimpleEventBusTest
+Running org.axonframework.eventhandling.GlobalSequenceTrackingTokenTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.eventhandling.GlobalSequenceTrackingTokenTest
+Running org.axonframework.eventhandling.async.SequentialPerAggregatePolicyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.eventhandling.async.SequentialPerAggregatePolicyTest
+Running org.axonframework.eventhandling.async.SequentialPolicyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.eventhandling.async.SequentialPolicyTest
+Running org.axonframework.eventhandling.async.FullConcurrencyPolicyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.eventhandling.async.FullConcurrencyPolicyTest
+Running org.axonframework.eventhandling.async.AsynchronousEventProcessingStrategyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.axonframework.eventhandling.async.AsynchronousEventProcessingStrategyTest
+Running org.axonframework.eventhandling.async.AsynchronousEventProcessorConcurrencyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.103 sec - in org.axonframework.eventhandling.async.AsynchronousEventProcessorConcurrencyTest
+Running org.axonframework.eventhandling.AbstractEventProcessorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.axonframework.eventhandling.AbstractEventProcessorTest
+Running org.axonframework.eventhandling.scheduling.java.SimpleEventSchedulerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.207 sec - in org.axonframework.eventhandling.scheduling.java.SimpleEventSchedulerTest
+Running org.axonframework.eventhandling.scheduling.quartz.QuartzEventSchedulerTest
+2022-07-25 19:07:56,494 [main] INFO  StdSchedulerFactory             - Using default implementation for ThreadExecutor
+2022-07-25 19:07:56,498 [main] INFO  SimpleThreadPool                - Job execution threads will use class loader of thread: main
+2022-07-25 19:07:56,511 [main] INFO  SchedulerSignalerImpl           - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-07-25 19:07:56,512 [main] INFO  QuartzScheduler                 - Quartz Scheduler v.2.2.1 created.
+2022-07-25 19:07:56,513 [main] INFO  RAMJobStore                     - RAMJobStore initialized.
+2022-07-25 19:07:56,514 [main] INFO  QuartzScheduler                 - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-07-25 19:07:56,514 [main] INFO  StdSchedulerFactory             - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2022-07-25 19:07:56,514 [main] INFO  StdSchedulerFactory             - Quartz scheduler version: 2.2.1
+2022-07-25 19:07:56,514 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2022-07-25 19:07:56,614 [DefaultQuartzScheduler_Worker-1] INFO  FireEventJob                    - Job successfully executed. Scheduled Event [Object] has been published.
+2022-07-25 19:07:56,627 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2022-07-25 19:07:56,627 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2022-07-25 19:07:57,009 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-07-25 19:07:57,019 [main] INFO  StdSchedulerFactory             - Using default implementation for ThreadExecutor
+2022-07-25 19:07:57,019 [main] INFO  SimpleThreadPool                - Job execution threads will use class loader of thread: main
+2022-07-25 19:07:57,021 [main] INFO  SchedulerSignalerImpl           - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-07-25 19:07:57,021 [main] INFO  QuartzScheduler                 - Quartz Scheduler v.2.2.1 created.
+2022-07-25 19:07:57,021 [main] INFO  RAMJobStore                     - RAMJobStore initialized.
+2022-07-25 19:07:57,021 [main] INFO  QuartzScheduler                 - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-07-25 19:07:57,021 [main] INFO  StdSchedulerFactory             - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2022-07-25 19:07:57,021 [main] INFO  StdSchedulerFactory             - Quartz scheduler version: 2.2.1
+2022-07-25 19:07:57,021 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2022-07-25 19:07:57,111 [DefaultQuartzScheduler_Worker-1] ERROR FireEventJob                    - Exception occurred while publishing scheduled event [java.lang.Object]
+org.axonframework.utils.MockException: Mock
+2022-07-25 19:07:57,125 [DefaultQuartzScheduler_Worker-1] INFO  JobRunShell                     - Job TestGroup.event-809490b7-3bf4-4ea3-967a-4eeaf941e537 threw a JobExecutionException: 
+org.quartz.JobExecutionException: org.axonframework.utils.MockException: Mock [See nested exception: org.axonframework.utils.MockException: Mock]
+	at org.axonframework.eventhandling.scheduling.quartz.FireEventJob.execute(FireEventJob.java:87)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: org.axonframework.utils.MockException: Mock
+2022-07-25 19:07:57,125 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2022-07-25 19:07:57,131 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2022-07-25 19:07:57,631 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-07-25 19:07:57,641 [main] INFO  StdSchedulerFactory             - Using default implementation for ThreadExecutor
+2022-07-25 19:07:57,641 [main] INFO  SimpleThreadPool                - Job execution threads will use class loader of thread: main
+2022-07-25 19:07:57,644 [main] INFO  SchedulerSignalerImpl           - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-07-25 19:07:57,644 [main] INFO  QuartzScheduler                 - Quartz Scheduler v.2.2.1 created.
+2022-07-25 19:07:57,644 [main] INFO  RAMJobStore                     - RAMJobStore initialized.
+2022-07-25 19:07:57,644 [main] INFO  QuartzScheduler                 - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-07-25 19:07:57,644 [main] INFO  StdSchedulerFactory             - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2022-07-25 19:07:57,644 [main] INFO  StdSchedulerFactory             - Quartz scheduler version: 2.2.1
+2022-07-25 19:07:57,645 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2022-07-25 19:07:57,743 [DefaultQuartzScheduler_Worker-1] INFO  FireEventJob                    - Job successfully executed. Scheduled Event [Object] has been published.
+2022-07-25 19:07:57,768 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2022-07-25 19:07:57,768 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2022-07-25 19:07:58,256 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-07-25 19:07:58,265 [main] INFO  StdSchedulerFactory             - Using default implementation for ThreadExecutor
+2022-07-25 19:07:58,265 [main] INFO  SimpleThreadPool                - Job execution threads will use class loader of thread: main
+2022-07-25 19:07:58,267 [main] INFO  SchedulerSignalerImpl           - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-07-25 19:07:58,267 [main] INFO  QuartzScheduler                 - Quartz Scheduler v.2.2.1 created.
+2022-07-25 19:07:58,267 [main] INFO  RAMJobStore                     - RAMJobStore initialized.
+2022-07-25 19:07:58,267 [main] INFO  QuartzScheduler                 - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-07-25 19:07:58,267 [main] INFO  StdSchedulerFactory             - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2022-07-25 19:07:58,267 [main] INFO  StdSchedulerFactory             - Quartz scheduler version: 2.2.1
+2022-07-25 19:07:58,267 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2022-07-25 19:07:58,277 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2022-07-25 19:07:58,277 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2022-07-25 19:07:58,791 [main] INFO  QuartzScheduler                 - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.345 sec - in org.axonframework.eventhandling.scheduling.quartz.QuartzEventSchedulerTest
+Running org.axonframework.eventhandling.scheduling.quartz.DirectEventJobDataBinderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.axonframework.eventhandling.scheduling.quartz.DirectEventJobDataBinderTest
+Running org.axonframework.eventhandling.scheduling.ScheduleTokenJacksonSerializationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.axonframework.eventhandling.scheduling.ScheduleTokenJacksonSerializationTest
+Running org.axonframework.eventhandling.MultiEventHandlerInvokerTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.axonframework.eventhandling.MultiEventHandlerInvokerTest
+Running org.axonframework.eventhandling.GenericDomainEventMessageTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.eventhandling.GenericDomainEventMessageTest
+Running org.axonframework.eventhandling.TimestampParameterResolverFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.eventhandling.TimestampParameterResolverFactoryTest
+Running org.axonframework.eventhandling.GenericEventMessageTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.eventhandling.GenericEventMessageTest
+Running org.axonframework.eventhandling.AbstractEventBusTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in org.axonframework.eventhandling.AbstractEventBusTest
+Running org.axonframework.eventhandling.TrackingTokenParameterResolverFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.eventhandling.TrackingTokenParameterResolverFactoryTest
+Running org.axonframework.eventhandling.AnnotationEventMessageHandlerAdapterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.eventhandling.AnnotationEventMessageHandlerAdapterTest
+Running org.axonframework.common.AxonThreadFactoryTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.common.AxonThreadFactoryTest
+Running org.axonframework.common.annotation.AnnotationUtilsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.common.annotation.AnnotationUtilsTest
+Running org.axonframework.common.annotation.PriorityAnnotationComparatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.axonframework.common.annotation.PriorityAnnotationComparatorTest
+Running org.axonframework.common.ReflectionUtilsTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.axonframework.common.ReflectionUtilsTest
+Running org.axonframework.common.CollectionUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.common.CollectionUtilsTest
+Running org.axonframework.common.caching.WeakReferenceCacheTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.455 sec - in org.axonframework.common.caching.WeakReferenceCacheTest
+Running org.axonframework.common.caching.NoCacheTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.common.caching.NoCacheTest
+Running org.axonframework.common.IdentifierValidatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.axonframework.common.IdentifierValidatorTest
+Running org.axonframework.common.DateTimeUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.common.DateTimeUtilsTest
+Running org.axonframework.common.lock.PessimisticLockFactoryTest
+Tests run: 10, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 14.271 sec <<< FAILURE! - in org.axonframework.common.lock.PessimisticLockFactoryTest
+testDeadlockDetected_ThreeThreadsInVector(org.axonframework.common.lock.PessimisticLockFactoryTest)  Time elapsed: 5.019 sec  <<< ERROR!
+org.junit.runners.model.TestTimedOutException: test timed out after 5000 milliseconds
+	at org.axonframework.common.lock.PessimisticLockFactoryTest.testDeadlockDetected_ThreeThreadsInVector(PessimisticLockFactoryTest.java:121)
+
+testDeadlockDetected_TwoThreadsInVector(org.axonframework.common.lock.PessimisticLockFactoryTest)  Time elapsed: 5.01 sec  <<< ERROR!
+org.junit.runners.model.TestTimedOutException: test timed out after 5000 milliseconds
+	at org.axonframework.common.lock.PessimisticLockFactoryTest.testDeadlockDetected_TwoThreadsInVector(PessimisticLockFactoryTest.java:78)
+
+Running org.axonframework.common.lock.LockFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.axonframework.common.lock.LockFactoryTest
+Running org.axonframework.common.AssertTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.axonframework.common.AssertTest
+Running org.axonframework.common.jdbc.JdbcUtilsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.254 sec - in org.axonframework.common.jdbc.JdbcUtilsTest
+Running org.axonframework.common.jdbc.UnitOfWorkAwareConnectionProviderWrapperTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in org.axonframework.common.jdbc.UnitOfWorkAwareConnectionProviderWrapperTest
+Running org.axonframework.common.jdbc.ConnectionWrapperFactoryTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.axonframework.common.jdbc.ConnectionWrapperFactoryTest
+Running org.axonframework.common.property.UniformPropertyAccessStrategyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.axonframework.common.property.UniformPropertyAccessStrategyTest
+Running org.axonframework.common.property.PropertyAccessStrategyTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.axonframework.common.property.PropertyAccessStrategyTest
+Running org.axonframework.common.property.DirectPropertyAccessStrategyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.axonframework.common.property.DirectPropertyAccessStrategyTest
+Running org.axonframework.common.property.BeanPropertyAccessStrategyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.axonframework.common.property.BeanPropertyAccessStrategyTest
+2022-07-25 19:08:14,069 [Thread-21] INFO  tainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 19:08:14,076 [Thread-21] INFO  pperImpl$DelayedDropActionImpl  - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+Hibernate: drop table TokenEntry if exists
+2022-07-25 19:08:14,144 [Thread-21] INFO  connections                     - HHH10001008: Cleaning up connection pool [jdbc:hsqldb:mem:testdb]
+
+Results :
+
+Tests in error: 
+  PessimisticLockFactoryTest.testDeadlockDetected_ThreeThreadsInVector:121 » TestTimedOut
+  PessimisticLockFactoryTest.testDeadlockDetected_TwoThreadsInVector:78 » TestTimedOut
+
+Tests run: 678, Failures: 0, Errors: 2, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Axon Framework 4.0.1-SNAPSHOT:
+[INFO] 
+[INFO] Axon Framework ..................................... SUCCESS [  0.003 s]
+[INFO] Axon Framework Messaging ........................... FAILURE [ 45.890 s]
+[INFO] Axon Framework Modelling ........................... SKIPPED
+[INFO] Axon Event Sourcing ................................ SKIPPED
+[INFO] Axon Disruptor ..................................... SKIPPED
+[INFO] Axon Configuration ................................. SKIPPED
+[INFO] Axon Framework Test Fixtures ....................... SKIPPED
+[INFO] Axon Framework Connector for AxonServer ............ SKIPPED
+[INFO] Axon Framework Metrics ............................. SKIPPED
+[INFO] Axon Framework Spring Support ...................... SKIPPED
+[INFO] Axon Framework Spring Boot Support ................. SKIPPED
+[INFO] Spring Boot Starter module for Axon Framework ...... SKIPPED
+[INFO] Axon Integration tests ............................. SKIPPED
+[INFO] Axon Legacy Components ............................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  46.798 s
+[INFO] Finished at: 2022-07-25T19:08:14-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project axon-messaging: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/user/Workspace/reproducibility/Reproducibility-Scanner/reproducer/workspace/Bears-200/messaging/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :axon-messaging
+Running the tests related to the bug Bears-200...
+The tests related to the bug Bears-200 were executed.
