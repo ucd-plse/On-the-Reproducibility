@@ -2,7 +2,7 @@
 
 This study focuses on the reproducibility of software defect datasets. Specifically, we present a study on the reproducibility of five Java software defect datasets, examine the reproducibility of one of them in a 13-month period, propose fixes for software breakages and explore two ways to reduce breakage for long-term reproducibility. 
 
-This package consists of two parts: raw data description and study replication. To explore the raw data used in this study, please refer to the [Raw Data Description](#1-raw-data-description). To replicate the study using the raw data provided or from scratch, please refer to [Study Replication](#2-study-replication).
+This package consists of two parts: raw data description and study reproduction. To explore the raw data used in this study, please refer to the [Raw Data Description](#1-raw-data-description). To reproduce the study using the raw data provided or from scratch, please refer to [Study Reproduction](#2-study-reproduction).
 
 ## 1. Raw Data Description
 
@@ -35,7 +35,7 @@ In this section, we provide the original logs/metadata provided by the maintaine
 - Examples:
     - `Chart-1` is a reproducible artifact, see its [reproduced log](section-2/first-run/defects4j/reproduced/Chart-1.log).
     - `Cli-6` is a broken artifact, see its [reproduced log](section-2/first-run/defects4j/reproduced/Cli-6.log).
-- The reproduced logs were generated using the [script](https://github.com/rjust/defects4j/blob/master/framework/test/test_verify_bugs.sh) provided by **Defects4J** maintainers. Please refer to [Study Replication](#2-study-replication) for instructions on how to generate the reproduced logs from scratch using a Docker container.
+- The reproduced logs were generated using the [script](https://github.com/rjust/defects4j/blob/master/framework/test/test_verify_bugs.sh) provided by **Defects4J** maintainers. Please refer to [Study Reproduction](#2-study-reproducition) for instructions on how to generate the reproduced logs from scratch using a Docker container.
 
 > Please note that the maintainers of Defects4J state that 29 artifacts are currently broken (deprecated). However, our test run shows that only 27 are broken. The differences are `Closure-63` and `Closure-93`, which are tagged as broken by maintainers but actually reproducible in our run.
 
@@ -46,7 +46,7 @@ In this section, we provide the original logs/metadata provided by the maintaine
 - Examples:
     - `AaltoXml-1` is a reproducible artifact, see its [reproduced log](section-2/first-run/growingbugs/reproduced/AaltoXml-1.log).
     - `JacksonCore-31` is a broken artifact, see its [reproduced log](section-2/first-run/growingbugs/reproduced/JacksonCore-31.log).
-- The reproduced logs were generated using the [script](https://github.com/liuhuigmail/GrowingBugRepository/blob/main/framework/test/test_verify_bugs.sh) provided by **GrowingBugs** maintainers. Please refer to [Study Replication](#2-study-replication) for instructions on how to generate the reproduced logs from scratch using a Docker container.
+- The reproduced logs were generated using the [script](https://github.com/liuhuigmail/GrowingBugRepository/blob/main/framework/test/test_verify_bugs.sh) provided by **GrowingBugs** maintainers. Please refer to [Study Reproduction](#2-study-reproduction) for instructions on how to generate the reproduced logs from scratch using a Docker container.
 
 > Please note that GrowingBugs is a bug dataset that is continuously growing. For this study, we use [version 4.0](https://github.com/liuhuigmail/GrowingBugRepository/releases/tag/v4.0) committed on Jan 3, 2022. This is the latest release of the dataset to the data of this study.
 
@@ -63,7 +63,7 @@ In this section, we provide the original logs/metadata provided by the maintaine
         - Original logs: [buggy version](section-2/first-run/bugs-dot-jar/original/bugs-dot-jar_MATH-1257_03178c8b.log).
         - Reproduced logs: [buggy version](section-2/first-run/bugs-dot-jar/reproduced/buggy/bugs-dot-jar_MATH-1257_03178c8b.log) | [fixed version](section-2/first-run/bugs-dot-jar/reproduced/fixed/bugs-dot-jar_MATH-1257_03178c8b.log).
         - Explanation: the buggy version matches the original log and the fixed version passes all tests.
-- Note that maintainers of **Bugs.jar** do not provide scripts to test the reproducibility of the dataset. Please refer to [Study Replication](#2-study-replication) for instructions on how to generate the reproduced logs from scratch using a Docker container. The details on how the **Bugs.jar** artifacts are reproduced can be found [here](https://github.com/ucd-plse/reproducibility-scanner/tree/master/reproducer).
+- Note that maintainers of **Bugs.jar** do not provide scripts to test the reproducibility of the dataset. Please refer to [Study Reproduction](#2-study-reproduction) for instructions on how to generate the reproduced logs from scratch using a Docker container. The details on how the **Bugs.jar** artifacts are reproduced can be found [here](https://github.com/ucd-plse/reproducibility-scanner/tree/master/reproducer).
 
 #### BugSwarm
 
@@ -78,7 +78,7 @@ In this section, we provide the original logs/metadata provided by the maintaine
         - Original logs: [buggy version](section-2/first-run/bugswarm/original/buggy/languagetool-org-languagetool-393031702.log) | [fixed version](section-2/first-run/bugswarm/original/fixed/languagetool-org-languagetool-393031702.log).
         - Reproduced logs: [buggy version](section-2/first-run/bugswarm/reproduced/buggy/languagetool-org-languagetool-393031702.log) | [fixed version](section-2/first-run/bugswarm/reproduced/fixed/languagetool-org-languagetool-393031702.log).
         - Explanation: the artifact is reproducible as the buggy version matches the original log and the fixed version passes all tests.
-- Note that **BugSwarm** maintainers do not provide scripts to test the reproducibility of the dataset, but each **BugSwarm** artifact includes scripts to run buggy and and fixed versions within a provided Docker container. The reproduced logs were generated using these scripts and Docker containers. Please refer to [Study Replication](#2-study-replication) for instructions on how to generate the reproduced logs from scratch using a Docker container.
+- Note that **BugSwarm** maintainers do not provide scripts to test the reproducibility of the dataset, but each **BugSwarm** artifact includes scripts to run buggy and and fixed versions within a provided Docker container. The reproduced logs were generated using these scripts and Docker containers. Please refer to [Study Reproduction](#2-study-reproduction) for instructions on how to generate the reproduced logs from scratch using a Docker container.
 
 #### Bears
 
@@ -93,7 +93,7 @@ In this section, we provide the original logs/metadata provided by the maintaine
         - Original logs: [metadata](section-2/first-run/bears/original/Bears-1.json)
         - Reproduced logs: [buggy version](section-2/first-run/bears/reproduced/buggy/Bears-1.log) | [fixed version](section-2/first-run/bears/reproduced/fixed/Bears-1.log).
         - Explanation: the artifact is reproducible as the buggy version matches the original log and the fixed version passes all tests.
-- Note that **Bears** maintainers do not provide scripts to test the reproducibility of the dataset, but maintainers provide a [script](https://github.com/bears-bugs/bears-benchmark/blob/master/scripts/run_tests_all.py) to run all artifacts. The reproduced logs were generated using this script. Please refer to [Study Replication](#2-study-replication) for instructions on how to generate the reproduced logs from scratch using a Docker container.
+- Note that **Bears** maintainers do not provide scripts to test the reproducibility of the dataset, but maintainers provide a [script](https://github.com/bears-bugs/bears-benchmark/blob/master/scripts/run_tests_all.py) to run all artifacts. The reproduced logs were generated using this script. Please refer to [Study Reproduction](#2-study-reproduction) for instructions on how to generate the reproduced logs from scratch using a Docker container.
 
 
 ### 1.2 All data for the case study on BugSwarm
@@ -122,27 +122,27 @@ RQ5 studies the impact of dependency caching and artifact isolation on preventin
 - A CSV file for each of the 20 test suites can be found [here](section-3/test-suites-for-eval-after-study-range). Each CSV file lists the reproducibility outcome for each artifact.
 - The reproduced logs for both buggy and fixed versions of each artifact for each test suite are available [here](https://github.com/ucd-plse/bugswarm-reproducibility/tree/master/20-suites-for-eval).
 
-## 2. Study Replication
+## 2. Study Reproduction
 
-This section provides instructions on how to replicate our study using the raw data provided and from scratch.
+This section provides instructions on how to reproduce our study using the raw data provided and from scratch.
 
-- [2.1] Set up replication environment.
-- [2.2] Replicate the reproducibility study on five software defect datasets (Section 2 in the paper).
+- [2.1] Set up reproduction environment.
+- [2.2] Reproduce the reproducibility study on five software defect datasets (Section 2 in the paper).
     - [2.2.1] Run log analyzer to get reproducibility data from provided reproduced logs.
     - [2.2.2] [Optional] Run reproducer to generate reproduced logs from scratch.
-- [2.3] Replicate the case study on BugSwarm (Section 3 in the paper).
+- [2.3] Reproduce the case study on BugSwarm (Section 3 in the paper).
 
-### 2.1 Set up replication environment
+### 2.1 Set up reproduction environment
 
 #### Prerequisites
 
-- Ubuntu version `20.04` is required. The replication package has not been tested on other systems.
-- Docker version `20.10.17` is required. The replication package has not been tested with other Docker versions ([how to install Docker](https://docs.docker.com/engine/install/ubuntu/#install-docker-engine)). If you encounter a permission error when running `docker` commands, please check this [workaround](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user).
+- Ubuntu version `20.04` is required. The reproduction package has not been tested on other systems.
+- Docker version `20.10.17` is required. The reproduction package has not been tested with other Docker versions ([how to install Docker](https://docs.docker.com/engine/install/ubuntu/#install-docker-engine)). If you encounter a permission error when running `docker` commands, please check this [workaround](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user).
 
 #### Setup
-We have three options to setup the replication environment.
+We have three options to setup the reproduction environment.
 
-- **[Option 1]** Pull and run our Docker container with environment, then set up the replication package. 
+- **[Option 1]** Pull and run our Docker container with environment, then set up the reproduction package. 
 
     1. Pull and run the Docker container with environment. Note that Docker will automatically pull the image if not found locally.
         ``` sh
@@ -150,13 +150,13 @@ We have three options to setup the replication environment.
             -v /var/lib/docker:/var/lib/docker -it ucdavisplse/reproducibility:env
         ```
 
-    2. In the container, clone the repository for replication package. It may take up to 10 mins based on the network status.
+    2. In the container, clone the repository for reproduction package. It may take up to 10 mins based on the network status.
         ``` sh
         git clone https://github.com/ucd-plse/On-the-Reproducibility.git /On-the-Reproducibility && \
         git clone --recurse-submodules -j5 https://github.com/ucd-plse/reproducibility-scanner.git \
             /On-the-Reproducibility/section-2/reproducibility-scanner
         ```
-        > It is expected to have an error massage `fatal: No url found for submodule path 'benchmarks/growingbugs/framework/projects/pdfbox' in .gitmodules. Failed to recurse into submodule path 'benchmarks/growingbugs'` when executing the above command. The root cause comes from the misconfiguration of GrowingBugs. However, this error message does not affect the replication process.
+        > It is expected to have an error massage `fatal: No url found for submodule path 'benchmarks/growingbugs/framework/projects/pdfbox' in .gitmodules. Failed to recurse into submodule path 'benchmarks/growingbugs'` when executing the above command. The root cause comes from the misconfiguration of GrowingBugs. However, this error message does not affect the reproduction process.
 
     3. Copy the reproduced logs from first run of experiment to the framework directory.
         ``` sh
@@ -173,6 +173,38 @@ We have three options to setup the replication environment.
         ``` sh
         python init.py
         ```
+    
+    > It is possible that the initialization script fails due to network issues. If this happens, please try running the initialization script for Defects4J and GrowingBugs manually. The commands are listed below.
+    >
+    > To manually initialize Defects4J, run the following commands in the container.
+    > ``` sh
+    > cd /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/
+    > cpanm --installdeps .
+    > ./init.sh
+    > ```
+    > The commands above are to [manually set up Defects4J](https://github.com/rjust/defects4j#steps-to-set-up-defects4j). You can see the output for each command and make sure it is completed.
+    > After successfully running the initialization script (`init.sh`) for Defects4J, please continue with the following command.
+    > ``` sh
+    > cd /On-the-Reproducibility/section-2/reproducibility-scanner/
+    > python init.py
+    > ```
+    > 
+    > To manually initialize GrowingBugs, run the following commands in the container.
+    > ``` sh
+    > cd /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/
+    > cpanm --installdeps .
+    > ./init.sh
+    > ./repos.sh
+    > ```
+    > The commands above are to [manually set up GrowingBugs](https://github.com/liuhuigmail/GrowingBugRepository#steps-to-set-up-growingbugs). You can see the output for each command and make sure it is completed. After successfully running the initialization scripts (`init.sh` and `repos.sh`) for GrowingBugs, please continue with the following command.
+    > ``` sh
+    > cd /On-the-Reproducibility/section-2/reproducibility-scanner/
+    > python init.py
+    > ```
+    > Please feel free to reach out to us if you have any questions.
+    > 
+
+
 
 - **[Option 2]** Build a Docker container on your own machine with the Dockerfile we provide.
 
@@ -194,9 +226,9 @@ We have three options to setup the replication environment.
     Please refer to the documentation of [reproducibility-scanner](https://github.com/ucd-plse/reproducibility-scanner).
 
 
-If you select **option 1** or **option 2**, please continue the following replication instructions *inside* the Docker container. If you select **option 3**, please run the replication instructions on your host machine.
+If you select **option 1** or **option 2**, please continue the following reproduction instructions *inside* the Docker container. If you select **option 3**, please run the reproduction instructions on your host machine.
 
-### 2.2 Replicate the reproducibility study on five software defect datasets (Section 2)
+### 2.2 Reproduce the reproducibility study on five software defect datasets (Section 2)
 
 We provide the instructions to generate the reproducibility data (1) using the reproduced logs we provide in [Raw Data Description](#1-raw-data-description) or (2) from scratch, which includes generating the reproduced logs.
 
@@ -210,7 +242,7 @@ We provide the instructions to generate the reproducibility data (1) using the r
     cpan DBI
     ```
 
-- Pre-step 3: Check default Java version if you chose to run the replication package in your host machine.
+- Pre-step 3: Check default Java version if you chose to run the reproduction package in your host machine.
     ``` sh
     java -version
     ```
@@ -537,7 +569,7 @@ This section provides commands to run the log analyzer on *one* artifact and in 
     ```
 
 
-### 2.3 Replicate the case study on BugSwarm (Section 3)
+### 2.3 Reproduce the case study on BugSwarm (Section 3)
 
 
 Change directory to `section-3`
@@ -561,7 +593,7 @@ The script can be found [here](section-3). The output of the above script should
 <summary>Click to see sample outputs</summary>
   
 ```
-Replicating Statistical Data for Section 3: RQ3, RQ4 and RQ5
+Reproducing Statistical Data for Section 3: RQ3, RQ4 and RQ5
 
 ========== RQ3 ==========
 Test suite in study range: 36 suites loaded.
