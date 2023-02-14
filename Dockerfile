@@ -68,8 +68,6 @@ RUN pip install docker==2.5.1 && \
 RUN mkdir -p /root/.ssh && \
     ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
-# RUN git clone https://github.com/ucd-plse/On-the-Reproducibility.git /On-the-Reproducibility
-
 ADD . /On-the-Reproducibility
 
 RUN rm -rf /On-the-Reproducibility/section-2/reproducibility-scanner && \
