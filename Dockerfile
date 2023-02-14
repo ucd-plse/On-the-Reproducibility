@@ -62,13 +62,15 @@ RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.8 1 &&
 	update-alternatives --set python /usr/bin/python3.8
 
 RUN pip install docker==2.5.1 && \
-	pip install requests && \
-	pip install pandas
+	pip install requests==2.28.1 && \
+	pip install pandas==1.4.3
 
 RUN mkdir -p /root/.ssh && \
     ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
-RUN git clone https://github.com/ucd-plse/On-the-Reproducibility.git /On-the-Reproducibility
+# RUN git clone https://github.com/ucd-plse/On-the-Reproducibility.git /On-the-Reproducibility
+
+ADD . /On-the-Reproducibility
 
 RUN rm -rf /On-the-Reproducibility/section-2/reproducibility-scanner && \
 	git clone --recurse-submodules -j5 https://github.com/ucd-plse/reproducibility-scanner.git /On-the-Reproducibility/section-2/reproducibility-scanner || :
