@@ -173,6 +173,38 @@ We have three options to setup the replication environment.
         ``` sh
         python init.py
         ```
+    
+    > It is possible that the initialization script fails due to network issues. If this happens, please try running the initialization script for Defects4J and GrowingBugs manually. The commands are listed below.
+    >
+    > To manually initialize Defects4J, run the following commands in the container.
+    > ``` sh
+    > cd /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/defects4j/
+    > cpanm --installdeps .
+    > ./init.sh
+    > ```
+    > The commands above are to [manually set up Defects4J](https://github.com/rjust/defects4j#steps-to-set-up-defects4j). You can see the output for each command and make sure it is completed.
+    > After successfully running the initialization script (`init.sh`) for Defects4J, please continue with the following command.
+    > ``` sh
+    > cd /On-the-Reproducibility/section-2/reproducibility-scanner/
+    > python init.py
+    > ```
+    > 
+    > To manually initialize GrowingBugs, run the following commands in the container.
+    > ``` sh
+    > cd /On-the-Reproducibility/section-2/reproducibility-scanner/benchmarks/growingbugs/
+    > cpanm --installdeps .
+    > ./init.sh
+    > ./repos.sh
+    > ```
+    > The commands above are to [manually set up GrowingBugs](https://github.com/liuhuigmail/GrowingBugRepository#steps-to-set-up-growingbugs). You can see the output for each command and make sure it is completed. After successfully running the initialization scripts (`init.sh` and `repos.sh`) for GrowingBugs, please continue with the following command.
+    > ``` sh
+    > cd /On-the-Reproducibility/section-2/reproducibility-scanner/
+    > python init.py
+    > ```
+    > Please feel free to reach out to us if you have any questions.
+    > 
+
+
 
 - **[Option 2]** Build a Docker container on your own machine with the Dockerfile we provide.
 
