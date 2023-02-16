@@ -150,6 +150,8 @@ We have three options to setup the reproduction environment.
             -v /var/lib/docker:/var/lib/docker -it ucdavisplse/reproducibility:env
         ```
 
+        > The Zenodo archive of the Docker image `ucdavisplse/reproducibility:env` is available [here](https://zenodo.org/record/7641690).
+
     2. In the container, clone the repository for reproduction package. It may take up to 10 mins based on the network status.
         ``` sh
         git clone https://github.com/ucd-plse/On-the-Reproducibility.git /On-the-Reproducibility && \
@@ -225,8 +227,22 @@ We have three options to setup the reproduction environment.
 
     Please refer to the documentation of [reproducibility-scanner](https://github.com/ucd-plse/reproducibility-scanner).
 
+- **[Option 4]** Download the Docker image from Zenodo archive.
 
-If you select **option 1** or **option 2**, please continue the following reproduction instructions *inside* the Docker container. If you select **option 3**, please run the reproduction instructions on your host machine.
+    1. Download the Docker image from [Zenodo archive](https://zenodo.org/record/7645975) (33 GB).
+    
+    2. Load the Docker image.
+        ``` sh
+        docker load --input reproducibility-full.tar.gz
+        ```
+
+    3. Run Docker container and navigate to working directory.
+        ``` sh
+        docker run -v /var/run/docker.sock:/var/run/docker.sock \
+            -v /var/lib/docker:/var/lib/docker -it reproducibility-full:latest
+        ```
+
+If you selected **option 1**, **option 2**, or **option 4** please continue to follow the instructions and run any given commands *inside* the Docker container. If you selected **option 3**, please run the commands on your host machine instead.
 
 ### 2.2 Reproduce the reproducibility study on five software defect datasets (Section 2)
 
