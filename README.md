@@ -150,6 +150,8 @@ We have three options to setup the reproduction environment.
             -v /var/lib/docker:/var/lib/docker -it ucdavisplse/reproducibility:env
         ```
 
+        > The Zenodo archive of the Docker image `ucdavisplse/reproducibility:env` is available [here](https://zenodo.org/record/7641690).
+
     2. In the container, clone the repository for reproduction package. It may take up to 10 mins based on the network status.
         ``` sh
         git clone https://github.com/ucd-plse/On-the-Reproducibility.git /On-the-Reproducibility && \
