@@ -245,7 +245,7 @@ We have three options to setup the reproduction environment.
             -v /var/lib/docker:/var/lib/docker -it reproducibility-full:latest
         ```
 
-If you select **option 1**, **option 2**, or **option 4** please continue the following reproduction instructions *inside* the Docker container. If you select **option 3**, please run the reproduction instructions on your host machine.
+If you selected **option 1**, **option 2**, or **option 4** please continue to follow the instructions and run any given commands *inside* the Docker container. If you selected **option 3**, please run the commands on your host machine instead.
 
 ### 2.2 Reproduce the reproducibility study on five software defect datasets (Section 2)
 
