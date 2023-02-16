@@ -229,10 +229,7 @@ We have three options to setup the reproduction environment.
 
 - **[Option 4]** Download the Docker image from Zenodo archive.
 
-    1. Download the Docker image from Zenodo archive (33 GB).
-        ``` sh
-        wget  [pending]
-        ```
+    1. Download the Docker image from [Zenodo archive](https://zenodo.org/record/7645975) (33 GB).
     
     2. Load the Docker image.
         ``` sh
