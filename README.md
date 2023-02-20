@@ -1,5 +1,8 @@
 # On the Reproducibility of Software Defect Datasets
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7577662.svg)](https://doi.org/10.5281/zenodo.7577662)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7645975.svg)](https://doi.org/10.5281/zenodo.7645975)
+
 This study focuses on the reproducibility of software defect datasets. Specifically, we present a study on the reproducibility of five Java software defect datasets, examine the reproducibility of one of them in a 13-month period, propose fixes for software breakages and explore two ways to reduce breakage for long-term reproducibility. 
 
 This package consists of two parts: raw data description and study reproduction. To explore the raw data used in this study, please refer to the [Raw Data Description](#1-raw-data-description). To reproduce the study using the raw data provided or from scratch, please refer to [Study Reproduction](#2-study-reproduction).
